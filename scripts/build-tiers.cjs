@@ -58,10 +58,19 @@ const SCHEMA = 4;
 
 // Bucket count is a deterministic function of record count — the scale knob
 // nobody hand-tunes (debate synthesis §3/§4). Next power of two that keeps
-// ~100 figures per shard, floored at 64: 5.7k figures → 64 (status quo),
+// ~80 figures per shard, floored at 64: 5.1k figures → 64, 6.4k → 128,
 // 30k → 512, keeping every shard inside its 150KB-gz budget. Clients never
 // assume it: meta.json carries the resolved count and the shard manifest.
-const bucketCountFor = (n, per = 100, floor = 64) => {
+//
+// The per-shard target was 100 until 2026-09, when the size tripwire in
+// test/scale-gates.test.cjs fired at 6,362 figures: bucket 8 reached 151KB gz
+// against the 150KB budget while the corpus average was 99.4 records a shard.
+// That is the pre-agreed response for `detail shard > 150KB` executing —
+// BUCKETS steps up via this formula — and it is a correction to the formula's
+// own assumption, not a bump to green a build: 100 records a shard does not
+// fit the budget once hash skew is taken into account, and 80 does, with the
+// largest shard landing near 75KB. The 30k → 512 anchor is unchanged.
+const bucketCountFor = (n, per = 80, floor = 64) => {
   let b = floor;
   while (b * per < n) b *= 2;
   return b;

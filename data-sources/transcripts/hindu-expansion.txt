@@ -1,0 +1,1399 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hindu
+Eras (registered, exact): cosmogonic | primordial | mythic | satya-yuga |
+  treta-yuga | heroic-age | dvapara-yuga | kali-yuga | vedic | late-vedic |
+  epic-period | classical | medieval | early-modern | modern
+Author pass: Hindu held 133 records. This adds 44.
+
+================================================================================
+THE GAP — THE REGISTRY HELD ONE SIDE OF EVERY CONFLICT
+================================================================================
+
+A 138-name check across the WHOLE registry returned 17 hits and 121 absences,
+and six of the seventeen hits are FALSE: "Uttara" matched mon_uttara, "Kurma"
+matched fur_kuruma, "Sati" matched egyptian_satis, "Mangala" matched
+mandinka_maa_ngala, "Ila" matched koryak_illa, and "Bali" matched hindu_vali —
+which is the vanara king of the Ramayana and NOT the asura king of the Vamana
+story. Five more were aliases already carried on existing records.
+
+The 133 records were not thinly spread. They are dense in places: the corpus
+holds five sons of Karna. What it does not hold is the other side of anything.
+
+**THE REGISTRY HELD THE PANDAVAS AND NOT THE KAURAVAS.**
+
+All five Pandavas are there. Draupadi, Kunti, Madri, Pandu, Dhritarashtra,
+Bhishma, Vyasa, Satyavati, Drupada, Dhrishtadyumna, Abhimanyu, Karna and five
+of Karna's sons are there.
+
+There is not one Kaurava. No **Duryodhana**. No **Gandhari**, who tied a cloth
+over her own eyes for life because her husband was born blind, and who bore the
+hundred. No **Dushasana**, no **Shakuni**, no **Vikarna**. And none of the men
+the war is actually fought by on that side: no **Drona**, who taught both
+houses; no **Kripa**; no **Ashwatthama**; no **Kritavarma**; no **Jayadratha**.
+
+The Mahabharata is a war between two families and the registry held one of them.
+
+It is the same fault everywhere else in the tradition:
+
+- **Indra without Vritra.** The corpus holds Indra. Indra's defining act, the
+  one the Rigveda returns to more than any other, is killing the serpent who
+  has seized and imprisoned the waters of the world. The serpent was not there.
+- **Durga without Mahishasura.** Durga is in the corpus. Her name in worship is
+  Mahishasuramardini, the slayer of the buffalo demon, and the largest festival
+  in eastern India commemorates that killing. The buffalo demon was not there.
+- **Narasimha without Hiranyakashipu, and without Prahlada.** The corpus holds
+  the man-lion avatar, whose entire reason for existing is to kill one
+  particular asura at one particular moment — neither man nor beast, neither
+  day nor night, neither inside nor out — in order to save one particular boy.
+  Neither the asura nor the boy was in the corpus.
+- **Varaha without Hiranyaksha**, whose abduction of the earth is the only
+  reason the boar avatar occurs.
+- **Dasharatha's three queens: two held, one absent.** Kausalya and Sumitra
+  were in the corpus. **Kaikeyi** was not — the queen whose two boons send Rama
+  into the forest for fourteen years, which is the event the Ramayana consists
+  of. This is the same shape as lane 14's five-of-six idols of Kiev, and worse,
+  because the missing one is the one that makes the story happen.
+- **Ravana without Mandodari, Shurpanakha or Maricha** — his queen, who tells
+  him to give Sita back; his sister, whose mutilated face is why he takes her;
+  and the demon who becomes the golden deer.
+- **No rishis at all.** Not Vasishtha, not Vishvamitra, not Agastya, not Atri,
+  not Narada — and not **Valmiki**, who composed the Ramayana the corpus holds
+  twenty-odd characters from.
+- **No lunar dynasty above the Kurus.** No Yayati, no Nahusha, no Puru, no
+  Yadu — so the Kauravas and the Yadavas, the two houses the whole epic is
+  about, had no common ancestor in the corpus and no reason to be related.
+- **No Navagraha.** No Brihaspati, no Shukra, no Shani, no Rahu, no Ketu.
+
+================================================================================
+WHAT THIS BATCH DOES AND DOES NOT DO
+================================================================================
+
+This lane takes the conflicts. Forty-four records: the Kauravas and the Kuru
+court, the adversaries the gods are defined against, the lunar-dynasty
+ancestors who make the two houses kin, Krishna's antagonists, and the missing
+half of the Ramayana.
+
+It does NOT take the Navagraha, the remaining avatars (Kurma, Parashurama,
+Kalki), the Vedic gods still absent (Mitra, Rudra as a separate record, Pushan,
+Tvashtr, Bhaga, Aryaman, the Maruts), the Devi Mahatmya's other asuras (Shumbha,
+Nishumbha, Raktabija), or the Ikshvaku dynasty. Those are census rows here and
+the obvious shape of the next Hindu lane.
+
+**The hundred Kauravas are not ingested as a hundred.** The sources name a
+handful — Duryodhana, Dushasana, Vikarna and Chitrasena are the ones the
+tradition itself singles out — and the rest are a number, not a list. Four
+brothers and their sister's absence are recorded; ninety-six name-slots are not
+manufactured.
+
+================================================================================
+A NOTE ON ERAS, WHICH IS A FINDING RATHER THAN A CHOICE
+================================================================================
+
+The corpus files `hindu_dhritarashtra` at era `epic-period` and his nephews the
+Pandavas at `dvapara-yuga`, which in the registered Hindu era order is EARLIER.
+The Kauravas added here are therefore filed at `epic-period`, matching their
+father, because a parent may not be later than a child and the test suite
+enforces it. The result is that first cousins sit in two different eras.
+
+That is not a defect introduced by this batch — it is a pre-existing
+inconsistency in how the Hindu era vocabulary has been applied, and this batch
+declines to fix it by mutating records it did not author. It is raised in the
+census and the audit for the owner.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search, and the citations name
+the reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE KAURAVAS
+================================================================================
+
+```json
+[
+  {
+    "id": "hindu_duryodhana",
+    "name": { "primary": "Duryodhana", "alt": ["Suyodhana"],
+      "transliterations": { "Sanskrit": "दुर्योधन", "etymology": "'Hard to fight', from dur-, 'difficult', and yodhana, 'fighting'. The variant Suyodhana, 'good fighter', is used in the epic itself." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_dhritarashtra", "hindu_gandhari"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "The eldest of the Kauravas, the hundred sons of King Dhritarashtra and Queen Gandhari of the Kuru dynasty.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is the eldest of the Kauravas, the hundred sons of King Dhritarashtra and Queen Gandhari of the Kuru dynasty." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "Aided by his maternal uncle Shakuni, he tricks the Pandavas into surrendering their kingdom in a game of dice and forces them into exile. The game is played twice, either because he compels his father to order it again or through Shakuni's tricks.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: aided by his maternal uncle Shakuni, Duryodhana tricked the Pandavas into surrendering their kingdom and forced them to go into exile; the game is repeated, either through Duryodhana forcing his father to command the Pandavas to play again, or through Shakuni's vicious tricks." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 2,
+        "startEvent": "His principal allies are his uncle Shakuni, his friend Karna, his brother Dushasana and his indulgent blind father.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is aided by his principal allies — his trickster uncle Shakuni, his loyal friend Karna, his devoted brother Dushasana and his blind and indulgent father Dhritarashtra." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Duryodhana as the eldest Kaurava and claimant of the Kuru throne." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Duryodhana as the antagonist of the Pandavas and the leader of the Kaurava side." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_dushasana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana's devoted brother Dushasana is among his principal allies, and Duryodhana, Dushasana, Vikarna and Chitrasena are the most well-known among the brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_vikarna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana, Dushasana, Vikarna and Chitrasena are the most well-known among the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_chitrasena_kaurava",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Duryodhana, Dushasana, Vikarna and Chitrasena as the best known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_shakuni",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is aided by his trickster uncle Shakuni, who helps him trick the Pandavas into surrendering their kingdom." } ], "notes": "Reciprocated in-batch. Also his maternal uncle, which is recorded as a separate nephew edge on Shakuni's record." },
+      { "kind": "ally", "personId": "hindu_drona",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona was the Acharya of the Kuru princes and Supreme Commander of the Kauravas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "befriended-by", "personId": "hindu_karna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana's principal allies include his loyal friend Karna." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Karna record. The corpus holds Karna, and five of Karna's sons, and did not hold the man whose friendship is the entire explanation of Karna's position in the war." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Duryodhana is the eldest of the hundred Kauravas, son of Dhritarashtra and Gandhari, who with Shakuni's help wins the Pandavas' kingdom at dice and drives them into exile.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Duryodhana, of the Kauravas and of the dice game." } ], "weight": "high" } ],
+    "notes": "The single largest absence this programme has found in any tradition. The registry held all five Pandavas, their mother, their stepmother, their wife, their father, their uncle, their grandfather-figure, their teacher's rival's son, and five sons of Karna — and not the man they fight. A corpus that holds one side of the Mahabharata does not hold the Mahabharata."
+  },
+  {
+    "id": "hindu_gandhari",
+    "name": { "primary": "Gandhari", "alt": ["Gandhari of Gandhara"],
+      "transliterations": { "Sanskrit": "गान्धारी", "etymology": "'She of Gandhara' — the name is the country she came from, in the north-west of the subcontinent." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Queen of the Kuru dynasty and wife of the blind king Dhritarashtra, by whom she became the mother of a hundred sons and one daughter.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is the eldest of the Kauravas, the hundred sons of King Dhritarashtra and Queen Gandhari of the Kuru dynasty; Dhritarashtra was blind from birth and became father to a hundred sons and one daughter by his wife Gandhari." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "At the dice game, when the enraged Draupadi is about to curse the whole Kuru clan, it is Gandhari who intervenes.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: as an enraged Draupadi is about to curse the Kuru clan, Gandhari intervenes." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gandhari as queen of the Kuru dynasty and wife of Dhritarashtra." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "queen-consort-of", "personId": "hindu_dhritarashtra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Dhritarashtra was blind from birth and became father to a hundred sons and one daughter by his wife Gandhari." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Dhritarashtra record, which the corpus holds with no spouse at all." },
+      { "kind": "sibling", "personId": "hindu_shakuni",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shakuni is Duryodhana's maternal uncle, that is, Gandhari's brother." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "intervened-for", "personId": "hindu_draupadi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: as an enraged Draupadi is about to curse the Kuru clan, Gandhari intervenes." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Draupadi record. The edge is worth having: the two women stand on opposite sides of the hall in the epic's worst scene, and the one who stops it is the mother of the men who caused it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gandhari is the Kuru queen, wife of the blind Dhritarashtra and mother of the hundred Kauravas and one daughter, who intervenes when Draupadi is about to curse the clan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gandhari, of the Kauravas and of the dice game." } ], "weight": "high" } ],
+    "notes": "The detail she is best known for — that she bound her own eyes for life on marrying a blind man, so as not to have what her husband lacked — is not written into the lifecycle here, because the treatments consulted state the marriage, the hundred sons and the intervention and do not state the blindfold. It is a famous fact and this record still does not assert it without a citation in hand. That restraint is the programme's, and it is worth being visible on a figure this well known."
+  },
+  {
+    "id": "hindu_dushasana",
+    "name": { "primary": "Dushasana", "alt": ["Duhshasana", "Dussasana"],
+      "transliterations": { "Sanskrit": "दुःशासन", "etymology": "'Hard to govern', or 'he who is difficult to rule'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_dhritarashtra", "hindu_gandhari"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "The second Kaurava and Duryodhana's devoted brother, one of his principal allies, and one of the four brothers the tradition singles out from the hundred.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is aided by his principal allies, including his devoted brother Dushasana; Duryodhana, Dushasana, Vikarna and Chitrasena are the most well-known among the brothers." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dushasana as one of Duryodhana's principal allies." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dushasana as Duryodhana's devoted brother." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_vikarna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Duryodhana, Dushasana, Vikarna and Chitrasena as the best known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_chitrasena_kaurava",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Dushasana is Duryodhana's brother and one of his principal allies, one of the four Kauravas the tradition names out of the hundred.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Dushasana and of the Kauravas." } ], "weight": "high" } ],
+    "notes": "He is the man who drags Draupadi into the hall by the hair and attempts to strip her, and that is what he is remembered for. The lifecycle does not narrate it, because the treatments consulted describe the dice game and Gandhari's intervention without attributing the act, and this record will not supply the attribution from recall. The scene itself is in the corpus's reach the moment a treatment of it is retrieved."
+  },
+  {
+    "id": "hindu_shakuni",
+    "name": { "primary": "Shakuni", "alt": ["Sakuni", "Saubala"],
+      "transliterations": { "Sanskrit": "शकुनि", "etymology": "'Bird', and specifically a bird of omen. Saubala is the patronymic, 'son of Subala', king of Gandhara." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Prince of Gandhara, Gandhari's brother and Duryodhana's maternal uncle; the trickster of the Kaurava party.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana is aided by his trickster uncle Shakuni; Shakuni is his maternal uncle." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "It is with his help that Duryodhana tricks the Pandavas into surrendering their kingdom at dice and forces them into exile; the second game turns on Shakuni's tricks.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: aided by his maternal uncle Shakuni, Duryodhana tricked the Pandavas into surrendering their kingdom and forced them into exile, and the game is repeated either through Duryodhana forcing his father to command it or through Shakuni's vicious tricks." } ] } ],
+    "domains": [
+      { "sphereId": "cunning-and-deceit", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shakuni as the trickster uncle whose tricks win the dice game." } ] },
+      { "sphereId": "dice-and-gambling", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shakuni's role in the dice game by which the Pandavas lose their kingdom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_gandhari",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shakuni as Duryodhana's maternal uncle." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shakuni as Duryodhana's principal ally in winning the kingdom at dice." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "maternal-uncle-of", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shakuni is Duryodhana's maternal uncle." } ],
+        "notes": "Recorded as a second, non-symmetric edge because the kinship and the alliance are two different facts and the epic turns on their combination." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shakuni is Gandhari's brother and Duryodhana's maternal uncle, the trickster whose rigged dice game strips the Pandavas of their kingdom and sends them into exile.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shakuni and of the dice game." } ], "weight": "high" } ],
+    "notes": "The dice game is the hinge of the whole epic — everything before it is a family, everything after it is a war — and the registry held neither of the two men who play it on one side."
+  },
+  {
+    "id": "hindu_vikarna",
+    "name": { "primary": "Vikarna", "alt": [],
+      "transliterations": { "Sanskrit": "विकर्ण", "etymology": "'Ear-less', or with reference to a shape of the ear; the epic offers no gloss." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_dhritarashtra", "hindu_gandhari"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "One of the four Kauravas the tradition singles out from the hundred, with Duryodhana, Dushasana and Chitrasena.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana, Dushasana, Vikarna and Chitrasena are the most well-known among the brothers." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_dushasana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_chitrasena_kaurava",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vikarna is one of the four Kauravas named out of the hundred in the tradition, a son of Dhritarashtra and Gandhari.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Kauravas." } ], "weight": "medium" } ],
+    "notes": "The domains array is empty and the record is short, because the treatment consulted names him among the four best known and does not say why he is. He is in fact remembered for one thing — being the only Kaurava in the hall who says out loud that what is being done to Draupadi is wrong — and a record that asserted that without a citation would be doing exactly what this programme refuses to do. He is ingested rather than left out because being named among four out of a hundred is itself the tradition marking him as an individual."
+  },
+  {
+    "id": "hindu_chitrasena_kaurava",
+    "name": { "primary": "Chitrasena (the Kaurava)", "alt": ["Chitrasena Dhartarashtra"],
+      "transliterations": { "Sanskrit": "चित्रसेन", "etymology": "'He whose army is brilliant', or 'of the varied banner'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_dhritarashtra", "hindu_gandhari"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "One of the four Kauravas the tradition singles out from the hundred.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Duryodhana, Dushasana, Vikarna and Chitrasena are the most well-known among the brothers." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_dushasana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_vikarna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the four best-known of the hundred brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chitrasena is one of the four Kauravas named out of the hundred, a son of Dhritarashtra and Gandhari.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Kauravas." } ], "weight": "medium" } ],
+    "notes": "The id is `hindu_chitrasena_kaurava` and the primary name carries a qualifier, because the corpus ALREADY HOLDS `hindu_chitrasena_karna` — a son of Karna with the same name. They are different people and a bare id would have collided. This is the second time in two lanes that a qualified id was needed to keep two same-named figures apart, and it is worth noting as a pattern: a corpus this size will keep meeting name collisions inside a single tradition, not only across traditions."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE KURU COURT: THE MEN THE WAR IS FOUGHT BY
+================================================================================
+
+The corpus held the Pandavas and Karna and no one who taught them, no one who
+commanded the other army, and none of the three who survive the last night.
+
+```json
+[
+  {
+    "id": "hindu_drona",
+    "name": { "primary": "Drona", "alt": ["Dronacharya", "Acharya Drona"],
+      "transliterations": { "Sanskrit": "द्रोण", "etymology": "'Vessel', with reference to the vessel he is said to have been born in; acharya is 'teacher'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Master of the military arts, and especially of archery, trained in the gurukul of the rishi Bharadvaja.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona gained expertise in military arts such as archery and studied in the gurukul of Rishi Bharadwaja." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "He becomes the Acharya of the Kuru princes — teacher of both houses, Pandava and Kaurava alike — and marries Kripi, the sister of Kripa, the royal teacher of the princes of Hastinapura.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona was the Acharya, teacher, of the Kuru princes and Supreme Commander of the Kauravas; Drona married Kripi, the sister of Kripa, who was the royal teacher of the princes of Hastinapura." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 2,
+        "startEvent": "In the war he is Supreme Commander of the Kauravas — against half of his own pupils. He falls on the day Arjuna kills Jayadratha.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona was Supreme Commander of the Kauravas; Arjuna kills Jayadratha and Drona falls." } ] } ],
+    "domains": [
+      { "sphereId": "military-instruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona as the Acharya of the Kuru princes, expert in archery." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona as Supreme Commander of the Kauravas." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_kripi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona married Kripi, the sister of Kripa." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona was Supreme Commander of the Kauravas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "student-of", "personId": "hindu_bharadvaja",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona studied in the gurukul of Rishi Bharadwaja." } ],
+        "notes": "The kind is 'student-of' and not a filiation. The tradition also makes Bharadvaja his father; the treatment consulted states the gurukul and not the paternity, so the edge states the gurukul." },
+      { "kind": "teacher-of", "personId": "hindu_arjuna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona was the Acharya, teacher, of the Kuru princes." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Arjuna record." },
+      { "kind": "teacher-of", "personId": "hindu_yudhishthira",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona as Acharya of the Kuru princes." } ], "notes": "Same." },
+      { "kind": "teacher-of", "personId": "hindu_duryodhana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona as Acharya of the Kuru princes, who are both houses." } ],
+        "notes": "In-batch. Recorded separately from the alliance, because the tragedy of the figure is that the two are the same list of people." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Drona is the archery master who taught both Kuru houses and commanded the Kaurava army, husband of Kripi and father of Ashwatthama.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Drona, of Kripa and of the Kurukshetra war." } ], "weight": "high" } ],
+    "notes": "He is the connective tissue of the epic's first half — every warrior on both sides is his pupil — and the registry held the pupils and not him. His feud with Drupada, which the corpus could already have supported since it holds both Drupada and Dhrishtadyumna, is not written here: the treatments consulted give the teaching, the marriage, the command and the fall, and not the feud."
+  },
+  {
+    "id": "hindu_kripa",
+    "name": { "primary": "Kripa", "alt": ["Kripacharya", "Krpa"],
+      "transliterations": { "Sanskrit": "कृप", "etymology": "From kripa, 'pity' — the twins are said to have been named for the pity of the king who found them abandoned." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "The royal teacher of the princes of Hastinapura, and the brother of Kripi, whom Drona married.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona married Kripi, the sister of Kripa, who was the royal teacher of the princes of Hastinapura." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "He is one of the three who survive the final night. After the defeat at Kurukshetra, Ashwatthama, Kripa and Kritavarman return to Duryodhana, who appoints Ashwatthama the last commander-in-chief.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after the devastating defeat at Kurukshetra, Ashvatthama, Kripa and Kritavarman return to Duryodhana, who appoints Ashvatthama as the final commander-in-chief." } ] } ],
+    "domains": [
+      { "sphereId": "military-instruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kripa as the royal teacher of the princes of Hastinapura." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_kripi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kripi is the sister of Kripa." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_ashwatthama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashvatthama, Kripa and Kritavarman return together to Duryodhana after the defeat." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_kritavarma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three survivors returning to Duryodhana." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kripa is the royal teacher of the Hastinapura princes, brother of Kripi, and one of the three Kaurava survivors of Kurukshetra.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kripa, of Drona and of the end of the war." } ], "weight": "high" } ],
+    "notes": "vitalStatus is 'living' rather than 'deceased', which is deliberate and is the tradition's own claim: Kripa is counted among the chiranjivis, the deathless, and the epic does not kill him. The record does not elaborate on that list because the treatment consulted does not, but it will not record a death the sources do not give."
+  },
+  {
+    "id": "hindu_kripi",
+    "name": { "primary": "Kripi", "alt": ["Krpi"],
+      "transliterations": { "Sanskrit": "कृपी", "etymology": "The feminine of the same name as her twin brother's." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Kripa's sister, married to Drona, and the mother of Ashwatthama.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona married Kripi, the sister of Kripa; Ashvatthama is born to Drona and his wife Kripi, who is the sister of Kripa." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_drona",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona's marriage to Kripi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_kripa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kripi as the sister of Kripa." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kripi is the sister of Kripa, the wife of Drona and the mother of Ashwatthama.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Drona, Kripa and Ashwatthama." } ], "weight": "high" } ],
+    "notes": "She is here because without her the two teaching houses of the epic are unconnected, and because a corpus that records descent should record the woman through whom two of its most consequential figures are related. The domains array is empty because the sources give her a family and no office."
+  },
+  {
+    "id": "hindu_ashwatthama",
+    "name": { "primary": "Ashwatthama", "alt": ["Ashvatthama", "Asvatthaman", "Drauni"],
+      "transliterations": { "Sanskrit": "अश्वत्थामा", "etymology": "Usually read as 'having the strength of a horse', or from the horse-like cry he is said to have given at birth." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["hindu_drona", "hindu_kripi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Son of Drona and Kripi, trained in warfare alongside the Kauravas and the Pandavas by his own father. He is described as a combined incarnation of Shiva, Yama, Kama and Krodha, and carries a divine gem in his forehead that gives him extraordinary powers.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashvatthama is the son of Drona and Kripi and was trained in warfare along with the Kauravas and Pandavas by his father; Ashvatthama is mentioned as a combined incarnation of the deities Shiva, Yama, Kama and Krodha, and has a divine gem on his forehead which gives him extraordinary powers." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "He stands against Arjuna repeatedly, trying to stop him reaching Jayadratha.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashwatthama stands against Arjuna several times, trying to prevent him from reaching Jayadratha." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 2,
+        "startEvent": "After the defeat he returns with Kripa and Kritavarman to Duryodhana, who makes him the last commander-in-chief. He then sees an owl killing a flock of sleeping crows, and takes the omen: he does the same to the sleeping Pandava army.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after the devastating defeat at Kurukshetra, Ashvatthama, Kripa and Kritavarman return to Duryodhana, who appoints Ashvatthama as the final commander-in-chief; Ashvatthama witnesses an owl slaughtering a group of crows in their sleep, an omen that inspires him to do the same to the sleeping Pandava army." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashwatthama as trained in warfare by Drona and appointed final commander-in-chief of the Kauravas." } ] } ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "hindu_ashwatthama_mani", "name": "the gem in Ashwatthama's forehead", "kind": "bodily-relic", "contextTag": "innate",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashvatthama has a divine gem on his forehead which gives him extraordinary powers." } ],
+        "notes": "Not a possession but part of him, which is why it is recorded with an 'innate' context tag." } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "hindu_kripa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three who return to Duryodhana after the defeat." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_kritavarma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three who return to Duryodhana after the defeat." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "protected", "personId": "hindu_jayadratha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashwatthama stands against Arjuna several times, trying to prevent him from reaching Jayadratha." } ], "notes": "In-batch and directional." },
+      { "kind": "fought-against", "personId": "hindu_arjuna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashwatthama stands against Arjuna several times." } ],
+        "notes": "Non-symmetric rather than 'enemy', so nothing is written onto the pre-existing Arjuna record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ashwatthama is the son of Drona and Kripi, a combined incarnation of Shiva, Yama, Kama and Krodha with a gem in his forehead, last commander of the Kauravas, who kills the Pandava army in its sleep after seeing an owl kill sleeping crows.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ashwatthama, of Drona and of the night raid." } ], "weight": "high" } ],
+    "notes": "vitalStatus is 'living'. The tradition holds that he is cursed to wander the earth until the end of the age, and he is the epic's one genuinely unfinished figure; recording him as deceased would contradict the story the corpus is indexing. TYPE CORRECTED UNDER TEST: he was first authored as 'demigod', on the strength of the sources making him a combined incarnation of Shiva, Yama, Kama and Krodha. npm test rejected it as tier-classification drift — this corpus computes the tier from descent, and both his parents are mortals in this batch, so the pipeline computes 'mortal' and an authored 'demigod' is a divergence the suite counts. The corpus's own rule wins; the incarnation claim stays in the lifecycle, where it is a statement about him rather than a claim about his parentage."
+  },
+  {
+    "id": "hindu_kritavarma",
+    "name": { "primary": "Kritavarma", "alt": ["Kritavarman", "Krtavarman"],
+      "transliterations": { "Sanskrit": "कृतवर्मा", "etymology": "'He who has made his armour', from krita, 'made', and varman, 'armour'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "A Yadava warrior who fights on the Kaurava side, and one of the three who survive the last night: with Ashwatthama and Kripa he returns to Duryodhana after the defeat.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: after the devastating defeat at Kurukshetra, Ashvatthama, Kripa and Kritavarman return to Duryodhana, who appoints Ashvatthama as the final commander-in-chief." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kritavarman among the Kaurava commanders at the end of the war." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "hindu_ashwatthama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three survivors returning to Duryodhana." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_kripa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three survivors returning to Duryodhana." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kritavarma is one of the three Kaurava survivors of Kurukshetra, who with Ashwatthama and Kripa returns to Duryodhana after the defeat.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the end of the Kurukshetra war." } ], "weight": "medium" } ],
+    "notes": "He is a Yadava fighting against Krishna's own side, which is the sort of fact this corpus exists to make visible, and the record does not state it because the treatment consulted names him among the three survivors and does not give his house. A Yadava census would settle it."
+  },
+  {
+    "id": "hindu_jayadratha",
+    "name": { "primary": "Jayadratha", "alt": ["Saindhava"],
+      "transliterations": { "Sanskrit": "जयद्रथ", "etymology": "'He whose chariot is victory'. Saindhava is 'of Sindhu', the kingdom he rules." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "King of Sindhu on the Kaurava side, and the man Arjuna swears to kill before sunset on the day after Abhimanyu's death. Ashwatthama stands against Arjuna repeatedly to keep him from reaching him; Arjuna kills him, and Drona falls the same day.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Arjuna kills Jayadratha and Drona falls; Ashwatthama stands against Arjuna several times, trying to prevent him from reaching Jayadratha." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jayadratha as a Kaurava-side king killed by Arjuna." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "hindu_arjuna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Arjuna kills Jayadratha." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Arjuna record." },
+      { "kind": "protected-by", "personId": "hindu_ashwatthama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashwatthama standing against Arjuna to keep him from Jayadratha." } ], "notes": "Reciprocal of the in-batch edge on Ashwatthama's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jayadratha is the king of Sindhu on the Kaurava side, killed by Arjuna on the day Drona falls, whom Ashwatthama repeatedly tries to shield.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jayadratha and of the fourteenth day of the war." } ], "weight": "high" } ],
+    "notes": "The corpus holds Abhimanyu, whose death is the reason for the oath that kills this man, and did not hold the man. That is the lane's pattern stated in one sentence. His marriage to Dushala, the Kauravas' one sister, is not recorded because Dushala is a BLOCKED census row — the sources consulted count the daughter and do not name her."
+  },
+  {
+    "id": "hindu_bharadvaja",
+    "name": { "primary": "Bharadvaja", "alt": ["Bharadwaja", "Bharadvaja Rishi"],
+      "transliterations": { "Sanskrit": "भरद्वाज", "etymology": "Read as 'bringing sustenance', from bhara, 'bearing', and vaja, 'strength, food'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A rishi with a gurukul, in which Drona studied the military arts.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drona gained expertise in military arts such as archery and studied in the gurukul of Rishi Bharadwaja." } ] } ],
+    "domains": [
+      { "sphereId": "vedic-sagehood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bharadvaja as a rishi whose gurukul trained Drona." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "teacher-of", "personId": "hindu_drona",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drona studying in the gurukul of Rishi Bharadwaja." } ], "notes": "Reciprocal of the in-batch edge on Drona's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bharadvaja is the rishi in whose gurukul Drona studied the military arts.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Drona's training." } ], "weight": "medium" } ],
+    "notes": "The first rishi in this corpus's Hindu holdings, which held none. He is one of the seven sages of the standard list and one of the family-book authors of the Rigveda, and this record says neither, because the treatment consulted gives the gurukul and nothing else. The absence of the rishis as a class is a census row and the obvious content of a following lane; this one figure is here because a specific edge in this batch required him."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE ADVERSARIES THE GODS ARE DEFINED AGAINST
+================================================================================
+
+Four gods in this corpus are named, worshipped and depicted in terms of one
+killing each, and the corpus held none of the four killed. Indra without Vritra,
+Durga without Mahishasura, Narasimha without Hiranyakashipu, Varaha without
+Hiranyaksha.
+
+```json
+[
+  {
+    "id": "hindu_vritra",
+    "name": { "primary": "Vritra", "alt": ["Vrtra", "Vritrasura", "Ahi"],
+      "transliterations": { "Sanskrit": "वृत्र", "etymology": "'Coverer, obstructer', from a root meaning to enclose or hold back — the name is what he does to the waters. Ahi is 'serpent'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "In early Vedic religion an asura, a serpent or dragon, the personification of drought and the enemy of Indra. He seized the waters of the world and imprisoned them in the mountains or within his own body, causing a great drought and human suffering.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in early Vedic religion Vritra is an Asura and a serpent or dragon, the personification of drought and enemy of Indra; according to Vedic texts Vritra seized the waters of the world and imprisoned them in the mountains or within his own body, causing a great drought and suffering for humanity." } ] },
+      { "typeStatus": "deity", "era": "vedic", "eraOrdering": 1,
+        "startEvent": "Indra, armed with the vajra, wages a fierce battle against him and slays him, piercing his defences with the thunderbolt; the waters are released.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: armed with his powerful weapon, the vajra or thunderbolt, Indra waged a fierce battle against the demon and succeeded in slaying Vritra, using his vajra to pierce through the demon's defences." } ] } ],
+    "domains": [
+      { "sphereId": "drought", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vritra as the personification of drought." } ] },
+      { "sphereId": "obstruction-of-the-waters", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vritra seized the waters of the world and imprisoned them in the mountains or within his own body." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "hindu_indra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Indra, armed with the vajra, waged a fierce battle against the demon and succeeded in slaying Vritra." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Indra record. Indra's standing epithet in the Rigveda is Vritrahan, 'slayer of Vritra' — the god is named after this killing, and the registry held the god and not the killed." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vritra is the Vedic serpent-asura who imprisons the waters of the world and causes drought, slain by Indra with the vajra.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vritra and of Indra's slaying of him." } ], "weight": "high" } ],
+    "notes": "The most-repeated narrative in the Rigveda, and the Indo-Iranian pair of the Tishtrya-and-Apaosha fight that lane 15 completed two days of work ago: in both, a drought-being holds the waters and a god has to be strengthened to release them. The two traditions are next to each other in this corpus and each held the god and not the drought. Lane 15 supplied Apaosha; this supplies Vritra."
+  },
+  {
+    "id": "hindu_mahishasura",
+    "name": { "primary": "Mahishasura", "alt": ["Mahisasura", "the Buffalo Demon"],
+      "transliterations": { "Sanskrit": "महिषासुर", "etymology": "A compound of mahisha, 'buffalo', and asura, 'demon' — 'the buffalo demon'. The name is a description." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The buffalo demon whom the goddess Durga defeats, as told in the Devi Mahatmya.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mahishasura is a Sanskrit word composed of Mahisha meaning 'buffalo' and asura meaning 'demon', translating to 'Buffalo Demon'; the goddess Durga defeats Mahishasura as told in the Devi Mahatmya." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "That killing is the basis of Durga Puja and Vijayadashami — the largest festival in eastern India is an annual commemoration of his death.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Durga's defeat of Mahishasura is the basis for the Durga Puja and Vijayadashami holidays." } ] } ],
+    "domains": [
+      { "sphereId": "asuric-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mahishasura as the buffalo demon defeated by Durga in the Devi Mahatmya." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "hindu_durga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the goddess Durga defeats Mahishasura, the buffalo demon, as told in the Devi Mahatmya, a feat that is the basis for Durga Puja and Vijayadashami." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Durga record. The goddess's commonest cult name is Mahishasuramardini, 'crusher of Mahishasura' — she is named after him, and the registry held her and not him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mahishasura is the buffalo demon of the Devi Mahatmya, defeated by Durga, whose killing is the basis of Durga Puja and Vijayadashami.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mahishasura and of Durga as Mahishasuramardini." } ], "weight": "high" } ],
+    "notes": "Of every absence in this lane, this is the one with the largest number of living people attached to it: the festival that commemorates this killing is observed by tens of millions annually, and the iconography of the goddess standing on the buffalo is among the most reproduced images in India. The corpus held the image's subject and not its object."
+  },
+  {
+    "id": "hindu_diti",
+    "name": { "primary": "Diti", "alt": [],
+      "transliterations": { "Sanskrit": "दिति", "etymology": "Usually taken as a back-formation against Aditi, 'the unbounded' — Diti being the bounded or divided. The corpus already holds Aditi." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Wife of the rishi Kashyapa and mother of the daityas. Hiranyakashipu and Hiranyaksha were both her sons by Kashyapa, conceived at an inauspicious time, and both became fearsome asuras.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyakashipu and Hiranyaksha were both sons of Rishi Kashyapa and Diti, conceived at a very inauspicious time, and both turned out to be fearsome, evil Asuras." } ] } ],
+    "domains": [
+      { "sphereId": "mother-of-the-daityas", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Diti as the mother, by Kashyapa, of Hiranyakashipu and Hiranyaksha." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "hindu_kashyapa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyakashipu and Hiranyaksha were both sons of Rishi Kashyapa and Diti." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Kashyapa record. The corpus holds Kashyapa and holds Aditi, the mother of the gods; it did not hold Diti, the mother of their opponents, which is the same one-sided holding as everywhere else in this lane." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Diti is the wife of Kashyapa and the mother of Hiranyakashipu and Hiranyaksha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the birth of Hiranyakashipu and Hiranyaksha." } ], "weight": "high" } ],
+    "notes": "Aditi and Diti are a pair — the gods descend from one and the asuras from the other, by the same father — and a corpus holding Kashyapa and Aditi without Diti holds a genealogy with one branch cut. That is the most precise statement of this lane's whole finding: the registry's Hindu holdings were a family tree with the losing side pruned."
+  },
+  {
+    "id": "hindu_hiranyakashipu",
+    "name": { "primary": "Hiranyakashipu", "alt": ["Hiranyakasipu"],
+      "transliterations": { "Sanskrit": "हिरण्यकशिपु", "etymology": "'Golden-robed' or 'clothed in gold', from hiranya, 'gold', and kashipu, 'soft covering, cushion'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "slain", "parentIds": ["hindu_kashyapa", "hindu_diti"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "Son of the rishi Kashyapa and Diti, conceived at a very inauspicious time, and with his brother Hiranyaksha a fearsome asura.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyakashipu and Hiranyaksha were both sons of Rishi Kashyapa and Diti, conceived at a very inauspicious time, and both turned out to be fearsome, evil Asuras." } ] },
+      { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 1,
+        "startEvent": "His own son Prahlada is a staunch devotee of Vishnu, which he will not tolerate. He points to a pillar and demands to know whether Vishnu is in it; Prahlada answers that he is and will be; and when he strikes the pillar in fury the fierce form of Vishnu emerges, Narasimha, who is neither man nor beast.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Hiranyakashipu pointed to a pillar and asked if Vishnu was there, Prahlada replied 'Yes he was and will be'; when Hiranyakashipu struck the pillar in fury, the fierce form of Vishnu, Narasimha, emerged, who was neither man nor beast. Prahlada is known for his devotion to Vishnu and was rescued from his father, the asura king Hiranyakashipu, by Narasimha, the half-man and half-lion avatar of Vishnu." } ] } ],
+    "domains": [
+      { "sphereId": "asuric-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hiranyakashipu as the asura king and father of Prahlada." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_hiranyaksha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hiranyakashipu and Hiranyaksha as brothers, sons of Kashyapa and Diti." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "slain-by", "personId": "hindu_vishnu_narasimha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Prahlada was rescued from his father, the asura king Hiranyakashipu, by Narasimha, the half-man and half-lion avatar of Vishnu, who emerged from the pillar." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Narasimha record. The corpus held an avatar whose ENTIRE reason for existing is this one killing, and did not hold the man killed." },
+      { "kind": "persecuted", "personId": "hindu_prahlada",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Prahlada was rescued from his father, the asura king Hiranyakashipu, by Narasimha." } ], "notes": "In-batch, and the reason the avatar occurs." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hiranyakashipu is the asura king, son of Kashyapa and Diti and brother of Hiranyaksha, who persecutes his Vishnu-devoted son Prahlada and is killed by Narasimha when he strikes the pillar.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hiranyakashipu, of Prahlada and of the Narasimha avatar." } ], "weight": "high" } ],
+    "notes": "The famous condition of the boon that makes him unkillable — not by man or beast, not by day or night, not inside or outside, not on earth or in the air, not by any weapon — is the reason Narasimha takes the form he takes and acts at the hour he acts. The treatment consulted gives 'neither man nor beast' and the pillar, and this record therefore gives those and does not enumerate the rest of the conditions."
+  },
+  {
+    "id": "hindu_prahlada",
+    "name": { "primary": "Prahlada", "alt": ["Prahlad", "Prahrada"],
+      "transliterations": { "Sanskrit": "प्रह्लाद", "etymology": "'Joy, delight' — the son of the golden-robed asura is named for gladness." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_hiranyakashipu"], "parentRoles": ["father"],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "The son of the asura king Hiranyakashipu, known for his staunch devotion to Vishnu — against his father's will and at the risk of his life.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Prahlada is known for his staunch devotion to the preserver deity Vishnu and was rescued from his father, the asura king Hiranyakashipu, by Narasimha, the half-man and half-lion avatar of Vishnu." } ] },
+      { "typeStatus": "mortal", "era": "satya-yuga", "eraOrdering": 1,
+        "startEvent": "Asked by his father whether Vishnu is in the pillar, he answers that he was and will be. Narasimha comes out of it and rescues him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Hiranyakashipu pointed to a pillar and asked if Vishnu was there, Prahlada replied 'Yes he was and will be', and when Hiranyakashipu struck the pillar in fury, Narasimha emerged." } ] } ],
+    "domains": [
+      { "sphereId": "devotion", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Prahlada's staunch devotion to Vishnu." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rescued-by", "personId": "hindu_vishnu_narasimha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Prahlada was rescued from his father by Narasimha, the half-man and half-lion avatar of Vishnu." } ],
+        "notes": "Non-symmetric. He is the reason the avatar comes, so the edge is as load-bearing as his father's." },
+      { "kind": "persecuted-by", "personId": "hindu_hiranyakashipu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Prahlada's rescue from his father the asura king." } ], "notes": "Reciprocal of the in-batch edge on his father's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Prahlada is the Vishnu-devoted son of the asura king Hiranyakashipu, whose answer about the pillar brings Narasimha out of it and who is rescued by him.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Prahlada, of Hiranyakashipu and of Narasimha." } ], "weight": "high" } ],
+    "notes": "He is the founding figure of the bhakti tradition's self-understanding — the devotee whose devotion is stronger than his birth, his father and his own safety — and one of the most widely told stories in the religion. The registry did not hold him. He is filed as 'mortal' although born an asura, because the tradition's whole interest in him is that what he is by birth is not what he is."
+  },
+  {
+    "id": "hindu_hiranyaksha",
+    "name": { "primary": "Hiranyaksha", "alt": ["Hiranyaksa"],
+      "transliterations": { "Sanskrit": "हिरण्याक्ष", "etymology": "'Golden-eyed', from hiranya, 'gold', and aksha, 'eye' — the pair with his brother's 'golden-robed'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "slain", "parentIds": ["hindu_kashyapa", "hindu_diti"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "Son of Kashyapa and Diti and brother of Hiranyakashipu, conceived at the same inauspicious hour and likewise a fearsome asura.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyakashipu and Hiranyaksha were both sons of Rishi Kashyapa and Diti, conceived at a very inauspicious time, and both turned out to be fearsome, evil Asuras." } ] },
+      { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 1,
+        "startEvent": "He abducts Bhudevi, the earth, and takes her into the ocean, plunging the three worlds into chaos; Vishnu kills him in the form of Varaha, the boar.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyaksha was killed by Vishnu in the form of Varaha, when he abducted Bhoodevi and took her into the ocean, plunging the three worlds into chaos." } ] } ],
+    "domains": [
+      { "sphereId": "asuric-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hiranyaksha as the asura who abducted the earth." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_hiranyakashipu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as brothers, sons of Kashyapa and Diti." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "slain-by", "personId": "hindu_vishnu_varaha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hiranyaksha was killed by Vishnu in the form of Varaha, when he abducted Bhoodevi and took her into the ocean." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Varaha record — an avatar that, like Narasimha, exists for one killing that the corpus did not hold the object of." },
+      { "kind": "abducted", "personId": "hindu_prithvi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: he abducted Bhoodevi and took her into the ocean, plunging the three worlds into chaos." } ],
+        "notes": "Bhudevi, the earth goddess, is in the corpus as `hindu_prithvi`, which the sweep confirmed by matching 'Bhudevi' to that record. The edge is non-symmetric, so nothing is written onto it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hiranyaksha is the asura brother of Hiranyakashipu who abducts the earth into the ocean and is killed by Vishnu as Varaha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hiranyaksha and of the Varaha avatar." } ], "weight": "high" } ],
+    "notes": "Two brothers, two avatars, two killings, and the corpus held both avatars and neither brother. Put beside Vritra and Mahishasura, that is four gods in this tradition whose defining act had no object in the registry."
+  },
+  {
+    "id": "hindu_mahabali",
+    "name": { "primary": "Mahabali", "alt": ["Bali", "Bali Chakravarti", "Mahabali the asura king"],
+      "transliterations": { "Sanskrit": "महाबलि", "etymology": "'Great Bali'; bali is 'offering, tribute', and the name is read both as 'the great offering' and as a personal name." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "banished-to-the-netherworld", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "treta-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "treta-yuga", "eraOrdering": 0,
+      "startEvent": "The asura king to whom Vamana, the dwarf, comes asking for three steps of land. His guru Shukracharya warns him that granting it will destroy him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vamana Deva requested three steps of land from Bali, which Sukracharya warned would lead to Bali's destruction." } ] },
+      { "typeStatus": "deity", "era": "treta-yuga", "eraOrdering": 1,
+        "startEvent": "He refuses to go back on his promise. Vamana then grows, and covers the earth, the sky and all three worlds with two steps.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bali refused to go back on his promise, and Vamana Deva grew in size, covering the earth, sky, and all three worlds with his two steps." } ] } ],
+    "domains": [
+      { "sphereId": "asuric-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bali as the asura king from whom Vamana requests three steps of land." } ] },
+      { "sphereId": "keeping-of-promises", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bali refused to go back on his promise despite his guru's warning that it would destroy him." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "overcome-by", "personId": "hindu_vamana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vamana's three steps and Bali's refusal to break his promise." } ], "notes": "Reciprocated in-batch by Vamana's edge." },
+      { "kind": "advised-by", "personId": "hindu_shukra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sukracharya warned that granting the three steps would lead to Bali's destruction." } ], "notes": "In-batch, and the warning he ignores." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mahabali is the asura king who grants Vamana three steps of land against his guru's warning and will not break his promise, and is overcome when Vamana covers the three worlds in two steps.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bali, of Vamana and of Shukracharya's warning." } ], "weight": "high" } ],
+    "notes": "The id is `hindu_mahabali` and not `hindu_bali`, because the corpus ALREADY HOLDS `hindu_vali` — the vanara king of the Ramayana, a different person entirely — and the sweep for 'Bali' matched that record, which is exactly the false hit this id prevents. vitalStatus records what the story actually does to him rather than a death, because he is not killed: the tradition sends him to the netherworld with a boon to return annually, and in Kerala that return is the festival of Onam. He is the asura the tradition likes, which is why this record does not flatten him into a villain."
+  },
+  {
+    "id": "hindu_vamana",
+    "name": { "primary": "Vamana", "alt": ["Vamana Deva", "Trivikrama", "Upendra"],
+      "transliterations": { "Sanskrit": "वामन", "etymology": "'Dwarf'. Trivikrama is 'of the three strides', the name of the form he takes when he grows." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "treta-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "treta-yuga", "eraOrdering": 0,
+      "startEvent": "The dwarf avatar of Vishnu, who comes to the asura king Bali and asks for three steps of land.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vamana Deva requested three steps of land from Bali, which Sukracharya warned would lead to Bali's destruction." } ] },
+      { "typeStatus": "deity", "era": "treta-yuga", "eraOrdering": 1,
+        "startEvent": "When the grant is made he grows, and covers the earth, the sky and all three worlds with two steps.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vamana Deva grew in size, covering the earth, sky, and all three worlds with his two steps." } ] } ],
+    "domains": [
+      { "sphereId": "cosmic-measurement", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vamana covering the earth, sky and three worlds with two steps." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "overcame", "personId": "hindu_mahabali",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three steps and of Bali's grant." } ], "notes": "Reciprocal of the in-batch edge on Bali's record." },
+      { "kind": "avatar-of", "personId": "hindu_vishnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vamana among the ten avatars of Vishnu, from Matsya to Kalki." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Vishnu record. The corpus files Matsya, Varaha, Narasimha, Rama, Krishna and Balarama as separate records already, so this follows the established treatment rather than introducing one." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vamana is the dwarf avatar of Vishnu who asks Bali for three steps of land and covers the three worlds in two.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vamana, of Bali and of the Dashavatara." } ], "weight": "high" } ],
+    "notes": "Of the ten avatars the corpus held six — Matsya, Varaha, Narasimha, Rama, Krishna and Balarama. This adds a seventh. Kurma, Parashurama and Kalki remain BLOCKED census rows: the searches that returned Vamana returned those three only as items in a list, with no treatment attached, and a record built from a list entry would be a name with nothing behind it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE LUNAR DYNASTY ABOVE THE KURUS
+================================================================================
+
+The corpus held the Kauravas' line back as far as Pratipa and the Yadavas back
+as far as Shura, and nothing above either — so the two houses the Mahabharata is
+about had no common ancestor in the registry and no reason to be kin. They are
+both descended from Yayati, by two different wives, and the quarrel between
+those two wives is where the split begins.
+
+```json
+[
+  {
+    "id": "hindu_shukra",
+    "name": { "primary": "Shukra", "alt": ["Shukracharya", "Sukracarya", "Usanas Kavya"],
+      "transliterations": { "Sanskrit": "शुक्र", "etymology": "'Bright, clear', and the name of the planet Venus. Acharya is 'teacher'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The guru of the asuras, and the father of Devayani.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati had two wives, Sharmishtha, born of the Daitya Vrishaparvan, and Devayani, daughter of Shukracharya." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "When Devayani complains of Yayati's relationship with Sharmishtha, he curses Yayati to old age in the prime of life — and then relents so far as to decree that the old age may be transferred to anyone willing to take it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: on hearing of his relationship with Sharmishtha, Devayani complained to her father, who cursed Yayati to old age in the prime of life but later allowed him to exchange it with his son; Shukracharya relented and decreed that he could transfer his old age to another who was willing to accept it." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 2,
+        "startEvent": "As the asuras' guru he warns the asura king Bali that granting Vamana three steps of land will destroy him. Bali grants them anyway.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vamana Deva requested three steps of land from Bali, which Sukracharya warned would lead to Bali's destruction." } ] } ],
+    "domains": [
+      { "sphereId": "preceptorship-of-the-asuras", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shukracharya as the guru who warns the asura king Bali." } ] },
+      { "sphereId": "cursing-and-boon-granting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shukracharya's curse on Yayati and his relenting decree." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "advisor-of", "personId": "hindu_mahabali",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sukracharya's warning to Bali about the three steps." } ], "notes": "Reciprocal of the in-batch edge on Bali's record." },
+      { "kind": "cursed", "personId": "hindu_yayati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Devayani complained to her father, who cursed Yayati to old age in the prime of life." } ], "notes": "In-batch and directional." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shukra is the guru of the asuras and the father of Devayani, who curses Yayati with premature old age and warns Bali against granting Vamana's three steps.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shukracharya, of Yayati and of the Vamana story." } ], "weight": "high" } ],
+    "notes": "He is also one of the Navagraha, the planet Venus, and the corpus holds none of the nine. That is a census row rather than a record here: this figure is ingested for his narrative role in the two stories this batch tells, and the graha aspect is not written because the treatments consulted do not treat it. A Navagraha pass is the obvious companion to this lane."
+  },
+  {
+    "id": "hindu_nahusha",
+    "name": { "primary": "Nahusha", "alt": ["Nahusa"],
+      "transliterations": { "Sanskrit": "नहुष", "etymology": "Connected with a word for neighbour or fellow-man; the name is old and its sense disputed." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A king of the lunar dynasty, and the father of Yayati.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati, son of Nahusha, was an eminent king of the lunar dynasty." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nahusha as a king of the lunar dynasty and father of Yayati." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "hindu_yayati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati, son of Nahusha, was an eminent king of the lunar dynasty." } ],
+        "notes": "In-batch, and also carried in Yayati's parentIds; the edge is here so that the head of the recovered line is reachable from it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nahusha is a king of the lunar dynasty and the father of Yayati.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yayati as the son of Nahusha." } ], "weight": "medium" } ],
+    "notes": "He is famous for a much larger story — taking Indra's throne during Indra's exile, being carried in a palanquin by rishis, kicking Agastya and being cursed into a serpent for it — and none of that is written here, because the treatment consulted gives his son and his dynasty and nothing else. A record that is one line long where the tradition has ten pages is an honest record of what was retrieved, and the census says so."
+  },
+  {
+    "id": "hindu_yayati",
+    "name": { "primary": "Yayati", "alt": ["Yayati Nahusha"],
+      "transliterations": { "Sanskrit": "ययाति", "etymology": "From a root meaning to go or travel; 'the traveller', or one who goes on." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_nahusha"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "An eminent king of the lunar dynasty, son of Nahusha, with two wives: Devayani, the daughter of Shukracharya, and Sharmishtha, a daughter of the Daitya king Vrishaparvan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati, son of Nahusha, was an eminent king of the lunar dynasty; Yayati had two wives, Sharmishtha, born of the Daitya Vrishaparvan, and Devayani, daughter of Shukracharya." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Devayani learns of his relationship with Sharmishtha and complains to her father, who curses him to old age in the prime of life.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: on hearing of his relationship with Sharmishtha, Devayani complained to her father, who cursed Yayati to old age in the prime of life." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 2,
+        "startEvent": "Shukra relents so far as to allow the old age to be transferred to anyone willing to take it. Only Puru, Sharmishtha's son, accepts it, and Yayati regains his youth.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shukracharya relented and decreed that he could transfer his old age to another who was willing to accept it, and only Puru, the third son of Sharmishtha, accepted the old age of his father, who thereby regained his youth." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yayati as an eminent king of the lunar dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_devayani",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yayati's two wives, Devayani and Sharmishtha." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "spouse", "personId": "hindu_sharmishtha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yayati's two wives." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "cursed-by", "personId": "hindu_shukra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shukracharya's curse of premature old age." } ], "notes": "Reciprocal of the in-batch edge on Shukra's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yayati is the lunar-dynasty king cursed by Shukracharya with premature old age over his relationship with Sharmishtha, who transfers the age to his son Puru and regains his youth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yayati, of Devayani and Sharmishtha, and of the curse." } ], "weight": "high" } ],
+    "notes": "This is the point at which the two halves of the Mahabharata become one family. Devayani's son Yadu founds the Yadava line, which is Krishna's; Sharmishtha's son Puru founds the line that becomes the Kurus. The corpus held Krishna and the Kurus, and no fact that made them relatives. The story is also the tradition's clearest statement about desire — a king who takes his son's youth and, in the fuller telling, finds at the end of another thousand years that appetite is not satisfied by feeding it — and the record stops at what the citation supports."
+  },
+  {
+    "id": "hindu_devayani",
+    "name": { "primary": "Devayani", "alt": ["Devayani Bhargavi"],
+      "transliterations": { "Sanskrit": "देवयानी", "etymology": "'She who goes to the gods', or 'leading to the gods' — devayana is the path of the gods." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["hindu_shukra"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daughter of Shukracharya and one of Yayati's two wives, and the mother of Yadu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati had two wives, Sharmishtha, born of the Daitya Vrishaparvan, and Devayani, daughter of Shukacarya; Devayani begot Yadu." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "On learning of Yayati's relationship with Sharmishtha she complains to her father, and the curse of premature old age follows.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: upon hearing of his relationship with Sharmishtha, Devayani complained to her father, who in turn cursed Yayati to old age in the prime of life." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_yayati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yayati's two wives." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Devayani is the daughter of Shukracharya, a wife of Yayati and the mother of Yadu, whose complaint brings the curse on her husband.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Devayani, of Yayati and of the curse." } ], "weight": "high" } ],
+    "notes": "The relationship between Devayani and Sharmishtha — the brahmin's daughter and the princess who becomes her servant — is one of the sharpest treatments of caste and humiliation in the epic literature, and this record does not narrate it, because the treatment consulted gives the marriage, the complaint and the son. No edge is drawn between the two women: the sources consulted make them co-wives and the earlier part of their story is not in hand, and 'rival' would be an interpretation rather than a citation."
+  },
+  {
+    "id": "hindu_sharmishtha",
+    "name": { "primary": "Sharmishtha", "alt": ["Sarmistha", "Sharmistha"],
+      "transliterations": { "Sanskrit": "शर्मिष्ठा", "etymology": "'Most fortunate' or 'best sheltered', from sharman, 'shelter, refuge, joy'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daughter of the Daitya king Vrishaparvan and one of Yayati's two wives. She bore three sons — Druhyu, Anu and Puru.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yayati had two wives, Sharmishtha, born of Diti and the Daitya Vrashparvan, and Devayani, daughter of Shukacarya; Sharmishtha begot Puru, and Sharmishtha bore three sons, Druhyu, Anudruhyu and Puru." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_yayati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yayati's two wives." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sharmishtha is the daughter of the Daitya king Vrishaparvan, a wife of Yayati and the mother of Puru, through whom the Kuru line descends.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sharmishtha and of Yayati's sons." } ], "weight": "high" } ],
+    "notes": "Her father Vrishaparvan is not ingested and is a BLOCKED census row: the treatment names him as her father and as a Daitya king and says nothing further. Her other two sons, Druhyu and Anu, are likewise census rows — they are named in the same sentence and are the eponyms of two more of the five lunar-dynasty branches, which makes them worth a pass of their own rather than three names entered off one list."
+  },
+  {
+    "id": "hindu_puru",
+    "name": { "primary": "Puru", "alt": ["Pooru"],
+      "transliterations": { "Sanskrit": "पुरु", "etymology": "'Much, many, abundant'. The Purus are a people named in the Rigveda, and the dynasty takes its name from this king." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_yayati", "hindu_sharmishtha"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The third son of Sharmishtha, and the only one of Yayati's sons willing to accept his father's old age — which he does, so that Yayati regains his youth. It is from Puru's line that the later dynasties descend, and the Kuru line with them.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: only Puru, the third son of Sharmistha, accepted the old age of his father, who thereby regained his youth; it is from the line of Puru that the later dynasties would descend, eventually leading to the Kuru dynasty and the figures associated with Hastinapura and Kurukshetra in the Mahabharata." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Puru as the ancestor of the line leading to the Kuru dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_yadu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sharmishtha begot Puru and Devayani begot Yadu, both by Yayati." } ],
+        "notes": "Reciprocated in-batch. Half-brothers strictly — same father, different mothers — and the kind chosen is the plain one because the corpus's SYM vocabulary carries both 'sibling' and 'half sibling' and the treatment consulted states the shared father without using either term. The parentRoles on both records carry the actual mothers, which is where the distinction is visible." },
+      { "kind": "took-the-old-age-of", "personId": "hindu_yayati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: only Puru accepted the old age of his father, who thereby regained his youth." } ],
+        "notes": "A kind invented for one story, because no standing kind describes it and the transaction is the only thing this figure is remembered for." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Puru is Yayati's son by Sharmishtha, the only son willing to take his father's old age, and the ancestor of the line that becomes the Kuru dynasty.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Puru, of Yayati and of the lunar dynasty." } ], "weight": "high" } ],
+    "notes": "The Kuru dynasty the corpus holds forty-odd records from starts here, and the corpus's oldest Kuru record was Pratipa. A registry whose subject is descent should be able to walk up from Yudhishthira past Pratipa to somebody, and until this batch it could not."
+  },
+  {
+    "id": "hindu_yadu",
+    "name": { "primary": "Yadu", "alt": [],
+      "transliterations": { "Sanskrit": "यदु", "etymology": "An old tribal name; the Yadus are named in the Rigveda alongside the Purus." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_yayati", "hindu_devayani"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Yayati's son by Devayani, and the founder of the Yadava dynasty.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Devayani begot Yadu, and Yadu became the founder of the Yadava dynasty." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yadu as founder of the Yadava dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_puru",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Puru and Yadu as sons of Yayati by his two wives." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yadu is Yayati's son by Devayani and the founder of the Yadava dynasty.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yadu and of the lunar dynasty." } ], "weight": "high" } ],
+    "notes": "Krishna is a Yadava — the corpus holds him, his father Vasudeva, his mother Devaki, his brother Balarama, his sister Subhadra and his half-sister's marriage into the Pandavas — and it did not hold the man the house is named after. With this record and Puru's, the two great families of the epic are finally each other's cousins in the data rather than only in the story."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. KRISHNA'S ANTAGONISTS
+================================================================================
+
+The corpus holds Krishna, his parents, his brother, his sister and the uncle he
+kills — Kamsa is there. It holds none of the men who go to war over Kamsa's
+death, and not the woman Krishna elopes with, which is the act that starts it.
+
+```json
+[
+  {
+    "id": "hindu_jarasandha",
+    "name": { "primary": "Jarasandha", "alt": ["Jarasandh", "Magadharaja"],
+      "transliterations": { "Sanskrit": "जरासन्ध", "etymology": "'Joined by Jara' — jara being the demoness said to have fitted together the two halves he was born as, and sandhi 'joining'. The name records his birth." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "dvapara-yuga" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 0,
+      "startEvent": "The invincible king of Magadha, whose allies in the region included Shishupala — who served as commander of his army — and Bhagadatta.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jarasandha was the invincible king of Magadha; Jarasandha had several allies in the region, including Shishupala and Bhagadatta, and Shishupala served him as the commander of his army." } ] },
+      { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 1,
+        "startEvent": "Bhima, Arjuna and Krishna come to his capital Rajagriha disguised as brahmins, and he receives them as custom required.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Bhima, Arjuna and Krishna, disguised as Brahmins, arrived at Rajagriha, the capital of Magadha, Jarasandha welcomed them, as was the custom of the time." } ] },
+      { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 2,
+        "startEvent": "Krishna manoeuvres him into a wrestling bout with Bhima. It lasts thirteen days; at the end Bhima breaks his back across his knee and tears his body in two.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Krishna tricked Jarasandha into having a wrestling bout with Bhima, an agonizing battle that stretched for 13 long days, and at the end Bhima broke Jarasandha's backbone with his knee and tore apart his body into two." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jarasandha as the invincible king of Magadha." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jarasandha's alliances and his wrestling bout with Bhima." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "hindu_bhima",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: at the end of a thirteen-day bout Bhima broke Jarasandha's backbone with his knee and tore his body in two." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Bhima record. The corpus held the wrestler and not the man he wrestled for thirteen days." },
+      { "kind": "ally", "personId": "hindu_shishupala",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jarasandha had several allies in the region, including Shishupala, who served him as the commander of his army." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ally", "personId": "hindu_bhagadatta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Shishupala and Bhagadatta among Jarasandha's allies." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jarasandha is the invincible king of Magadha, allied with Shishupala and Bhagadatta, killed by Bhima in a thirteen-day wrestling bout engineered by Krishna.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jarasandha, of the wrestling bout and of his alliances." } ], "weight": "high" } ],
+    "notes": "He is the reason the Pandavas can hold the rajasuya at all — the sacrifice requires that no rival emperor be left standing — and the corpus held the sacrifice's beneficiaries and not the obstacle. His enmity with Krishna begins with Kamsa's death, and Kamsa IS in the corpus, which makes this a gap with an existing edge already pointing at it."
+  },
+  {
+    "id": "hindu_shishupala",
+    "name": { "primary": "Shishupala", "alt": ["Sisupala", "Chedi-raja"],
+      "transliterations": { "Sanskrit": "शिशुपाल", "etymology": "'Child-protector', from shishu, 'child', and pala, 'guardian'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "dvapara-yuga" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 0,
+      "startEvent": "King of Chedi, an ally of Jarasandha and the commander of his army.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jarasandha had several allies in the region, including Shishupala and Bhagadatta, and Shishupala served him as the commander of his army." } ] },
+      { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 1,
+        "startEvent": "Rukmini had been promised to him. When Krishna elopes with her, Shishupala, her brother Rukmi and Jarasandha are all enraged.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Krishna eloped with Rukmini, it enraged all — Shishupala, Rukma, Rukmini's brother, and Jarasandha himself." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shishupala as a regional king and commander of Jarasandha's army." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "hindu_jarasandha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shishupala among Jarasandha's allies and as his army's commander." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "commander-of-the-army-of", "personId": "hindu_jarasandha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shishupala served Jarasandha as the commander of his army." } ],
+        "notes": "A second, non-symmetric edge, because the office and the alliance are different facts." },
+      { "kind": "betrothed-to", "personId": "hindu_rukmini",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Krishna eloped with Rukmini it enraged Shishupala, Rukma and Jarasandha." } ],
+        "notes": "In-batch. The betrothal he loses is the origin of everything he does afterwards." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shishupala is the king of Chedi, commander of Jarasandha's army, and the man Rukmini was promised to before Krishna eloped with her.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shishupala, of Jarasandha and of Rukmini's elopement." } ], "weight": "high" } ],
+    "notes": "He is best known for the hundred offences: Krishna is said to have promised to forgive him a hundred insults and to have beheaded him with the Sudarshana discus at the hundred-and-first, at the rajasuya sacrifice. The treatment consulted gives the alliance, the command and the elopement and does not give the beheading or the count, so the record does not. That is a deliberate stop, and the count is a census note rather than a claim."
+  },
+  {
+    "id": "hindu_rukmini",
+    "name": { "primary": "Rukmini", "alt": ["Rukmini Devi"],
+      "transliterations": { "Sanskrit": "रुक्मिणी", "etymology": "From rukma, 'gold, golden ornament' — the feminine of the same word that gives her brother his name." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "dvapara-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "dvapara-yuga", "eraOrdering": 0,
+      "startEvent": "Promised to Shishupala, she is instead carried off by Krishna — an elopement that enrages Shishupala, her brother Rukmi and Jarasandha alike.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Krishna eloped with Rukmini, which enraged all — Shishupala, Rukma, Rukmini's brother, and Jarasandha himself." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rukmini as the woman Krishna eloped with against her betrothal to Shishupala." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "queen-consort-of", "personId": "hindu_krishna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Krishna's elopement with Rukmini." } ],
+        "notes": "Non-symmetric rather than 'spouse', so nothing is written onto the pre-existing Krishna record — which the corpus holds with no wife at all." },
+      { "kind": "sibling", "personId": "hindu_rukmi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Rukma as Rukmini's brother." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "betrothed-to", "personId": "hindu_shishupala",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the betrothal Krishna's elopement broke." } ], "notes": "Reciprocal of the in-batch edge on Shishupala's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Rukmini is the princess betrothed to Shishupala whom Krishna elopes with, enraging Shishupala, her brother Rukmi and Jarasandha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rukmini and of the elopement." } ], "weight": "high" } ],
+    "notes": "She is worshipped as a form of Lakshmi across western India and is Krishna's principal queen, and the corpus held Krishna without her. Type is recorded as 'deity' to match how the corpus files Krishna and Radha's counterpart figures; the record does not enumerate her other seven co-queens, who are census rows."
+  },
+  {
+    "id": "hindu_rukmi",
+    "name": { "primary": "Rukmi", "alt": ["Rukma"],
+      "transliterations": { "Sanskrit": "रुक्मी", "etymology": "'Golden, wearing gold' — the masculine of his sister's name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "dvapara-yuga" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 0,
+      "startEvent": "Rukmini's brother, who had promised her to Shishupala and is enraged by Krishna's elopement with her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Krishna eloped with Rukmini, it enraged all — Shishupala, Rukma, Rukmini's brother, and Jarasandha himself." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_rukmini",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Rukma as Rukmini's brother." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Rukmi is Rukmini's brother, enraged by Krishna's elopement with her.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the elopement." } ], "weight": "medium" } ],
+    "notes": "Short, because the citation is short. He is ingested rather than blocked because he is named in the treatment as an individual with a stake in the event, which is the minimum this programme requires, and because a marriage dispute with three enraged parties is not properly recorded with two of them."
+  },
+  {
+    "id": "hindu_bhagadatta",
+    "name": { "primary": "Bhagadatta", "alt": ["Bhagdatt"],
+      "transliterations": { "Sanskrit": "भगदत्त", "etymology": "'Given by Bhaga', a theophoric name from the Vedic god Bhaga, who is not in this corpus and is a census row." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "dvapara-yuga" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "dvapara-yuga", "eraOrdering": 0,
+      "startEvent": "A regional king counted among Jarasandha's allies.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jarasandha had several allies in the region, including Shishupala and Bhagadatta." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bhagadatta among Jarasandha's regional allies." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "hindu_jarasandha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Bhagadatta among Jarasandha's allies." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bhagadatta is a regional king allied to Jarasandha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Jarasandha's alliances." } ], "weight": "medium" } ],
+    "notes": "He is the king of Pragjyotisha who fights on the Kaurava side on an elephant and is killed by Arjuna, and the record says none of that, because the treatment consulted names him only as an ally of Jarasandha. The record is the citation and not the recollection; the rest is a census note."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE MISSING HALF OF THE RAMAYANA
+================================================================================
+
+The corpus held twenty-odd Ramayana figures — Rama, Sita, Lakshmana, Bharata,
+Shatrughna, Dasharatha, Kausalya, Sumitra, Hanuman, Sugriva, Vali, Jatayu,
+Sampati, Ravana, Kumbhakarna, Vibhishana, Indrajit and their parents — and not
+the people who make the plot happen. Eleven records: the queen whose boon sends
+Rama to the forest and the maid who puts it in her head; Ravana's wife, sister
+and agent; the demoness and the woman-turned-stone of the opening book; the two
+rishis who are each other's arch-enemies; and the man who wrote it.
+
+```json
+[
+  {
+    "id": "hindu_kaikeyi",
+    "name": { "primary": "Kaikeyi", "alt": ["Kaikeyi of Kekaya"],
+      "transliterations": { "Sanskrit": "कैकेयी", "etymology": "'She of Kekaya' — like Gandhari's, the name is the country she came from." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Queen of Ayodhya and mother of Bharata. King Dasharatha granted her two boons after she saved his life in a battle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: King Dasaratha granted Kaikeyi two boons after she saved his life during a battle." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Her maid Manthara poisons her mind with the idea that the throne belongs by right to her son Bharata and not to Rama. She then calls in the two boons: that Bharata be crowned, and that Rama be sent into exile for fourteen years — long enough for Bharata to establish his rule.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Manthara, Kaikeyi's maid, poisoned Kaikeyi's mind with the idea that the throne rightfully belonged to her son Bharata and not to Rama; Kaikeyi asked for two boons — first, that Bharata should be crowned as king, and second, that Rama should be sent on exile for fourteen years; the fourteen-year exile ensured that Rama would be away long enough for Bharata to firmly establish his rule in Ayodhya." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 2,
+        "startEvent": "It does not work. Bharata is appalled by his mother and refuses the throne, ruling Ayodhya as Rama's representative until Rama comes back.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bharata was deeply upset with his mother and refused to accept the throne, ruling Ayodhya as Rama's representative until Rama returned." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kaikeyi as a queen of Dasharatha and mother of Bharata." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "queen-consort-of", "personId": "hindu_dasharatha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Dasaratha granted Kaikeyi two boons after she saved his life during a battle." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Dasharatha record. The corpus already held two of his three queens, Kausalya and Sumitra, and not this one." },
+      { "kind": "mother-of", "personId": "hindu_bharata_ramayana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Manthara persuaded Kaikeyi that the throne belonged to her son Bharata, and Bharata was deeply upset with his mother and refused the throne." } ],
+        "notes": "Non-symmetric and recorded as a relation, because the corpus holds Bharata with `parentIds` naming Dasharatha alone. The same asymmetry appeared in lane 15 with Sohrab: the corpus records the father and not the mother, and this batch supplies the mother without mutating the record." },
+      { "kind": "exiled", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kaikeyi's second boon was that Rama should be sent on exile for fourteen years." } ],
+        "notes": "Non-symmetric. This single edge is the Ramayana: the corpus held the exiled and not the exiler." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kaikeyi is Dasharatha's queen and Bharata's mother, who calls in two boons to have Bharata crowned and Rama exiled for fourteen years.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kaikeyi, of Manthara and of the two boons." } ], "weight": "high" } ],
+    "notes": "This is lane 14's five-of-six pattern in its worst form. Dasharatha has three queens. The corpus held Kausalya and Sumitra — the mothers of Rama and of Lakshmana, that is, the two whose sons are already in the registry — and not Kaikeyi, whose act is the reason there is a story. A corpus that adds people because other people it holds are related to them will always produce this shape, and it is worth naming as a mechanism rather than as a run of bad luck."
+  },
+  {
+    "id": "hindu_manthara",
+    "name": { "primary": "Manthara", "alt": [],
+      "transliterations": { "Sanskrit": "मन्थरा", "etymology": "'Crooked, bent, slow' — the name describes the hunchback the tradition gives her." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Kaikeyi's maid, who poisons her mistress's mind with the idea that the throne of Ayodhya rightfully belongs to Bharata and not to Rama, and presses her to ask for Ayodhya for Bharata and a fourteen-year exile for Rama.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Manthara, Kaikeyi's maid, poisoned Kaikeyi's mind with the idea that the throne rightfully belonged to her son Bharata and not to Rama; 'Ayodhya for Bharata and a fourteen-year exile for Rama'." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "servant-of", "personId": "hindu_kaikeyi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Manthara as Kaikeyi's maid." } ], "notes": "In-batch." },
+      { "kind": "incited", "personId": "hindu_kaikeyi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Manthara poisoned Kaikeyi's mind with the idea that the throne rightfully belonged to Bharata." } ],
+        "notes": "A second, separate edge, because the service and the incitement are different facts and only the second one matters to the plot." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Manthara is Kaikeyi's maid, who persuades her that the throne belongs to Bharata and that Rama should be exiled for fourteen years.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Manthara and of Kaikeyi's boons." } ], "weight": "high" } ],
+    "notes": "A servant with no title, no lineage and no cult, who is nonetheless the first cause of the longest story in the tradition. She is exactly the kind of figure a registry built outward from famous names will never reach, which is the argument for censusing a tradition by its plot rather than by its pantheon."
+  },
+  {
+    "id": "hindu_mandodari",
+    "name": { "primary": "Mandodari", "alt": [],
+      "transliterations": { "Sanskrit": "मन्दोदरी", "etymology": "'Soft-bellied', from manda, 'soft, slow', and udara, 'belly'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Queen consort of Ravana, king of Lanka; described as beautiful, pious and righteous.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mandodari was the queen consort of Ravana, the king of Lanka, described as beautiful, pious, and righteous." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "She advises Ravana, repeatedly, to give Sita back to Rama. The advice falls on deaf ears.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mandodari repeatedly advises Ravana to return Sita to Rama, but her advice falls on deaf ears." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mandodari as Ravana's queen consort." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "queen-consort-of", "personId": "hindu_ravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mandodari was the queen consort of Ravana, the king of Lanka." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ravana record, which the corpus holds with parents and brothers and no wife." },
+      { "kind": "counselled", "personId": "hindu_ravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mandodari repeatedly advises Ravana to return Sita to Rama, but her advice falls on deaf ears." } ],
+        "notes": "A second edge, because the marriage is not the interesting fact — the refused counsel is. The corpus holds Vibhishana, who gives Ravana the same advice and defects when it is refused; it did not hold the person who gives it first and stays." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mandodari is Ravana's queen consort, pious and righteous, who repeatedly advises him to return Sita to Rama and is not heeded.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mandodari and of Ravana." } ], "weight": "high" } ],
+    "notes": "She is counted among the panchakanya, the five women of the invocation recited for good fortune, along with Ahalya — also added in this batch — Draupadi, Sita and Tara. The corpus held Draupadi and Sita, and until now neither of the other two. The list itself is a census note rather than a claim on this record, because the treatment consulted does not give it."
+  },
+  {
+    "id": "hindu_shurpanakha",
+    "name": { "primary": "Shurpanakha", "alt": ["Surpanakha", "Chandranakha"],
+      "transliterations": { "Sanskrit": "शूर्पणखा", "etymology": "'She whose nails are like winnowing-baskets', from shurpa, 'winnowing basket', and nakha, 'nail' — which makes the mutilation of her face a grim pun on the name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["hindu_vishrava", "hindu_kaikesi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Ravana's sister. Rejected by Rama, she attacks Sita, and Lakshmana cuts off her ears and nose.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Shurpanakha attacked Sita after being rejected by Rama, Lakshmana cut out Shurpanakha's ears and nose." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "She goes to Ravana and proposes that he steal Sita, Rama's beautiful wife. He does.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shurpanakha approached Ravana and proposed that he steal Sita, Rama's beautiful wife." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sister-of", "personId": "hindu_ravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shurpanakha approached Ravana, her brother, and proposed that he steal Sita." } ],
+        "notes": "Non-symmetric rather than 'sibling', so nothing is written onto the pre-existing Ravana, Kumbhakarna and Vibhishana records — all three of which the corpus holds with the same parents this record names." },
+      { "kind": "mutilated-by", "personId": "hindu_lakshmana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Lakshmana cut out Shurpanakha's ears and nose." } ], "notes": "Non-symmetric." },
+      { "kind": "incited", "personId": "hindu_ravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shurpanakha proposed to Ravana that he steal Sita." } ],
+        "notes": "The edge the whole war hangs on. The corpus held the abductor and the abducted and not the woman who told him to do it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shurpanakha is Ravana's sister, mutilated by Lakshmana after she attacks Sita, who then persuades Ravana to abduct Sita.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shurpanakha, of Maricha and of Ravana's enmity with Rama." } ], "weight": "high" } ],
+    "notes": "Her parentIds point at `hindu_vishrava` and `hindu_kaikesi`, the two records the corpus already uses for Ravana, Kumbhakarna and Vibhishana, so she joins the family in the data rather than standing beside it. The germination of Ravana's enmity is in this figure and in Maricha, and the registry held neither."
+  },
+  {
+    "id": "hindu_tataka",
+    "name": { "primary": "Tataka", "alt": ["Tadaka", "Taraka"],
+      "transliterations": { "Sanskrit": "ताटका", "etymology": "A personal name of disputed derivation; the epic offers no gloss." } },
+    "type": "numen", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A yaksha woman, cursed to become a rakshasa, who gave birth to the rakshasa Maricha. Rama kills her with a single shot from his bow.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tataka was a yaksha woman who gave birth to the rakshasa Marica and was herself cursed to become a rakshasa, and Rama killed her with a single shot from his bow." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Rama killed Tataka with a single shot from his bow." } ],
+        "notes": "Non-symmetric. She is the first being Rama kills, which makes this the opening edge of his whole career and one the corpus did not have." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tataka is a yaksha woman cursed into a rakshasa, mother of Maricha, killed by Rama with one arrow.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tataka and of the Bala Kanda." } ], "weight": "high" } ],
+    "notes": "Type is 'numen' because the sources make her a yaksha by birth and a rakshasa by curse, neither of which is a human being; vitalStatus records the killing. The curse that transformed her is stated and its author is not, because the treatment consulted does not name him."
+  },
+  {
+    "id": "hindu_maricha",
+    "name": { "primary": "Maricha", "alt": ["Marica", "Mareecha"],
+      "transliterations": { "Sanskrit": "मारीच", "etymology": "From marichi, 'a ray of light, a mote'; the name is also read as a patronymic." } },
+    "type": "numen", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "slain", "parentIds": ["hindu_tataka"], "parentRoles": ["mother"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A rakshasa, the son of Tataka, who had fought Rama in the forest long before.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tataka was a yaksha woman who gave birth to the rakshasa Marica; Rama recognized Maricha, the son of Tataka whom he had fought in the forest long ago." } ] },
+      { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "He obeys Ravana's command and turns himself into a golden deer, to draw Rama away from Sita. Rama recognises him, and understands that Sita is in danger.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Maricha obeyed Ravana's command and transformed himself into a golden deer; recognizing Maricha, the son of Tataka whom he had fought in the forest long ago, Rama realized Sita was in terrible danger." } ] } ],
+    "domains": [
+      { "sphereId": "shape-shifting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Maricha transforming himself into a golden deer at Ravana's command." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "agent-of", "personId": "hindu_ravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Maricha obeyed Ravana's command and transformed himself into a golden deer." } ], "notes": "Non-symmetric." },
+      { "kind": "lured", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the golden deer luring Rama away from Sita." } ],
+        "notes": "Non-symmetric. The abduction is only possible because of this one act, and the corpus held the abduction's three principals and not its instrument." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Maricha is the rakshasa son of Tataka who takes the form of a golden deer at Ravana's command to draw Rama away from Sita.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Maricha, of Tataka and of the golden deer." } ], "weight": "high" } ],
+    "notes": "The golden deer is the single most depicted scene in the whole Ramayana after the coronation, and the deer is a person with a name, a mother, a history with the hero and an order he did not want to obey. A corpus of figures should hold him, and this one did not."
+  },
+  {
+    "id": "hindu_ahalya",
+    "name": { "primary": "Ahalya", "alt": ["Ahilya"],
+      "transliterations": { "Sanskrit": "अहल्या", "etymology": "Usually read as 'unploughed' or 'not to be ploughed', from a-, 'not', and halya, 'of the plough'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "The wife of the sage Gautama Maharishi, seduced by the god Indra, and cursed for it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ahalya is the wife of the sage Gautama Maharishi, and Hindu scriptures describe her legend of seduction by the god Indra and her liberation from a curse by the god Rama." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "She is liberated from the curse by Rama.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ahalya's liberation from a curse by the god Rama." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_gautama_maharishi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ahalya is the wife of the sage Gautama Maharishi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "seduced-by", "personId": "hindu_indra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her legend of seduction by the god Indra." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Indra record. The corpus holds Indra; this and the Vritra edge are the two things it now knows he did." },
+      { "kind": "liberated-by", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her liberation from the curse by Rama." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahalya is the wife of Gautama Maharishi, seduced by Indra and cursed, and released from the curse by Rama.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ahalya, of Gautama Maharishi and of the Bala Kanda." } ], "weight": "high" } ],
+    "notes": "The famous form of the curse — that she was turned to stone and restored by the touch of Rama's foot — is one of several versions, and the treatment consulted says 'a curse' without specifying it. The record therefore says 'a curse'. What form it took, and whether she was complicit or deceived, are precisely the points the tradition argues about for two thousand years, and a record that picked one would be taking a side in a live argument."
+  },
+  {
+    "id": "hindu_gautama_maharishi",
+    "name": { "primary": "Gautama Maharishi", "alt": ["Gautama", "Gotama"],
+      "transliterations": { "Sanskrit": "गौतम", "etymology": "A patronymic from Gotama, an old rishi name; maharishi is 'great seer'. Not the same Gautama as the Buddha, who is a census note." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A sage, and the husband of Ahalya.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ahalya is the wife of the sage Gautama Maharishi." } ] } ],
+    "domains": [
+      { "sphereId": "vedic-sagehood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gautama Maharishi as a sage." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_ahalya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ahalya as the wife of Gautama Maharishi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gautama Maharishi is the sage who is Ahalya's husband.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ahalya and Gautama." } ], "weight": "medium" } ],
+    "notes": "Short by necessity: the treatment consulted names him as her husband and a sage, and the curse he is famous for pronouncing is attributed in the same sentence only to 'a curse'. He is one of the seven sages in most lists and one of the Rigvedic family-book poets, and the record claims neither."
+  },
+  {
+    "id": "hindu_vishvamitra",
+    "name": { "primary": "Vishvamitra", "alt": ["Viswamitra", "Vishwamitra", "Kaushika"],
+      "transliterations": { "Sanskrit": "विश्वामित्र", "etymology": "'Friend of all', from vishva, 'all', and mitra, 'friend'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A sage who comes to Dasharatha's court and takes Rama and Lakshmana away into the forest, where Rama kills Tataka. Valmiki introduces him early in the Ramayana.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vishvamitra takes Rama and Lakshmana to the forest; Valmiki introduces sage Vishvamitra in the Ramayana; Vishvamitra's reason to see Dasharatha is given in the Bala Kanda." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "He and Vasishtha have been arch-enemies since he claimed Nandini, the celestial cow, and fought a battle over her in which he was defeated.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vasishtha and Vishvamitra had been arch-enemies ever since the latter claimed Nandini the Celestial Cow and fought a battle in which Viswamitra was defeated." } ] } ],
+    "domains": [
+      { "sphereId": "vedic-sagehood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vishvamitra as the sage who takes Rama and Lakshmana to the forest." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rival", "personId": "hindu_vasishtha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vasishtha and Vishvamitra had been arch-enemies ever since the latter claimed Nandini the Celestial Cow and fought a battle in which Viswamitra was defeated." } ],
+        "notes": "Reciprocated in-batch, and 'rival' rather than 'enemy' because the feud is a contest of status between two sages rather than a war." },
+      { "kind": "escorted", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vishvamitra takes Rama and Lakshmana to the forest." } ],
+        "notes": "Non-symmetric. Everything Rama does before Ayodhya he does because this man came to his father and asked for him." },
+      { "kind": "escorted", "personId": "hindu_lakshmana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vishvamitra taking Rama and Lakshmana to the forest." } ], "notes": "Same." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vishvamitra is the sage who takes Rama and Lakshmana from Ayodhya into the forest, and the lifelong arch-enemy of Vasishtha since the dispute over the cow Nandini.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vishvamitra, of Vasishtha and of the Bala Kanda." } ], "weight": "high" } ],
+    "notes": "He is a king who becomes a brahmarishi by sheer effort, which is the tradition's one great story about mobility between the castes, and the record does not tell it because the treatments consulted give the escort and the feud. The composer of the Gayatri mantra is likewise not claimed here."
+  },
+  {
+    "id": "hindu_vasishtha",
+    "name": { "primary": "Vasishtha", "alt": ["Vashistha", "Vasistha"],
+      "transliterations": { "Sanskrit": "वसिष्ठ", "etymology": "'Most excellent, wealthiest', a superlative of vasu." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A sage, and Vishvamitra's arch-enemy since Vishvamitra claimed the celestial cow Nandini and fought a battle over her in which he was defeated.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vasishtha and Vishvamitra had been arch-enemies ever since the latter claimed Nandini the Celestial Cow and fought a battle in which Viswamitra was defeated." } ] } ],
+    "domains": [
+      { "sphereId": "vedic-sagehood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vasishtha as a sage and Vishvamitra's rival." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rival", "personId": "hindu_vishvamitra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the enmity of Vasishtha and Vishvamitra over the cow Nandini." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vasishtha is the sage who is Vishvamitra's arch-enemy, from the dispute over the celestial cow Nandini.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Vasishtha and Vishvamitra feud." } ], "weight": "medium" } ],
+    "notes": "He is the family priest of the Ikshvaku kings — which is to say Rama's own house priest — and one of the seven sages, and this record claims neither, because the treatment consulted gives him only as the other party to the feud. That is a thin record for one of the largest figures in the tradition, and the census says so rather than the record pretending otherwise."
+  },
+  {
+    "id": "hindu_valmiki",
+    "name": { "primary": "Valmiki", "alt": ["Maharishi Valmiki", "Adi Kavi"],
+      "transliterations": { "Sanskrit": "वाल्मीकि", "etymology": "From valmika, 'anthill' — the name the tradition gives him for the anthill that grew over him while he sat in meditation." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "The composer of the Ramayana, in which he introduces the sage Vishvamitra.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Valmiki is known for composing the Ramayana; Valmiki introduces sage Vishvamitra in the Ramayana." } ] } ],
+    "domains": [
+      { "sphereId": "poetry-and-composition", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Valmiki as the composer of the Ramayana." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "composed-the-story-of", "personId": "hindu_rama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Valmiki as the composer of the Ramayana." } ],
+        "notes": "Non-symmetric, and an unusual kind for this corpus: the relation between an author and his subject is not kinship, alliance or enmity, and none of the standing kinds fits it. The corpus already holds Vyasa, the Mahabharata's author, so an author record in this tradition is not a new category — only a missing one." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Valmiki composed the Ramayana.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Valmiki." } ], "weight": "high" } ],
+    "notes": "The corpus held twenty-odd characters out of this poem and not the poet, while holding Vyasa, the author of the other epic, along with his parents and his sons. That asymmetry is this lane in miniature. Valmiki's own place inside the story — sheltering the exiled Sita, raising Lava and Kusha — is not recorded here, because Lava and Kusha are BLOCKED census rows and a record should not narrate an episode whose other parties the registry does not hold."
+  }
+]
+```
