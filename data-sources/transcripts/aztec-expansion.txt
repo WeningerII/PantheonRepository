@@ -1,0 +1,1132 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Aztec/Mexica
+Eras (registered, exact): cosmogonic | chichimec-migration |
+  founding-of-tenochtitlan | triple-alliance | conquest-era | colonial
+Author pass: Aztec/Mexica held 21 records. Every one of them was a deity —
+             and the tradition's historical register, the tlatoque of
+             Tenochtitlan, was empty. The registry carried ten named Mixtec
+             lords and not one Mexica emperor.
+
+================================================================================
+THE GAP
+================================================================================
+
+A 60-name check across the WHOLE registry returned three hits and
+**fifty-seven absences**. Two distinct holes:
+
+**The pantheon.** Absent: Xolotl; Tlahuizcalpantecuhtli; Nanahuatzin and
+Tecciztecatl, the two gods who jump into the fire at Teotihuacan to make the
+fifth sun; Itzpapalotl; Cihuacoatl; Chicomecoatl and Xilonen, the mature and
+the tender maize beside a Centeotl the registry already had; Patecatl, husband
+of a Mayahuel the registry already had; Xochipilli and both his brothers;
+Tonacatecuhtli and Tonacacihuatl, the pair the Aztec sources actually name
+where modern writing says "Ometeotl".
+
+**The rulers.** Acamapichtli, Huitzilihuitl, Chimalpopoca, Itzcoatl, Moctezuma
+I, Axayacatl, Tizoc, Ahuitzotl, Moctezuma II, Cuitlahuac, Cuauhtemoc — the
+entire tlatoani line — plus Nezahualcoyotl of Texcoco and Tlacaelel, who
+arguably ran the state for fifty years without ever holding the title. None of
+them was in the registry, in a corpus that carries Egyptian pharaohs,
+Mesopotamian kings and ten Mixtec lords by their calendar names.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — every fetch is refused at the
+proxy — so research went through server-side web search and the citations name
+what was consulted: the standard reference treatments of the Mexica deities and
+rulers, and the Nahua sources they rest on (the Florentine Codex, the Leyenda
+de los Soles, the Codex Chimalpahin, the Codex Aubin, the Codex Chimalpopoca).
+No printed monograph is cited as though it had been read. Reign dates are given
+as the reference treatments give them, with the codices' disagreements stated
+rather than averaged.
+
+================================================================================
+ONE IDENTITY DECISION UP FRONT — OMETEOTL
+================================================================================
+
+The registry already holds `aztec_ometeotl`. The names under which the Aztec
+sources actually give the primordial pair are **Tonacatecuhtli and
+Tonacacihuatl**, "Lord and Lady of Our Flesh"; Ometecuhtli and Omecihuatl,
+"Two-Lord" and "Two-Lady", are the other pair of names for the same couple.
+And whether a single fused deity called Ometeotl existed at all is a live
+scholarly dispute — Richard Haly argued in 1992 that there was no Ometeotl,
+Ometecuhtli or Omecihuatl among the Aztecs and that the whole figure is a
+Trinity read into translated texts; James Maffie has answered him.
+
+This pass authors **two records, not four**: Tonacatecuhtli and Tonacacihuatl,
+each carrying Ometecuhtli/Omecihuatl among its aliases, each linked
+`counterpart-of` to the existing Ometeotl record, and each carrying a
+`variants[]` entry that states the dispute instead of resolving it.
+
+================================================================================
+AUTHORED FIGURES — I. THE LORD AND LADY OF OUR FLESH
+================================================================================
+
+```json
+[
+  {
+    "id": "aztec_tonacatecuhtli",
+    "name": { "primary": "Tonacatecuhtli", "alt": ["Tōnacātēcuhtli", "Ometecuhtli", "Ōmetēcuhtli", "Two-Lord"],
+      "transliterations": { "Nahuatl": "Tōnacātēcuhtli", "etymology": "'Lord of our flesh' or 'lord of our sustenance' — tonacayotl is both the body and the food that makes it, which is the same thought twice. Under his other name, Ometecuhtli, 'Two-Lord'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "With Tonacacihuatl, the primordial couple of the Mexica cosmogony, dwelling in Omeyocan, the Place of Duality, the highest of the thirteen heavens, and the source from which the souls of children descend to be born.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ometeotl: a binary god comprised of the husband-and-wife pair Ometecuhtli and Omecihuatl, referred to in the Aztec sources as Tonacatecuhtli and Tonacacihuatl, who ruled Omeyocan, the highest of the thirteen Aztec heavens, the Place of Duality." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Tōnacātēcuhtli", "script": "Nahuatl", "rom": "lord of our flesh" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the primordial pair as responsible for the creation of the universe." } ] },
+      { "sphereId": "sustenance", "contextTag": "lifelong", "term": { "value": "tōnacāyōtl", "script": "Nahuatl", "rom": "tonacayotl (flesh, sustenance)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tonacatecuhtli, whose name is built on the word for flesh and sustenance." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "aztec_tonacacihuatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the pair as a husband-and-wife duo ruling Omeyocan." } ],
+        "notes": "The other half. The pairing is the theology: this is a cosmos whose first principle is not one thing but two things in relation, which is what the name Omeyocan — Place of Duality — says." },
+      { "kind": "counterpart-of", "personId": "aztec_ometeotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ometeotl as the binary god comprising Ometecuhtli and Omecihuatl, named in the Aztec sources as Tonacatecuhtli and Tonacacihuatl." } ],
+        "notes": "The registry's Ometeotl record is the fused form of this pair. Whether the Aztecs had such a fused deity at all is disputed; see the variant on this record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tonacatecuhtli, also called Ometecuhtli, is the male half of the Mexica primordial couple who dwell in Omeyocan, the highest heaven, and from whom the souls of children descend.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ometeotl, Tonacatecuhtli, Tonacacihuatl and Omeyocan." } ], "weight": "high" } ],
+    "notes": "Tonacatecuhtli is half of a couple whose name means flesh and food at once — tonacayotl covers both, which tells you what the Mexica thought a body was made of. He and his wife live in Omeyocan, the thirteenth and highest heaven, and the souls of children come down from there, which is why an infant who died went back up rather than on to Mictlan. He has almost no cult and no mythology of his own: the primordial pair in this system are not gods you deal with, they are the condition that makes dealing possible.",
+    "variants": [
+      { "id": "aztec_ometeotl_dispute",
+        "claim": "Whether a fused deity called Ometeotl existed among the Aztecs is disputed.",
+        "description": "Some scholars read Ometeotl as a single dual god; others — Richard Haly in 1992 most sharply — argue that there was no Ometeotl, Ometecuhtli or Omecihuatl among the Aztecs at all, and that the figure is a deific multiplicity on the model of the Trinity read into translated texts by historians. James Maffie has answered Haly, noting that the references are confined to cosmological and cosmogonical texts. This registry records the pair the Aztec sources name and links them to the fused record it already held, rather than deciding the question.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ometeotl, setting out the dispute between Haly's argument that no such deity existed and Maffie's counter-argument." } ] } ]
+  },
+  {
+    "id": "aztec_tonacacihuatl",
+    "name": { "primary": "Tonacacihuatl", "alt": ["Tōnacācihuātl", "Omecihuatl", "Ōmecihuātl", "Two-Lady"],
+      "transliterations": { "Nahuatl": "Tōnacācihuātl", "etymology": "'Lady of our flesh' — the feminine of her husband's name. Under her other name, Omecihuatl, 'Two-Lady'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The female half of the Mexica primordial couple, ruling Omeyocan with Tonacatecuhtli at the top of the thirteen heavens.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the primordial pair Ometecuhtli and Omecihuatl, named in the Aztec sources as Tonacatecuhtli and Tonacacihuatl, who ruled the highest of the thirteen heavens, Omeyocan, the Place of Duality." } ] } ],
+    "domains": [ { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Tōnacācihuātl", "script": "Nahuatl", "rom": "lady of our flesh" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the primordial pair as the creators of the universe." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "aztec_tonacatecuhtli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the pair as a husband-and-wife duo." } ],
+        "notes": "The other half." },
+      { "kind": "counterpart-of", "personId": "aztec_ometeotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ometeotl as the fused form of this pair." } ],
+        "notes": "As with her husband: the registry's Ometeotl is the fused form, and whether the fusion is Aztec or modern is disputed." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tonacacihuatl, also called Omecihuatl, is the female half of the Mexica primordial couple who rule Omeyocan, the highest of the thirteen heavens.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tonacacihuatl, Omecihuatl and Omeyocan." } ], "weight": "high" } ],
+    "notes": "Tonacacihuatl is the half of the first principle that the sources are clearest about being female, in a cosmology that insists the beginning of things was a couple and not a single figure. The Mexica put her at the top of the world and then, in practice, addressed almost every prayer to somebody else — which is the usual fate of a high god who has finished the work."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. VENUS, AND THE TWO GODS WHO JUMPED INTO THE FIRE
+================================================================================
+
+```json
+[
+  {
+    "id": "aztec_xolotl",
+    "name": { "primary": "Xolotl", "alt": ["Xōlōtl"],
+      "transliterations": { "Nahuatl": "Xōlōtl", "etymology": "The word means a servant or a page, and also a twin or a monstrous double; xoloitzcuintli, the hairless dog, is named from it." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The dog-headed twin of Quetzalcoatl and the evening star: where Quetzalcoatl as the morning star heralds the sun's rising, Xolotl as the evening star heralds its setting, and he guides the dead down through Mictlan. A god of fire and lightning as well as of death.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xolotl: portrayed as a dog, the twin of Quetzalcoatl, and a god of fire and lightning as well as death; Quetzalcoatl and Xolotl constitute the twin phases of Venus as morning and evening star, Quetzalcoatl heralding the sun's rising and Xolotl its setting." } ] } ],
+    "domains": [
+      { "sphereId": "venus", "contextTag": "lifelong", "term": { "value": "Xōlōtl", "script": "Nahuatl", "rom": "Xolotl" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xolotl as the evening star." } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xolotl as a god of death who accompanies the sun and the dead into the underworld." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_quetzalcoatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Quetzalcoatl and Xolotl as the twin phases of Venus, morning and evening." } ],
+        "notes": "His twin, and the other half of one planet. The Mexica astronomers knew perfectly well that the morning and evening star are the same body, and made two gods of it anyway, because what the object does in the morning and what it does at evening are opposite things." },
+      { "kind": "twin sibling", "personId": "aztec_tlahuizcalpantecuhtli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlahuizcalpantecuhtli as the twin brother of Xolotl, representing the morning star aspect of Venus." } ],
+        "notes": "Named as his twin in the reference treatment, on the same morning-and-evening logic." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xolotl is the dog-headed Mexica god of the evening star, twin of Quetzalcoatl, a god of fire, lightning and death who guides the dead through the underworld.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Xolotl, of his dog form and of the Venus twinning with Quetzalcoatl." } ], "weight": "high" } ],
+    "notes": "Xolotl is the dog that takes you across. His name is the word for a servant and for a twin — and for the hairless dog, the xoloitzcuintli, which the Mexica buried with their dead precisely so that there would be one waiting at the river in Mictlan. He is the evening star to Quetzalcoatl's morning star: one plumed serpent announcing the sun coming up, one dog walking it down into the ground, and both of them Venus. He is also the god who is drawn deliberately ugly, with his feet on backwards, in a pantheon that mostly did not do that."
+  },
+  {
+    "id": "aztec_tlahuizcalpantecuhtli",
+    "name": { "primary": "Tlahuizcalpantecuhtli", "alt": ["Tlāhuizcalpantēcuhtli", "Lord of the Dawn"],
+      "transliterations": { "Nahuatl": "Tlāhuizcalpantēcuhtli", "etymology": "'Lord of the house of the dawn' — tlahuizcalli is the dawn light, -pan is 'in', tecuhtli is 'lord'. It is one of the longest theonyms in Nahuatl." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Venus as the morning star, and specifically as a threat: the rays of its heliacal rising were imagined as atlatl darts that struck particular classes of people and harmed maize and water, and the Mexica astronomers predicted its position precisely in order to know when.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlahuizcalpantecuhtli: the morning star aspect of Venus, considered menacing, its rays imagined as atlatl darts thought harmful to certain classes of people and to have a negative effect on maize and water, with Mesoamerican peoples considering the morning star particularly dangerous at its heliacal rising." } ] } ],
+    "domains": [ { "sphereId": "venus", "contextTag": "lifelong", "term": { "value": "Tlāhuizcalpantēcuhtli", "script": "Nahuatl", "rom": "lord of the house of the dawn" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlahuizcalpantecuhtli as the morning star." } ] } ],
+    "faculties": [
+      { "id": "aztec_venus_darts",
+        "name": "to cast the rays of the heliacal rising as spear-thrower darts at a named class of victim",
+        "term": { "value": "ātlatl", "script": "Nahuatl", "rom": "atlatl (spear-thrower)" }, "inheritability": "none",
+        "notes": "The Dresden and Borgia Venus tables are, among other things, tables of who gets hit: each station of the cycle assigns the darts a category of target. It is astronomy done as a hazard forecast.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the morning star's rays as atlatl darts harmful to certain classes of people, maize and water." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "aztec_xolotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlahuizcalpantecuhtli as both aspects of Venus and as the twin brother of Xolotl." } ],
+        "notes": "The morning to Xolotl's evening." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tlahuizcalpantecuhtli is the Mexica god of Venus as the morning star, whose rays at heliacal rising were held to strike specified classes of people and to harm maize and water.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tlahuizcalpantecuhtli, of the Venus tables and of the dangerous morning star." } ], "weight": "high" } ],
+    "notes": "The Lord of the House of the Dawn is a weather warning. Venus at its heliacal rising — the first morning it reappears after weeks in the sun's glare — was held to shoot darts, and the codices specify who gets hit at each station of the eight-year cycle: children, young men, lords, the maize, the water. The Mexica and the Maya both computed the cycle to within hours across centuries, and the reason was not idle: knowing where Venus was told you what was about to be dangerous. It is one of the clearest cases anywhere of astronomy that is entirely practical and entirely about gods."
+  },
+  {
+    "id": "aztec_nanahuatzin",
+    "name": { "primary": "Nanahuatzin", "alt": ["Nanāhuātzin", "Nanahuatl", "the pimply one"],
+      "transliterations": { "Nahuatl": "Nanāhuātzin", "etymology": "From nanahuatl, buboes or pustules, with the reverential -tzin: 'the honoured scabby one'. The name is a description of a diseased body treated with respect." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The humblest and sickest of the gods, who at the gathering at Teotihuacan offered his own blood and penance where Tecciztecatl offered coral and quetzal feathers, and who — when the proud god's nerve failed four times at the edge of the fire — shut his eyes and jumped into the middle of it, and rose as the fifth sun.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanahuatzin: the most humble of the gods, who sacrificed himself in fire so that he would continue to shine on Earth as the Sun; in the days before the sacrifice Tecciztecatl made offerings of rich gifts and coral while Nanahuatzin offered his blood and performed acts of penance; after Tecciztecatl's courage failed four times, Nanahuatzin closed his eyes and leapt into the very centre of the fire, returning as Tonatiuh." } ] } ],
+    "domains": [ { "sphereId": "sun", "contextTag": "phase", "term": { "value": "Nanāhuātzin", "script": "Nahuatl", "rom": "Nanahuatzin" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanahuatzin's transformation into the sun." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rival", "personId": "aztec_tecciztecatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the fifth-sun myth, in which Tecciztecatl offers himself but the gods favour Nanahuatzin, and Tecciztecatl's nerve fails four times before Nanahuatzin jumps." } ],
+        "notes": "The pairing is the argument of the myth: the rich god and the sick one, offering coral and offering blood, and the fire takes the one who is not protecting anything." },
+      { "kind": "counterpart-of", "personId": "aztec_tonatiuh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanahuatzin, who returned as Tonatiuh, the sun god." } ],
+        "notes": "He becomes Tonatiuh, whom the registry already carried. The two records are the same being before and after the fire, which the Mexica sources themselves distinguish by name." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Teotihuacan", "kind": "sacred-site", "period": "cosmogonic",
+        "attestation": "the gathering of the gods at Teotihuacan in the fifth-sun myth", "source": "Reference treatment of the creation of the fifth sun.",
+        "note": "The Mexica found Teotihuacan already a thousand years abandoned and read it as the place where the gods had met — which is why the name means something like 'the place where they became gods'." } ],
+    "sources": [ { "claim": "Nanahuatzin is the humble, diseased Mexica god who threw himself into the bonfire at Teotihuacan and rose as the fifth sun, Tonatiuh.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Nanahuatzin, of Tecciztecatl and of the fifth-sun myth." } ], "weight": "high" } ],
+    "notes": "Nanahuatzin is the reason the Mexica cosmos is held together by sacrifice rather than by power. The gods gather at Teotihuacan with a fire burning for four days and someone has to go into it. The rich god volunteers and brings coral and quetzal plumes; the sick god, covered in sores, has nothing to offer but his own blood and offers that. When the moment comes the rich god balks four times. Nanahuatzin shuts his eyes and goes in, and comes up as the sun. Everything the Mexica did afterwards — including the parts that horrify everyone — follows from believing that the sun is somebody who did that, and needs to be repaid."
+  },
+  {
+    "id": "aztec_tecciztecatl",
+    "name": { "primary": "Tecciztecatl", "alt": ["Tēcciztēcatl", "Tecuciztecatl", "the conch-shell lord"],
+      "transliterations": { "Nahuatl": "Tēcciztēcatl", "etymology": "'He of the conch shell' — tecciztli, the great sea-snail shell, from which he takes both his name and his emblem, and which the Mexica associated with the moon's cycle." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The proud and wealthy god who volunteered first to become the sun and brought coral and quetzal feathers as his penance; when the fire was ready his courage failed four times, and after Nanahuatzin had jumped he followed — and one of the gods threw a rabbit in his face, so that he came up dimmed, and became the moon.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tecciztecatl: a boastful and proud god who offered himself for sacrifice but whom the gods passed over in favour of Nanahuatzin; after four failed attempts his courage failed, and one of the gods, angry at his lack of courage, took a rabbit and threw it in his face, causing him to lose his brilliance and become the moon." } ] } ],
+    "domains": [ { "sphereId": "moon", "contextTag": "phase", "term": { "value": "Tēcciztēcatl", "script": "Nahuatl", "rom": "he of the conch shell" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tecciztecatl's transformation into the moon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rival", "personId": "aztec_nanahuatzin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the fifth-sun myth and the contest between the two gods." } ],
+        "notes": "The rich god who hesitated. The myth is not subtle about the moral and does not need to be." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tecciztecatl is the proud Mexica god who hesitated at the bonfire of Teotihuacan and, after following Nanahuatzin into it, was dimmed by a rabbit thrown in his face and became the moon.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tecciztecatl and of the fifth-sun myth." } ], "weight": "high" } ],
+    "notes": "The rabbit is why the Mexica saw a rabbit in the moon rather than a face: the mark is the animal somebody threw at a coward. Tecciztecatl volunteered first, brought expensive offerings, and then could not do it — four times up to the edge and four times back — and only went in after the sick god had already gone. He rose as bright as the sun, which was intolerable, so a god put a rabbit across his face and knocked the shine off him. It is a story about the difference between offering something valuable and offering yourself, told by a culture that thought about that distinction more than most."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE MOTHERS, THE STAR-DEMON, AND THE MAIZE
+================================================================================
+
+```json
+[
+  {
+    "id": "aztec_itzpapalotl",
+    "name": { "primary": "Itzpapalotl", "alt": ["Ītzpāpālōtl", "Obsidian Butterfly", "Clawed Butterfly"],
+      "transliterations": { "Nahuatl": "Ītzpāpālōtl", "etymology": "itztli, obsidian, plus papalotl, butterfly: 'obsidian butterfly', or 'clawed butterfly' on another reading of the first element." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "A skeletal warrior goddess of Chichimec origin who rules Tamoanchan, the paradise of children who died at birth and the place where humans were made; depicted as a skeleton with jaguar claws and wings edged with obsidian knives. She is counted among both the cihuateteo and the tzitzimimeh, the star demons that threaten to devour people during an eclipse, and she is the mother of Mixcoatl.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzpapalotl: a fearsome skeletal warrior goddess who ruled over the paradise world of Tamoanchan, the paradise of victims of infant mortality and the place where humans were created, depicted as a skeletal being with jaguar claws and wings edged by obsidian knives, counted as one of the cihuateteo and one of the tzitzimime, and the mother of Mixcoatl." } ] } ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Ītzpāpālōtl", "script": "Nahuatl", "rom": "obsidian butterfly" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzpapalotl as a skeletal warrior goddess." } ] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzpapalotl among the tzitzimimeh and the cihuateteo." } ] } ],
+    "faculties": [
+      { "id": "aztec_eclipse_descent",
+        "name": "to come down in an eclipse in the form of a black butterfly and eat souls",
+        "term": { "value": "tzitzimitl", "script": "Nahuatl", "rom": "tzitzimitl (star demon)" }, "inheritability": "none",
+        "notes": "The tzitzimimeh are the stars, and an eclipse is the moment the stars become visible in daylight — which the Mexica read as the stars coming down. The fear was specific and the response was noise: shouting, drums, and blood.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzpapalotl, who with her tzitzimimeh companions takes the guise of a black butterfly during solar eclipses to consume souls." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "mixcoatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzpapalotl as the mother of Mixcoatl." } ],
+        "notes": "Mother of the cloud-serpent, the Chichimec hunting god the registry already carried. Her own origins are Chichimec — she comes into the Mexica pantheon from the north with him." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tamoanchan", "kind": "mythic-place", "period": "cosmogonic",
+        "attestation": "her rule over Tamoanchan in the reference treatments", "source": "Reference treatment of Itzpapalotl and Tamoanchan.",
+        "note": "Tamoanchan is where humans were made and where babies who die go — a nursery and a workshop in the same place, with a skeleton in charge of it." } ],
+    "sources": [ { "claim": "Itzpapalotl, the Obsidian Butterfly, is a skeletal Mexica warrior goddess of Chichimec origin who rules Tamoanchan, counts among the tzitzimimeh and cihuateteo, and is the mother of Mixcoatl.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Itzpapalotl, her iconography, her Chichimec origins and her place among the star demons." } ], "weight": "high" } ],
+    "notes": "Itzpapalotl is a butterfly made of knives. The image is precise rather than decorative: a skeleton with jaguar claws, and wings whose every edge is a flake of obsidian, which is the sharpest material the Mexica had and the one they made their sacrificial blades from. She rules Tamoanchan, where humans were made and where infants who die are sent — so the goddess in charge of dead babies is also the goddess who comes down in an eclipse to eat people. The Mexica did not find that a contradiction; the tzitzimimeh are the stars, and an eclipse is the stars getting out."
+  },
+  {
+    "id": "aztec_cihuacoatl",
+    "name": { "primary": "Cihuacoatl", "alt": ["Cihuācōātl", "Snake Woman", "Quilaztli"],
+      "transliterations": { "Nahuatl": "Cihuācōātl", "etymology": "cihuatl, woman, plus coatl, snake: 'snake woman'. The same word was the title of the highest official of the Mexica state after the tlatoani." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "A mother and war goddess, patron of women who die in childbirth, who with Quetzalcoatl grinds the bones brought up from Mictlan and makes the present humanity from them; heard weeping in the night for her lost child, which the chroniclers record as one of the omens before the conquest.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cihuacoatl: a Mexica mother goddess counted among the protectors of midwives and women in labour alongside the Cihuateteo, Tlaltecuhtli, Coatlicue and Citlalicue, associated with childbirth and with war." } ] } ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "Cihuācōātl", "script": "Nahuatl", "rom": "snake woman" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cihuacoatl as a protector of midwives and women in labour." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cihuacoatl's warlike aspect." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tenochtitlan, and Colhuacan", "kind": "office", "period": "triple-alliance",
+        "attestation": "the title Cihuacoatl borne by the second officer of the Mexica state", "source": "Reference treatment of Cihuacoatl and of the Mexica office of the same name.",
+        "note": "Tlacaelel held the office for half a century and made it the real seat of power. That the state's chief minister was titled 'Snake Woman' after a childbirth goddess is one of the more striking facts about Mexica government." } ],
+    "sources": [ { "claim": "Cihuacoatl is a Mexica mother and war goddess, patron of midwives and of women who die in childbirth, and the name of the second-highest office of the Mexica state.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cihuacoatl, her childbirth and war associations, and the office named for her." } ], "weight": "high" } ],
+    "notes": "Cihuacoatl connects the two things the Mexica considered equivalent. A woman who died in childbirth was a warrior dead in battle — she had taken a captive, the child — and went to the same afterlife as a soldier, escorting the sun down from noon. Cihuacoatl is the goddess of that, and she is warlike accordingly. The state's second officer, effectively its prime minister, carried her name as his title; Tlacaelel held it for fifty years. She is also heard, in the Florentine Codex's list of omens before the conquest, walking the streets at night crying for her son."
+  },
+  {
+    "id": "aztec_chantico",
+    "name": { "primary": "Chantico", "alt": ["Chāntico", "Quaxolotl"],
+      "transliterations": { "Nahuatl": "Chāntico", "etymology": "'She who dwells in the house' — chantli, home, with the locative: the fire that is in the hearth rather than the fire that is in the temple." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Goddess of the hearth fire and of the fires of the volcanoes, patron of the lapidaries of Xochimilco; in the myth she breaks a fast by eating paprika on fish and Tonacatecuhtli turns her into a dog for it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chantico: the Mexica goddess of fires in the family hearth and of volcanoes, whose name means 'she who dwells in the house', turned into a dog for breaking a fast." } ] } ],
+    "domains": [ { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Chāntico", "script": "Nahuatl", "rom": "she who dwells in the house" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chantico as goddess of the hearth fire." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_xiuhtecuhtli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chantico beside Xiuhtecuhtli, the turquoise lord and god of fire." } ],
+        "notes": "The domestic half of the fire the registry already carried in its state form: Xiuhtecuhtli holds the fire at the centre of the world and Chantico holds the one in the kitchen." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Xochimilco", "kind": "regional-cult", "period": "triple-alliance",
+        "attestation": "her patronage of the Xochimilca lapidaries", "source": "Reference treatment of Chantico's cult.",
+        "note": "A hearth goddess as patron of stone-cutters makes sense once you remember what a lapidary's fire is for." } ],
+    "sources": [ { "claim": "Chantico is the Mexica goddess of the hearth fire and of volcanoes, patron of the lapidaries of Xochimilco, turned into a dog in myth for breaking a fast.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chantico, her name and her cult." } ], "weight": "medium" } ],
+    "notes": "Chantico is the fire in the house, as against Xiuhtecuhtli's fire at the centre of the world, and the distinction mattered: the hearth was not a lesser altar but a different one, with its own goddess and its own offerings. Her myth is unusually domestic too — she eats paprika on fish on a fast day and is turned into a dog for it, which is a punishment with the scale of a household quarrel rather than a cosmic one."
+  },
+  {
+    "id": "aztec_chicomecoatl",
+    "name": { "primary": "Chicomecoatl", "alt": ["Chicomecōātl", "Seven Serpent", "Chalchiuhcihuatl"],
+      "transliterations": { "Nahuatl": "Chicomecōātl", "etymology": "'Seven Serpent' — a calendar name, 7 Coatl, used as a theonym. Seven is a number of abundance in this system." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The goddess of mature maize — the plant fully grown, rooted and feeding everyone — and so of sustenance generally; shown holding double ears of maize, and impersonated by a girl who was sacrificed at the festival of Ochpaniztli.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chicomecoatl: the Mexica goddess representing the fully mature maize plant, deeply rooted in the soil and providing nourishment, most commonly associated with Xilonen, and impersonated by a chosen girl who was sacrificed during Ochpaniztli." } ] } ],
+    "domains": [ { "sphereId": "harvest", "contextTag": "lifelong", "term": { "value": "Chicomecōātl", "script": "Nahuatl", "rom": "seven serpent" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chicomecoatl as the goddess of mature maize and of sustenance." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_centeotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica maize deities: Centeotl the youthful deified maize god beside Chicomecoatl the mature plant and Xilonen the tender ear." } ],
+        "notes": "The female half of the maize. The Mexica split the crop into deities by stage and gender — young god, tender-ear goddess, mature-plant goddess — and the registry held only the young god." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tenochtitlan", "kind": "festival", "period": "triple-alliance",
+        "attestation": "the eleventh veintena, Ochpaniztli, 'the sweeping'", "source": "Reference treatment of Ochpaniztli and of Chicomecoatl's impersonator.",
+        "note": "Ochpaniztli falls at harvest and is a cleaning festival: the year's old growth swept out, the impersonator killed, her skin worn by a priest, and the new season allowed to start." } ],
+    "sources": [ { "claim": "Chicomecoatl is the Mexica goddess of mature maize and of sustenance, paired with Xilonen and Centeotl, whose impersonator was sacrificed at the festival of Ochpaniztli.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chicomecoatl, of the maize deities and of Ochpaniztli." } ], "weight": "high" } ],
+    "notes": "Chicomecoatl is maize at the point where it feeds you. The Mexica did not have one corn god; they had the crop divided by stage — Xilonen is the tender ear you can eat green, Centeotl is the young plant, Chicomecoatl is the mature stand rooted in the ground with everything in it. She is shown holding two ears of maize like a pair of sceptres. Her festival, Ochpaniztli, means 'the sweeping', and it works by analogy: the old season is swept out and its personification is killed and flayed so that the next one can come in clean."
+  },
+  {
+    "id": "aztec_xilonen",
+    "name": { "primary": "Xilonen", "alt": ["Xīlōnen", "Xilonenqui"],
+      "transliterations": { "Nahuatl": "Xīlōnen", "etymology": "From xilotl, the tender green ear of maize before it hardens: 'she of the young ear', a name for the crop at the moment it first becomes food." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The goddess of the tender first ears of maize, a virginal figure honoured at the midsummer festival of Huey Tecuilhuitl, when the new crop was first eaten.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica maize deities: Xilonen, 'fresh, tender corn', a virginal goddess, the deity most commonly related to Chicomecoatl, associated with the tender first ears of maize." } ] } ],
+    "domains": [ { "sphereId": "harvest", "contextTag": "lifelong", "term": { "value": "xīlōtl", "script": "Nahuatl", "rom": "xilotl (tender ear)" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xilonen as the goddess of the young maize ear." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_chicomecoatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Xilonen as the deity most commonly related to Chicomecoatl." } ],
+        "notes": "The same crop eight weeks earlier. The pairing is the point: a goddess of the green ear and a goddess of the grown stand are one plant told as two lives." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tenochtitlan", "kind": "festival", "period": "triple-alliance",
+        "attestation": "Huey Tecuilhuitl, the eighth veintena, at which the new maize was first eaten", "source": "Reference treatment of Xilonen's festival.",
+        "note": "The timing is the hungry gap ending: by midsummer the previous year's stores are low and the new ears are just edible, which is precisely when a goddess of the tender ear is worth having." } ],
+    "sources": [ { "claim": "Xilonen is the Mexica goddess of the tender young ears of maize, closely associated with Chicomecoatl, honoured at the midsummer festival when the new crop was first eaten.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Xilonen and of the Mexica maize deities." } ], "weight": "high" } ],
+    "notes": "Xilonen is the first meal of the new year's maize. Her festival sits at the point in the agricultural calendar where the old stores have run down and the new ears are just barely edible — the hungry gap closing — and the Mexica marked it by eating green corn and by killing a girl who had been dressed as the goddess. The registry held Centeotl and nothing else from a set of at least three deities covering one plant through its life."
+  },
+  {
+    "id": "aztec_huixtocihuatl",
+    "name": { "primary": "Huixtocihuatl", "alt": ["Huīxtohcihuātl", "Uixtochihuatl", "Salt Woman"],
+      "transliterations": { "Nahuatl": "Huīxtohcihuātl", "etymology": "'Salt woman' — from the name of the Huixtotin, the salt-working people of the lake edge, plus cihuatl, woman." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Goddess of salt and of salt water, patron of the salt-makers who worked the brine flats of the lake; the Florentine Codex makes her the elder sister of the rain gods, cast out by them after a quarrel, and says she went down to the salt water and invented salt there.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huixtocihuatl: the Mexica goddess of salt and salt water, patron of salt-makers, described as the elder sister of the rain gods who quarrelled with them and went to live in the salt water, where she discovered salt." } ] } ],
+    "domains": [ { "sphereId": "salt", "contextTag": "lifelong", "term": { "value": "Huīxtohcihuātl", "script": "Nahuatl", "rom": "salt woman" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huixtocihuatl as the goddess of salt." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "the salt flats of the lake, and Tenochtitlan", "kind": "festival", "period": "triple-alliance",
+        "attestation": "Tecuilhuitontli, the seventh veintena, kept by the salt-makers", "source": "Reference treatment of Huixtocihuatl's festival.",
+        "note": "The salt-workers danced for ten days holding flowering ropes, and her impersonator was killed at the temple of Tlaloc — which is where the family quarrel in her myth ends up mattering." } ],
+    "sources": [ { "claim": "Huixtocihuatl is the Mexica goddess of salt and salt water, patron of salt-makers, described as the elder sister of the rain gods who was cast out and discovered salt.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Huixtocihuatl, her myth and her festival." } ], "weight": "medium" } ],
+    "notes": "Huixtocihuatl was invented by an argument. The Florentine Codex has her as the eldest sister of the rain gods, who offended them somehow and was thrown out of the fresh water — so she went to live in the salt and made salt there, which is the Mexica explanation for why the lake around Tenochtitlan was brackish and the springs were not. Her people were the salt-makers working the brine flats, and they kept her festival themselves, dancing in ropes of flowers before her impersonator was taken to Tlaloc's temple and killed there. The record links her to no one, because her one kin claim points at a collective — the rain gods — rather than a figure the registry carries."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. PULQUE, PLEASURE, TRADE, AND TEZCATLIPOCA'S OTHER FACES
+================================================================================
+
+```json
+[
+  {
+    "id": "aztec_patecatl",
+    "name": { "primary": "Patecatl", "alt": ["Pahtēcatl", "Lord of the Root of Pulque"],
+      "transliterations": { "Nahuatl": "Pahtēcatl", "etymology": "From pahtli, medicine or drug, with the gentilic -tecatl: 'he of the medicines', 'the man from the land of medicines'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "God of healing and fertility, discoverer of peyote and 'lord of the root of pulque' — the god who found the fermentation. With Mayahuel he fathered the Centzon Totochtin, the four hundred rabbits of drunkenness.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Patecatl: a god of healing and fertility and the discoverer of peyote as well as the 'lord of the root of pulque', who with Mayahuel was the father of the Centzon Totochtin; and reference treatment of Mayahuel and the maguey." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "pahtli", "script": "Nahuatl", "rom": "pahtli (medicine)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Patecatl as a god of healing and medicines." } ] },
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "octli", "script": "Nahuatl", "rom": "octli (pulque)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Patecatl as lord of the root of pulque and discoverer of the fermentation." } ] } ],
+    "faculties": [
+      { "id": "aztec_find_the_fermentation_root",
+        "name": "to know the root that turns maguey sap into pulque",
+        "term": { "value": "ōctli pahtli", "script": "Nahuatl", "rom": "octli pahtli (the pulque root)" }, "inheritability": "none",
+        "notes": "Maguey sap ferments on its own, but the Mexica added a root to start and strengthen it, and the god of medicines is the one who knows which root. It places brewing squarely inside pharmacology, which is where they thought it belonged.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Patecatl as the god who discovered the fermentation process and as lord of the root of pulque." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "aztec_mayahuel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Patecatl, who with Mayahuel was the father of the Centzon Totochtin." } ],
+        "notes": "Husband of the maguey goddess the registry already carried: she is the plant and he is the process." },
+      { "kind": "father-of", "personId": "aztec_tepoztecatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepoztecatl as one of the Centzon Totochtin, the four hundred children of Mayahuel and Patecatl." } ],
+        "notes": "One of the four hundred, and the one with a name." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Patecatl is the Mexica god of medicines and of the root that makes pulque ferment, discoverer of peyote, husband of Mayahuel and father of the Centzon Totochtin.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Patecatl, Mayahuel, pulque and the Centzon Totochtin." } ], "weight": "high" } ],
+    "notes": "Patecatl is the pharmacist. The registry had Mayahuel, who is the maguey plant, and not the god who worked out what to do with its sap — which in this pantheon is a medical question rather than a culinary one: his name is built on pahtli, 'medicine', he is credited with peyote as well, and his title is lord of the *root* of pulque, the additive that starts the ferment. Between them he and Mayahuel produced four hundred children, the Centzon Totochtin, who are the four hundred rabbits — Nahuatl's way of saying that there are exactly as many kinds of drunk as there are drunks."
+  },
+  {
+    "id": "aztec_tepoztecatl",
+    "name": { "primary": "Tepoztecatl", "alt": ["Tepoztēcatl", "Ometochtli", "Ōmetōchtli", "Two Rabbit"],
+      "transliterations": { "Nahuatl": "Tepoztēcatl", "etymology": "'He of Tepoztlan', the town in the Tlahuica country whose god he is. His calendar name is Ometochtli, 'Two Rabbit'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["aztec_mayahuel", "aztec_patecatl"], "parentRoles": ["mother", "father"],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "One of the Centzon Totochtin, the four hundred pulque gods, and the one with a town and a temple: the god of Tepoztlan, known by his calendar name Ometochtli, 'Two Rabbit', which is also the generic name for any of the pulque gods.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepoztecatl: also known by his calendrical name Ometochtli, 'two-rabbit', and in Aztec myth one of the Centzon Totochtin, the four hundred children of Mayahuel and Patecatl; and reference treatment of Ometochtli as the collective or generic name of the various deities associated with pulque." } ] } ],
+    "domains": [ { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "Ōmetōchtli", "script": "Nahuatl", "rom": "two rabbit" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepoztecatl among the pulque gods." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tepoztlan", "kind": "temple", "period": "triple-alliance",
+        "attestation": "the Tepozteco temple on the cliff above the town", "source": "Reference treatment of Tepoztecatl and his temple.",
+        "note": "The pyramid is cut into the mountain above Tepoztlan and still stands; the town's festival for him survived the conquest by attaching itself to a saint's day, which is how a good deal of this material survived at all." } ],
+    "sources": [ { "claim": "Tepoztecatl, calendar name Ometochtli, is the Mexica pulque god of Tepoztlan, one of the Centzon Totochtin born to Mayahuel and Patecatl.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tepoztecatl, of Ometochtli and of the Centzon Totochtin." } ], "weight": "medium" } ],
+    "notes": "Tepoztecatl is the one of the four hundred rabbits who got a temple. The Centzon Totochtin are a collective — four hundred meaning innumerable, each one a different degree or flavour of drunkenness — and this registry does not ingest collectives; but several of them have names, and this one has a town, a cliff-top pyramid that still stands above Tepoztlan, and a festival that survived the conquest by moving to a saint's day. His calendar name, Two Rabbit, doubles as the generic title for any pulque god, which makes him both a specific deity and the word for his own class."
+  },
+  {
+    "id": "aztec_xochipilli",
+    "name": { "primary": "Xochipilli", "alt": ["Xōchipilli", "Flower Prince", "Macuilxochitl (conflated)"],
+      "transliterations": { "Nahuatl": "Xōchipilli", "etymology": "xochitl, flower, plus pilli, prince or noble child: 'flower prince'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "God of flowers, beauty, youth, love, song, dance, painting, writing, games and playfulness — the whole register of pleasure and art in one deity — with two brothers, Ixtlilton of health and dance and Macuilxochitl of games.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xochipilli: his name means 'flower prince', and he is the god of beauty, youth, love, passion, fertility, the arts, song, music, dance, painting, writing, games, playfulness, nature, vegetation and flowers, with two brothers, Ixtlilton the god of health, medicine and dancing and Macuilxochitl the god of games." } ] } ],
+    "domains": [
+      { "sphereId": "flowers", "contextTag": "lifelong", "term": { "value": "Xōchipilli", "script": "Nahuatl", "rom": "flower prince" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xochipilli as god of flowers and vegetation." } ] },
+      { "sphereId": "music", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xochipilli as god of song, music and dance." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "aztec_xochipilli_statue",
+        "name": "the seated Xochipilli of Tlalmanalco",
+        "kind": "cult-image",
+        "role": "A life-size volcanic-stone figure seated cross-legged on a flowered base, head back, eyes and mouth open. The flowers carved over his body and the plinth have been identified by botanists as a specific set of psychoactive plants — morning glory, tobacco, sinicuichi, a mushroom — which is why the statue is discussed as much by pharmacologists as by art historians.",
+        "sources": [ { "kind": "archaeological", "reference": "The Xochipilli statue from the slopes of Popocatépetl, in the Museo Nacional de Antropología, described in reference treatments of the god and of its carved flora." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_ixtlilton",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Ixtlilton as Xochipilli's brother." } ], "notes": "One of the two brothers." },
+      { "kind": "sibling", "personId": "aztec_macuilxochitl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Macuilxochitl as Xochipilli's brother." } ], "notes": "The other." },
+      { "kind": "counterpart-of", "personId": "aztec_xochiquetzal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Xochipilli and Xochiquetzal, the flower prince and the flower-quetzal, paired in the sources as male and female of the same sphere." } ],
+        "notes": "Paired with the flower goddess the registry already carried; some sources make them twins and others a couple, and this record states the pairing without choosing." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xochipilli, the Flower Prince, is the Mexica god of flowers, beauty, youth, song, dance, games and the arts, brother of Ixtlilton and Macuilxochitl.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Xochipilli, his spheres and his brothers." } ], "weight": "high" } ],
+    "notes": "Xochipilli holds everything the Mexica thought of as delight, which in their arrangement is one category: flowers, song, dance, painting, writing, games, sex, and the state of being beautifully young. The famous statue of him — seated cross-legged, head tipped back, mouth open — has flowers carved all over its body and plinth, and when botanists went through them they turned out to be a specific list of psychoactive plants. Whether the sculptor intended that as a catalogue is argued about; that the flowers are identifiable and are those flowers is not."
+  },
+  {
+    "id": "aztec_macuilxochitl",
+    "name": { "primary": "Macuilxochitl", "alt": ["Mācuīlxōchitl", "Five Flower"],
+      "transliterations": { "Nahuatl": "Mācuīlxōchitl", "etymology": "'Five Flower' — a calendar name, 5 Xochitl, used as a theonym. The five gods of excess all carry macuil- names." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "God of games and gambling, of music and dance, and chief of the Ahuiateteo — the five gods of excess, who punish the pleasures they preside over.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Macuilxochitl: 'five flower', the god of games and gambling and chief of the Ahuiateteo, the gods of excess, and a god of music and dance." } ] } ],
+    "domains": [ { "sphereId": "games", "contextTag": "lifelong", "term": { "value": "Mācuīlxōchitl", "script": "Nahuatl", "rom": "five flower" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Macuilxochitl as god of games and gambling." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_xochipilli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Macuilxochitl as Xochipilli's brother." } ], "notes": "Brother of the flower prince." },
+      { "kind": "sibling", "personId": "aztec_ixtlilton",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the three as brothers." } ], "notes": "Brother of Ixtlilton." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Macuilxochitl, 'Five Flower', is the Mexica god of games and gambling, chief of the Ahuiateteo or gods of excess, and brother of Xochipilli and Ixtlilton.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Macuilxochitl and of the Ahuiateteo." } ], "weight": "medium" } ],
+    "notes": "Macuilxochitl runs the games and collects on them. He heads the Ahuiateteo, the five gods of excess, whose function is the sharp edge on the pleasures his brother presides over: they send disease to people who overdo it, particularly in gambling and in sex. The Mexica did not separate the god who gives you the party from the god who gives you the consequences — they made them brothers, and gave the consequences a calendar name so you would know which day to watch."
+  },
+  {
+    "id": "aztec_ixtlilton",
+    "name": { "primary": "Ixtlilton", "alt": ["Īxtlīltōn", "the little black-faced one"],
+      "transliterations": { "Nahuatl": "Īxtlīltōn", "etymology": "ixtli, face, tliltic, black, with the diminutive -ton: 'the little black one', or 'the little black-faced one'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "God of health, medicine, dancing and festivals, brother of Xochipilli; sick children were brought to his shrine and given the dark water kept there to drink.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ixtlilton: the god of healing, dancing, festivals and games, brother of Xochipilli." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "Īxtlīltōn", "script": "Nahuatl", "rom": "the little black one" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ixtlilton as god of health and medicine." } ] },
+      { "sphereId": "dance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ixtlilton as god of dancing and festivals." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_xochipilli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Ixtlilton as Xochipilli's brother." } ], "notes": "Brother of the flower prince." },
+      { "kind": "sibling", "personId": "aztec_macuilxochitl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming the three as brothers." } ], "notes": "Brother of Macuilxochitl." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tenochtitlan, in the household oratories", "kind": "regional-cult", "period": "triple-alliance",
+        "attestation": "the black water kept at his shrine and given to sick children", "source": "Reference treatment of Ixtlilton's cult.",
+        "note": "A healing god whose treatment is a dark water in a jar, administered to children, and who is also the god of dancing — the two go together in a system where a cure is something you perform." } ],
+    "sources": [ { "claim": "Ixtlilton is the Mexica god of health, medicine, dancing and festivals, brother of Xochipilli and Macuilxochitl, whose shrine kept a black water given to sick children.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ixtlilton, his spheres and his brothers." } ], "weight": "medium" } ],
+    "notes": "Ixtlilton is the doctor in a family of entertainers, which in Mexica terms is not a change of subject: he is god of dancing and of medicine at once, and his cure is a dark water — the black his name refers to — kept in jars at his shrine and given to children who would not stop crying or would not eat. Between the three brothers they cover pleasure, the price of pleasure, and the remedy, which is a tidier account of a night out than most pantheons manage."
+  },
+  {
+    "id": "aztec_yacatecuhtli",
+    "name": { "primary": "Yacatecuhtli", "alt": ["Yacatēcuhtli", "Yiacatecuhtli", "Lord of the Vanguard"],
+      "transliterations": { "Nahuatl": "Yacatēcuhtli", "etymology": "yacatl, nose or point or the front of something, plus tecuhtli, lord: 'lord of the nose', read as lord of the vanguard — the one who goes in front, which is what a trading caravan's leader does." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Patron god of the pochteca, the long-distance merchants who travelled armed into foreign country and served as the empire's traders, spies and advance guard; his emblem is the bundled staff a merchant carried, which was set up and worshipped at each night's camp.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yacatecuhtli: the god of merchant adventurers." } ] } ],
+    "domains": [ { "sphereId": "trade", "contextTag": "lifelong", "term": { "value": "pōchtēcatl", "script": "Nahuatl", "rom": "pochtecatl (long-distance merchant)" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yacatecuhtli as patron of the merchants." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "aztec_merchant_staff",
+        "name": "the merchant's bundled staff",
+        "kind": "ritual-object",
+        "role": "The black walking-staffs of a merchant party, bound together at the night's camp and treated as the god himself — offered paper, incense and the travellers' own blood before they slept.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yacatecuhtli and of the pochteca's staff cult." } ] } ],
+    "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tlatelolco, and on the road", "kind": "regional-cult", "period": "triple-alliance",
+        "attestation": "the pochteca's rites on the march and in their own calpulli", "source": "Reference treatment of Yacatecuhtli and the merchants.",
+        "note": "The pochteca were a hereditary guild with their own courts, their own god and their own festivals, and they were resented for it. They also went ahead of the army: a merchant who came back with a map was doing his other job." } ],
+    "sources": [ { "claim": "Yacatecuhtli is the Mexica god of the long-distance merchants, the pochteca, whose bundled staffs were worshipped as him on the road.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yacatecuhtli as god of merchant adventurers." } ], "weight": "medium" } ],
+    "notes": "Yacatecuhtli is the god of going first. The pochteca were not shopkeepers: they travelled hundreds of miles into hostile country, armed, in organised parties, and they came back with quetzal feathers, cacao, jade and intelligence — which meant the guild was wealthy, hereditary, legally privileged and thoroughly disliked. On the road they bundled their black staffs together at each camp and worshipped the bundle as the god, offering paper, incense and their own blood. A god whose image is the walking stick you are carrying is a very portable religion, which is the point."
+  },
+  {
+    "id": "aztec_tepeyollotl",
+    "name": { "primary": "Tepeyollotl", "alt": ["Tepēyōllōtl", "Heart of the Mountain"],
+      "transliterations": { "Nahuatl": "Tepēyōllōtl", "etymology": "tepetl, mountain, plus yollotl, heart: 'heart of the mountain' — the jaguar in the cave, and the echo, which the Mexica understood as the mountain's own voice." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The jaguar god of caves, mountains and earthquakes, the eighth lord of the day-signs and patron of the day Ocelotl; a form of Tezcatlipoca, and the voice that answers out of a cave.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepeyollotl: an Aztec deity associated with caves, the interior of mountains and earthquakes, reckoned a form of Tezcatlipoca and patron of the day-sign Ocelotl." } ] } ],
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Tepēyōllōtl", "script": "Nahuatl", "rom": "heart of the mountain" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepeyollotl as god of caves and the mountain interior." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepeyollotl as one of the lords of the day-signs in the tonalpohualli." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_tezcatlipoca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tepeyollotl as a form of Tezcatlipoca." } ],
+        "notes": "One of the smoking mirror's faces. Tezcatlipoca is a god who is constantly somebody else, and the registry carried the name and none of the faces." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tepeyollotl is the Mexica jaguar god of caves, mountains and earthquakes, a form of Tezcatlipoca and patron of the day-sign Ocelotl.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tepeyollotl and of the day-sign lords." } ], "weight": "medium" } ],
+    "notes": "Tepeyollotl is what a mountain sounds like from inside. He is a jaguar — the animal that lives in the cave mouth and is heard before it is seen — and he is the earthquake, and he is the echo: the Mexica took the sound that comes back out of a cave to be the mountain's own heart answering. He is also a face of Tezcatlipoca, which is the normal condition of Mexica deities and the reason the pantheon resists being counted. The registry carried Tezcatlipoca and none of his aspects."
+  },
+  {
+    "id": "aztec_chalchiuhtotolin",
+    "name": { "primary": "Chalchiuhtotolin", "alt": ["Chālchiuhtōtolin", "Jewelled Fowl", "Precious Turkey"],
+      "transliterations": { "Nahuatl": "Chālchiuhtōtolin", "etymology": "chalchihuitl, jade or precious greenstone, plus totolin, turkey: 'jade turkey', or 'precious fowl'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The turkey form of Tezcatlipoca, lord of the day-sign Tecpatl and a god of pestilence — and, in the same office, of cleansing: he takes away the contamination and absolves the guilt he has inflicted.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chalchiuhtotolin: a Mexica god of disease and plague, the jewelled turkey, an aspect of Tezcatlipoca who could both inflict and remove contamination and absolve guilt." } ] } ],
+    "domains": [ { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "Chālchiuhtōtolin", "script": "Nahuatl", "rom": "jewelled turkey" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chalchiuhtotolin as a god of pestilence and of purification." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_tezcatlipoca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chalchiuhtotolin as an aspect of Tezcatlipoca." } ],
+        "notes": "Another of the smoking mirror's faces, and the one that carries disease." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chalchiuhtotolin, the Jewelled Turkey, is a Mexica god of pestilence and purification, an aspect of Tezcatlipoca and lord of the day-sign Tecpatl.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chalchiuhtotolin and of the aspects of Tezcatlipoca." } ], "weight": "medium" } ],
+    "notes": "A god of plague in the shape of a turkey is not a joke: the turkey was the Mexica's only large domestic animal, kept in numbers in every household, and a bird disease going through the flock was a real disaster. Chalchiuhtotolin both sends the contamination and lifts it, which is the same logic that puts Pazuzu on a Mesopotamian amulet — the power that can do it to you is the one worth asking to stop. He is a face of Tezcatlipoca, whose whole nature is that he is never only one thing."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. HUITZILOPOCHTLI'S FAMILY, AND TLALOC'S HOUSEHOLD
+================================================================================
+
+```json
+[
+  {
+    "id": "aztec_malinalxochitl",
+    "name": { "primary": "Malinalxochitl", "alt": ["Malīnalxōchitl", "Grass Flower"],
+      "transliterations": { "Nahuatl": "Malīnalxōchitl", "etymology": "malinalli, the twisted grass that is also a day-sign, plus xochitl, flower: 'grass flower'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "chichimec-migration" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "chichimec-migration", "eraOrdering": 0,
+      "startEvent": "A sorceress and the sister of Huitzilopochtli, who travelled with the Mexica on their migration and was abandoned asleep by his order because the people feared her powers; she founded Malinalco, and her son Copil grew up to avenge her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Malinalxochitl: sister of Huitzilopochtli, a sorceress who accompanied the Mexica migration and was left behind asleep at his instruction, founding Malinalco, and mother of Copil." } ] } ],
+    "domains": [ { "sphereId": "sorcery", "contextTag": "lifelong", "term": { "value": "Malīnalxōchitl", "script": "Nahuatl", "rom": "grass flower" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Malinalxochitl's powers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "aztec_copil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Malinalxochitl as the mother of Copil, who went to avenge her against Huitzilopochtli." } ],
+        "notes": "Mother of Copil. The registry carries Huitzilopochtli, her brother, and carried neither her nor the nephew who came after him." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Malinalco", "kind": "regional-cult", "period": "chichimec-migration",
+        "attestation": "the founding of Malinalco by the abandoned group", "source": "Reference treatment of Malinalxochitl and Malinalco.",
+        "note": "Malinalco has a temple cut whole out of the living rock, one of very few in the Americas; the town's name is hers." } ],
+    "sources": [ { "claim": "Malinalxochitl is the sorceress sister of Huitzilopochtli, abandoned during the Mexica migration at his order, founder of Malinalco and mother of Copil.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Malinalxochitl, the Mexica migration and Copil." } ], "weight": "medium" } ],
+    "notes": "Malinalxochitl is the sister the Mexica left asleep. The migration story has her travelling with them and frightening them — she could turn people's eyes, send scorpions, make a river bend — until Huitzilopochtli told the people to move on while she slept. She woke, found herself abandoned with her followers, and founded Malinalco. The story matters because her son grew up on it: Copil came looking for Huitzilopochtli, and what happened to him is the reason Tenochtitlan is where it is."
+  },
+  {
+    "id": "aztec_copil",
+    "name": { "primary": "Copil", "alt": ["Cōpil"],
+      "transliterations": { "Nahuatl": "Cōpil", "etymology": "No agreed derivation. His name is attached to the Copil stone, and his heart to the founding of the Mexica capital." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_malinalxochitl"], "parentRoles": ["mother"],
+    "temporal": { "era": "chichimec-migration" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "chichimec-migration", "eraOrdering": 0,
+      "startEvent": "Son of Malinalxochitl, who came to avenge his abandoned mother on Huitzilopochtli, was defeated and killed, and had his heart thrown into the lake — where it landed on a rock, and a cactus grew from it, and on the cactus an eagle perched, which is the sign the Mexica had been told to look for.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Copil: son of Malinalxochitl who sought vengeance on Huitzilopochtli, was killed, and whose heart was cast into Lake Texcoco, from which grew the nopal cactus on which the eagle was seen, marking the site of Tenochtitlan." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "the islet in Lake Texcoco that became Tenochtitlan", "kind": "sacred-site", "period": "founding-of-tenochtitlan",
+        "attestation": "the nopal grown from his heart and the eagle upon it", "source": "Reference treatment of Copil and the founding of Tenochtitlan.",
+        "note": "Tenochtitlan means 'beside the stone cactus', and the cactus is his. The eagle on the cactus is on the flag of Mexico." } ],
+    "sources": [ { "claim": "Copil is the son of Malinalxochitl who sought vengeance on Huitzilopochtli, was killed, and whose heart thrown into the lake produced the cactus on which the eagle perched, marking the site of Tenochtitlan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Copil, Malinalxochitl and the founding of Tenochtitlan." } ], "weight": "medium" } ],
+    "notes": "Copil's heart is on the Mexican flag. He came after Huitzilopochtli to avenge his mother, lost, and was killed on a small hill; his heart was torn out and thrown as far as it would go into the lake, where it fell on a rock and a nopal cactus grew out of it. Generations later the wandering Mexica were told to build where they saw an eagle on a cactus, and there it was, on his heart. A city founded on a murdered cousin, and the founding sign is still the national emblem."
+  },
+  {
+    "id": "aztec_painal",
+    "name": { "primary": "Painal", "alt": ["Painalton", "Paynal", "the hasty one"],
+      "transliterations": { "Nahuatl": "Painalton", "etymology": "From paina, to hurry or run: 'the hurried one', or 'the swift'. He exists to be fast." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The deputy and messenger of Huitzilopochtli — his 'swift one' — whose image was run through the streets and out around the lake towns at the festival of Panquetzaliztli while the god himself stayed in the temple.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Painal: the surrogate or messenger of Huitzilopochtli, whose image was carried at speed in procession during Panquetzaliztli." } ] } ],
+    "domains": [ { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "Painalton", "script": "Nahuatl", "rom": "the swift one" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Painal as Huitzilopochtli's messenger." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "aztec_huitzilopochtli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Painal as the deputy and messenger of Huitzilopochtli." } ],
+        "notes": "His deputy, and in practice his mobile half: the war god does not leave his temple, so the running is done by a second figure with his own name." } ],
+    "cultRecords": [
+      { "tradition": "Aztec/Mexica", "placeName": "Tenochtitlan and the lake towns", "kind": "festival", "period": "triple-alliance",
+        "attestation": "the running of his image at Panquetzaliztli", "source": "Reference treatment of Painal and Panquetzaliztli.",
+        "note": "The image was carried at a run over a long circuit — miles of it, through several towns — and people fell in behind. A state religion that makes its principal festival a road race is doing something specific about participation." } ],
+    "sources": [ { "claim": "Painal is the deputy and messenger of Huitzilopochtli in Mexica religion, whose image was run in procession at the festival of Panquetzaliztli.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Painal and his festival role." } ], "weight": "medium" } ],
+    "notes": "Painal exists so that Huitzilopochtli can stay put. The war god's image sits in the temple on top of the Templo Mayor and does not move; when the god has to be somewhere, Painal goes — carried at a run, over a circuit of miles through the lake towns, with a crowd behind him. His name means roughly 'hurry up'. It is a neat piece of theological engineering: a deity split into a stationary half and a fast half, so the cult can be both fixed and mobile."
+  },
+  {
+    "id": "aztec_opochtli",
+    "name": { "primary": "Opochtli", "alt": ["Opōchtli", "the left-handed one"],
+      "transliterations": { "Nahuatl": "Opōchtli", "etymology": "From opochtli, 'left' or 'left-handed'. Huitzilopochtli's own name contains the same element — 'hummingbird of the left'." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "One of the Tlaloque, the rain gods under Tlaloc, and the patron of those who live off the water: fishermen, fowlers and the makers of nets, harpoons, canoe-poles and bird-snares, all of which are credited to him as inventions.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Opochtli: a Mexica god counted among the Tlaloque, patron of fishermen and bird-catchers and credited with the invention of the fishing net, the harpoon and the bird-snare." } ] } ],
+    "domains": [ { "sphereId": "fishing", "contextTag": "lifelong", "term": { "value": "Opōchtli", "script": "Nahuatl", "rom": "the left-handed one" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Opochtli as patron of fishers and fowlers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "aztec_tlaloc",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Opochtli among the Tlaloque, the rain gods subordinate to Tlaloc." } ],
+        "notes": "One of the Tlaloque. The collective itself is not recorded — this programme does not ingest classes — but its named members are." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Opochtli is a Mexica rain god of the Tlaloque, patron of fishermen and fowlers and credited with inventing the net, the harpoon and the bird-snare.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Opochtli and of the Tlaloque." } ], "weight": "medium" } ],
+    "notes": "Opochtli is the god of everything you use to take food out of a lake. Tenochtitlan was built on one, and a substantial part of the city's diet came out of it — fish, waterfowl, frogs, insect eggs, even the algae they pressed into cakes — so a god who invented the net, the three-pronged harpoon and the snare for catching birds on the water is a god of the local economy. He belongs to the Tlaloque, the rain gods who work under Tlaloc, whose collective the registry does not carry and whose named members it now does."
+  },
+  {
+    "id": "aztec_nappatecuhtli",
+    "name": { "primary": "Nappatecuhtli", "alt": ["Nappatēcuhtli", "Four Times Lord"],
+      "transliterations": { "Nahuatl": "Nappatēcuhtli", "etymology": "nappa, four times, plus tecuhtli, lord: 'lord four times over', generally read as the lord of the four directions from which the rain comes." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "One of the Tlaloque and the patron of the mat-makers — those who cut the lake reeds and weave them into the petate every household sleeps on; described as merciful and as a maker of green things.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nappatecuhtli: one of the Tlaloque, the god of the mat-makers and of reeds, described as a giver of what grows in the water." } ] } ],
+    "domains": [ { "sphereId": "reeds-and-marsh", "contextTag": "lifelong", "term": { "value": "Nappatēcuhtli", "script": "Nahuatl", "rom": "four times lord" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nappatecuhtli as patron of the mat-makers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "aztec_tlaloc",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nappatecuhtli among the Tlaloque." } ],
+        "notes": "One of the Tlaloque." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nappatecuhtli is a Mexica rain god of the Tlaloque and the patron of mat-makers and of the reeds they work.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Nappatecuhtli and of the Tlaloque." } ], "weight": "medium" } ],
+    "notes": "Nappatecuhtli is the god of the mat. The petate — a reed mat — is what a Mexica household slept on, sat on, dried maize on and was eventually buried in, and it comes out of the lake reeds; so the god who makes the reeds grow is the patron of the people who cut and weave them. The Florentine Codex's account of him is unusually warm: he is called merciful, and the gifts attributed to him are green and growing things rather than storms. Rain gods in this pantheon are not all frightening."
+  },
+  {
+    "id": "aztec_huehueteotl",
+    "name": { "primary": "Huehueteotl", "alt": ["Huēhuetēōtl", "the old god"],
+      "transliterations": { "Nahuatl": "Huēhuetēōtl", "etymology": "huehue, old man, plus teotl, god: 'the old god'. He is drawn as one — bent, toothless, carrying a brazier on his head." } },
+    "type": "deity", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The old fire god of central Mexico, whose image — a bent old man sitting cross-legged with a brazier on his head — is among the oldest identifiable deity types in Mesoamerica, found at Cuicuilco and Teotihuacan long before the Mexica.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huehueteotl: 'the old god', the aged fire deity of central Mexico, depicted as a bent old man with a brazier on his head, attested from Preclassic Cuicuilco and Teotihuacan onward and identified with or distinguished from Xiuhtecuhtli depending on the treatment." } ] } ],
+    "domains": [ { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Huēhuetēōtl", "script": "Nahuatl", "rom": "the old god" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huehueteotl as the aged fire god." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "aztec_brazier_old_god",
+        "name": "the brazier-bearing old god",
+        "kind": "cult-image",
+        "role": "A ceramic figure of a hunched, wrinkled, often toothless old man sitting cross-legged with a wide brazier bowl balanced on his head — the fire literally carried by age. The type runs from Preclassic Cuicuilco through Teotihuacan to the Mexica, which makes it one of the longest-lived images in Mesoamerican art.",
+        "sources": [ { "kind": "archaeological", "reference": "Huehueteotl brazier figures from Cuicuilco, Teotihuacan and later sites, in museum collections and described in reference treatments of the old fire god." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "aztec_xiuhtecuhtli",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huehueteotl and Xiuhtecuhtli, identified with one another in some treatments and distinguished as the aged and the youthful forms of fire in others." } ],
+        "notes": "Recorded as a separate record and linked, not merged: some treatments make him simply the old form of Xiuhtecuhtli, others hold the two apart, and the archaeological figure is fifteen centuries older than the Mexica name." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Huehueteotl, 'the old god', is the aged fire deity of central Mexico, depicted carrying a brazier on his head, attested from the Preclassic onward and identified with or distinguished from Xiuhtecuhtli.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Huehueteotl, his iconography and his relation to Xiuhtecuhtli." } ], "weight": "medium" } ],
+    "notes": "The old god is the oldest god. The brazier-bearing figure — a hunched, wrinkled old man sitting cross-legged with a fire bowl on his head — turns up at Cuicuilco, which a volcano buried around the beginning of the common era, and again at Teotihuacan, and is still being made when the Mexica arrive fifteen centuries later. Whether he is the same deity as Xiuhtecuhtli, the turquoise lord the registry already carried, or an older separate one absorbed into him, is not settled. The record links them and says so, because the alternative — merging a Preclassic image into a Postclassic name — would be a claim the evidence does not make."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE TLATOQUE OF TENOCHTITLAN
+================================================================================
+
+The registry's Aztec/Mexica records were twenty-one deities and no rulers, in a
+corpus that carries Egyptian pharaohs, Mesopotamian kings and ten Mixtec lords
+by their calendar names. This block adds the whole tlatoani line, plus
+Nezahualcoyotl of Texcoco and Tlacaelel, who held the office of Cihuacoatl for
+fifty years and is generally reckoned to have run the state from it.
+
+Reign dates are given as the reference treatments give them. For the first two
+rulers the codices disagree by as much as a generation — the Codex Chimalpahin,
+the Codex Aubin and the Codex Chimalpopoca each give different years — and the
+records state the disagreement rather than averaging it away.
+
+```json
+[
+  {
+    "id": "aztec_acamapichtli",
+    "name": { "primary": "Acamapichtli", "alt": ["Ācamāpichtli", "Handful of Reeds"],
+      "transliterations": { "Nahuatl": "Ācamāpichtli", "etymology": "acatl, reed, plus mapichtli, a handful or fistful: 'handful of reeds' — and his name-glyph is exactly that, a fist gripping arrows." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "founding-of-tenochtitlan" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "founding-of-tenochtitlan", "eraOrdering": 0,
+      "startEvent": "First tlatoani of Tenochtitlan. The Mexica, still tributaries of Azcapotzalco on their island, asked Colhuacan for a ruler of Toltec descent and were given him; he founded the dynasty every later tlatoani descends from. The codices disagree on his dates: 1367-1387 in the Codex Chimalpahin, 1376-1395 in the Codex Aubin, 1350-1403 in the Codex Chimalpopoca.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Acamapichtli: first tlatoani of Tenochtitlan, whose reign is given as 1367-1387 in the Codex Chimalpahin, 1376-1395 in the Codex Aubin and 1350-1403 in the Codex Chimalpopoca." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "tlahtoāni", "script": "Nahuatl", "rom": "tlatoani (speaker, ruler)" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Acamapichtli's kingship." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "aztec_huitzilihuitl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica dynasty: Huitzilihuitl succeeded his father Acamapichtli." } ], "notes": "His successor and son." },
+      { "kind": "father-of", "personId": "aztec_itzcoatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzcoatl as a son of Acamapichtli." } ],
+        "notes": "Also his son — by a woman of low birth, which the later chroniclers were careful to record and which did not stop him becoming the most consequential ruler of the line." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Acamapichtli is the first tlatoani of Tenochtitlan, installed from Colhuacan for his Toltec descent, and the ancestor of the whole Mexica royal line; the codices give his reign variously as 1367-1387, 1376-1395 and 1350-1403.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Acamapichtli and the codices' reign dates." } ], "weight": "high" } ],
+    "notes": "Acamapichtli was imported. The Mexica at this point were a client people on a swampy island paying tribute to Azcapotzalco, and what they wanted from a king was legitimacy — so they applied to Colhuacan, which had Toltec blood, and were given a man with it. Every later tlatoani is his descendant, and the dynasty's whole claim rests on that transaction. The codices cannot agree on when he reigned; the spread is forty years, which is a useful reminder about the precision of Mesoamerican regnal chronology before the fifteenth century."
+  },
+  {
+    "id": "aztec_huitzilihuitl",
+    "name": { "primary": "Huitzilihuitl", "alt": ["Huītzilīhuitl", "Hummingbird Feather"],
+      "transliterations": { "Nahuatl": "Huītzilīhuitl", "etymology": "huitzilin, hummingbird, plus ihuitl, feather: 'hummingbird feather'. The hummingbird is Huitzilopochtli's bird." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_acamapichtli"], "parentRoles": ["father"],
+    "temporal": { "era": "founding-of-tenochtitlan" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "founding-of-tenochtitlan", "eraOrdering": 0,
+      "startEvent": "Second tlatoani, who married a daughter of the lord of Azcapotzalco and used the marriage to get the Mexica's tribute cut and their position improved; the codices give his reign as 1390-1415, 1396-1417 or 1403-1417.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huitzilihuitl: second tlatoani of Tenochtitlan, whose reign is given as 1390-1415 in the Codex Chimalpahin, 1396-1417 in the Codex Aubin and 1403-1417 in the Codex Chimalpopoca." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Huitzilihuitl's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "aztec_chimalpopoca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chimalpopoca as the son of Huitzilihuitl." } ], "notes": "His successor and son." },
+      { "kind": "father-of", "personId": "aztec_moctezuma_i",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma I as a son of Huitzilihuitl." } ], "notes": "Son, and the fifth tlatoani." },
+      { "kind": "father-of", "personId": "aztec_tlacaelel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel as a son of Huitzilihuitl and half-brother of Moctezuma I." } ], "notes": "Son, and the man who declined the throne and took the power instead." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Huitzilihuitl is the second tlatoani of Tenochtitlan, son of Acamapichtli, who married into the ruling house of Azcapotzalco and improved the Mexica's tributary position; the codices date his reign variously between 1390 and 1417.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Huitzilihuitl and the codices' reign dates." } ], "weight": "high" } ],
+    "notes": "Huitzilihuitl's achievement was a marriage. The Mexica were still paying tribute to Azcapotzalco and still building their city out of a marsh; he married the Tepanec lord's daughter, and the tribute came down, and Mexica traders got better access, and the island started to look like a city. It is unglamorous statecraft and it set up everything his sons did. He is also the father of both Moctezuma I and Tlacaelel, which makes him the origin of the most effective political partnership in Mexica history."
+  },
+  {
+    "id": "aztec_chimalpopoca",
+    "name": { "primary": "Chimalpopoca", "alt": ["Chīmalpopōca", "Smoking Shield"],
+      "transliterations": { "Nahuatl": "Chīmalpopōca", "etymology": "chimalli, shield, plus popoca, it smokes: 'smoking shield'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_huitzilihuitl"], "parentRoles": ["father"],
+    "temporal": { "era": "founding-of-tenochtitlan" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "founding-of-tenochtitlan", "eraOrdering": 0,
+      "startEvent": "Third tlatoani, 1417-1426, who ruled while Tenochtitlan was still a Tepanec client and died in custody at Azcapotzalco during the succession crisis there — a killing that gave his successor the reason to go to war.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chimalpopoca: third tlatoani of Tenochtitlan, reigning 1417-1426, who died in Tepanec custody." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chimalpopoca's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_moctezuma_i",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sons of Huitzilihuitl." } ], "notes": "Brother." },
+      { "kind": "half sibling", "personId": "aztec_tlacaelel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel as a half-brother within Huitzilihuitl's family." } ], "notes": "Half-brother." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chimalpopoca is the third tlatoani of Tenochtitlan, reigning 1417-1426, who died in Tepanec hands during the Azcapotzalco succession crisis.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Chimalpopoca and his reign." } ], "weight": "high" } ],
+    "notes": "Chimalpopoca died at the wrong end of somebody else's coup. Azcapotzalco's old lord died, the succession there turned violent, and the Mexica king — who was a grandson of the old lord and therefore a complication — ended up dead in Tepanec custody. The sources disagree about whether he was murdered, killed himself, or was removed by his own people to clear the way for a war party. Whatever happened, it gave Itzcoatl a casus belli, and within a few years Azcapotzalco was destroyed and the Mexica were nobody's clients."
+  },
+  {
+    "id": "aztec_itzcoatl",
+    "name": { "primary": "Itzcoatl", "alt": ["Ītzcōātl", "Obsidian Serpent"],
+      "transliterations": { "Nahuatl": "Ītzcōātl", "etymology": "itztli, obsidian, plus coatl, serpent: 'obsidian serpent' — a serpent of knives, and the name of a real snake as well." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_acamapichtli"], "parentRoles": ["father"],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Fourth tlatoani, 1427-1440. He allied with Texcoco and Tlacopan, destroyed Azcapotzalco, ended Mexica subjection and founded the Triple Alliance — and then had the old painted books burned and a new history written, on the grounds that it was not good for the common people to know the old one.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzcoatl: fourth tlatoani of Tenochtitlan, reigning 1427-1440, who with Texcoco and Tlacopan overthrew Azcapotzalco and established the Triple Alliance, and who ordered the burning of earlier codices." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzcoatl's reign and the founding of the Triple Alliance." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Tepanec war." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "aztec_nezahualcoyotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Triple Alliance of Tenochtitlan, Texcoco and Tlacopan formed after the defeat of Azcapotzalco." } ],
+        "notes": "The alliance with Texcoco that made an empire possible. Nezahualcoyotl had his own reasons — the Tepanecs had killed his father and taken his city — and the two of them together took Azcapotzalco apart." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Itzcoatl is the fourth tlatoani of Tenochtitlan, reigning 1427-1440, who broke Tepanec domination, founded the Triple Alliance with Texcoco and Tlacopan, and ordered the destruction of the earlier historical codices.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Itzcoatl, the Tepanec war and the Triple Alliance." } ], "weight": "high" } ],
+    "notes": "Itzcoatl is where the Mexica stop being anyone's tributaries and start being the problem. He took the throne after Chimalpopoca died in Tepanec hands, allied with Nezahualcoyotl of Texcoco and with Tlacopan, and destroyed Azcapotzalco — and then did the thing he is most remembered for among historians, which is to burn the books. The Florentine Codex reports the reasoning without embarrassment: the old paintings were destroyed because it was not fitting that the common people should know them. The history the Mexica told afterwards, including most of what is in this registry's Aztec records, is the one written after that fire."
+  },
+  {
+    "id": "aztec_moctezuma_i",
+    "name": { "primary": "Moctezuma I", "alt": ["Motēuczōma Ilhuicamīna", "Montezuma I", "He Who Shoots at the Sky"],
+      "transliterations": { "Nahuatl": "Motēuczōma Ilhuicamīna", "etymology": "moteuczoma, 'he frowns like a lord' or 'he is angry in a lordly way', plus the epithet Ilhuicamina, 'he shoots arrows at the sky'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_huitzilihuitl"], "parentRoles": ["father"],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Fifth tlatoani, 1440-1469, who turned the alliance into an empire: he expanded Mexica power east to the Gulf and south into Oaxaca, built the aqueduct from Chapultepec, and governed through the great famine of the early 1450s.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma I: fifth tlatoani, reigning 1440-1469, who greatly expanded the Mexica domain." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma I's reign and conquests." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_chimalpopoca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sons of Huitzilihuitl." } ], "notes": "Brother." },
+      { "kind": "half sibling", "personId": "aztec_tlacaelel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel as the half-brother of Moctezuma I." } ],
+        "notes": "His half-brother and his Cihuacoatl — the partnership that ran the empire for thirty years." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Moctezuma I is the fifth tlatoani of Tenochtitlan, reigning 1440-1469, who expanded the empire to the Gulf and into Oaxaca and built the Chapultepec aqueduct.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Moctezuma I, his conquests and his reign." } ], "weight": "high" } ],
+    "notes": "The first Moctezuma is the one who built the thing. His half-brother Tlacaelel held the office of Cihuacoatl beside him and the two of them together made the Triple Alliance into an empire — armies to the Gulf coast and down into Oaxaca, a tribute system, a reformed state cult, and a stone aqueduct bringing drinking water from Chapultepec across the lake, because a city on a salt lake has a water problem. His epithet, Ilhuicamina, means he shoots arrows at the sky, and his name-glyph shows exactly that."
+  },
+  {
+    "id": "aztec_tlacaelel",
+    "name": { "primary": "Tlacaelel", "alt": ["Tlacaélel", "Tlacaelel I"],
+      "transliterations": { "Nahuatl": "Tlacaēlel", "etymology": "Generally read from tlacatl, person, and elelli, a sigh or a pang: something like 'the manly heart' or 'he of the strong feeling'. The reading is not secure." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_huitzilihuitl"], "parentRoles": ["father"],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Cihuacoatl — the second office of the Mexica state, effectively its chief minister — under Itzcoatl, Moctezuma I, Axayacatl, Tizoc and into Ahuitzotl's reign; repeatedly offered the throne and repeatedly refusing it. He is credited with the reform of the state cult around Huitzilopochtli, with the tribute system, and with the doctrine of the flowery wars.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel: an influential advisor to multiple Mexica rulers and an important figure in Mexica governance and religious matters, who with Nezahualcoyotl guided Axayacatl in his youth." } ] } ],
+    "domains": [ { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "Cihuācōātl", "script": "Nahuatl", "rom": "Cihuacoatl (the office)" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel's role in Mexica governance." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "half sibling", "personId": "aztec_moctezuma_i",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tlacaelel as the half-brother of Moctezuma I." } ], "notes": "Half-brother, and his minister." },
+      { "kind": "half sibling", "personId": "aztec_chimalpopoca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the family of Huitzilihuitl." } ], "notes": "Half-brother." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tlacaelel held the office of Cihuacoatl under a succession of Mexica rulers from Itzcoatl onward, declined the throne, and is credited with the reform of the state cult and of the tribute system.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tlacaelel and of Mexica governance." } ], "weight": "medium" } ],
+    "notes": "Tlacaelel never took the throne and is the most consequential Mexica of the fifteenth century. He held the office of Cihuacoatl — named, oddly, after a childbirth goddess — for some fifty years under four or five rulers, was offered the kingship more than once and declined it each time, and is credited by the chroniclers with the things that made the empire what it was: Huitzilopochtli raised to the head of the pantheon, the tribute system, the burning of the old books, and the doctrine that war exists to feed the sun. How much of that is really his and how much was assigned to him afterwards by his own descendants, who wrote several of the sources, is a live question."
+  },
+  {
+    "id": "aztec_axayacatl",
+    "name": { "primary": "Axayacatl", "alt": ["Āxāyacatl", "Water Face"],
+      "transliterations": { "Nahuatl": "Āxāyacatl", "etymology": "atl, water, plus xayacatl, face or mask: 'water face'. It is also the name of a lake fly whose eggs the Mexica ate." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Sixth tlatoani, 1469-1481. He conquered Tlatelolco, Tenochtitlan's twin city and commercial rival, and annexed it; and he lost a war against the Tarascans of Michoacan, the worst military defeat the Mexica suffered before the Spanish. The Sun Stone is generally dated to his reign.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Axayacatl: sixth tlatoani, ruling from 1469 to 1481, guided in his youth by Nezahualcoyotl and Tlacaelel." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Axayacatl's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_tizoc",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica succession: Axayacatl, Tizoc and Ahuitzotl were brothers who ruled in turn." } ], "notes": "Brother, and his successor." },
+      { "kind": "sibling", "personId": "aztec_ahuitzotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three brothers who ruled in succession." } ], "notes": "Brother." },
+      { "kind": "father-of", "personId": "aztec_moctezuma_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma II as the son of Axayacatl." } ], "notes": "Son." },
+      { "kind": "father-of", "personId": "aztec_cuitlahuac",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuitlahuac as a son of Axayacatl and brother of Moctezuma II." } ], "notes": "Son." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Axayacatl is the sixth tlatoani of Tenochtitlan, reigning 1469-1481, who annexed Tlatelolco and was defeated by the Tarascans, and whose sons Moctezuma II and Cuitlahuac later ruled.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Axayacatl, his reign and his family." } ], "weight": "high" } ],
+    "notes": "Axayacatl took his own twin city and then met the one enemy the Mexica could not beat. Tlatelolco shared the island with Tenochtitlan, ran the greatest market in the Americas, and had its own ruler; he ended that and annexed it. Then he went west against the Tarascans of Michoacan, who had bronze weapons and a state as well organised as his own, and came back with a fraction of his army. The Mexica never tried Michoacan again. Two of his sons became tlatoani, and one of them met Cortés."
+  },
+  {
+    "id": "aztec_tizoc",
+    "name": { "primary": "Tizoc", "alt": ["Tīzoc", "Tizocic", "Chalchiuhtlatonac"],
+      "transliterations": { "Nahuatl": "Tīzoc", "etymology": "Uncertain; often connected with tizatl, white chalk, and a verb for piercing — 'he who bleeds with chalk' is one reading among several." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Seventh tlatoani, 1481-1486: an ineffective war leader whose campaigns achieved little, and who died after five years amid persistent reports that he was poisoned by his own nobles. He began the rebuilding of the Templo Mayor and left the carved Stone of Tizoc.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica rulers: Tizoc ruled from 1481 to 1486." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tizoc's reign." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "aztec_stone_of_tizoc",
+        "name": "the Stone of Tizoc",
+        "kind": "monument",
+        "role": "A carved basalt cylinder, over two metres across, showing fifteen scenes of the king seizing captive lords by the hair, each labelled with the conquered town. It is a monument to victories he mostly did not win, which is part of what makes it interesting.",
+        "sources": [ { "kind": "archaeological", "reference": "The Stone of Tizoc, Museo Nacional de Antropología, described in reference treatments of the reign." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_axayacatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three brothers who ruled in succession." } ], "notes": "Brother, and his predecessor." },
+      { "kind": "sibling", "personId": "aztec_ahuitzotl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three brothers who ruled in succession." } ], "notes": "Brother, and his successor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tizoc is the seventh tlatoani of Tenochtitlan, reigning 1481-1486, an unsuccessful war leader who died after five years, possibly poisoned, and who left the carved Stone of Tizoc.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tizoc and his reign." } ], "weight": "medium" } ],
+    "notes": "Tizoc is the tlatoani the Mexica seem to have got rid of. His campaigns produced almost nothing — his coronation war, which was supposed to supply captives, brought back a famously small number — and he reigned five years and died, with the chroniclers recording a widespread belief that he had been poisoned by nobles who had had enough. The stone he left behind shows him taking fifteen lords captive by the hair, which is a claim rather than a record. It is useful evidence that in this system a king who could not deliver victories was not simply a disappointment; he was a liability."
+  },
+  {
+    "id": "aztec_ahuitzotl",
+    "name": { "primary": "Ahuitzotl", "alt": ["Āhuitzotl", "Water Dog"],
+      "transliterations": { "Nahuatl": "Āhuitzotl", "etymology": "atl, water, plus huitzotl, thorny: the name of a legendary water creature with a hand on its tail that drowned people and ate their eyes and nails." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Eighth tlatoani, 1486-1502, and the empire's greatest conqueror: he pushed Mexica power to the Pacific and south towards Guatemala, and dedicated the rebuilt Templo Mayor in 1487 with a mass sacrifice whose reported numbers are disputed and enormous. He died after an aqueduct he had ordered flooded the city.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mexica rulers: Ahuitzotl ruled from 1486 to 1502." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ahuitzotl's reign." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ahuitzotl's conquests." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_axayacatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three brothers who ruled in succession." } ], "notes": "Brother." },
+      { "kind": "sibling", "personId": "aztec_tizoc",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three brothers who ruled in succession." } ], "notes": "Brother, and his predecessor." },
+      { "kind": "father-of", "personId": "aztec_cuauhtemoc",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuauhtemoc as the son of Ahuitzotl." } ], "notes": "Son, and the last tlatoani." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahuitzotl is the eighth tlatoani of Tenochtitlan, reigning 1486-1502, the empire's greatest conqueror, who dedicated the rebuilt Templo Mayor in 1487 and died after a flood caused by his own aqueduct.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ahuitzotl, his conquests and the dedication of the Templo Mayor." } ], "weight": "high" } ],
+    "notes": "Ahuitzotl is the empire at its largest and its worst. He took Mexica power to both oceans and nearly to Guatemala, and he opened the rebuilt Templo Mayor in 1487 with a sacrifice whose reported death toll — eighty thousand over four days, in the sources — is almost certainly a propaganda figure and is still, at any plausible discount, a mass killing. He is named after a water creature that drags people under. He died a few years later of an injury sustained when a new aqueduct he had insisted on flooded Tenochtitlan, which is an ending with a certain shape to it."
+  },
+  {
+    "id": "aztec_moctezuma_ii",
+    "name": { "primary": "Moctezuma II", "alt": ["Motēuczōma Xōcoyōtzin", "Montezuma II", "Moctezuma the Younger"],
+      "transliterations": { "Nahuatl": "Motēuczōma Xōcoyōtzin", "etymology": "The same moteuczoma as his great-grandfather's name, with Xocoyotzin, 'the younger' or 'the youngest', to distinguish them." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_axayacatl"], "parentRoles": ["father"],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+        "startEvent": "Ninth tlatoani from 1502 or 1503: he centralised the administration, replaced officials of common birth with nobles, and pressed the empire to its greatest extent while fighting the flowery wars against Tlaxcala, which he never subdued.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma II, who reigned from 1502 or 1503 until 1520." } ] },
+      { "typeStatus": "mortal", "era": "conquest-era", "eraOrdering": 1,
+        "startEvent": "Received Cortés into Tenochtitlan in November 1519, was taken hostage in his own palace, and died in June 1520 during the rising that drove the Spanish out — killed by stones thrown from his own people, in the Spanish account, or by the Spanish themselves, in the Nahua one.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma II: his reign ended in 1520 and he was succeeded by his brother Cuitláhuac." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moctezuma II's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_cuitlahuac",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuitláhuac, who succeeded his brother Moctezuma II in June 1520." } ], "notes": "Brother, and his successor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Moctezuma II is the ninth tlatoani of Tenochtitlan, reigning from 1502 or 1503 to 1520, who received Cortés, was held hostage in his own city and died during the rising of June 1520.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Moctezuma II and of his death." } ], "weight": "high" } ],
+    "notes": "Moctezuma II ruled the empire at its largest for seventeen years and is remembered for his last eight months. He was a centraliser — he purged officials of common birth appointed under his uncle and replaced them with nobles — and an aggressive one, running the flowery wars against Tlaxcala without ever finishing them, which mattered enormously in 1519 when Tlaxcala found somebody else to fight alongside. How and why he received Cortés into the city is argued about endlessly and most of the arguing rests on sources written by the winners or by their allies. He died in June 1520, and the two traditions disagree about whose hand did it."
+  },
+  {
+    "id": "aztec_cuitlahuac",
+    "name": { "primary": "Cuitlahuac", "alt": ["Cuitlāhuac", "Cuitlahuatzin"],
+      "transliterations": { "Nahuatl": "Cuitlāhuac", "etymology": "Generally read as 'dried excrement' — that is, dung used as fertiliser, which is less of an insult than it sounds; it is also the name of a town on the lake." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_axayacatl"], "parentRoles": ["father"],
+    "temporal": { "era": "conquest-era" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "conquest-era", "eraOrdering": 0,
+      "startEvent": "Tenth tlatoani, for about four months in 1520. He took the throne after his brother's death, drove the Spanish out of Tenochtitlan in the fighting the Spanish call the Noche Triste, and died of smallpox before the year was out — the epidemic having arrived with the invaders.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuitláhuac: he succeeded his brother Moctezuma II in June 1520 and died of smallpox during the subsequent Spanish siege, his reign lasting about four months." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuitláhuac's brief reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "aztec_moctezuma_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuitláhuac as the brother and successor of Moctezuma II." } ], "notes": "Brother, and his predecessor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cuitlahuac is the tenth tlatoani of Tenochtitlan, ruling about four months in 1520, who expelled the Spanish from the city and died of smallpox.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Cuitláhuac, his expulsion of the Spanish and his death from smallpox." } ], "weight": "high" } ],
+    "notes": "Cuitlahuac won and then died of a disease he had no way to fight. He came to the throne with the Spanish inside his city and drove them out of it — a real defeat, with Spanish losses heavy enough that they remembered the night by name — and then smallpox, which had arrived in the same ships, went through Tenochtitlan and killed him inside four months. It is the single clearest instance of the pattern that decided the conquest: the Mexica could beat the Spanish in the field and could not beat what came with them."
+  },
+  {
+    "id": "aztec_cuauhtemoc",
+    "name": { "primary": "Cuauhtemoc", "alt": ["Cuauhtémoc", "Cuauhtemoctzin", "Descending Eagle"],
+      "transliterations": { "Nahuatl": "Cuāuhtemōc", "etymology": "cuauhtli, eagle, plus temo, to descend: 'the eagle that descends' — read both as the swooping eagle and as the sun going down." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["aztec_ahuitzotl"], "parentRoles": ["father"],
+    "temporal": { "era": "conquest-era" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "conquest-era", "eraOrdering": 0,
+      "startEvent": "Eleventh and last tlatoani of Tenochtitlan, from late 1520 to the fall of the city in August 1521. He held out through a siege of nearly three months, was captured attempting to leave by canoe, was tortured for the gold the Spanish believed he had hidden, and was hanged by Cortés in 1525 on the march to Honduras.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuauhtémoc: he succeeded Cuitláhuac as the last Aztec ruler, his reign beginning in late 1520 and lasting until the fall of Tenochtitlan in 1521." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cuauhtémoc's reign and the siege of Tenochtitlan." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cuauhtemoc is the eleventh and last tlatoani of Tenochtitlan, who held the city through the siege of 1521, was captured at its fall and was executed by Cortés in 1525.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cuauhtémoc, the siege of Tenochtitlan and his death." } ], "weight": "high" } ],
+    "notes": "Cuauhtemoc inherited a city with smallpox in it and a siege coming, and held it for nearly three months — no food, no fresh water once the aqueduct was cut, fighting street by street across a lake. He was taken in a canoe on the last day. Then the Spanish burned his feet to make him say where the gold was, and there was no gold, because most of it had gone into the lake the year before. Cortés hanged him four years later on the road to Honduras on a charge of conspiracy that nobody has ever been able to substantiate. He is the figure modern Mexico chose to put in its public squares rather than either Moctezuma or Cortés."
+  },
+  {
+    "id": "aztec_nezahualcoyotl",
+    "name": { "primary": "Nezahualcoyotl", "alt": ["Nezahualcóyotl", "Fasting Coyote"],
+      "transliterations": { "Nahuatl": "Nezahualcōyōtl", "etymology": "nezahualli, fasting, plus coyotl, coyote: 'the fasting coyote' — an ascetic animal, which for a king in exile is a fair description." } },
+    "type": "mortal", "origin": "canon", "tradition": "Aztec/Mexica", "primaryTradition": "Aztec/Mexica",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "triple-alliance" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "triple-alliance", "eraOrdering": 0,
+      "startEvent": "Tlatoani of Texcoco, the second city of the Triple Alliance, from 1431 until his death about 1472; poet, engineer and lawgiver, who watched the Tepanecs kill his father, recovered his city in alliance with Itzcoatl, built the dike that kept the salt water out of the fresh lake, and left a body of verse under his own name. His son Nezahualpilli succeeded him and reigned 1473-1515.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nezahualcoyotl, succeeded as tlatoani of Texcoco by his son Nezahualpilli, who reigned 1473-1515; and reference treatment of the Triple Alliance and of Nezahualcoyotl's role in the defeat of Azcapotzalco." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nezahualcoyotl's kingship at Texcoco." } ] },
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "xōchicuīcatl", "script": "Nahuatl", "rom": "xochicuicatl (flower-song)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nezahualcoyotl as a poet." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "aztec_itzcoatl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Triple Alliance formed by Tenochtitlan, Texcoco and Tlacopan after the defeat of Azcapotzalco." } ],
+        "notes": "The alliance that made the empire. He brought Texcoco, its army and — by most accounts — a good deal of the administrative thinking." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nezahualcoyotl is the tlatoani of Texcoco, ally of Itzcoatl in the overthrow of Azcapotzalco and co-founder of the Triple Alliance, remembered as a poet, engineer and lawgiver, succeeded about 1472 by his son Nezahualpilli.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Nezahualcoyotl, of Nezahualpilli's reign dates and of the Triple Alliance." } ], "weight": "high" } ],
+    "notes": "Nezahualcoyotl is the one figure in this material who is remembered for something other than conquest. He saw his father killed by the Tepanecs when he was a boy, spent years in exile, came back with Itzcoatl and took Azcapotzalco apart, and then ran Texcoco for forty years as the alliance's junior partner and its cultural capital — a legal code, botanical gardens, and the great dike across the lake that kept the brackish east water out of the fresh west water and made Tenochtitlan habitable. Poems are transmitted under his name; how many are actually his is disputed, and they are good enough that the question is worth having."
+  }
+]
+```
