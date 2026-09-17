@@ -1,5 +1,5 @@
 lane	tradition_id	tradition_name	owner	status	candidate_count	added_count	duplicate_count	blocked_count	notes
-1	Umbrian	Umbrian	lane-1-a425c0b1417b	CENSUS_COMPLETE	48	0	17	16	PR #102; census stable for ingestion of 13 accepted candidates; 16 philological/identity cases BLOCKED; exhaustive completion is not claimed. See audits/lane-1/umbrian-census.tsv and umbrian-audit.md.
+1	Umbrian	Umbrian	lane-1-a425c0b1417b	BLOCKED	48	13	17	16	PR #102 filed the census only and shipped 0 of its 13 accepted candidates; all 13 are now ingested via data-sources/transcripts/umbrian-expansion.txt (corpus 5,721 -> 5,734). Registered the second Umbrian era key "Roman-era Umbria; 1st-3rd c. CE" for Clitumnus, Valentia and Visidianus. 6 kinless figures carry cited verified-solitary verdicts. Status is BLOCKED, not DONE: 16 philological/identity cases in the census remain unresolved and exhaustive completion is still not claimed. See audits/lane-1/umbrian-census.tsv and umbrian-audit.md.
 1	Greek	Greek		UNCLAIMED	0	0	0	0	Tradition key is the exact corpus tradition string; no separate numeric tradition ID.
 1	Roman	Roman		UNCLAIMED	0	0	0	0	Tradition key is the exact corpus tradition string; no separate numeric tradition ID.
 1	Orphic	Orphic		UNCLAIMED	0	0	0	0	Tradition key is the exact corpus tradition string; no separate numeric tradition ID.
