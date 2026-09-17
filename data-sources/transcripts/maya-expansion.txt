@@ -1,0 +1,1806 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Maya
+Eras (registered, exact): cosmogonic | mythic | late-preclassic | classic |
+  postclassic | colonial
+Author pass: Maya held 26 records, of which not one was a person with a date.
+             This adds 64.
+
+================================================================================
+THE GAP: A TRADITION WITH NO HISTORY IN IT
+================================================================================
+
+A 79-name check across the WHOLE registry returned 9 hits and 70 absences, and
+several of the 9 are alias matches rather than real holdings — "Kisin" resolves
+to `maya_ah_puch` through an alias, "Ah Mun" to `maya_yum_kaax`, "Chac Chel" to
+`maya_ix_chel`, "God D" to `maya_itzamna`, "Maize God" to three different
+records at once.
+
+The gap has two shapes and they are not the same problem.
+
+**The Popol Vuh was in the registry as a cast list with the extras cut.** The
+corpus held Hun Hunahpu, the Hero Twins, Xquic, Xmucane, Xpiacoc, Hun-Came,
+Vucub-Came, Tohil, Vucub Caquix, Zipacna, Cabracan, Camazotz and Cuchumaquic —
+and not: Hun Batz and Hun Chouen, the elder half-brothers turned into monkeys,
+who are the patrons of every Maya scribe and artist; their mother Xbaquiyalo;
+nine of the twelve lords of Xibalba; Avilix and Hacavitz, without whom Tohil is
+one god rather than three; the four first men made of maize and their four
+wives, who are the whole point of the book; the four destroyers of the wooden
+people; and Xulu and Pacam, the two seers whose advice is the mechanism by
+which the Hero Twins come back from the dead.
+
+**The Classic period was absent entirely.** Not a single Maya ruler was in the
+registry — no Pakal, no Yax K'uk' Mo', no Jasaw Chan K'awiil, no Yuknoom the
+Great — in a corpus that carries Egyptian pharaohs, Mesopotamian kings, the
+whole Mexica tlatoani line as of last month, and ten Mixtec lords by their
+calendar names. Nor were the gods that Classic inscriptions and ceramics
+actually name: K'awiil, God L, Pauahtun, the four Bacabs, GI and GIII of the
+Palenque Triad, Xaman Ek, Buluc Chabtan.
+
+The Maya are the one Mesoamerican civilisation that wrote its own political
+history down, in a script that has been readable since the 1980s, and the
+registry had the mythology and none of the history.
+
+================================================================================
+THE TRADITION-KEY PROBLEM, OBSERVED AND NOT TOUCHED
+================================================================================
+
+The corpus carries the Maya across five keys — Maya (26), K'iche' (12),
+Yucatec Maya (12), Lacandon (12), Tzotzil–Tzeltal (9) — and the first three
+overlap heavily:
+
+- **All twelve K'iche' records duplicate Maya records.** kiche_hun_came /
+  maya_hun_came, kiche_tohil / maya_tohil, kiche_xpiyacoc / maya_xpiacoc, and
+  so on through the whole Popol Vuh set.
+- **Seven of the twelve Yucatec Maya records duplicate Maya records**: Ah
+  Puch, Chaac, Itzamna, Ix Chel, Kinich Ahau, Kukulkan, Yum Kaax.
+
+That is nineteen figures held twice or three times under different keys. It is
+pre-existing, it is flagged in the census, and **it is not merged here**:
+merging is destructive and the tradition-key question is the owner's.
+
+This batch goes under **Maya**, because that is the key with the periodised
+eras (cosmogonic → colonial) that Classic-period material needs, and because
+it is the key the fuller Popol Vuh set already sits under. Every new record
+that pairs with an existing one points at the `maya_*` id.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search and every citation
+names what was consulted. Epigraphic dates are given as the reference
+treatments give them, in the Gregorian conversions those treatments use, and
+where two treatments disagree the record says so rather than averaging.
+
+One caution particular to this tradition: Classic Maya theonyms are still
+partly read by letter-labels (God D, God L, God N, GI, GII, GIII) assigned by
+Schellhas and by the Palenque epigraphers before the names could be read.
+Where a label has since been resolved to a name it is used and the label kept
+as an alias; where it has not, the label is the record's name and the record
+says why.
+
+================================================================================
+AUTHORED FIGURES — I. THE POPOL VUH CAST THE REGISTRY DID NOT HAVE
+================================================================================
+
+```json
+[
+  {
+    "id": "maya_hun_batz",
+    "name": { "primary": "Hun Batz", "alt": ["Hun B'atz'", "One Monkey", "One Howler"],
+      "transliterations": { "K'iche'": "Jun B'atz'", "etymology": "'One Monkey' — hun, one, plus batz, howler monkey, which is also a day-name in the 260-day count." } },
+    "type": "demigod", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "transformed",
+    "parentIds": ["maya_hun_hunahpu", "maya_xbaquiyalo"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Son of Hun Hunahpu by his first wife Xbaquiyalo, and with his twin Hun Chouen a great artist and musician: the two are the patrons of scribes, artists, musicians and artisans.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hun Batz and Hun Chuen are twins born to Hun Hunahpu and Xbaquiyalo, both of them great artists and musicians, and the patrons of scribes, artists, musicians and artisans." } ] },
+      { "typeStatus": "demigod", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "He and his twin tormented their younger half-brothers Hunahpu and Xbalanque out of jealousy. The Hero Twins tricked them into climbing a tree, made the tree grow past reach, and they became monkeys.",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the Hero Twins, tormented by their jealous elder half-brothers Hun Batz and Hun Chowen, trick them into climbing a tree which they cause to grow impossibly tall, and the Monkey Twins are transformed into monkeys." } ] } ],
+    "domains": [
+      { "sphereId": "scribes", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the howler monkey gods as patrons of scribes and artists." } ] },
+      { "sphereId": "craft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on Hun Batz and Hun Chouen as flautists, singers, painters, carvers, jewellers and silversmiths." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "maya_hun_chouen",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hun Batz and Hun Chouen, twin sons of Hun Hunahpu and Xbaquiyalo." } ],
+        "notes": "Named together throughout and never separately; the pair is the unit." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hun Batz is a son of Hun Hunahpu by Xbaquiyalo, twin of Hun Chouen, patron of scribes and artists, and elder half-brother of the Hero Twins, who turned him into a monkey.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, on the Monkey Twins, their arts and their transformation." }, { "kind": "secondary", "reference": "Reference treatment of the Maya howler monkey gods." } ], "weight": "high" } ],
+    "notes": "Every Maya scribe worked under Hun Batz. The howler monkey holding a brush and a conch inkpot is one of the most common figures on Classic painted ceramics, and he is this: the elder brother who could do everything, who was cruel to the younger ones, and who was turned into what he behaved like. The Popol Vuh is unusually blunt about the moral — the twins do not kill him, they fix his face to his character — and the K'iche' who told it were themselves the scribal class. His half-brothers Hunahpu and Xbalanque were in the registry; he was not."
+  },
+  {
+    "id": "maya_hun_chouen",
+    "name": { "primary": "Hun Chouen", "alt": ["Hun Chuen", "Hun Chowen", "One Artisan", "One Monkey"],
+      "transliterations": { "K'iche'": "Jun Chowen", "etymology": "'One Artisan' — chuen is the Yucatec day-name for the monkey, and the name reads as a day in the 260-day count, as his twin's does." } },
+    "type": "demigod", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "transformed",
+    "parentIds": ["maya_hun_hunahpu", "maya_xbaquiyalo"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "Twin of Hun Batz, son of Hun Hunahpu and Xbaquiyalo, and with him the patron of every art the Maya had a word for.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hun Batz and Hun Chuen, twins born to Hun Hunahpu and Xbaquiyalo, both great artists and musicians." } ] },
+      { "typeStatus": "demigod", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "Turned into a monkey with his twin, in the tree, for what they had done to the younger brothers.",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the transformation of the Monkey Twins in the tree the Hero Twins caused to grow." } ] } ],
+    "domains": [
+      { "sphereId": "scribes", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the howler monkey gods as patrons of scribes and artists." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "maya_hun_batz",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the two are twins and are always named as a pair." } ],
+        "notes": "The other half." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hun Chouen is the twin of Hun Batz, son of Hun Hunahpu and Xbaquiyalo, patron with him of scribes and artists, and transformed into a monkey by the Hero Twins.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh on the Monkey Twins." }, { "kind": "secondary", "reference": "Reference treatment of the howler monkey gods." } ], "weight": "high" } ],
+    "notes": "He is never mentioned without his brother and has no separate act in the book, which is why the record is shorter and says so rather than padding. Both names are day-names, which is the tell: the Monkey Twins are calendrical before they are characters, and the Classic-period monkey scribes on the vases are two, not one."
+  },
+  {
+    "id": "maya_xbaquiyalo",
+    "name": { "primary": "Xbaquiyalo", "alt": ["Xbakiyalo", "Xbaquiyalo of the Popol Vuh"],
+      "transliterations": { "K'iche'": "Xb'aqiyalo", "etymology": "No agreed derivation is given in the sources consulted here." } },
+    "type": "demigod", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The first wife of Hun Hunahpu and the mother of Hun Batz and Hun Chouen. She is dead before the Xibalba episode begins, which is why Hun Hunahpu is free to be summoned and why Xquic can be the mother of the second pair.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hun Batz and Hun Chuen are the twin sons of Hun Hunahpu and his wife Xbaquiyalo." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "maya_hun_batz",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on Xbaquiyalo as the mother of Hun Batz." } ], "notes": "" },
+      { "kind": "mother-of", "personId": "maya_hun_chouen",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on Xbaquiyalo as the mother of Hun Chouen." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xbaquiyalo is the first wife of Hun Hunahpu and the mother of the Monkey Twins Hun Batz and Hun Chouen.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, on the parentage of the Monkey Twins." } ], "weight": "medium" } ],
+    "notes": "She exists in the text to be the first wife and to be gone. The Popol Vuh's genealogy only works because Hun Hunahpu has two sets of sons by two women in two generations, and she is the first — which makes her the reason the Monkey Twins are half-brothers to the Hero Twins rather than brothers, and the jealousy the second half of Part II turns on is a half-brother's. The book gives her nothing else and this record invents nothing else. Her sons are in this batch; she was not in the registry and neither were they."
+  },
+  {
+    "id": "maya_xiquiripat",
+    "name": { "primary": "Xiquiripat", "alt": ["Xiquiripat of Xibalba", "Flying Scab"],
+      "transliterations": { "K'iche'": "Xikiripat", "etymology": "Rendered 'Flying Scab' in the standard translations." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the twelve lords of Xibalba: with Cuchumaquic, the pair who sicken people's blood.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Xiquiripat, 'Flying Scab', and Cuchumaquic, 'Gathered Blood', who sicken people's blood." } ] } ],
+    "domains": [ { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Xiquiripat and Cuchumaquic." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_hun_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hun-Came and Vucub-Came are the supreme lords of Xibalba and the other ten are ranked beneath them." } ], "notes": "Hun-Came is the senior of the two above him." },
+      { "kind": "paired-with", "personId": "maya_cuchumaquic",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten subordinate lords of Xibalba are named in pairs, and Xiquiripat's partner is Cuchumaquic." } ],
+        "notes": "Cuchumaquic was already in the registry and Xiquiripat was not, which is the pattern for this whole rank: the pairs were half-present. The edge is written one-way because the existing record cannot be given a reciprocal from here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xiquiripat is one of the twelve lords of Xibalba, paired with Cuchumaquic, the two of them sickening people's blood.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "The lords of Xibalba are a bureaucracy of specific diseases, which is the thing worth noticing about them: not death in general but this affliction, assigned to these two, by name. Xiquiripat and Cuchumaquic have the blood. The registry held the partner and not him."
+  },
+  {
+    "id": "maya_ahalpuh",
+    "name": { "primary": "Ahalpuh", "alt": ["Ajal Puj", "Pus Demon", "Pus Master"],
+      "transliterations": { "K'iche'": "Ajal Puj", "etymology": "'Pus Demon' or 'Pus Master' in the standard translations: puj is pus." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba: with Ahalgana, the pair who make people's bodies swell up.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalpuh, 'Pus Demon', and Ahalgana, 'Jaundice Demon', who cause people's bodies to swell." } ] } ],
+    "domains": [ { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Ahalpuh and Ahalgana." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_hun_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath Hun-Came and Vucub-Came." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_ahalgana",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalpuh and Ahalgana are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahalpuh is a lord of Xibalba, paired with Ahalgana, the two of them making people's bodies swell.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "Suppuration, as an office, held by a named person. The Popol Vuh's underworld is administrative in a way that Greek or Norse underworlds are not — it has a department for this."
+  },
+  {
+    "id": "maya_ahalgana",
+    "name": { "primary": "Ahalgana", "alt": ["Ajal Q'ana", "Jaundice Demon", "Jaundice Master"],
+      "transliterations": { "K'iche'": "Ajal Q'ana", "etymology": "'Jaundice Demon' in the standard translations; q'an is yellow." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba, partner of Ahalpuh in the swelling of bodies.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalgana, 'Jaundice Demon', paired with Ahalpuh, causing people's bodies to swell up." } ] } ],
+    "domains": [ { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Ahalgana." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_vucub_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath Hun-Came and Vucub-Came." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_ahalpuh",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalgana and Ahalpuh are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahalgana is a lord of Xibalba, paired with Ahalpuh, the two of them making people's bodies swell.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "Yellow, in this cosmology, is a symptom with an owner."
+  },
+  {
+    "id": "maya_chamiabac",
+    "name": { "primary": "Chamiabac", "alt": ["Chamiyab'aq", "Bone Staff", "Bone Stave"],
+      "transliterations": { "K'iche'": "Chamiyab'aq", "etymology": "'Bone Staff': chamiy, staff or stave, plus b'aq, bone." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba: with Chamiaholom, the pair who reduce the dead to skeletons.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chamiabac, 'Bone Staff', and Chamiaholom, 'Skull Staff', who turn dead bodies into skeletons." } ] } ],
+    "domains": [ { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Chamiabac and Chamiaholom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_hun_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_chamiaholom",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chamiabac and Chamiaholom are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chamiabac is a lord of Xibalba, paired with Chamiaholom, the two of them turning dead bodies into skeletons.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "Their names are their instruments: a staff made of bone and a staff made of skulls. The emaciation of the dead is not a natural process in this system, it is done to them, by these two, with those."
+  },
+  {
+    "id": "maya_chamiaholom",
+    "name": { "primary": "Chamiaholom", "alt": ["Chamiyajolom", "Skull Staff", "Skull Stave"],
+      "transliterations": { "K'iche'": "Chamiyajolom", "etymology": "'Skull Staff': chamiy, staff, plus jolom, skull or head." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba, partner of Chamiabac in the stripping of the dead.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chamiaholom, 'Skull Staff', paired with Chamiabac, the two of them turning dead bodies into skeletons." } ] } ],
+    "domains": [ { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Chamiaholom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_vucub_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_chamiabac",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the two are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chamiaholom is a lord of Xibalba, paired with Chamiabac, the two of them turning dead bodies into skeletons.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "The skull-headed staff he is named for is a real object class in Maya iconography, carried by underworld figures on Classic ceramics; the Popol Vuh names the carrier."
+  },
+  {
+    "id": "maya_ahalmez",
+    "name": { "primary": "Ahalmez", "alt": ["Ajal Mes", "Sweepings Demon", "Filth Master"],
+      "transliterations": { "K'iche'": "Ajal Mes", "etymology": "'Sweepings Demon': mes is rubbish, dirt, the stuff swept up." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba: with Ahaltocob, the pair who hide in the unswept corners of a house and kill the people who live there.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalmez, 'Sweepings Demon', and Ahaltocob, 'Stabbing Demon', who hide in the unswept areas of people's houses and stab them to death." } ] } ],
+    "domains": [
+      { "sphereId": "misfortune", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Ahalmez and Ahaltocob." } ] },
+      { "sphereId": "domestic-space", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: they lie in wait in the unswept parts of houses." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_hun_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_ahaltocob",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahalmez and Ahaltocob are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahalmez is a lord of Xibalba, paired with Ahaltocob, the two of them lying in wait in the unswept parts of houses and killing the people in them.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "This is the pair with the clearest social function. Sweep the house or these two will be in it: a rule about domestic hygiene enforced by named agents of the underworld, and a reminder that the Popol Vuh's lords of death were also how a K'iche' household explained why someone died in the night."
+  },
+  {
+    "id": "maya_ahaltocob",
+    "name": { "primary": "Ahaltocob", "alt": ["Ajal Toq'ob'", "Stabbing Demon"],
+      "transliterations": { "K'iche'": "Ajal Toq'ob'", "etymology": "'Stabbing Demon' in the standard translations." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba, partner of Ahalmez: the one who does the stabbing.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Ahaltocob, 'Stabbing Demon', paired with Ahalmez, hiding in the unswept parts of houses and stabbing people to death." } ] } ],
+    "domains": [ { "sphereId": "violent-death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Ahaltocob." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_vucub_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_ahalmez",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the two are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ahaltocob is a lord of Xibalba, paired with Ahalmez, the two of them killing people who leave their houses unswept.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "The sudden death in the house, given a name and a colleague."
+  },
+  {
+    "id": "maya_xic",
+    "name": { "primary": "Xic", "alt": ["Xik", "Quicxic", "Wing", "Bloody Wing"],
+      "transliterations": { "K'iche'": "Xik", "etymology": "'Wing'. Some translations give the name as Quicxic, 'Bloody Wing', from quic, blood." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba: with Patan, the pair who make travellers die coughing blood on the road.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Xic, 'Wing', and Patan, 'Packstrap', who cause people to die coughing up blood while out walking on a road." } ] } ],
+    "domains": [ { "sphereId": "sudden-death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the office of Xic and Patan." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_hun_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_patan",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Xic and Patan are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xic is a lord of Xibalba, paired with Patan, the two of them killing travellers who die coughing blood on the road.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "The name is given as Xic in some translations and Quicxic in others; both are recorded here as forms of one lord rather than as two records, because the roster is twelve and stays twelve either way."
+  },
+  {
+    "id": "maya_patan",
+    "name": { "primary": "Patan", "alt": ["Patán", "Packstrap", "Tumpline"],
+      "transliterations": { "K'iche'": "Patan", "etymology": "'Packstrap' — the tumpline a Maya porter carried a load with, across the forehead. The instrument of the trade that his victims died practising." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A lord of Xibalba, partner of Xic in the deaths of people on the road.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Patan, 'Packstrap', paired with Xic, causing people to die coughing up blood while walking on a road." } ] } ],
+    "domains": [ { "sphereId": "roads", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on Patan's office, which is specifically deaths on the road." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "maya_vucub_came",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the ten lords rank beneath the two supreme lords." } ], "notes": "" },
+      { "kind": "paired-with", "personId": "maya_xic",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the two are named as a pair." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Patan is a lord of Xibalba, paired with Xic, the two of them killing travellers who die coughing blood on the road.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the roster of the lords of Xibalba." } ], "weight": "high" } ],
+    "notes": "A Maya economy without draught animals moved on the backs of men wearing tumplines, and the man who dropped dead under his load on a forest road was a known and frequent event. The lord responsible is named after the strap."
+  },
+  {
+    "id": "maya_xulu",
+    "name": { "primary": "Xulu", "alt": ["Xulu the seer"],
+      "transliterations": { "K'iche'": "Xulu", "etymology": "No agreed derivation is given in the sources consulted here." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of two seers of Xibalba whom the Hero Twins consult before allowing themselves to be killed. Knowing the lords meant to burn them, the twins instruct Xulu and Pacam to advise that their bones be ground to powder and thrown in a river — and the lords, taking the seers' advice, do exactly that, which is how the twins come back.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: the Hero Twins summon the seers Xulu and Pacam and instruct them to advise that their bones be ground and thrown into the river; the Xibalbans follow that advice, and five days later the twins reappear." } ] } ],
+    "domains": [ { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on Xulu and Pacam as seers consulted about the disposal of the dead." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "maya_pacam",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Xulu and Pacam are named together as the two seers." } ], "notes": "Named only as a pair, and only in this episode." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xulu is one of the two Xibalban seers, with Pacam, whom the Hero Twins instruct to advise that their ground bones be thrown in the river, which is the means of their resurrection.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the death and return of the Hero Twins." } ], "weight": "high" } ],
+    "notes": "Xulu and Pacam are the hinge of the entire Xibalba narrative and they were not in the registry. The twins cannot defeat the lords of death by force; they arrange their own execution and plant the instruction for its aftermath with the diviners the lords will consult. The resurrection is a con, run through the underworld's own advisory apparatus, and these two are the channel."
+  },
+  {
+    "id": "maya_pacam",
+    "name": { "primary": "Pacam", "alt": ["Pacam the seer"],
+      "transliterations": { "K'iche'": "Pakam", "etymology": "No agreed derivation is given in the sources consulted here." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of the two seers of Xibalba, with Xulu, who advise the lords to grind the twins' bones and spill the powder in the river — as the twins had told them to.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: the twins consult the seers Xulu and Pacam, who advise the lords on what to do with their remains; the Xibalbans grind the bones and spill the powder into a river." } ] } ],
+    "domains": [ { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the seers' advice." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "maya_xulu",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the two seers are always named together." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Pacam is one of the two Xibalban seers, with Xulu, whose advice to the lords of death is what the Hero Twins had planted with them.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the death and return of the Hero Twins." } ], "weight": "high" } ],
+    "notes": "He has no separate act from Xulu and the record does not manufacture one."
+  },
+  {
+    "id": "maya_avilix",
+    "name": { "primary": "Avilix", "alt": ["Awilix", "Auilix"],
+      "transliterations": { "K'iche'": "Awilix", "etymology": "No settled derivation. The name is also the name of the mountain and of the temple where the god was kept, which is the ordinary K'iche' arrangement." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of the three gods the first men received. Tohil appeared first and was carried by Balam-Quitze; Avilix appeared next and was carried by Balam-Acab.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: 'Tohil appeared first and was carried by Balam-Quitzé, Avilix appeared next and was carried by Balam-Acab, and Hacavitz was carried by Mahucutah.'" } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Avilix is the god of the Nihaib lineage and the name of its Great Building, as Tohil is of the Cavec and Hacavitz of the Ahau-Quiché.",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: 'Avilix was the name of the temple of Avilix of the Nihaib lineage', beside the Great Building of Tohil of the Cavec and the temple of the Ahau-Quiché god Hacavitz." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-deity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on Avilix as the god of the Nihaib lineage." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "patron-of", "personId": "maya_balam_acab",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Avilix was carried by Balam-Acab." } ],
+        "notes": "Carried by him, in the literal sense the text means: the god was a bundle a man bore on his back out of Tulan." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "the temple of Avilix, of the Nihaib lineage", "kind": "lineage-cult", "period": "mythic to postclassic",
+        "attestation": "the Popol Vuh's account of the three K'iche' lineage temples", "source": "Popol Vuh.",
+        "note": "The god, the mountain and the building share the name, and the lineage is defined by which of the three it carries." } ],
+    "sources": [ { "claim": "Avilix is the second of the three gods received by the first K'iche' men, carried by Balam-Acab, and the tutelary god of the Nihaib lineage.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, on the three gods and the three lineage temples." } ], "weight": "high" } ],
+    "notes": "The registry held Tohil and neither of his two colleagues, which makes the K'iche' political settlement unreadable: the point of the three gods is that there are three lineages, that each carries one, and that they did not separate because the god had the same name in each branch. One god is a deity. Three gods carried by three named men into three named temples is a constitution."
+  },
+  {
+    "id": "maya_hacavitz",
+    "name": { "primary": "Hacavitz", "alt": ["Jaqawitz", "Jacawitz", "Hacavitz the mountain"],
+      "transliterations": { "K'iche'": "Jaqawitz", "etymology": "The name is also a mountain — the K'iche' pattern in which the god, the peak and the temple are one word." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The third of the three gods received by the first men, carried by Mahucutah, and the god of the Ahau-Quiché lineage.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: 'Hacavitz was carried by Mahucutah'; and Hacavitz was the name of the temple of the god of the Ahau-Quiché lineage." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-deity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on Hacavitz as the god of the Ahau-Quiché lineage." } ] },
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hacavitz is the name of a mountain as well as of the god." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "patron-of", "personId": "maya_mahucutah",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Hacavitz was carried by Mahucutah." } ], "notes": "" } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "the mountain and temple of Hacavitz, of the Ahau-Quiché lineage", "kind": "lineage-cult", "period": "mythic to postclassic",
+        "attestation": "the Popol Vuh's account of the three lineage temples", "source": "Popol Vuh.",
+        "note": "The place where the K'iche' waited for the first dawn is Hacavitz, which is the god, which is the mountain." } ],
+    "sources": [ { "claim": "Hacavitz is the third of the three gods of the first K'iche' men, carried by Mahucutah, god of the Ahau-Quiché lineage, and a mountain.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, on the three gods and the three lineage temples." } ], "weight": "high" } ],
+    "notes": "Hacavitz is the one that makes the pattern explicit, because he is unambiguously also a place. The K'iche' did not distinguish sharply between the god you carry, the mountain you settle on and the building you put him in; the same word does all three, and the lineage is what it is because of which word it carries."
+  },
+  {
+    "id": "maya_balam_quitze",
+    "name": { "primary": "Balam Quitze", "alt": ["B'alam K'itze'", "Jaguar Quitze", "Jaguar Forest"],
+      "transliterations": { "K'iche'": "B'alam K'itze'", "etymology": "B'alam is jaguar; the second element is rendered 'Forest' or left as the lineage name K'iche' in the translations consulted." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The first of the four men made of maize, and the first human being in the K'iche' account. The four were made with perfect sight and could see the whole world at once; the gods who made them decided that this made them equal to gods, and clouded their eyes.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four men are Balam Quitze, Balam Acab, Mahucutah and Iqui Balam, created from maize with perfect sight, which the gods then blurred so they should not be equal to their makers." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He was given Caha-Paluna as his wife, and he carried Tohil out of Tulan; his line is the Cavec, the senior K'iche' lineage.",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Cahá-Paluna was the wife of Balam-Quitzé; and Tohil appeared first and was carried by Balam-Quitzé, Tohil being the god of the Cavec lineage." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four men as the ancestors of the K'iche' lineages." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_caha_paluna",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Cahá-Paluna was the wife of Balam-Quitzé." } ], "notes": "" },
+      { "kind": "companion", "personId": "maya_balam_acab",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four first men act throughout as a group." } ], "notes": "One of the four." },
+      { "kind": "subordinate-to", "personId": "maya_tohil",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Tohil was carried by Balam-Quitzé and is the god of his lineage." } ],
+        "notes": "He carries the god; the god's temple is the Great Building of the Cavec." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Balam Quitze is the first of the four men made of maize, husband of Caha-Paluna, bearer of Tohil and ancestor of the Cavec lineage of the K'iche'.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the creation of the four men and the division of the lineages." } ], "weight": "high" } ],
+    "notes": "The Popol Vuh is a book about how the K'iche' came to exist, and these four are the answer; the registry held the Hero Twins, who are the prologue, and not the men, who are the point. The detail that survives best is the blinding: the first humans were made too well, saw everything, and had their sight cut down by their makers on purpose. It is the rare creation story in which the flaw in human beings is deliberate and admitted."
+  },
+  {
+    "id": "maya_balam_acab",
+    "name": { "primary": "Balam Acab", "alt": ["B'alam Aq'ab'", "Jaguar Night"],
+      "transliterations": { "K'iche'": "B'alam Aq'ab'", "etymology": "'Jaguar Night': b'alam, jaguar, plus aq'ab', night." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of the four men of maize, husband of Chomiha, and the man who carried Avilix — the god of the Nihaib lineage.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Balam-Acab is the second of the four first men; Chomihá was his wife; and Avilix was carried by Balam-Acab." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four men as lineage ancestors." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_chomiha",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chomihá was the wife of Balam-Acab." } ], "notes": "" },
+      { "kind": "companion", "personId": "maya_balam_quitze",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four act as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Balam Acab is the second of the four men made of maize, husband of Chomiha, bearer of Avilix and ancestor of the Nihaib lineage.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the four men and the lineages." } ], "weight": "high" } ],
+    "notes": "Jaguar Night to his brother's Jaguar Forest. The four names are a set and were plainly composed as one."
+  },
+  {
+    "id": "maya_mahucutah",
+    "name": { "primary": "Mahucutah", "alt": ["Majukutaj", "Mahucutah the Traveller", "Not Right Now"],
+      "transliterations": { "K'iche'": "Majukutaj", "etymology": "Rendered 'Traveller' in the older translations; more recent readings give something closer to 'Not Right Now'. Both are recorded and neither is asserted here as settled." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The third of the four men of maize, husband of Tzununiha, and the bearer of Hacavitz, god of the Ahau-Quiché.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Mahucutah is the third of the four men; Tzununihá was his wife; and Hacavitz was carried by Mahucutah." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four men as lineage ancestors." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_tzununiha",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Tzununihá was the wife of Mahucutah." } ], "notes": "" },
+      { "kind": "companion", "personId": "maya_iqui_balam",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four act as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mahucutah is the third of the four men made of maize, husband of Tzununiha, bearer of Hacavitz and ancestor of the Ahau-Quiché lineage.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the four men and the lineages." } ], "weight": "high" } ],
+    "notes": "His is the only one of the four names whose translation is genuinely contested, and the record says so instead of picking the prettier one."
+  },
+  {
+    "id": "maya_iqui_balam",
+    "name": { "primary": "Iqui Balam", "alt": ["Ik'i B'alam", "Wind Jaguar", "Dark Jaguar"],
+      "transliterations": { "K'iche'": "Ik'i B'alam", "etymology": "'Wind Jaguar' in the translations consulted; ik' is wind and also moon, and the element is read both ways." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The fourth of the four men of maize, husband of Caquixaha. He is the one of the four without a god to carry and without a lineage descending from him.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Iqui-Balam is the fourth of the four first men and Caquixahá was his wife; the three gods Tohil, Avilix and Hacavitz are carried by the other three men." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four men." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_caquixaha",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Caquixahá was the wife of Iqui-Balam." } ], "notes": "" },
+      { "kind": "companion", "personId": "maya_mahucutah",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four act as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Iqui Balam is the fourth of the four men made of maize and the husband of Caquixaha; unlike the other three he carries no god and founds no lineage.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the four men, their wives and the three gods." } ], "weight": "high" } ],
+    "notes": "There are four men and three gods, and the arithmetic is the interesting part: Iqui Balam is in the list and then quietly is not in the settlement. The K'iche' who produced the book had three ruling lineages and needed a founder for each; the fourth man is the seam where a four-part formula met a three-part political reality. The book does not explain him away and neither does this record."
+  },
+  {
+    "id": "maya_caha_paluna",
+    "name": { "primary": "Caha Paluna", "alt": ["Kaqapaluna", "Cahá-Paluna"],
+      "transliterations": { "K'iche'": "Kaqa Paluna", "etymology": "No agreed derivation is given in the sources consulted here; the element paluna is read by some as 'standing water' or 'sea'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the four first women, made by the gods for the four men of maize; the wife of Balam-Quitze and so the mother of the Cavec.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: the gods created a wife for each of the four men, and Cahá-Paluna was the wife of Balam-Quitzé." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four first women as the mothers of the K'iche' lineages." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_balam_quitze",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Cahá-Paluna was the wife of Balam-Quitzé." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Caha Paluna is one of the four first women of the Popol Vuh, wife of Balam-Quitze.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the creation of the wives of the four men." } ], "weight": "high" } ],
+    "notes": "The four women are made after the men and named at the same moment, and the K'iche' lineages are traced through both. The registry had neither the men nor the women; the men without the women would have been the more usual kind of half-job and is avoided here."
+  },
+  {
+    "id": "maya_chomiha",
+    "name": { "primary": "Chomiha", "alt": ["Chomija", "Chomihá"],
+      "transliterations": { "K'iche'": "Chomija", "etymology": "The element -ha / -ja is 'water' in the K'iche' of the text; the first element is not settled in the sources consulted." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the four first women, the wife of Balam-Acab and so the mother of the Nihaib.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chomihá was the wife of Balam-Acab." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four first women." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_balam_acab",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Chomihá was the wife of Balam-Acab." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chomiha is one of the four first women of the Popol Vuh, wife of Balam-Acab.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the wives of the four men." } ], "weight": "high" } ],
+    "notes": "Three of the four names of the first women end in the K'iche' word for water, which is the kind of patterning the book does throughout and which no translation quite carries."
+  },
+  {
+    "id": "maya_tzununiha",
+    "name": { "primary": "Tzununiha", "alt": ["Tz'ununija", "Tzununihá", "Hummingbird Water"],
+      "transliterations": { "K'iche'": "Tz'ununija", "etymology": "tz'unun is hummingbird and -ja is water: 'Hummingbird Water' or 'Hummingbird House' depending on how the second element is read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the four first women, the wife of Mahucutah and so the mother of the Ahau-Quiché.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Tzununihá was the wife of Mahucutah." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four first women." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_mahucutah",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Tzununihá was the wife of Mahucutah." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tzununiha is one of the four first women of the Popol Vuh, wife of Mahucutah.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the wives of the four men." } ], "weight": "high" } ],
+    "notes": "Hers is the one of the four whose name reads cleanly in K'iche' without commentary."
+  },
+  {
+    "id": "maya_caquixaha",
+    "name": { "primary": "Caquixaha", "alt": ["Kaqixaja", "Caquixahá", "Macaw Water"],
+      "transliterations": { "K'iche'": "Kaqixaja", "etymology": "kaqix is the macaw — the bird of Vucub Caquix, 'Seven Macaw' — and -ja is water." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the four first women, the wife of Iqui-Balam — the man who carries no god and founds no lineage.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Caquixahá was the wife of Iqui-Balam." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh on the four first women." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_iqui_balam",
+        "sources": [ { "kind": "primary", "reference": "Popol Vuh: Caquixahá was the wife of Iqui-Balam." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Caquixaha is one of the four first women of the Popol Vuh, wife of Iqui-Balam.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the wives of the four men." } ], "weight": "high" } ],
+    "notes": "Her name carries the macaw that the book's first antagonist is named for, two hundred pages earlier; whether that is deliberate the text does not say and this record does not decide."
+  },
+  {
+    "id": "maya_xecotcovach",
+    "name": { "primary": "Xecotcovach", "alt": ["Xekotkovach"],
+      "transliterations": { "K'iche'": "Xekotkowach", "etymology": "Not settled. The commentators take it for a bird — an eagle or a sparrow hawk — on the strength of what it does." } },
+    "type": "numen", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The first of the four destroyers sent against the people made of wood, in the creation before this one: he gouged out their eyes.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: the four who came against the wooden people were Xecotcovach, who gouged out their eyes; Camalotz, who cut off their heads; Cotzbalam, who devoured their flesh; and Tucumbalam, who broke and ground their bones." }, { "kind": "secondary", "reference": "Reference commentary identifying Xecotcovach as a bird, probably an eagle or a sparrow hawk." } ] } ],
+    "domains": [ { "sphereId": "destruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the destruction of the wooden people." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Xecotcovach is one of the four destroyers of the people of wood in the Popol Vuh, who gouged out their eyes; the commentators take him for a bird of prey.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the destruction of the wooden people." } ], "weight": "high" } ],
+    "notes": "The wooden people are the failed third creation — they walked and multiplied and had no memory of their makers — and they are not flooded away so much as taken apart by four named specialists, one per operation. Xecotcovach takes the eyes. The registry held Camazotz, who is the second of the four under the name Camalotz, and none of the other three."
+  },
+  {
+    "id": "maya_cotzbalam",
+    "name": { "primary": "Cotzbalam", "alt": ["Kotz'b'alam", "Cotz-Balam"],
+      "transliterations": { "K'iche'": "Kotz'b'alam", "etymology": "The second element is b'alam, jaguar. The commentators read the whole as the jaguar that lies in wait for its prey." } },
+    "type": "numen", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The third of the four destroyers of the wooden people: he devoured their flesh.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Cotzbalam devoured the flesh of the wooden people." }, { "kind": "secondary", "reference": "Reference commentary reading Cotzbalam as the jaguar that lies in wait for its prey." } ] } ],
+    "domains": [ { "sphereId": "destruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the destruction of the wooden people." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cotzbalam is one of the four destroyers of the wooden people in the Popol Vuh, who devoured their flesh, and is read by commentators as a jaguar.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the destruction of the wooden people." } ], "weight": "high" } ],
+    "notes": "Three of the four destroyers are animals with jobs — hawk, bat, jaguar — and the fourth is a tapir. The sequence is a butchery in order: eyes, head, flesh, bones."
+  },
+  {
+    "id": "maya_tucumbalam",
+    "name": { "primary": "Tucumbalam", "alt": ["Tukumb'alam", "Tecumbalam"],
+      "transliterations": { "K'iche'": "Tukumb'alam", "etymology": "Again ending in b'alam, jaguar, but the commentators identify the creature as the danta or tapir." } },
+    "type": "numen", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The last of the four destroyers of the wooden people: he broke and mangled their bones and sinews and ground them to powder.",
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh: Tucumbalam broke and mangled the bones and nerves of the wooden people, grinding them to powder." }, { "kind": "secondary", "reference": "Reference commentary identifying Tucumbalam as the danta or tapir." } ] } ],
+    "domains": [ { "sphereId": "destruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "primary", "reference": "Popol Vuh on the destruction of the wooden people." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tucumbalam is the fourth destroyer of the wooden people in the Popol Vuh, who ground their bones to powder, and is identified by commentators as the tapir.",
+      "citations": [ { "kind": "primary", "reference": "Popol Vuh, the destruction of the wooden people." } ], "weight": "high" } ],
+    "notes": "Grinding bones to powder is what is done to the Hero Twins by the lords of Xibalba several hundred lines later, and it is what allows them to come back. The book uses the same operation twice, once as annihilation and once as the mechanism of return, and the second use only lands because of the first."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE GODS THE CLASSIC INSCRIPTIONS ACTUALLY NAME
+================================================================================
+
+The registry's Maya gods are the ones the sixteenth-century Spanish sources
+list — Itzamna, Chaac, Ix Chel, Kinich Ahau, Yum Kaax, Ah Puch, Kukulkan.
+Those are real and they are late. The gods that appear on Classic monuments
+and painted vessels, in the script that has been readable for forty years,
+were absent: K'awiil, who is in the name of half the kings in this batch; God
+L, who is on more Late Classic vases than anyone; Pauahtun and his four
+Bacabs, who hold the sky up.
+
+Two conventions, stated once. Where a letter-label (God D, God L, God N, GI,
+GII, GIII) has since been resolved to a readable name, the name is the
+record's primary and the label is an alias. Where it has not been resolved —
+God L is the standing case — the label is the primary, because inventing a
+name would be worse.
+
+Two candidates that look like additions are deliberately NOT here. The
+**Tonsured Maize God** of Classic art is identified by the reference
+treatments with Hun Hunahpu, who is already in the corpus, and a second record
+would be the duplicate this programme forbids. **Chac Chel** is already
+carried as an alias on `maya_ix_chel`. Both are census rows, not records.
+
+```json
+[
+  {
+    "id": "maya_kawiil",
+    "name": { "primary": "K'awiil", "alt": ["Kawil", "K'awil", "God K", "GII", "Unen K'awiil", "Bolon Dzacab"],
+      "transliterations": { "Classic Maya": "K'awiil", "etymology": "Not securely derived. The Postclassic Yucatec form Bolon Dzacab reads as 'nine generations' or 'innumerable generations', which suits a god of dynastic succession." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The god of lightning, of royal authority and of generative power: the deity a Classic Maya king holds in his hand at the moment of accession, in the form of the manikin sceptre.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil as a deity associated with royal authority, lightning and generative power." } ] },
+      { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "At Palenque he is GII of the Triad, the youngest of three born to a primordial mother goddess and the deity called GI-Father, and the Temple of the Foliated Cross is his. The inscriptions date his birth to 2360 BC; the reference treatments consulted give the day differently — 28 November in one and 6 November in another, the latter placing it fourteen days after his brother's — and the disagreement is left standing.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of the Palenque Triad: K'awiil is GII, born with GI and GIII to a primordial mother goddess and GI-Father; the Temple of the Foliated Cross and its tablet are his; his birth is given as 28 November 2360 BC in one treatment and, as Unen K'awiil, as 6 November 2360 BC and fourteen days after his brother in another." } ] } ],
+    "domains": [
+      { "sphereId": "lightning", "contextTag": "lifelong", "term": { "value": "K'awiil", "script": "Classic Maya", "rom": "K'awiil" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil as the lightning god." } ] },
+      { "sphereId": "royal-authority", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil's association with royal authority." } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil's generative power." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "maya_gi_palenque",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Palenque Triad: GI, GII and GIII born to the same primordial mother goddess and GI-Father." } ],
+        "notes": "The eldest of the three." },
+      { "kind": "sibling", "personId": "maya_jaguar_god_underworld",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Palenque Triad as three gods of one birth-sequence." } ],
+        "notes": "GIII, the third." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Palenque, Temple of the Foliated Cross", "kind": "state-cult", "period": "classic",
+        "attestation": "the tablet of the Temple of the Foliated Cross, which is GII's", "source": "Reference treatments of the Palenque Cross Group.",
+        "note": "The three temples of the Cross Group were completed in 692 and each carries one of the Triad; this is the second." } ],
+    "sources": [ { "claim": "K'awiil is the Classic Maya god of lightning, royal authority and generative power, GII of the Palenque Triad, whose temple is the Temple of the Foliated Cross and whose Postclassic Yucatec name is Bolon Dzacab.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of K'awiil and of the Palenque Triad." } ], "weight": "high" } ],
+    "notes": "K'awiil is inside the names of the kings. Jasaw Chan K'awiil, Yik'in Chan K'awiil, Sihyaj Chan K'awiil, Chan Imix K'awiil, B'alaj Chan K'awiil, Waxaklajuun Ub'aah K'awiil — six rulers in this batch are named after him, which is roughly the position Ninurta and Ashur occupied in Assyria, and the registry had the kings' names before it had the god, exactly as it did there. He is the one a king holds: the manikin sceptre with a smoking axe in its forehead and one leg ending in a serpent is K'awiil, and to accede is to take him in the hand."
+  },
+  {
+    "id": "maya_god_l",
+    "name": { "primary": "God L", "alt": ["Schellhas God L", "the merchant lord of the underworld"],
+      "transliterations": { "Classic Maya": "", "etymology": "No name. The letter is Schellhas's, assigned to a codical figure before the script could be read, and unlike God D, God K and God N it has not since been resolved to a reading that the treatments consulted agree on. The record keeps the label rather than inventing a name." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The merchant-lord of the underworld: rich, powerful and dangerous. He sits on a jaguar throne, smokes a cigar, wears a broad-brimmed hat with an owl on it, and is attended by young women who bring him cacao.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of God L: one of the major pre-Spanish Maya deities, specifically associated with trade, the merchant-lord of the underworld, shown on a jaguar throne smoking a cigar, wearing a broad-brimmed hat topped with an owl, attended by young women serving cacao." } ] } ],
+    "domains": [
+      { "sphereId": "trade", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of God L's association with trade." } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of God L as a lord of the underworld." } ] },
+      { "sphereId": "sorcery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of God L's jaguar and owl attributes as pointing to sorcery, violence and warfare." } ] },
+      { "sphereId": "tobacco", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of God L's cigar, which is his standing attribute." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "God L is a major pre-Spanish Maya deity, merchant-lord of the underworld, associated with trade, sorcery and war, shown on a jaguar throne with a cigar, an owl-topped hat and attendant women serving cacao.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of God L, his attributes and his sphere." } ], "weight": "high" } ],
+    "notes": "God L is the richest man in the underworld and he looks it. The Princeton Vase and a long series of Late Classic painted cylinders show the same scene — the old lord on his jaguar throne, the hat, the cigar, the women with the cacao — and the Maya evidently found something funny in it, because a fair number of the vases show him being robbed, stripped or humiliated by the Hero Twins. A god of commerce who is also a figure of comedy is not an arrangement the Old World pantheons in this registry produce. He had no record here at all."
+  },
+  {
+    "id": "maya_pauahtun",
+    "name": { "primary": "Pauahtun", "alt": ["Pawahtun", "God N", "Pauahtun the sky-bearer"],
+      "transliterations": { "Classic Maya": "Pawahtun", "etymology": "Not securely derived. The Classic name behind the Schellhas label God N is read Pawahtun in the treatments consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The sky-bearer: an old man with missing teeth and a netted headdress, emerging from a turtle shell or a conch, holding up the sky-band above him. In Classic art the sky-bearer is most often him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pauahtun (God N): in Classic-period Maya art the sky-bearer concept is most often represented by Pawahtun, depicted as an old man with missing teeth, with a turtle shell or conch shell on his back, a netted headdress, supporting the sky-band." } ] },
+      { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "He is one and he is four. His four aspects are the Bacabs, one at each of the four directions, and fourfold he is shown carrying the slab of a throne or the roof of a building as well as the sky. In the rain almanacs of the Dresden Codex the old man with the conch and the turtle stands on a par with Chaac.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four aspects of Pauahtun, called Bacabs, each standing at one of the four compass points holding up the sky; of God N fourfold carrying thrones and roofs; and of the Dresden Codex rain almanacs putting the old man with the conch and turtle on a par with Chaac." } ] } ],
+    "domains": [
+      { "sphereId": "sky-bearing", "contextTag": "lifelong", "term": { "value": "Pawahtun", "script": "Classic Maya", "rom": "Pauahtun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pauahtun as the sky-bearer of Classic Maya art." } ] },
+      { "sphereId": "cardinal-directions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the fourfold Pauahtun at the four compass points." } ] },
+      { "sphereId": "rain", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of God N's place in the Dresden Codex rain almanacs beside Chaac." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifested-as", "personId": "maya_hobnil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four aspects of Pauahtun as the Bacabs, one at each compass point." } ],
+        "notes": "The eastern aspect. The Bacabs are recorded here as four figures and Pauahtun as the one they are aspects of, because the Yucatec sources name them individually and the Classic material treats them as a fourfold form of one god; both facts are true at once and the records say so." },
+      { "kind": "manifested-as", "personId": "maya_can_tzicnal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun." } ], "notes": "The northern aspect." },
+      { "kind": "manifested-as", "personId": "maya_zac_cimi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun." } ], "notes": "The western aspect." },
+      { "kind": "manifested-as", "personId": "maya_hozanek",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun." } ], "notes": "The southern aspect." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Pauahtun, God N, is the Classic Maya sky-bearer, an aged god shown emerging from a turtle or conch shell holding up the sky, whose four aspects are the Bacabs at the four directions, and who stands beside Chaac in the Dresden Codex rain almanacs.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Pauahtun / God N and of the Bacabs." } ], "weight": "high" } ],
+    "notes": "The sky in this cosmology is a weight and someone is under it. Pauahtun is the old man doing the holding, and the Maya put him under thrones and roofs as well, which makes the architecture an argument: the building stands the way the sky stands, on the same god. He is also the reason this batch records the Bacabs as four persons and him as one — the Yucatec sources give the four names and directions and colours, and the Classic art gives one god quadrupled, and rather than choose, the records carry the relation."
+  },
+  {
+    "id": "maya_hobnil",
+    "name": { "primary": "Hobnil", "alt": ["Hobnil Bacab", "the red Bacab", "Chac Pauahtun"],
+      "transliterations": { "Yucatec Maya": "Hobnil", "etymology": "No agreed derivation in the sources consulted. In Landa's account he is also associated with the beehive, and the name is read by some in that direction." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The Bacab of the east: he holds up the far eastern corner of the sky, and his colour is red, for the rising sun.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hobnil: the Bacab who holds up the far eastern corner of the sky, associated with the colour red for the rising sun." } ] } ],
+    "domains": [
+      { "sphereId": "sky-bearing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bacabs as the four gods who hold up the sky." } ] },
+      { "sphereId": "cardinal-directions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hobnil as the Bacab of the east and of the directional colour red." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifestation-of", "personId": "maya_pauahtun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun, God N, each standing at one compass point holding up the sky." } ],
+        "notes": "the eastern aspect. The Yucatec sources name the four separately and the Classic material shows one god fourfold; both are carried." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Yucatán", "kind": "calendrical-cult", "period": "postclassic to colonial",
+        "attestation": "Diego de Landa's account and the Chilam Balam books", "source": "Reference treatments of the Bacabs, citing Landa and the Chilam Balams.",
+        "note": "The Bacabs govern years and directions in the Yucatec year-bearer system, which is why Landa records them: they are a calendar as much as a cosmology." } ],
+    "sources": [ { "claim": "Hobnil is the Bacab of the east, holding up the eastern corner of the sky, with the directional colour red; the Bacabs are recorded by Landa and in the Chilam Balam books.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the four Bacabs, their directions and their colours, and of Landa and the Chilam Balams as the sources." } ], "weight": "high" } ],
+    "notes": "East is red because that is where the sun comes up, and the whole Maya colour scheme follows from that one observation: red east, white north, black west, yellow south. Hobnil is the corner where it starts."
+  },
+  {
+    "id": "maya_can_tzicnal",
+    "name": { "primary": "Can Tzicnal", "alt": ["Kan Tzicnal", "the white Bacab", "Sac Pauahtun"],
+      "transliterations": { "Yucatec Maya": "Kan Tz'ikin Al", "etymology": "No agreed derivation in the sources consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The Bacab of the north, whose colour is white, for the cold winds that come from that quarter.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Can Tzicnal: the Bacab of the northern sky, represented by the colour white for the cold northern winds." } ] } ],
+    "domains": [
+      { "sphereId": "sky-bearing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bacabs as sky-bearers." } ] },
+      { "sphereId": "cardinal-directions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Can Tzicnal as the Bacab of the north and of the directional colour white." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifestation-of", "personId": "maya_pauahtun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun, God N, each standing at one compass point holding up the sky." } ],
+        "notes": "the northern aspect. The Yucatec sources name the four separately and the Classic material shows one god fourfold; both are carried." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Can Tzicnal is the Bacab of the north, holding up the northern corner of the sky, with the directional colour white.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the four Bacabs and their directional colours." } ], "weight": "high" } ],
+    "notes": "The northern colour is white for the cold, which in a Yucatecan winter means the nortes coming off the Gulf — a real and annual weather event given a name and a corner."
+  },
+  {
+    "id": "maya_zac_cimi",
+    "name": { "primary": "Zac Cimi", "alt": ["Sac Cimi", "the black Bacab", "Ek Pauahtun"],
+      "transliterations": { "Yucatec Maya": "Sak Kimi", "etymology": "Kimi is death and a day-name; the compound is not securely read in the sources consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The Bacab of the west, who holds up the western corner of the sky; his colour is black, for the sky after sunset.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zac Cimi: he holds up the western corner of the sky and is associated with the colour black, for the colour of the sky after sunset." } ] } ],
+    "domains": [
+      { "sphereId": "sky-bearing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bacabs as sky-bearers." } ] },
+      { "sphereId": "cardinal-directions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zac Cimi as the Bacab of the west and of the directional colour black." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifestation-of", "personId": "maya_pauahtun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun, God N, each standing at one compass point holding up the sky." } ],
+        "notes": "the western aspect. The Yucatec sources name the four separately and the Classic material shows one god fourfold; both are carried." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zac Cimi is the Bacab of the west, holding up the western corner of the sky, with the directional colour black.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the four Bacabs and their directional colours." } ], "weight": "high" } ],
+    "notes": "West is black and carries the day-name for death in its own name, which is about as direct as this system gets."
+  },
+  {
+    "id": "maya_hozanek",
+    "name": { "primary": "Hozanek", "alt": ["Hosanek", "the yellow Bacab", "Kan Pauahtun"],
+      "transliterations": { "Yucatec Maya": "Hosanek", "etymology": "No agreed derivation in the sources consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The Bacab of the south, standing like a pillar under the southern corner of the sky; his colour is yellow, the colour of ripe maize in the sun.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hozanek: he stands like a pillar and supports the south corner of the sky, represented by the colour yellow for the golden hue of corn-coloured sunlight." } ] } ],
+    "domains": [
+      { "sphereId": "sky-bearing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Bacabs as sky-bearers." } ] },
+      { "sphereId": "cardinal-directions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hozanek as the Bacab of the south and of the directional colour yellow." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifestation-of", "personId": "maya_pauahtun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four Bacabs as the four aspects of Pauahtun, God N, each standing at one compass point holding up the sky." } ],
+        "notes": "the southern aspect. The Yucatec sources name the four separately and the Classic material shows one god fourfold; both are carried." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hozanek is the Bacab of the south, supporting the southern corner of the sky, with the directional colour yellow.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the four Bacabs and their directional colours." } ], "weight": "high" } ],
+    "notes": "The fourth corner, and the fourth colour. A registry that carries the Maya without the Bacabs carries a sky with nothing under it."
+  },
+  {
+    "id": "maya_gi_palenque",
+    "name": { "primary": "GI of Palenque", "alt": ["GI", "God GI", "the first of the Palenque Triad"],
+      "transliterations": { "Classic Maya": "", "etymology": "No agreed reading. 'GI' is the label the Palenque epigraphers assigned before the name could be read, and the treatments consulted do not settle on a reading; the label is kept rather than a name invented." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The senior god of the Palenque Triad, born with GII and GIII to a primordial mother goddess and the deity the epigraphers call GI-Father. The Temple of the Cross and its tablet are his.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatments of the Palenque Triad: GI, GII and GIII, born to a Primordial Mother Goddess and the deity known as GI-Father; the Temple of the Cross and its tablet feature the god GI." } ] },
+      { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "His temple stands in the Cross Group with those of his two brothers, all three completed in 692 under K'inich Kan Bahlam II, who used the Triad's births and their order to argue his own.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Cross Group at Palenque: the three temples, completed in 692, whose design follows the Triad's births and hierarchy." } ] } ],
+    "domains": [
+      { "sphereId": "dynastic-legitimacy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Palenque Triad's role in the dynastic argument of the Cross Group inscriptions." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "maya_jaguar_god_underworld",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of GI, GII and GIII as three gods born to the same parents at Palenque." } ],
+        "notes": "GIII, the third of the Triad, whose temple is the Temple of the Sun." },
+      { "kind": "sibling", "personId": "maya_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil as GII, the second of the Palenque Triad, born with GI and GIII." } ],
+        "notes": "GII, who is K'awiil, and whose temple is the Temple of the Foliated Cross." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Palenque, Temple of the Cross", "kind": "state-cult", "period": "classic",
+        "attestation": "the Tablet of the Cross", "source": "Reference treatments of the Palenque Cross Group.",
+        "note": "The largest of the three Cross Group temples and the one carrying the dynastic narrative in full." } ],
+    "sources": [ { "claim": "GI is the senior deity of the Palenque Triad, born with GII and GIII to a primordial mother goddess and GI-Father, whose temple is the Temple of the Cross in the Cross Group completed in 692.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Palenque Triad and the Cross Group." } ], "weight": "medium" } ],
+    "notes": "The Palenque Triad is the clearest surviving case of a Maya dynasty writing its own theology. K'inich Kan Bahlam II built three temples in the 690s, put one Triad god in each, and had the inscriptions run the gods' births and the kings' accessions in a single chronological sequence, so that his own succession fell out of the structure of the cosmos. The gods are three brothers and so were the last two kings; the argument is the architecture. GI is the eldest, and the registry had none of the three."
+  },
+  {
+    "id": "maya_jaguar_god_underworld",
+    "name": { "primary": "Jaguar God of the Underworld", "alt": ["GIII", "JGU", "the Night Sun"],
+      "transliterations": { "Classic Maya": "", "etymology": "No agreed reading. He is named here by the descriptive title the epigraphic literature uses, with the Palenque label GIII as an alias." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "GIII of the Palenque Triad, and the god of the sun's journey under the world at night, of fire and of war. He is shown with a fire element on the forehead, jaguar ears and a skeletal jaw.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Jaguar God of the Underworld (GIII), one of the Palenque Triad, associated with the sun's nighttime journey, fire and war, depicted with a fire element on his forehead, jaguar ears and a skeletal jaw." } ] },
+      { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 1,
+        "startEvent": "He is sometimes taken to be the Night Sun itself — the shape the sun is supposed to take on its passage through the underworld — and the Temple of the Sun at Palenque is his.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of the Jaguar God of the Underworld as the 'Night Sun', the form supposedly taken by the sun on its nightly journey through the underworld; and of the Temple of the Sun and its tablet as GIII's." } ] } ],
+    "domains": [
+      { "sphereId": "night-sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of GIII as the sun in its underworld passage." } ] },
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Jaguar God's association with fire, and of the fire element on his forehead." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Jaguar God's association with war; his face is the standard device on Classic Maya war shields." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "maya_gi_palenque",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three gods of the Palenque Triad as brothers." } ], "notes": "GI, the eldest of the Triad." },
+      { "kind": "sibling", "personId": "maya_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'awiil as GII of the Palenque Triad." } ], "notes": "GII, the second of the three." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Palenque, Temple of the Sun", "kind": "state-cult", "period": "classic",
+        "attestation": "the Tablet of the Sun", "source": "Reference treatments of the Palenque Cross Group.",
+        "note": "The third temple of the Cross Group, and the one whose tablet carries a war shield bearing the god's own face." } ],
+    "sources": [ { "claim": "The Jaguar God of the Underworld is GIII of the Palenque Triad, the sun in its nightly passage beneath the world, a god of fire and of war, whose temple is the Temple of the Sun.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Jaguar God of the Underworld and of the Palenque Triad." } ], "weight": "high" } ],
+    "notes": "The Maya sun does not stop at sunset; it goes under and becomes a jaguar, and it is dangerous down there. This is the face that Classic kings put on their war shields, which is the practical end of the theology: the night sun is the sun at its most violent and a shield with his face is a shield carrying that. The registry held Kinich Ahau, the day sun, and not the other half of him."
+  },
+  {
+    "id": "maya_xaman_ek",
+    "name": { "primary": "Xaman Ek", "alt": ["Xamen Ek", "Chac Ek", "the North Star god"],
+      "transliterations": { "Yucatec Maya": "Xaman Ek'", "etymology": "'North Star': xaman, north, plus ek', star." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "A benevolent god, the god of merchants, because it was by the pole star that they steered on their journeys. Travellers left offerings for him at the roadside as they went.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xaman Ek: a benevolent deity considered the god of merchants, who in their travels were guided by the polar star, and for whom people left offerings at the side of roads when travelling." } ] } ],
+    "domains": [
+      { "sphereId": "merchants", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xaman Ek as the god of merchants." } ] },
+      { "sphereId": "travel", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the roadside offerings left to Xaman Ek by travellers." } ] },
+      { "sphereId": "stars", "contextTag": "lifelong", "term": { "value": "Xaman Ek'", "script": "Yucatec Maya", "rom": "North Star" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Xaman Ek as the polar star." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "the roads of Yucatán", "kind": "wayside-cult", "period": "postclassic to colonial",
+        "attestation": "the offerings reported as left at the roadside by travellers", "source": "Reference treatment of Xaman Ek.",
+        "note": "A cult without a temple: the shrine is wherever the road is, which is the appropriate arrangement for a god who is only useful while you are moving." } ],
+    "sources": [ { "claim": "Xaman Ek is the Maya god of the North Star and of merchants, guided by the polar star on their journeys, who received roadside offerings from travellers.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Xaman Ek, his star and his roadside cult." } ], "weight": "high" } ],
+    "notes": "The Maya had no compass and a great deal of long-distance trade, and the pole star is the one fixed thing in the sky. Making it a benevolent god of merchants is not symbolism, it is navigation. The registry held Ek Chuah, the other merchants' god, under the Yucatec key, and not this one under any key."
+  },
+  {
+    "id": "maya_buluc_chabtan",
+    "name": { "primary": "Buluc Chabtan", "alt": ["Bolon Chabtan", "God F", "Buluc Chabtan the war god"],
+      "transliterations": { "Yucatec Maya": "Buluk Chabtan", "etymology": "Buluk is eleven; the second element is not securely read in the sources consulted." } },
+    "type": "deity", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The god of war and of violence, Schellhas's God F: shown with a flint knife and a blazing torch, killing people and setting their houses alight, and associated with human sacrifice and with violent death.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Buluc Chabtan: the Maya god of war and violence, commonly represented with a flint knife and a blazing torch, killing people and setting homes on fire; also known as God F, and associated with human sacrifice and violent death." } ] } ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Buluc Chabtan as the god of war." } ] },
+      { "sphereId": "violent-death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Buluc Chabtan's association with violent death and human sacrifice." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Buluc Chabtan, God F, is the Maya god of war and violence, shown with flint knife and torch burning houses and killing, and associated with human sacrifice.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Buluc Chabtan and of his codical iconography." } ], "weight": "high" } ],
+    "notes": "The codices show him doing the thing rather than presiding over it: a god with a torch in one hand, setting the roof on fire, and a knife in the other. Classic Maya warfare was in large part a matter of burning a rival's town and taking captives for sacrifice, and the god is a picture of exactly that and of nothing more abstract. In a corpus that held Maya rulers' war records not at all, and the war god not at all, this and the Jaguar God are the two that make the eighth century legible."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE CLASSIC PERIOD: TWENTY-THREE PEOPLE WITH DATES
+================================================================================
+
+Before this batch the registry held zero Maya rulers. Not few — zero. The
+Classic Maya are the only Mesoamerican civilisation that recorded its own
+dynastic history in a phonetic script, in day-exact dates, on monuments that
+are still standing, and the corpus carried none of it while carrying Egyptian
+pharaohs, Mesopotamian kings, the Mixtec lords and, as of this programme's
+last batch, the entire Mexica tlatoani line.
+
+What follows is twenty-three of them, from six cities, chosen so that the
+political history is legible rather than sampled: Tikal and Calakmul, who
+fought each other for two centuries; Palenque, whose kings wrote theology to
+justify an irregular succession; Copán and Quiriguá, where a client beheaded
+his overlord; Yaxchilán, where a king's wife is on more monuments than most
+kings; and El Perú-Waka', where the woman outranked her husband and the
+inscriptions say so.
+
+Dates are Gregorian conversions as the reference treatments give them. Where
+two treatments differ the record says so.
+
+```json
+[
+  {
+    "id": "maya_yax_ehb_xook",
+    "name": { "primary": "Yax Ehb Xook", "alt": ["Yax Ehb' Xook", "Yax Ahau Xoc", "First Step Shark"],
+      "transliterations": { "Classic Maya": "Yax Ehb' Xook", "etymology": "Yax, first or green; ehb', step or stair; xook, shark. Read in the literature as 'First Step Shark'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "late-preclassic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "late-preclassic", "eraOrdering": 0,
+      "startEvent": "The dynastic founder and ajaw of Tikal, ruling around AD 90. Every later Tikal king counts his position in the succession from him; a mask of the king was found in Tikal Burial 85.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Ehb Xook: dynastic founder and ajaw of Tikal, ruling c. AD 90, the Tikal dynasty founder, with a mask of the king found in Tikal Burial 85." } ] } ],
+    "domains": [
+      { "sphereId": "dynastic-founder", "contextTag": "lifelong", "term": { "value": "ajaw", "script": "Classic Maya", "rom": "ajaw (lord)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Ehb Xook as the founder of the Tikal dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "foundational-precursor-to", "personId": "maya_jasaw_chan_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Yax Ehb Xook as the Tikal dynasty founder and of the numbered succession of Tikal rulers counted from him, Yik'in Chan K'awiil being the 27th." } ],
+        "notes": "The link is the succession count rather than a traced pedigree: Tikal's kings numbered themselves from him, which is the evidence, and the record claims no more than that." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Tikal, Burial 85", "kind": "royal-burial", "period": "late-preclassic",
+        "attestation": "the burial and the mask found in it", "source": "Reference treatment of Tikal Burial 85.",
+        "note": "A headless burial with a jade mask in place of the skull, taken in the literature for the founder's." } ],
+    "sources": [ { "claim": "Yax Ehb Xook is the founder of the Tikal dynasty, an ajaw ruling around AD 90, from whom later Tikal kings numbered their succession, and whose mask was found in Tikal Burial 85.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yax Ehb Xook and of Tikal Burial 85." } ], "weight": "medium" } ],
+    "notes": "Tikal's kings counted. Jasaw Chan K'awiil was the twenty-sixth, Yik'in the twenty-seventh, and the number meant something to them — a Maya king's legitimacy ran through a continuous line back to a named founder in the first century, and the line is the one thing every monument asserts. The founder is a Late Preclassic figure at the edge of the readable record, and what survives of him is a position in a count and a mask in a grave."
+  },
+  {
+    "id": "maya_siyaj_kak",
+    "name": { "primary": "Siyaj K'ak'", "alt": ["Sihyaj K'ahk'", "Fire Is Born", "Smoking Frog"],
+      "transliterations": { "Classic Maya": "Sihyaj K'ahk'", "etymology": "'Fire Is Born'. He was called Smoking Frog in the older literature, before the name could be read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "He entered Tikal on 15 May 378 — the same day Tikal's fourteenth king, Chak Tok Ich'aak, died. The regime change that followed is generally held to have been orchestrated from Teotihuacan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: with the death of Tikal's 14th king Chak Tok Ich'aak in 378 CE there was a regime change probably orchestrated by Teotihuacan, and Sihyaj K'ahk' entered Tikal on 15 May 378, the same date as the death of the previous ruler." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He installed Yax Nuun Ahiin, who may have been a child, as the fifteenth ruler, and acted as the regency behind him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a new king, Yax Nuun Ahiin, took the throne as the 15th ruler and may have been a child or youth at his coronation, with Sihyaj K'ahk' serving as a regency figure." } ] } ],
+    "domains": [
+      { "sphereId": "conquest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the 378 entrada and the regime change at Tikal." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sihyaj K'ahk' as the regency behind Yax Nuun Ahiin." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "maya_yax_nuun_ahiin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sihyaj K'ahk' as regent for the child king Yax Nuun Ahiin." } ],
+        "notes": "Installed him and stood behind him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Siyaj K'ak' entered Tikal on 15 May 378, the day its fourteenth king died, in a regime change generally attributed to Teotihuacan, and installed the child Yax Nuun Ahiin as fifteenth ruler with himself as regent.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the 378 entrada at Tikal." } ], "weight": "high" } ],
+    "notes": "The entrada of 378 is the single most argued-over event in Maya archaeology, and the reason is the coincidence of dates: a foreign lord arrives at Tikal on the exact day the king dies, and within a year a new king is on the throne with Teotihuacan iconography all over his monuments. Whether it was a conquest, a coup with outside backing or a dynastic marriage dressed as an arrival is not settled and this record does not settle it — it gives the date, the coincidence and the attribution as the treatments give them. What is not in doubt is that Tikal was different afterwards."
+  },
+  {
+    "id": "maya_yax_nuun_ahiin",
+    "name": { "primary": "Yax Nuun Ahiin I", "alt": ["Yax Nuun Ayiin I", "Curl Snout", "Curl Nose"],
+      "transliterations": { "Classic Maya": "Yax Nuun Ahiin", "etymology": "Ahiin is the caiman; the whole is read variously as 'First Crocodile' or 'Green Crocodile'. Called Curl Snout in the older literature." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Fifteenth ruler of Tikal, installed in 378 after the death of Chak Tok Ich'aak; he may have been a child or a youth at his coronation, with Siyaj K'ak' as the power behind him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Nuun Ahiin I: installed as Tikal's 15th ruler in 378, possibly a child or youth at his coronation, with Sihyaj K'ahk' serving as a regency figure." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "His son by Lady K'inich, Sihyaj Chan K'awiil II, succeeded him, and named on that son's monuments is a grandfather, Spearthrower Owl, whose death in 439 Tikal's Stela 31 records.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sihyaj Chan K'awiil II was a son of his predecessor Yax Nuun Ahiin I and Lady K'inich, and a grandson of Spearthrower Owl, whose death in 439 is described on Stela 31." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "ajaw", "script": "Classic Maya", "rom": "ajaw" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Nuun Ahiin I's reign at Tikal." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "maya_sihyaj_chan_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sihyaj Chan K'awiil II as the son of Yax Nuun Ahiin I and Lady K'inich." } ], "notes": "His successor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yax Nuun Ahiin I is the fifteenth ruler of Tikal, installed in 378 as a child under the regency of Siyaj K'ak', and father by Lady K'inich of his successor Sihyaj Chan K'awiil II.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yax Nuun Ahiin I and of Tikal Stela 31." } ], "weight": "high" } ],
+    "notes": "He is the king the 378 arrangement produced, and his monuments show him in Teotihuacan dress with Teotihuacan weapons, which is the reason anyone argues about the entrada at all. The grandfather named on his son's stela — Spearthrower Owl, dead in 439 — is generally taken for a Teotihuacan ruler, which would make the new Tikal dynasty a foreign house installed by force and legitimised by descent. The registry had none of this."
+  },
+  {
+    "id": "maya_sihyaj_chan_kawiil",
+    "name": { "primary": "Sihyaj Chan K'awiil II", "alt": ["Siyaj Chan K'awiil II", "Storm Sky", "Manikin Cleft Sky"],
+      "transliterations": { "Classic Maya": "Sihyaj Chan K'awiil", "etymology": "'K'awiil Is Born in the Sky', on the pattern of Siyaj K'ak', 'Fire Is Born'. Called Storm Sky in the older literature." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_yax_nuun_ahiin"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Ajaw of Tikal: he took the throne on 26 November 411 and reigned until his death on 3 February 456. His mother was Lady K'inich and his wife Lady Ahiin.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sihyaj Chan K'awiil II, also known as Storm Sky, who died 3 February 456, took the throne on 26 November 411, was the son of Yax Nuun Ahiin I and Lady K'inich, and whose spouse was Lady Ahiin." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "Stela 31, raised in his reign, records the death of his grandfather in 439; Stelae 1 and possibly 28 are also his, and Tikal Temple 33 is his funerary pyramid, with his tomb beneath it. He was succeeded by his son K'an Chitam.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Stela 31, erected in Sihyaj Chan K'awiil II's reign, describes the death of his grandfather in 439; Stelae 1 and possibly 28 are associated with him; Tikal Temple 33 was his funerary pyramid with his tomb beneath it; he was succeeded by his son K'an Chitam, born 26 November 415 to Lady Ahiin." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sihyaj Chan K'awiil II's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Tikal, Temple 33", "kind": "royal-burial", "period": "classic",
+        "attestation": "the funerary pyramid and the tomb beneath it", "source": "Reference treatment of Tikal Temple 33.",
+        "note": "Stela 31, the dynasty's own account of the 378 transition and of what followed, was found buried inside the same structure." } ],
+    "sources": [ { "claim": "Sihyaj Chan K'awiil II is the ajaw of Tikal from 26 November 411 to his death on 3 February 456, son of Yax Nuun Ahiin I and Lady K'inich, husband of Lady Ahiin, whose Stela 31 records his grandfather's death in 439 and whose funerary pyramid is Temple 33.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sihyaj Chan K'awiil II, Stela 31 and Temple 33." } ], "weight": "high" } ],
+    "notes": "Stela 31 is the single most informative Maya monument about the fifth century, and it is his. It shows him flanked by two figures in Teotihuacan war costume, both of them his father, and its text runs the dynastic line back through the entrada and out the other side — the document in which a house installed by outsiders argues that it is the old house after all. He put it inside a building and it survived because of that."
+  },
+  {
+    "id": "maya_jasaw_chan_kawiil",
+    "name": { "primary": "Jasaw Chan K'awiil I", "alt": ["Hasaw Chan K'awil", "Ah Cacao", "Ruler A"],
+      "transliterations": { "Classic Maya": "Jasaw Chan K'awiil", "etymology": "The second and third elements are chan, sky, and the god K'awiil; the first is not securely read. Called Ah Cacao and Ruler A in the older literature." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Twenty-sixth ruler of Tikal: he took the throne on 3 May 682, at the low point of a long subjection to Calakmul, and reigned until his death in 734.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jasaw Chan K'awiil I: he took the throne on 3 May 682 and reigned until his death in 734." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He defeated Calakmul in 695, which is taken as the resurgence of Tikal's strength and influence after a century in which the Snake kingdom had had the better of it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jasaw Chan K'awiil I's defeat of the rival Maya city of Calakmul in 695 is seen to represent a resurgence in the strength and influence of Tikal." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jasaw Chan K'awiil I's reign at Tikal." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the defeat of Calakmul in 695." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "maya_yikin_chan_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yik'in Chan K'awiil as consolidating the political gains won by his father, Jasaw Chan K'awiil I." } ], "notes": "His successor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jasaw Chan K'awiil I is the twenty-sixth ruler of Tikal, enthroned 3 May 682 and dead in 734, whose defeat of Calakmul in 695 marks Tikal's recovery.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jasaw Chan K'awiil I and the 695 victory." } ], "weight": "high" } ],
+    "notes": "Tikal spent most of the seventh century losing to Calakmul, and Jasaw is the king who reversed it. The great temples that everyone photographs at Tikal are his and his son's, built out of that victory; the reversal is the reason there is a Late Classic Tikal to look at. In a registry that until now carried no Maya ruler of any city, he is arguably the first one you would want."
+  },
+  {
+    "id": "maya_yikin_chan_kawiil",
+    "name": { "primary": "Yik'in Chan K'awiil", "alt": ["Yikin Chan K'awil", "Ruler B"],
+      "transliterations": { "Classic Maya": "Yik'in Chan K'awiil", "etymology": "Chan is sky and K'awiil the god; the first element is read 'darkness' or 'evening' by some. Called Ruler B before the name could be read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_jasaw_chan_kawiil"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Twenty-seventh ruler of Tikal in the dynastic succession, enthroned 8 December 734, who consolidated the political gains his father had won.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yik'in Chan K'awiil: he took the throne on 8 December 734, was the 27th ruler in Tikal's dynastic succession, and consolidated the political gains won by his father Jasaw Chan K'awiil I." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yik'in Chan K'awiil's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yik'in Chan K'awiil is the twenty-seventh ruler of Tikal, enthroned 8 December 734, son of Jasaw Chan K'awiil I, who consolidated his father's gains.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yik'in Chan K'awiil." } ], "weight": "high" } ],
+    "notes": "The consolidator. Tikal's position after 695 needed holding rather than winning, and he held it; the numbered position in the succession — twenty-seventh from Yax Ehb Xook — is the kind of detail the Maya thought worth carving and the reason the founder in this batch is linked to this dynasty rather than left loose."
+  },
+  {
+    "id": "maya_pakal",
+    "name": { "primary": "K'inich Janaab Pakal", "alt": ["Pakal the Great", "Pacal", "K'inich Janaab' Pakal I", "Sun Shield"],
+      "transliterations": { "Classic Maya": "K'inich Janaab' Pakal", "etymology": "K'inich, 'sun-faced' or 'radiant', is a royal prefix; pakal is shield. Janaab' is not securely read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_sak_kuk"], "parentRoles": ["mother"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Born in March 603 to Lady Sak K'uk' of the Palenque ruling house and her husband K'an Mo' Hix, and enthroned at twelve on 27 July 615.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich Janaab Pakal: king of Palenque with a reign from 27 July 615 to 29 August 683, born in March 603 to Lady Sak K'uk' of the ruling Palenque dynasty and her husband K'an Mo' Hix, who assumed the throne at the age of 12 in 615." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He ruled sixty-eight years, to his death on 29 August 683 at the age of eighty, and took Palenque from relative obscurity to a great power; the Temple of the Inscriptions is his, and the carved lid of his sarcophagus is the most reproduced object in Maya art.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pakal: he ruled until his death at the age of 80, raised Palenque from relative obscurity to a great power, and is known for his building projects, especially the Temple of the Inscriptions, and for his elaborately carved sarcophagus lid." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "k'uhul ajaw", "script": "Classic Maya", "rom": "k'uhul ajaw (holy lord)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pakal's kingship at Palenque." } ] },
+      { "sphereId": "architecture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pakal's building programme, especially the Temple of the Inscriptions." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "maya_kan_bahlam_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich Kan Bahlam II as acceding several months after the death of his father and predecessor K'inich Janaab' Pakal." } ], "notes": "His successor." },
+      { "kind": "father-of", "personId": "maya_kan_joy_chitam_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich K'an Joy Chitam II as the younger brother of Kan Bahlam II, both sons of Pakal." } ], "notes": "The second son, who followed his brother." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Palenque, Temple of the Inscriptions", "kind": "royal-burial", "period": "classic",
+        "attestation": "the temple, its three tablets and the sarcophagus beneath it", "source": "Reference treatments of Pakal and the Temple of the Inscriptions.",
+        "note": "The tomb was reached in 1952 by a staircase deliberately filled in at the burial; the lid, showing the king at the moment of his descent, is the single best-known image from the Maya world." } ],
+    "sources": [ { "claim": "K'inich Janaab Pakal is king of Palenque from 27 July 615, aged twelve, to his death on 29 August 683 aged eighty, son of Lady Sak K'uk' and K'an Mo' Hix, who raised Palenque to a great power and built the Temple of the Inscriptions, in which he is buried.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of K'inich Janaab' Pakal, his reign, his parentage and his tomb." } ], "weight": "high" } ],
+    "notes": "If the registry was going to hold one Maya person it should have been this one, and it held none. Sixty-eight years on the throne, a city rebuilt from nothing much into the finest architecture in the Maya world, and a tomb so elaborately hidden that it took until 1952 to find. His mother ruled before him and his claim came through her, which is irregular enough that his son spent the 690s building three temples to argue that gods do it too. The sarcophagus lid — a king falling into the underworld down the world tree — has been read as a great many things by people who will not learn the script; what it says, in the script, is who he was and when he died."
+  },
+  {
+    "id": "maya_sak_kuk",
+    "name": { "primary": "Lady Sak K'uk'", "alt": ["Sak K'uk'", "Muwaan Mat", "Lady White Quetzal"],
+      "transliterations": { "Classic Maya": "Sak K'uk'", "etymology": "Sak, white or resplendent; k'uk', quetzal. She also appears under the name Muwaan Mat, which is a deity name in the Palenque inscriptions." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Queen of Palenque and mother of Pakal, through whom his claim ran; she is also called Muwaan Mat in the inscriptions. She died in 640.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Sak K'uk', also known as Muwaan Mat, queen of Palenque, who died in 640; and of Pakal as born to Lady Sak K'uk' of the ruling Palenque dynasty." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Sak K'uk' as queen of Palenque." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "maya_pakal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pakal as the son of Lady Sak K'uk'." } ],
+        "notes": "And the source of his claim, which is why the Palenque inscriptions work as hard as they do." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lady Sak K'uk', also called Muwaan Mat, is queen of Palenque and the mother of K'inich Janaab Pakal, through whom his title descended; she died in 640.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lady Sak K'uk' / Muwaan Mat and of Pakal's parentage." } ], "weight": "high" } ],
+    "notes": "The Palenque succession went through a woman twice in three generations, and the inscriptions handle it by putting her name and a god's name in the same slot — Muwaan Mat is a deity of the Palenque creation account and also her. Whether that is a throne-name, a posthumous identification or an epigraphic sleight of hand is argued; what is not argued is that Pakal's claim was his mother's and that his descendants knew it."
+  },
+  {
+    "id": "maya_kan_bahlam_ii",
+    "name": { "primary": "K'inich Kan Bahlam II", "alt": ["K'inich Kan B'alam II", "Chan Bahlum II", "Snake Jaguar"],
+      "transliterations": { "Classic Maya": "K'inich Kan B'ahlam", "etymology": "Kan, snake or sky depending on the sign; b'ahlam, jaguar — 'Snake Jaguar' in the usual rendering." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_pakal"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Born 23 May 635, he acceded in January 684, some months after his father Pakal's death, and reigned to his own on 20 February 702.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich Kan Bahlam II (23 May 635 – 20 February 702), who acceded to the throne in January 684 several months after the death of his father and predecessor K'inich Janaab' Pakal." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He built the Cross Group — three temples, one for each god of the Palenque Triad, completed in 692 — whose inscriptions run the gods' births and the dynasty's accessions as a single chronology.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Palenque Cross Group: the Temple of the Cross, the Temple of the Foliated Cross and the Temple of the Sun, carrying GI, GII and GIII, completed in 692, their design following the Triad's births and hierarchy." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kan Bahlam II's reign." } ] },
+      { "sphereId": "dynastic-legitimacy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Cross Group inscriptions and their dynastic argument." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "maya_kan_joy_chitam_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich K'an Joy Chitam II as the younger brother of Kan Bahlam II, both sons of Pakal." } ],
+        "notes": "The younger brother who followed him." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Palenque, the Cross Group", "kind": "state-cult", "period": "classic",
+        "attestation": "the three temples and their tablets, completed 692", "source": "Reference treatments of the Cross Group.",
+        "note": "Three temples, three gods, three tablets, one argument." } ],
+    "sources": [ { "claim": "K'inich Kan Bahlam II is king of Palenque from January 684 to 20 February 702, son and successor of Pakal, who built the Cross Group and its three Triad temples, completed in 692.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kan Bahlam II and of the Palenque Cross Group." } ], "weight": "high" } ],
+    "notes": "This is the king who wrote the theology. The Cross Group is not decoration and not piety in the ordinary sense: it is a legal brief in stone, arguing that the Palenque dynasty's irregular descent matches the pattern of the gods' own, and it is why the Palenque Triad is in this batch at all. He is also the reason the corpus can now carry GI, GII and GIII with a person attached to them."
+  },
+  {
+    "id": "maya_kan_joy_chitam_ii",
+    "name": { "primary": "K'inich K'an Joy Chitam II", "alt": ["K'an Joy Chitam II", "K'an Xul II"],
+      "transliterations": { "Classic Maya": "K'inich K'an Joy Chitam", "etymology": "Chitam is peccary; k'an is yellow or precious. Called K'an Xul in the older literature." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_pakal"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Younger brother of K'inich Kan Bahlam II and his successor at Palenque; both were sons of Pakal.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich K'an Joy Chitam II as Kan Bahlam II's younger brother and his successor, both being sons of K'inich Janaab' Pakal." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'an Joy Chitam II's reign at Palenque." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "maya_kan_bahlam_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as brothers and successive kings of Palenque." } ],
+        "notes": "The elder brother, whom he followed." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "K'inich K'an Joy Chitam II is the younger son of Pakal and the successor of his brother K'inich Kan Bahlam II at Palenque.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Palenque succession after Pakal." } ], "weight": "medium" } ],
+    "notes": "The sources reachable in this session give him his parentage, his brother and his place in the succession and little else; the record stops there rather than filling out a reign it cannot cite. Two brothers in succession after a long-lived father is the pattern the Cross Group's three divine brothers were built to naturalise, and he is the second of the two."
+  },
+  {
+    "id": "maya_yax_kuk_mo",
+    "name": { "primary": "K'inich Yax K'uk' Mo'", "alt": ["Yax K'uk' Mo'", "Blue-Green Quetzal Macaw"],
+      "transliterations": { "Classic Maya": "K'inich Yax K'uk' Mo'", "etymology": "Yax, first or blue-green; k'uk', quetzal; mo', macaw. Two birds and a colour." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Founder and first king of the dynasty that ruled Copán for three hundred and fifty years, reigning eleven years from 426 to 437. The inscriptions say he went first to Quiriguá, installed a ruler loyal to him there, and then came to Copán.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich Yax K'uk' Mo': founder and first king of the dynasty that ruled Copán for 350 years, reigning eleven years from 426 to 437, who according to inscriptions went first to Quiriguá to install a ruler loyal to his cause and then came to Copán." } ] } ],
+    "domains": [
+      { "sphereId": "dynastic-founder", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax K'uk' Mo' as the founder of the Copán dynasty." } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his reign, 426-437." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "foundational-precursor-to", "personId": "maya_yax_pasaj_chan_yopaat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Copán Altar Q, on whose west side the 1st Ruler, the founder K'inich Yax K'uk' Mo', and the 16th Ruler, Yax Pasaj Chan Yopaat, face each other directly at the centre." } ],
+        "notes": "Altar Q puts them face to face in the middle of the sequence: the founder handing the sceptre to the sixteenth and last, three hundred and fifty years apart, with the other fourteen around the sides." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Copán, Altar Q", "kind": "dynastic-monument", "period": "classic",
+        "attestation": "the sixteen kings carved around the four sides of the altar", "source": "Reference treatments of Copán Altar Q.",
+        "note": "Altar Q is what allowed Mayanists to reconstruct the Copán king-list from the founder to the sixteenth ruler." } ],
+    "sources": [ { "claim": "K'inich Yax K'uk' Mo' is the founder of the Copán dynasty, reigning 426-437, who installed a loyal ruler at Quiriguá before coming to Copán, and who faces the sixteenth ruler at the centre of Altar Q.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of K'inich Yax K'uk' Mo' and of Copán Altar Q." } ], "weight": "high" } ],
+    "notes": "The order of operations in the inscriptions is worth noticing: Quiriguá first, then Copán. Three hundred years later Quiriguá beheaded Copán's king, which gives the founding arrangement a certain retrospective weight. Altar Q, carved in 763 by the sixteenth ruler, is the dynasty's own list of itself — sixteen kings on four sides, the founder handing over at the centre — and is the reason the Copán sequence is the best-documented in the Maya world."
+  },
+  {
+    "id": "maya_chan_imix_kawiil",
+    "name": { "primary": "Chan Imix K'awiil", "alt": ["K'ahk' Uti' Witz' K'awiil", "Smoke Imix", "Smoke Jaguar"],
+      "transliterations": { "Classic Maya": "Chan Imix K'awiil", "etymology": "Imix is the first day-sign of the 260-day count; chan is sky; K'awiil is the god. The reading of the name is not settled and he appears in the literature as K'ahk' Uti' Witz' K'awiil as well." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Twelfth ruler of Copán, from 8 February 628 to 18 June 695 — sixty-seven years, the longest reign the city recorded — and he died at ninety.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chan Imix K'awiil: twelfth ruler of Copán, reigning from 8 February 628 to 18 June 695, nicknamed Smoke Jaguar, thought to be the longest-reigning king of Copán, who ruled 67 years and died at the age of 90." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chan Imix K'awiil's reign at Copán." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "maya_waxaklajuun_ubaah_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Waxaklajuun Ub'aah K'awiil succeeded Chan Imix K'awiil, who was his father." } ], "notes": "The son who was beheaded at Quiriguá forty-three years later." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chan Imix K'awiil is the twelfth ruler of Copán, reigning 8 February 628 to 18 June 695 — sixty-seven years, the city's longest — dying at ninety, and father of his successor Waxaklajuun Ub'aah K'awiil.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chan Imix K'awiil and of the Copán succession." } ], "weight": "high" } ],
+    "notes": "Sixty-seven years and ninety at death, in the seventh century, is the kind of number that gets checked and has been. His reign and Pakal's overlap almost exactly and between them they cover most of the century in two of the four great Maya cities; in a corpus that carried neither, the seventh century in the Maya lowlands did not exist."
+  },
+  {
+    "id": "maya_waxaklajuun_ubaah_kawiil",
+    "name": { "primary": "Waxaklajuun Ub'aah K'awiil", "alt": ["Uaxaclajuun Ub'aah K'awiil", "18 Rabbit", "Eighteen Rabbit"],
+      "transliterations": { "Classic Maya": "Waxaklajuun Ub'aah K'awiil", "etymology": "'Eighteen Are the Images of K'awiil' — waxaklajuun, eighteen, plus ub'aah, his image or self, plus the god. The familiar '18 Rabbit' is an early misreading of the number's companion sign that stuck." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_chan_imix_kawiil"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Thirteenth king of the Copán dynasty, acceding 9 July 695 on his father's death, in the city's greatest period of sculpture.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Waxaklajuun Ub'aah K'awiil: thirteenth ruler of Copán, reigning from 9 July 695 to 3 May 738, who succeeded his father Chan Imix K'awiil; the name refers to the eighteen images or manifestations of K'awiil." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "In 724 he installed K'ak' Tiliw Chan Yopaat as his own vassal at Quiriguá. In 734 that vassal declared Quiriguá independent; in 738 his forces took Copán's king, and on 3 May Waxaklajuun Ub'aah K'awiil was ritually decapitated at Quiriguá, under the authority of the man whose accession he had supervised.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: 18 Rabbit installed K'ak' Tiliw Chan Yopaat as his vassal at Quiriguá in 724; in 734 K'ak' Tiliw Chan Yopaat declared Quiriguá's independence from Copán; and in AD 738 his forces defeated Copán and the ruler of Copán was captured and ritually decapitated at Quiriguá." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Waxaklajuun Ub'aah K'awiil's reign." } ] },
+      { "sphereId": "sacrifice", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his ritual decapitation at Quiriguá in 738." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "maya_kak_tiliw_chan_yopaat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the revolt of Quiriguá under K'ak' Tiliw Chan Yopaat against Copán in 734 and the defeat of Copán in 738." } ],
+        "notes": "His own appointee, and the man who killed him." },
+      { "kind": "killed-by", "personId": "maya_kak_tiliw_chan_yopaat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in 738 K'ak' Tiliw Chan Yopaat captured and beheaded Uaxaclajuun Ub'aah K'awiil." } ],
+        "notes": "Ritually decapitated at Quiriguá on 3 May 738." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Waxaklajuun Ub'aah K'awiil is the thirteenth ruler of Copán, reigning 9 July 695 to 3 May 738, son of Chan Imix K'awiil, who installed K'ak' Tiliw Chan Yopaat at Quiriguá in 724 and was captured and beheaded by him in 738.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of 18 Rabbit's reign, the Quiriguá revolt and his execution." } ], "weight": "high" } ],
+    "notes": "The most spectacular reversal in the Maya record. Copán under him produced the finest stone sculpture anyone in Mesoamerica carved, he had installed the king of Quiriguá himself fourteen years earlier, and then his client took him and cut his head off — and carved it on a monument, which is how we know. Copán did not raise a stela for seventeen years afterwards. The name means 'eighteen are the images of K'awiil' and the god in it is in this batch too."
+  },
+  {
+    "id": "maya_kak_tiliw_chan_yopaat",
+    "name": { "primary": "K'ak' Tiliw Chan Yopaat", "alt": ["K'ak' Tiliw Chan Yoaat", "Cauac Sky", "Butz' Tiliw"],
+      "transliterations": { "Classic Maya": "K'ahk' Tiliw Chan Yopaat", "etymology": "K'ahk', fire; chan, sky; Yopaat is a storm deity. Called Cauac Sky in the older literature, after the storm day-sign." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Installed as ruler of Quiriguá in 724 by Copán's king Waxaklajuun Ub'aah K'awiil, as that king's vassal.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: 18 Rabbit had installed K'ak' Tiliw Chan Yopaat, also known as Cauac Sky, as his own vassal at Quiriguá in 724 AD." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "In 734 he declared Quiriguá independent of Copán; in 738 his forces defeated Copán, and he captured its king and had him ritually decapitated under his own authority.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in 734 K'ak' Tiliw Chan Yopaat declared Quiriguá's independence from Copan; in AD 738 his forces defeated Copán, and Uaxaclajuun Ub'aah K'awiil was captured and ritually decapitated at Quiriguá under his authority." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'ak' Tiliw Chan Yopaat's rule at Quiriguá." } ] },
+      { "sphereId": "rebellion", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Quiriguá's declaration of independence from Copán in 734." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "maya_waxaklajuun_ubaah_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Quiriguá revolt against Copán and the war of 738." } ],
+        "notes": "The overlord who had put him on his throne." },
+      { "kind": "killer-of", "personId": "maya_waxaklajuun_ubaah_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the capture and beheading of Copán's king by K'ak' Tiliw Chan Yopaat in 738." } ],
+        "notes": "And he carved it, which is the reason it is known." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "K'ak' Tiliw Chan Yopaat was installed at Quiriguá by Copán's Waxaklajuun Ub'aah K'awiil in 724, declared independence in 734, and in 738 captured and beheaded the king who had installed him.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of K'ak' Tiliw Chan Yopaat, the Quiriguá revolt and the execution of 738." } ], "weight": "high" } ],
+    "notes": "Quiriguá is a small site with enormous monuments, and the reason is 738: a client kingdom that killed its overlord and then spent the rest of the century carving the tallest stelae in the Maya world to say so. The pairing with Copán is why both are in this batch — a beheading is only legible if the registry holds both parties, and it held neither."
+  },
+  {
+    "id": "maya_yax_pasaj_chan_yopaat",
+    "name": { "primary": "Yax Pasaj Chan Yopaat", "alt": ["Yax Pac", "Yax Pasah", "Madrugada", "New Sun at Horizon"],
+      "transliterations": { "Classic Maya": "Yax Pasaj Chan Yopaat", "etymology": "Read in the literature as 'New Son on the Horizon' or 'First Dawned Sky Yopaat', Yopaat being the storm deity also in his predecessor's name at Quiriguá." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Sixteenth and last king of Copán, crowned 2 July 763 and reigning to about 810; son of the fifteenth ruler, Smoke Shell, and of a noblewoman of Palenque.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Pasaj Chan Yopaat: the sixteenth and last king in line, whose name translates as 'New son on the Horizon', reigning from 2 July 763 to approximately 810, son of Smoke Shell and a noblewoman of Palenque." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He began a programme of artistic and architectural work as soon as he was crowned, and he made Altar Q — the monument carrying all sixteen kings of the dynasty round its four sides, with the founder handing him the sceptre at the centre of the west face.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: as soon as he had been crowned in AD 763 Yax Pasaj Chan Yopaat began a programme of artistic and architectural improvement of the city, and he is the king who made Altar Q, on whose west side the 1st and 16th Rulers face each other at the centre." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yax Pasaj Chan Yopaat's reign at Copán." } ] },
+      { "sphereId": "architecture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his building programme and of Altar Q." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Copán, Altar Q", "kind": "dynastic-monument", "period": "classic",
+        "attestation": "the altar, carved in 763, with sixteen kings on four sides", "source": "Reference treatments of Copán Altar Q.",
+        "note": "Commissioned by the last king of the line, and the document that reconstructed the line." } ],
+    "sources": [ { "claim": "Yax Pasaj Chan Yopaat is the sixteenth and last king of Copán, reigning 2 July 763 to about 810, son of Smoke Shell and a Palenque noblewoman, who commissioned Altar Q.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yax Pasaj Chan Yopaat and of Altar Q." } ], "weight": "high" } ],
+    "notes": "Altar Q is a dynasty's last king carving a picture of the first one handing him the right to rule, twenty-five years after the city's most famous king was beheaded by a vassal and about forty years before the line stopped. It is also, by accident, the best single source for Classic Maya dynastic history, because it names all sixteen in order. His father Smoke Shell is not in the registry and not written here: the sources reachable in this session name him and give him nothing else."
+  },
+  {
+    "id": "maya_yuknoom_cheen_ii",
+    "name": { "primary": "Yuknoom Ch'een II", "alt": ["Yuknoom the Great", "Yuknoom Ch'en II"],
+      "transliterations": { "Classic Maya": "Yuknoom Ch'een", "etymology": "Ch'een is cave or well and by extension the settlement itself; the first element is not securely read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Born 11 September 600; acceded 1 May 636 as ruler of the Kaan or Snake kingdom, whose capital was then Calakmul, and reigned fifty years to 686 — the height of Kaanul power and of its ascendancy over Tikal.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yuknoom Ch'een II, known as Yuknoom the Great: ruler of the Kaan kingdom with its capital at Calakmul, who acceded in AD 636 and ruled fifty years, from 1 May 636 to 686, born 11 September 600, of the Snake dynasty, at the height of the Kaan kingdom's power and its ascendency over Tikal." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "He fought Tikal by more than one means: assaulting and then backing the breakaway Tikal dynasty at Dos Pilas, installing client kings at Cancuen and Moral-Reforma to hold the river routes, and conquering Tikal itself in 657. Only after that conquest does the evidence show him as overking at Piedras Negras, Uxul, Zapote Bobal, La Corona and El Perú.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in assaulting and then supporting a breakaway from the Tikal dynasty at Dos Pilas, Yuknoom Ch'een II pursued competition with Tikal by more than one means; by installing kings at Cancuen and Moral-Reforma he created clients controlling key river routes; his conquest of Tikal in 657 checked the resurgence of his greatest rival, and only after it does evidence show his overking status at Piedras Negras, Uxul, Zapote Bobal, La Corona and El Peru." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "kaloomte'", "script": "Classic Maya", "rom": "kaloomte' (high king, overlord)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yuknoom Ch'een II's overking status over a range of sites." } ] },
+      { "sphereId": "conquest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the conquest of Tikal in 657." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his installation of client kings at Cancuen and Moral-Reforma to control river routes." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "overlord-of", "personId": "maya_balaj_chan_kawiil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yuknoom Ch'een II assaulting and then supporting the breakaway Tikal dynasty at Dos Pilas." } ],
+        "notes": "He attacked Dos Pilas first and then backed it against Tikal, which is the whole Kaanul method in one relationship." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yuknoom Ch'een II, Yuknoom the Great, is the Snake-dynasty ruler of Calakmul from 1 May 636 to 686, born 11 September 600, who conquered Tikal in 657, backed the Dos Pilas breakaway, installed client kings on the river routes, and was overking at Piedras Negras, Uxul, Zapote Bobal, La Corona and El Perú.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yuknoom Ch'een II and of the Kaanul hegemony." } ], "weight": "high" } ],
+    "notes": "The Kaanul kings ran the only thing in the Maya lowlands that looks like an empire, and they ran it by clients rather than by administration: install a king here, back a rebel there, marry a daughter into the third place, and hold the rivers. Yuknoom the Great is the height of it, fifty years of it, and the registry carried neither him nor the kingdom. The rivalry with Tikal that this record makes legible is the organising fact of two centuries of Maya politics, and until this batch the corpus had neither side of it."
+  },
+  {
+    "id": "maya_balaj_chan_kawiil",
+    "name": { "primary": "B'alaj Chan K'awiil", "alt": ["Balaj Chan K'awiil", "Ruler 1 of Dos Pilas"],
+      "transliterations": { "Classic Maya": "B'alaj Chan K'awiil", "etymology": "Chan, sky, plus the god K'awiil; the first element is not securely read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Ruler of Dos Pilas, the breakaway from the Tikal dynasty that Calakmul first attacked and then supported; he held the Petexbatun for the Snake kingdom against his own house.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yuknoom Ch'een II assaulted and then supported a breakaway from the Tikal dynasty at Dos Pilas, pursuing his competition with Tikal by more than one means." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "His daughter by Lady B'ulu' was Lady Six Sky, who went to Naranjo in 682 and ruled it; the marriage is how Dos Pilas — and behind it Calakmul — reached into the eastern Petén.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Six Sky as a child of Lady B'ulu' and the Calakmul-aligned Dos Pilas ruler B'alaj Chan K'awiil, whose deeds helped assure that her dynasty retained power." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of B'alaj Chan K'awiil's rule at Dos Pilas." } ] },
+      { "sphereId": "rebellion", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dos Pilas as a breakaway from the Tikal dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "maya_wak_chanil_ajaw",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Six Sky as a child of B'alaj Chan K'awiil and Lady B'ulu'." } ],
+        "notes": "Sent to Naranjo, where she ruled in fact if not in title." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "B'alaj Chan K'awiil is the ruler of Dos Pilas, a breakaway from the Tikal dynasty that Calakmul first attacked and then backed, and the father by Lady B'ulu' of Lady Six Sky of Naranjo.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Dos Pilas breakaway and of Lady Six Sky's parentage." } ], "weight": "medium" } ],
+    "notes": "Dos Pilas is a Tikal royal house that went over to the enemy, which is why the Petexbatun wars of the seventh century read as a civil war rather than a foreign one. His most consequential act, on the evidence reachable here, was fathering a daughter and sending her east."
+  },
+  {
+    "id": "maya_wak_chanil_ajaw",
+    "name": { "primary": "Lady Six Sky", "alt": ["Wak Chanil Ajaw", "Ix Wak Chan Ajaw", "Lady Wac Chanil Ahau"],
+      "transliterations": { "Classic Maya": "Ix Wak Chan Ajaw", "etymology": "Ix, the female prefix; wak, six; chan, sky; ajaw, lord. 'Lady Six Sky Lord'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased",
+    "parentIds": ["maya_balaj_chan_kawiil"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Born at Dos Pilas in 667 to B'alaj Chan K'awiil and Lady B'ulu'; she came to Naranjo in 682 and lived there until her death in 741.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Six Sky: a Maya queen of Naranjo born in Dos Pilas in 667 CE, a child of Lady B'ulu' and the Calakmul ruler B'alaj Chan K'awiil, who lived in Naranjo from 682 to her death in 741." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "She ruled Naranjo in fact, once and possibly twice, and waged war on a series of rivals; her monuments show her as a king does, standing on a trampled captive, which is unusual for a woman in this iconography. She never used Naranjo's emblem glyph, keeping Dos Pilas's to the end, which is taken to mean she was never formally recognised as its ruler.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Lady Six Sky served as de facto ruler of Naranjo, once if not twice, waging war against numerous competitors; monuments such as Stela 24 suggest she was never formally recognised as ruler since she continued to use the emblem glyph of Dos Pilas throughout her life; she is shown taking the role of a warrior-king standing over a trampled captive, an unusual representation for a woman." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady Six Sky as de facto ruler of Naranjo." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her wars against Naranjo's competitors and of her warrior-king iconography." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lady Six Sky, born at Dos Pilas in 667, ruled Naranjo in fact from 682 until her death in 741, waged war on its rivals, was shown on monuments as a warrior-king over a trampled captive, and kept the Dos Pilas emblem glyph throughout.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lady Six Sky and of the Naranjo monuments." } ], "weight": "high" } ],
+    "notes": "The emblem glyph is the tell. A Classic Maya ruler's title names the polity, and she never took Naranjo's — she used her father's city's for sixty years while running Naranjo's wars, which is the epigraphic signature of power without office. She arrived at fifteen, restarted a dynasty that had collapsed, put a son on the throne and went on campaigning. In a corpus that carried no Maya rulers at all, the omission of the ones who were women was not a separate omission, but it is worth saying that two of the twenty-three here are queens and a third outranked her husband."
+  },
+  {
+    "id": "maya_lady_kabel",
+    "name": { "primary": "Lady K'abel", "alt": ["Ix K'abel", "Lady Water Lily Hand", "Lady Snake Lord"],
+      "transliterations": { "Classic Maya": "Ix K'abel", "etymology": "Not securely read; the epigraphers' renderings vary and none is asserted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "She ruled El Perú-Waka' with her husband K'inich Bahlam from 672 to 692, as military governor of the Waka kingdom under the House of the Snake King. Her title was kaloomte', Supreme Warrior, which outranked his.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abel: she ruled El Peru-Waka with her husband K'inich Bahlam during the seventh century from 672 to 692, serving as military governor of the Waka kingdom under the auspices of the House of the Snake King, her official title being 'Kaloomte', or Supreme Warrior, which meant that she outranked her husband." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "Her tomb was found in October 2012 in the main pyramid temple at El Perú, with ceramics, jade, stone figurines and a small alabaster jar carved as a conch from which an old woman's head and arms emerge; the glyphs on that jar identified her. She is shown on Stela 34 holding a shield, attended by a court dwarf.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the discovery in October 2012 of Lady K'abel's tomb in the main pyramid temple at El Perú, with ceramic vessels, jade jewellery, stone figurines and an alabaster jar carved in the shape of a conch shell from which the head and arms of an old woman emerge, whose glyphs confirmed the identification; and of Stela 34, on which she wields a shield accompanied by a dwarf of the royal court." } ] } ],
+    "domains": [
+      { "sphereId": "military-command", "contextTag": "lifelong", "term": { "value": "kaloomte'", "script": "Classic Maya", "rom": "kaloomte' (supreme warrior)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abel's title kaloomte'." } ] },
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her joint rule at El Perú-Waka'." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_kinich_bahlam_ii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abel as ruling El Peru-Waka with her husband K'inich Bahlam, whom her title outranked." } ],
+        "notes": "She outranked him and the inscriptions say so, which is not a thing the Maya record often does." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "El Perú-Waka', the main pyramid temple", "kind": "royal-burial", "period": "classic",
+        "attestation": "the tomb excavated in 2012 and the inscribed alabaster jar in it", "source": "Reference treatments of the 2012 excavation at El Perú.",
+        "note": "The identification rests on the glyphs of the jar, which is the sort of luck that is rare: a named royal woman, in her own tomb, with her name on an object in it." } ],
+    "sources": [ { "claim": "Lady K'abel ruled El Perú-Waka' with her husband K'inich Bahlam from 672 to 692, holding the title kaloomte' or Supreme Warrior, which outranked his, as military governor under the Snake kingdom; her tomb was found in 2012 and identified by an inscribed alabaster jar.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lady K'abel, her titles and the discovery of her tomb." } ], "weight": "high" } ],
+    "notes": "Kaloomte' is the highest Classic Maya title there is, above k'uhul ajaw, and a woman held it at Waka' while her husband did not. She was Calakmul's instrument in the west — the Snake kings placed her there and she governed for them — which makes her the third figure in this batch whose position only makes sense with Kaanul in the registry, and Kaanul was not in the registry. Her tomb is one of the few Maya royal burials whose occupant can be named from an object inside it."
+  },
+  {
+    "id": "maya_kinich_bahlam_ii",
+    "name": { "primary": "K'inich Bahlam II", "alt": ["K'inich B'ahlam", "K'inich Bahlam of Waka'"],
+      "transliterations": { "Classic Maya": "K'inich B'ahlam", "etymology": "K'inich, the radiant royal prefix, plus b'ahlam, jaguar." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "King of El Perú-Waka', ruling jointly with his wife Lady K'abel from 672 to 692, in a marriage that bound the city to the Snake kingdom of Calakmul — and in which her title outranked his.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Lady K'abel ruled El Peru-Waka with her husband K'inich Bahlam from 672 to 692 under the auspices of the House of the Snake King, her title kaloomte' meaning that she outranked him." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "k'uhul ajaw", "script": "Classic Maya", "rom": "k'uhul ajaw" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of K'inich Bahlam's joint rule at El Perú-Waka'." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_lady_kabel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the joint rule of K'inich Bahlam and Lady K'abel at El Perú-Waka'." } ],
+        "notes": "The senior partner, by title." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "K'inich Bahlam II is king of El Perú-Waka' from 672 to 692, ruling jointly with his wife Lady K'abel, whose kaloomte' title outranked his, under the overlordship of the Snake kingdom.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the joint rule at El Perú-Waka'." } ], "weight": "medium" } ],
+    "notes": "He is in the registry because a marriage takes two and because the interesting fact about him — that his wife's title was higher — cannot be stated without him. The sources reachable here give him the reign, the wife and the alignment with Calakmul, and the record does not go past them."
+  },
+  {
+    "id": "maya_itzamnaaj_bahlam_iii",
+    "name": { "primary": "Itzamnaaj Bahlam III", "alt": ["Itzamnaaj B'alam II", "Shield Jaguar", "Shield Jaguar the Great"],
+      "transliterations": { "Classic Maya": "Itzamnaaj B'ahlam", "etymology": "The god Itzamnaaj plus b'ahlam, jaguar. The older literature calls him Shield Jaguar, from the shield in his name-glyph; the numbering of the Yaxchilán Itzamnaaj Bahlams varies between treatments, II in some and III in others, and both are carried here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "King of Yaxchilán on the Usumacinta: he came to power in October 681 and ruled until his death in June 742, taking the city to its height.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzamnaaj Bahlam III, also styled Itzamnaaj B'alam or Shield Jaguar, king of Yaxchilan, who rose to power in October 681 and ruled until his death in June 742; the city reached its height under him and his son Bird Jaguar IV." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "On 28 October 709 he and his principal wife Lady K'abal Xook performed the bloodletting rite carved on Lintel 24 of Structure 23 — he holding the torch, she drawing a thorned cord through her tongue.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yaxchilán Lintel 24: Lord Shield Jaguar and Lady K'abal Xook engaged in a bloodletting rite dated 28 October AD 709." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Itzamnaaj Bahlam III's reign at Yaxchilán." } ] },
+      { "sphereId": "bloodletting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the bloodletting rite of 709 on Lintel 24." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_lady_kabal_xook",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abal Xook as the principal wife of Itzamnaaj Bahlam III." } ],
+        "notes": "Also described in the reference treatments as his aunt." },
+      { "kind": "father-of", "personId": "maya_yaxun_balam_iv",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yaxun B'ahlam IV, Bird Jaguar IV, as the son of Itzamnaaj Bahlam III." } ], "notes": "His successor, after a ten-year gap." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Itzamnaaj Bahlam III, Shield Jaguar, is king of Yaxchilán from October 681 to his death in June 742, husband of Lady K'abal Xook, with whom he performed the bloodletting rite of 28 October 709 carved on Lintel 24, and father of Bird Jaguar IV.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Itzamnaaj Bahlam III, the Yaxchilán lintels and the succession." } ], "weight": "high" } ],
+    "notes": "Sixty-one years on the throne, and what everyone knows about him is a lintel in which he holds a torch while his wife pulls a rope of thorns through her tongue. That is not an accident of survival: Yaxchilán's kings put their women on the monuments to a degree no other Maya city did, and Structure 23 is Lady K'abal Xook's building. The registry held neither of them, and the Yaxchilán lintels are among the three or four most reproduced things in Maya art."
+  },
+  {
+    "id": "maya_lady_kabal_xook",
+    "name": { "primary": "Lady K'abal Xook", "alt": ["Lady Xoc", "Ix K'ab'al Xook", "Lady Shark"],
+      "transliterations": { "Classic Maya": "Ix K'ab'al Xook", "etymology": "Xook is shark — the same element as in the Tikal founder's name. The first element is not securely read." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "Principal wife — and, the reference treatments say, aunt — of Itzamnaaj Bahlam III of Yaxchilán, and the woman for whom Structure 23 and its three carved lintels were made.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abal Xook (Lady Xoc) as the principal wife and aunt of King Itzamnaaj Bahlam III of Yaxchilán; and of the carved lintels of Structure 23." } ] },
+      { "typeStatus": "mortal", "era": "classic", "eraOrdering": 1,
+        "startEvent": "On Lintel 24 she draws a thorned cord through her tongue while the king holds a torch above her, on 28 October 709. On Lintel 25 the blood she has let raises a vision serpent, out of whose jaws an ancestor emerges; she kneels holding a skull and a bloodletting bowl and looks up at it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yaxchilán Lintels 24 and 25: Lady K'abal Xook performing a bloodletting ritual that manifests a vision of a serpent, holding bloodletting apparatus in her left hand and supporting a skull in her outstretched right as she gazes up at a being conjured out of the otherworld; the rite of Lintel 24 is dated 28 October AD 709." } ] } ],
+    "domains": [
+      { "sphereId": "bloodletting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abal Xook's bloodletting rites on the Yaxchilán lintels." } ] },
+      { "sphereId": "visions", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the vision serpent conjured by her bloodletting on Lintel 25." } ] },
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abal Xook as principal wife at Yaxchilán." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "maya_itzamnaaj_bahlam_iii",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lady K'abal Xook as the principal wife of Itzamnaaj Bahlam III." } ],
+        "notes": "The treatments also call her his aunt; both statements are theirs and neither is resolved here." } ],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Yaxchilán, Structure 23", "kind": "royal-monument", "period": "classic",
+        "attestation": "Lintels 24, 25 and 26", "source": "Reference treatments of the Yaxchilán lintels.",
+        "note": "A building dedicated to a king's wife, carrying three lintels in which she is the principal figure and he is the attendant one." } ],
+    "sources": [ { "claim": "Lady K'abal Xook is the principal wife of Itzamnaaj Bahlam III of Yaxchilán, for whom Structure 23 and its lintels were made, shown drawing a thorned cord through her tongue on 28 October 709 and conjuring a vision serpent from the blood.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lady K'abal Xook and Yaxchilán Lintels 24 and 25." } ], "weight": "high" } ],
+    "notes": "Lintel 25 is the reason Classic Maya religion is understood the way it is. The sequence is explicit and in order: she lets blood, the blood is burned, the smoke becomes a serpent, and an armed ancestor comes out of its mouth. That is the mechanism of Maya contact with the dead, carved once, with a date on it, with a named woman doing it. She was not in the registry."
+  },
+  {
+    "id": "maya_yaxun_balam_iv",
+    "name": { "primary": "Yaxun B'alam IV", "alt": ["Yaxun B'ahlam IV", "Bird Jaguar IV", "Bird Jaguar the Great"],
+      "transliterations": { "Classic Maya": "Yaxun B'ahlam", "etymology": "Yaxun is the cotinga, a blue bird; b'ahlam is jaguar — hence 'Bird Jaguar'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["maya_itzamnaaj_bahlam_iii"], "parentRoles": ["father"],
+    "temporal": { "era": "classic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "classic", "eraOrdering": 0,
+      "startEvent": "King of Yaxchilán from 3 May 752 to 768, son of Itzamnaaj Bahlam III; he and his father are responsible for most of the city that still stands.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yaxun B'ahlam IV, Bird Jaguar IV, king of Yaxchilan who reigned from 3 May 752 to 768 and was the son of Itzamnaaj Bahlam III; the city on the Usumacinta reached its height in the eighth century under Itzamnaaj B'alam II and his son Bird Jaguar IV, who are responsible for much of what can be seen today." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bird Jaguar IV's reign." } ] },
+      { "sphereId": "architecture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the building programme of Itzamnaaj Bahlam III and Bird Jaguar IV at Yaxchilán." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yaxun B'alam IV, Bird Jaguar IV, is king of Yaxchilán from 3 May 752 to 768, son of Itzamnaaj Bahlam III, and with his father the builder of most of the surviving city.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bird Jaguar IV and of Yaxchilán in the eighth century." } ], "weight": "high" } ],
+    "notes": "Ten years elapsed between his father's death in 742 and his accession in 752, which is a gap nobody has fully explained and which his own monuments work hard to paper over — he commissioned an unusual quantity of sculpture insisting on his descent and on his mother's standing. A king who has to argue the case usually had one to answer."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE LAST THREE: 1524, 1697, 1761
+================================================================================
+
+The Maya were conquered over a hundred and seventy-three years, which is
+longer than anyone else in the Americas, and then went on revolting. Three
+figures mark the ends of that: the K'iche' commander killed at the beginning,
+the Itza king taken at the very end, and the man who put a crown on his own
+head in 1761 and was torn apart in the plaza at Mérida for it.
+
+```json
+[
+  {
+    "id": "maya_tecun_uman",
+    "name": { "primary": "Tecun Uman", "alt": ["Tecún Umán", "Tekun Umam"],
+      "transliterations": { "K'iche'": "Tekun Umam", "etymology": "Umam is 'grandson' or 'grandfather' in K'iche' depending on the possessive; the whole is a title as much as a name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "postclassic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "postclassic", "eraOrdering": 0,
+      "startEvent": "One of the last rulers of the K'iche' in the Guatemalan highlands, born about 1499. He had 8,400 soldiers ready for the Spanish, whose approach his network of spies had reported.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tecun Uman (1499 – February 1524), one of the last rulers of the K'iche' Maya in the Highlands of what is now Guatemala, who prepared 8,400 soldiers for the Spanish attack, which they had discovered through their network of spies." } ] },
+      { "typeStatus": "mortal", "era": "postclassic", "eraOrdering": 1,
+        "startEvent": "He was killed by Pedro de Alvarado on the approach to Quetzaltenango in February 1524. The date is given as 12 February in the Kaqchikel annals as cited by one treatment and as 20 February by another, and the disagreement is left standing.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Tecun Uman's death: slain by Pedro de Alvarado while waging battle against the Spanish and their allies on the approach to Quetzaltenango on 12 February 1524 according to the Kaqchikel annals, with his death also given as 20 February 1524." } ] } ],
+    "domains": [
+      { "sphereId": "military-command", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tecun Uman's command against the Spanish." } ] },
+      { "sphereId": "resistance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the K'iche' resistance to the Spanish invasion of 1524." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Maya", "placeName": "Guatemala", "kind": "national-commemoration", "period": "colonial to present",
+        "attestation": "the Baile de la Conquista, in which the battle is danced", "source": "Reference treatments of Tecun Uman and of the Baile de la Conquista.",
+        "note": "He is Guatemala's national hero and the dance that re-enacts his death has been performed in highland towns since the colonial period, which is an unusual afterlife for a man killed in a defeat." } ],
+    "sources": [ { "claim": "Tecun Uman, born c. 1499, is one of the last K'iche' rulers, who met the Spanish invasion with 8,400 soldiers and was killed by Pedro de Alvarado near Quetzaltenango in February 1524.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tecun Uman, the Kaqchikel annals' account and the campaign of 1524." } ], "weight": "high" } ],
+    "notes": "The Popol Vuh was written down by K'iche' who remembered this. Twenty-six years separate Tecun Uman's death from the manuscript, and the book's insistence that the K'iche' lineages descend from four named men who carried three named gods out of Tulan is the argument of people who had just been told they were nobody. He is at the other end of this batch from Balam Quitze and belongs to the same document."
+  },
+  {
+    "id": "maya_kan_ek",
+    "name": { "primary": "Kan Ek'", "alt": ["Kan Ek", "Canek", "Ajaw Kan Ek'"],
+      "transliterations": { "Yucatec Maya": "Kan Ek'", "etymology": "Kan is four or snake depending on the sign; ek' is star or black. The name is also the Itza royal title, borne by successive rulers rather than by one man only." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "colonial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "colonial", "eraOrdering": 0,
+      "startEvent": "Ruler of the Itza at Nojpetén, the island capital in Lake Petén Itzá, and the last independent Maya king — a hundred and seventy-three years after the fall of the K'iche' highlands, and a hundred and fifty-five after Yucatán.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Itza ruler Kan Ek' at Nojpetén, the last independent Maya king." } ] },
+      { "typeStatus": "mortal", "era": "colonial", "eraOrdering": 1,
+        "startEvent": "On 13 March 1697 the Spanish assaulted the island, landed, burned the temples and took him alive within a few hours. He was carried to Mérida and died in captivity; whether by execution or of disease the reports differ.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the colonial period in the Petén began in 1697 when Spanish forces defeated the Itza ruler Kan Ek' at Nojpetén; on 13 March 1697 the Spanish launched their assault, soldiers landed on the island, set fire to the temples and captured Kan Ek' within a few hours, and the last independent Maya king was taken to Mérida where he later died in captivity, reports varying between execution and disease." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Kan Ek'", "script": "Yucatec Maya", "rom": "Kan Ek', the Itza royal title" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kan Ek' as ruler of the Itza." } ] },
+      { "sphereId": "resistance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Itza kingdom's independence until 1697." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kan Ek' is the Itza ruler at Nojpetén, the last independent Maya king, taken alive on 13 March 1697 when the Spanish stormed the island and burned its temples, and dead in captivity at Mérida.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kan Ek', Nojpetén and the conquest of the Petén Itza kingdom in 1697." } ], "weight": "high" } ],
+    "notes": "The Itza held out on an island in a lake for a hundred and seventy-three years after Alvarado, which is the longest surviving indigenous state in the Americas by a wide margin, and their capital fell in an afternoon. Nojpetén is under the modern town of Flores; the temples the Spanish burned that morning were the last functioning Maya temples anywhere. The registry carried the tradition and not the end of it."
+  },
+  {
+    "id": "maya_jacinto_canek",
+    "name": { "primary": "Jacinto Canek", "alt": ["Jacinto Uc de los Santos", "Jacinto Uc", "Canek"],
+      "transliterations": { "Yucatec Maya": "Kanek'", "etymology": "He took Canek as a name, which is the Itza royal title of the man taken at Nojpetén sixty-four years earlier; the choice was the claim." } },
+    "type": "mortal", "origin": "canon", "tradition": "Maya", "primaryTradition": "Maya",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "colonial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "colonial", "eraOrdering": 0,
+      "startEvent": "Born Jacinto Uc de los Santos about 1731 in the Yucatán of New Spain; in November 1761 he raised a revolt at the village of Cisteil.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jacinto Canek, or Jacinto Uc de los Santos (c. 1731 – 14 December 1761), an eighteenth-century Maya revolutionary against the Spanish in the Yucatán Peninsula of New Spain, who mounted a surprise revolt at the village of Cisteil in November 1761." } ] },
+      { "typeStatus": "mortal", "era": "colonial", "eraOrdering": 1,
+        "startEvent": "On 26 November 1761 a Spanish force of five hundred met him in the plaza at Cisteil, where fifteen hundred Maya stood in two entrenched lines. He was taken, and executed in the main plaza of Mérida on 14 December 1761, less than a month after the rising began.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a Spanish force of 500 soldiers met Canek and his followers on 26 November 1761 in the plaza of Cisteil, where 1500 Maya were arrayed in two entrenched lines; the sentence was carried out in the main plaza of Mérida on 14 December 1761, less than a month after the uprising began." } ] } ],
+    "domains": [
+      { "sphereId": "rebellion", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Cisteil uprising of 1761." } ] },
+      { "sphereId": "resistance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jacinto Canek as a Maya revolutionary against Spanish rule." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jacinto Canek, born Jacinto Uc de los Santos about 1731, raised the Maya revolt at Cisteil in November 1761, faced five hundred Spanish soldiers with fifteen hundred Maya in two entrenched lines on 26 November, and was executed at Mérida on 14 December 1761.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jacinto Canek and the Cisteil uprising." } ], "weight": "high" } ],
+    "notes": "He took the name of the last independent Maya king, which tells you what the rising was for: not a tax revolt but a restoration, sixty-four years after Nojpetén fell, in a province where the Books of Chilam Balam were still being copied and still said the foreigners would go. Three weeks from the first shot to the plaza at Mérida. He is the bridge between the Classic kings at the front of this batch and the Caste War eighty years later, and the registry had neither end."
+  }
+]
+```
