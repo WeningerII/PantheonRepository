@@ -149,7 +149,14 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   // Saharan / Central-Asian / Caucasus fill added many solitary folk-demons and
   // spirit-classes (al, azhdaha, div, peri, the Bibi figures) and folk-Islamic
   // saints, which are kinless by nature — lifting the ceiling again.
-  assert.ok(noFam <= 1450, `figures with no family links grew to ${noFam} (ceiling 1450)`);
+  // Raised again for the Roman pass: Rome gave state cult to deified
+  // abstractions (Victoria, Fides, Concordia, Spes, Salus, Libertas, Pax,
+  // Pietas, Felicitas, Annona, Abundantia) and to archaic functional powers
+  // (Robigus the wheat-rust, Furrina, Consus, Angerona, Libitina). Both
+  // classes are kinless BY DEFINITION — a personified quality has no
+  // parents — and Roman religion holds many more of them than one pass
+  // ingests. Each one carries a cited verified-solitary verdict.
+  assert.ok(noFam <= 1600, `figures with no family links grew to ${noFam} (ceiling 1600)`);
 });
 
 test('iconography coverage floor (wave-7g)', () => {
