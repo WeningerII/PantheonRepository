@@ -1,0 +1,1478 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Japanese
+Eras (registered, exact): primordial | kamiyo | mythic |
+  kojiki-mythohistorical-section | jinmu-era | sujin-era | kofun |
+  kofun-and-medieval-deification | asuka | nara | heian | mid-heian |
+  medieval-deification | late-heian | late-heian-and-kamakura | kamakura |
+  kamakura-and-later | medieval-and-edo
+Author pass: Japanese held 48 records, of which about twenty are one late-Heian
+             samurai genealogy. This adds 47.
+
+================================================================================
+THE GAP
+================================================================================
+
+A 61-name check across the WHOLE registry returned 10 hits and 51 absences,
+and six of the ten were deliberate controls. Two of the remaining four are
+false: "Takemikazuchi" matched `japanese_kojiki_takemikazuchi_miwa`, who is a
+human scion of the Miwa line and not the thunder kami of Kashima; and
+"Bishamonten" and "Emma" matched `buddhist_vaishravana` and `buddhist_yama`,
+which are the Indian ends of two transmissions rather than the Japanese
+figures.
+
+The registry's 48 Japanese records are not what the number suggests. Roughly
+twenty of them are a single late-Heian Minamoto genealogy — Yoshiie, Yoshitomo,
+Yoritomo, Yoshitsune and their kin — and another seven are a Kojiki
+mythohistorical sub-branch around the Miwa line. **The kami pantheon proper
+was about twenty records**, and what it was missing was the structure:
+
+- **The Kotoamatsukami.** The first five kami, who come into being alone in
+  Takamagahara without procreation, were absent in their entirety — including
+  Ame-no-Minakanushi, who is the first being in the Kojiki.
+- **The rock cave.** Amaterasu and Ame-no-Uzume were here; Omoikane, who
+  devised the plan, Ame-no-Tajikarao, who hauled the door open, Ishikoridome,
+  who made the mirror, and Ame-no-Koyane and Futodama, who did the divination,
+  were not. The single most important episode in Japanese myth had two of its
+  participants in the registry.
+- **The Izumo cycle.** Susanoo was here; Yamata-no-Orochi, whom he killed,
+  Kushinada-hime, whom he married, and her parents were not.
+- **The kuni-yuzuri.** Ōkuninushi was here; the envoys who came to take the
+  land from him and the two sons who answered them were not — so the
+  transaction on which the legitimacy of the Japanese imperial house rests had
+  one party.
+- **The Hyūga cycle.** Ninigi and Konohanasakuya-hime were here; their sons
+  Hoori and Hoderi, the sea-god's daughters Toyotama-hime and Tamayori-hime,
+  and Ugayafukiaezu were not — which means the descent from Amaterasu to the
+  first emperor broke off two generations short.
+- **Jimmu.** The first emperor was absent, as were Yamato Takeru and Empress
+  Jingū.
+- **Five of the Seven Lucky Gods.** Ebisu and Benzaiten were here.
+- **Tenjin**, who is Sugawara no Michizane, the most widely worshipped deified
+  human in Japan.
+
+================================================================================
+A NOTE ON WHAT THIS BATCH DOES NOT DO
+================================================================================
+
+It does not ingest **yōkai as classes**. Tengu, kappa, kitsune, oni and tanuki
+are kinds of being, and this programme does not record kinds. Three *named*
+yōkai are here — Shuten-dōji, Tamamo-no-Mae and Yamata-no-Orochi — because
+they are individuals with names, acts and opponents.
+
+It does not resolve the **Buddhist/Japanese tradition-key split**. Bishamonten
+matched `buddhist_vaishravana` on the sweep and is nonetheless recorded here,
+because the Japanese member of the Seven Lucky Gods is a different figure with
+a different office in a different group; the census records the transmission
+as a CROSS-TRADITION row rather than merging or ignoring it. Kannon, Jizō,
+Amida and Fudō Myōō are blocked for the same reason and left for a deliberate
+pass: they are major Japanese cult figures and also Buddhist ones, and which
+key they belong under is the owner's call, now raised for the fifth lane
+running.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search and every citation
+names what was consulted. Where the Kojiki and the Nihon Shoki disagree the
+record says so: the clearest case is the first kami, who is Ame-no-Minakanushi
+in the Kojiki and Kuninotokotachi in the Nihon Shoki's main narrative.
+
+================================================================================
+AUTHORED FIGURES — I. THE FIRST KAMI
+================================================================================
+
+```json
+[
+  {
+    "id": "japanese_ame_no_minakanushi",
+    "name": { "primary": "Ame-no-Minakanushi", "alt": ["天之御中主神", "Amenominakanushi", "Deity Master of the August Centre of Heaven"],
+      "transliterations": { "japanese": "天之御中主神", "romaji": "Ame-no-Minakanushi-no-Kami", "etymology": "ame, heaven; minaka, the august centre; nushi, master. 'The deity who is master of the august centre of heaven'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The first being in the Kojiki: the first of the Kotoamatsukami, the deities who came into existence at the creation of the universe, born in Takamagahara. He appears singly and unaccompanied, and is followed by Takamimusubi and then Kamimusubi.",
+      "sources": [ { "kind": "primary", "reference": "Kojiki, opening: the sequence of appearance is singular and unaccompanied — first Ame-no-Minakanushi-no-Kami, Deity Master-of-the-August-Centre-of-Heaven, then Takami-musubi-no-Kami and then Kami-musubi-no-Kami." }, { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami as the collective name for the first gods, born in Takamagahara at the creation." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Unlike the later kami these five were born without procreation and exist as solitary entities with no male-female counterpart, which the tradition treats as the mark of their abstractness. In the Nihon Shoki's main narrative the first kami is Kuninotokotachi instead, and Ame-no-Minakanushi appears only in passing in one variant.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: unlike later gods these deities were born without any procreation and exist as solitary entities without male-female counterparts, underscoring their abstract and transcendent nature; and in the Nihon Shoki's main narrative and many of its variant accounts the very first kami is identified instead as Kuni-no-Tokotachi, with Ame-no-Minakanushi appearing only in passing in one variant." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "高天原", "script": "japanese", "rom": "Takamagahara, the plain of high heaven" },
+        "sources": [ { "kind": "primary", "reference": "Kojiki on the birth of the first kami in Takamagahara." } ] },
+      { "sphereId": "supreme-deity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Minakanushi as the first of the Kotoamatsukami." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_takamimusubi",
+        "sources": [ { "kind": "primary", "reference": "Kojiki: the three creating deities of the Kotoamatsukami appear in sequence." } ],
+        "notes": "The second of the three; the Kojiki names them in one breath and they act as a set thereafter." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ame-no-Minakanushi is the first being named in the Kojiki and the first of the five Kotoamatsukami, born alone in Takamagahara without procreation; the Nihon Shoki's main narrative gives Kuninotokotachi first instead.",
+      "citations": [ { "kind": "primary", "reference": "Kojiki, the opening sequence of kami." }, { "kind": "secondary", "reference": "Reference treatments of the Kotoamatsukami and of the Nihon Shoki variants." } ], "weight": "high" } ],
+    "notes": "The first sentence of Japanese literature names him and the registry did not have him. He is also the clearest case in this tradition of a deity who does almost nothing: he appears, he is named, he hides himself, and the narrative moves on — an abstraction placed at the head of a genealogy rather than an actor in it. That is precisely why the Nihon Shoki could replace him with a different abstraction without disturbing anything downstream, and the record carries both openings rather than choosing."
+  },
+  {
+    "id": "japanese_takamimusubi",
+    "name": { "primary": "Takamimusubi", "alt": ["高御産巣日神", "Takami-musubi-no-Kami", "High-August-Producing-Wondrous-Deity"],
+      "transliterations": { "japanese": "高御産巣日神", "romaji": "Takami-musubi-no-Kami", "etymology": "taka, high; mi, august; musubi, the generative force that binds and brings into being — the key term of Shinto cosmology, for which there is no single English word." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The second of the Kotoamatsukami, appearing after Ame-no-Minakanushi and before Kamimusubi; one of the three creator deities of the group.",
+      "sources": [ { "kind": "primary", "reference": "Kojiki: after Ame-no-Minakanushi comes Takami-musubi-no-Kami, the High-August-Producing-Wondrous-Deity." }, { "kind": "secondary", "reference": "Reference treatment of the three creators of the Kotoamatsukami as Amenominakanushi, Takamimusubi and Kamimusubi." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "産巣日", "script": "japanese", "rom": "musubi, generative binding" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Takamimusubi as one of the three creator deities." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_ame_no_minakanushi",
+        "sources": [ { "kind": "primary", "reference": "Kojiki: the three creating deities appear in sequence and act together." } ], "notes": "The first of the three." },
+      { "kind": "companion", "personId": "japanese_kamimusubi",
+        "sources": [ { "kind": "primary", "reference": "Kojiki: Takamimusubi and Kamimusubi are the two musubi deities of the Kotoamatsukami." } ], "notes": "The matching musubi deity." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Takamimusubi is the second of the Kotoamatsukami and one of the three creator deities, a personification of musubi, the generative binding force.",
+      "citations": [ { "kind": "primary", "reference": "Kojiki, the opening sequence." }, { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami." } ], "weight": "high" } ],
+    "notes": "Musubi is the hard word here and it has no English equivalent: it is the force by which things come into being and are tied to one another, and it is the reason the same syllable appears in the word for a knot and in the name of the deity of marriage-ties. Two of the first five kami are musubi deities, which places generation itself at the top of the Shinto cosmology — before any god who does anything. Takamimusubi reappears later as one of the powers directing the descent to earth, which makes him the most active of the five."
+  },
+  {
+    "id": "japanese_kamimusubi",
+    "name": { "primary": "Kamimusubi", "alt": ["神産巣日神", "Kami-musubi-no-Kami", "Divine-Producing-Wondrous-Deity"],
+      "transliterations": { "japanese": "神産巣日神", "romaji": "Kami-musubi-no-Kami", "etymology": "kami, divine; musubi, generative binding. The counterpart of Takamimusubi." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The third of the Kotoamatsukami and the last of the three creator deities, appearing after Takamimusubi.",
+      "sources": [ { "kind": "primary", "reference": "Kojiki: third in the sequence is Kami-musubi-no-Kami, the Divine-Producing-Wondrous-Deity." }, { "kind": "secondary", "reference": "Reference treatment of the three creators of the Kotoamatsukami." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kamimusubi as one of the three creator deities." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_takamimusubi",
+        "sources": [ { "kind": "primary", "reference": "Kojiki: the two musubi deities of the Kotoamatsukami." } ], "notes": "The matching musubi deity." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kamimusubi is the third of the Kotoamatsukami and the third creator deity, the second of the two musubi powers.",
+      "citations": [ { "kind": "primary", "reference": "Kojiki, the opening sequence." }, { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami." } ], "weight": "high" } ],
+    "notes": "The pairing with Takamimusubi is not a marriage — none of the first five have counterparts — but a doubling: the generative force named twice, high and divine, which is how this cosmology says 'everywhere' about something that has no body. In the Izumo material she is the power that restores Ōkuninushi to life after his brothers kill him, which is the one narrative act attached to any of the first three."
+  },
+  {
+    "id": "japanese_umashiashikabihikoji",
+    "name": { "primary": "Umashiashikabihikoji", "alt": ["宇摩志阿斯訶備比古遅神", "Umashi-ashikabi-hikoji-no-Kami"],
+      "transliterations": { "japanese": "宇摩志阿斯訶備比古遅神", "romaji": "Umashi-ashikabi-hikoji-no-Kami", "etymology": "umashi, fine or pleasing; ashikabi, a reed-shoot; hikoji, a young man. 'The fine reed-shoot youth' — the world at the moment it first puts out a sprout." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The fourth of the Kotoamatsukami, added to the first three: a deity of the reed-shoot pushing up out of the formless earth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami: the three creators are Amenominakanushi, Takamimusubi and Kamimusubi, and two more deities were then added, Umashiashikabihikoji and Amenotokotachi." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "葦牙", "script": "japanese", "rom": "ashikabi, reed shoot" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami as the five first gods." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_amenotokotachi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Umashiashikabihikoji and Amenotokotachi as the two deities added to the first three of the Kotoamatsukami." } ],
+        "notes": "The fifth, added with him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Umashiashikabihikoji is the fourth of the five Kotoamatsukami, a deity of the reed-shoot rising from the unformed world.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami." } ], "weight": "medium" } ],
+    "notes": "The image is agricultural and exact: the land at this point in the Kojiki is described as floating like oil and drifting like a jellyfish, and what comes out of it is a reed sprouting. A cosmology whose fourth deity is a shoot of marsh grass is telling you what the people who made it looked at all day."
+  },
+  {
+    "id": "japanese_amenotokotachi",
+    "name": { "primary": "Amenotokotachi", "alt": ["天之常立神", "Ame-no-Tokotachi-no-Kami", "Heavenly Eternal Standing Deity"],
+      "transliterations": { "japanese": "天之常立神", "romaji": "Ame-no-Tokotachi-no-Kami", "etymology": "ame, heaven; toko, eternal or everlasting; tachi, standing. 'Heaven eternally standing'. The earthly counterpart-name is Kuninotokotachi, land eternally standing." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The fifth and last of the Kotoamatsukami, added with Umashiashikabihikoji to the first three.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami: two more deities, Umashiashikabihikoji and Amenotokotachi, were added to the three creators." } ] } ],
+    "domains": [
+      { "sphereId": "heaven", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amenotokotachi as one of the Kotoamatsukami." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_umashiashikabihikoji",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two deities added to the first three." } ], "notes": "The fourth, added with him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Amenotokotachi is the fifth of the Kotoamatsukami, the heavenly counterpart of Kuninotokotachi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Kotoamatsukami." } ], "weight": "medium" } ],
+    "notes": "His name and Kuninotokotachi's are the same formula with heaven and land exchanged, which is how the Kojiki marks the point where the account stops being about heaven only. The two are recorded separately here because the two texts treat them separately and because the Nihon Shoki puts the earthly one first in the whole cosmogony."
+  },
+  {
+    "id": "japanese_kuninotokotachi",
+    "name": { "primary": "Kuninotokotachi", "alt": ["国之常立神", "Kuni-no-Tokotachi-no-Kami", "Land Eternal Standing Deity"],
+      "transliterations": { "japanese": "国之常立神", "romaji": "Kuni-no-Tokotachi-no-Kami", "etymology": "kuni, land or country; toko, eternal; tachi, standing. 'The land eternally standing'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "In the Nihon Shoki's main narrative he is the very first kami of all, where the Kojiki gives that place to Ame-no-Minakanushi; in the Kojiki he stands at the head of the seven generations of the age of the gods that lead to Izanagi and Izanami.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Nihon Shoki's main narrative and many of the variant accounts cited in it, the very first kami is identified as Kuni-no-Tokotachi, with Ame-no-Minakanushi appearing only in passing in one variant." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kuninotokotachi as the first kami of the Nihon Shoki." } ] },
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "国", "script": "japanese", "rom": "kuni, the land" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the name as 'land eternally standing'." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kuninotokotachi is the first kami of the Nihon Shoki's main narrative, where the Kojiki instead begins with Ame-no-Minakanushi, and stands at the head of the seven generations of the age of the gods.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kuninotokotachi and of the Kojiki-Nihon Shoki divergence over the first kami." } ], "weight": "high" } ],
+    "notes": "Japan has two eighth-century accounts of its own creation and they do not start in the same place. The Kojiki opens in heaven with an abstraction; the Nihon Shoki opens with the land standing. Both records are in this batch and neither is presented as the true one — which matters more here than in most traditions, because the divergence was a live political question for a thousand years and Kuninotokotachi was pushed to the top of the pantheon by medieval Shinto theologians precisely because his name says 'land'."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE ROCK CAVE
+================================================================================
+
+Susanoo's behaviour drives Amaterasu into the cave of heaven and the world goes
+dark. The eight million gods hold a council outside, and the plan they execute
+is the founding act of Japanese ritual: a mirror is forged, a jewel-string
+strung, a divination performed, a dance danced, and when the sun looks out to
+see what the laughing is about a strong kami hauls the door aside and another
+ties a rope across it so she cannot go back.
+
+The registry held the sun and the dancer. It did not hold the strategist, the
+strongman, the smith, or the two priests — who are also the ancestors of the
+two clans that ran Japanese court ritual for a thousand years.
+
+```json
+[
+  {
+    "id": "japanese_omoikane",
+    "name": { "primary": "Omoikane", "alt": ["思金神", "Omoikane-no-Kami", "Yagokoro-Omoikane"],
+      "transliterations": { "japanese": "思金神", "romaji": "Omoikane-no-Kami", "etymology": "omoi, thought; kane, to combine or gather in. The name is read as the deity who gathers many thoughts into one — a committee in a single person." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The kami of wisdom and counsel. When Amaterasu shut herself in the cave of heaven and the land lost its light, the other eight million gods held their party outside the cave on his plan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode: in order to get Amaterasu out of the cave, all the other eight million gods threw a party outside with the wisdom of Omoikane." } ] } ],
+    "domains": [
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "思金", "script": "japanese", "rom": "Omoikane" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Omoikane as the deity whose wisdom devised the plan at the rock cave." } ] },
+      { "sphereId": "counsel", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Omoikane's role in the council of the gods." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_ame_no_tajikarao",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the rock-cave episode, in which Omoikane devises the plan and Ame-no-Tajikarao executes its final step." } ],
+        "notes": "The plan and the arms that carried it out." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Omoikane is the Japanese kami of wisdom whose plan drew Amaterasu out of the cave of heaven.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode and Omoikane's part in it." } ], "weight": "high" } ],
+    "notes": "The eight million gods are stuck outside a rock and the solution is a committee meeting. Japanese myth is unusually fond of this move — the crisis is solved by consultation, division of labour and a correctly performed ritual rather than by a champion — and Omoikane is the personification of the consultation. His name means, roughly, 'the one who thinks everyone's thoughts at once'. The registry had the dancer whose dance he scheduled and not him."
+  },
+  {
+    "id": "japanese_ame_no_tajikarao",
+    "name": { "primary": "Ame-no-Tajikarao", "alt": ["天手力男神", "Ame-no-Tajikarao-no-Kami", "Heavenly Hand-Strength Male"],
+      "transliterations": { "japanese": "天手力男神", "romaji": "Ame-no-Tajikarao-no-Kami", "etymology": "ame, heaven; ta, hand; chikara, strength; o, male. 'The heavenly strong-handed man' — a name that is a job description." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The kami of physical strength, who waited beside the door of the cave of heaven. When Amaterasu, transfixed by her own reflection in the mirror, leaned out to look, he forced the rock door open and the world was light again.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode: Amaterasu became fascinated by her own reflection in the mirror Yata no Kagami hung before the cave and stood transfixed, and Ame-no-Tajikarao then forced the cave open and the world was bathed in light once again." } ] } ],
+    "domains": [
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "手力", "script": "japanese", "rom": "tajikara, hand-strength" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Tajikarao as the kami of strength who opened the cave." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_omoikane",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the rock-cave episode." } ], "notes": "He executed the last step of the other's plan." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ame-no-Tajikarao is the Japanese kami of strength who hauled open the door of the cave of heaven when Amaterasu leaned out, restoring light to the world.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode." } ], "weight": "high" } ],
+    "notes": "One action, and the whole world turns on it. He is the patron of sumo and of physical contests, and the rock he moved is shown at Ama-no-Iwato in Takachiho to visitors who go and look at it — which is the ordinary Japanese arrangement, in which the mythological geography has an address."
+  },
+  {
+    "id": "japanese_ishikoridome",
+    "name": { "primary": "Ishikoridome", "alt": ["石凝姥命", "Ishikoridome-no-Mikoto", "the Stone-Coagulating Crone"],
+      "transliterations": { "japanese": "石凝姥命", "romaji": "Ishikoridome-no-Mikoto", "etymology": "ishi, stone; kori, to congeal or set; dome/tome, an old woman. Read as the crone who sets the stone — the mould-maker of a caster's workshop." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "She fashioned the mirror. The Yata no Kagami, hung before the cave so that Amaterasu would see her own reflection and be held by it, is her work, and with Tamanooya's jewel-string it is the instrument by which the sun was brought back.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the rock-cave episode: Ishikoridome fashions a mirror and Tamanooya makes a necklace of magatama; Amaterasu became fascinated by her reflection in the mirror Yata no Kagami which the gods had crafted and hung before the cave." } ] } ],
+    "domains": [
+      { "sphereId": "metalwork", "contextTag": "lifelong", "term": { "value": "八咫鏡", "script": "japanese", "rom": "Yata no Kagami, the eight-span mirror" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishikoridome as the maker of the mirror." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_tamanooya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ishikoridome fashions a mirror and Tamanooya makes a necklace of magatama." } ],
+        "notes": "The two makers, working to the same plan." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ishikoridome is the Japanese kami who made the Yata no Kagami, the mirror hung before the cave of heaven whose reflection held Amaterasu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode and its makers." } ], "weight": "high" } ],
+    "notes": "The mirror she made is one of the three Imperial Regalia of Japan and is kept at Ise; the sword in this batch's Izumo section is the second and the jewel Tamanooya strung is the third. All three came out of this one episode and its aftermath, which means the objects that legitimate the Japanese throne were made by a smith, a jeweller and a swordsman's luck, and the registry held none of the three makers."
+  },
+  {
+    "id": "japanese_tamanooya",
+    "name": { "primary": "Tamanooya", "alt": ["玉祖命", "Tamanooya-no-Mikoto", "Ancestor of the Jewel-Makers"],
+      "transliterations": { "japanese": "玉祖命", "romaji": "Tamanooya-no-Mikoto", "etymology": "tama, jewel or bead — also soul; oya, ancestor or parent. 'The ancestor of the jewel-makers'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "He strung the necklace of magatama beads for the rock-cave ritual, as Ishikoridome made the mirror.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the rock-cave episode: Ishikoridome fashions a mirror and Tamanooya makes a necklace of magatama." } ] } ],
+    "domains": [
+      { "sphereId": "craft", "contextTag": "lifelong", "term": { "value": "勾玉", "script": "japanese", "rom": "magatama, the comma-shaped bead" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamanooya as the maker of the magatama necklace." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_ishikoridome",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two makers of the rock-cave regalia." } ], "notes": "The mirror-maker." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tamanooya is the Japanese kami who strung the magatama necklace used in the ritual that drew Amaterasu from the cave of heaven.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Ama-no-Iwato episode and its makers." } ], "weight": "medium" } ],
+    "notes": "The magatama is the comma-shaped bead that turns up in Japanese graves from the Jōmon onward, and the word for it is also the word for a soul. What he strings is therefore a rope of souls, hung on a tree outside a cave, to persuade the sun to come back — which is a more particular piece of religion than 'jewellery' conveys."
+  },
+  {
+    "id": "japanese_ame_no_koyane",
+    "name": { "primary": "Ame-no-Koyane", "alt": ["天児屋命", "Ame-no-Koyane-no-Mikoto"],
+      "transliterations": { "japanese": "天児屋命", "romaji": "Ame-no-Koyane-no-Mikoto", "etymology": "Not securely derived; the elements are written with characters for heaven, child and roof, which the commentators read variously." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "With Futodama he performed the divination for the rock-cave ritual, and he is the one who recited the liturgy before the cave.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Futodama and Ame-no-Koyane were tasked with performing divination at the rock cave." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He is the ancestral god of the Nakatomi clan, who became the Fujiwara — the family that supplied the regents of Japan for four hundred years and the priesthood of the imperial cult for longer.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Koyane as a kami and male deity of Japanese mythology who is the ancestral god of the Nakatomi clan." } ] } ],
+    "domains": [
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the divination performed by Futodama and Ame-no-Koyane." } ] },
+      { "sphereId": "priesthood", "contextTag": "lifelong", "term": { "value": "中臣", "script": "japanese", "rom": "Nakatomi" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Koyane as ancestor of the Nakatomi clan." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_futodama",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Futodama and Ame-no-Koyane as jointly tasked with the divination." } ],
+        "notes": "The two ritualists of the episode, and the ancestors of the two clans that divided Japanese court ritual between them." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ame-no-Koyane performed the divination at the cave of heaven with Futodama and is the ancestral deity of the Nakatomi clan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ame-no-Koyane and of the rock-cave episode." } ], "weight": "high" } ],
+    "notes": "The Nakatomi became the Fujiwara, and the Fujiwara ran Japan. A myth in which one's own ancestor recites the liturgy that brings the sun back is a considerable political asset, and the eighth-century compilers of the Kojiki and the Nihon Shoki were working under Fujiwara patronage — a fact the record states because the alternative is to present a family charter as a disinterested cosmogony."
+  },
+  {
+    "id": "japanese_futodama",
+    "name": { "primary": "Futodama", "alt": ["布刀玉命", "太玉命", "Futodama-no-Mikoto"],
+      "transliterations": { "japanese": "布刀玉命", "romaji": "Futodama-no-Mikoto", "etymology": "futo, great or stout; tama, jewel and also soul. 'Great jewel' or 'great soul'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "He performed the divination at the rock cave with Ame-no-Koyane; and when Amaterasu had been drawn out, it was he who stretched a shimenawa, a sacred rope, across the entrance so that she could not go back in.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Futodama and Ame-no-Koyane were tasked with performing divination, and after Amaterasu left the cave Futodama used a shimenawa to prevent her from going back." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He is the ancestral deity of the Inbe, the clan that made and handled the ritual objects of the court, as the Nakatomi recited its words.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Inbe and Nakatomi clans as tracing their heritage to the figures involved in the sacred mirror-making and priestly duties of the rock-cave episode." } ] } ],
+    "domains": [
+      { "sphereId": "ritual", "contextTag": "lifelong", "term": { "value": "注連縄", "script": "japanese", "rom": "shimenawa, the sacred rope" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Futodama's shimenawa across the cave mouth." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the divination performed with Ame-no-Koyane." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_ame_no_koyane",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as jointly responsible for the divination." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Futodama performed the rock-cave divination with Ame-no-Koyane and stretched the shimenawa across the cave mouth to keep Amaterasu out of it; he is the ancestral deity of the Inbe clan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Futodama, the shimenawa and the Inbe clan." } ], "weight": "high" } ],
+    "notes": "Every shimenawa in Japan — the twisted rice-straw rope with paper streamers, hung across a shrine gate or round a tree or a rock — is that rope. It does not sanctify what it encloses so much as mark a boundary that something is not to cross, and the original use was to stop the sun going back into a hole. The Inbe lost the long political argument with the Nakatomi, which is why there are Fujiwara in every Japanese history book and almost no Inbe."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. IZUMO: THE SERPENT, AND THE TRANSFER OF THE LAND
+================================================================================
+
+Two episodes, both set in Izumo and both absent from the registry except for
+their principals.
+
+The first: Susanoo, expelled from heaven, comes down beside the Hi river and
+finds an old couple and their last daughter weeping, because a serpent from
+Koshi has eaten seven of the eight. He turns the girl into a comb, gets the
+serpent drunk, cuts it up, and finds a sword in its tail.
+
+The second: the kuni-yuzuri, in which Amaterasu sends envoys to demand that
+Ōkuninushi hand over the land he has built. The Japanese imperial house's
+claim to legitimacy is a title deed and this is the conveyance. The registry
+held the party giving up the land and no one on the other side of the table.
+
+```json
+[
+  {
+    "id": "japanese_yamata_no_orochi",
+    "name": { "primary": "Yamata-no-Orochi", "alt": ["八岐大蛇", "Yamata no Orochi", "the Eight-Forked Serpent"],
+      "transliterations": { "japanese": "八岐大蛇", "romaji": "Yamata-no-Orochi", "etymology": "ya, eight; mata, fork or branch; orochi, great serpent. 'The eight-forked great serpent' — eight heads and eight tails on one body." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "unknown", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "An eight-headed serpent out of Koshi that came once a year to the upper Hi river in Izumo and ate one of Ashinazuchi and Tenazuchi's eight daughters, until only Kushinada-hime was left.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kojiki episode: the old couple had eight daughters, but every year an eight-headed serpent from Koshi appeared and devoured one of them, leaving only Kushinada." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Susanoo had the parents brew eightfold-refined sake and build a fence with eight gates, a vat at each. The serpent drank all of it, fell asleep, and Susanoo cut it up where it lay — finding in its tail the sword Kusanagi.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Susanoo instructed Ashinazuchi and Tenazuchi to brew eightfold-refined sake and build a fence with eight gates, placing a vat of sake at each; when Yamata no Orochi arrived it drank all the sake and fell asleep, and Susanoo cut up the monster while it slept, finding the sword Kusanagi-no-Tsurugi in its tail." } ] } ],
+    "domains": [
+      { "sphereId": "serpents", "contextTag": "lifelong", "term": { "value": "大蛇", "script": "japanese", "rom": "orochi, great serpent" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yamata no Orochi as the eight-forked serpent of Koshi." } ] },
+      { "sphereId": "monstrosity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the annual devouring of the daughters." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "japanese_susanoo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Susanoo cutting up the sleeping serpent and finding Kusanagi in its tail." } ],
+        "notes": "Written one way because the existing Susanoo record cannot be given a reciprocal from here; the kill is the defining fact of both." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yamata-no-Orochi is the eight-headed serpent of Koshi that ate seven of the eight daughters of Ashinazuchi and Tenazuchi and was killed by Susanoo with eightfold sake, yielding the sword Kusanagi from its tail.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yamata no Orochi and the Kojiki episode." } ], "weight": "high" } ],
+    "notes": "The registry held the swordsman and not the serpent, which is the shape this programme has now found in seven traditions. What comes out of the tail is Kusanagi, the sword that passes through Ninigi, Yamato-hime and Yamato Takeru to Atsuta Jingu and is one of the three Imperial Regalia — so the throne's second symbol is loot from this animal. The eight vats are also worth noticing: the serpent is not fought, it is catered for."
+  },
+  {
+    "id": "japanese_kushinada_hime",
+    "name": { "primary": "Kushinada-hime", "alt": ["櫛名田比売", "奇稲田姫", "Kushinadahime", "Kushiinada-hime"],
+      "transliterations": { "japanese": "櫛名田比売", "romaji": "Kushinada-hime", "etymology": "The name is written two ways and read two ways: kushi as 'comb', which suits what Susanoo does with her, and kushi as 'wondrous' with inada, 'rice-field' — 'the wondrous rice-paddy princess'. Both readings are old." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["japanese_ashinazuchi", "japanese_tenazuchi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The last of the eight daughters of Ashinazuchi and Tenazuchi, and the one the serpent was coming for when Susanoo arrived and found the three of them weeping.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Susanoo found an old man and woman crying together with a girl between them; the old man introduced himself as Ashinazuchi, his wife as Tenazuchi, and their daughter as Kushinada." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Susanoo agreed to kill the serpent in exchange for her hand, turned her into a comb and stuck her in his hair for the fight, and afterwards married her and built his palace at Suga in Izumo, where he said his heart was refreshed.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Susanoo agreed to slay the serpent in exchange for Kushinada-hime's hand, transformed her into a comb and stuck it in the locks of his hair, and afterwards looked for somewhere in Izumo to build his palace where he would live with Kushinada, saying 'This place makes my heart refreshed', the location being known as Suga ever since." } ] } ],
+    "domains": [
+      { "sphereId": "rice", "contextTag": "lifelong", "term": { "value": "稲田", "script": "japanese", "rom": "inada, the rice-paddy" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the reading of her name as 'wondrous rice-paddy princess'." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "japanese_susanoo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage after the killing of the serpent and the palace at Suga." } ],
+        "notes": "Written one way because the existing Susanoo record cannot be given a reciprocal from here." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Suga, Izumo", "kind": "shrine-cult", "period": "primordial to modern",
+        "attestation": "Suga Shrine, at the place Susanoo named", "source": "Reference treatment of the Kojiki episode and of Suga.",
+        "note": "The Kojiki says the poem Susanoo composed there is the first Japanese poem, which makes this the recorded birthplace of waka." } ],
+    "sources": [ { "claim": "Kushinada-hime is the last daughter of Ashinazuchi and Tenazuchi, turned into a comb by Susanoo for the fight with Yamata-no-Orochi and married to him afterwards at Suga in Izumo.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kushinadahime and the Kojiki episode." } ], "weight": "high" } ],
+    "notes": "She spends the fight as an object in somebody's hair, which the Japanese commentators have found worth arguing about for a long time; the readings that make her name a rice-paddy suggest she was a field-spirit before she was a girl, and that the bargain is the ordinary one in which a storm marries a paddy. The registry held her husband and her husband's kill and not her."
+  },
+  {
+    "id": "japanese_ashinazuchi",
+    "name": { "primary": "Ashinazuchi", "alt": ["足名椎命", "Ashinazuchi-no-Mikoto"],
+      "transliterations": { "japanese": "足名椎命", "romaji": "Ashinazuchi-no-Mikoto", "etymology": "ashi, foot; the pairing with his wife Tenazuchi, 'hand', makes the two of them foot and hand — a formula rather than two derivations." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "An earthly kami of the upper Hi river in Izumo who had eight daughters and lost seven of them to the serpent, one a year. He and his wife brewed the eightfold-refined sake and built the fence of eight gates on Susanoo's instruction.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the old man introduced himself as Ashinazuchi and his wife as Tenazuchi; originally the couple had eight daughters, and Susanoo instructed them to brew eightfold-refined sake and build a fence with eight gates." } ] } ],
+    "domains": [
+      { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashinazuchi at the upper reaches of the Hi river in Izumo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "japanese_tenazuchi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashinazuchi and Tenazuchi as husband and wife." } ], "notes": "" },
+      { "kind": "father-of", "personId": "japanese_kushinada_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kushinada as their daughter." } ], "notes": "The last of eight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ashinazuchi is the earthly kami of the upper Hi river in Izumo, husband of Tenazuchi and father of the eight daughters of whom Kushinada-hime alone survived the serpent.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ashinazuchi and Tenazuchi." } ], "weight": "high" } ],
+    "notes": "He and his wife are a pair of names that mean foot and hand, which is either a very old formula for a whole person split in two or an affectionate way of saying an old couple who stroke a child's feet and hands. The Kojiki gives them the only piece of practical work in the episode: seven brewings of sake and a palisade, built to a specification, by two people who have lost seven children."
+  },
+  {
+    "id": "japanese_tenazuchi",
+    "name": { "primary": "Tenazuchi", "alt": ["手名椎命", "Tenazuchi-no-Mikoto"],
+      "transliterations": { "japanese": "手名椎命", "romaji": "Tenazuchi-no-Mikoto", "etymology": "te, hand, against her husband's ashi, foot. The pair is a formula." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The wife of Ashinazuchi and mother of the eight daughters, of whom the serpent had eaten seven when Susanoo came down the river.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the old man introduced himself as Ashinazuchi, his wife as Tenazuchi, and their daughter as Kushinada; the couple had originally had eight daughters." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "japanese_ashinazuchi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as husband and wife." } ], "notes": "" },
+      { "kind": "mother-of", "personId": "japanese_kushinada_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kushinada as their daughter." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tenazuchi is the wife of Ashinazuchi and the mother of the eight daughters of the upper Hi river, seven of whom the serpent ate.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ashinazuchi and Tenazuchi." } ], "weight": "high" } ],
+    "notes": "Recorded separately from her husband because the Kojiki names them separately and because a registry that records one member of a named pair and not the other is doing the thing this programme was set up to stop."
+  },
+  {
+    "id": "japanese_takemikazuchi_kashima",
+    "name": { "primary": "Takemikazuchi", "alt": ["建御雷神", "武甕槌", "Takemikazuchi-no-Kami", "the kami of Kashima"],
+      "transliterations": { "japanese": "建御雷神", "romaji": "Takemikazuchi-no-Kami", "etymology": "take, valiant; mikazuchi, august thunder. 'The valiant august thunder deity'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The thunder kami sent down as Amaterasu's envoy in the kuni-yuzuri. He and his fellow messenger came to the shore of Inasa in Izumo, sat on the points of their upturned swords, and asked Ōkuninushi what his intentions were towards a land that belonged to Amaterasu's descendants.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the kuni-yuzuri: the two messengers arrive at the shores of Inasa in the land of Izumo and, sitting on the points of their upturned swords, question Ōkuninushi as to his intentions with regard to the land, which was the possession of Amaterasu's descendants." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "Ōkuninushi's younger son Takeminakata, carrying a boulder on the fingertips of one hand, challenged him to a trial of strength; when Takeminakata grabbed at his arm he turned it into an icicle and then into a sword blade, and the challenger could not hold it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Kojiki adds that a younger son of Ōkuninushi, Takeminakata, carrying a giant boulder on the fingertips of a single hand, challenged Takemikazuchi to a test of strength, and when Takeminakata tried to seize Takemikazuchi's arm the latter transformed it into an icicle and then a sword blade, preventing him from grabbing it." } ] } ],
+    "domains": [
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "雷", "script": "japanese", "rom": "ikazuchi, thunder" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Takemikazuchi as a thunder deity." } ] },
+      { "sphereId": "swords", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the arm turned into a sword blade in the trial of strength." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_futsunushi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two messengers who came to Inasa." } ],
+        "notes": "The other envoy. The two are named together in the Nihon Shoki and their shrines, Kashima and Katori, stand across the water from each other." },
+      { "kind": "enemy", "personId": "japanese_takeminakata",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trial of strength between Takemikazuchi and Takeminakata." } ],
+        "notes": "The one son who fought instead of agreeing." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Kashima Jingū, Hitachi", "kind": "shrine-cult", "period": "kamiyo to modern",
+        "attestation": "the shrine at Kashima and its kaname-ishi, the stone said to pin down the earthquake-fish", "source": "Reference treatments of Takemikazuchi and Kashima.",
+        "note": "He is the martial kami of the Fujiwara's own shrine and the patron of a great deal of Japanese swordsmanship." } ],
+    "sources": [ { "claim": "Takemikazuchi is the thunder kami sent as Amaterasu's envoy in the kuni-yuzuri, who sat on his upturned sword at Inasa and defeated Takeminakata by turning his arm into an icicle and a blade.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the kuni-yuzuri and of Takemikazuchi." } ], "weight": "high" } ],
+    "notes": "The id is deliberately distinguished from the registry's existing `japanese_kojiki_takemikazuchi_miwa`, who is a human scion of the Miwa line and shares the name — the sweep matched on it, which is exactly the kind of false positive a name-only check produces. The image of the two envoys sitting cross-legged on the points of their upturned swords in the surf at Inasa is the single most-reproduced scene in Izumo art, and neither figure was in the corpus."
+  },
+  {
+    "id": "japanese_futsunushi",
+    "name": { "primary": "Futsunushi", "alt": ["経津主神", "Futsunushi-no-Kami", "the kami of Katori"],
+      "transliterations": { "japanese": "経津主神", "romaji": "Futsunushi-no-Kami", "etymology": "futsu is taken for the sound of a blade cutting clean through; nushi, master. 'Master of the cutting stroke'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The second of the two envoys sent to demand the land of Izumo, who came with Takemikazuchi to the shore at Inasa.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the kuni-yuzuri: two messengers arrive at the shores of Inasa in Izumo and question Ōkuninushi as to the land, which belonged to Amaterasu's descendants." } ] } ],
+    "domains": [
+      { "sphereId": "swords", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Futsunushi as a sword deity and envoy of the kuni-yuzuri." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two envoys of the transfer of the land." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_takemikazuchi_kashima",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two messengers at Inasa." } ], "notes": "The other envoy." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Katori Jingū, Shimōsa", "kind": "shrine-cult", "period": "kamiyo to modern",
+        "attestation": "the shrine at Katori, paired with Kashima across the water", "source": "Reference treatments of Futsunushi and Katori.",
+        "note": "Kashima and Katori are the two oldest shrines east of the capital and were the forward bases of the Yamato court's expansion into the east; their two kami are the ones the court sent to take Izumo." } ],
+    "sources": [ { "claim": "Futsunushi is the second envoy of the kuni-yuzuri, who came with Takemikazuchi to Inasa in Izumo to demand the land for Amaterasu's descendants.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the kuni-yuzuri and its two messengers." } ], "weight": "high" } ],
+    "notes": "The pairing with Kashima is not mythological decoration but military geography: two shrines on the frontier of the Yamato state's push east, whose gods are the two sent in the myth to take a province off its owner by demand. A story about legitimate transfer told by the shrines of the garrison."
+  },
+  {
+    "id": "japanese_kotoshironushi",
+    "name": { "primary": "Kotoshironushi", "alt": ["事代主神", "Kotoshironushi-no-Kami"],
+      "transliterations": { "japanese": "事代主神", "romaji": "Kotoshironushi-no-Kami", "etymology": "koto, word or matter; shiro, to take the place of or to stand for; nushi, master. Read as the deity who speaks for another — an oracle-god." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["japanese_okuninushi"], "parentRoles": ["father"],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "Ōkuninushi, asked to surrender the land, said he would confer with this son first. Kotoshironushi was away hunting and fishing; he acceded to the envoys' demand at once, advised his father to do the same, and then disappeared.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the kuni-yuzuri: Ōkuninushi asked to confer with his son Kotoshironushi before giving his decision; Kotoshironushi, who had gone hunting and fishing, immediately acceded to the messengers' demands, and after counselling his father to do likewise he disappeared." } ] } ],
+    "domains": [
+      { "sphereId": "oracles", "contextTag": "lifelong", "term": { "value": "事代", "script": "japanese", "rom": "kotoshiro, speaking on another's behalf" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kotoshironushi's name and office." } ] },
+      { "sphereId": "fishing", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: he had gone hunting and fishing when the envoys came." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kotoshironushi is the son of Ōkuninushi who, consulted about the demand for the land, agreed at once, advised his father to agree, and vanished.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the kuni-yuzuri." } ], "weight": "high" } ],
+    "notes": "He agrees immediately and then removes himself, which is the least examined and most consequential act in the episode: Izumo's case is conceded by the son whose office is speaking on his father's behalf, and then the spokesman is gone. His disappearance is described as hiding himself behind a green fence of branches, which is the formula the Kojiki uses for a god withdrawing from the world. He is widely identified with Ebisu, whom the registry already holds, and the census records that identification without merging the two."
+  },
+  {
+    "id": "japanese_takeminakata",
+    "name": { "primary": "Takeminakata", "alt": ["建御名方神", "Takeminakata-no-Kami", "the kami of Suwa"],
+      "transliterations": { "japanese": "建御名方神", "romaji": "Takeminakata-no-Kami", "etymology": "take, valiant, as in Takemikazuchi; the rest is not securely derived and has been connected to the Nakata place-name." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["japanese_okuninushi"], "parentRoles": ["father"],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The younger son of Ōkuninushi, who refused the demand his brother had accepted. He arrived carrying a giant boulder on the fingertips of one hand and challenged Takemikazuchi to a trial of strength.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Kojiki adds that a younger son of Ōkuninushi, Takeminakata, carrying a giant boulder on the fingertips of a single hand, challenged Takemikazuchi to a test of strength." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "He seized at the envoy's arm and it turned into an icicle and then a sword blade in his hand; he could not hold it, and was beaten. Ōkuninushi then ceded Izumo on the condition that Amaterasu build him a great palace.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Takeminakata tried to seize Takemikazuchi's arm the latter transformed it into an icicle and then a sword blade, preventing him from grabbing it; and ultimately Ōkuninushi ceded Izumo Province to Amaterasu on the condition that she build him a grand palace." } ] } ],
+    "domains": [
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Takeminakata's boulder and the trial of strength." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his refusal and defeat." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "japanese_takemikazuchi_kashima",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trial of strength at Inasa." } ], "notes": "The envoy he could not hold." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Suwa Taisha, Shinano", "kind": "shrine-cult", "period": "kamiyo to modern",
+        "attestation": "the shrine at Lake Suwa, where the myth says he fled after his defeat", "source": "Reference treatments of Takeminakata and Suwa.",
+        "note": "Suwa's own traditions are considerably older than the Kojiki's account of how their god got there, and the two do not agree; the record carries the Kojiki's version as the Kojiki's." } ],
+    "sources": [ { "claim": "Takeminakata is the younger son of Ōkuninushi who refused the surrender of the land, challenged Takemikazuchi to a trial of strength and was beaten when the envoy's arm became an icicle and a sword.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the kuni-yuzuri and of Takeminakata." } ], "weight": "high" } ],
+    "notes": "The first recorded sumo bout, and it is fixed: one contestant's arm turns into a weapon. Japanese wrestling traces itself to this hold and so does the Suwa shrine's claim on its god. The political reading is hard to miss — a province is annexed, the compliant heir vanishes, the resisting one is chased to a lake three hundred kilometres away and kept there, and the whole thing is recorded as a voluntary transfer with a building thrown in."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. HYŪGA: THE DESCENT TO THE FIRST EMPEROR
+================================================================================
+
+Amaterasu's grandson Ninigi comes down to the peak of Takachiho and marries
+Konohanasakuya-hime; their sons quarrel over a fish-hook; the younger goes to
+the bottom of the sea, marries the sea-god's daughter, and their grandson is
+the first emperor. That chain is the whole legitimating genealogy of the
+Japanese throne, and the registry held its first two links and then stopped.
+
+```json
+[
+  {
+    "id": "japanese_iwanaga_hime",
+    "name": { "primary": "Iwanaga-hime", "alt": ["石長比売", "磐長姫", "Iwanagahime", "Rock-Long Princess"],
+      "transliterations": { "japanese": "石長比売", "romaji": "Iwanaga-hime", "etymology": "iwa, rock; naga, long or lasting; hime, princess. 'The princess as lasting as rock', against her sister's name, which is the blossom of a tree." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["japanese_oyamatsumi"], "parentRoles": ["father"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The elder daughter of Ōyamatsumi and the sister of Konohanasakuya-hime. When Ninigi asked for the younger, their father sent both; Ninigi sent Iwanaga-hime back because she was not beautiful, and kept the blossom.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kojiki episode of Ninigi, Konohanasakuya-hime and her elder sister Iwanaga-hime, daughters of Ōyamatsumi." } ] } ],
+    "domains": [
+      { "sphereId": "longevity", "contextTag": "lifelong", "term": { "value": "石長", "script": "japanese", "rom": "iwanaga, enduring as rock" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iwanaga-hime's name and of her rejection by Ninigi." } ] },
+      { "sphereId": "stone", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the pairing of the rock-sister and the blossom-sister." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "japanese_konohanasakuya_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iwanaga-hime and Konohanasakuya-hime as sisters, daughters of Ōyamatsumi." } ],
+        "notes": "Written one way because the existing Konohanasakuya-hime record cannot be given a reciprocal from here; the pairing is the point of both." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Iwanaga-hime is the elder daughter of Ōyamatsumi, sister of Konohanasakuya-hime, whom Ninigi rejected in favour of her sister.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Iwanaga-hime, Konohanasakuya-hime and Ōyamatsumi." } ], "weight": "high" } ],
+    "notes": "This is why emperors die. The Kojiki's point is explicit: the two sisters were sent together so that the imperial line should have the blossom's beauty and the rock's endurance, and by sending the rock back Ninigi took beauty and gave up permanence for all his descendants. A creation story that explains human mortality as a single ancestor's preference in women is unusual and the registry held the sister who was kept and not the one who was returned."
+  },
+  {
+    "id": "japanese_hoderi",
+    "name": { "primary": "Hoderi", "alt": ["火照命", "Hoderi-no-Mikoto", "Umisachihiko", "海幸彦", "the Luck of the Sea"],
+      "transliterations": { "japanese": "火照命", "romaji": "Hoderi-no-Mikoto", "etymology": "ho, fire; deri, shining — the sons of Konohanasakuya-hime are all named for fire, because she bore them in a burning hut to prove their paternity. Umisachihiko, his by-name, is 'the lad whose luck is the sea'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["japanese_ninigi", "japanese_konohanasakuya_hime"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The elder son of Ninigi and Konohanasakuya-hime, and a fisherman: his luck was in the sea, as his brother's was in the hills.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hoori was a hunter and had an argument with his brother Hoderi, a fisherman, over a fish-hook." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "He lent his fish-hook to his brother under pressure and his brother lost it in the sea, which is the beginning of the quarrel that ends with his own submission and the imperial line established through the younger.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hoori had forced his elder brother to lend him a fish-hook and had lost it, and descended to the bottom of the sea to search for it." } ] } ],
+    "domains": [
+      { "sphereId": "fishing", "contextTag": "lifelong", "term": { "value": "海幸", "script": "japanese", "rom": "umisachi, the luck of the sea" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hoderi as the fisherman brother." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "japanese_hoori",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hoderi and Hoori as brothers who quarrelled over the fish-hook." } ], "notes": "The younger, who took his hook and his place." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hoderi, Umisachihiko, is the elder son of Ninigi and Konohanasakuya-hime, a fisherman, whose lost fish-hook begins the quarrel with his brother Hoori.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hoderi and Hoori." } ], "weight": "high" } ],
+    "notes": "The Japanese version of the quarrelling-brothers motif, and the loser is the elder, the fisherman, and the ancestor claimed by the Hayato of southern Kyushu — a people the Yamato court spent centuries subduing. A myth in which the sea-people's ancestor is forced to submit to the mountain-people's and perform a dance of surrender is not hard to read politically, and the record says so."
+  },
+  {
+    "id": "japanese_hoori",
+    "name": { "primary": "Hoori", "alt": ["火遠理命", "Hoori-no-Mikoto", "Yamasachihiko", "山幸彦", "Hohodemi", "the Luck of the Mountains"],
+      "transliterations": { "japanese": "火遠理命", "romaji": "Hoori-no-Mikoto", "etymology": "ho, fire, as with all Konohanasakuya-hime's sons. Yamasachihiko, his by-name, is 'the lad whose luck is the mountains'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["japanese_ninigi", "japanese_konohanasakuya_hime"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The third and youngest son of Ninigi and Konohanasakuya-hime, and a hunter. He made his elder brother lend him his fish-hook, lost it in the sea, and went down to the bottom to look for it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hoori was a hunter who argued with his brother Hoderi, a fisherman, over a fish-hook that Hoori had forced his elder brother to lend him and had lost; he descended to the bottom of the sea to search for it but was unable to find it; and Hoori is the third and youngest son of Ninigi and Sakuyahime." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "Instead of the hook he found Toyotama-hime, daughter of the sea god Ōwatatsumi. The sea god helped him recover the hook, and he married her.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: instead he found Toyotamahime, the daughter of the sea god Ōwatatsumi; Ōwatatsumi helped Hoori find Hoderi's lost fish-hook, and Hoori later married Toyotamahime." } ] } ],
+    "domains": [
+      { "sphereId": "hunting", "contextTag": "lifelong", "term": { "value": "山幸", "script": "japanese", "rom": "yamasachi, the luck of the mountains" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hoori as the hunter brother." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "japanese_hoderi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two brothers and the fish-hook." } ], "notes": "The elder, whose hook he lost." },
+      { "kind": "spouse", "personId": "japanese_toyotama_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hoori's marriage to Toyotamahime at the bottom of the sea." } ], "notes": "" },
+      { "kind": "father-of", "personId": "japanese_ugayafukiaezu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ugayafukiaezu as the child of Hoori and Toyotama-hime." } ], "notes": "The child born in the birth-hut on the shore." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hoori, Yamasachihiko, is the youngest son of Ninigi and Konohanasakuya-hime, who lost his brother's fish-hook, went to the sea-god's palace to find it, married Toyotama-hime and fathered Ugayafukiaezu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hoori, Toyotama-hime and the fish-hook episode." } ], "weight": "high" } ],
+    "notes": "Three generations from the descent to the first emperor and the middle one was missing from the registry entirely. The story is a folk-tale — a lost borrowed tool, a journey to an undersea palace, a wife who must not be watched — welded to a dynastic genealogy, and the weld is visible: the fish-hook has nothing to do with kingship and everything to do with why the hunter's line ended up on top of the fisherman's."
+  },
+  {
+    "id": "japanese_toyotama_hime",
+    "name": { "primary": "Toyotama-hime", "alt": ["豊玉姫", "Toyotamahime", "Toyotama-bime"],
+      "transliterations": { "japanese": "豊玉姫", "romaji": "Toyotama-hime", "etymology": "toyo, abundant; tama, jewel — and in a sea-god's daughter the jewels are the tide-jewels her father keeps. 'Abundant-jewel princess'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The daughter of the sea deity Watatsumi, whom Hoori found at the bottom of the sea when he went looking for his brother's fish-hook, and who married him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyotama-hime as a goddess appearing in the Kojiki and Nihon Shoki, the daughter of the sea deity Watatsumi, whom Hoori found and married." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "She came ashore to bear their child and forbade him to watch. He watched, saw what she was, and she went back into the sea — sending her younger sister Tamayori to raise the boy in her place.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: following her departure she sent her younger sister Tamayori to help raise the child in her absence." } ] } ],
+    "domains": [
+      { "sphereId": "the-sea", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyotama-hime as the sea deity's daughter." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "japanese_ryujin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyotama-hime as the daughter of the sea deity Watatsumi / Ōwatatsumi." } ],
+        "notes": "The corpus carries Watatsumi and Ōwatatsumi as alternative names on its Ryūjin record, so the descent is written as a relation to that record." },
+      { "kind": "spouse", "personId": "japanese_hoori",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage of Hoori and Toyotamahime." } ], "notes": "" },
+      { "kind": "sibling", "personId": "japanese_tamayori_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamayori-hime as the younger sister of Toyotama-hime, both daughters of Watatsumi." } ], "notes": "" },
+      { "kind": "mother-of", "personId": "japanese_ugayafukiaezu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ugayafukiaezu as her child, raised by her sister after she left." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Toyotama-hime is the daughter of the sea deity Watatsumi, wife of Hoori and mother of Ugayafukiaezu, who returned to the sea after being watched in childbirth and sent her sister Tamayori to raise the child.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Toyotama-hime, Hoori and Tamayori-hime." } ], "weight": "high" } ],
+    "notes": "The forbidden look is the oldest tale-type in Japan and this is its founding instance: the wife who is not what she appears, the husband who cannot help himself, the marriage that ends at the moment of the birth. What she is when he looks varies between the Kojiki and the Nihon Shoki — a great sea-creature in both, differently named — and the record does not pick one. The grandmother of the first emperor of Japan left because her husband could not keep a promise for one night."
+  },
+  {
+    "id": "japanese_tamayori_hime",
+    "name": { "primary": "Tamayori-hime", "alt": ["玉依姫", "Tamayori-bime", "Tamayorihime"],
+      "transliterations": { "japanese": "玉依姫", "romaji": "Tamayori-hime", "etymology": "tama, jewel and also soul; yori, to draw near or to be possessed by. The name is a common noun for a woman a spirit enters, used here as a personal name." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "The younger daughter of Watatsumi, sent by her sister Toyotama-hime to raise the child Ugayafukiaezu after their mother had gone back into the sea.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tamayori-hime is the daughter of the sea-dragon god Watatsumi and the younger sister of Toyotama-hime, sent by her sister to help raise the child in her absence." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "When the boy she had raised grew up he married her, and their child was Jimmu, the first emperor.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: as Ugayafukiaezu grew of age he married his aunt and eventually conceived a child, Jimmu, who became the first Emperor of Japan." } ] } ],
+    "domains": [
+      { "sphereId": "the-sea", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamayori-hime as a daughter of Watatsumi." } ] },
+      { "sphereId": "fosterage", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her being sent to raise Ugayafukiaezu." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "japanese_ryujin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamayori-hime as a daughter of the sea-dragon god Watatsumi." } ],
+        "notes": "The corpus holds Watatsumi as a name on its Ryūjin record." },
+      { "kind": "sibling", "personId": "japanese_toyotama_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as sisters." } ], "notes": "The elder." },
+      { "kind": "spouse", "personId": "japanese_ugayafukiaezu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ugayafukiaezu married his aunt, who had raised him." } ], "notes": "Her nephew and foster-son." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tamayori-hime is the younger daughter of Watatsumi, who raised her sister's son Ugayafukiaezu, married him, and bore Jimmu, the first emperor.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tamayori-hime, Ugayafukiaezu and Jimmu." } ], "weight": "high" } ],
+    "notes": "Her name is not really a name: tamayori-hime is the standing term for a woman a divine spirit comes into, and it is used of several different figures in the early texts. That the mother of the first emperor of Japan is called 'the woman the god enters' is the clearest surviving trace of how the imperial line was originally conceived — not as descent from a god but as a woman being entered by one, repeatedly, down a chain."
+  },
+  {
+    "id": "japanese_ugayafukiaezu",
+    "name": { "primary": "Ugayafukiaezu", "alt": ["鵜葺草葺不合命", "Ugayafukiaezu-no-Mikoto"],
+      "transliterations": { "japanese": "鵜葺草葺不合命", "romaji": "Ugayafukiaezu-no-Mikoto", "etymology": "The name means, in full, 'the cormorant-feather thatch not finished': the birth-hut on the shore was being roofed with cormorant feathers and he was born before it was done." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["japanese_hoori", "japanese_toyotama_hime"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "kamiyo" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 0,
+      "startEvent": "Son of Hoori and Toyotama-hime, born in a half-thatched hut on the shore and named for it; raised by his aunt Tamayori-hime after his mother went back into the sea.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ugayafukiaezu, child of Hoori and Toyotama-hime, raised by Tamayori-hime after her sister's departure." } ] },
+      { "typeStatus": "deity", "era": "kamiyo", "eraOrdering": 1,
+        "startEvent": "When he came of age he married the aunt who had raised him, and their child was Jimmu.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: as Ugayafukiaezu grew of age he married his aunt and eventually conceived a child, Jimmu, who became the first Emperor of Japan." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "japanese_tamayori_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage of Ugayafukiaezu and Tamayori-hime." } ], "notes": "His aunt and foster-mother." },
+      { "kind": "father-of", "personId": "japanese_jimmu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jimmu as the child of Ugayafukiaezu and Tamayori-hime." } ], "notes": "The first emperor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ugayafukiaezu is the son of Hoori and Toyotama-hime, born in an unfinished birth-hut on the shore, raised and then married by his aunt Tamayori-hime, and the father of the first emperor Jimmu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ugayafukiaezu, Tamayori-hime and Jimmu." } ], "weight": "high" } ],
+    "notes": "The last kami before the first emperor, and his whole character is a name about an unfinished roof. He is the join in the chain — the point where the age of the gods ends and the imperial chronology starts — which makes him structurally the most important figure in this block and narratively the least developed. The registry had the generations on either side of him and not him."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. FOUR KAMI THE REGISTRY NEEDED AND DID NOT HAVE
+================================================================================
+
+```json
+[
+  {
+    "id": "japanese_oyamatsumi",
+    "name": { "primary": "Ōyamatsumi", "alt": ["大山津見神", "大山祇神", "Ōyamatsumi-no-Kami", "Oyamatsumi"],
+      "transliterations": { "japanese": "大山津見神", "romaji": "Ōyamatsumi-no-Kami", "etymology": "ō, great; yama, mountain; tsumi, an old word for a spirit or possessor, the same element as in Watatsumi, the sea-spirit. 'The great spirit of the mountains'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The kami of the mountains, and also of war and of the sea in the treatments that give him all three. He is the father of Konohanasakuya-hime and Iwanaga-hime, and so the father-in-law of Ninigi.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ōyamatsumi as a god of war, mountains and sea; and of Konohanasakuya-hime and Iwanaga-hime as his daughters." } ] } ],
+    "domains": [
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "山", "script": "japanese", "rom": "yama, mountain" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ōyamatsumi as the god of mountains." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ōyamatsumi as a god of war." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "japanese_iwanaga_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iwanaga-hime as his elder daughter." } ], "notes": "The sister Ninigi sent back." },
+      { "kind": "father-of", "personId": "japanese_konohanasakuya_hime",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Konohanasakuya-hime as his daughter." } ],
+        "notes": "The sister Ninigi kept. He sent them together and the choice cost the imperial line its immortality." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ōyamatsumi is the Japanese kami of the mountains, and in the treatments consulted also of war and of the sea, and the father of Konohanasakuya-hime and Iwanaga-hime.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ōyamatsumi and of his daughters." } ], "weight": "high" } ],
+    "notes": "In a country that is seventy per cent mountain he is a major deity and the registry did not have him. The element -tsumi in his name is the same one in Watatsumi, the sea: an old pairing of the two things Japan is made of, each with a possessing spirit. He is also the ancestor claimed by a great many warrior houses, which is where the war-god function comes from."
+  },
+  {
+    "id": "japanese_sarutahiko",
+    "name": { "primary": "Sarutahiko", "alt": ["猿田毘古神", "猿田彦大神", "Sarutahiko Ōkami"],
+      "transliterations": { "japanese": "猿田毘古神", "romaji": "Sarutahiko-no-Kami", "etymology": "The characters write 'monkey-field prince', which is probably a phonetic spelling of an older name rather than a description; the monkey association came afterwards and stuck." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The kami who stands at the junction of earth and heaven, guardian of the martial arts and of courage and justice. He met Ninigi's party at the crossroads of the eight roads of heaven when they came down, and guided them.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sarutahiko Ōkami as the guardian kami of the martial arts as well as of courage and justice, who stands at the junction of earth and heaven." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He married Ame-no-Uzume, the kami who had danced before the cave and who was the one sent to ask him who he was.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Uzume-no-Mikoto as the wife of Sarutahiko-no-Ōkami and the one who through a dance caused Amaterasu to emerge from the cave." } ] } ],
+    "domains": [
+      { "sphereId": "crossroads", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sarutahiko as standing at the junction of earth and heaven." } ] },
+      { "sphereId": "martial-arts", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sarutahiko as guardian kami of the martial arts, courage and justice." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "japanese_ame_no_uzume",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ame-no-Uzume as the wife of Sarutahiko." } ],
+        "notes": "Written one way because the existing Ame-no-Uzume record cannot be given a reciprocal from here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sarutahiko is the Japanese kami of the crossroads between earth and heaven, guardian of the martial arts, courage and justice, and the husband of Ame-no-Uzume.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sarutahiko and of Ame-no-Uzume." } ], "weight": "high" } ],
+    "notes": "He is the enormous red-faced, long-nosed figure who leads a Japanese festival procession, and the resemblance of that mask to the tengu's is not a coincidence anyone has fully explained. Structurally he is a boundary-god: the one who is already standing at the junction when the newcomers arrive, who is asked who he is, and who then guides them in. The registry held the woman who asked the question and not the man who answered."
+  },
+  {
+    "id": "japanese_ukemochi",
+    "name": { "primary": "Ukemochi", "alt": ["保食神", "Ukemochi-no-Kami", "Ōgetsu-hime", "大気都比売神"],
+      "transliterations": { "japanese": "保食神", "romaji": "Ukemochi-no-Kami", "etymology": "uke, food; mochi, holding or possessing. 'She who holds the food'. In the Kojiki the same figure is Ōgetsu-hime, 'the great food princess'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The goddess of food, a daughter of Izanagi and Izanami, who produced food from her own body to feed a divine guest.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ukemochi, also Ōgetsu-hime: a goddess of food who is the daughter of Izanagi and Izanami, who according to the Kojiki produced various food items from her body after Susanoo was banished from heaven." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Her guest, seeing where the food had come from, thought himself poisoned and killed her — and the crops grew out of her corpse. The Kojiki gives the killer as Susanoo; the Nihon Shoki gives Tsukuyomi, and makes the killing the reason the sun and moon will not share a sky.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after Susanoo was banished from heaven she produced various food items from her body, but Susanoo killed her thinking she had poisoned the food; and Ukemochi appears as a dema deity, whose body becomes the source of crops." } ] } ],
+    "domains": [
+      { "sphereId": "food", "contextTag": "lifelong", "term": { "value": "保食", "script": "japanese", "rom": "ukemochi, food-holding" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ukemochi as the goddess of food." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ukemochi as a dema deity whose body yields the crops." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "japanese_susanoo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Susanoo killed her thinking she had poisoned the food." } ],
+        "notes": "In the Kojiki. The Nihon Shoki names Tsukuyomi as the killer instead, and the record carries both because the two texts do." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ukemochi, Ōgetsu-hime, is the Japanese goddess of food, daughter of Izanagi and Izanami, who produced food from her body and was killed for it — by Susanoo in the Kojiki, by Tsukuyomi in the Nihon Shoki — the crops growing from her corpse.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ukemochi and Ōgetsu-hime." } ], "weight": "high" } ],
+    "notes": "This is the Japanese instance of the dema myth — the deity killed so that food may grow out of the body — which turns up from Indonesia to Mesoamerica, and it is the origin of rice, millet, beans and silkworms in the two chronicles. The disagreement over the killer matters: if it is Tsukuyomi, as the Nihon Shoki says, then Amaterasu's refusal ever to see her brother again is why the sun and moon are never in the sky together, and the moon's estrangement is a consequence of a murder over dinner. The registry held Susanoo, Tsukuyomi and Inari and not the goddess whose death produced the food all three are concerned with."
+  },
+  {
+    "id": "japanese_toyouke",
+    "name": { "primary": "Toyouke-Ōmikami", "alt": ["豊受大神", "Toyouke-hime", "Toyouke Ōmikami"],
+      "transliterations": { "japanese": "豊受大神", "romaji": "Toyouke-Ōmikami", "etymology": "toyo, abundant; uke, food — the same uke as in Ukemochi. 'The great deity of abundant food'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The deity of food and grain, originally enshrined in Tanba province, who was called to reside at the Outer Shrine of Ise in the fifth century in order to offer the sacred food to Amaterasu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyouke Ōmikami: a deity of food and grain in Japan, originally enshrined in Tanba Province, called to reside at the Outer Shrine (Gekū) of Ise Shrine in the 5th century to offer sacred food to Amaterasu, the ruling kami and sun goddess." } ] } ],
+    "domains": [
+      { "sphereId": "food", "contextTag": "lifelong", "term": { "value": "豊受", "script": "japanese", "rom": "toyouke, abundant food" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyouke as the deity of food and grain." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Toyouke's office at the Ise Outer Shrine." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Gekū, the Outer Shrine of Ise", "kind": "state-cult", "period": "kofun to modern",
+        "attestation": "the Outer Shrine at Ise, and the twice-daily food offering made there", "source": "Reference treatment of Toyouke and the Ise Outer Shrine.",
+        "note": "The offering has been made morning and evening for some fifteen hundred years, and the shrine is rebuilt from scratch every twenty years." } ],
+    "sources": [ { "claim": "Toyouke-Ōmikami is the Japanese deity of food and grain, brought from Tanba to the Outer Shrine of Ise in the fifth century to provide the sacred food for Amaterasu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Toyouke-hime and the Ise Gekū." } ], "weight": "high" } ],
+    "notes": "Ise has two shrines and the registry held the deity of one of them. The Outer Shrine is Toyouke's, it is larger in daily practice than the Inner, and visitors are expected to go to it first — because the sun goddess is fed before she is addressed. Her job is literally catering, performed twice a day without interruption since the fifth century, and it is the oldest continuously performed ritual in Japan."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. FIVE OF THE SEVEN LUCKY GODS
+================================================================================
+
+The Shichifukujin were assembled in the Muromachi period out of four religions
+— Shinto, Buddhism, Hinduism and Daoism — and formalised, the tradition says,
+by the priest Tenkai, adviser to Tokugawa Ieyasu, who matched each to a virtue
+of the ideal statesman. Only one of the seven, Ebisu, is of purely Japanese
+origin, and the registry held him and Benzaiten and none of the other five.
+
+They are filed under `mythic`, as the registry's existing two are, rather than
+split across the dynasties their individual origins would imply; the Muromachi
+assembly and the Edo popularity are on each record.
+
+```json
+[
+  {
+    "id": "japanese_daikokuten",
+    "name": { "primary": "Daikokuten", "alt": ["大黒天", "Daikoku", "Mahākāla (Indian origin)"],
+      "transliterations": { "japanese": "大黒天", "romaji": "Daikokuten", "etymology": "dai, great; koku, black; ten, a deva. A Chinese-Japanese rendering of Mahākāla, 'the great black one', who arrives in Japan as a Buddhist protector and becomes a god of commerce." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the Seven Lucky Gods, representing commerce, and in the group's scheme the virtue of dignity. He carries a weapon against evil influences in one hand and a treasure pagoda in the other, which is his identifying attribute.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daikokuten among the Shichifukujin: he represents commerce, in one hand has a weapon to fight against evil influences and suppress enemies, and in the other holds a treasure pagoda or stupa, which is his main identifying attribute; the virtue he represents is Dignity." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The Seven were assembled in the Muromachi era from Shinto, Buddhist, Hindu and Daoist sources, formalised by the priest Tenkai, adviser to Tokugawa Ieyasu, who matched each of them to a virtue of the ideal statesman; the group became popular in the Edo period.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the concept of the Seven Lucky Gods emerged during Japan's Muromachi Era (1336-1573), the seven originating from Shinto, Buddhism, Hinduism and Taoism; the priest Tenkai, adviser to Shogun Tokugawa Ieyasu, is often credited with formalising the group and associating each god with a specific virtue of an ideal statesman; and their popularity grew significantly during the Edo period." } ] } ],
+    "domains": [
+      { "sphereId": "commerce", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daikokuten as the god of commerce among the Seven." } ] },
+      { "sphereId": "wealth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daikokuten's treasure pagoda." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_bishamonten",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a fixed group of seven." } ], "notes": "One of the Seven." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daikokuten is one of the Seven Lucky Gods, the god of commerce, identified by his treasure pagoda and a weapon against evil, whose virtue in the group's scheme is dignity, and who derives from the Indian Mahākāla.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Daikokuten and of the Shichifukujin." } ], "weight": "high" } ],
+    "notes": "An Indian destroyer god who became a Japanese god of the kitchen and the till. Mahākāla in his home tradition is terrifying; by the Edo period Daikoku is a fat smiling figure standing on two rice bales with a mallet that produces money when struck, and he is conflated with Ōkuninushi on the strength of a pun — the characters of his name can be read Ōkuni. The registry held Ōkuninushi and not the deity Japanese practice merged him with."
+  },
+  {
+    "id": "japanese_bishamonten",
+    "name": { "primary": "Bishamonten", "alt": ["毘沙門天", "Tamonten", "多聞天", "Vaiśravaṇa (Indian origin)"],
+      "transliterations": { "japanese": "毘沙門天", "romaji": "Bishamonten", "etymology": "A transcription of Vaiśravaṇa. His other Japanese name, Tamonten, translates rather than transcribes: 'the deva who hears much', for the hearing by which he detects what approaches." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of war and of good luck among the Seven Lucky Gods; he comes from India by way of China. He is also Tamonten, the most important of the Four Heavenly Kings who guard the cardinal points of a Buddhist temple, and his quarter is the north.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bishamonten: god of war and good luck, originating from Hinduism and arriving in Japan via China, also known as Tamonten, the most important of the Four Heavenly Kings, the Shi-Tennō guardians of the cardinal points in Buddhist temples, gifted with an extremely developed sense of hearing, who protects the world from demons by watching the north." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bishamonten as a god of war." } ] },
+      { "sphereId": "north", "contextTag": "lifelong", "term": { "value": "多聞天", "script": "japanese", "rom": "Tamonten, the deva who hears much" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bishamonten as the guardian of the north among the Four Heavenly Kings." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his protection of the world from demons by hearing." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_daikokuten",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a fixed group." } ], "notes": "One of the Seven." },
+      { "kind": "counterpart-of", "personId": "buddhist_vaishravana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bishamonten as originating from the Indian Vaiśravaṇa and arriving in Japan via China." } ],
+        "notes": "The Indian end of the transmission, which the corpus already holds. Recorded as a counterpart rather than merged: the member of the Shichifukujin who hears demons coming and the Vedic lord of wealth are not the same office." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bishamonten is one of the Seven Lucky Gods, a god of war and good fortune derived from the Indian Vaiśravaṇa, and as Tamonten the chief of the Four Heavenly Kings, guarding the north by his hearing.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bishamonten and of the Shichifukujin." } ], "weight": "high" } ],
+    "notes": "He is in two groups at once — the Seven Lucky Gods and the Four Heavenly Kings — which is normal for him and awkward for a registry. The sweep matched him to `buddhist_vaishravana` and the relation is written rather than the records merged, because the Japanese figure has a Japanese office, a Japanese armour and a Japanese clientele of warriors, and because merging across that seam would erase precisely the transmission the corpus exists to show."
+  },
+  {
+    "id": "japanese_fukurokuju",
+    "name": { "primary": "Fukurokuju", "alt": ["福禄寿"],
+      "transliterations": { "japanese": "福禄寿", "romaji": "Fukurokuju", "etymology": "fuku, happiness; roku, wealth or emolument; ju, longevity — three words, one for each of the things he gives. He is of Chinese origin and the name is a Chinese formula." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of wisdom and longevity among the Seven, of Chinese origin, whose name spells out happiness, wealth and long life. He is short with an enormously high forehead and is usually shown with a crane or a stork.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fukurokuju: of Chinese origin, his Japanese name signifying happiness (fuku), wealth (roku) and longevity (ju), known as the god of wisdom and longevity, depicted as short in height but with a very high forehead and usually in the company of a stork or crane." } ] } ],
+    "domains": [
+      { "sphereId": "longevity", "contextTag": "lifelong", "term": { "value": "寿", "script": "japanese", "rom": "ju, long life" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fukurokuju as the god of longevity." } ] },
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fukurokuju as the god of wisdom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_jurojin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a fixed group of seven." } ],
+        "notes": "One of the Seven — and the one he is most often confused with, both being Chinese gods of long life with a bird or a beast and a scroll." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fukurokuju is one of the Seven Lucky Gods, of Chinese origin, god of wisdom and longevity, short with a very high forehead and accompanied by a crane.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fukurokuju and of the Shichifukujin." } ], "weight": "high" } ],
+    "notes": "The head is the identification: an elongated bald cranium of comic proportions, which in the Chinese iconography it derives from marks a man who has accumulated so much longevity that it has nowhere left to go. He and Jurōjin are so close that some lists replace one with Kichijōten to avoid the duplication, which the census notes."
+  },
+  {
+    "id": "japanese_jurojin",
+    "name": { "primary": "Jurōjin", "alt": ["寿老人", "Jurojin"],
+      "transliterations": { "japanese": "寿老人", "romaji": "Jurōjin", "etymology": "ju, longevity; rōjin, old man. 'The old man of long life'." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of the Seven's two gods of longevity and wisdom, also of Chinese origin. He is shown with a stag beside him and carries a long staff with a scroll tied to it containing all the wisdom of the world.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jurojin: also of Chinese origin and likewise god of longevity and wisdom, usually represented with a stag at his side, carrying a long stick to which is attached a scroll containing all the wisdom of the world." } ] } ],
+    "domains": [
+      { "sphereId": "longevity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jurojin as a god of longevity." } ] },
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jurojin's scroll of all the world's wisdom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_fukurokuju",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a group." } ], "notes": "One of the Seven." },
+      { "kind": "companion", "personId": "japanese_hotei",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a group." } ], "notes": "One of the Seven." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jurōjin is one of the Seven Lucky Gods, of Chinese origin, a god of longevity and wisdom shown with a stag and a staff carrying a scroll of all the world's wisdom.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jurojin and of the Shichifukujin." } ], "weight": "high" } ],
+    "notes": "The scroll is said to record the lifespan of every living thing, which makes the wisdom of the world and the register of deaths the same document — an idea this programme met in the same week in the Chinese Book of Life kept by Dongyue Dadi's ministry, and the connection is not a coincidence: both come from the same Daoist bureaucracy of fate."
+  },
+  {
+    "id": "japanese_hotei",
+    "name": { "primary": "Hotei", "alt": ["布袋", "the Laughing Buddha", "Budai (Chinese origin)"],
+      "transliterations": { "japanese": "布袋", "romaji": "Hotei", "etymology": "ho, cloth; tei, bag. 'Cloth sack' — he is named for the bag he carries, which is said to hold everything he owns and enough besides." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the Seven Lucky Gods: the god of luck, happiness and contentment, known as the Laughing Buddha for his smile and his great belly, which stand for abundance and good fortune.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hotei: in Buddhism often regarded as the god of luck, happiness and contentment, one of Japan's Seven Lucky Gods, commonly known as the 'Laughing Buddha' for his joyful smiling demeanour and large belly, symbolising abundance and good fortune." } ] } ],
+    "domains": [
+      { "sphereId": "contentment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hotei as the god of contentment and happiness." } ] },
+      { "sphereId": "abundance", "contextTag": "lifelong", "term": { "value": "布袋", "script": "japanese", "rom": "hotei, the cloth sack" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hotei's belly and his association with abundance." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_jurojin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shichifukujin as a group." } ], "notes": "One of the Seven." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hotei is one of the Seven Lucky Gods, the god of luck, happiness and contentment, called the Laughing Buddha for his smile and his belly.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hotei and of the Shichifukujin." } ], "weight": "high" } ],
+    "notes": "Almost every statue sold in the West as 'Buddha' is this man, who is not the Buddha. He derives from a tenth-century Chinese monk, Budai, who wandered with a sack giving things to children, and Zen took him up as an image of a mind with nothing left to defend. Of the Seven he is the only one whose sanctity consists entirely in not wanting anything."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VII. THE LEGENDARY IMPERIAL LINE
+================================================================================
+
+Three figures from the semi-historical stratum of the two chronicles, all
+absent. The first emperor; the prince who is the tradition's greatest warrior;
+and the empress whose son became the most widely worshipped kami of war.
+
+Jimmu's historicity is not asserted here. The chronicles give his accession as
+660 BC, historians hold that there is no evidence he existed, and the record
+carries both statements.
+
+```json
+[
+  {
+    "id": "japanese_jimmu",
+    "name": { "primary": "Jimmu", "alt": ["神武天皇", "Jinmu", "Kamuyamato-Iwarebiko", "Emperor Jimmu"],
+      "transliterations": { "japanese": "神武天皇", "romaji": "Jinmu-tennō", "etymology": "jin/kamu, divine; mu/bu, martial. 'Divine warrior' — a posthumous Chinese-style title given long after the fact; his name in the Kojiki is Kamuyamato-Iwarebiko." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["japanese_ugayafukiaezu", "japanese_tamayori_hime"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "jinmu-era" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "jinmu-era", "eraOrdering": 0,
+      "startEvent": "The legendary first emperor of Japan, son of Ugayafukiaezu and Tamayori-hime and so the great-great-grandson of Amaterasu's grandson Ninigi. The Nihon Shoki dates his accession to 660 BC and his reign to 660-585 BC.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Emperor Jimmu: the legendary first emperor of Japan according to the Nihon Shoki and Kojiki, with his ascension traditionally dated to 660 BCE and the Nihon Shoki giving his reign as 660-585 BC; he is recorded as Japan's first ruler in the two early chronicles, Nihon Shoki (720) and Kojiki (712)." } ] },
+      { "typeStatus": "mortal", "era": "jinmu-era", "eraOrdering": 1,
+        "startEvent": "Historians have stressed that there is no evidence for his existence, and the consensus is that the founding narrative is mythical and the figure legendary. The record carries the chronicles' dates as the chronicles' and the scholarly position as the scholarly one.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: historians have stressed that there is no evidence for the existence of Jimmu, and most scholars agree that the traditional narrative of Japan's founding is mythical and Jimmu a legendary figure." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "天皇", "script": "japanese", "rom": "tennō, heavenly sovereign" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jimmu as the first emperor of Japan." } ] },
+      { "sphereId": "dynastic-founder", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jimmu as the founder of the imperial line." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Kashihara Jingū, Yamato", "kind": "state-cult", "period": "jinmu-era to modern",
+        "attestation": "the shrine at Kashihara, built in 1890 at the site the chronicles give for his palace", "source": "Reference treatments of Emperor Jimmu.",
+        "note": "The shrine is a Meiji construction: the cult of Jimmu as a national figure is nineteenth-century, whatever the antiquity of the text." } ],
+    "sources": [ { "claim": "Jimmu is the legendary first emperor of Japan in the Kojiki and Nihon Shoki, son of Ugayafukiaezu and Tamayori-hime, with a traditional accession date of 660 BC and no evidence of historical existence.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Emperor Jimmu and of the scholarly assessment of his historicity." } ], "weight": "high" } ],
+    "notes": "The whole point of the preceding blocks is him: the descent from Amaterasu through Ninigi, Hoori and Ugayafukiaezu exists in order to arrive at a man in Yamato with a claim, and the registry held the top of that chain and not the bottom. The 660 BC date is a seventh-century back-calculation — a grand cycle of 1,260 years counted back from a year the compilers cared about — and is recorded as what the chronicles say rather than as when anything happened."
+  },
+  {
+    "id": "japanese_yamato_takeru",
+    "name": { "primary": "Yamato Takeru", "alt": ["日本武尊", "倭建命", "Prince Ousu", "Yamato-takeru-no-Mikoto"],
+      "transliterations": { "japanese": "日本武尊", "romaji": "Yamato-takeru-no-Mikoto", "etymology": "Yamato, the old name of the Japanese realm; takeru, a brave or a strongman. The name is a title he took from a man he killed, who had been called the Takeru of Kumaso." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kofun" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "kofun", "eraOrdering": 0,
+      "startEvent": "Originally Prince Ousu, son of Emperor Keikō, who is counted twelfth in the imperial line; a folk hero and semi-legendary prince whose life and death are told principally in the Kojiki of 712 and the Nihon Shoki of 720.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yamato Takeru: originally Prince Ousu, a Japanese folk hero and semi-legendary prince of the imperial dynasty, son of Emperor Keikō, traditionally counted as the 12th Emperor of Japan, whose life and death are told principally in the Kojiki (712) and Nihon Shoki (720)." } ] },
+      { "typeStatus": "mortal", "era": "kofun", "eraOrdering": 1,
+        "startEvent": "He carried Kusanagi, the sword Susanoo had taken from the serpent's tail, which came to him from his aunt Yamato-hime and is enshrined after his death at Atsuta Jingu.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yamato Takeru was the bearer of Kusanagi, and the sword passes through Ninigi, Yamato-hime, Yamato Takeru and Miyazu-hime before being enshrined at Atsuta Jingu." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "建", "script": "japanese", "rom": "takeru, brave" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yamato Takeru as a warrior prince and folk hero." } ] },
+      { "sphereId": "conquest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yamato Takeru's campaigns in the chronicles." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Atsuta Jingū, Owari", "kind": "shrine-cult", "period": "kofun to modern",
+        "attestation": "the enshrinement of Kusanagi at Atsuta after his death", "source": "Reference treatments of Yamato Takeru and of the sword's transmission.",
+        "note": "Atsuta is the second shrine of Japan after Ise, and it is there because of him." } ],
+    "sources": [ { "claim": "Yamato Takeru, originally Prince Ousu, is the semi-legendary warrior son of Emperor Keikō, the bearer of Kusanagi, whose story is told in the Kojiki and Nihon Shoki and after whose death the sword was enshrined at Atsuta.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yamato Takeru and of Kusanagi." } ], "weight": "high" } ],
+    "notes": "The Kojiki's account of him is the best writing in the book and it is not flattering to anybody: a prince so violent that his own father sends him east to be rid of him, who wins every campaign, is given no thanks, and dies of exhaustion and a mountain god's malice on the way home, turning into a white bird. He carries the sword this batch's serpent was killed for. A registry with Kusanagi's origin and Kusanagi's shrine and nobody who carried it in between had a gap the length of the archipelago."
+  },
+  {
+    "id": "japanese_jingu",
+    "name": { "primary": "Jingū", "alt": ["神功皇后", "Empress Jingū", "Okinagatarashi-hime"],
+      "transliterations": { "japanese": "神功皇后", "romaji": "Jingū-kōgō", "etymology": "jin, divine; gū/kō, merit or achievement. 'Empress of divine achievement' — again a posthumous Chinese-style style, her name in the chronicles being Okinagatarashi-hime." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kofun" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "kofun", "eraOrdering": 0,
+      "startEvent": "The empress of the chronicles who is said to have led a campaign overseas while pregnant, delaying the birth until her return, and who then bore the future Emperor Ōjin.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Umi Hachiman-gū, venerated as the legendary place where Empress Jingū safely gave birth to the future Emperor Ōjin." } ] },
+      { "typeStatus": "mortal", "era": "kofun", "eraOrdering": 1,
+        "startEvent": "Her son Ōjin is the emperor the chronicles and shrine traditions identify with Hachiman, whom the registry already holds — its own record derives the name from the eight banners said to have signalled Ōjin's birth.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Hachiman shrines and of the birth of Ōjin; the registry's existing Hachiman record derives the name from the eight heavenly banners said to have signalled the birth of Emperor Ōjin." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "皇后", "script": "japanese", "rom": "kōgō, empress consort" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jingū as empress." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the campaign associated with her in the chronicles." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "japanese_hachiman",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Empress Jingū as the mother of the future Emperor Ōjin, who is identified with the kami Hachiman in the shrine tradition and in the registry's own Hachiman record." } ],
+        "notes": "The relation is to the deified Ōjin, because that is the record the corpus carries; the identification of Ōjin with Hachiman is the shrine tradition's and the census records it rather than asserting a separate Ōjin record and duplicating." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "the Hachiman shrines", "kind": "shrine-cult", "period": "kofun to modern",
+        "attestation": "her enshrinement alongside Hachiman at Hachiman shrines, including Umi Hachiman-gū at the traditional birth-site", "source": "Reference treatments of the Hachiman shrines and of Jingū.",
+        "note": "Hachiman shrines are the most numerous in Japan and she is enshrined in them with her son, which makes her one of the most widely worshipped women in the country." } ],
+    "sources": [ { "claim": "Empress Jingū is the chronicles' empress who campaigned overseas while pregnant and bore the future Emperor Ōjin, who is identified with the kami Hachiman.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Empress Jingū, the Hachiman shrines and the birth of Ōjin." } ], "weight": "medium" } ],
+    "notes": "The overseas campaign attributed to her has been among the most politically loaded passages in the Japanese chronicles for a century and a half, and the record deliberately states only what the treatments consulted state: that the chronicles say she campaigned while pregnant and gave birth on her return. The historicity of the campaign, its date and its target are disputed and are not adjudicated here. Ōjin is not given a separate record because the corpus already holds him, deified, as Hachiman."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VIII. HEIAN: A GOD MADE OUT OF A GRIEVANCE, AND THE
+                         DEMON-SLAYERS
+================================================================================
+
+Nine figures from the tenth to twelfth centuries, all absent. Sugawara no
+Michizane, who was exiled by a rival and whose angry ghost was promoted to
+kami of the highest rank to stop it killing people. Two of the three creatures
+Japanese tradition names as the greatest yōkai — Shuten-dōji, king of the oni,
+and Tamamo-no-Mae, the nine-tailed fox. And the men who dealt with them:
+Minamoto no Yorimitsu, his four retainers, and the onmyōji Abe no Seimei.
+
+The registry already holds about twenty late-Heian Minamoto — the warrior
+genealogy from Yoshiie down to Yoshitsune — and not Yorimitsu, who is the
+member of that clan the folklore is about.
+
+```json
+[
+  {
+    "id": "japanese_tenjin",
+    "name": { "primary": "Tenjin", "alt": ["天神", "Sugawara no Michizane", "菅原道真", "Tenman-Tenjin", "Kan Shōjō"],
+      "transliterations": { "japanese": "天神", "romaji": "Tenjin", "etymology": "ten, heaven; jin, deity — originally a general word for a heavenly kami, and specifically for the thunder, before it became his name in particular." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heian", "eraOrdering": 0,
+      "startEvent": "Born in 845, a scholar of Chinese literature and a poet who rose high in the government in the late ninth century. In 901, under Emperor Daigo, he was demoted from Minister of the Right to deputy governor-general at Dazaifu in Kyushu, the victim of a Fujiwara rival's plot, and died there on 26 March 903.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sugawara Michizane: born 845, died 26 March 903 at Dazaifu, a Japanese political figure and scholar of Chinese literature of the Heian period who rose high in government in the late ninth century and then fell victim to the plots of a Fujiwara rival, being demoted in 901 under Emperor Daigo from Minister of the Right to deputy governor-general at Dazaifu in Kyushu, where he died two years later." } ] },
+      { "typeStatus": "mortal", "era": "heian", "eraOrdering": 1,
+        "startEvent": "After his death the capital was struck by heavy rain and lightning, fires and floods destroyed residences, and his chief Fujiwara adversary and the crown prince died. The calamities were attributed to his vengeful spirit.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: following Sugawara's death a series of calamities — storms, fires and violent deaths — were attributed to his vengeful spirit; in the years after his death the capital was struck by heavy rain and lightning, his chief Fujiwara adversary and Emperor Daigo's crown prince died, and fires caused by lightning and floods destroyed many residences." } ] },
+      { "typeStatus": "mortal", "era": "heian", "eraOrdering": 2,
+        "startEvent": "To placate him he was posthumously restored to rank, given a shrine in northern Kyoto and a festival, and in 987 under Emperor Ichijō promoted and deified at the highest rank of state kami. He is the kami of calligraphy and scholarship.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: to placate the spirit Sugawara was posthumously reinstated to high rank and later deified; a special shrine was built for him in northern Kyoto and a festival established; in 987, during the reign of Emperor Ichijō, he was promoted and deified as the highest rank of state kami; and he is the kami of calligraphy and scholarship." } ] } ],
+    "domains": [
+      { "sphereId": "scholarship", "contextTag": "lifelong", "term": { "value": "天神", "script": "japanese", "rom": "Tenjin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tenjin as the kami of calligraphy and scholarship." } ] },
+      { "sphereId": "thunder", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the lightning strikes on the capital attributed to his spirit." } ] },
+      { "sphereId": "vengeance", "contextTag": "phase", "term": { "value": "怨霊", "script": "japanese", "rom": "onryō, the vengeful spirit" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the calamities attributed to his vengeful spirit." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Kitano Tenmangū in Kyoto, Dazaifu Tenmangū, Egara Tenjin in Kamakura, Umeda Tenmangū in Osaka", "kind": "state-and-popular-cult", "period": "heian to modern",
+        "attestation": "the four major Tenjin shrines and some thousands of lesser ones", "source": "Reference treatments of Tenjin and the Tenmangū shrines.",
+        "note": "Still the shrine a Japanese student visits before an examination, which makes his the most actively used cult in this batch." } ],
+    "sources": [ { "claim": "Sugawara no Michizane (845-903) was exiled to Dazaifu by a Fujiwara rival and died there; the calamities that followed were attributed to his spirit, and he was posthumously restored, shrined and in 987 deified as Tenjin, kami of scholarship and calligraphy.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sugawara no Michizane, his exile, the calamities and his deification as Tenjin." } ], "weight": "high" } ],
+    "notes": "The clearest case anywhere of a god created by bad conscience. A court destroys a man politically, he dies in exile, lightning then kills the people who destroyed him, and the state's response is not to deny the connection but to concede it — restoring his rank, building him a shrine, and eventually making him a kami of the first rank, in the hope that he will stop. The Japanese term for it is goryō, the placation of an angry ghost by promotion, and Michizane is its type case. That he ended up as the patron of examinations, which is what he was good at, is the tradition's own joke."
+  },
+  {
+    "id": "japanese_shuten_doji",
+    "name": { "primary": "Shuten-dōji", "alt": ["酒呑童子", "Shuten doji", "the king of the oni"],
+      "transliterations": { "japanese": "酒呑童子", "romaji": "Shuten-dōji", "etymology": "shu, sake; ten, to swallow; dōji, a boy or acolyte. 'The sake-drinking boy' — an oni who looks like a child and drinks like an army." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "The king of the oni, a tyrant on Mount Ōe in Tango, north-west of Kyoto, who presided over a cannibal band of demons, ravaged the countryside and carried women off from the capital.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shuten dōji: king of the oni and a local tyrant of Mt Ōeyama, who presided over a cannibalistic band of demons on Mt. Ōe in Tango, north-west of Kyoto, from where they ravaged the countryside and abducted women from the capital." } ] },
+      { "typeStatus": "deity", "era": "mid-heian", "eraOrdering": 1,
+        "startEvent": "Minamoto no Yorimitsu killed him. He is counted with Tamamo-no-Mae and the ghost of the emperor Sutoku as one of the three greatest and most evil yōkai in Japanese folklore.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shuten dōji was slain by Minamoto no Yorimitsu; and there are three monsters considered the greatest and most evil yokai in all of Japanese folklore — the ghost of Emperor Sutoku, the nine-tailed kitsune Tamamo no Mae, and the king of the oni Shuten dōji." } ] } ],
+    "domains": [
+      { "sphereId": "demons", "contextTag": "lifelong", "term": { "value": "鬼", "script": "japanese", "rom": "oni" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shuten-dōji as the king of the oni." } ] },
+      { "sphereId": "cannibalism", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his cannibalistic band on Mount Ōe." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shuten dōji as slain by Minamoto no Yorimitsu." } ],
+        "notes": "On Mount Ōe, by a party who came as travelling monks and brought the sake." },
+      { "kind": "companion", "personId": "japanese_tamamo_no_mae",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three greatest and most evil yōkai of Japanese folklore." } ],
+        "notes": "Not an association in any story: they are grouped by the tradition as two of the three worst things in it, and the edge records that grouping." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shuten-dōji is the king of the oni, a tyrant of Mount Ōe who led a cannibal band and abducted women from Kyoto, killed by Minamoto no Yorimitsu, and counted one of the three greatest yōkai.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shuten-dōji and of the three great yōkai." } ], "weight": "high" } ],
+    "notes": "He is killed by trickery and hospitality: Yorimitsu's party arrive dressed as mountain ascetics, are made welcome, produce poisoned sake, and cut his head off while he sleeps — and the head, in the best-known version, flies up and bites the helmet of the man holding the sword. The method is precisely Susanoo's with the serpent, eight hundred years later and with the monster given a name, a mountain and a grievance. This registry records named yōkai and not yōkai as kinds, and he is the standing reason the distinction matters."
+  },
+  {
+    "id": "japanese_tamamo_no_mae",
+    "name": { "primary": "Tamamo-no-Mae", "alt": ["玉藻前", "the nine-tailed fox"],
+      "transliterations": { "japanese": "玉藻前", "romaji": "Tamamo-no-Mae", "etymology": "tamamo, jewelled seaweed, a poetic word; no mae is a courtly honorific for a lady. A court name, not a description." } },
+    "type": "deity", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "late-heian" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "late-heian", "eraOrdering": 0,
+      "startEvent": "A nine-tailed fox, the most famous kitsune in Japanese myth, who took the shape of a court lady of extraordinary beauty and learning and became the emperor's favourite. In the East Asian convention a fox gains a tail a century, so nine tails is nine hundred years of existence.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamamo no Mae: one of the most famous kitsune in Japanese mythology, a nine-tailed magical fox and one of the most powerful yōkai; in Japanese and broader East Asian folklore a fox gains a new tail for every century of its existence, and nine tails represents an entity of nine hundred years or more." } ] },
+      { "typeStatus": "deity", "era": "late-heian", "eraOrdering": 1,
+        "startEvent": "The emperor fell mortally ill. An onmyōji read his fortune, divined that he was marked by an evil omen and exposed her; she fled to the moor at Nasu. The treatments consulted name the diviner as Abe no Yasunari in one account and Abe no Seimei in another.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after she became the emperor's consort the emperor fell deathly ill, and the onmyōji Abe no Yasunari read the emperor's fortune and divined that he was marked by a bad omen; alternatively, according to some accounts, Abe no Seimei detected her, and she flew away to Nasu Field." } ] },
+      { "typeStatus": "deity", "era": "late-heian", "eraOrdering": 2,
+        "startEvent": "She is counted with Shuten-dōji and the ghost of the emperor Sutoku as one of the three greatest and most evil yōkai in Japanese folklore.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three monsters considered the greatest and most evil yōkai in all of Japanese folklore: the ghost of Emperor Sutoku, the nine-tailed kitsune Tamamo no Mae, and the king of the oni Shuten dōji." } ] } ],
+    "domains": [
+      { "sphereId": "shapeshifting", "contextTag": "lifelong", "term": { "value": "狐", "script": "japanese", "rom": "kitsune, fox" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tamamo-no-Mae as a nine-tailed kitsune." } ] },
+      { "sphereId": "seduction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of her becoming the emperor's consort and his subsequent illness." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "japanese_shuten_doji",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three greatest yōkai of Japanese folklore." } ],
+        "notes": "Grouped by the tradition, not by any shared story." },
+      { "kind": "enemy", "personId": "japanese_abe_no_seimei",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to some accounts Abe no Seimei detected her and she flew away to Nasu Field, other accounts naming Abe no Yasunari as the diviner." } ],
+        "notes": "The attribution is disputed between Seimei and his successor Yasunari and the record carries the dispute rather than settling it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tamamo-no-Mae is the nine-tailed fox who took the form of a court lady, became the emperor's consort and nearly killed him, was exposed by an onmyōji — Seimei in some accounts, Yasunari in others — and fled to Nasu; she is one of the three greatest yōkai.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tamamo-no-Mae and of the three great yōkai." } ], "weight": "high" } ],
+    "notes": "The same fox as the Chinese Daji, in the late medieval versions: the story has her destroy a king in India, then the Shang in China, then flee east to Japan and start again — which makes her a single continuous nine-hundred-year career of state-wrecking across three civilisations, and connects her directly to the record this programme ingested in the Chinese lane a few days ago. The identification is the late tale-cycle's rather than either court's, and the census carries it as a cross-tradition row instead of merging the two records."
+  },
+  {
+    "id": "japanese_yorimitsu",
+    "name": { "primary": "Minamoto no Yorimitsu", "alt": ["源頼光", "Raikō", "頼光", "Minamoto no Raikō"],
+      "transliterations": { "japanese": "源頼光", "romaji": "Minamoto no Yorimitsu", "etymology": "The characters of the given name are read Yorimitsu in the Japanese fashion and Raikō in the Chinese; the folklore uses Raikō almost exclusively." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "948-1021: a legendary warrior and court official of the Heian period, a prominent Minamoto who served under the Fujiwara regency.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Minamoto no Yorimitsu, also known as Raikō (948-1021), a legendary warrior and court official of the Heian period in Japan and a prominent member of the Minamoto clan who served under the Fujiwara regency." } ] },
+      { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 1,
+        "startEvent": "He is famous for the defeat of Shuten-dōji on Mount Ōe and for the subjugation of the various yōkai and oni that threatened the capital, working with his four retainers — the Shitennō — and with the onmyōji Abe no Seimei.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Minamoto no Raikō is most famously associated with the defeat of the demon Shuten-dōji on Mount Ōe and the subjugation of various yokai and oni threatening the capital; he had four retainers referred to in legend as the Shitennō — Watanabe no Tsuna, Sakata no Kintoki, Usui Sadamitsu and Urabe no Suetake; and Abe no Seimei worked alongside Minamoto no Yorimitsu and his Four Guardian Kings in vanquishing oni and yokai on the outskirts of the capital during the mid-Heian period." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yorimitsu as a legendary warrior of the Heian period." } ] },
+      { "sphereId": "exorcism", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his subjugation of the yōkai and oni threatening the capital." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killer-of", "personId": "japanese_shuten_doji",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yorimitsu's defeat of Shuten-dōji on Mount Ōe." } ], "notes": "" },
+      { "kind": "overlord-of", "personId": "japanese_watanabe_no_tsuna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Watanabe no Tsuna as leader of Yorimitsu's Four Guardian Kings." } ], "notes": "The first of his four." },
+      { "kind": "overlord-of", "personId": "japanese_sakata_no_kintoki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers referred to in legend as the Shitennō." } ], "notes": "" },
+      { "kind": "overlord-of", "personId": "japanese_usui_sadamitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers referred to in legend as the Shitennō." } ], "notes": "" },
+      { "kind": "overlord-of", "personId": "japanese_urabe_no_suetake",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers referred to in legend as the Shitennō." } ], "notes": "" },
+      { "kind": "ally", "personId": "japanese_abe_no_seimei",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abe no Seimei working alongside Minamoto no Yorimitsu and his Four Guardian Kings in vanquishing oni and yōkai outside the capital." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Minamoto no Yorimitsu, Raikō (948-1021), is the Heian warrior and Fujiwara retainer famous for killing Shuten-dōji on Mount Ōe and subduing the yōkai around the capital, with his four Shitennō and the onmyōji Abe no Seimei.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Minamoto no Yorimitsu, his Shitennō and Abe no Seimei." } ], "weight": "high" } ],
+    "notes": "The registry holds about twenty Minamoto — the late-Heian line from Yoshiie through Yoshitomo to Yoritomo and Yoshitsune — and did not hold the one the stories are about. Yorimitsu is two generations earlier and belongs to a different kind of history: not the civil wars but the demon-hunting, which is what the Heian capital's anxieties looked like when they were written down. He is the reason there is a Japanese genre of the warrior who kills monsters, and every later figure in it is measured against him."
+  },
+  {
+    "id": "japanese_watanabe_no_tsuna",
+    "name": { "primary": "Watanabe no Tsuna", "alt": ["渡辺綱", "Watanabe Tsuna"],
+      "transliterations": { "japanese": "渡辺綱", "romaji": "Watanabe no Tsuna", "etymology": "Watanabe is the surname, from the place; tsuna is 'rope' or 'cord'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "953-1025: a samurai of the Heian period and a companion in arms of Minamoto no Yorimitsu, whom he served as leader of the Four Guardian Kings.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Watanabe no Tsuna (953-1025), a Japanese samurai of the Heian period and a companion in arms of Minamoto no Yorimitsu, whom he served as leader of the Four Guardian Kings." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "四天王", "script": "japanese", "rom": "Shitennō, the Four Guardian Kings" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Watanabe no Tsuna as leader of Yorimitsu's Shitennō." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Watanabe no Tsuna as a companion in arms of Yorimitsu and leader of his four retainers." } ], "notes": "" },
+      { "kind": "companion", "personId": "japanese_sakata_no_kintoki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Watanabe no Tsuna (953-1025) is the Heian samurai who led Minamoto no Yorimitsu's four retainers, the Shitennō.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Watanabe no Tsuna." } ], "weight": "high" } ],
+    "notes": "The best-known of the four, and the one with his own story: the demon of the Rashōmon gate, whose arm he cut off and kept in a box until an old woman claiming to be his aunt asked to see it and took it back. Every Japanese person knows that story and the registry had neither the man nor his lord."
+  },
+  {
+    "id": "japanese_sakata_no_kintoki",
+    "name": { "primary": "Sakata no Kintoki", "alt": ["坂田金時", "Sakata Kintoki"],
+      "transliterations": { "japanese": "坂田金時", "romaji": "Sakata no Kintoki", "etymology": "Sakata is the surname; kin, gold, and toki, time. The kin is the element that turns up again in the childhood-name the folklore gives him." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "One of the four retainers of Minamoto no Yorimitsu known in legend as the Shitennō, with Watanabe no Tsuna, Usui Sadamitsu and Urabe no Suetake.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Minamoto no Yorimitsu had four retainers referred to in legend as the Shitennō — Watanabe no Tsuna, Sakata no Kintoki, Usui Sadamitsu and Urabe no Suetake." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shitennō of the Minamoto." } ] },
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Four Guardian Kings as Yorimitsu's strongmen." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers of Yorimitsu." } ], "notes": "" },
+      { "kind": "companion", "personId": "japanese_watanabe_no_tsuna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sakata no Kintoki is one of the four retainers of Minamoto no Yorimitsu known in legend as the Shitennō.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yorimitsu's Four Guardian Kings." } ], "weight": "medium" } ],
+    "notes": "The identification of this man with Kintarō — the red child of enormous strength raised on a mountain by a mountain-crone, who is on every Boys' Day banner in Japan — is standard in the Japanese tradition and was NOT returned by the sources consulted in this session. The census blocks it as a research item rather than stating it here. What is cited is what the treatments gave: he is one of the four."
+  },
+  {
+    "id": "japanese_usui_sadamitsu",
+    "name": { "primary": "Usui Sadamitsu", "alt": ["碓井貞光", "Usui no Sadamitsu"],
+      "transliterations": { "japanese": "碓井貞光", "romaji": "Usui Sadamitsu", "etymology": "Usui is a place-name surname; the given name is written with characters for chastity and light." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "The third of the four retainers of Minamoto no Yorimitsu called the Shitennō in legend.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yorimitsu's four retainers referred to in legend as the Shitennō were Watanabe no Tsuna, Sakata no Kintoki, Usui Sadamitsu and Urabe no Suetake." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shitennō of the Minamoto." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers of Yorimitsu." } ], "notes": "" },
+      { "kind": "companion", "personId": "japanese_urabe_no_suetake",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Usui Sadamitsu is one of the four retainers of Minamoto no Yorimitsu known in legend as the Shitennō.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yorimitsu's Four Guardian Kings." } ], "weight": "medium" } ],
+    "notes": "A short record, and deliberately so: the sources reachable in this session establish that he existed in the legend, that he is the third of four, and no more. He is here rather than blocked because the Shitennō are a named group of four and this programme has spent five traditions objecting to groups held as fractions. What is not known is stated as not known."
+  },
+  {
+    "id": "japanese_urabe_no_suetake",
+    "name": { "primary": "Urabe no Suetake", "alt": ["卜部季武", "Urabe Suetake"],
+      "transliterations": { "japanese": "卜部季武", "romaji": "Urabe no Suetake", "etymology": "Urabe is the surname of a hereditary line of diviners — ura is divination — which is a striking name for a man employed to fight demons." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "The fourth of the retainers of Minamoto no Yorimitsu called the Shitennō in legend.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Yorimitsu's four retainers referred to in legend as the Shitennō were Watanabe no Tsuna, Sakata no Kintoki, Usui Sadamitsu and Urabe no Suetake." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shitennō of the Minamoto." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four retainers of Yorimitsu." } ], "notes": "" },
+      { "kind": "companion", "personId": "japanese_usui_sadamitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the four as a group." } ], "notes": "One of the four." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Urabe no Suetake is one of the four retainers of Minamoto no Yorimitsu known in legend as the Shitennō.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yorimitsu's Four Guardian Kings." } ], "weight": "medium" } ],
+    "notes": "As with Sadamitsu the record is short because the sources are. The Urabe surname is the one carried by the court's hereditary tortoiseshell-diviners, which is either a coincidence or the reason a demon-hunting band had him in it; the treatments consulted do not say, and neither does this record."
+  },
+  {
+    "id": "japanese_abe_no_seimei",
+    "name": { "primary": "Abe no Seimei", "alt": ["安倍晴明", "Seimei"],
+      "transliterations": { "japanese": "安倍晴明", "romaji": "Abe no Seimei", "etymology": "Abe is the clan name; the given name is written with characters for clear and bright." } },
+    "type": "mortal", "origin": "canon", "tradition": "Japanese", "primaryTradition": "Japanese",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mid-heian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 0,
+      "startEvent": "21 February 921 to 31 October 1005: an onmyōji, and the leading specialist of onmyōdō in the middle Heian period.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abe no Seimei (21 February 921 – 31 October 1005), an onmyōji and a leading specialist of onmyōdō during the middle of the Heian period in Japan." } ] },
+      { "typeStatus": "mortal", "era": "mid-heian", "eraOrdering": 1,
+        "startEvent": "He worked alongside Minamoto no Yorimitsu and his Four Guardian Kings against the oni and yōkai on the edges of the capital, and in some accounts it is he, rather than his successor Abe no Yasunari, who exposed Tamamo-no-Mae.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Abe no Seimei worked alongside Minamoto no Yorimitsu and his Four Guardian Kings in vanquishing oni and yokai on the outskirts of the capital during the mid-Heian period; and according to some accounts Abe no Seimei detected Tamamo-no-Mae, though other accounts name Abe no Yasunari." } ] } ],
+    "domains": [
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "陰陽道", "script": "japanese", "rom": "onmyōdō, the way of yin and yang" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abe no Seimei as the leading onmyōji of the mid-Heian period." } ] },
+      { "sphereId": "exorcism", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of his work against oni and yōkai with Yorimitsu's band." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "japanese_yorimitsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Seimei working alongside Yorimitsu and the Four Guardian Kings." } ], "notes": "" },
+      { "kind": "enemy", "personId": "japanese_tamamo_no_mae",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the accounts in which Abe no Seimei detects Tamamo-no-Mae." } ],
+        "notes": "In some accounts; others give the exposure to Abe no Yasunari, and the record says so on both sides." } ],
+    "cultRecords": [
+      { "tradition": "Japanese", "placeName": "Seimei Shrine, Kyoto", "kind": "shrine-cult", "period": "mid-heian to modern",
+        "attestation": "the Seimei Shrine on the site of his residence", "source": "Reference treatments of Abe no Seimei and the Seimei Shrine.",
+        "note": "He is enshrined as a kami at the site of his own house, which is an unusual afterlife for a civil servant of the Bureau of Yin and Yang." } ],
+    "sources": [ { "claim": "Abe no Seimei (921-1005) is the leading onmyōji of the mid-Heian period, who worked with Minamoto no Yorimitsu and his Shitennō against oni and yōkai and, in some accounts, exposed Tamamo-no-Mae.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Abe no Seimei, onmyōdō and Tamamo-no-Mae." } ], "weight": "high" } ],
+    "notes": "He was a real official of the Bureau of Yin and Yang with a documented career in calendrical astronomy and divination, and he is also the greatest magician in Japanese literature — the two facts are not in tension, because the job was the magic. The folklore makes him the son of a fox, which would make his most famous adversary a relative; the treatments consulted report that tradition without endorsing it and so does this record. His shrine in Kyoto is on the site of his house and is still busy."
+  }
+]
+```
