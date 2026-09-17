@@ -1,0 +1,1085 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Zoroastrian
+Eras (registered, exact): primordial | legendary
+Author pass: Zoroastrian held 33 records. This adds 37.
+
+================================================================================
+THE GAP
+================================================================================
+
+A 95-name check across the WHOLE registry returned 13 hits and 82 absences.
+Six of the thirteen hits were aliases already carried on existing records —
+Jamshid on Yima, Zahhak on Azhi Dahaka, Fereydun on Thraetaona, Garshasp on
+Keresaspa, Bahman on Vohu Manah, Anahita on Aredvi Sura Anahita — and two were
+false: "Indra" matched the Hindu god rather than the Zoroastrian daeva of the
+same name, and "Vata" matched hindu_vayu.
+
+**The registry did not hold Zarathustra.**
+
+It held Ahura Mazda, Angra Mainyu, all six Amesha Spentas, nine yazatas and
+fifteen figures of the Iranian legendary cycle, and it did not hold the prophet
+the religion is named after — the man whose hymns are the oldest layer of the
+Avesta and who is the speaker of the Gathas the whole tradition is built on.
+
+That is not the only structural hole, and the others have the same shape:
+
+- **The six Amesha Spentas were present and all six of their opponents were
+  absent.** The Vendidad sets an arch-daeva against each: Aka Manah against
+  Vohu Manah's good thought, the daeva Indra against Asha Vahishta's truth,
+  Saurva against Khshathra Vairya's dominion, Nanghaithya against Spenta
+  Armaiti's devotion, Taurvi against Haurvatat's wholeness, Zairich against
+  Ameretat's immortality. Six for six. The registry held one side of a
+  dualist religion's central opposition.
+- **Tishtrya without Apaosha.** The corpus held the star-yazata whose one myth
+  is a horse-fight against the drought demon for the waters of Vourukasha, and
+  not the demon.
+- **No creation account at all.** No Gayomart, the first man; no Mashya and
+  Mashyana, the first couple who grow out of his body; no Gavaevodata, the
+  sole-created ox whose death is the origin of animal life. The registry had
+  Ahura Mazda and the being he creates against, and nothing either of them made.
+- **No eschatology.** No Saoshyant, no Hushedar, no Hushedar-mah — the three
+  saviours born a thousand years apart from the prophet's seed, who bring the
+  Frashokereti. In a religion whose distinctive contribution to the history of
+  ideas is a linear history with an end.
+- **Aeshma absent — while the corpus holds Asmodeus.** The demon of wrath, the
+  most prominent daeva of the older texts, was missing from the tradition he
+  belongs to, in a registry that already held the figure he is generally taken
+  to have become on the other side of a transmission.
+- **The Shahnameh held from the middle.** Rostam, Sohrab, Zal, Rudaba, Kay
+  Kavus, Kay Khosrow, Siyavash — and not Sam, who is Zal's father; not the
+  Simurgh, who raised him; not Tahmineh, who is Sohrab's mother; not Afrasiab,
+  who is the antagonist of the entire cycle; not Kaveh, whose apron on a spear
+  is the Iranian flag for a thousand years; and not Salm, Tur and Iraj, the
+  three sons whose quarrel is the reason Iran and Turan are at war for the rest
+  of the book.
+
+================================================================================
+METHOD NOTE — THE SWEEP WAS RUN TWICE
+================================================================================
+
+Lane 14 established that a corpus sweep tests the registry against the author's
+recall, and that re-running it after the first batch is in place surfaces what
+the first pass crowded out. That is applied here from the start: the 95-name
+list was built in two passes before any record was written, and it will be run
+again after generation.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+**Classes and collectives.** The fravashis (guardian spirits, always plural),
+the daevas as a category, and the Amesha Spentas as a group are not records;
+the named members are. The Chinvat Bridge is a place, not a person.
+
+**Aliases already carried.** Jamshid, Zahhak, Fereydun, Garshasp and Bahman
+are alt-names on records the corpus already holds, and this batch does not
+duplicate them under their Persian forms.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search, and the citations name
+the reference treatments consulted. Where a figure's evidence is a single line
+in a list, the record says so and stays short rather than being filled out.
+
+================================================================================
+AUTHORED FIGURES — I. THE PROPHET AND HIS CIRCLE
+================================================================================
+
+```json
+[
+  {
+    "id": "zoroastrian_zarathustra",
+    "name": { "primary": "Zarathustra", "alt": ["Zoroaster", "Zarathushtra", "Zartosht", "Zarathushtra Spitama"],
+      "transliterations": { "Avestan": "Zaraθuštra", "etymology": "The second element uštra is 'camel'; the first is disputed, with 'he who can manage camels' and 'of the old camels' among the readings. Zoroaster is the Greek form." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The prophet and founder of Zoroastrianism, of the Spitama clan. The Gathas — the hymns within the Avesta, the sacred book of the religion — are believed to be his actual words, and are the oldest layer of the tradition.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Gathas are hymns within the Avesta, the sacred book of Zoroastrianism, believed to be the actual words of the prophet Zarathustra, the founder of the religion; the prophet is addressed as part of the great Spitama race." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "His preaching finds its patron in Kavi Vishtaspa, whom the Gathas celebrate as the prince who protected him and established the first Zoroastrian community.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Gathas celebrate Kavi Vishtaspa as the prince patron of Zoroaster and the establisher of the first Zoroastrian community; Vishtasp was the princely protector and patron of Zoroaster." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 2,
+        "startEvent": "In Yasna 53, the fifth Gatha, he is the celebrant priest at the marriage of his own daughter Pouruchista to Jamaspa of the Hvogva clan — the one domestic scene the oldest scripture preserves.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Yasna 53, Gatha 5, Zoroaster is the celebrant priest at the marriage of his daughter Pouruchista to Jamaspa Hvogva." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy-and-revelation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zarathustra as the prophet and founder of Zoroastrianism and the composer of the Gathas." } ] },
+      { "sphereId": "priesthood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Yasna 53 he acts as the celebrant priest at his daughter's marriage." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "zoroastrian_vishtaspa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Gathas celebrate Kavi Vishtaspa as the prince patron of Zoroaster and the establisher of the first Zoroastrian community." } ],
+        "notes": "Reciprocated in-batch. The relation is the founding fact of the religion's institutional history: a prophet with a patron is a religion, and a prophet without one is a poet." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zarathustra Spitama is the prophet and founder of Zoroastrianism, composer of the Gathas, patronised by Kavi Vishtaspa, and celebrant at the marriage of his daughter Pouruchista in Yasna 53.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zarathustra, of the Gathas, of Vishtaspa's patronage and of Yasna 53." } ], "weight": "high" } ],
+    "notes": "The registry held Ahura Mazda, Angra Mainyu, all six Amesha Spentas, nine yazatas and fifteen figures of the Iranian legendary cycle, and not the man the religion is named after. No dates are given on this record, and that is deliberate: the date of Zarathustra is one of the longest-running unresolved questions in Iranian studies, with serious proposals ranging across roughly a thousand years, and any date written here would be picking a side in an argument this programme has no business settling. The era is 'legendary' because that is one of the two eras this tradition has registered, and it is the correct one of the two — but it should not be read as a claim that he did not exist."
+  },
+  {
+    "id": "zoroastrian_vishtaspa",
+    "name": { "primary": "Vishtaspa", "alt": ["Kavi Vishtaspa", "Goshtasp", "Gushtasp", "Vishtasp", "Hystaspes"],
+      "transliterations": { "Avestan": "Kauui Vīštāspa", "etymology": "From vi- and aspa, 'horse' — 'with horses at the ready'. Kavi is a title of the princes of the Kayanian line, not part of the name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The prince whom the Gathas celebrate as Zoroaster's patron and as the establisher of the first Zoroastrian community. He is the protector who made the preaching possible.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Gathas celebrate Kavi Vishtaspa as the prince patron of Zoroaster and the establisher of the first Zoroastrian community, and Vishtasp was the princely protector and patron of Zoroaster." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "Jamasp, a nobleman at his court, and Frashaoshtra are named in the Gathas as members of that court and of the Hvogva clan.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jamasp was a nobleman at Vishtasp's court, and named members of the Hvogva clan are Jamaspa and Frashaoshtra, two members of Vishtasp's court, named at Yasna 51.17-18." } ] } ],
+    "domains": [
+      { "sphereId": "patronage-of-religion", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vishtaspa as the prince patron of Zoroaster and establisher of the first Zoroastrian community." } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kavi Vishtaspa as a prince with a court." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "zoroastrian_zarathustra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vishtaspa as the prince patron of Zoroaster." } ],
+        "notes": "Reciprocal of the edge on the prophet's record." },
+      { "kind": "overlord-of", "personId": "zoroastrian_jamasp",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jamasp was a nobleman at Vishtasp's court." } ], "notes": "Non-symmetric; the court relation, not a friendship." },
+      { "kind": "overlord-of", "personId": "zoroastrian_frashaoshtra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jamaspa and Frashaoshtra are two members of Vishtasp's court, named at Yasna 51.17-18." } ], "notes": "Same." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kavi Vishtaspa is the princely patron of Zarathustra, celebrated in the Gathas as the establisher of the first Zoroastrian community, with Jamasp and Frashaoshtra at his court.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vishtaspa, of Goshtasp, and of the Gathic references to his court." } ], "weight": "high" } ],
+    "notes": "He is not identified here with Hystaspes the father of Darius, and the alt-name list carries 'Hystaspes' only as the Greek form of the same theophoric name, not as an identification. The equation is an old and much-argued proposal and it is one of the pivots of the dating question; asserting it would smuggle in a date for Zarathustra through the back door. In the later Persian tradition he is Goshtasp of the Shahnameh, which is the same figure carried forward under a Middle Persian form."
+  },
+  {
+    "id": "zoroastrian_jamasp",
+    "name": { "primary": "Jamasp", "alt": ["Jamaspa", "Jamaspa Hvogva", "Djamasp"],
+      "transliterations": { "Avestan": "Jāmāspa", "etymology": "The -aspa element again, 'horse', which runs through the whole Gathic onomasticon — Vishtaspa, Jamaspa, Frashaoshtra, and the prophet's own name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "A nobleman at Vishtaspa's court, of the Hvogva clan, named in the Gathas — the oldest hymns of Zoroastrianism and the ones believed to be Zoroaster's own composition.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jamasp was a nobleman at Vishtasp's court, and both Vishtasp and Jamasp are figures mentioned in the Gathas, the oldest hymns of Zoroastrianism and believed to have been composed by Zoroaster. Named members of the Hvogva clan are Jamaspa and Frashaoshtra, at Yasna 51.17-18." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "In Yasna 53 he marries the prophet's daughter Pouruchista, with the prophet officiating.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Yasna 53, Gatha 5, Zoroaster is the celebrant priest at the marriage of his daughter Pouruchista to Jamaspa Hvogva." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 2,
+        "startEvent": "The later tradition makes him a sage and an interpreter of prophecy; the Middle Persian Jamasp Namag, the Book of Jamasp, is an apocalyptic text framed as his answers.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Jamasp Namag, a Middle Persian text attributed to Jamasp." } ] } ],
+    "domains": [
+      { "sphereId": "counsel-and-wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jamasp as a nobleman and counsellor at Vishtaspa's court and of the apocalyptic Jamasp Namag attributed to him." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "zoroastrian_pouruchista",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage of Pouruchista to Jamaspa Hvogva in Yasna 53." } ],
+        "notes": "Reciprocated in-batch." },
+      { "kind": "kinsman-of", "personId": "zoroastrian_frashaoshtra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: named members of this clan are Jamaspa and Frashaoshtra, two members of Vishtasp's court." } ],
+        "notes": "The kind is 'kinsman' and not 'sibling' on purpose. The tradition generally makes them brothers, and the source consulted here states only that both are named members of the Hvogva clan. Clan membership is what the citation supports, so clan membership is what the edge says." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Jamasp of the Hvogva clan is a nobleman at Kavi Vishtaspa's court, named in the Gathas, who marries Zarathustra's daughter Pouruchista in Yasna 53.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jamasp, of the Hvogva clan and of Yasna 53." } ], "weight": "high" } ],
+    "notes": "One of the very small number of people named in the Gathas, which is to say one of the very small number of human beings the oldest layer of this religion mentions at all. That the registry held none of them, in a tradition it held thirty-three records for, is the shape of the gap this lane addresses."
+  },
+  {
+    "id": "zoroastrian_frashaoshtra",
+    "name": { "primary": "Frashaoshtra", "alt": ["Frashaoshtra Hvogva", "Frashoshtar"],
+      "transliterations": { "Avestan": "Frašaoštra", "etymology": "Again -uštra, 'camel', with a first element read as 'forward, onward'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "A member of the Hvogva clan and of Kavi Vishtaspa's court, named with Jamasp in the Gathas at Yasna 51.17-18.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: named members of this clan are Jamaspa and Frashaoshtra, Yasna 51.17-18, Gatha 3, two members of Vishtasp's court." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "kinsman-of", "personId": "zoroastrian_jamasp",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Jamaspa and Frashaoshtra as members of the same clan and court." } ],
+        "notes": "Same caution as on the other side of this edge: clan, because clan is what the source says." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Frashaoshtra of the Hvogva clan is named in the Gathas at Yasna 51.17-18 as a member of Kavi Vishtaspa's court alongside Jamasp.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Gathic references to the Hvogva clan." } ], "weight": "medium" } ],
+    "notes": "The domains array is empty because a man named twice in a hymn has no recorded sphere. The tradition makes him the father of Hvovi, the prophet's wife — that is not in the source consulted here, and it is why Hvovi is a BLOCKED row in the census rather than a record with a father attached to her."
+  },
+  {
+    "id": "zoroastrian_pouruchista",
+    "name": { "primary": "Pouruchista", "alt": ["Pouruchista Haechataspana", "Porucist"],
+      "transliterations": { "Avestan": "Pourucištā", "etymology": "'Full of insight' or 'much-instructed', from pouru-, 'much', and a root for perceiving." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["zoroastrian_zarathustra"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The daughter of Zarathustra. Her marriage to Jamaspa of the Hvogva clan is the subject of Yasna 53, the fifth and last Gatha, at which her father is the celebrant priest.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Yasna 53, Gatha 5, Zoroaster is the celebrant priest at the marriage of his daughter, Pouruchista, to Jamaspa Hvogva." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "zoroastrian_jamasp",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage in Yasna 53." } ],
+        "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Pouruchista is the daughter of Zarathustra, married to Jamaspa Hvogva in Yasna 53 with her father officiating.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Pouruchista and of Yasna 53." } ], "weight": "high" } ],
+    "notes": "The last of the five Gathas is a wedding hymn for this woman, which makes her one of the very few individuals the oldest Zoroastrian scripture addresses directly. The domains array is empty because the text gives her an occasion and not an office."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE CREATION
+================================================================================
+
+The registry held Ahura Mazda and Angra Mainyu and nothing either of them made.
+Five records: the first man, the first couple, the sole-created ox, and — at the
+end, with its heterodoxy stated — Time.
+
+```json
+[
+  {
+    "id": "zoroastrian_gayomart",
+    "name": { "primary": "Gayomart", "alt": ["Gayomard", "Gayōmart", "Gayumars", "Keyumars", "Gaya Maretan"],
+      "transliterations": { "Avestan": "Gaya Marətan", "etymology": "'Mortal life' — gaya, 'life', and marətan, 'mortal'. The name is the condition." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The first man and the progenitor of mankind; a primordial giant. Ahura Mazda created him incarnate — white and brilliant, shining like the sun — and put in him and in the primeval ox, alone of all created things, a seed whose origin was in fire.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in later Zoroastrian creation literature Gayomart is the first man and the progenitor of mankind, a primordial giant from whom mankind descends; Ahura Mazda created Gayomart incarnate, white and brilliant, shining like the sun, and put in him and the primeval ox, alone of all created things, a seed whose origin was in fire." } ] },
+      { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "His spirit, with that of the primeval ox, lived three thousand years through the period in which creation was still only spiritual.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gayomart's spirit, with that of the primeval ox, lived for 3,000 years during the period in which creation was only spiritual." } ] },
+      { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 2,
+        "startEvent": "His mere existence immobilised Ahriman, who wanted to invade creation. After thirty years of attack, Ahriman destroyed him. His body became the metals and minerals of the earth, and from his seed the first human couple were born; from his bones grew a rhubarb plant.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: his mere existence immobilized Ahriman, the evil spirit who wanted to invade creation, and after 30 years of attacks Ahriman destroyed Gayomart; after his death his body is said to have been transformed into the metals and minerals of the earth, from whose seeds the first human couple, Masia and Masyana, were born, and this couple is the origin of the human race; when Gayomard died, from his bones grew a rhubarb plant." } ] } ],
+    "domains": [
+      { "sphereId": "first-man-and-progenitor", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gayomart as the first man and progenitor of mankind." } ] },
+      { "sphereId": "metals-and-minerals", "contextTag": "posthumous", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: his body was transformed into the metals and minerals of the earth." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "zoroastrian_angra_mainyu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: his mere existence immobilized Ahriman, and after 30 years of attacks Ahriman destroyed Gayomart." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Angra Mainyu record. The registry held the destroyer and not the thing destroyed, which is this programme's recurring finding in its exact canonical form." },
+      { "kind": "companion", "personId": "zoroastrian_gavaevodata",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gayomart's spirit, with that of the primeval ox, lived for 3,000 years during the spiritual creation, and in the Avesta Gayomart is often accompanied by the sole-created Ox." } ],
+        "notes": "Reciprocated in-batch. The two are made together, hold the same fire-seed, wait out the same three thousand years and are killed by the same enemy; they are the pair on which the animal and human worlds both start." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gayomart is the first man of the Zoroastrian creation, made shining and white by Ahura Mazda, killed by Ahriman after thirty years, whose body became the metals of the earth and whose seed produced the first human couple.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gayomart, of the Bundahishn creation account and of Keyumars in the Persian tradition." } ], "weight": "high" } ],
+    "notes": "The Persian epic tradition carries him forward as Keyumars, the first king, which is a different office from the one the Bundahishn gives him; both names are on this record and the difference is noted rather than merged away. The 'first man killed by the adversary, whose body becomes the world and whose seed becomes humanity' pattern is one of the most widely paralleled in Indo-Iranian material, and the registry held neither this instance of it nor the Iranian creation at all."
+  },
+  {
+    "id": "zoroastrian_mashya",
+    "name": { "primary": "Mashya", "alt": ["Masia", "Mashye", "Mahlia"],
+      "transliterations": { "Avestan": "Mašya", "etymology": "From the same root as Gayomart's second element: 'mortal'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["zoroastrian_gayomart"], "parentRoles": ["progenitor"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The first man of the human race proper, born with Mashyana out of the seed of the dead Gayomart. The pair are the origin of the human race.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: after Gayomart's death his body was transformed into the metals and minerals of the earth, from whose seeds the first human couple, Masia and Masyana, were born, and this couple is said to be the origin of the human race." } ] } ],
+    "domains": [
+      { "sphereId": "first-human-couple", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Masia and Masyana as the first human couple and the origin of the human race." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "zoroastrian_mashyana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Masia and Masyana as the first human couple." } ],
+        "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mashya is the first man of the human race in the Zoroastrian creation, born with Mashyana from the seed of the dead Gayomart.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Zoroastrian creation account and of Masia and Masyana." } ], "weight": "high" } ],
+    "notes": "Recorded as a separate record from Mashyana and not as a pair, because they are two people with two names, and the registry's unit is the person. Their descent is entered in parentIds because the source states it as descent — the couple grow from the seed of the dead first man — and this is the one place in the batch where a parentage is asserted on a non-sexual origin."
+  },
+  {
+    "id": "zoroastrian_mashyana",
+    "name": { "primary": "Mashyana", "alt": ["Masyana", "Mashyane", "Mashyanag"],
+      "transliterations": { "Avestan": "Mašyānī", "etymology": "The feminine of the same word: 'mortal woman'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["zoroastrian_gayomart"], "parentRoles": ["progenitor"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The first woman, born with Mashya out of the seed of the dead Gayomart; with him the origin of the human race.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the first human couple, Masia and Masyana, were born from the seeds of Gayomart's transformed body, and this couple is said to be the origin of the human race." } ] } ],
+    "domains": [
+      { "sphereId": "first-human-couple", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Masia and Masyana as the first human couple." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "zoroastrian_mashya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Masia and Masyana as the first human couple." } ],
+        "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mashyana is the first woman of the Zoroastrian creation, born with Mashya from the seed of the dead Gayomart.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Zoroastrian creation account and of Masia and Masyana." } ], "weight": "high" } ],
+    "notes": "The Bundahishn's account of what the couple do next — the lie they tell, the demons they sacrifice to, the long delay before they have children — is not written here, because the treatment consulted gives their origin and not the sequel. A record that stops where its citation stops is the point of this programme."
+  },
+  {
+    "id": "zoroastrian_gavaevodata",
+    "name": { "primary": "Gavaevodata", "alt": ["Gav-aevo-data", "the Sole-created Ox", "the Primeval Ox", "Gaw i ewdad"],
+      "transliterations": { "Avestan": "Gauuaēuuō.dāta", "etymology": "'The uniquely created ox' — gav, 'ox, cow', with aeuua-, 'one, sole', and data-, 'created'. The name is a description of its singularity." } },
+    "type": "numen", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "unspecified", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The sole-created ox, made by Ahura Mazda alongside Gayomart. It and the first man alone of all created things were given a seed whose origin was in fire, and the spirits of the two lived three thousand years through the spiritual creation.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ahura Mazda put in Gayomart and the primeval ox, alone of all created things, a seed whose origin was in fire; Gayomart's spirit, with that of the primeval ox, lived for 3,000 years during the period in which creation was only spiritual; and in the Avesta Gayomart is often accompanied by the sole-created Ox." } ] } ],
+    "domains": [
+      { "sphereId": "origin-of-animal-life", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sole-created Ox as the single animal of the first creation, made with the first man." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "zoroastrian_gayomart",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sole-created Ox accompanying Gayomart in the Avesta." } ],
+        "notes": "Reciprocal of the edge on the Gayomart record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gavaevodata is the sole-created ox of the Zoroastrian creation, made with Gayomart, sharing the fire-seed and the three thousand years of spiritual creation.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the primeval ox and of the Zoroastrian creation account." } ], "weight": "high" } ],
+    "notes": "An animal, and ingested where four Norse horses and a Slavic horse were rejected — because the ground for rejecting those was that they were identified only by a name and an owner. This one is a singular created being with a name, a role in the cosmogony, its own three thousand years and its own death, and it is the source of animal life. Sex is unspecified because the Avestan is a neuter formation and the tradition itself varies between an ox and a cow. Type is 'numen' rather than 'mortal' because it is a made being of the first creation rather than a member of a species, there being no species yet."
+  },
+  {
+    "id": "zoroastrian_zurvan",
+    "name": { "primary": "Zurvan", "alt": ["Zurwan", "Zruwan", "Zaman", "Zurvan Akarana"],
+      "transliterations": { "Avestan": "Zruuan-", "etymology": "'Time'. Zurvan Akarana is 'Boundless Time', the epithet under which the doctrine is usually named." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Time, postulated as a third entity prior to the dualism: in the Zurvanite doctrine Zurvan generates both Ohrmazd and Ahriman, which resolves the problem of how an all-good creator comes to have an adversary at all.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Zurwanite credo postulated the existence of a third entity, Zurwan, who generated both Ohrmazd and Ahriman." } ] } ],
+    "domains": [
+      { "sphereId": "time", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zurvan as Time, the third entity of the Zurvanite doctrine." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "progenitor-of-in-zurvanite-doctrine", "personId": "zoroastrian_ahura_mazda",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Zurwanite credo postulated Zurwan as a third entity who generated both Ohrmazd and Ahriman." } ],
+        "notes": "The kind names the doctrine inside itself, because the claim is true only within it. Orthodox Zoroastrianism does not accept that Ahura Mazda was generated by anything, and writing a plain 'father-of' edge here would enter a sectarian position as though it were the tradition's own. Nothing is entered in anyone's parentIds for the same reason." },
+      { "kind": "progenitor-of-in-zurvanite-doctrine", "personId": "zoroastrian_angra_mainyu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Zurwanite doctrine that Zurwan generated both Ohrmazd and Ahriman." } ],
+        "notes": "The other half of the doctrine, and the half that gives it its point." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zurvan is Time, postulated in the Zurvanite doctrine as a third entity who generated both Ohrmazd and Ahriman.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zurvan, of Zurvanism and of the Gayomarthiya." } ], "weight": "medium" } ],
+    "notes": "TRADITION-KEY NOTE, raised rather than resolved. The corpus already holds a record keyed `sogdian_zurvan`. This record is not a duplicate of it and is not merged with it, on a precedent the corpus itself sets: it holds `zoroastrian_mithra` and `roman_mithraic_mysteries_mithras` as two records, because a divine name inside two religious systems is two figures for a registry that indexes traditions. Zurvan in Sasanian Zurvanism and Zurvan in Sogdian religion stand in the same relation. Whether that precedent is the right general rule is a question for the owner and it is now raised for the seventh lane running; what this record does not do is decide it by quietly merging, which would be destructive and irreversible. Weight is medium because Zurvanism is known largely through hostile Armenian, Syriac and Greek reports rather than through its own surviving literature."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE DAEVAS
+================================================================================
+
+The registry held all six Amesha Spentas and none of the six arch-daevas the
+Vendidad sets against them, one to one. In a dualist religion that is not a
+gap in the margins; it is half the system.
+
+A textual contradiction is carried rather than smoothed: the enumerations of the
+six do not agree. One list gives Aka Manah, Indra, Saurva, Nanghaithya, Taurvi
+and Zairich; another substitutes Nasu. Both readings are recorded on the
+records they affect, and Nasu is ingested on his own footing.
+
+```json
+[
+  {
+    "id": "zoroastrian_aka_manah",
+    "name": { "primary": "Aka Manah", "alt": ["Akoman", "Akem Manah", "Akvan"],
+      "transliterations": { "Avestan": "Akəm Manah", "etymology": "'Evil thought' — the exact negative of Vohu Manah, 'good thought'. The pair is one phrase with one word changed." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva of evil thought, set against Vohu Manah of good thought. The six arch-daevas of Vendidad 10.9 and 19.43 are the opposites of the six Amesha Spentas, each moral principle opposed by its immoral counterpart.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the arch-daevas mentioned in Vendidad 10.9 and 19.43 are identified as the opposites of the Amesha Spentas, with the moral principles represented by each Amesha Spenta opposed by immoral principles; Akoman of 'evil thought' opposes Wahman or Bahman of 'good thought'." } ] } ],
+    "domains": [
+      { "sphereId": "evil-thought", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Akoman as the daeva of evil thought." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_vohu_manah",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Akoman of 'evil thought' opposes Wahman of 'good thought'." } ],
+        "notes": "Non-symmetric by construction, so nothing is written onto the pre-existing Amesha Spenta record. The corpus held Vohu Manah with eight relations and not the one being he is defined against." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aka Manah is the arch-daeva of evil thought, the Vendidad's opposite of the Amesha Spenta Vohu Manah.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture and of the Vendidad's arch-daeva lists." } ], "weight": "high" } ],
+    "notes": "Some enumerations of the six substitute Nasu for this figure. The variation is recorded here and on the Nasu record rather than being resolved, because the texts do not resolve it."
+  },
+  {
+    "id": "zoroastrian_indra_daeva",
+    "name": { "primary": "Indra (the daeva)", "alt": ["Indar", "Andar"],
+      "transliterations": { "Avestan": "Iṇdra", "etymology": "The same name as the Vedic god, which is the point of it: several of the arch-daevas carry names that are gods on the Indian side of the Indo-Iranian split." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva who freezes the minds of the righteous, set against Asha Vahishta of best truth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Indar, that freezes the minds of the righteous, opposes Ardawahisht of 'best truth'; and of the six daevas opposing the Amesha Spentas, three have Vedic equivalents — Indra, Sarva and Nanghaithya." } ] } ],
+    "domains": [
+      { "sphereId": "apostasy-and-frozen-thought", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Indar as the daeva who freezes the minds of the righteous." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_asha_vahishta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Indar opposes Ardawahisht of 'best truth'." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Indra is one of the six arch-daevas of the Vendidad, who freezes the minds of the righteous and is set against Asha Vahishta, and one of the three whose names have Vedic equivalents.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture and of their Vedic correspondences." } ], "weight": "high" } ],
+    "notes": "The id is `zoroastrian_indra_daeva` and not `zoroastrian_indra`, and the primary name carries the qualifier, because the corpus already holds `hindu_indra` and a bare match would be read as the same figure. IT IS NOT THE SAME FIGURE, and the census records the sweep hit as a FALSE one. What is true, and is worth having in a registry that indexes traditions side by side, is that this name is a god on one side of the Indo-Iranian religious split and a demon on the other — together with Saurva and Nanghaithya, which makes three of the six arch-daevas Vedic gods in origin. That inversion is a fact about the two traditions, not a relation between two individuals, so it is stated here and no cross-tradition edge is drawn."
+  },
+  {
+    "id": "zoroastrian_saurva",
+    "name": { "primary": "Saurva", "alt": ["Sawar", "Sarvar", "Sarva", "Sauru"],
+      "transliterations": { "Avestan": "Sauruua", "etymology": "Corresponds to the Vedic Sarva, an epithet of Rudra; the second of the three arch-daevas with Vedic equivalents." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva of oppression and misrule, set against Khshathra Vairya of desirable dominion — the Amesha Spenta of the good rule that this daeva is the tyranny of.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sawar or Sarvar of oppression opposes Shahrewar of 'desirable dominion'; of the six daevas opposing the Amesha Spentas, three have Vedic equivalents — Indra, Sarva and Nanghaithya." } ] } ],
+    "domains": [
+      { "sphereId": "oppression-and-misrule", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sawar as the daeva of oppression." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_khshathra_vairya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sawar of oppression opposes Shahrewar of 'desirable dominion'." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Saurva is the arch-daeva of oppression, set against the Amesha Spenta Khshathra Vairya of desirable dominion.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture." } ], "weight": "high" } ],
+    "notes": "The pairing is the sharpest of the six as a piece of political theology: the Amesha Spenta is not 'rule' but *desirable* rule, and the daeva opposite him is what rule is when it is not that."
+  },
+  {
+    "id": "zoroastrian_nanghaithya",
+    "name": { "primary": "Nanghaithya", "alt": ["Nanghait", "Naonhaithya", "Nasatya"],
+      "transliterations": { "Avestan": "Nāŋhaiθiia", "etymology": "Corresponds to the Vedic Nasatya, a name of the Ashvins; the third of the three arch-daevas with Vedic equivalents." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva of discontent, set against Spenta Armaiti of holy devotion.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nanghait of discontent opposes Spendarmad of 'holy devotion'; three of the six daevas have Vedic equivalents — Indra, Sarva and Nanghaithya." } ] } ],
+    "domains": [
+      { "sphereId": "discontent", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanghait as the daeva of discontent." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_spenta_armaiti",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nanghait of discontent opposes Spendarmad of 'holy devotion'." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nanghaithya is the arch-daeva of discontent, set against the Amesha Spenta Spenta Armaiti of holy devotion, and corresponds in name to the Vedic Nasatya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture and of their Vedic correspondences." } ], "weight": "high" } ],
+    "notes": "No cross-tradition edge is drawn to the Ashvins. The name correspondence is a fact about Indo-Iranian religious history and not a relation between two beings, and this programme does not turn philology into edges."
+  },
+  {
+    "id": "zoroastrian_taurvi",
+    "name": { "primary": "Taurvi", "alt": ["Tauriz", "Tawrich", "Tarev", "Tauru"],
+      "transliterations": { "Avestan": "Tauruui", "etymology": "From a root for overcoming or destroying." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva of destruction, set against Haurvatat of wholeness. Taurvi and Zairich are the pair at the end of the list, matching the pair of Amesha Spentas — wholeness and immortality — that are always named together.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tauriz or Tawrich of destruction opposes Hordad of 'wholeness'; the six daevas opposing the Amesha Spentas include Tauru, Zairi and Nasu." } ] } ],
+    "domains": [
+      { "sphereId": "destruction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tawrich as the daeva of destruction." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_haurvatat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tawrich of destruction opposes Hordad of 'wholeness'." } ], "notes": "Non-symmetric." },
+      { "kind": "counterpart-of", "personId": "zoroastrian_zairich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment listing Tauru and Zairi together among the daevas opposing the Amesha Spentas." } ],
+        "notes": "Reciprocated in-batch. The two are named as a pair in the lists exactly as Haurvatat and Ameretat are, which is why they are recorded as a pair here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Taurvi is the arch-daeva of destruction, set against the Amesha Spenta Haurvatat of wholeness, and named in the lists alongside Zairich.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture." } ], "weight": "high" } ],
+    "notes": "Wholeness and immortality — Haurvatat and Ameretat — are the pair of Amesha Spentas that the Avesta never separates, and the two daevas set against them are named as a pair in the same way. The corpus held both halves of the good pair and neither half of the bad one."
+  },
+  {
+    "id": "zoroastrian_zairich",
+    "name": { "primary": "Zairich", "alt": ["Zarich", "Zairi", "Zaricha", "Zaresh"],
+      "transliterations": { "Avestan": "Zairi", "etymology": "From zairi-, 'yellow, sallow' — the colour of poison and of sickness, and the same word that describes Bushyasta." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The arch-daeva of poison, set against Ameretat of immortality — the exact inversion, poison being what makes a thing not immortal.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zarich of poison opposes Amurdad of 'immortality'; the six daevas opposing the Amesha Spentas include Tauru, Zairi and Nasu." } ] } ],
+    "domains": [
+      { "sphereId": "poison", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zarich as the daeva of poison." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "opposes", "personId": "zoroastrian_ameretat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zarich of poison opposes Amurdad of 'immortality'." } ], "notes": "Non-symmetric." },
+      { "kind": "counterpart-of", "personId": "zoroastrian_taurvi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment listing Tauru and Zairi together among the daevas opposing the Amesha Spentas." } ],
+        "notes": "Reciprocal of the edge on the Taurvi record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zairich is the arch-daeva of poison, set against the Amesha Spenta Ameretat of immortality, and named in the lists alongside Taurvi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the daevas in Zoroastrian scripture." } ], "weight": "high" } ],
+    "notes": "Ameretat is the Amesha Spenta of plants as well as of immortality, which is why the daeva against her is specifically poison and not simply death; the opposition is at the level of what a plant is for."
+  },
+  {
+    "id": "zoroastrian_aeshma",
+    "name": { "primary": "Aeshma", "alt": ["Aesma", "Eshm", "Khashm", "Aeshma Daeva"],
+      "transliterations": { "Avestan": "Aēšma", "etymology": "The word means 'wrath'. The name is the thing." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The demon of wrath, and one of the most prominent daevas of the earlier texts. He carries a bloody spear, which makes explicit the connection between the daevas in general and this one in particular with violence and destruction.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeshma is the Younger Avestan name of Zoroastrianism's demon of 'wrath'; the name means 'wrath' and he carries a bloody spear, emphasizing the strong connection between daevas in general and this one in particular with violence and destruction; Aeshma, the demon of wrath, is one of the most prominent daevas in the earlier texts." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "In the larger theological narrative he is, at the end, devoured by the daeva Az — wrath overcome by a greater, self-consuming evil.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeshma is uniquely positioned to be, in the end, devoured by the daeva Az (avarice, greed), an expression of the destructive power of wrath being overcome by a greater, self-consuming evil." } ] } ],
+    "domains": [
+      { "sphereId": "wrath", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aeshma as the demon whose name means wrath." } ] },
+      { "sphereId": "violence", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the bloody spear and of Aeshma's connection with violence and destruction." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "devoured-by", "personId": "zoroastrian_az",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeshma is, in the end, devoured by the daeva Az." } ],
+        "notes": "Reciprocated in-batch by Az's devourer-of edge. The most interesting relation in the daeva material: the evil side is not a hierarchy but a thing that eats itself." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aeshma is the Zoroastrian demon of wrath, carrying a bloody spear, the most prominent daeva of the older texts, and devoured at the end by the daeva Az.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Aeshma and of the daevas in Zoroastrian scripture." } ], "weight": "high" } ],
+    "notes": "CROSS-TRADITION NOTE, stated and not drawn as an edge. The corpus already holds `jewish_ashmedai`, Asmodeus, and Aeshma is generally taken to stand behind that figure: the Asmodeus of the Book of Tobit, who kills the seven husbands of Sarah before Raphael defeats him, carries strikingly similar themes to the Avestan demon of wrath. This registry held the receiving end of that transmission and not the sending end, which is a new variety of the fault this programme keeps finding — the tradition that borrowed was in the corpus and the tradition that lent was not. No `equated-with` edge is written, because the treatment consulted describes similar themes and a likely derivation rather than an identity, and because that kind is symmetric and would rewrite a record in another tradition on the strength of a scholarly reading."
+  },
+  {
+    "id": "zoroastrian_az",
+    "name": { "primary": "Az", "alt": ["Az", "Azi", "Ahz"],
+      "transliterations": { "Avestan": "Āzi", "etymology": "'Greed, avarice, concupiscence'. Not to be confused with aži, 'serpent', the first element of Azhi Dahaka." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The daeva of avarice and greed, who in the larger theological narrative devours Aeshma himself at the end — the destructive power of wrath overcome by a greater, self-consuming evil.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeshma is uniquely positioned to be, in the end, devoured by the daeva Az (avarice, greed), an expression of the destructive power of wrath being overcome by a greater, self-consuming evil." } ] } ],
+    "domains": [
+      { "sphereId": "greed-and-avarice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Az as the daeva of avarice and greed." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "devourer-of", "personId": "zoroastrian_aeshma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Az devouring Aeshma at the end." } ],
+        "notes": "Reciprocal of the edge on the Aeshma record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Az is the Zoroastrian daeva of greed and avarice, who devours the demon of wrath at the end.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Az and of the daevas in Zoroastrian scripture." } ], "weight": "medium" } ],
+    "notes": "Sex is recorded as female because the Middle Persian tradition treats Az as feminine; the Avestan noun's gender is the ground for it and the treatment consulted does not state it either way, which is why the weight on this record is medium rather than high. The figure grows enormously in Manichaean use, where Az becomes a principal power — a transmission worth noting in a corpus that already holds seven Manichaean records and did not hold this one."
+  },
+  {
+    "id": "zoroastrian_apaosha",
+    "name": { "primary": "Apaosha", "alt": ["Apausha", "Aposh"],
+      "transliterations": { "Avestan": "Apaoša", "etymology": "Usually read as 'the burner-up of water' or, on another analysis, 'the one who keeps back the waters'." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The demon of drought, and Tishtrya's opponent. The two meet in the form of horses — Tishtrya proud and noble, Apaosha diseased and corrupt — and fight for the waters.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tishtrya and Apaosha take the form of horses, with Tishtrya proud and noble and Apaosha diseased and corrupt." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He wins the first encounter. Tishtrya is revived when Ahura Mazda performs a sacrifice in his honour, which gives him the strength to return and vanquish Apaosha — so the rains come because a god was worshipped.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: though Tishtrya is at first defeated, he is revived when Ahura Mazda himself performs a sacrifice in his honor, thereby granting him the strength to return to the battle and vanquish Apaosha." } ] } ],
+    "domains": [
+      { "sphereId": "drought", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Apaosha as the demon of drought who fights Tishtrya for the waters." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "defeated-by", "personId": "zoroastrian_tishtrya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tishtrya, revived by Ahura Mazda's sacrifice, returns to the battle and vanquishes Apaosha." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing record. The corpus held Tishtrya with ZERO relations — a star-yazata whose entire myth is this fight, recorded with no one to fight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Apaosha is the Zoroastrian demon of drought who meets Tishtrya in the form of a diseased horse, defeats him at first, and is vanquished after Ahura Mazda sacrifices to Tishtrya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Apaosha and of the Tishtar Yasht." } ], "weight": "high" } ],
+    "notes": "This is the cleanest single instance of the pattern this programme has found in nine traditions. `zoroastrian_tishtrya` was in the corpus with an empty relations array. His one story is a horse-fight with this demon at the sea of Vourukasha, on whose outcome the year's rain depends, and the demon was not in the corpus. The registry held a fight with one fighter in it."
+  },
+  {
+    "id": "zoroastrian_bushyasta",
+    "name": { "primary": "Bushyasta", "alt": ["Bushyansta", "Bushasp"],
+      "transliterations": { "Avestan": "Būšiiąstā", "etymology": "Connected with a root for 'being about to be' — the demon of putting off until later, whose name is the procrastination itself." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The demon of sloth and of the sleep that will not end. She is described as zairi, yellow, the colour of barren stagnation; her idleness amplifies environmental and emotional desolation and thwarts fertility and motion.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bushyasta is described as zairi (yellow), representing barren stagnation, her idleness amplifying environmental and emotional desolations, thwarting fertility and motion." } ] } ],
+    "domains": [
+      { "sphereId": "sloth-and-oversleeping", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bushyasta as the demon of sloth and eternal sleep." } ] },
+      { "sphereId": "stagnation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she is zairi, yellow, representing barren stagnation, and thwarts fertility and motion." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bushyasta is the Zoroastrian demon of sloth and unending sleep, yellow and stagnant, who thwarts fertility and motion.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bushyasta and of the daevas in Zoroastrian scripture." } ], "weight": "high" } ],
+    "notes": "The most characteristically Zoroastrian demon in the list, because the religion's central demand is on action — good thoughts, good words, good deeds — and the thing that opposes a religion of action is not wickedness but lying in bed. She has no relation recorded, and carries a solitary verdict; she is not part of the arch-daeva scheme and no source consulted attaches her to another figure."
+  },
+  {
+    "id": "zoroastrian_nasu",
+    "name": { "primary": "Nasu", "alt": ["Nasush", "Druj Nasu", "the Corpse Demon"],
+      "transliterations": { "Avestan": "Nasu", "etymology": "'Corpse, dead matter'. Druj Nasu is 'the Lie of the corpse'." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The demon of corpse-pollution, and in one of the two enumerations of the arch-daevas one of the six set against the Amesha Spentas — where the other list gives Aka Manah in that place.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the six daevas that oppose the six Amesha Spentas include Tauru, Zairi and Nasu, along with three other daevas that do have Vedic equivalents — Indra, Sarva and Nanghaithya." } ] } ],
+    "domains": [
+      { "sphereId": "corpse-pollution", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nasu among the daevas of Zoroastrian scripture." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "named-among-the-arch-daevas-with", "personId": "zoroastrian_taurvi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the six daevas that oppose the six Amesha Spentas include Tauru, Zairi and Nasu, along with Indra, Sarva and Nanghaithya." } ],
+        "notes": "A list relation and named as one. It records that the enumeration puts these three together, which is exactly as much as the source says." },
+      { "kind": "named-among-the-arch-daevas-with", "personId": "zoroastrian_zairich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the same enumeration of the six arch-daevas." } ],
+        "notes": "The other name the list pairs him with." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nasu is the Zoroastrian demon of dead matter, counted in one enumeration among the six arch-daevas set against the Amesha Spentas.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the daevas in Zoroastrian scripture." } ], "weight": "medium" } ],
+    "notes": "This record exists to carry a contradiction rather than to hide it: the lists of the six arch-daevas do not agree, and the treatment consulted gives an enumeration with Nasu in it where the enumeration quoted on the Aka Manah record does not have him. No Amesha Spenta is named as his opposite in that list, so no `opposes` edge is drawn — writing one would mean picking the slot, and the source does not supply it. Weight is medium accordingly. The Vendidad's elaborate rules about corpse-bearing and the dog's gaze, which are the practical content of this demon, are not written here because the treatment consulted names him in a list and does not describe the rite."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. FOUR YAZATAS
+================================================================================
+
+The corpus held nine yazatas. Two of the four here are substantial: Ashi, who
+has one of the twenty-one Yashts to herself, and Daena, who is the figure the
+soul meets at the Chinvat Bridge and who completes a judgment scene the corpus
+already held three quarters of. Two are short, and are short on purpose.
+
+```json
+[
+  {
+    "id": "zoroastrian_ashi",
+    "name": { "primary": "Ashi", "alt": ["Ashi Vanghuhi", "Ashi Vanguhi", "Ard", "Arshishvang"],
+      "transliterations": { "Avestan": "Aši Vaŋuhī", "etymology": "An Avestan feminine noun meaning 'thing attained, reward, share, portion, recompense'. Vanghuhi is 'good'." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The divinity of recompense and of capricious luck: the personification of the reward, spiritual and material, that righteous conduct and adherence to asha attract.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ashi is a Zoroastrian divinity representing recompense and capricious luck, an Avestan feminine noun denoting 'thing attained, reward, share, portion, or recompense', often personified as a goddess representing good fortune and divine recompense." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "In the Gathas the word appears seventeen times without personification; the personified goddess belongs to the later layer, and the seventeenth of the twenty-one Yashts, the Ard Yasht, is dedicated to her praise.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Ard Yasht, also called Arshishvang Yasht, is the seventeenth of the 21 Yashts, named after and dedicated to the praise of Ashi; in the Gathas, the oldest Zoroastrian scriptures attributed to Zoroaster, asi appears 17 times without personification, emphasizing it as the spiritual and material reward for righteous conduct and adherence to asa (truth and order)." } ] } ],
+    "domains": [
+      { "sphereId": "reward-and-recompense", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashi as the divinity of recompense, reward, share and portion." } ] },
+      { "sphereId": "fortune", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashi as representing capricious luck and good fortune." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Zoroastrian", "placeName": "the Avestan liturgy", "kind": "yasht-dedication", "period": "Younger Avestan onward",
+        "attestation": "The Ard Yasht, Yasht 17, one of the twenty-one", "source": "Reference treatment of the Ard Yasht.",
+        "note": "A yazata with a Yasht of her own is a yazata with a liturgical day and an established cult, which distinguishes her sharply from figures named once in a list." } ],
+    "sources": [ { "claim": "Ashi Vanghuhi is the Zoroastrian divinity of reward and fortune, unpersonified in the Gathas and the dedicatee of the seventeenth Yasht.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ashi, of the Ard Yasht and of the Yashts generally." } ], "weight": "high" } ],
+    "notes": "The record states the development rather than flattening it: seventeen Gathic occurrences of an abstract noun, and then a goddess with a hymn. That is how most of the yazatas came to exist and it is worth having visible on at least one of them. No relations are recorded — the later tradition makes her a daughter of Ahura Mazda and a sister of Sraosha, Mithra and Rashnu, and the treatment consulted does not, so she carries a solitary verdict instead of an invented family."
+  },
+  {
+    "id": "zoroastrian_daena",
+    "name": { "primary": "Daena", "alt": ["Den", "Din", "the Maiden of Conscience"],
+      "transliterations": { "Avestan": "Daēnā", "etymology": "Both 'religion' and 'conscience, inner self' — the word will not separate the two, which is the whole of the concept." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The personification of conscience and of religion: the inner spiritual self that each person shapes over a lifetime of choices.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daena is the personification of conscience and of religion, the inner spiritual self that each person shapes through a lifetime of choices." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "She meets the soul after death at the Chinvat Bridge in the form the dead person has made of her: a radiant, beautiful young woman for the righteous, a foul old hag for the wicked. She then presents the whole of that person's actions before the tribunal.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: her form manifests the sum of the deceased's deeds — a radiant, beautiful young woman for the righteous, symbolizing purity and reward, or a foul, aged hag for the wicked, embodying punishment and regret; Daena presents the entirety of the person's actions before the divine tribunal consisting of Mithra, the yazata of covenants and truth, Sraosha, the embodiment of obedience and conscience, and Rashnu, the deity of justice who holds the scales." } ] } ],
+    "domains": [
+      { "sphereId": "conscience", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daena as the personification of conscience and of religion." } ] },
+      { "sphereId": "afterlife-judgment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daena meeting the soul at the Chinvat Bridge and presenting its deeds before the tribunal." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "presents-the-soul-before", "personId": "zoroastrian_mithra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daena presents the entirety of the person's actions before the divine tribunal consisting of Mithra, the yazata of covenants and truth, Sraosha and Rashnu." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing record. The corpus held all three judges of the Chinvat tribunal and not the witness who brings the evidence." },
+      { "kind": "presents-the-soul-before", "personId": "zoroastrian_sraosha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Sraosha, the embodiment of obedience and conscience, as one of the three of the tribunal." } ], "notes": "Second of the three." },
+      { "kind": "presents-the-soul-before", "personId": "zoroastrian_rashnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Rashnu, the deity of justice who holds the scales, as one of the three of the tribunal." } ], "notes": "Third of the three, and the one holding the scales." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daena is the Zoroastrian personification of conscience and religion, who meets the soul at the Chinvat Bridge in a form made by its own deeds and presents its actions before the tribunal of Mithra, Sraosha and Rashnu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Daena and of the Chinvat Bridge." } ], "weight": "high" } ],
+    "notes": "The image on this record is the one Zoroastrian idea that has travelled furthest: a person is met after death by their own self, made beautiful or hideous by what they did, and has to look at it. The registry held the three judges and not her, which left the most-cited scene in the religion with a bench and no witness. The Chinvat Bridge itself is not ingested — it is a place, and this programme records people."
+  },
+  {
+    "id": "zoroastrian_apam_napat",
+    "name": { "primary": "Apam Napat", "alt": ["Apam Napat", "Burz", "Burz Yazad"],
+      "transliterations": { "Avestan": "Apąm Napāt", "etymology": "'Descendant of the waters', or 'grandson of the waters'. The Vedic Apam Napat carries the identical name, which makes it one of the securest Indo-Iranian survivals there is." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The yazata of the waters, and one of the Indo-Iranian yazatas — those whose names and functions are shared with the Indian side of the split rather than being Zoroastrian innovations.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Airyaman, Apam Napat and Nairyosangha are Indo-Iranian yazatas, and Apam Napat is the yazad of waters." } ] } ],
+    "domains": [
+      { "sphereId": "waters", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Apam Napat as the yazad of waters." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Apam Napat is the Zoroastrian yazata of the waters and one of the Indo-Iranian yazatas.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Indo-Iranian yazatas." } ], "weight": "medium" } ],
+    "notes": "A short record, and short deliberately. The source consulted gives a function and a classification and no narrative, and the well-known material about him — the fire in the water, the relation to the khvarenah that Azhi Dahaka's sons fail to seize from the sea — is not written here because it was not retrieved here. The record is what the citation supports. It can be filled out by a later pass that has the Yashts in front of it."
+  },
+  {
+    "id": "zoroastrian_drvaspa",
+    "name": { "primary": "Drvaspa", "alt": ["Drvasp", "Gosh", "Goshorun"],
+      "transliterations": { "Avestan": "Druuāspā", "etymology": "'She whose horses are sound', from dru-, 'firm, healthy', and aspa, 'horse'." } },
+    "type": "deity", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The yazata associated with cattle and with the health of horses, who has one of the twenty-one Yashts, the Gosh Yasht.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Drvaspa is associated with cattle, and is the dedicatee of one of the Yashts." } ] } ],
+    "domains": [
+      { "sphereId": "cattle-and-horses", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Drvaspa as associated with cattle." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Drvaspa is the Zoroastrian yazata associated with cattle and with the soundness of horses, whose name means 'she whose horses are sound'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Drvaspa among the yazatas." } ], "weight": "medium" } ],
+    "notes": "Also a short record, on the same grounds. She is ingested rather than blocked because a pastoral religion's yazata of the health of livestock is a substantive figure even at one line, and because the corpus already holds the sole-created ox this batch adds and the cattle-complaint the Gathas open with; the animal side of this tradition was thinly represented and this fills part of it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE THREE SAVIOURS
+================================================================================
+
+The registry held no eschatology whatever, in a religion whose distinctive
+contribution to the history of ideas is a history that goes somewhere and ends.
+
+```json
+[
+  {
+    "id": "zoroastrian_hushedar",
+    "name": { "primary": "Hushedar", "alt": ["Ukhshyat-ereta", "Oshedar", "Hushetar"],
+      "transliterations": { "Avestan": "Uxšiiaṯ.ərəta", "etymology": "'He who makes truth grow'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "yet to be born", "parentIds": ["zoroastrian_zarathustra"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The first of the three future saviours, one for the end of each of the last three thousand-year periods of the world. He is to be born of a maiden who conceives while bathing in the lake that preserves the seed of Zoroaster.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zoroastrian tradition envisions three future saviours, one for the end of each 1,000-year period comprising the last 3,000 years of the world — the first named Hushedar, the second Hushedarmah, and the third Saoshyant; all three will be born of maidens, conceived while their mothers bathed in a lake that miraculously preserved the seed of the prophet Zoroaster himself." } ] } ],
+    "domains": [
+      { "sphereId": "eschatological-renewal", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hushedar as the first of the three future saviours." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hushedar is the first of the three Zoroastrian future saviours, born of a maiden from the preserved seed of Zoroaster at the end of the first of the last three millennia.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Saoshyant and of the three future saviours." } ], "weight": "high" } ],
+    "notes": "vitalStatus reads 'yet to be born', which is not a value the corpus has used before and is the accurate one: the tradition does not hold that this figure has lived. Descent from Zarathustra is entered in parentIds because the tradition states it as descent — the seed is his — and the mothers are unnamed in the source, so no maternal parent is recorded."
+  },
+  {
+    "id": "zoroastrian_hushedar_mah",
+    "name": { "primary": "Hushedar-mah", "alt": ["Hushedarmah", "Ukhshyat-nemah", "Oshedarmah"],
+      "transliterations": { "Avestan": "Uxšiiaṯ.nəmah", "etymology": "'He who makes reverence grow'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "yet to be born", "parentIds": ["zoroastrian_zarathustra"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The second of the three future saviours, for the end of the second of the last three millennia, born in the same way from the same preserved seed.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the first will be named Hushedar, the second Hushedarmah, and the third Saoshyant, all three born of maidens who conceived while bathing in the lake that preserved the seed of Zoroaster." } ] } ],
+    "domains": [
+      { "sphereId": "eschatological-renewal", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hushedarmah as the second of the three future saviours." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "successor-of", "personId": "zoroastrian_hushedar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sequence of the three saviours, one for each of the last three millennia." } ],
+        "notes": "Non-symmetric and ordered, because the sequence is the substance of the scheme: they come a thousand years apart and each opens a millennium." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hushedar-mah is the second of the three Zoroastrian future saviours, born from the preserved seed of Zoroaster at the end of the second of the last three millennia.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Saoshyant and of the three future saviours." } ], "weight": "high" } ],
+    "notes": "No sibling edges are written between the three. They share a father and a lake and are separated by two thousand years, and 'sibling' in this corpus carries a household that these three do not share; the ordered successor edges say what the tradition actually asserts."
+  },
+  {
+    "id": "zoroastrian_astvat_ereta",
+    "name": { "primary": "Astvat-ereta", "alt": ["Saoshyant", "Soshyant", "Saoshyans", "Astvat-Ereta"],
+      "transliterations": { "Avestan": "Astuuaṯ.ərəta", "etymology": "'He who embodies truth' — literally 'he who makes truth bony', that is, gives it a body. Saoshyant is 'the one who brings benefit'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "yet to be born", "parentIds": ["zoroastrian_zarathustra"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The last of the three saviours and the one the word Saoshyant properly names. He is born of a maiden who conceives while bathing in Lake Kansaoya, where the seed of Zarathustra is preserved through the ages, guarded by ninety-nine thousand nine hundred and ninety-nine fravashis.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the saviors are born from the seed of Zarathushtra, preserved through the ages in Lake Kansaoya, identified with present-day Lake Helmand in Seistan, protected by 99,999 fravashis or guardian spirits; Astvat-ereta is the Avestan name of the Saoshyant, the future Savior of Zoroastrianism." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "He leads humanity in the final battle against falsehood and achieves the Frashokereti: the world is made perfect and immortal, and evil and the Druj disappear.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the third will be Saoshyant, who will lead humanity in the final battle against falsehood; the Saoshyant, or Astvat-ereta, as a future saviour of the world will achieve the frasho.kereti, make the world perfect and immortal, and evil and Druj will disappear." } ] } ],
+    "domains": [
+      { "sphereId": "eschatological-renewal", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Saoshyant as the future saviour who achieves the Frashokereti." } ] },
+      { "sphereId": "final-victory-over-falsehood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: he will lead humanity in the final battle against falsehood, after which evil and Druj disappear." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "successor-of", "personId": "zoroastrian_hushedar_mah",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sequence of three saviours across the last three millennia." } ],
+        "notes": "Last of the ordered three." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Astvat-ereta, the Saoshyant, is the last of the three Zoroastrian saviours, born of a maiden from Zarathustra's seed preserved in Lake Kansaoya, who leads the final battle against falsehood and achieves the Frashokereti.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Astvat-ereta, of the Saoshyant and of the Frashokereti." } ], "weight": "high" } ],
+    "notes": "The record is filed under the Avestan personal name and carries Saoshyant as an alias, because saoshyant is in origin a common noun that the tradition uses both generally, of any benefactor, and specifically of this figure; filing under Astvat-ereta keeps the individual distinct from the class. The corpus held no part of this scheme. That is a large absence in this particular religion: a world with a datable end, a final battle, a general resurrection and a universal restoration is the thing Zoroastrianism is most often credited with having introduced, and the registry recorded none of it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE SHAHNAMEH, HELD FROM THE MIDDLE
+================================================================================
+
+The registry held Rostam, Sohrab, Zal, Rudaba, Kay Kavus, Kay Khosrow and
+Siyavash — the middle of the epic — and almost nothing that produces them or
+opposes them. Nine records: the blacksmith whose apron becomes the standard of
+Iran, the three sons whose quarrel starts the war that the rest of the book is
+about, the king of Turan who fights it, Sohrab's mother, and the three
+generations above Rostam on his father's side, one of whom is a bird.
+
+```json
+[
+  {
+    "id": "zoroastrian_kaveh",
+    "name": { "primary": "Kaveh", "alt": ["Kaveh the Blacksmith", "Kava", "Kaveh Ahangar"],
+      "transliterations": { "Persian": "کاوه آهنگر", "etymology": "Kaveh, with ahangar, 'blacksmith'. The trade is half the name and all of the meaning." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "A blacksmith of Iranian legend who leads the uprising against Zahhak, as narrated in the Shahnameh of Ferdowsi. As the symbol of the resistance he raises his leather apron on a spear.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kaveh the Blacksmith is a figure in Iranian mythology who leads an uprising against Zahak, narrated in the Shahnameh, the national epic by the 10th-century Persian poet Ferdowsi; as a symbol of resistance, he raised his leather apron on a spear." } ] } ],
+    "domains": [
+      { "sphereId": "rebellion-and-liberation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kaveh as the leader of the uprising against Zahhak." } ] },
+      { "sphereId": "smithcraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kaveh as a blacksmith whose leather apron becomes the standard." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rebelled-against", "personId": "zoroastrian_azhi_dahaka",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kaveh the Blacksmith leads an uprising against Zahak, narrated in the Shahnameh." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Azhi Dahaka record, which the corpus already holds with Zahhak as an alias." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kaveh is the blacksmith of the Shahnameh who leads the uprising against Zahhak and raises his leather apron on a spear as its standard.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kaveh the Blacksmith and of the Shahnameh." } ], "weight": "high" } ],
+    "notes": "The apron on the spear becomes the Derafsh Kaviani, the royal standard of Iran through the Sasanian period, and the story is the single best-known political image the epic produced. He is a commoner, which in a corpus of this kind is worth saying: the registry's Iranian holdings were kings, heroes and their fathers, and the one figure in the cycle who is none of those was the one it did not have."
+  },
+  {
+    "id": "zoroastrian_iraj",
+    "name": { "primary": "Iraj", "alt": ["Iraj", "Eraj", "Airyu"],
+      "transliterations": { "Persian": "ایرج", "etymology": "Connected with the ethnonym Arya, and so with the name of Iran itself; the land is named after the murdered brother." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["zoroastrian_thraetaona"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The youngest of the three sons of Fereydun, with Salm and Tur. In the Shahnameh the world is divided between the three and Iraj receives Iran; his brothers, resenting the division, kill him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tur was one of the three sons of the Iranian mythical King Fereydun, the other two sons being Salm and Iraj." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "zoroastrian_salm",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Salm, Tur and Iraj as the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "zoroastrian_tur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Salm, Tur and Iraj as the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Iraj is the youngest of the three sons of Fereydun, alongside Salm and Tur, and the one from whom Iran takes its name.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fereydun and of his three sons." } ], "weight": "high" } ],
+    "notes": "The domains array is empty because the source consulted gives him a father, two brothers and a death, and no office. His killing is the event the whole remainder of the epic runs off — it is why Iran and Turan are at war for a thousand pages — and this record states the division and the murder in the lifecycle rather than asserting which brother struck, because the treatment consulted names the three sons and does not narrate the killing. The registry held Fereydun under his Avestan name Thraetaona and none of his three sons."
+  },
+  {
+    "id": "zoroastrian_salm",
+    "name": { "primary": "Salm", "alt": ["Sarm", "Sairima"],
+      "transliterations": { "Persian": "سلم", "etymology": "From the Avestan Sairima, an ethnonym; the eldest brother is named for the western lands he is given." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["zoroastrian_thraetaona"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The eldest of Fereydun's three sons, who with Tur resents the share given to their youngest brother Iraj.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tur was one of the three sons of the Iranian mythical King Fereydun, the other two sons being Salm and Iraj." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "zoroastrian_iraj",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "zoroastrian_tur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Salm is the eldest of the three sons of Fereydun, with Tur and Iraj.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Fereydun and his three sons." } ], "weight": "high" } ],
+    "notes": "Short, because the source consulted establishes his paternity and his brothers and nothing else. The Shahnameh gives him a great deal more, and a second pass with the epic in front of it should fill this out rather than leave it."
+  },
+  {
+    "id": "zoroastrian_tur",
+    "name": { "primary": "Tur", "alt": ["Tuar", "Tura"],
+      "transliterations": { "Persian": "تور", "etymology": "From the Avestan Tura, the ethnonym behind Turan — the land of the Turanians, Iran's standing enemy in the epic, named for this brother." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["zoroastrian_thraetaona"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "One of the three sons of Fereydun, and the ancestor from whom Turan takes its name.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tur was one of the three sons of the Iranian mythical King Fereydun, the other two sons being Salm and Iraj; Tur is the son of Fereydun and the father of Afrasiab." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "zoroastrian_iraj",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "zoroastrian_salm",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Fereydun." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "ancestor-of", "personId": "zoroastrian_afrasiab",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tur is the son of Fereydun and the father of Afrasiab." } ],
+        "notes": "The kind is 'ancestor-of' and not 'father-of', and the reason is a genuine conflict in the sources: one treatment makes Tur the father of Afrasiab directly, while the Shahnameh's own genealogy puts Pashang between them. Descent is agreed; the number of generations is not. 'Ancestor' is true on both readings, and nothing is entered in Afrasiab's parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tur is one of the three sons of Fereydun and the ancestor of Afrasiab, from whom Turan takes its name.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tur, of Fereydun's three sons and of Afrasiab." } ], "weight": "high" } ],
+    "notes": "The naming pattern across the three brothers is the point of them: Iraj gives his name to Iran and Tur to Turan, so the war that fills the epic is a quarrel between two brothers that never ends, and the two nations are two sides of one family."
+  },
+  {
+    "id": "zoroastrian_afrasiab",
+    "name": { "primary": "Afrasiab", "alt": ["Afrasiyab", "Frangrasyan", "Franrasyan", "Afrasiab of Turan"],
+      "transliterations": { "Avestan": "Fraŋrasiian", "etymology": "The Avestan Frangrasyan, where he is already the Turanian enemy; Afrasiab is the Persian development of the same name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "King and hero of Turan, and the principal antagonist of the Iranians through the Shahnameh.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Afrasiab is the king and hero of Turan in Iranian legend, and is the main antagonist of the Iranians in the Persian epic Shahnameh." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "His army takes Tahmineh's castle, where Sohrab is born and raised; Afrasiab then manipulates the boy into leading the Turanian army into Iran — which is how Sohrab comes to meet his own father in the field.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Afrasiab's army takes over Tahmineh's castle, Sohrab is born and raised there showing immense talent in war, and Afrasiab manipulates Sohrab into leading the Turanian army into Iran." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afrasiab as king of Turan." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afrasiab as the main antagonist of the Iranians in the Shahnameh." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "descendant-of", "personId": "zoroastrian_tur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tur is the son of Fereydun and the father of Afrasiab." } ],
+        "notes": "Reciprocal of Tur's ancestor-of edge, and carrying the same caution about the number of generations." },
+      { "kind": "manipulated", "personId": "zoroastrian_sohrab",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Afrasiab manipulates Sohrab into leading the Turanian army into Iran." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Sohrab record. The corpus held Sohrab and Rostam — the most famous father-and-son killing in Persian literature — and not the man who arranged the meeting." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Afrasiab is the king of Turan and the chief antagonist of the Iranians in the Shahnameh, who takes Tahmineh's castle and manipulates Sohrab into leading the Turanian army into Iran.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Afrasiab, of Turan and of the Sohrab episode." } ], "weight": "high" } ],
+    "notes": "The largest single absence in the registry's Iranian holdings after the prophet. A corpus that held Kay Kavus, Kay Khosrow, Siyavash, Rostam and Sohrab held five figures whose stories are all, in different ways, about this one man, and did not hold him. He is also in the Avesta as Frangrasyan, so this is not a figure who only exists in the tenth-century epic."
+  },
+  {
+    "id": "zoroastrian_tahmineh",
+    "name": { "primary": "Tahmineh", "alt": ["Tahmina"],
+      "transliterations": { "Persian": "تهمینه", "etymology": "From the same root as Tahmuras and as Rostam's own epithet Tahamtan, 'strong-bodied'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "A princess of Samangan and the mother of Sohrab. Afrasiab's army takes her castle, and it is there that Sohrab is born and raised, showing immense talent in war.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Afrasiab's army takes over Tahmineh's castle; Sohrab is born and raised there, showing immense talent in war, and Afrasiab manipulates Sohrab into leading the Turanian army into Iran." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "zoroastrian_sohrab",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sohrab is born and raised at Tahmineh's castle." } ],
+        "notes": "Non-symmetric and recorded as a relation rather than in Sohrab's parentIds, because Sohrab's record already exists and this batch does not modify pre-existing records. The corpus holds him with his father alone." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tahmineh is the mother of Sohrab, whose castle Afrasiab's army takes and where Sohrab is raised.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tahmineh and of the Rostam and Sohrab episode." } ], "weight": "high" } ],
+    "notes": "The registry held Rostam with `parentIds` naming both Rudaba and Zal — mother and father — and held Sohrab with `parentIds` naming Rostam alone. The asymmetry is not a judgement about Tahmineh; it is what happens when a corpus grows by adding the famous name and stopping. This record supplies the missing half of it as a relation, and a later pass with permission to edit could move it into parentIds where it belongs."
+  },
+  {
+    "id": "zoroastrian_nariman",
+    "name": { "primary": "Nariman", "alt": ["Nariman", "Nairimanah"],
+      "transliterations": { "Persian": "نریمان", "etymology": "From the Avestan Nairimanah, 'of manly mind', which is also an epithet of Keresaspa — the family and the hero share a word." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The father of Sam, and so the head of the line that runs Nariman, Sam, Zal, Rostam — the four generations of the house of Sistan on which the whole heroic half of the Shahnameh rests.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sam was the son of Nariman and father to Zal, and Zal was the father of Rostam, one of the greatest heroes of the Shahnameh." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "zoroastrian_sam",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sam was the son of Nariman and father to Zal." } ],
+        "notes": "In-batch, and the descent is also carried in Sam's parentIds; the edge is here so that the head of the line is reachable from the line and not only from its second generation." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nariman is the father of Sam and the head of the Sistan line that runs to Zal and Rostam.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Sam as the son of Nariman and father of Zal." } ], "weight": "medium" } ],
+    "notes": "He is ingested on one line of citation, and the record says so by holding nothing but that line. He is here because without him the Sistan line has no head, and the registry's habit of holding a hero and not his ancestry is exactly what this lane exists to correct. The descent is carried in Sam's parentIds as well as in the edge above, which is the ordinary redundancy of this schema and not a duplication."
+  },
+  {
+    "id": "zoroastrian_sam",
+    "name": { "primary": "Sam", "alt": ["Sam Nariman", "Sama"],
+      "transliterations": { "Persian": "سام", "etymology": "From the Avestan Sama, a family name of the Sistan heroes; in the Avesta Sama Keresaspa is one figure, and in the epic the name has become an ancestor." } },
+    "type": "mortal", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["zoroastrian_nariman"], "parentRoles": ["father"],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The son of Nariman and the father of Zal. Zal was born with white hair — an albino, whose snow-white hair was taken for an ill omen — and Sam abandoned the child in the Alborz mountains to die because of it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sam was the son of Nariman and father to Zal; Zal was born with white hair, an albino whose snow-white hair was considered an ill omen, and Zal's father Sam abandoned him when he was a child because of the unusual colour of his hair, leaving him in the mountains of Alborz to die." } ] },
+      { "typeStatus": "mortal", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "A dream moves him to go back for the son he left, and he is reunited with him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Simurgh cared for the young Zal until Sam was influenced by a dream to reunite with his son." } ] } ],
+    "domains": [
+      { "sphereId": "heroic-championship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sam as the head of the Sistan heroic line between Nariman and Zal." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "zoroastrian_zal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sam was the son of Nariman and father to Zal, and abandoned him in the Alborz mountains because of the colour of his hair." } ],
+        "notes": "Non-symmetric and recorded as a relation rather than in Zal's parentIds, because Zal's record already exists — the corpus holds him with an EMPTY parentIds array — and this batch does not modify pre-existing records." },
+      { "kind": "abandoned", "personId": "zoroastrian_zal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Zal's father Sam abandoned him when he was a child because of the unusual colour of his hair, leaving him in the mountains of Alborz to die." } ],
+        "notes": "Recorded as a second, separate edge rather than folded into the first, because the abandonment is not an incident of the fatherhood in this story — it is the event the entire Sistan cycle proceeds from, and a reader following edges should meet it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sam is the son of Nariman and the father of Zal, whom he abandoned in the Alborz mountains for being born white-haired and later reclaimed after a dream.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sam, of Zal and of the Simurgh." } ], "weight": "high" } ],
+    "notes": "The registry held Zal with an empty parentIds array and held his son Rostam with both parents named. Two generations above Rostam the genealogy simply stopped, in a corpus whose whole subject is descent."
+  },
+  {
+    "id": "zoroastrian_simurgh",
+    "name": { "primary": "Simurgh", "alt": ["Simorgh", "Senmurv", "Saena", "Sinmurgh"],
+      "transliterations": { "Persian": "سیمرغ", "etymology": "From the Avestan mərəγō saēnō, 'the bird Saena', by way of Middle Persian senmurw. The Persian folk-reading as si murgh, 'thirty birds', is a pun that Attar's Conference of the Birds turns into the whole point of the poem, and it is a pun and not an etymology." } },
+    "type": "numen", "origin": "canon", "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "legendary" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "legendary", "eraOrdering": 0,
+      "startEvent": "The great bird of Iranian legend, nesting in the Alborz. She finds the abandoned infant Zal and takes him to her nest; the sources say she first considered giving him to her chicks to eat, and that compassion overtook instinct.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Simurgh found Zal and brought him to its nest, and though initially she considered giving him to her chicks to eat, compassion overtook instinct, and she raised the boy with her own children." } ] },
+      { "typeStatus": "numen", "era": "legendary", "eraOrdering": 1,
+        "startEvent": "She raises him among her own young and keeps him until Sam, moved by a dream, comes back for his son.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Simurgh cared for the young Zal until Sam was influenced by a dream to reunite with his son." } ] } ],
+    "domains": [
+      { "sphereId": "fosterage-and-protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Simurgh raising the abandoned Zal with her own children." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "foster-parent-of", "personId": "zoroastrian_zal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Simurgh found Zal, brought him to her nest and raised the boy with her own children, caring for him until Sam returned." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Zal record. Between this edge and Sam's two, the corpus's Zal — who had an empty parentIds array and two companion edges — now has the father who left him, the act of leaving, and the bird that kept him alive, all reachable from his record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Simurgh is the great bird of Iranian legend who finds the abandoned Zal in the Alborz, chooses not to feed him to her chicks, and raises him until his father returns.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Simurgh, of Zal and of the Shahnameh." } ], "weight": "high" } ],
+    "notes": "An animal, ingested on the same ground as the sole-created ox and against the same rule that rejected five named horses in earlier lanes: she has a name, a will, a moral decision, a household and a continuing role, which a horse identified by a name and an owner does not. Sex is recorded as female because the sources consulted consistently do. The later material — the feather Zal burns to call her, her instruction of Rostam in how to kill Esfandiyar — is not written here, because Esfandiyar is a BLOCKED row in this census and a record should not narrate an episode whose other party the registry does not hold."
+  }
+]
+```
