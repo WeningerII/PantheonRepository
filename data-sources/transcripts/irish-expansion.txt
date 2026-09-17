@@ -1,0 +1,903 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Irish
+Eras (registered, exact): primordial | mythic-prehistoric | heroic-age |
+  mythological-cycle | ulster-cycle | fenian-cycle | cycles-of-kings |
+  early-christian | medieval | late-medieval | modern
+Author pass: Irish held 43 records. This adds 28.
+
+================================================================================
+THE GAP
+================================================================================
+
+An 81-name check across the WHOLE registry returned 10 hits and 71 absences.
+Two of the ten hits are aliases already carried — "Setanta" on Cú Chulainn,
+"Lugaid" on Lugh — and one is false: "Net" matched `egyptian_neith`. Two names
+returned ABSENT that are in fact present, because the corpus files them with the
+definite article: **the Dagda** and **the Morrígan**. That is a property of the
+sweep tool and not of the corpus, and it is recorded here because the next lane
+to sweep this tradition will hit it too.
+
+**THE REGISTRY HAS AN ERA REGISTERED FOR THE FENIAN CYCLE AND NOT ONE FIGURE
+IN IT.**
+
+`fenian-cycle` is the sixth era in the Irish vocabulary. Nothing is filed there.
+The Fenian or Fianna Cycle is one of the four great cycles of Irish literature,
+it is the one that survived longest in living oral tradition on both sides of
+the Irish Sea, and the corpus held **no Fionn mac Cumhaill**, no **Oisín**, no
+**Oscar**, no **Diarmuid**, no **Gráinne**, no **Caoilte**, no **Niamh** and no
+**Sadhbh**.
+
+An empty registered era is the clearest possible statement that a corpus knows
+what it is missing.
+
+The rest is the same shape as every lane since 13:
+
+- **The Táin is a story about a bull and the corpus did not hold the bull.**
+  It held Medb, Ailill, Cú Chulainn, Fergus, Ferdiad and Findabair — everyone
+  who fights over **Donn Cúailnge**, the Brown Bull of Cooley — and neither him
+  nor **Finnbhennach**, the white-horned bull of Connacht that he kills at the
+  end, in a fight that reshapes the landscape of Ireland.
+- **The Morrígan without the other two.** The Morrígna are a trio — Badb, Macha
+  and the Mórrígan, daughters of Ernmas — and the corpus held Ernmas and one
+  daughter.
+- **Ériu without Banba and Fódla.** The three sovereignty goddesses meet the
+  Milesians on three mountains, each asking that the land be named after her;
+  the corpus held the one who won. Lane 14's five-of-six-idols pattern, in a
+  set of three.
+- **No Deirdre.** The most famous love story in the literature, and the corpus
+  held Conchobar, who wants her, and Fergus, who goes into exile over her, and
+  not her or **Naoise**.
+- **Dian Cécht without Miach and Airmed**, who are the reason Nuada — whom the
+  corpus holds — gets his hand back and his kingship with it.
+- **Nuada restored without Bres**, the half-Fomorian king whose tyranny in the
+  interval is what the second battle of Mag Tuired is fought to end.
+- **No Amergin**, the poet who speaks the first poem composed in Ireland.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+**The Fianna, the Tuatha Dé Danann, the Fomorians and the Fir Bolg are
+collectives.** They are peoples and war-bands, not persons. Named members are
+records; the groups are REJECT rows.
+
+**The Salmon of Knowledge is an animal that is eaten**, and the hazel nuts it
+ate are nuts. Both are REJECT rows on the rule that has held since lane 13,
+which is also why this batch does not ingest Bran and Sceolang, Fionn's hounds.
+The two BULLS are ingested, and the transcript says why on their records.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE FENIAN CYCLE, WHICH HAD AN ERA AND NO PEOPLE
+================================================================================
+
+```json
+[
+  {
+    "id": "irish_fionn",
+    "name": { "primary": "Fionn mac Cumhaill", "alt": ["Finn MacCool", "Find mac Umaill", "Fingal"],
+      "transliterations": { "Irish": "Fionn mac Cumhaill", "etymology": "Fionn is 'fair, white, bright'; mac Cumhaill is 'son of Cumhall'. The name is an adjective that became a person." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["irish_cumhall"], "parentRoles": ["father"],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "A hero of Irish mythology and of later Scottish and Manx folklore: leader of the Fianna, the bands of young roving hunter-warriors, and himself a seer and a poet. The tales of Fionn and his fian form the Fianna or Fenian Cycle, much of it narrated by his son Oisín.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fionn mac Cumhaill is a hero in Irish mythology, as well as in later Scottish and Manx folklore; he is the leader of the Fianna bands of young roving hunter-warriors, as well as being a seer and poet; the tales of Fionn and his fiann form the Fianna Cycle or Fenian Cycle, much of it narrated by Fionn's son, the poet Oisín." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "As a boy he studies with Finnegas, who has spent seven years by a pool on the Boyne waiting for the Salmon of Knowledge — a red-speckled fish that had eaten nuts from a magic hazel and held all the secrets of the world. Fionn is the one who takes the knowledge from it, and it gives him the wisdom to lead the Fianna.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fionn went to study with Finnegas, the wisest man in Ireland, who lived by a rock pool on the River Boyne and had been there seven years looking for the Salmon of Knowledge; the red-speckled fish was said to hold all secrets of the world and he who ate him would absorb all this knowledge, the salmon having devoured nuts from a magical hazel tree; one young apprentice, Fionn Mac Cumhail, would be the first to acquire knowledge from it, and this gave Fionn the wisdom and courage to become the leader of the Fianna." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 2,
+        "startEvent": "In old age he is betrothed to the princess Gráinne, who looks at the warriors at her own wedding feast, despairs at being wed to a man older than her father, and elopes with Diarmuid instead. Fionn pursues them for years, and finally kills Diarmuid by inviting him to hunt a boar he is fated never to hunt.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: The Pursuit of Diarmuid and Gráinne concerns a love triangle between the great warrior Fionn mac Cumhaill, the beautiful princess Gráinne and her paramour Diarmuid Ua Duibhne; at the wedding feast of the aging leader Finn mac Cumaill, the princess Grainne felt only despair at being wed to a man older than her father; Finn invited Diarmuid to a hunt on the slopes of Benn Gulban, knowing well that the warrior was fated never to hunt a wild boar." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 3,
+        "startEvent": "At the battle of Gabhra his grandson Oscar is killed. It makes Fionn weep for the only time in his life, and it is the final blow to the Fianna's strength.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oscar's death causes Fionn to weep for the only time in his life, and serves as the final blow to the Fianna's strength." } ] } ],
+    "domains": [
+      { "sphereId": "war-band-leadership", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fionn as leader of the Fianna." } ] },
+      { "sphereId": "prophecy-and-poetry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fionn as a seer and poet as well as a leader." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "irish_finnegas",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fionn went to study with Finnegas, the wisest man in Ireland." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "succeeded", "personId": "irish_goll",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Goll mac Morna, who led the Fianna before Fionn." } ], "notes": "In-batch and directional." },
+      { "kind": "betrothed-to", "personId": "irish_grainne",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the wedding feast at which Gráinne, betrothed to the aging Fionn, elopes with Diarmuid." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "pursued", "personId": "irish_diarmuid",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: they were pursued relentlessly by Finn's trackers, and Finn finally invited Diarmuid to the hunt on Benn Gulban." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fionn mac Cumhaill is the leader of the Fianna, seer and poet, who gains his wisdom from the Salmon of Knowledge, is betrothed to Gráinne, pursues Diarmuid, and weeps once in his life at Oscar's death.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fionn mac Cumhaill, of the Salmon of Knowledge, of the Pursuit of Diarmuid and Gráinne, and of the Battle of Gabhra." } ], "weight": "high" } ],
+    "notes": "TYPE CORRECTED UNDER TEST, and this is the THIRD LANE RUNNING. Fionn was authored 'demigod', which is how the tradition treats him; npm test rejected it as tier-classification drift, because this corpus computes the tier from DESCENT and his father Cumhall is a mortal. The same correction hit Ashwatthama in lane 16 and Shani in lane 17, in both directions. The rule is now understood and should be applied before authoring rather than after testing: in this schema `type` is a function of parentage and not a description of status, and a figure's tier is settled by who its parents are in THIS corpus. Oscar, two generations down, is a `quartigod` for the same reason. THE LARGEST SINGLE ABSENCE IN THIS TRADITION, and the registry had an era waiting for him. He is also the reason this lane exists: a corpus that files Cú Chulainn and gives the other great Irish hero an empty era is not neutral between the two cycles, it just stopped. The Giant's Causeway story, his Scottish afterlife as Fingal, and Macpherson's Ossian are not on the record, because the treatment consulted names the Scottish and Manx folklore and does not describe it."
+  },
+  {
+    "id": "irish_cumhall",
+    "name": { "primary": "Cumhall", "alt": ["Cumall", "Umall"],
+      "transliterations": { "Irish": "Cumhall", "etymology": "Also a common noun for a unit of value — a bondmaid, and by extension a measure of worth." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Fionn's father, from whom Fionn takes the patronymic mac Cumhaill, and a central figure of the Fenian Cycle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Fionn's father Cumhall, Goll mac Morna and Fionn's son Oisín as central figures of the Fenian Cycle." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Fionn's father Cumhall among the central figures of the Fenian Cycle." } ],
+        "notes": "In-batch, and also carried in Fionn's parentIds; the edge is here so that the man the patronymic names is reachable from his own record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cumhall is Fionn mac Cumhaill's father and a central figure of the Fenian Cycle.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the central figures of the Fenian Cycle." } ], "weight": "medium" } ],
+    "notes": "Short by necessity. The tradition makes him the leader of the Fianna before Goll, killed by Goll at the battle of Cnucha, which is why Fionn and Goll are what they are to each other; the treatment consulted names him as Fionn's father and a central figure and does not narrate it, so this record does not. The Goll connection is a BLOCKED census row rather than an uncited edge."
+  },
+  {
+    "id": "irish_goll",
+    "name": { "primary": "Goll mac Morna", "alt": ["Goll", "Aedh mac Morna"],
+      "transliterations": { "Irish": "Goll mac Morna", "etymology": "Goll is 'one-eyed'; the tradition says he was Aedh until he lost an eye and took the name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Leader of the Fianna before Fionn, and one of the central figures of the Fenian Cycle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Goll mac Morna led the Fianna before Fionn, and is among the central figures of the Fenian Cycle alongside Cumhall and Oisín." } ] } ],
+    "domains": [
+      { "sphereId": "war-band-leadership", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Goll mac Morna as leader of the Fianna before Fionn." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "succeeded-by", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Goll mac Morna leading the Fianna before Fionn." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Goll mac Morna led the Fianna before Fionn and is a central figure of the Fenian Cycle.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Fenian Cycle's central figures." } ], "weight": "medium" } ],
+    "notes": "That he killed Fionn's father and then served Fionn for most of a lifetime is the most interesting thing about him and is not on this record, for want of a citation; it is a BLOCKED census row. The edge that IS here — that he led the band Fionn inherits — is the one the treatment supports."
+  },
+  {
+    "id": "irish_finnegas",
+    "name": { "primary": "Finnegas", "alt": ["Finn Eces", "Finegas"],
+      "transliterations": { "Irish": "Finn Éces", "etymology": "Éces is 'poet, seer' — Finn the Poet, which makes the master and the pupil almost the same name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "The wisest man in Ireland, living by a rock pool on the River Boyne, who spent seven years there looking for the Salmon of Knowledge — and lost it, in the end, to his own apprentice.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fionn went to study with Finnegas, the wisest man in Ireland, who lived by a rock pool on the River Boyne and had been there patiently looking for the Salmon of Knowledge for seven years; one young apprentice, Fionn Mac Cumhail, would be the first to acquire knowledge from the fish." } ] } ],
+    "domains": [
+      { "sphereId": "poetry-and-learning", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Finnegas as the wisest man in Ireland and Fionn's teacher." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "teacher-of", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fionn studying with Finnegas." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Finnegas is the poet and sage of the Boyne who waited seven years for the Salmon of Knowledge and whose apprentice Fionn took its wisdom instead.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Finnegas and of the Salmon of Knowledge." } ], "weight": "high" } ],
+    "notes": "He is in this batch because the story does not work without him: the point of it is that seven years of patience are beaten by a boy burning his thumb, and a registry that held only the boy would hold half a joke. The pool is on the Boyne, which is `irish_boann` — the corpus holds the river as a goddess and now holds the man who sat beside her for seven years, though no edge is drawn, because the treatment gives a location and not a relation."
+  },
+  {
+    "id": "irish_sadhbh",
+    "name": { "primary": "Sadhbh", "alt": ["Sadb", "Saba"],
+      "transliterations": { "Irish": "Sadhbh", "etymology": "From a root meaning 'sweet, goodly'; one of the commonest women's names in medieval Ireland." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Magically transformed into a deer against her will by the Dark Man, an fear doirche.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sadhbh's tragic fate begins when she is magically transformed into a deer against her will by the Dark Man, known as an fear doirche." } ] },
+      { "typeStatus": "deity", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "She makes her way to Almhuin, Fionn's home, and is found by Fionn while he is out hunting. Their son is the boy Fionn later finds and names Oisín — 'little fawn' — after teaching him language and human ways.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sadhbh journeyed towards Fionn's home, Almhuin, and was found by Fionn himself while out hunting; Fionn brought him home, taught him language and human ways, and named him Oisín, 'little fawn'." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sadhbh found by Fionn while hunting and of their son Oisín." } ], "notes": "In-batch." },
+      { "kind": "transformed-by", "personId": "irish_fear_doirche",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sadhbh is magically transformed into a deer against her will by the Dark Man, an fear doirche." } ], "notes": "In-batch and directional." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sadhbh is the woman turned into a deer by the Dark Man, found by Fionn while hunting, and the mother of Oisín, whose name means 'little fawn'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sadhbh and of Oisín." } ], "weight": "high" } ],
+    "notes": "vitalStatus is 'transformed', a value the corpus already uses, and it is the accurate one: the story does not kill her, it takes her away in deer shape and does not bring her back. The naming is the part worth keeping — the greatest poet in the tradition is called Little Fawn by his father because of what happened to his mother."
+  },
+  {
+    "id": "irish_fear_doirche",
+    "name": { "primary": "Fear Doirche", "alt": ["an Fear Doirche", "the Dark Man", "the Dark Druid"],
+      "transliterations": { "Irish": "an Fear Doirche", "etymology": "'The dark man', literally — fear, 'man', and doirche, 'dark'. The name is a description and he may never have had another." } },
+    "type": "numen", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "unknown", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "The Dark Man, who transforms Sadhbh into a deer against her will.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sadhbh is magically transformed into a deer against her will by the Dark Man, known as an fear doirche." } ] } ],
+    "domains": [
+      { "sphereId": "malign-enchantment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Dark Man's transformation of Sadhbh." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "transformed", "personId": "irish_sadhbh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Dark Man transforming Sadhbh into a deer." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fear Doirche, the Dark Man, is the druid who transforms Sadhbh into a deer.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Sadhbh and the Dark Man." } ], "weight": "medium" } ],
+    "notes": "He has no name, only a description, and no motive the treatment supplies. That is worth a record rather than a footnote, because a corpus of figures should be able to say that the person who does the worst thing in a story is unnamed — which is a fact about the story and not a gap in the data. Type is 'numen' rather than 'mortal' because the sources do not make him a man, and vitalStatus is 'unknown' because he simply stops appearing."
+  },
+  {
+    "id": "irish_oisin",
+    "name": { "primary": "Oisín", "alt": ["Ossian", "Osheen"],
+      "transliterations": { "Irish": "Oisín", "etymology": "'Little fawn', a diminutive of os, 'deer' — the name Fionn gives him because of his mother." } },
+    "type": "demigod", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["irish_fionn", "irish_sadhbh"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Fionn's son by Sadhbh, found as a boy and named 'little fawn'; the poet who narrates much of the Fenian Cycle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the tales of Fionn and his fiann form the Fenian Cycle, much of it narrated by Fionn's son, the poet Oisín; Fionn brought him home, taught him language and human ways, and named him Oisín, 'little fawn'." } ] },
+      { "typeStatus": "demigod", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "He falls in love with Niamh, daughter of the king of Tír na nÓg, and they cross the sea on her white mare to the magical land, where they live happily for three hundred years — which is three years to him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the young Irish warrior Oisin fell in love with the flame-haired maiden Niamh, whose father was the king of Tir na nOg, and they crossed the sea on Niamh's white mare together to reach the magical land, where they lived happily for three hundred years; three years in Tír na nÓg was three hundred years back in Ireland." } ] },
+      { "typeStatus": "demigod", "era": "fenian-cycle", "eraOrdering": 2,
+        "startEvent": "Niamh warns him that if his feet touch Irish ground he can never come back. They do. He ages three hundred years in seconds — and Saint Patrick sits with him and listens to his story.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Niamh gave him one final warning, that if Oisin's feet touched the ground in Ireland, even one toe, he would never be able to get back to Tir na nOg; it was as if his body was ageing three hundred years in the space of seconds; Saint Patrick sat with Oisin and listened to his story and explained that time worked differently in Tir na nOg." } ] } ],
+    "domains": [
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oisín as the poet who narrates much of the Fenian Cycle." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_niamh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oisín and Niamh crossing the sea to Tír na nÓg and living there three hundred years." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "received-by", "personId": "irish_saint_patrick",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Saint Patrick sat with Oisin and listened to his story." } ],
+        "notes": "In-batch. The single most consequential relation in the Irish material, and the reason a registry should hold both: the pagan cycle is written down by Christian monks and the tradition itself dramatises the handover as one old man telling another what the world used to be." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oisín is Fionn's son by Sadhbh, the poet who narrates the Fenian Cycle, who spends three hundred years in Tír na nÓg with Niamh and ages them all in seconds on touching Irish ground, and who tells his story to Saint Patrick.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oisín, of Niamh and Tír na nÓg, and of Oisín and Saint Patrick." } ], "weight": "high" } ],
+    "notes": "The narrator of the cycle, which the corpus held no part of — the same fault lane 17 found with Sanjaya and the Bhagavad Gita, in a different literature. That the framing device of a whole body of literature is itself a character, and that the registry held neither the character nor the literature, is the pattern this programme keeps finding stated twice in two days."
+  },
+  {
+    "id": "irish_niamh",
+    "name": { "primary": "Niamh", "alt": ["Niamh Chinn Óir", "Niamh of the Golden Hair"],
+      "transliterations": { "Irish": "Niamh", "etymology": "'Brightness, radiance, lustre'." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "The flame-haired daughter of the king of Tír na nÓg, who takes Oisín across the sea on her white mare and lives with him there for what is three years to them and three hundred to Ireland.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oisin fell in love with the flame-haired maiden Niamh, whose father was the king of Tir na nOg, and they crossed the sea on Niamh's white mare to reach the magical land, where they lived happily for three hundred years; three years in Tír na nÓg was three hundred years back in Ireland." } ] },
+      { "typeStatus": "deity", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "When he wants to go home she gives him the warning that undoes him: if his feet touch Irish ground, even one toe, he can never return.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Niamh gave him one final warning — if Oisin's feet touched the ground in Ireland, or if even one toe was set down on Irish soil, he would never be able to get back to Tir na nOg." } ] } ],
+    "domains": [
+      { "sphereId": "the-otherworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Niamh as the daughter of the king of Tír na nÓg." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_oisin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Niamh and Oisín in Tír na nÓg." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Niamh is the daughter of the king of Tír na nÓg who takes Oisín there for three hundred years and warns him not to set foot on Irish ground.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Niamh and of Tír na nÓg." } ], "weight": "high" } ],
+    "notes": "Her father, the king of Tír na nÓg, is named in some versions and not in the treatment consulted, so he is a BLOCKED census row rather than a second record. Tír na nÓg itself is not ingested: it is a place, and this programme records people."
+  },
+  {
+    "id": "irish_oscar",
+    "name": { "primary": "Oscar", "alt": ["Osgar"],
+      "transliterations": { "Irish": "Oscar", "etymology": "Usually read as os-cara, 'deer-lover' or 'one who loves deer' — which keeps the family's deer-names going a generation past his grandmother." } },
+    "type": "quartigod", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["irish_oisin"], "parentRoles": ["father"],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "quartigod", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Son of Oisín and grandson of Fionn, and the champion of the Fianna.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oscar was the son of Oisin and grandson of Fionn." } ] },
+      { "typeStatus": "quartigod", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "At Cath Gabhra, the battle of Gabhair, he mortally wounds Cairbre Lifechair — whose dying act is to put a spear through Oscar's heart. Oscar's death makes Fionn weep for the only time in his life, and is the final blow to the Fianna's strength.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oscar's climactic moment in the Cycle comes in Cath Gabhra, when he mortally wounds the hated Cairbre Lifechair, whose dying act is to thrust a spear through Oscar's heart; Oscar's death causes Fionn to weep for the only time in his life, and serves as the final blow to the Fianna's strength." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oscar as the champion of the Fianna at Cath Gabhra." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-and-was-killed-by", "personId": "irish_cairbre_lifechair",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oscar mortally wounds Cairbre Lifechair, whose dying act is to thrust a spear through Oscar's heart." } ],
+        "notes": "Reciprocated in-batch with the same kind on both sides, because the kind is genuinely mutual — each is the other's killer in the same exchange — and the registry has nothing else like it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oscar is Oisín's son and Fionn's grandson, who kills Cairbre Lifechair at Cath Gabhra and is killed by him in the same moment, ending the Fianna.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oscar and of Cath Gabhra." } ], "weight": "high" } ],
+    "notes": "Three generations — Fionn, Oisín, Oscar — go into the corpus together with this batch, and the corpus held none of them. The name travelled: Macpherson took it into Ossian, Napoleon liked the poems, and it reached the Swedish royal house and from there most of Europe, which is why it is a common given name today. That is a census note and not a record claim."
+  },
+  {
+    "id": "irish_cairbre_lifechair",
+    "name": { "primary": "Cairbre Lifechair", "alt": ["Cairbre of the Liffey", "Coirpre Lifechair"],
+      "transliterations": { "Irish": "Cairbre Lifechair", "etymology": "'Cairbre lover of the Liffey', from the river he was fostered by." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "The High King against whom the Fianna fight at Cath Gabhra. Oscar mortally wounds him, and his dying act is to drive a spear through Oscar's heart.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Oscar's climactic moment comes in Cath Gabhra, when he mortally wounds the hated Cairbre Lifechair, whose dying act is to thrust a spear through Oscar's heart." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cairbre Lifechair at Cath Gabhra." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-and-was-killed-by", "personId": "irish_oscar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the mutual killing at Cath Gabhra." } ], "notes": "Reciprocal of the in-batch edge, same kind." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cairbre Lifechair is the king killed by Oscar at Cath Gabhra, who kills Oscar with his dying blow.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Cath Gabhra." } ], "weight": "medium" } ],
+    "notes": "The treatment calls him 'the hated Cairbre Lifechair', which is the Fenian Cycle's view and not a neutral one; this record reports the epithet as the source's and does not adopt it. He is a High King and belongs as much to the Cycles of Kings as to this one, and he is filed at `fenian-cycle` because that is where the event this record turns on happens."
+  },
+  {
+    "id": "irish_caoilte",
+    "name": { "primary": "Caoilte mac Rónáin", "alt": ["Caílte", "Keelta"],
+      "transliterations": { "Irish": "Caílte mac Rónáin", "etymology": "From caol, 'slender, narrow' — a name for a thin, fast man." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "Fionn's nephew, a warrior of the Fianna, able to run at remarkable speed, able to talk with animals, and a great storyteller.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Caílte mac Rónáin was a nephew of Fionn mac Cumhaill, a warrior and a member of the fianna in the Fenian Cycle; he is described as being able to run at remarkable speed and communicate with animals, and was a great storyteller." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "He lives long enough to be baptised by Saint Patrick.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to legend Caílte lived long enough to be baptized by St. Patrick." } ] } ],
+    "domains": [
+      { "sphereId": "swiftness", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Caílte's remarkable speed." } ] },
+      { "sphereId": "storytelling", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Caílte as a great storyteller who could communicate with animals." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "nephew-of", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Caílte mac Rónáin as a nephew of Fionn mac Cumhaill." } ],
+        "notes": "In-batch and non-symmetric; the corpus has no 'uncle' kind and this says the same thing from the side the source states it." },
+      { "kind": "baptised-by", "personId": "irish_saint_patrick",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Caílte lived long enough to be baptized by St. Patrick." } ],
+        "notes": "In-batch. With Oisín's edge, TWO of the Fianna outlive their world and meet the man who ends it, which is the frame the whole Acallam na Senórach is built on." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Caoilte mac Rónáin is Fionn's nephew, the swiftest of the Fianna, who talks with animals, tells stories, and lives to be baptised by Saint Patrick.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Caílte mac Rónáin and of the Fenian Cycle." } ], "weight": "high" } ],
+    "notes": "He is the other half of the Acallam na Senórach, the Colloquy of the Ancients — the twelfth-century frame in which the survivors of the Fianna walk around Ireland with Saint Patrick naming places and telling him what happened at each. That text is how most of the cycle survives, and the corpus held neither of the two men who speak it."
+  },
+  {
+    "id": "irish_diarmuid",
+    "name": { "primary": "Diarmuid Ua Duibhne", "alt": ["Diarmaid", "Dermot O'Dyna"],
+      "transliterations": { "Irish": "Diarmuid Ua Duibhne", "etymology": "Diarmuid is usually read as 'without enemy' or 'free man'; Ua Duibhne is 'descendant of Duibhne'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "A warrior of the Fianna, called the best lover of women in the world, distinguished by a beauty spot on his forehead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grainne's gaze fell upon Diarmuid O'Duibne, the 'best lover of women in the world', distinguished by the beauty spot on his forehead." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "At Fionn's own wedding feast, Gráinne puts him under heavy geasa — sacred bonds of honour — commanding him to take her away that night. They are pursued for years, protected by Aengus Óg, who spirits Gráinne away whenever the net draws too tight. In the early years he leaves uncooked bread and meat at their campsites to signal to Fionn that he is keeping faith; eventually their love becomes a true union.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grainne approached Diarmuid and placed him under heavy geasa — sacred bonds of honour — commanding him to take her away that night; they were pursued relentlessly by Finn's trackers, yet protected by the god Angus Óg, who spirited Grainne away whenever the net drew too tight; in the early years Diarmuid left uncooked bread and meat at their campsites to signal to Finn that he remained chaste, but eventually their love became a true union." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 2,
+        "startEvent": "Fionn invites him to a hunt on the slopes of Benn Gulban, knowing that he is fated never to hunt a wild boar.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Finn invited Diarmuid to a hunt on the slopes of Benn Gulban, knowing well that the warrior was fated never to hunt a wild boar." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Diarmuid as a warrior of the Fianna." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_grainne",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the elopement and of their love becoming a true union." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "pursued-by", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the relentless pursuit by Finn's trackers and the hunt on Benn Gulban." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "protected-by", "personId": "irish_aengus",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: they were protected by the god Angus Óg, who spirited Grainne away whenever the net drew too tight." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Aengus record. The corpus held the protector and neither of the two people he protects." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Diarmuid Ua Duibhne is the Fianna warrior with the beauty spot whom Gráinne binds by geasa to elope with her, pursued for years by Fionn and protected by Aengus Óg, and killed by a boar hunt Fionn knows he is fated to lose.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Diarmuid, of Gráinne and of the Pursuit." } ], "weight": "high" } ],
+    "notes": "The geis is the machinery of this whole cycle and the corpus has no way to record it: it is not a relation, not a domain and not an item, but a binding obligation that makes a person do something against their interest. Diarmuid is under one to take Gráinne and under another never to hunt a boar, and both of them kill him. That the schema cannot express it is a finding for the owner rather than a defect in this record."
+  },
+  {
+    "id": "irish_grainne",
+    "name": { "primary": "Gráinne", "alt": ["Grania", "Grainne"],
+      "transliterations": { "Irish": "Gráinne", "etymology": "Possibly from grán, 'grain', with a proposed connection to a grain-goddess; the derivation is argued." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "fenian-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 0,
+      "startEvent": "A princess betrothed to the aging Fionn. At her own wedding feast she looks along the gathered warriors and feels only despair at being wed to a man older than her father.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: at the wedding feast of the aging leader Finn mac Cumaill, the princess Grainne looked upon the gathered warriors and felt only despair at being wed to a man older than her father." } ] },
+      { "typeStatus": "mortal", "era": "fenian-cycle", "eraOrdering": 1,
+        "startEvent": "Her gaze falls on Diarmuid instead, and she puts him under heavy geasa to take her away that night. The pursuit that follows is the longest chase in Irish literature, and Aengus Óg keeps taking her out of the net.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grainne approached Diarmuid and placed him under heavy geasa, commanding him to take her away that night; they were pursued relentlessly, yet protected by the god Angus Óg, who spirited Grainne away whenever the net drew too tight." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_diarmuid",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the elopement and of their love becoming a true union." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "betrothed-to", "personId": "irish_fionn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gráinne betrothed to the aging Fionn at the wedding feast she elopes from." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "protected-by", "personId": "irish_aengus",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aengus Óg spiriting Gráinne away whenever the pursuit closed in." } ], "notes": "Non-symmetric, as on Diarmuid's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gráinne is the princess betrothed to the aging Fionn who binds Diarmuid by geasa to elope with her at her own wedding feast, and is protected through the pursuit by Aengus Óg.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gráinne and of the Pursuit of Diarmuid and Gráinne." } ], "weight": "high" } ],
+    "notes": "She is the one who acts. The treatment is explicit that the geasa are hers, placed on him, at her instigation — which makes the most famous elopement in Irish literature a woman's decision and a man's obligation, and is worth a registry recording accurately rather than as a romance. The tale survives in many variants, all in Modern Irish, the earliest from the sixteenth century, with elements going back to the tenth; that dating is on the census rather than the record."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE MAN THE CYCLE IS TOLD TO
+================================================================================
+
+Two of the Fianna outlive their own world and meet the man who ends it. That is
+not a coincidence of two tales; it is the frame of the Acallam na Senórach, the
+twelfth-century Colloquy of the Ancients, in which the survivors walk around
+Ireland with Saint Patrick naming places and telling him what happened at each.
+It is how most of the Fenian Cycle survives, and the corpus held none of the
+three people in it.
+
+```json
+[
+  {
+    "id": "irish_saint_patrick",
+    "name": { "primary": "Saint Patrick", "alt": ["Pádraig", "Patricius"],
+      "transliterations": { "Irish": "Naomh Pádraig", "etymology": "From the Latin Patricius, 'nobleman'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-christian" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "early-christian", "eraOrdering": 0,
+      "startEvent": "In the Fenian material he is the man the survivors of the Fianna tell their story to. He sits with Oisín, listens, and explains to him that time worked differently in Tír na nÓg.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Saint Patrick sat with Oisin and listened to his story, and explained to Oisin that time worked differently in Tir na nOg." } ] },
+      { "typeStatus": "mortal", "era": "early-christian", "eraOrdering": 1,
+        "startEvent": "He baptises Caoilte mac Rónáin, who has lived long enough to receive it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to legend Caílte lived long enough to be baptized by St. Patrick." } ] } ],
+    "domains": [
+      { "sphereId": "christianisation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Saint Patrick receiving and baptising the survivors of the Fianna." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "received", "personId": "irish_oisin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Saint Patrick sitting with Oisín and listening to his story." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "baptised", "personId": "irish_caoilte",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Caílte baptised by St Patrick." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Saint Patrick, in the Fenian material, receives Oisín after his return from Tír na nÓg and baptises Caoilte mac Rónáin.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oisín in Tír na nÓg and of Caílte mac Rónáin." } ], "weight": "high" } ],
+    "notes": "THIS RECORD IS THE PATRICK OF THE FENIAN CYCLE AND SAYS SO. The historical Patrick — the Confessio, the Letter to Coroticus, the fifth century, the question of how many Patricks there were — is not on it, because the treatments consulted are treatments of Irish legendary material and not of him. He is ingested under the Irish tradition key and at era `early-christian`, which the corpus registers and which held nothing, because the role he plays here is a role inside this literature: the listener the pagan past is explained to. A later pass with hagiographical sources could deepen the record; it should not have to create it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE TWO BULLS THE TÁIN IS ABOUT
+================================================================================
+
+The corpus held Medb, Ailill, Cú Chulainn, Fergus, Ferdiad and Findabair — the
+people who fight over a bull — and not the bull. The Táin Bó Cúailnge is *The
+Cattle Raid of Cooley*; the cattle are the plot.
+
+These two are ingested where five named horses were rejected in lanes 13, 14 and
+15, and the ground is the one those rejections stated: those horses were
+identified by a name and an owner. These two have a quarrel of their own, fight
+each other the length of Ireland, change the landscape doing it, and one of them
+kills the other and then dies of it. The war is fought to acquire them and the
+war ends when they have settled it themselves.
+
+```json
+[
+  {
+    "id": "irish_donn_cuailnge",
+    "name": { "primary": "Donn Cúailnge", "alt": ["the Brown Bull of Cooley", "Donn Cuailnge"],
+      "transliterations": { "Irish": "Donn Cúailnge", "etymology": "'The brown one of Cooley'. Donn is 'brown' and is also the name of the Irish god of the dead, whom this corpus holds separately as `irish_donn`." } },
+    "type": "numen", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "ulster-cycle", "eraOrdering": 0,
+      "startEvent": "An extremely fertile stud bull of Ulster, over whom the Táin Bó Cúailnge, the Cattle Raid of Cooley, is fought.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Ulster Cycle, Donn Cúailnge, the Brown Bull of Cooley, was an extremely fertile stud bull over whom the Táin Bó Cúailnge was fought." } ] },
+      { "typeStatus": "numen", "era": "ulster-cycle", "eraOrdering": 1,
+        "startEvent": "Medb and Ailill's pillow talk turns on whose wealth is greater; Ailill has the Finnbhennach and Medb has nothing to match it, because the only bull of that caliber is this one, in Ulster. She raises an army to take him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Queen Medb of Connacht and her husband King Ailill engage in pillow talk to determine whose wealth is superior; Ailill possesses the Finnbhennach, a magnificent white-horned bull, and Medb has no equal to it, as the only bull of its caliber, the Donn Cúailnge, resides in the province of Ulster; driven by pride, Medb assembles a massive army to march on Ulster and take the Brown Bull by force." } ] },
+      { "typeStatus": "numen", "era": "ulster-cycle", "eraOrdering": 2,
+        "startEvent": "At the end the two bulls fight each other across the whole of Ireland, in a battle so vast that it reshapes the landscape. The Brown Bull kills the white one — and then goes mad from its wounds and its rage and dies.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Donn Cúailnge and Finnbhennach fought each other across all of Ireland in a battle so vast that it reshaped the landscape; the Brown Bull killed the white bull, and then it went mad from its wounds and rage and died." } ] } ],
+    "domains": [
+      { "sphereId": "fertility-of-herds", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Donn Cúailnge as an extremely fertile stud bull." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-and-was-destroyed-by", "personId": "irish_finnbhennach",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the two fought across all of Ireland, the Brown Bull killed the white bull, and then went mad from its wounds and rage and died." } ],
+        "notes": "Reciprocated in-batch with a kind that fits both ways round, because the fight kills them both and the asymmetry — one killed, the other died of it — is in the kind itself." },
+      { "kind": "coveted-by", "personId": "irish_medb",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Medb has no equal to the Finnbhennach, the only bull of its caliber being the Donn Cúailnge in Ulster, and assembles an army to take him by force." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Medb record. This single edge is the Táin: the corpus held the queen and the army and the war and not the object of it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Donn Cúailnge, the Brown Bull of Cooley, is the stud bull the Cattle Raid of Cooley is fought over, who kills the Finnbhennach across the length of Ireland and dies of the fight.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Donn Cúailnge, of Finnbhennach and of the Táin Bó Cúailnge." } ], "weight": "high" } ],
+    "notes": "The id and name are `donn_cuailnge`, kept distinct from the corpus's existing `irish_donn`, the god of the dead — a within-tradition name collision of the kind lanes 16 and 17 met twice in Hindu, and handled the same way. His owner, Dáire mac Fiachna, is a BLOCKED census row: he is named in the sources and the treatment consulted does not describe him."
+  },
+  {
+    "id": "irish_finnbhennach",
+    "name": { "primary": "Finnbhennach", "alt": ["the White-Horned Bull", "Findbennach"],
+      "transliterations": { "Irish": "Findbennach", "etymology": "'White-horned', from find, 'white, fair', and benn, 'horn, peak'." } },
+    "type": "numen", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "ulster-cycle", "eraOrdering": 0,
+      "startEvent": "The magnificent white-horned bull of Connacht, in Ailill's possession — and the reason Medb has nothing to match her husband's wealth, since the only bull of the same caliber is in Ulster.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ailill possesses the Finnbhennach, a magnificent white-horned bull; Medb has no equal to it, as the only bull of its caliber, the Donn Cúailnge, resides in the province of Ulster." } ] },
+      { "typeStatus": "numen", "era": "ulster-cycle", "eraOrdering": 1,
+        "startEvent": "He is killed by the Brown Bull at the end of the war, in a fight that covers all of Ireland and reshapes the landscape.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Donn Cúailnge and Finnbhennach fought each other across all of Ireland in a battle so vast that it reshaped the landscape, and the Brown Bull killed the white bull." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-and-was-destroyed-by", "personId": "irish_donn_cuailnge",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two bulls' fight and its outcome." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "owned-by", "personId": "irish_ailill",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ailill possesses the Finnbhennach, a magnificent white-horned bull." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ailill record. It is also the only ownership edge in this batch, and it is here because the ownership is the cause: the whole war starts because one spouse owns this animal and the other does not." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Finnbhennach is Ailill's white-horned bull, whose existence starts the Táin because Medb has nothing to match it, and who is killed by the Brown Bull at the end.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Finnbhennach and of the Táin Bó Cúailnge." } ], "weight": "high" } ],
+    "notes": "The domains array is empty. He is a possession and a rival and the sources give him no sphere, and the honest record of that is an empty array rather than an invented one. What he has instead is the most consequential ownership in the literature."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. DEIRDRE, AND THE DRUID WHO HEARD HER
+================================================================================
+
+```json
+[
+  {
+    "id": "irish_deirdre",
+    "name": { "primary": "Deirdre", "alt": ["Deirdre of the Sorrows", "Derdriu"],
+      "transliterations": { "Irish": "Derdriu", "etymology": "Unresolved; connected by some to a word for 'she who murmurs' or 'troubler', on the strength of the cry Cathbad heard." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "ulster-cycle", "eraOrdering": 0,
+      "startEvent": "Before she is born the druid Cathbad hears her cry in her mother's womb and prophesies: this child will be more beautiful than any woman in Ireland, and because of her Ulster's greatest heroes will go into exile, and blood will be spilled, and kingdoms will crack.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: before Deirdre was born, the druid Cathbad heard her cry in her mother's womb and prophesied that this child would be more beautiful than any woman in Ireland, and because of her Ulster's greatest heroes would go into exile and blood would be spilled and kingdoms would crack." } ] },
+      { "typeStatus": "mortal", "era": "ulster-cycle", "eraOrdering": 1,
+        "startEvent": "She is desired by Conchobar mac Nessa, king of Ulster, and becomes the lover of Naoise, his nephew and a son of Uisneach; the lovers go with Naoise's two brothers into exile in Alba.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: The Exile of the Sons of Uislíu is a story of the Ulster Cycle; Naoise was the nephew of King Conchobar mac Nessa of Ulster and a son of Uisneach, and in the tale he becomes the lover of Deirdre, a woman of great beauty who is also desired by Conchobar, so the lovers go with Naoise's two brothers into exile in Scotland." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_naoise",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Deirdre as Naoise's lover, with whom she goes into exile in Alba." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "desired-by", "personId": "irish_conchobar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Deirdre is also desired by the king of Ulster, Conchobar mac Nessa." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Conchobar record. The corpus held the king who wants her, and Fergus, who goes into exile over the way the wanting ends, and not her." },
+      { "kind": "prophesied-by", "personId": "irish_cathbad",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cathbad's prophecy over the unborn Deirdre." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Deirdre is the woman Cathbad prophesies over before her birth, desired by Conchobar and loved by Naoise, for whose sake Ulster's heroes go into exile.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Deirdre of the Sorrows and of The Exile of the Sons of Uisnech." } ], "weight": "high" } ],
+    "notes": "The most retold story in the literature, written down in the Middle Ages and set in the pagan Iron Age, and the corpus held every Ulsterman it turns on and not the woman it is about. Her death is not on the record: the versions differ — she throws herself from a chariot, or dies of grief, or is given to the man who killed Naoise for a year first — and the treatment consulted does not choose one. The record stops where the citation stops."
+  },
+  {
+    "id": "irish_naoise",
+    "name": { "primary": "Naoise", "alt": ["Noísiu", "Naisi"],
+      "transliterations": { "Irish": "Noísiu", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "ulster-cycle", "eraOrdering": 0,
+      "startEvent": "A son of Uisneach and the nephew of Conchobar mac Nessa, who becomes Deirdre's lover and goes with her and his two brothers into exile in Alba.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Naoise was the nephew of King Conchobar mac Nessa of Ulster and a son of Uisneach; he becomes the lover of Deirdre, and the lovers go with Naoise's two brothers into exile in Scotland." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_deirdre",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Naoise as Deirdre's lover." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "nephew-of", "personId": "irish_conchobar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Naoise was the nephew of King Conchobar mac Nessa." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Conchobar record. The kinship is what makes the story a betrayal rather than a war." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Naoise is Conchobar's nephew and a son of Uisneach, Deirdre's lover, who goes into exile in Alba with her and his two brothers.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of The Exile of the Sons of Uisnech." } ], "weight": "high" } ],
+    "notes": "His two brothers — Ardan and Ainnle in the usual versions — are not ingested: the treatment counts them and does not name them, and this batch does not manufacture names, on the rule that kept lane 16 from writing ninety-six Kauravas and lane 17 from writing sixty thousand sons of Sagara. Uisneach their father is likewise a BLOCKED row, named as a patronymic and not described."
+  },
+  {
+    "id": "irish_cathbad",
+    "name": { "primary": "Cathbad", "alt": ["Cathbadh"],
+      "transliterations": { "Irish": "Cathbad", "etymology": "Read as cath-, 'battle', with a second element variously given; the derivation is argued." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ulster-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "ulster-cycle", "eraOrdering": 0,
+      "startEvent": "Chief druid of the court of Conchobar mac Nessa, and one of the leading figures of the Ulster Cycle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cathbad was chief druid of the court of Conchobar mac Nessa and one of the leading figures of the Ulster Cycle." } ] },
+      { "typeStatus": "mortal", "era": "ulster-cycle", "eraOrdering": 1,
+        "startEvent": "He hears the unborn Deirdre cry in her mother's womb and prophesies what she will cost Ulster.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: before Deirdre was born, the druid Cathbad heard her cry in her mother's womb and prophesied that because of her Ulster's greatest heroes would go into exile and blood would be spilled and kingdoms would crack." } ] } ],
+    "domains": [
+      { "sphereId": "druidry-and-prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cathbad as chief druid of Conchobar's court and as the prophet over Deirdre." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "prophesied-over", "personId": "irish_deirdre",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cathbad's prophecy." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "chief-druid-of", "personId": "irish_conchobar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Cathbad was chief druid of the court of Conchobar mac Nessa." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Conchobar record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cathbad is the chief druid of Conchobar's court, a leading figure of the Ulster Cycle, who prophesies over the unborn Deirdre.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Cathbad and of Deirdre." } ], "weight": "high" } ],
+    "notes": "The corpus held an entire Ulster court — king, queen, champions, charioteer's son, hostages and exiles — and no druid, in a literature where the druid is the person who tells everyone what is going to happen and is always right. He is also, in most versions, Conchobar's father and Cú Chulainn's teacher; the treatment consulted gives neither, so neither is on the record, and both are census rows."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE TWO TRIOS THE CORPUS HELD ONE THIRD OF
+================================================================================
+
+Ernmas, whom the corpus holds, is the mother of two trinities: Ériu, Banba and
+Fódla, the eponymous goddesses of Ireland; and the Badb, Macha and the Mórrígan,
+the war goddesses. The corpus held Ernmas, Ériu and the Mórrígan — one from
+each trio and the mother of both.
+
+```json
+[
+  {
+    "id": "irish_delbaeth",
+    "name": { "primary": "Delbáeth", "alt": ["Delbaeth", "Dealbhaoth"],
+      "transliterations": { "Irish": "Delbáeth", "etymology": "Read as delb, 'shape, form', with áed, 'fire' — 'fire-shape', which is the usual gloss." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Of the Tuatha Dé Danann, and with Ernmas the father of Banba — and so of the trio of goddesses who give Ireland its names.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Banba, daughter of Delbáeth and Ernmas of the Tuatha Dé Danann, is a matron goddess of Ireland." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "irish_ernmas",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Banba as the daughter of Delbáeth and Ernmas." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ernmas record, which the corpus holds with no spouse." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Delbáeth of the Tuatha Dé Danann is, with Ernmas, the father of Banba.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Banba's parentage." } ], "weight": "medium" } ],
+    "notes": "Short, and here because two records in this block need a father in their parentIds and the corpus had nobody to point at. The Irish material has several Delbáeths and the treatments do not always distinguish them; this record is the one the Banba citation names and claims no more than that."
+  },
+  {
+    "id": "irish_banba",
+    "name": { "primary": "Banba", "alt": ["Banbha"],
+      "transliterations": { "Irish": "Banba", "etymology": "Read by some as 'unploughed land' or 'sow'; still used as a poetic name for Ireland." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["irish_delbaeth", "irish_ernmas"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Daughter of Delbáeth and Ernmas of the Tuatha Dé Danann, and a matron goddess of Ireland: one of the three who, in the Lebor Gabála, give their names to the island.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Banba, daughter of Delbáeth and Ernmas of the Tuatha Dé Danann, is a matron goddess of Ireland; in the Lebor Gabála three goddesses, Ériu, Banba and Fotla, give their names to Ireland, but primacy is given to Ériu; Ernmas's daughters include the trinity of eponymous Irish goddesses Ériu, Banba and Fódla." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "When the Milesians land and march on Tara, the three goddesses meet them on three mountains, each asking that the land be named after her. They are the sovereignty of Ireland, who wed kings to make the island prosper.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Milesians are met on three mountains by Banba, Fódla and Ériu, with each goddess asking for the land to be named after her; they were the incarnation of Ireland, represented as the Sovereignty of Ireland, who wedded kings to ensure the prosperity of the isle." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty-of-ireland", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Banba as one of the three sovereignty goddesses who wed kings to ensure the island's prosperity." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_fodla",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ériu, Banba and Fódla as the trinity of eponymous goddesses, daughters of Ernmas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "one-of-the-three-with", "personId": "irish_eriu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three goddesses meeting the Milesians on three mountains." } ],
+        "notes": "NON-SYMMETRIC, and that is a compromise rather than the truth: Ériu is their sister and the honest kind is `sibling`, but Ériu is a pre-existing record and a symmetric edge would mutate her. The kind chosen says what the source says — that these three are the three — and the sisterhood is stated here, where a reader meets it. This is the cost lane 17 named: each lane's additions are the next lane's immovable objects." },
+      { "kind": "met", "personId": "irish_amergin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Milesians, led by the poet-warrior Amhairghin, met on three mountains by Banba, Fódla and Ériu." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Banba is a daughter of Delbáeth and Ernmas, one of the three sovereignty goddesses of Ireland who meet the Milesians on three mountains, and still a poetic name for the island.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Banba, of Ériu and of the Lebor Gabála." } ], "weight": "high" } ],
+    "notes": "Lane 14 found five of the six idols of Kiev. This is the same shape in a set of three, and it is the shape a corpus takes when it adds the famous name: the modern Irish Éire comes from Ériu, so Ériu is the one everybody knows, so Ériu is the one the registry had."
+  },
+  {
+    "id": "irish_fodla",
+    "name": { "primary": "Fódla", "alt": ["Fotla", "Fodhla"],
+      "transliterations": { "Irish": "Fódla", "etymology": "Read as fód, 'sod, turf' — the land itself. Also still a poetic name for Ireland." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["irish_delbaeth", "irish_ernmas"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "One of the three daughters of Ernmas who give their names to Ireland, with Ériu and Banba, and one of the three who meet the Milesians on three mountains asking that the land be named after her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Lebor Gabála three goddesses, Ériu, Banba and Fotla, give their names to Ireland, but primacy is given to Ériu; Ernmas's daughters include the trinity of eponymous Irish goddesses Ériu, Banba and Fódla; the Milesians are met on three mountains by Banba, Fódla and Ériu." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty-of-ireland", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three as the incarnation and sovereignty of Ireland, who wedded kings." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_banba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trinity of eponymous goddesses, daughters of Ernmas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "one-of-the-three-with", "personId": "irish_eriu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three goddesses of the Lebor Gabála." } ], "notes": "Same compromise as on Banba's record, for the same reason." },
+      { "kind": "met", "personId": "irish_amergin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Milesians met on three mountains by the three goddesses." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fódla is one of the three daughters of Ernmas who give their names to Ireland and meet the Milesians on three mountains.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fódla and of the Lebor Gabála." } ], "weight": "high" } ],
+    "notes": "Her parentIds name Delbáeth on the strength of the citation that gives him as Banba's father and of the treatment that makes all three sisters; the record asserts the sisterhood and derives the father from it, which is one inferential step and is stated here rather than hidden."
+  },
+  {
+    "id": "irish_badb",
+    "name": { "primary": "Badb", "alt": ["the Badb", "Badhbh", "Badb Catha"],
+      "transliterations": { "Irish": "Badb", "etymology": "'Crow, scald-crow' — and by extension a war goddess. Badb Catha is 'battle-crow'." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["irish_ernmas"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "One of the three war goddesses who are the daughters of Ernmas — the Badb, Macha and the Mórrígan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ernmas is an Irish mother goddess mentioned in Lebor Gabála Érenn, and her daughters include the trinity of eponymous Irish goddesses Ériu, Banba and Fódla and the trinity of war goddesses the Badb, Macha and Mórrígan." } ] } ],
+    "domains": [
+      { "sphereId": "war-and-slaughter", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Badb among the trinity of war goddesses." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_macha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Badb, Macha and the Mórrígan as the trinity of war goddesses, daughters of Ernmas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "one-of-the-three-with", "personId": "irish_morrigan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trinity of war goddesses." } ],
+        "notes": "Non-symmetric, for the same reason as on the sovereignty trio: the Mórrígan is a pre-existing record and a symmetric `sibling` would mutate her. The sisterhood is in this note and in the lifecycle." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Badb is one of the three war goddesses who are daughters of Ernmas, with Macha and the Mórrígan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ernmas and her daughters in the Lebor Gabála." } ], "weight": "high" } ],
+    "notes": "The corpus held the Mórrígan and Ernmas — the most famous of the trio and their mother — and neither of the other two. The crow on the battlefield that the Mórrígan is best known as is properly this figure's, and the tradition itself blurs them, sometimes treating 'the Morrígna' as one shifting three-in-one; the record states the trio the source states and does not attempt the identification."
+  },
+  {
+    "id": "irish_macha",
+    "name": { "primary": "Macha", "alt": [],
+      "transliterations": { "Irish": "Macha", "etymology": "Connected with a word for a plain or field; Emain Macha, the seat of the Ulster kings, is named for her." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["irish_ernmas"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "One of the three war goddesses who are the daughters of Ernmas, with the Badb and the Mórrígan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ernmas's daughters include the trinity of eponymous Irish goddesses Ériu, Banba and Fódla and the trinity of war goddesses the Badb, Macha and Mórrígan." } ] } ],
+    "domains": [
+      { "sphereId": "war-and-slaughter", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Macha among the trinity of war goddesses." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_badb",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trinity of war goddesses, daughters of Ernmas." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "one-of-the-three-with", "personId": "irish_morrigan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trinity of war goddesses." } ], "notes": "Same non-symmetric compromise as on the Badb's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Macha is one of the three war goddesses who are daughters of Ernmas, with the Badb and the Mórrígan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ernmas and her daughters." } ], "weight": "high" } ],
+    "notes": "The most consequential of the three for the corpus's existing records and the record does not say so, for want of a citation: the curse of Macha is why the men of Ulster lie helpless through the Táin and why Cú Chulainn — whom the corpus holds — has to fight the whole war alone. That is a BLOCKED census row and one of the strongest ADD-adjacent findings of this lane: the corpus holds the consequence and not the cause, again. Emain Macha, the Ulster capital that is named after her, is a place and not ingested."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. MAG TUIRED, AND THE MAN WHO NAMED IRELAND
+================================================================================
+
+The corpus held Nuada with his silver hand and Dian Cécht who made it, and
+neither the son and daughter who improved on it nor the king who held the throne
+while Nuada was disqualified. And it held the three goddesses' island without
+the poet they named it to.
+
+```json
+[
+  {
+    "id": "irish_bres",
+    "name": { "primary": "Bres", "alt": ["Eochu Bres", "Bres mac Elathan"],
+      "transliterations": { "Irish": "Bres", "etymology": "'Beautiful, shapely' — the name is the compliment, which the story spends itself undoing." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Half Tuatha Dé and half Fomorian, made High King of Ireland and king of the Tuatha Dé Danann. He favours the Fomorians and lays heavy tribute and forced labour on his own people; his reign fails for want of generosity and of kingly qualities.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bres was a half-Tuatha-half-Fomorian High-King of Ireland and King of the Tuatha who favoured the Fomorians and imposed heavy tribute and labour upon his own people; Bres's reign was not successful because of his lack of generosity and kingly qualities." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "Nuada is given a working hand by Miach and is fit to rule again; Bres is overthrown. He goes to his father's family for aid and leads a great army against the gods at the second battle of Mag Tuired.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nuadu was given a functional human hand by Miach, and Bres was overthrown; Bres went to his father's family for aid and led a great army against the gods in the second battle of Mag Tuired; the Second Battle of Mag Tuired was the decisive engagement of the Tuatha–Fomorian War." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bres as High King of Ireland and king of the Tuatha Dé Danann." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "displaced-and-was-displaced-by", "personId": "irish_nuada",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nuadu was given a functional human hand by Miach, and Bres was overthrown." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Nuada record. The kind carries both halves of a two-way sequence — Bres has the throne because Nuada's maiming disqualifies him, and loses it because Nuada is healed — which is the shape of the whole episode." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bres is the half-Fomorian king of the Tuatha Dé Danann whose ungenerous reign and tribute-taking end when Nuada is healed, and who then brings a Fomorian army to the second battle of Mag Tuired.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bres and of Cath Maige Tuired." } ], "weight": "high" } ],
+    "notes": "His father is named Elatha in the sources; the treatment consulted says only that he 'went to his father's family for aid', so this record says that and Elatha is a BLOCKED census row. Bres is the most interesting political figure in the Irish material — a king deposed for MEANNESS, in a literature where a king's first duty is hospitality — and the corpus held the man he replaced, the man who healed that man, and the battle, and not him."
+  },
+  {
+    "id": "irish_miach",
+    "name": { "primary": "Miach", "alt": ["Míach"],
+      "transliterations": { "Irish": "Míach", "etymology": "'A measure, a bushel'." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["irish_dian_cecht"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Son of Dian Cécht, who with his sister Airmed healed those injured at the second battle of Mag Tuired.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Airmed, her father Dian Cecht and brother Miach healed those injured in the Second Battle of Magh Tuiredh." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "Dian Cécht had replaced Nuada's missing hand with a silver prosthesis; Miach and Airmed made flesh grow over the silver, so that it was as if Nuada had never lost the use of it — and that restoration is what makes Nuada fit to be king again and Bres's reign end.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after Dian Cecht replaced the king Nuada Airgetlám's missing hand with a silver prosthesis, Airmed and her brother Miach made flesh glow over the silver, making it as if Nuada had never lost use of his hand; Nuadu was given a functional human hand by Miach, and Bres was overthrown." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Miach healing the injured at Mag Tuired and restoring Nuada's hand." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_airmed",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Airmed and her brother Miach." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "healed", "personId": "irish_nuada",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nuadu was given a functional human hand by Miach; Airmed and her brother Miach made flesh grow over the silver." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Nuada record. The corpus held a king with a silver hand and neither of the two people who made it a real one." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Miach is Dian Cécht's son, who with his sister Airmed healed the wounded at Mag Tuired and grew flesh over Nuada's silver hand.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Airmed, of Miach and of Cath Maige Tuired." } ], "weight": "high" } ],
+    "notes": "That Dian Cécht kills him out of jealousy for having outdone the silver hand is the point of the whole story, and it is not on this record, because the treatment consulted gives the healing and not the killing. It is a BLOCKED census row, and vitalStatus reads 'deceased' without a cause. That is the honest shape of a half-retrieved story."
+  },
+  {
+    "id": "irish_airmed",
+    "name": { "primary": "Airmed", "alt": ["Airmid"],
+      "transliterations": { "Irish": "Airmed", "etymology": "Read as a measure or a dry measure of grain, like her brother's name." } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["irish_dian_cecht"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Daughter of Dian Cécht, who with her father and her brother Miach healed those injured at the second battle of Mag Tuired, and who with Miach grew flesh over Nuada's silver hand.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Airmed, her father Dian Cecht and brother Miach healed those injured in the Second Battle of Magh Tuiredh; after Dian Cecht replaced Nuada Airgetlám's missing hand with a silver prosthesis, Airmed and her brother Miach made flesh grow over the silver." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Airmed healing the injured at Mag Tuired." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "irish_miach",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Airmed and her brother Miach." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "healed", "personId": "irish_nuada",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Airmed and Miach growing flesh over Nuada's silver hand." } ], "notes": "Non-symmetric, as on Miach's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Airmed is Dian Cécht's daughter, who healed the wounded at Mag Tuired and with her brother grew flesh over Nuada's silver hand.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Airmed and of Cath Maige Tuired." } ], "weight": "high" } ],
+    "notes": "Her own famous episode — sorting the three hundred and sixty-five herbs that grow from her dead brother's grave, and her father scattering them so nobody would ever know the cure for everything — is not on the record, for want of a citation, and is a BLOCKED row. It is the tradition's explanation of why medicine is incomplete, and it is the strongest single thing this lane could not retrieve."
+  },
+  {
+    "id": "irish_amergin",
+    "name": { "primary": "Amergin Glúingel", "alt": ["Amhairghin", "Amergin", "Amergin of the White Knee"],
+      "transliterations": { "Irish": "Amairgin Glúingel", "etymology": "Read as 'born of song'; Glúingel is 'white knee'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythological-cycle" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "mythological-cycle", "eraOrdering": 0,
+      "startEvent": "The poet-warrior who leads the Milesians, the final wave of settlers in the Lebor Gabála, into Ireland.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Milesians, the final wave of supernatural settlers, arrived in Ireland led by the poet-warrior Amhairghin." } ] },
+      { "typeStatus": "mortal", "era": "mythological-cycle", "eraOrdering": 1,
+        "startEvent": "On the way to Tara, the ceremonial seat of power, the Milesians are met on three mountains by Banba, Fódla and Ériu, each asking that the land be named after her.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: on their way to Tara, the ancient ceremonial site and seat of power, the Milesians are met on three mountains by Banba, Fódla and Ériu, with each goddess asking for the land to be named after her." } ] } ],
+    "domains": [
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amhairghin as the poet-warrior who led the Milesians." } ] },
+      { "sphereId": "conquest-and-settlement", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Milesians as the final wave of settlers, led by Amhairghin." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "met", "personId": "irish_banba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Milesians met on three mountains by Banba, Fódla and Ériu." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "met", "personId": "irish_fodla",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the same meeting." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "met", "personId": "irish_eriu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three goddesses meeting the Milesians, primacy being given to Ériu." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ériu record. With this edge the corpus's Ériu is finally connected to the event she is famous for." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Amergin Glúingel is the poet-warrior who leads the Milesians into Ireland and is met on three mountains by Banba, Fódla and Ériu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Amergin, of the Milesians and of the three sovereignty goddesses." } ], "weight": "high" } ],
+    "notes": "The Song of Amergin — 'I am the wind on the sea, I am the wave of the ocean' — is traditionally the first poem composed in Ireland, and it is not quoted on this record, because the treatment consulted gives the landing and the meeting and not the poem. Míl Espáine, whose sons the Milesians are, is a BLOCKED census row for the same reason. Tara is a place and not ingested."
+  }
+]
+```
