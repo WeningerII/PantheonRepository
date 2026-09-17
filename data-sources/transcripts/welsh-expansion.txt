@@ -1,0 +1,788 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Welsh
+Eras (registered, exact): mythic-prehistoric | mabinogion-mythological |
+  mythological-cycle | roman-british | post-roman | norman-and-edwardian |
+  late-medieval | early-modern | modern
+Author pass: Welsh held 40 records. This adds 25.
+
+================================================================================
+THE GAP — SIX REGISTERED ERAS IN A ROW HELD NOTHING
+================================================================================
+
+An 83-name check across the WHOLE registry returned 33 hits and 50 absences.
+
+Lane 18 found the Irish vocabulary registering `fenian-cycle` and filing nobody
+in it, and called an empty registered era the clearest statement a corpus can
+make about what it is missing. **The Welsh vocabulary has NINE eras and holds
+records in three of them.**
+
+    mythic-prehistoric          9 records
+    mabinogion-mythological    30 records
+    mythological-cycle          1 record
+    roman-british               0
+    post-roman                  0
+    norman-and-edwardian        0
+    late-medieval               0
+    early-modern                0
+    modern                      0
+
+Everything from the Roman period onward is empty. That is not an accident of
+sampling: it is precisely the span in which the Welsh Arthurian material lives —
+*Culhwch ac Olwen*, the Triads, the Three Romances, the Dream of Macsen, the
+Myrddin poems — and the corpus held the Four Branches of the Mabinogi almost
+completely and none of it.
+
+**THE REGISTRY DID NOT HOLD ARTHUR.**
+
+Nor Cai, nor Bedwyr, nor Gwenhwyfar, nor Medrawd. Nor Culhwch or Olwen, whose
+tale is the oldest Arthurian story in any language. Nor Myrddin, in either of
+the two forms the Welsh tradition itself distinguishes.
+
+And within the layer the corpus DID hold, the same fault as everywhere else:
+
+- **Arawn without Hafgan.** The corpus holds Arawn, king of Annwn, and Pwyll,
+  who changes places with him for a year and a day — and did not hold the rival
+  Pwyll is sent to kill, which is the only thing that happens in the exchange.
+- **Ceridwen without Morfran.** The corpus holds Ceridwen and Taliesin, and the
+  cauldron is brewed for **Morfran**, her hideous son, whom she is trying to
+  compensate with wisdom. The three drops land on the servant instead. The
+  corpus held the woman, the accident and the beneficiary, and not the person
+  the whole thing was for — nor **Creirwy**, the beautiful daughter Morfran is
+  ugly *compared with*.
+- **Gwyn ap Nudd without Creiddylad or Gwythyr.** The corpus holds a god whose
+  one story is that he and another man fight for a woman every May Day until
+  Judgement Day, and held neither the other man nor the woman.
+- **Mabon ap Modron** — the greatest huntsman of all time, imprisoned since the
+  beginning of time, and one of the oldest divine names in Britain — absent.
+
+================================================================================
+A FINDING THE SOURCES THEMSELVES MAKE
+================================================================================
+
+**There are two Merlins and the Welsh tradition knew it.** As early as the end
+of the twelfth century Giraldus Cambrensis sharply distinguishes *Merlinus
+Ambrosius* — Myrddin Emrys, found at Carmarthen, who prophesies before
+Vortigern — from *Merlinus Silvester* or *Celidonius*, who comes from the North,
+is a contemporary of Arthur, sees a horror in the sky during a battle and spends
+the rest of his life mad in the woods. Geoffrey of Monmouth combined them.
+
+This batch ingests **two records**, because the tradition distinguishes two
+figures and a registry that indexes traditions should be able to say that the
+famous single character is a twelfth-century merger. Neither record asserts
+they are the same person and neither asserts they are not.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+Annwn, Dinas Emrys, Caernarfon and Camlann are **places**. The Three Harmful
+Blows and the Triads are **texts**. Adar Rhiannon, the birds of Rhiannon, are a
+**collective** of unnamed birds. Ysbaddaden's forty tasks are a **list of
+tasks**, and only the few the tale narrates produce records here.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. CULHWCH AC OLWEN, THE OLDEST ARTHURIAN TALE
+================================================================================
+
+```json
+[
+  {
+    "id": "welsh_arthur",
+    "name": { "primary": "Arthur", "alt": ["Arthur ap Uthr", "King Arthur"],
+      "transliterations": { "Welsh": "Arthur", "etymology": "Usually from the Latin Artorius; a derivation from arth, 'bear', is also argued and is not settled." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "In Culhwch ac Olwen, the earliest Arthurian tale, it is Arthur's warband that Culhwch comes to and Arthur's men who carry out the tasks Ysbaddaden sets — the killing of Wrnach for his sword, the search for Mabon, and the hunt for the Twrch Trwyth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen: the first task is to slay the giant Wrnach in order to obtain his sword, which can slay the boar Twrch Trwyth; Kay tricks the giant and beheads him; next the band searches for Mabon ap Modron; Kay and Bedwyr seek out the oldest animals in the land." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "In the same tale he intervenes in the feud between Gwyn ap Nudd and Gwythyr ap Greidawl over Creiddylad: she is returned to her father, and the two men are bound to fight for her every May Day until a final battle on Judgement Day decides it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after the intervention of Arthur, Gwyn and Gwythyr agreed to fight for Creiddylad every May Day; due to Arthur's intervention the lady Creiddylad is returned to her father and an arrangement is made that forces the adversaries to engage in single combat every May Day, while she remains with her father unmarried, until a final battle on Judgement Day." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 2,
+        "startEvent": "The Welsh Triads give the cause of the battle of Camlann two ways: Triad 51, that Medrawd rebels while Arthur is campaigning on the continent and usurps the throne; and Triad 53, that the slap Gwenhwyfach gave her sister Gwenhwyfar is one of the Three Harmful Blows of the Island of Britain and causes the Strife of Camlann.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Triad 51 largely reflects Geoffrey — Medrawd rebels against Arthur while the latter is campaigning on the continent and usurps the throne, instigating the battle; Triad 53 lists a slap Gwenhwyvach gave to her sister Gwenhwyfar, wife of Arthur, as one of the 'Three Harmful Blows of the Island of Britain', causing the Strife of Camlann." } ] } ],
+    "domains": [
+      { "sphereId": "warband-leadership", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arthur's band carrying out the tasks in Culhwch and Olwen." } ] },
+      { "sphereId": "arbitration", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arthur's intervention in the Gwyn and Gwythyr feud, and the arrangement he imposes." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "lord-of", "personId": "welsh_cai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay among Arthur's band in Culhwch and Olwen." } ], "notes": "In-batch." },
+      { "kind": "lord-of", "personId": "welsh_bedwyr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay and Bedwyr seeking the oldest animals for Arthur's band." } ], "notes": "In-batch." },
+      { "kind": "spouse", "personId": "welsh_gwenhwyfar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gwenhwyfar, wife of Arthur, whose sister's slap is one of the Three Harmful Blows." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "arbitrated-between", "personId": "welsh_gwythyr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arthur's intervention and the May Day arrangement." } ], "notes": "In-batch." },
+      { "kind": "arbitrated-with", "personId": "welsh_gwyn_ap_nudd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arthur's intervention between Gwyn and Gwythyr." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Gwyn ap Nudd record. The corpus held a god whose one story is this feud, with no feud in his relations." },
+      { "kind": "rebelled-against-by", "personId": "welsh_medrawd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Triad 51: Medrawd rebels against Arthur and usurps the throne, instigating the battle of Camlann." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Arthur is the warband leader of Culhwch ac Olwen whose men perform Ysbaddaden's tasks, the arbitrator of the Gwyn and Gwythyr feud, and the king whose Camlann the Welsh Triads explain two ways.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Culhwch and Olwen, of Gwyn ap Nudd and Creiddylad, and of the Welsh Triads and the battle of Camlann." } ], "weight": "high" } ],
+    "notes": "THIS IS THE WELSH ARTHUR AND THE RECORD SAYS SO. There is no Round Table on it, no sword in a stone, no Lancelot, no Grail and no Avalon: those are French and later English, and this record is built from Culhwch ac Olwen, the Triads and the figures around them. The record carries no dates and does not assert that he existed. The corpus has no Arthurian tradition key and this batch does not create one; the tradition-key question this programme has raised in eight lanes applies here as sharply as anywhere, because Arthur is held in Welsh, Cornish, Breton, French and English traditions and the registry currently has him in none."
+  },
+  {
+    "id": "welsh_cai",
+    "name": { "primary": "Cai", "alt": ["Cei", "Kay", "Sir Kay"],
+      "transliterations": { "Welsh": "Cai", "etymology": "Usually from the Latin Gaius." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Arthur's foremost man in Culhwch ac Olwen. The first task is to kill the giant Wrnach for his sword, the only weapon that can kill the Twrch Trwyth; Cai gets in by telling Wrnach the sword needs sharpening, and beheads him with it when he hands it over.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the first task is to slay the giant Wrnach, in order to obtain his sword, which can slay the boar Twrch Trwyth; Kay tricks the giant by convincing him that his sword needs sharpening, and when Wrnach hands over the sword, Kay beheads him." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "With Bedwyr he seeks out the oldest animals in the land to find where Mabon ap Modron is imprisoned, until the oldest salmon carries the two of them on its back to the prison.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: finding Mabon's location requires that Kay and Bedwyr seek out the oldest animals in the land, until finally the oldest salmon carries them on its back to Mabon's prison." } ] } ],
+    "domains": [
+      { "sphereId": "warfare-and-stratagem", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay's trick on Wrnach and of his part in the search for Mabon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "welsh_bedwyr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay and Bedwyr seeking the oldest animals together." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sworn-to", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay among Arthur's band." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "slew", "personId": "welsh_wrnach",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay beheading Wrnach with his own sword." } ], "notes": "In-batch." },
+      { "kind": "rescued", "personId": "welsh_mabon",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay and Bedwyr finding Mabon's prison by way of the oldest animals." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Cai is Arthur's foremost man in Culhwch ac Olwen, who kills the giant Wrnach with his own sword and finds and frees Mabon with Bedwyr.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "He is the Sir Kay of the later romances, where he is a boor and a butt; in the Welsh material he is the most capable man in the band and the one who does the work. The alt-name list carries the later form and the record does not carry the later character."
+  },
+  {
+    "id": "welsh_bedwyr",
+    "name": { "primary": "Bedwyr", "alt": ["Bedwyr Bedrydant", "Bedivere"],
+      "transliterations": { "Welsh": "Bedwyr", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Arthur's man, paired with Cai throughout Culhwch ac Olwen; the two of them seek the oldest animals in the land until the oldest salmon carries them to Mabon's prison.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: finding Mabon's location requires that Kay and Bedwyr seek out the oldest animals in the land, until finally the oldest salmon carries them on its back to Mabon's prison." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bedwyr among Arthur's band in Culhwch and Olwen." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "welsh_cai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay and Bedwyr." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sworn-to", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bedwyr among Arthur's band." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "rescued", "personId": "welsh_mabon",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the search for Mabon." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bedwyr is Arthur's man, Cai's constant companion in Culhwch ac Olwen, and one of the two who find and free Mabon.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "The Bedivere of the later tradition, who throws the sword into the lake; none of that is on this record, because none of it is Welsh."
+  },
+  {
+    "id": "welsh_culhwch",
+    "name": { "primary": "Culhwch", "alt": ["Kilhwch"],
+      "transliterations": { "Welsh": "Culhwch", "etymology": "Traditionally read as 'pig-run' or 'slender pig', from the story of his birth in a pig-run; the derivation is the tale's own." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "When he refuses to marry his stepsister, his stepmother curses him so that the only woman he can ever marry is Olwen, the daughter of Ysbaddaden, king of the giants.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Culhwch declines to marry his stepsister, his stepmother curses him so that the only woman he can marry is Olwen, the daughter of Ysbaddaden, king of the giants." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "Ysbaddaden, who is fated to die when his daughter marries, sets him forty or so tasks to prevent it. Only a few are narrated. Culhwch does not do them; Arthur's band does.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ysbaddaden is fated to die when his daughter marries, so to prevent this he declares that Culhwch must first complete forty tasks; Ysbaddaden lists forty or so tasks, only a few of which are narrated; half of the forty challenges relate in some way to the hunt for the Twrch Trwyth." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "welsh_olwen",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the curse that makes Olwen the only woman Culhwch can marry." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "set-tasks-by", "personId": "welsh_ysbaddaden",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ysbaddaden's forty tasks." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Culhwch is cursed by his stepmother to marry only Olwen, and must complete the forty tasks her father Ysbaddaden sets to prevent it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "The tale named after him is the OLDEST ARTHURIAN STORY IN ANY LANGUAGE, and the corpus held no part of it. The stepmother who curses him is unnamed in the treatment consulted and is not ingested. His father Cilydd and mother Goleuddydd are BLOCKED census rows for the same reason."
+  },
+  {
+    "id": "welsh_olwen",
+    "name": { "primary": "Olwen", "alt": [],
+      "transliterations": { "Welsh": "Olwen", "etymology": "'White track' or 'white footprint', from ol, 'track', and gwen, 'white' — the tale says white trefoils sprang up where she walked." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["welsh_ysbaddaden"], "parentRoles": ["father"],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Daughter of Ysbaddaden, king of the giants, and the only woman Culhwch can marry under his stepmother's curse. Her father is fated to die when she marries, which is the whole of his motive.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the only woman Culhwch can marry is Olwen, the daughter of Ysbaddaden, king of the giants; Ysbaddaden is fated to die when his daughter marries, so to prevent this he declares that Culhwch must first complete forty tasks." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "welsh_culhwch",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the curse and the marriage it forces." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Olwen is Ysbaddaden's daughter, the only woman Culhwch may marry, and her marriage is fated to kill her father.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "She has the title role and almost nothing to do; the tale is about the tasks. That is a fact about the tale and the record reflects it with an empty domains array rather than inventing her a sphere."
+  },
+  {
+    "id": "welsh_ysbaddaden",
+    "name": { "primary": "Ysbaddaden Bencawr", "alt": ["Ysbaddaden", "Ysbaddaden Chief of Giants"],
+      "transliterations": { "Welsh": "Ysbaddaden Bencawr", "etymology": "Bencawr is 'chief of giants'. The first element is usually connected with ysbyddad, 'hawthorn'." } },
+    "type": "numen", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Chief of Giants, and the principal antagonist of Culhwch ac Olwen. He is fated to die when his daughter marries, and sets Culhwch forty or so tasks to stop it happening. Half of them relate in some way to the hunt for the Twrch Trwyth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ysbaddaden Bencawr, meaning 'Chief of Giants', is the primary antagonist of the Welsh romance Culhwch ac Olwen; he is fated to die when his daughter marries, so to prevent this he declares that Culhwch must first complete forty tasks; half of Ysbaddaden's forty challenges relate in some way to the hunt for the Twrch Trwyth, and many of these mention the monstrous boar by name." } ] } ],
+    "domains": [
+      { "sphereId": "giant-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ysbaddaden as Chief of Giants and king of the giants." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "set-tasks-for", "personId": "welsh_culhwch",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the forty tasks." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ysbaddaden Bencawr is the Chief of Giants of Culhwch ac Olwen, fated to die when his daughter marries, who sets forty tasks to prevent it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ysbaddaden and of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "A father whose death is tied to his daughter's wedding, who spends the whole tale inventing errands, is one of the cleanest pieces of plot-machinery in medieval literature — and the forty tasks are not enumerated here, because the tale itself narrates only a few and this batch records the ones it narrates. The tasks are a list and not figures."
+  },
+  {
+    "id": "welsh_wrnach",
+    "name": { "primary": "Wrnach Gawr", "alt": ["Wrnach", "Wrnach the Giant"],
+      "transliterations": { "Welsh": "Wrnach Gawr", "etymology": "Gawr is 'giant'; the first element is unresolved." } },
+    "type": "numen", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The giant whose sword is the only weapon that can kill the Twrch Trwyth, and the first task. Cai gets into his hall by offering to sharpen the sword, and beheads him with it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the first task is to slay the giant Wrnach, in order to obtain his sword, which can slay the boar Twrch Trwyth; Kay tricks the giant by convincing him that his sword needs sharpening; when Wrnach hands over the sword, Kay beheads him." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "welsh_cai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Cai beheading Wrnach with his own sword." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Wrnach is the giant killed by Cai with his own sword, the only weapon that can kill the Twrch Trwyth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen." } ], "weight": "high" } ],
+    "notes": "He is ingested and the sword is not. The sword is an object and belongs to an items pass; he is a person who is killed with it."
+  },
+  {
+    "id": "welsh_mabon",
+    "name": { "primary": "Mabon ap Modron", "alt": ["Mabon", "Maponos"],
+      "transliterations": { "Welsh": "Mabon fab Modron", "etymology": "'Son, son of Mother' — mabon is 'son' and modron is 'mother'. The Romano-British god Maponos carries the same name, which makes this one of the oldest divine names attested in Britain." } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The greatest huntsman of all time, imprisoned since the beginning of time. One of Ysbaddaden's tasks is to get him out, because the boar-hunt cannot be done without him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the band searches for Mabon ap Modron, the greatest huntsman of all time, who has been imprisoned since the beginning of time." } ] },
+      { "typeStatus": "deity", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "Finding him takes Cai and Bedwyr through the oldest animals in the land in turn, each older than the last, until the oldest salmon carries the two of them on its back to his prison.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: finding Mabon's location requires that Kay and Bedwyr seek out the oldest animals in the land, until finally the oldest salmon carries them on its back to Mabon's prison." } ] } ],
+    "domains": [
+      { "sphereId": "hunting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mabon ap Modron as the greatest huntsman of all time." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rescued-by", "personId": "welsh_cai",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kay and Bedwyr finding Mabon's prison." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "rescued-by", "personId": "welsh_bedwyr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the same search." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mabon ap Modron is the greatest huntsman of all time, imprisoned since the beginning of time, freed by Cai and Bedwyr after a search through the oldest animals in the land.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen and of the search for Mabon." } ], "weight": "high" } ],
+    "notes": "ONE OF THE OLDEST DIVINE NAMES ATTESTED IN BRITAIN — Maponos is inscribed on Roman-period altars in the north — and the corpus did not hold him. His mother MODRON is not ingested: she is in this record's name, as the patronymic requires, and the treatment consulted does not describe her, so she is a BLOCKED census row. A corpus holding the son and not the mother, when the son's whole name is 'son of the mother', is a finding this lane can only half-fix."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. CAMLANN, AND THE TWO EXPLANATIONS OF IT
+================================================================================
+
+The Welsh Triads give the cause of Camlann two ways and do not choose between
+them. Triad 51 is dynastic: Medrawd rebels and usurps. Triad 53 is domestic: a
+woman slapped her sister, and it is one of the Three Harmful Blows of the Island
+of Britain. Both are recorded here, on the records they belong to.
+
+```json
+[
+  {
+    "id": "welsh_gwenhwyfar",
+    "name": { "primary": "Gwenhwyfar", "alt": ["Guinevere", "Gwenhwyvar"],
+      "transliterations": { "Welsh": "Gwenhwyfar", "etymology": "'White phantom' or 'white enchantress', from gwen, 'white, blessed', and a second element connected with a word for a spirit." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Arthur's wife. Triad 53 lists the slap her sister Gwenhwyfach gave her as one of the Three Harmful Blows of the Island of Britain, and makes it the cause of the Strife of Camlann.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Triad 53 lists a slap Gwenhwyvach gave to her sister Gwenhwyfar, wife of Arthur, as one of the 'Three Harmful Blows of the Island of Britain', causing the Strife of Camlann." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Gwenhwyfar as the wife of Arthur." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "welsh_gwenhwyfach",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the slap Gwenhwyfach gave to her sister Gwenhwyfar." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "struck-by", "personId": "welsh_gwenhwyfach",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Triad 53 and the Three Harmful Blows." } ],
+        "notes": "A second, separate edge from the sibling one, because in this tradition the blow is the historically consequential fact and the sisterhood is only the setting for it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gwenhwyfar is Arthur's wife, and the slap her sister Gwenhwyfach gave her is one of the Three Harmful Blows of the Island of Britain and the cause of the Strife of Camlann.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gwenhwyfach, of the Welsh Triads and of the battle of Camlann." } ], "weight": "high" } ],
+    "notes": "The Guinevere of the later tradition — the adultery, Lancelot, the convent — is not on this record, because none of it is in the Welsh material this batch is built from. What the Welsh material gives her instead is a sister and a slap that starts a war."
+  },
+  {
+    "id": "welsh_gwenhwyfach",
+    "name": { "primary": "Gwenhwyfach", "alt": ["Gwenhwyvach"],
+      "transliterations": { "Welsh": "Gwenhwyfach", "etymology": "Formed against her sister's name, with a diminutive or pejorative second element — 'lesser Gwenhwyfar', roughly." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "Gwenhwyfar's sister. The blow she gave her is listed in Triad 53 among the Three Harmful Blows of the Island of Britain, and is given as the cause of the Strife of Camlann.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Triad 53 lists a slap Gwenhwyvach gave to her sister Gwenhwyfar, wife of Arthur, as one of the 'Three Harmful Blows of the Island of Britain', causing the Strife of Camlann." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_gwenhwyfar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two sisters." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "struck", "personId": "welsh_gwenhwyfar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Triad 53." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gwenhwyfach is Gwenhwyfar's sister, whose blow is one of the Three Harmful Blows of the Island of Britain and the cause of the Strife of Camlann.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gwenhwyfach and of the Welsh Triads." } ], "weight": "high" } ],
+    "notes": "A figure who exists in the record for exactly one gesture, and whose gesture the tradition rates as one of the three most consequential blows ever struck on the island. That is precisely the kind of person a registry built outward from famous names never reaches, and it is the second time in two lanes that this programme has found one — lane 18 found Manthara, the maid who puts the idea in Kaikeyi's head."
+  },
+  {
+    "id": "welsh_medrawd",
+    "name": { "primary": "Medrawd", "alt": ["Medraut", "Mordred"],
+      "transliterations": { "Welsh": "Medrawd", "etymology": "Unresolved; the Latin Moderatus has been proposed." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "In Triad 51, which largely follows Geoffrey, he rebels against Arthur while Arthur is campaigning on the continent and usurps the throne, and that is what starts the battle of Camlann.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Triad 51 largely reflects Geoffrey — Medrawd rebels against Arthur while the latter is campaigning on the continent and usurps the throne, instigating the battle." } ] } ],
+    "domains": [
+      { "sphereId": "usurpation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Medrawd's rebellion and usurpation in Triad 51." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rebelled-against", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Triad 51." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Medrawd rebels against Arthur and usurps the throne while Arthur is abroad, which Triad 51 gives as the cause of Camlann.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Welsh Triads and of the battle of Camlann." } ], "weight": "high" } ],
+    "notes": "He is NOT recorded as Arthur's son or nephew. The parentage that makes Mordred what he is in the later tradition is not in the Welsh material the treatment consulted describes, and the record does not import it. The oldest Welsh notice of Camlann names both men as falling there and does not say they were enemies at all; this record follows the Triad, which does, and says so."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. GWYN, GWYTHYR AND THE WOMAN THEY FIGHT FOR EVERY MAY DAY
+================================================================================
+
+```json
+[
+  {
+    "id": "welsh_creiddylad",
+    "name": { "primary": "Creiddylad", "alt": ["Creiddylad ferch Lludd", "Cordelia"],
+      "transliterations": { "Welsh": "Creiddylad", "etymology": "Unresolved. Geoffrey of Monmouth's Cordeilla, Shakespeare's Cordelia, is generally taken to descend from this name." } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Betrothed to Gwythyr ap Greidawl and taken from him by Gwyn ap Nudd. Arthur intervenes; she is returned to her father, and the two men are bound to fight for her every May Day, she remaining with her father unmarried, until a final battle on Judgement Day decides who keeps her forever.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gwyn plays a prominent role in Culhwch and Olwen, in which he abducts Creiddylad from her betrothed, Gwythyr ap Greidawl; after the intervention of Arthur, Gwyn and Gwythyr agreed to fight for Creiddylad every May Day; the lady Creiddylad is returned to her father and an arrangement is made that forces the adversaries to engage in single combat for the object of their love every May Day, while she is destined to remain with her father, unmarried, until a final battle on Judgement Day, which will determine who keeps her forever." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "welsh_gwythyr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Creiddylad as Gwythyr's betrothed." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "taken-by", "personId": "welsh_gwyn_ap_nudd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gwyn taking Creiddylad from her betrothed." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Gwyn ap Nudd record — which the corpus held with NO RELATIONS AT ALL, for a god whose one story is this." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Creiddylad is Gwythyr's betrothed, taken by Gwyn ap Nudd, returned to her father by Arthur's judgement, and fought over every May Day until Judgement Day.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Creiddylad, of Gwyn ap Nudd and of Gwythyr ap Greidawl." } ], "weight": "high" } ],
+    "notes": "ONE SOURCE DISCREPANCY IS CARRIED RATHER THAN RESOLVED. One treatment consulted calls Creiddylad Gwyn's SISTER, which would make the abduction a different kind of story; another says she is returned to HER FATHER, and the standard patronymic makes her the daughter of Lludd. This record therefore asserts NO kin relation to Gwyn at all and names no father — her `parentIds` are empty and `welsh_lludd_llaw_eraint`, whom the corpus holds, is not pointed at. The discrepancy is a census row. Her rivalry is read as the contest between summer and winter and as a variant of the Holly King pattern, which is a scholarly reading and stays here rather than in a domain."
+  },
+  {
+    "id": "welsh_gwythyr",
+    "name": { "primary": "Gwythyr ap Greidawl", "alt": ["Gwythyr"],
+      "transliterations": { "Welsh": "Gwythyr ap Greidawl", "etymology": "Gwythyr is usually taken from the Latin Victor; Greidawl is 'scorching, fierce'." } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Creiddylad's betrothed, from whom Gwyn ap Nudd takes her. Arthur's judgement binds the two of them to fight for her every May Day until a final battle on Judgement Day.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gwyn abducts Creiddylad from her betrothed, Gwythyr ap Greidawl; after the intervention of Arthur, Gwyn and Gwythyr agreed to fight for Creiddylad every May Day, until a final battle on Judgement Day which will determine who keeps her forever." } ] } ],
+    "domains": [
+      { "sphereId": "seasonal-combat", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: their rivalry has been taken to represent the contest between summer and winter." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "welsh_creiddylad",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gwythyr as Creiddylad's betrothed." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "perpetual-adversary-of", "personId": "welsh_gwyn_ap_nudd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the May Day combat binding Gwyn and Gwythyr until Judgement Day." } ],
+        "notes": "NON-SYMMETRIC, and that is the compromise lanes 17 and 18 named: the relation is mutual by definition — they are bound to each other and to nothing else — and Gwyn ap Nudd is a pre-existing record, so a symmetric `enemy` or `rival` would mutate him. The kind carries the full sense and the asymmetry is noted here." },
+      { "kind": "bound-by-the-judgement-of", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arthur's intervention and the arrangement it imposes." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gwythyr ap Greidawl is Creiddylad's betrothed, bound by Arthur's judgement to fight Gwyn ap Nudd for her every May Day until Judgement Day.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gwythyr, Gwyn ap Nudd and Creiddylad." } ], "weight": "high" } ],
+    "notes": "The corpus held Gwyn ap Nudd with an empty relations array — a god defined entirely by a perpetual fight, recorded with nobody to fight and nothing to fight over. This record and Creiddylad's supply both."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE BOAR, THE CAULDRON AND THE OTHER KING OF ANNWN
+================================================================================
+
+```json
+[
+  {
+    "id": "welsh_twrch_trwyth",
+    "name": { "primary": "Twrch Trwyth", "alt": ["Twrch Trwyd", "Troit"],
+      "transliterations": { "Welsh": "Twrch Trwyth", "etymology": "Twrch is 'boar, hog'; the second element is a name and unresolved. The Historia Brittonum calls him Troit." } },
+    "type": "numen", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "A former king transformed into a boar, who carries a razor, a comb and a shears between his ears. Getting them is the greatest and most dangerous of Ysbaddaden's tasks, and half of the forty relate to the hunt for him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the greatest and potentially most dangerous of these tasks is acquiring the razor, comb and shears that the Twrch Trwyth, a former king who has been transformed into a boar, keeps between his ears; half of Ysbaddaden's forty challenges relate in some way to the hunt for the Twrch Trwyth, and many of these mention the monstrous boar by name." } ] },
+      { "typeStatus": "numen", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "The hunt follows him to Ireland and back across the sea to Preseli, and he is finally cornered on the banks of the Severn; they take the shaving set from between his ears and drive him into the river, where he drowns.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: they follow Twrch Trwyth to Ireland, and then back across the sea to Preseli; finally the boar is caught on the banks of the Severn river, they take an enchanted shaving set consisting of scissors, comb and razors from between his ears, and then drive him into the river, where he drowns." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "hunted-by", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the hunt for the Twrch Trwyth by Arthur's band, across Ireland, Preseli and the Severn." } ], "notes": "In-batch." },
+      { "kind": "object-of-the-tasks-set-by", "personId": "welsh_ysbaddaden",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: half of Ysbaddaden's forty challenges relate to the hunt for the Twrch Trwyth." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The Twrch Trwyth is a king transformed into a boar who keeps a razor, comb and shears between his ears; the hunt for them crosses to Ireland and back and ends with him drowned in the Severn.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Culhwch and Olwen and of the hunting of the Twrch Trwyth." } ], "weight": "high" } ],
+    "notes": "AN ANIMAL INGESTED, and on the ground lane 18 stated when it ingested the two bulls of the Táin and rejected five named horses before them: he is not an animal identified by a name and an owner. He is a KING, transformed, who keeps three objects on his head, crosses the Irish Sea twice with an army after him, and drowns fighting. Half of the tasks in the tale are about him. The razor, comb and shears are objects and belong to an items pass."
+  },
+  {
+    "id": "welsh_morfran",
+    "name": { "primary": "Morfran", "alt": ["Afagddu", "Y Fagddu", "Morfran ail Tegid"],
+      "transliterations": { "Welsh": "Morfran", "etymology": "'Great crow' or 'sea-crow' — mor, 'sea', and brân, 'crow'. Afagddu is 'utter darkness'." } },
+    "type": "demigod", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["welsh_ceridwen"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Ceridwen's son, hideously ugly — particularly beside his beautiful sister Creirwy — which is why his mother sets out to make him wise instead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ceridwen was the mother of a hideous son, Morfran, and a beautiful daughter, Creirwy; Morfran, also called Afagddu, was hideously ugly, particularly compared with his beautiful sister Creirwy, so Ceridwen sought to make him wise in compensation." } ] },
+      { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "She prepares a cauldron of Awen a Gwybodau, inspiration and knowledge, to be boiled a year and a day. The three drops meant for him land on the servant stirring it instead.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she prepared a cauldron of 'Awen a Gwybodau', Inspiration and Knowledge, which had to be boiled for a year and a day; Gwion Bach, a servant, was given the task of stirring the potion and keeping the fire burning, and three drops meant for her son Morfran landed on Gwion instead, giving him all knowledge." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_creirwy",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ceridwen's hideous son Morfran and beautiful daughter Creirwy." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "supplanted-by", "personId": "welsh_taliesin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the three drops meant for her son Morfran landed on Gwion instead, giving him all knowledge; Taliesin began life as a boy called Gwion Bach tending the fire under Ceridwen's cauldron." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Taliesin record — which the corpus holds, with Ceridwen as his mother, and with no trace of the person the potion was actually for." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Morfran, called Afagddu, is Ceridwen's hideous son, for whom she brews the cauldron of inspiration, and whose three drops fall on Gwion Bach instead.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Morfran, of Ceridwen and of Hanes Taliesin." } ], "weight": "high" } ],
+    "notes": "The corpus held the woman who brews the cauldron and the boy the drops land on — mother and son, both filed — and not the person the whole year and a day was for. The tale is about a mother trying to compensate a child for his face and failing by an accident of three drops, and the registry held it with the child removed."
+  },
+  {
+    "id": "welsh_creirwy",
+    "name": { "primary": "Creirwy", "alt": [],
+      "transliterations": { "Welsh": "Creirwy", "etymology": "Read as 'token, treasure' or 'dear one', from crair, 'relic, treasure'." } },
+    "type": "demigod", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": ["welsh_ceridwen"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Ceridwen's beautiful daughter, against whom her brother's ugliness is measured.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ceridwen was the mother of a hideous son, Morfran, and a beautiful daughter, Creirwy; Morfran was hideously ugly particularly compared with his beautiful sister Creirwy." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_morfran",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two children of Ceridwen." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Creirwy is Ceridwen's beautiful daughter, the sister her brother Morfran's ugliness is measured against.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Creirwy and of Ceridwen." } ], "weight": "medium" } ],
+    "notes": "She exists in the sources as a comparison, and the record says so rather than building her out. Her type is `demigod` because that is what the corpus computes for a child of Ceridwen — Taliesin, her brother by adoption in the tale, is already filed that way — and lanes 16, 17 and 18 each lost a test cycle to authoring a tier the pipeline recomputes."
+  },
+  {
+    "id": "welsh_hafgan",
+    "name": { "primary": "Hafgan", "alt": ["Hafgan, Lord of Annwn"],
+      "transliterations": { "Welsh": "Hafgan", "etymology": "'Summer song' or 'summer white', from haf, 'summer', and cân or gwyn." } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mabinogion-mythological", "eraOrdering": 0,
+      "startEvent": "One of the two kings of Annwn and the rival of Arawn. Arawn cannot kill him: whenever Arawn strikes him nearly to death, Hafgan begs for a second stroke, and the second stroke heals him and he is fit to fight again the next day.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hafgan appears in the First Branch of the Mabinogi as the main rival of Arawn, the other king of Annwn; in the past when Arawn had battled and struck Hafgan nearly to his death, Hafgan had begged him to give another stroke, and when Arawn had done so, Hafgan recovered from his injuries and was in good health for battle again the next day." } ] },
+      { "typeStatus": "deity", "era": "mabinogion-mythological", "eraOrdering": 1,
+        "startEvent": "Pwyll takes Arawn's shape for a year and a day, having been told to strike once and no more. He wounds Hafgan nearly to death; Hafgan begs for the second stroke; Pwyll refuses.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Pwyll, in order to gain Arawn's friendship, agrees to switch places with him for one year and one day and to battle against Hafgan; before they exchange places Arawn gives specific instructions to Pwyll to kill him with one stroke and no more; in one year Pwyll, wearing the guise of Arawn, goes to battle and succeeds in injuring Hafgan nearly to death, and just as Arawn had warned, Hafgan pleaded that Pwyll finish the slaughter and kill him thoroughly, but Pwyll refuses to do so." } ] } ],
+    "domains": [
+      { "sphereId": "kingship-of-annwn", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hafgan as one of the two kings of Annwn." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rival-of", "personId": "welsh_arawn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hafgan as the main rival of Arawn, the other king of Annwn." } ],
+        "notes": "Non-symmetric rather than the symmetric `rival`, so nothing is written onto the pre-existing Arawn record — which the corpus holds as a king of Annwn with nobody to be king against." },
+      { "kind": "slain-by", "personId": "welsh_pwyll",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pwyll in Arawn's guise striking Hafgan once and refusing the second stroke." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Pwyll record. The corpus held both parties to the year-long exchange and not the man the exchange exists to kill." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hafgan is the second king of Annwn and Arawn's rival, unkillable because a second stroke heals him, and killed by Pwyll in Arawn's shape with one stroke and a refusal.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hafgan, of Arawn and of the First Branch of the Mabinogi." } ], "weight": "high" } ],
+    "notes": "A being who can only be killed by someone WITHHOLDING a blow is one of the neatest inversions in the literature, and the corpus held the two men who arrange it and not him. It is also this programme's recurring finding in the smallest possible compass: one record, one absence, and the entire First Branch turns on it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE TWO MERLINS, AND THE KING THEY WERE BROUGHT TO
+================================================================================
+
+The famous Merlin is a twelfth-century merger and the Welsh tradition says so.
+This batch ingests both figures, because a registry that indexes traditions
+should be able to hold the fact that a tradition distinguishes two people whom
+a later author combined. Neither record asserts that they are the same person,
+and neither asserts that they are not.
+
+```json
+[
+  {
+    "id": "welsh_myrddin_emrys",
+    "name": { "primary": "Myrddin Emrys", "alt": ["Merlinus Ambrosius", "Merlin Ambrosius", "Emrys"],
+      "transliterations": { "Welsh": "Myrddin Emrys", "etymology": "Emrys is the Welsh form of the Latin Ambrosius. Myrddin is generally taken from Caerfyrddin, Carmarthen, rather than the other way round." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The Merlin found at Carmarthen, who prophesies before Vortigern. Giraldus Cambrensis, at the end of the twelfth century, distinguishes him sharply from the other Merlin.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: as early as the end of the twelfth century Giraldus Cambrensis sharply distinguishes 'Merlinus Ambrosius' (Myrddin Emrys), who was found at Carmarthen and prophesied before Vortigern, from another 'Merlinus' called 'Silvester' or 'Celidonius', who came from the North." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "The site Vortigern abandoned came to be called Dinas Emrys, Ambrosius's Fort, and is famous for the dragon prophecy attached to him. Geoffrey of Monmouth combined the stories of Myrddin Wyllt with the historical Romano-British war leader Ambrosius Aurelianus to make the Merlin who became famous, especially in Wales.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vortigern abandoned the site, which came to be known as Dinas Emrys, Ambrosius' Fort, which is famous for the dragon prophecy associated with Merlin or Myrddin; Geoffrey of Monmouth combined two characters to create the more famous Merlin, combining existing stories of Myrddin Wyllt with the historical Romano-British war leader Ambrosius Aurelianus, creating Merlin Ambrosius, Myrddin Emrys in Welsh, who became extremely popular, especially in Wales." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Myrddin Emrys prophesying before Vortigern and of the dragon prophecy at Dinas Emrys." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "prophesied-before", "personId": "welsh_vortigern",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Myrddin Emrys, found at Carmarthen, prophesying before Vortigern." } ], "notes": "In-batch." },
+      { "kind": "distinguished-by-the-sources-from", "personId": "welsh_myrddin_wyllt",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Giraldus Cambrensis sharply distinguishing Merlinus Ambrosius from Merlinus Silvester or Celidonius." } ],
+        "notes": "Reciprocated in-batch. The registry has no kind for 'the tradition says these two are not the same', and this is one; it is the counterpart of the problem lane 17 met in the other direction with Sati and Parvati, where the tradition says two records ARE one person and the schema has no way to say it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Myrddin Emrys is the Merlin found at Carmarthen who prophesies before Vortigern, distinguished by Giraldus from the northern Merlin, and the figure Geoffrey of Monmouth built by combining Myrddin Wyllt with Ambrosius Aurelianus.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Myrddin Wyllt, of Merlin and of the Welsh Merlin tradition." } ], "weight": "high" } ],
+    "notes": "Ambrosius Aurelianus, the historical Romano-British war leader Geoffrey merged into this figure, is NOT ingested and is a BLOCKED census row: the treatment names him as one of the two ingredients and does not describe him, and he would belong at era `roman-british`, which still holds nothing after this batch."
+  },
+  {
+    "id": "welsh_myrddin_wyllt",
+    "name": { "primary": "Myrddin Wyllt", "alt": ["Myrddin the Wild", "Merlinus Silvester", "Merlinus Celidonius", "Lailoken"],
+      "transliterations": { "Welsh": "Myrddin Wyllt", "etymology": "Wyllt is 'wild, mad'. Silvester and Celidonius are the Latin forms — of the woods, and of the Caledonian forest." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "A figure of medieval Welsh legend: a prophet bard, and the Merlin who came from the North. He is a contemporary of Arthur, sees a horrible portent in the sky while fighting in a battle, and spends the rest of his days a madman in the woods.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Myrddin Wyllt, 'Myrddin the Wild', is a figure in medieval Welsh legend; Giraldus distinguishes another 'Merlinus' called 'Silvester' or 'Celidonius', who came from the North, was a contemporary of Arthur, saw a horrible portent in the sky while fighting in a battle, and spent the rest of his days a madman in the woods." } ] },
+      { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 1,
+        "startEvent": "Geoffrey of Monmouth used his stories, combined with the historical Ambrosius Aurelianus, to build the Merlin who became famous.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Geoffrey of Monmouth's writings combined existing stories of Myrddin Wyllt with the historical Romano-British war leader Ambrosius Aurelianus, creating Merlin Ambrosius." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Myrddin Wyllt as a prophet bard." } ] },
+      { "sphereId": "madness-in-the-wild", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: he saw a horrible portent in the sky while fighting in a battle and spent the rest of his days a madman in the woods." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "distinguished-by-the-sources-from", "personId": "welsh_myrddin_emrys",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Giraldus's distinction between the two Merlins." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "contemporary-of", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the northern Merlin was a contemporary of Arthur." } ],
+        "notes": "In-batch, and deliberately the weakest available kind: the source places them in the same period and does not put them in a room together, and the whole Merlin-and-Arthur relationship is Geoffrey's." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Myrddin Wyllt is the northern Merlin of medieval Welsh legend, a prophet bard driven mad by a portent seen in battle, whose stories Geoffrey of Monmouth combined with Ambrosius Aurelianus.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Myrddin Wyllt and of the Welsh Merlin tradition." } ], "weight": "high" } ],
+    "notes": "The madman-in-the-woods is the older layer and the court magician is the later one, and a registry that held only 'Merlin' would hold the later one and lose the fact. The Scottish Lailoken, generally taken to be the same figure under another name, is carried in the alt-name list and not as a separate record; there is no Scottish tradition key in this corpus."
+  },
+  {
+    "id": "welsh_vortigern",
+    "name": { "primary": "Vortigern", "alt": ["Gwrtheyrn", "Vortigernus"],
+      "transliterations": { "Welsh": "Gwrtheyrn", "etymology": "'Over-lord' or 'great king', from a Brittonic compound — the name is a title." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The king before whom Myrddin Emrys prophesies, and who abandons the site that comes to be called Dinas Emrys — Ambrosius's Fort — after the dragon prophecy attached to it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Merlinus Ambrosius, Myrddin Emrys, was found at Carmarthen and prophesied before Vortigern; Vortigern abandoned the site, which came to be known as Dinas Emrys, Ambrosius' Fort, which is famous for the dragon prophecy associated with Merlin or Myrddin." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vortigern as the king before whom Myrddin prophesied and who abandoned Dinas Emrys." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "prophesied-to-by", "personId": "welsh_myrddin_emrys",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Myrddin Emrys prophesying before Vortigern." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vortigern is the king before whom Myrddin Emrys prophesies, who abandons the fort that is named Dinas Emrys after the prophecy.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Welsh Merlin tradition and of Dinas Emrys." } ], "weight": "medium" } ],
+    "notes": "The thing he is most famous for — inviting the Saxons in, and the tower that will not stand until the two dragons under it are released — is on this record only as 'the dragon prophecy', because that is how the treatment consulted names it. The dragons are not ingested: the treatment names a prophecy and not two beings. Dinas Emrys is a place."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE THREE ROMANCES AND THE DREAM OF MACSEN
+================================================================================
+
+The Three Welsh Romances — Owain, Geraint and Peredur — survive in the White
+Book of Rhydderch and the Red Book of Hergest and correspond to three of
+Chrétien's poems, with the Welsh material at least as old. The corpus held all
+four branches of the Mabinogi and none of the three romances that travel with
+them. And it held nothing of the Dream of Macsen, which is the tale that
+attaches a Roman emperor to a Welsh woman and puts her name on the roads.
+
+```json
+[
+  {
+    "id": "welsh_owain",
+    "name": { "primary": "Owain mab Urien", "alt": ["Owain", "Yvain", "Owein"],
+      "transliterations": { "Welsh": "Owain mab Urien", "etymology": "Usually from the Latin Eugenius." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The hero of Owain, or the Lady of the Fountain, one of the Three Welsh Romances, which survive in the White Book of Rhydderch and the Red Book of Hergest and correspond to Chrétien's poems, the Welsh material being at least as old.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Three Welsh Romances are Owain, or the Lady of the Fountain; Geraint and Enid; and Peredur, son of Efrawg; they survive in the White Book of Rhydderch and the Red Book of Hergest, both from the 14th century, though the material is at least as old as Chrétien." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Owain as the hero of one of the Three Welsh Romances." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "of-the-court-of", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances as Arthurian tales associated with the Mabinogion." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Owain mab Urien is the hero of Owain, or the Lady of the Fountain, one of the Three Welsh Romances.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances." } ], "weight": "medium" } ],
+    "notes": "Short, and short because the treatment consulted describes the three tales as a group and does not narrate them. His father URIEN of Rheged — a historical sixth-century king, the subject of some of the oldest Welsh poetry there is — is a BLOCKED census row and would belong at era `post-roman` with him. The Lady of the Fountain herself is likewise blocked and unnamed in the treatment."
+  },
+  {
+    "id": "welsh_geraint",
+    "name": { "primary": "Geraint fab Erbin", "alt": ["Geraint", "Erec"],
+      "transliterations": { "Welsh": "Geraint fab Erbin", "etymology": "Usually from the Latin Gerontius." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The hero of Geraint and Enid, the second of the Three Welsh Romances, which corresponds to Chrétien's Erec and Enide.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Three Welsh Romances are Owain, or the Lady of the Fountain; Geraint and Enid, which corresponds to Chrétien's Erec and Enide; and Peredur, son of Efrawg." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Geraint as the hero of one of the Three Welsh Romances." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "of-the-court-of", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances as Arthurian tales." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Geraint fab Erbin is the hero of Geraint and Enid, the second of the Three Welsh Romances.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances." } ], "weight": "medium" } ],
+    "notes": "ENID, who is in the title of the tale, is a BLOCKED census row: the treatment names the tale and not her. That is an uncomfortable outcome and the census says so — ingesting the man out of a two-name title and leaving the woman is exactly the mechanism lane 16 identified, and this batch is doing it with its eyes open because the citation covers one name and not the other."
+  },
+  {
+    "id": "welsh_peredur",
+    "name": { "primary": "Peredur fab Efrawg", "alt": ["Peredur", "Perceval"],
+      "transliterations": { "Welsh": "Peredur fab Efrawg", "etymology": "Unresolved; peri, 'spears', has been proposed for the first element." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-roman" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-roman", "eraOrdering": 0,
+      "startEvent": "The hero of Peredur son of Efrawg, the third of the Three Welsh Romances, which corresponds to Chrétien's Perceval, the Story of the Grail.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Three Welsh Romances are Owain; Geraint and Enid; and Peredur, son of Efrawg, which corresponds to Chrétien's Perceval, the Story of the Grail." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Peredur as the hero of one of the Three Welsh Romances." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "of-the-court-of", "personId": "welsh_arthur",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances as Arthurian tales." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Peredur fab Efrawg is the hero of the third of the Three Welsh Romances, corresponding to Chrétien's Perceval.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Three Welsh Romances." } ], "weight": "medium" } ],
+    "notes": "The Welsh tale has no Grail — it has a severed head on a salver — and this record claims neither, because the treatment consulted gives the correspondence with Chrétien and not the content. The correspondence is what is recorded and it is recorded as a correspondence."
+  },
+  {
+    "id": "welsh_macsen_wledig",
+    "name": { "primary": "Macsen Wledig", "alt": ["Magnus Maximus", "Maxen"],
+      "transliterations": { "Welsh": "Macsen Wledig", "etymology": "Macsen is the Welsh form of Maximus; gwledig is a title, roughly 'ruler, prince'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "roman-british" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "roman-british", "eraOrdering": 0,
+      "startEvent": "The emperor of Breuddwyd Macsen, the Dream of Macsen — a native Welsh tale dated to around 1150 and possibly resting on much older oral tradition — who dreams of a woman and goes to Caernarfon to find her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Mabinogion there is a native Welsh tale called 'Breuddwyd Macsen', The Dream of Macsen, which is dated to around 1150 but which might be based on an oral tradition going back much further; Macsen Wledig is Magnus Maximus." } ] },
+      { "typeStatus": "mortal", "era": "roman-british", "eraOrdering": 1,
+        "startEvent": "For her wedding gift Elen insists that he build three Roman-style cities — at Caernarfon, Carmarthen and Caerleon — and connect them with a network of roads.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Elen Luyddog is found in Caernarfon, and for her wedding gift she insists that Macsen build three Roman-style cities at Caernarfon, Carmarthen and Caerleon and interconnect them with a network of roads, thenceforward known as 'Sarn Elen'." } ] } ],
+    "domains": [
+      { "sphereId": "imperial-rule", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Macsen Wledig as the emperor of the Dream of Macsen." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_elen_luyddog",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Elen's wedding gift from Macsen." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Macsen Wledig is the emperor of the Dream of Macsen, who marries Elen Luyddog and builds at her request three cities and the road network named after her.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Macsen Wledig and of Elen Luyddog." } ], "weight": "high" } ],
+    "notes": "HE IS THE FIRST RECORD IN THE `roman-british` ERA, which held nothing. He is the historical Magnus Maximus as the Welsh tradition received him; the usurpation of 383, the campaign and the death at Aquileia are not on the record, because the treatment consulted is of the Welsh tale. That is the same boundary the Saint Patrick record in lane 18 draws, and for the same reason."
+  },
+  {
+    "id": "welsh_elen_luyddog",
+    "name": { "primary": "Elen Luyddog", "alt": ["Elen of the Hosts", "Saint Elen", "Helen of Caernarfon"],
+      "transliterations": { "Welsh": "Elen Luyddog", "etymology": "Luyddog is 'of the hosts', from llu, 'host, army' — earned, the tradition says, by getting the roads built so soldiers could defend the country." } },
+    "type": "mortal", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "roman-british" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "roman-british", "eraOrdering": 0,
+      "startEvent": "The woman Macsen dreams of and finds at Caernarfon. For her wedding gift she demands three Roman-style cities — Caernarfon, Carmarthen and Caerleon — and a road network joining them, ever after called Sarn Elen.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Elen Luyddog, Helena of the Hosts, is found in Caernarfon, and for her wedding gift she insists that Macsen build three Roman-style cities at Caernarfon, Carmarthen and Caerleon and interconnect them with a network of roads, thenceforward known as 'Sarn Elen'." } ] },
+      { "typeStatus": "mortal", "era": "roman-british", "eraOrdering": 1,
+        "startEvent": "She is remembered for having the roads built so that soldiers could more easily defend her country from attackers, which is how she earns the name Elen of the Hosts.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she is remembered for having Macsen build roads across her country so that the soldiers could more easily defend it from attackers, thus earning her the name Elen Luyddog, Elen of the Hosts." } ] } ],
+    "domains": [
+      { "sphereId": "infrastructure-and-defence", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Elen having the roads built so soldiers could defend the country, earning the name Elen of the Hosts." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_macsen_wledig",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the marriage and the wedding gift." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Elen Luyddog is the woman of the Dream of Macsen, who takes three cities and a road network as her wedding gift and is called Elen of the Hosts for having them built so the country could be defended.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Elen Luyddog and of Saint Elen." } ], "weight": "high" } ],
+    "notes": "A woman whose bride-price is ROADS, and who is remembered for a defence policy rather than for a marriage, is a rarer thing in this corpus than any god in it. The roads are still called Sarn Elen. She is also venerated as a saint in Wales, which the alt-name list records; the cult is not written into cultRecords, because the treatment consulted names the sainthood and does not describe an observance."
+  }
+]
+```
