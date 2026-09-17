@@ -1,0 +1,2961 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Haitian Vodou
+Eras (registered, exact): Haitian Vodou traditional religion; continuing
+Author pass: Haitian Vodou held 12 records. This adds 23.
+
+================================================================================
+THE GAP — THE CORPUS HELD PAPA LEGBA AND NOT KALFOU
+================================================================================
+
+The Haitian Vodou key held **twelve records**:
+
+    Bondye                      the supreme God
+    Papa Legba                  who opens the way at the crossroads
+    Danbala Wedo, Ayida Wedo    the serpent and the rainbow
+    Ezili Freda, Ezili Dantò    love, and the mother who fights
+    Lasirèn                     the mermaid
+    Agwe                        the sea
+    Ogou Feray                  the warrior-smith
+    Bawon Samdi, Manman Brijit  the graveyard and its mistress
+    Gede Nibo                   leader of the spirits of the dead
+
+Every one of those is a **headline Rada or Gede lwa**. What is missing is not a
+handful of minor names — it is **an entire rite**.
+
+**The Petwo nation is absent from the corpus completely.** The lwa divide into
+nanchon, "nations"; the Rada are cool and sweet-tempered and are held to come
+from the African homeland, and the Petwo are hot and volatile and are described
+as born out of slavery and resistance in the New World. **Every one of the twelve
+records is Rada or Gede. Not one is Petwo** — no Dan Petro, whose rite it is; no
+Ti Jean Petro; no Marinette; no Bosou; no Kalfou.
+
+**And the corpus held Papa Legba without Kalfou.** Papa Legba is the benevolent
+opener of the way; Kalfou is his cousin-brother and his dark counterpart, the
+literal embodiment of the crossroads, the spirit of dangerous crossroads, of
+confusion and of blocked pathways. **Holding the one who opens the way and not
+the one who blocks it** is this programme's recurring fault — Arawn without
+Hafgan, Beowulf without Grendel, Kumarbi without Anu — arriving in a nineteenth
+tradition.
+
+It also held **no priest and no priestess**. Papa Loko Atisou and Manbo Ayizan
+Velekete are the archetypal houngan and manbo, who confer the office of
+priesthood in the kanzo rite and hand over the asson. **A religion whose entire
+structure runs through initiation was in the corpus without the two lwa who
+perform it.**
+
+================================================================================
+TWO OF THIS BATCH'S CANDIDATES TURNED OUT TO BE HIDING INSIDE AN ALIAS LIST
+================================================================================
+
+The sources give **Bawon** three aspects: **Bawon Samdi**, ruler of the
+graveyard; **Baron La Croix**, guardian of the gravestone; and **Baron
+Cimetière**, guardian of the grave. Three stations, three names, three jobs.
+
+`vodou_bawon_samdi` carries **"Baron La Croix" and "Baron Cimetière" as
+aliases.** So the corpus holds three guardians as one record, and a sweep for
+either of the other two resolves onto Samdi and reports him present.
+
+The same thing has happened to the **Gede**, who are the largest family of lwa in
+the religion: `vodou_gede_nibo` carries the bare **"Gede"** and **"Ghede"** as
+aliases, so the family name resolves onto one member of it. And to the **Ogou**:
+`vodou_ogou`, primary "Ogou Feray", carries **"Ogou Badagri"** — a distinct lwa
+of the Nago nation, a general in the armies of Ogou — as an alias of another.
+
+**This batch does not create any of those three as records**, because they would
+duplicate names the corpus already resolves, and it cannot fix the alias lists
+without mutating pre-existing records. All three are censused as `EXISTING` with
+the reason. **Lane 27 found that a false absence invites a duplicate; this is the
+matching case — an alias that is really a separate figure makes a real absence
+invisible.** Seventh lane to pay the never-mutate cost, and the first where the
+cost is not a missing alias but a missing record.
+
+================================================================================
+THE RESEARCH BUDGET RAN OUT, AND THIS BATCH IS BOUNDED BY THAT
+================================================================================
+
+**This session's web-search budget was exhausted before this lane was authored.**
+Every record here rests on material retrieved while the budget lasted, and the
+batch stops where that material stops.
+
+That is why this is **23 figures and not the 30-odd the tradition would support**.
+Ezili Kokobe gets a name and a gloss because a name and a gloss is what the
+retrieved treatment gives her, and the record says so. Nothing is padded out, no
+attribute is supplied from general knowledge, and every figure the sources named
+but did not describe is censused **BLOCKED — sourcing**, with the name recorded
+so the next lane can start from it rather than rediscover it.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+The **twenty-one nanchon** are a classificatory scheme, not figures; the Rada,
+Petwo, Kongo and Nago **nations** likewise. **The asson** is a ritual object and
+is named on Loko's and Ayizan's records rather than ingested. **Kanzo** is a rite.
+**Dosou Agadja**, king of Dahomey 1708–1732, is named in the Bosou source as a
+historical reign-marker and belongs to Dahomey, not to this key. The sources say
+over a thousand lwa exist and at least 232 names are recorded; **a number is not
+a roster**, and nothing is generated from it.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE CROSSROADS, THE PRIESTHOOD AND THE FOREST
+================================================================================
+
+```json
+[
+ {
+  "id": "vodou_kalfou",
+  "name": {
+   "primary": "Mèt Kalfou",
+   "alt": [
+    "Kalfou",
+    "Kafou",
+    "Carrefour",
+    "Maître Carrefour",
+    "Met Kalfou"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Mèt Kalfou",
+    "etymology": "kalfou is the Haitian Creole for 'crossroads', from the French carrefour; mèt is 'master'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The literal embodiment of the crossroads and Papa Legba's dark counterpart, described as his cousin-brother: the spirit of dangerous crossroads, of confusion and of blocked pathways, belonging to the Petwo nation as Legba belongs to the Rada.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-crossroads",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ]
+   },
+   {
+    "sphereId": "obstruction",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ]
+   },
+   {
+    "sphereId": "petwo-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "dark-counterpart-of",
+    "personId": "vodou_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, written from this end only; Papa Legba is a pre-existing record and this batch mutates none. THE CORPUS HELD THE ONE WHO OPENS THE WAY AND NOT THE ONE WHO BLOCKS IT."
+   },
+   {
+    "kind": "of-the-petwo-nation-with",
+    "personId": "vodou_dan_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch. SET MEMBERSHIP: the source places Kalfou in the Petwo nation, whose rite Dan Petro founded."
+   },
+   {
+    "kind": "of-the-master-magicians-with",
+    "personId": "vodou_gran_bwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ],
+    "notes": "In-batch and reciprocated. The source counts Gran Bwa, Kalfou and Baron together among the master magicians of the lwa, because of their role in the Haitian secret societies. THE THIRD MEMBER OF THAT TRIAD IS BAWON, WHOM THE CORPUS HOLDS AS vodou_bawon_samdi WITH TWO OTHER BARONS FOLDED INTO HIS ALIASES; no edge is drawn there, because which Baron the source means is exactly what the alias list has made unanswerable."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The literal embodiment of the crossroads and Papa Legba's dark counterpart, described as his cousin-brother: the spirit of dangerous crossroads, of confusion and of blocked pathways, belonging to the Petwo nation as Legba belongs to the Rada.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Papa Legba and Kalfou: Papa Legba stands at the spiritual crossroads and gives or denies permission to speak with the spirits, and is invoked at the beginning of ceremonies to open communication with the other lwa; the literal embodiment of the crossroads is Kalfou, also Kafou or Carrefour or Mèt Kalfou, described as Legba's cousin-brother and his dark counterpart; where Papa Legba is the benevolent opener of the way, Kalfou is the spirit of dangerous crossroads, of confusion and of blocked pathways; Papa Legba belongs to the Rada nation, whose spirits are considered benevolent, healing and protective and are held to come from the African homeland, and Kalfou to the Petwo nation, whose spirits are fiercer and more aggressive and are described as born of the harsh conditions of slavery and resistance in the New World."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE HEADLINE OF THIS LANE. Legba opens the way and Kalfou blocks it, and the corpus held the first without the second - the fault this programme has now found in nineteen traditions. He is also the first Petwo lwa in the corpus: every one of the twelve records that preceded this batch was Rada or Gede, and an entire rite of the religion was missing."
+ },
+ {
+  "id": "vodou_loko",
+  "name": {
+   "primary": "Papa Loko Atisou",
+   "alt": [
+    "Loko",
+    "Loco",
+    "Loko Atisou",
+    "Papa Loko"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Papa Loko Atisou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The archetypal houngan, the prototypical priest of the tradition, who with his wife Ayizan confers the office of priesthood during initiation and is a powerful guardian of reglemen — the correct and appropriate form of service.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priesthood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "reglemen",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "rada-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "vodou_loko_asson",
+    "name": "the asson",
+    "kind": "ritual-implement",
+    "role": "the sacred rattle and tool of the priesthood, given to the priest or priestess to be in the kanzo rite, at least in the asson lineage",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "vodou_ayizan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "confers-the-priesthood-with",
+    "personId": "vodou_ayizan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "notes": "In-batch and reciprocated. The source calls the two the spiritual parents of the priesthood."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The archetypal houngan, the prototypical priest of the tradition, who with his wife Ayizan confers the office of priesthood during initiation and is a powerful guardian of reglemen — the correct and appropriate form of service.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A RELIGION WHOSE WHOLE STRUCTURE RUNS THROUGH INITIATION WAS IN THE CORPUS WITHOUT THE TWO LWA WHO PERFORM IT. The asson is carried as material culture on both records rather than ingested, because it is an object. KANZO IS A RITE AND IS NOT A FIGURE."
+ },
+ {
+  "id": "vodou_ayizan",
+  "name": {
+   "primary": "Manbo Ayizan Velekete",
+   "alt": [
+    "Ayizan",
+    "Ayizan Velekete",
+    "Manbo Ayizan",
+    "Ayizan Belekunde"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Manbo Ayizan Velekete"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The first or archetypal manbo, a racine or root lwa of the rites of initiation called kanzo, associated with priestly knowledge and mysteries — particularly those of initiation and of the natural world — and a powerful guardian of reglemen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priesthood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "reglemen",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   },
+   {
+    "sphereId": "rada-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "vodou_ayizan_asson",
+    "name": "the asson",
+    "kind": "ritual-implement",
+    "role": "the sacred rattle and tool of the priesthood, conferred in the kanzo rite",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ]
+   }
+  ],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "vodou_loko",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "confers-the-priesthood-with",
+    "personId": "vodou_loko",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "of-the-kanzo-rite-with",
+    "personId": "vodou_gran_bwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ],
+    "notes": "In-batch. The source gives Gran Bwa an important role in the kanzo initiatory cycle of asson-lineage Vodou."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The first or archetypal manbo, a racine or root lwa of the rites of initiation called kanzo, associated with priestly knowledge and mysteries — particularly those of initiation and of the natural world — and a powerful guardian of reglemen.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "SHE IS NAMED IN THE SOURCE'S OWN LIST OF RADA LWA - Legba, Loko, Ayizan, Danbala, Ayida Wedo, Freda, Agwe - FOUR OF WHICH THE CORPUS HELD AND TWO OF WHICH IT DID NOT. A seven-name list with two missing is the same shape as lane 27's three-of-which-two and five-of-which-one."
+ },
+ {
+  "id": "vodou_gran_bwa",
+  "name": {
+   "primary": "Gran Bwa",
+   "alt": [
+    "Grand Bois",
+    "Grans Bwa",
+    "Bran Bwa",
+    "Ganga-Bois",
+    "Gran Bwa Ile"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Gran Bwa",
+    "etymology": "'Great wood'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "An elemental, nature-oriented lwa closely associated with trees, plants and herbs: master of the forest and especially of the wilderness and the mysteries it holds, who governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-forest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   },
+   {
+    "sphereId": "herbs-and-roots",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   },
+   {
+    "sphereId": "initiation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-master-magicians-with",
+    "personId": "vodou_kalfou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "of-the-kanzo-rite-with",
+    "personId": "vodou_ayizan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Loko and Ayizan: Papa Loko Atisou and Manbo Ayizan Velekete are the prototypical priest and priestess of the tradition and confer the office of priesthood during initiation; Ayizan is a racine or root lwa associated with the rites of initiation called kanzo, and just as her husband Loko is the archetypal houngan, Ayizan is regarded as the first or archetypal manbo, associated with priestly knowledge and mysteries, particularly those of initiation and of the natural world; as the spiritual parents of the priesthood the two are among the lwa involved in the kanzo rites, in which the priest or priestess to be is given the asson, the sacred rattle and tool of the priesthood, at least in the asson or asogwe lineage, and both are powerful guardians of reglemen, the correct and appropriate form of service."
+     }
+    ],
+    "notes": "In-batch. He plays an important role in the kanzo initiatory cycle."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An elemental, nature-oriented lwa closely associated with trees, plants and herbs: master of the forest and especially of the wilderness and the mysteries it holds, who governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE SAME LEAVES HEAL AND HARM, AND THE SOURCE SAYS SO OUTRIGHT; the record carries both and does not moralise either. His role in the Haitian secret societies is what places him among the master magicians, and it is recorded as the source states it."
+ },
+ {
+  "id": "vodou_marasa",
+  "name": {
+   "primary": "Marasa",
+   "alt": [
+    "the Marasa",
+    "Marassa",
+    "Marassa Jumeaux",
+    "the Divine Twins",
+    "Marasa Twa"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Marasa",
+    "etymology": "marasa is the Haitian Creole for twins."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "other",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The divine twins, who appear either as two or as three children: twins and yet numbering three, male and female, and both male and both female; commonly syncretised with the Catholic saints Cosmas and Damian.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Marasa: the Marasa are divine twins who appear either as two or as three children - they are twins and yet they number three, they are male and female, and both male and both female - and they are commonly syncretised with the Catholic saints Cosmas and Damian."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "twinship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Marasa: the Marasa are divine twins who appear either as two or as three children - they are twins and yet they number three, they are male and female, and both male and both female - and they are commonly syncretised with the Catholic saints Cosmas and Damian."
+     }
+    ]
+   },
+   {
+    "sphereId": "childhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Marasa: the Marasa are divine twins who appear either as two or as three children - they are twins and yet they number three, they are male and female, and both male and both female - and they are commonly syncretised with the Catholic saints Cosmas and Damian."
+     }
+    ]
+   },
+   {
+    "sphereId": "paradox",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Marasa: the Marasa are divine twins who appear either as two or as three children - they are twins and yet they number three, they are male and female, and both male and both female - and they are commonly syncretised with the Catholic saints Cosmas and Damian."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The divine twins, who appear either as two or as three children: twins and yet numbering three, male and female, and both male and both female; commonly syncretised with the Catholic saints Cosmas and Damian.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Marasa: the Marasa are divine twins who appear either as two or as three children - they are twins and yet they number three, they are male and female, and both male and both female - and they are commonly syncretised with the Catholic saints Cosmas and Damian."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "AUTHORED AS ONE RECORD AND NOT AS TWO OR THREE, WHICH IS THE ONLY HONEST OPTION. The source's whole point about them is that they resist being counted - they are twins and yet three, male and female and both male and both female - so splitting them into two or three records would assert a resolution the tradition specifically refuses. sex is 'other' for the same reason. THE CATHOLIC SYNCRETISM IS RECORDED AND NOT DRAWN AS AN EDGE: Cosmas and Damian are not in this corpus, and a syncretism is a fact about how a tradition was practised under pressure, not a relation between beings. They carry a verified-solitary verdict rather than a manufactured kinship. THE PRIMARY NAME IS 'Marasa' AND NOT 'the Marasa', WHICH IS NOT A STYLE CHOICE: this record was first authored with the article, and the post-generation sweep then reported 'Marasa' ABSENT against the record that had just been created, because a leading article normalises into the indexed string. That is the false-absence failure lane 27 documented in Pehar and Tonpa Shenrab and lanes 18 and 19 found before it - REPRODUCED HERE BY THIS BATCH'S OWN AUTHORING, caught by the second sweep, and fixed before it shipped."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE PETWO RITE, AND THE ANCESTOR RAISED TO DIVINITY
+================================================================================
+
+```json
+[
+ {
+  "id": "vodou_dom_pedro",
+  "name": {
+   "primary": "Dom Pedro",
+   "alt": [
+    "Don Pedro",
+    "Dom Pèdwo",
+    "the houngan Dom Pedro"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Dom Pedro"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The houngan named as the legendary founder of the Petwo rite, whose deification is the lwa Dan Petro.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "founding-of-the-petwo-rite",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "priesthood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "deified-as",
+    "personId": "vodou_dan_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The houngan named as the legendary founder of the Petwo rite, whose deification is the lwa Dan Petro.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE IS INGESTED BECAUSE THE CORPUS WOULD OTHERWISE HOLD A DEIFICATION WITHOUT THE MAN DEIFIED - the same fault at one remove that lane 25 found in Sertapsuruhi's father and lane 27 in Lo-Ngam. He falls on the ingest side of the line lane 27 stated: what the sources transmit of him is that he founded a rite and became a lwa, not a dated biography. AUTHORED mortal AND WITHOUT parentIds, so the record returns the authored type and asserts no descent."
+ },
+ {
+  "id": "vodou_dan_petro",
+  "name": {
+   "primary": "Dan Petro",
+   "alt": [
+    "Don Petro",
+    "Danpetro",
+    "Dan Pèdwo"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Dan Petro"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A violent lwa: the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro, and the head of the family of lwa regarded as volatile and hot, in contrast with the cool and sweet-tempered Rada.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "petwo-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "violence",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "deification-of",
+    "personId": "vodou_dom_pedro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "father-of",
+    "personId": "vodou_ti_jean_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch and reciprocated as son-of. Written as a RELATION and not as parentIds: in this corpus parentIds drives the computed tier, and a seeded parentage here would make the son a demigod, which is not what either source says he is. Lane 23's rule."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A violent lwa: the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro, and the head of the family of lwa regarded as volatile and hot, in contrast with the cool and sweet-tempered Rada.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE PETWO NATION WAS ABSENT FROM THE CORPUS ENTIRELY AND HE IS ITS ORIGIN. Every one of the twelve records that preceded this batch is Rada or Gede. The Petwo are described in the sources as born out of the harsh conditions of slavery and resistance in the New World, which is why an African-derived-religion key that holds only the Rada holds only half of what the religion is."
+ },
+ {
+  "id": "vodou_ti_jean_petro",
+  "name": {
+   "primary": "Ti Jean Petro",
+   "alt": [
+    "Ti-Jean Petro",
+    "Ti Jean",
+    "Ti Jean Pye Fin"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Ti Jean Petro",
+    "etymology": "ti jan is 'little John'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "petwo-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "son-of",
+    "personId": "vodou_dan_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch and reciprocated. A RELATION and not parentIds, for the reason given on Dan Petro's record."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A TRICKSTER WHO IS ALSO FIERCE is the combination the Petwo material keeps producing, and the record carries both without smoothing either away."
+ },
+ {
+  "id": "vodou_marinette",
+  "name": {
+   "primary": "Marinette",
+   "alt": [
+    "Marinette Bwa Chèch",
+    "Marinèt"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Marinette"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A lwa of power and of violence, of the Petwo family.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "petwo-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "violence",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   },
+   {
+    "sphereId": "power",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-petwo-nation-with",
+    "personId": "vodou_dan_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch. Set membership."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A lwa of power and of violence, of the Petwo family.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE RETRIEVED TREATMENT GIVES HER A DOMAIN AND NOTHING ELSE, AND THAT IS ALL THIS RECORD CARRIES. She has a large body of narrative in the practice literature - none of it was retrievable before this session's research budget ran out, and nothing is supplied from general knowledge to fill the entry out."
+ },
+ {
+  "id": "vodou_bosou",
+  "name": {
+   "primary": "Bosou",
+   "alt": [
+    "Bosou Twa Kon",
+    "Papa Bosou",
+    "Bossou",
+    "Bosou Twa Kònen"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Bosou Twa Kon",
+    "etymology": "twa kon is 'three horns'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A lwa portrayed as a man with bull horns, served in the Petwo rite; described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "petwo-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ]
+   },
+   {
+    "sphereId": "strength",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ]
+   },
+   {
+    "sphereId": "royalty-of-dahomey",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Twa Kon",
+    "translation": "three horns",
+    "language": "Haitian Creole",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "of-the-petwo-nation-with",
+    "personId": "vodou_dan_petro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Petwo lwa: the Petwo are a family of lwa regarded as volatile and hot, in contrast with the Rada, who are regarded as sweet-tempered and cool; Dan Petro is a violent lwa, the deification of the legendary founder of the Petwo rite, the houngan Dom Pedro; Ti Jean Petro is a powerful lwa and the son of Dan Petro, known as a trickster with a fierce nature and a connection to fire and heat; Marinette is a lwa of power and violence; Bosou is portrayed as a man with bull horns and is served in the Petwo rite."
+     }
+    ],
+    "notes": "In-batch. Set membership; the source states he is served in the Petwo rite."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A lwa portrayed as a man with bull horns, served in the Petwo rite; described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Bosou: Bosou Twa Kon is served in the Petwo rite; Papa Bosou is described as a royal vodou of Tohosou-land in Dahomey, a deformed child of royalty during the reign of Dosou Agadja, king of Dahomey from 1708 to 1732, and the Tawoyo of the royal family at Abomey."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE CARRIES A DATE AND THE RECORD DOES NOT PRETEND OTHERWISE: the source anchors him to a named Dahomean reign, 1708-1732, which is the kind of detail that makes the Atlantic religions different from the rest of this corpus - the crossing is documented. DOSOU AGADJA IS NOT INGESTED: he is a historical king of Dahomey, he belongs to a different tradition key, and he appears here only as the reign-marker the source uses."
+ },
+ {
+  "id": "vodou_agasou",
+  "name": {
+   "primary": "Agasou",
+   "alt": [
+    "Agassou",
+    "Agasu",
+    "Agassou Gnenen"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Agasou",
+    "Fon": "Agasu"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Formerly a king of Dahomey, an ancestor said to have been raised up to divinity: a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou, the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   },
+   {
+    "sphereId": "rada-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   },
+   {
+    "sphereId": "guardianship-of-tradition",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   },
+   {
+    "sphereId": "royalty-of-dahomey",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "born-of",
+    "personId": "vodou_aligbonu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ],
+    "notes": "In-batch and reciprocated. Written as a RELATION and not as parentIds: his father in the source is a leopard, which is not a record and will not become one, and a single seeded parent would make the corpus compute a descent the sources do not describe."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Formerly a king of Dahomey, an ancestor said to have been raised up to divinity: a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou, the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE IS AN ANCESTOR WHO WAS RAISED TO DIVINITY, which is a category this schema has no field for and which the type vocabulary again cannot express - the escalation lane 26 opened, in a third tradition. THE LEOPARD IS NOT INGESTED: an animal identified by its role in a mating is not a figure, the rejection this programme has applied to Kanthaka, five horses, two hounds and Balder's foal."
+ },
+ {
+  "id": "vodou_aligbonu",
+  "name": {
+   "primary": "Aligbonu",
+   "alt": [
+    "Princess Aligbonu",
+    "Aligbonon"
+   ],
+   "transliterations": {
+    "Fon": "Aligbonu"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The princess who is said to have mated with a leopard and so to have given birth to Agasou, the ancestor raised up to divinity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   },
+   {
+    "sphereId": "royalty-of-dahomey",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "vodou_agasou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ],
+    "notes": "In-batch and reciprocated. A relation and not parentIds, for the reason on Agasou's record."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The princess who is said to have mated with a leopard and so to have given birth to Agasou, the ancestor raised up to divinity.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Agasou: Agasou, formerly a king of Dahomey, is an ancestor said to have been raised up to divinity, a vodun who guards the old traditions of Dahomey in the West African Vodun religion and a Rada lwa of Haitian Vodou; he is the product of a divine mating, his mother being the princess Aligbonu, who is said to have mated with a leopard and so to have given birth to him."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "SHE IS IN THIS BATCH FOR THE REASON LO-NGAM WAS IN LANE 27'S: a lane that ingested Agasou and left out the woman the source makes his origin would be committing the fault this programme was written to fix. FILED UNDER THE HAITIAN VODOU KEY AND NOT A DAHOMEAN ONE, because the retrieved treatment reaches her through Agasou's Haitian cult; the corpus holds a Fon key, and whether she belongs there instead is censused as a question for the owner rather than answered here."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE WEATHER, THE HARVEST AND THE FRESH WATER
+================================================================================
+
+```json
+[
+ {
+  "id": "vodou_sobo",
+  "name": {
+   "primary": "Sobo",
+   "alt": [
+    "Sogbo",
+    "Sobo Kessou",
+    "Papa Sobo"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Sobo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "One of three spirits associated with weather: Sobo brings the lightning, and with Badè he summons Agau, who brings storms and tempests.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   },
+   {
+    "sphereId": "weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-three-weather-spirits-with",
+    "personId": "vodou_bade",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated. Set membership the source states outright."
+   },
+   {
+    "kind": "summons",
+    "personId": "vodou_agau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated as summoned-by."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of three spirits associated with weather: Sobo brings the lightning, and with Badè he summons Agau, who brings storms and tempests.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "NO EDGE OR EQUATION IS WRITTEN TO ewe_so OR fon_sogbo, which the sweep resolves his name onto. The Haitian Sobo and the West African Sogbo share a name and a history, and that is a fact about how the religion crossed the Atlantic, not a relation between two beings - the rule this programme applied to Guanyin and Avalokitesvara in lane 26 and to Gesar in lane 27, now in its third consecutive lane."
+ },
+ {
+  "id": "vodou_bade",
+  "name": {
+   "primary": "Badè",
+   "alt": [
+    "Bade",
+    "Bade Kessou",
+    "Papa Badè"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Badè"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "One of three spirits associated with weather: Badè brings the winds, and with Sobo he summons Agau, who brings storms and tempests.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   },
+   {
+    "sphereId": "weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-three-weather-spirits-with",
+    "personId": "vodou_sobo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "summons",
+    "personId": "vodou_agau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated as summoned-by."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of three spirits associated with weather: Badè brings the winds, and with Sobo he summons Agau, who brings storms and tempests.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The three weather spirits are a set the source names complete, and this batch ingests all three of them at once rather than leaving the corpus holding two - which is the state it has repeatedly been found in elsewhere."
+ },
+ {
+  "id": "vodou_agau",
+  "name": {
+   "primary": "Agau",
+   "alt": [
+    "Agaou",
+    "Agahou",
+    "Agau Tonne"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Agau"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The spirit whom Sobo and Badè together summon, who brings the storms and the tempests.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   },
+   {
+    "sphereId": "weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "summoned-by",
+    "personId": "vodou_sobo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "summoned-by",
+    "personId": "vodou_bade",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The spirit whom Sobo and Badè together summon, who brings the storms and the tempests.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the weather spirits: Sobo, also called Sogbo, Badè and Agau are three spirits associated with weather; Sobo brings lightning and Badè brings the winds, and together they summon Agau, who brings storms and tempests."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE IS DEFINED BY BEING CALLED: the source gives him no act of his own except the one the other two produce by acting together, and the record carries exactly that and nothing more."
+ },
+ {
+  "id": "vodou_azaka",
+  "name": {
+   "primary": "Azaka Medeh",
+   "alt": [
+    "Azaka",
+    "Kouzen Zaka",
+    "Papa Zaka",
+    "Cousin Zaca",
+    "Mazaka",
+    "Kouzin",
+    "Azake",
+    "Mede"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Azaka Medeh"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The lwa of the harvest, depicted as a country bumpkin who loves to eat, and kind and gentle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Azaka: Zaka is the lwa of the harvest in Haitian Vodou, known also as Kouzin, Couzen, Azake, Mazaka, Azaka Medeh, Mede, Papa Zaka, Papa Zaca and Cousin Zaca; he is depicted as a country bumpkin who loves to eat, and is kind and gentle."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "harvest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Azaka: Zaka is the lwa of the harvest in Haitian Vodou, known also as Kouzin, Couzen, Azake, Mazaka, Azaka Medeh, Mede, Papa Zaka, Papa Zaca and Cousin Zaca; he is depicted as a country bumpkin who loves to eat, and is kind and gentle."
+     }
+    ]
+   },
+   {
+    "sphereId": "agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Azaka: Zaka is the lwa of the harvest in Haitian Vodou, known also as Kouzin, Couzen, Azake, Mazaka, Azaka Medeh, Mede, Papa Zaka, Papa Zaca and Cousin Zaca; he is depicted as a country bumpkin who loves to eat, and is kind and gentle."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-peasantry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Azaka: Zaka is the lwa of the harvest in Haitian Vodou, known also as Kouzin, Couzen, Azake, Mazaka, Azaka Medeh, Mede, Papa Zaka, Papa Zaca and Cousin Zaca; he is depicted as a country bumpkin who loves to eat, and is kind and gentle."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The lwa of the harvest, depicted as a country bumpkin who loves to eat, and kind and gentle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Azaka: Zaka is the lwa of the harvest in Haitian Vodou, known also as Kouzin, Couzen, Azake, Mazaka, Azaka Medeh, Mede, Papa Zaka, Papa Zaca and Cousin Zaca; he is depicted as a country bumpkin who loves to eat, and is kind and gentle."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE ONE LWA IN THIS BATCH WHO IS NEITHER FIERCE NOR SOLEMN, AND THE CORPUS HELD NOTHING LIKE HIM. A registry of twelve Haitian records that ran from the supreme God through the serpent, the sea and the graveyard held no lwa of the fields at all. The many names the source gives him - Kouzin, Couzen, Azake, Mazaka, Mede, Papa Zaka, Cousin Zaca - are carried as aliases on one record rather than split, because the source presents them as names for one figure. He carries a verified-solitary verdict: the retrieved treatment gives him no named kin, and the cousinship his title implies is a form of address, not a genealogy this batch will invent."
+ },
+ {
+  "id": "vodou_simbi",
+  "name": {
+   "primary": "Simbi",
+   "alt": [
+    "Sim'bi",
+    "Papa Simbi"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Simbi",
+    "Kikongo": "simbi"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Foremost a spirit of fresh water — of springs, streams and wells — and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fresh-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   },
+   {
+    "sphereId": "spiritual-communication",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-simbi-with",
+    "personId": "vodou_simbi_andezo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "notes": "In-batch and reciprocated. The source treats Simbi both as a single lwa and as a family whose members range from the benevolent to the dangerous; the record carries both readings and the edges record the family."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Foremost a spirit of fresh water — of springs, streams and wells — and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "NO EDGE OR EQUATION IS WRITTEN TO kongo_simbi, which the sweep resolves his name onto. The Simbi are the Kongo nation's lwa and the corpus holds a Kongo key; that the name is the same is a fact about the crossing and not a relation between beings."
+ },
+ {
+  "id": "vodou_simbi_andezo",
+  "name": {
+   "primary": "Simbi Andezo",
+   "alt": [
+    "Simbi An Dezo",
+    "Simbi of Two Waters"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Simbi Andezo",
+    "etymology": "an dezo, 'in two waters'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The balanced and benevolent form of Simbi: 'Simbi of two waters', who stands between vitality and disappearance, memory and forgetting, healing and dissolution — a spirit of thresholds within water, who rules the place where currents meet, where one state becomes another, and where the visible world touches the hidden.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fresh-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   },
+   {
+    "sphereId": "thresholds",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-simbi-with",
+    "personId": "vodou_simbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The balanced and benevolent form of Simbi: 'Simbi of two waters', who stands between vitality and disappearance, memory and forgetting, healing and dissolution — a spirit of thresholds within water, who rules the place where currents meet, where one state becomes another, and where the visible world touches the hidden.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE IS THE CLEAREST THING IN THIS BATCH AND THE SOURCE IS UNUSUALLY EXPLICIT ABOUT HIM: two waters meeting is both his name and his function, and the record states it rather than reducing it to a domain tag."
+ },
+ {
+  "id": "vodou_simbi_makaya",
+  "name": {
+   "primary": "Simbi Makaya",
+   "alt": [
+    "Simbi Macaya",
+    "Makaya"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Simbi Makaya"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The far end of the range of Simbi: where Simbi Andezo is balanced and benevolent, Simbi Makaya is the figure the sources place at the other extreme.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fresh-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   },
+   {
+    "sphereId": "sorcery",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-simbi-with",
+    "personId": "vodou_simbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "notes": "In-batch. Set membership."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The far end of the range of Simbi: where Simbi Andezo is balanced and benevolent, Simbi Makaya is the figure the sources place at the other extreme.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Simbi: the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya; Simbi is foremost a spirit of fresh water - of springs, streams and wells - and a consummate magician, who lends his power to many a houngan, manbo and bokò, and is revered as a master of sorcery and of spiritual communication; Simbi Andezo, 'Simbi of two waters', stands between vitality and disappearance, memory and forgetting, healing and dissolution, a spirit of thresholds within water, ruling the place where currents meet, where one state becomes another, and where the visible world touches the hidden world."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE RECORD SAYS WHAT THE SOURCE SAYS AND NO MORE. The retrieved treatment names him only as the contrasting pole of the Simbi range - 'the Simbi range from balanced and benevolent forms, such as Simbi Andezo, to figures such as Simbi Makaya' - and does not describe him. The Makaya rite that carries his name is not in the retrieved material and is censused BLOCKED rather than written in from general knowledge."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE EZILI THE CORPUS DID NOT HOLD, AND AN OGOU WHO HEALS
+================================================================================
+
+```json
+[
+ {
+  "id": "vodou_ezili_je_wouj",
+  "name": {
+   "primary": "Ezili Je Wouj",
+   "alt": [
+    "Erzulie Je Rouge",
+    "Ezili Jé Wouj",
+    "Erzulie Red-Eyes"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Ezili Je Wouj",
+    "etymology": "je wouj is 'red eyes'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "One of the manifestations of the Ezili family, named in the sources as Ezili Je Wouj, 'red eyes'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-ezili",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   },
+   {
+    "sphereId": "rage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Je Wouj",
+    "translation": "red eyes",
+    "language": "Haitian Creole",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "of-the-ezili-with",
+    "personId": "vodou_ezili_freda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, written from this end only; Ezili Freda is a pre-existing record and this batch mutates none. SET MEMBERSHIP: the source lists the manifestations of the Ezili family as Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj, Gran Ezili and Ezili Kokobe. THE CORPUS HELD THREE OF THE SIX."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the manifestations of the Ezili family, named in the sources as Ezili Je Wouj, 'red eyes'.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE RETRIEVED TREATMENT GIVES HER A NAME AND A GLOSS AND NOTHING ELSE, and the record carries a name and a gloss. The epithet is the evidence: 'red eyes' is what the source supplies, so it is entered as an epithet with its translation rather than expanded into a character sketch this batch cannot source."
+ },
+ {
+  "id": "vodou_gran_ezili",
+  "name": {
+   "primary": "Gran Ezili",
+   "alt": [
+    "Grande Erzulie",
+    "Gran Erzulie",
+    "Granne Ezili"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Gran Ezili",
+    "etymology": "gran is 'great' and also 'old', 'grandmother'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A well-known Rada spirit and one of the manifestations of the Ezili family.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-ezili",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   },
+   {
+    "sphereId": "rada-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   },
+   {
+    "sphereId": "age",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-ezili-with",
+    "personId": "vodou_ezili_freda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, written from this end only; Ezili Freda is a pre-existing record and this batch mutates none. SET MEMBERSHIP: the source lists the manifestations of the Ezili family as Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj, Gran Ezili and Ezili Kokobe. THE CORPUS HELD THREE OF THE SIX."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A well-known Rada spirit and one of the manifestations of the Ezili family.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The source places her in the Rada nation, as it places Ezili Freda, and contrasts both with the Petwo Ezili Dantò whom the corpus already holds. THE RECORD DOES NOT EXPAND ON THE NAME: gran carries both 'great' and 'old' in Haitian Creole and the retrieved treatment does not say which is meant, so the etymology records the ambiguity instead of resolving it."
+ },
+ {
+  "id": "vodou_ezili_kokobe",
+  "name": {
+   "primary": "Ezili Kokobe",
+   "alt": [
+    "Erzulie Kokobe",
+    "Ezili Kokobé"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Ezili Kokobe",
+    "etymology": "kokobe is 'the shrivelled'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "One of the manifestations of the Ezili family, named in the sources as Ezili Kokobe, 'the shrivelled'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-ezili",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   },
+   {
+    "sphereId": "destitution",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Kokobe",
+    "translation": "the shrivelled",
+    "language": "Haitian Creole",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "of-the-ezili-with",
+    "personId": "vodou_ezili_freda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, written from this end only; Ezili Freda is a pre-existing record and this batch mutates none. SET MEMBERSHIP: the source lists the manifestations of the Ezili family as Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj, Gran Ezili and Ezili Kokobe. THE CORPUS HELD THREE OF THE SIX."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the manifestations of the Ezili family, named in the sources as Ezili Kokobe, 'the shrivelled'.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ezili: the manifestations of the Ezili family of Haitian Vodou include Ezili Dantò, Ezili Freda, Lasirenn, Ezili Je Wouj ('red eyes'), Gran Ezili and Ezili Kokobe ('the shrivelled'); Ezili Freda is a Rada lwa who represents romantic love and erotic sexuality, while Ezili Dantò is Petwo and represents the hardworking and sometimes angry mother, the Mother of Haiti, the warrior who fought for the freedom of her people and of her children, the spirit of the marketplace, of hard work and of motherhood; Gran Ezili is a well-known Rada spirit."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE THINNEST RECORD IN THIS BATCH AND IT SAYS SO ON ITS FACE. A name and a gloss is what the retrieved treatment gives, and a name and a gloss is what it carries. She is ingested rather than blocked because the Ezili are a named set of six of which the corpus held three, and a set is the one case where the programme has consistently judged that an attested member with a documented name is worth a record - lane 27's four Long-Life Sisters on the same footing. If the owner would rather have five Ezili and a gap than six with two thin ones, the census row is where to say so."
+ },
+ {
+  "id": "vodou_ogou_balendjo",
+  "name": {
+   "primary": "Ogou Balendjo",
+   "alt": [
+    "Ogoun Balendjo",
+    "Ogou Balanjo",
+    "Balendjo"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Ogou Balendjo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A lwa of healing, of strength and of spiritual medicine, of the Ogou — the family of the Nago nation, which originates from Yorubaland and most of whose members use Ogou as a kind of family name.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   },
+   {
+    "sphereId": "strength",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   },
+   {
+    "sphereId": "spiritual-medicine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   },
+   {
+    "sphereId": "nago-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-ogou-with",
+    "personId": "vodou_ogou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, written from this end only; the corpus's Ogou record, primary 'Ogou Feray', is pre-existing. SET MEMBERSHIP: most of the Ogou use the name as a family name."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A lwa of healing, of strength and of spiritual medicine, of the Ogou — the family of the Nago nation, which originates from Yorubaland and most of whose members use Ogou as a kind of family name.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "AN OGOU WHO HEALS, IN A CORPUS WHOSE ONLY OGOU IS A WARRIOR-SMITH. NO RECORD IS CREATED FOR OGOU BADAGRIS, although the source describes him as a distinct lwa of the Nago nation and a general in the armies of Ogou: vodou_ogou ALREADY CARRIES 'Ogou Badagri' AS AN ALIAS, so a record for him would duplicate a name the corpus already resolves, and correcting that would mean mutating a pre-existing record. The census carries him as EXISTING with the reason. THIS IS THE SHARPEST FORM OF THE NEVER-MUTATE COST THE PROGRAMME HAS FOUND: not a missing alias, but a second figure hidden inside another figure's alias list, where no sweep will ever report him absent."
+ }
+]
+```
