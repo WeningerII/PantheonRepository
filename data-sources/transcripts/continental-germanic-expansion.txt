@@ -1,0 +1,743 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Continental Germanic
+Eras (registered, exact, AFTER this batch's vocabulary extension):
+  continental-germanic-mythic-origins |
+  Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE) |
+  continental-germanic-migration-and-conversion (4th–10th c.)
+Author pass: Continental Germanic held 8 records. This adds 26.
+
+================================================================================
+THE GAP — EIGHT GODDESSES AND NOT ONE GOD
+================================================================================
+
+A 62-name check across the WHOLE registry returned 14 hits and 48 absences.
+
+The Continental Germanic key held **eight records**, and every one of them is a
+goddess: Baduhenna, Beda, Boudihillia, Fimmilena, Friagabis, Nehalennia,
+Nerthus and Tamfana — Tacitus and a set of Roman-era altars.
+
+**There was no god in it at all.**
+
+Not Wodan. Not Donar. Not Saxnot. **Those three are the exact list a Saxon was
+made to renounce by name at baptism** — *ec forsacho Uuoden ende Thunaer ende
+Saxnote* — in a ninth-century manuscript from Mainz, and the registry held none
+of them.
+
+Nor **Tuisto** and **Mannus**, the earth-born god and his son whom Tacitus says
+the Germanic peoples sang about as their origin — the first Germanic figures
+named in any written source at all.
+
+Nor a single figure from **the Merseburg Incantations**, which are the only
+surviving text in Old High German that names the heathen gods: Phol, Wodan,
+Sinthgunt, Sunna, Frija and Volla, in twelve lines, in a manuscript from Fulda.
+
+================================================================================
+AND THE ROMAN-ERA ALTARS DO NOT STOP AT EIGHT
+================================================================================
+
+The eight held records are a sample of a much larger body of dedications. Also
+attested, each on its own stone or tablet, and none of them in the registry:
+
+    Hariasa        Cologne, 187 CE
+    Vagdavercustis Cologne, 2nd century
+    Hludana        five inscriptions, Rhineland and Frisia, 197–235 CE
+    Sandraudiga    North Brabant, 2nd century
+    Vihansa        a bronze tablet near Tongeren
+    Harimella      Birrens, Dumfriesshire
+
+**Hludana is attested five times and was not in a corpus that held Beda and
+Fimmilena, who are attested at one site each.**
+
+================================================================================
+A VOCABULARY EXTENSION, MADE DELIBERATELY AND DOCUMENTED
+================================================================================
+
+The Continental Germanic era vocabulary registered **exactly one era**:
+*Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)*.
+
+That bucket cannot honestly hold this material. The Merseburg charms are 9th or
+10th century; the Old Saxon Baptismal Vow is 9th; the *Origo gentis
+Langobardorum* is 7th; Tacitus's origin songs are about a time before all of it.
+Filing any of them under a label that ends in the third century would be putting
+a date on a record that the record's own sources contradict.
+
+So this batch **adds two era keys** to `ERA_ORDER` and `ERA_DATES` in
+`app/data.js`, which is the maintenance path the file's own integration-points
+comment documents:
+
+    continental-germanic-mythic-origins                    textual −50 … 100
+    continental-germanic-migration-and-conversion (4th–10th c.)  textual 350 … 1000
+
+The existing era key is **unchanged, in the same position, with the same dates**.
+Nothing already filed moves.
+
+================================================================================
+GODAN AND FREA ARE NOT NEW RECORDS, AND THAT IS THE POINT
+================================================================================
+
+The *Origo gentis Langobardorum* is the textual source of the Lombard theonym
+**Godan**, and names **Frea** beside him: Gambara asks Frea to help her sons,
+Frea tells her to have the women tie their hair across their faces and stand
+where Godan will see them at dawn, Godan asks who the long-beards are, and the
+name of a people is fixed by a joke.
+
+Godan is Wodan and Frea is Frija. **They are recorded as aliases on the two
+records this batch creates and not as two further records**, and the Lombard
+episode is on those records' lifecycles. Lane 20 found the corpus holding
+Väinämöinen twice under two keys and said that duplicating a figure to record a
+second attestation makes the registry worse. This is the same decision taken in
+advance, inside one tradition key, where the temptation is strongest.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+The **Ingaevones, Herminones and Istvaeones** are peoples; Tacitus names Mannus's
+three sons only by the peoples descended from them, and there is nothing to
+ingest but three ethnonyms. The **Matronae** — Aufaniae, Vacallinehae and the
+rest — are collectives of unnamed mothers, hundreds of them, and belong in a
+different kind of record. The **Irminsul** is an object. **Arminius**,
+**Marbod** and **Civilis** are historical commanders, not figures of the
+tradition.
+
+**Viradecdis** and **Ricagambeda** are BLOCKED rather than ingested: the sources
+consulted describe them as Celtic or Germanic without settling which, and this
+registry files by tradition.
+
+**Balder of the Merseburg charm is a census row and not a record.** Whether Phol
+and Balder are one figure or two is the charm's central textual question; the
+corpus holds `norse_baldr`; and creating a Continental Germanic Balder would
+either duplicate that record or assert an answer. **Phol is ingested and Balder
+is not, and neither record decides it.**
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE FIRST GERMANIC FIGURES NAMED IN ANY SOURCE
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_tuisto",
+    "name": { "primary": "Tuisto", "alt": ["Tuisco"],
+      "transliterations": { "Latin": "Tuisto", "etymology": "Usually connected with a word for 'two' or 'twofold', hence 'the double one' or the hermaphrodite; the manuscripts also give Tuisco and the reading is not settled." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "unknown", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-mythic-origins" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-mythic-origins", "eraOrdering": 0,
+      "startEvent": "Tacitus reports, in the Germania of about 98 CE, that the Germanic peoples celebrate in ancient songs a god born of the earth, Tuisto, and his son Mannus, as the origin and founders of their nation.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to Tacitus's Germania (AD 98), Tuisto is the legendary divine ancestor of the Germanic peoples; they celebrated Tuisto as 'a god, born of the earth', and the songs attributed to him a son, Mannus." } ] } ],
+    "domains": [
+      { "sphereId": "origin-of-the-people", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tuisto as the earth-born divine ancestor of the Germanic peoples in Tacitus." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "continental_germanic_mannus",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the songs attributed to Tuisto a son, Mannus, who in turn had three sons." } ], "notes": "In-batch; Mannus carries him in parentIds." } ],
+    "cultRecords": [
+      { "practice": "ancient songs celebrating the origin of the people", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Germanic peoples celebrated Tuisto in ancient songs as a god born of the earth." } ] } ],
+    "sources": [ { "claim": "Tuisto is the earth-born god whom Tacitus reports the Germanic peoples sang of as their origin, father of Mannus.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tuisto and of Tacitus's Germania." } ], "weight": "high" } ],
+    "notes": "THE FIRST GERMANIC FIGURE NAMED IN ANY WRITTEN SOURCE, AND THE REGISTRY DID NOT HOLD HIM. sex is recorded as unknown deliberately: the name is usually read as 'the twofold one' and the figure has been taken as a hermaphrodite, which is a reading of the etymology and not a statement of Tacitus's, and this record will not assert either. No cross-tradition edge is drawn to the Norse Ymir, whom the corpus holds: the comparison is a scholarly proposal and this registry does not write edges on proposals."
+  },
+  {
+    "id": "continental_germanic_mannus",
+    "name": { "primary": "Mannus", "alt": [],
+      "transliterations": { "Latin": "Mannus", "etymology": "The Germanic word for 'man' — the ancestor of the people is called Man." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["continental_germanic_tuisto"],
+    "parentRoles": [ { "personId": "continental_germanic_tuisto", "role": "father" } ],
+    "temporal": { "era": "continental-germanic-mythic-origins" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-mythic-origins", "eraOrdering": 0,
+      "startEvent": "Tuisto's son and the founder of the nation in the same songs, with three sons from whom the Ingaevones by the ocean, the Herminones of the interior and the Istvaeones of the rest of Germania are descended.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the songs attributed to Tuisto a son, Mannus, who in turn had three sons, the offspring of whom were referred to as Ingaevones, Herminones and Istaevones, living near the Ocean, in the interior, and the remaining parts of Germania respectively." } ] } ],
+    "domains": [
+      { "sphereId": "origin-of-the-people", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mannus as founder of the Germanic nation in Tacitus." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mannus is Tuisto's son, founder of the Germanic nation in Tacitus's report, and father of the three sons the great tribal groupings are named from.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mannus and of Tacitus's Germania." } ], "weight": "high" } ],
+    "notes": "HIS THREE SONS ARE NOT INGESTED. Tacitus does not name them; he names the PEOPLES descended from them, and there is nothing to record but three ethnonyms. That is the rule that rejected the Kalevanpojat in lane 20 and the Scyldings in lane 21, meeting the case it was made for."
+  },
+  {
+    "id": "continental_germanic_alcis",
+    "name": { "primary": "the Alcis", "alt": ["Alcis", "the brothers of the grove"],
+      "transliterations": { "Latin": "Alcis", "etymology": "Disputed; connected with a word for a sacred grove or enclosure, and separately with the elk. Tacitus gives the name in the plural and no singular is attested." } },
+    "type": "numen", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-mythic-origins" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "continental-germanic-mythic-origins", "eraOrdering": 0,
+      "startEvent": "A pair of divine young brothers worshipped in a grove kept by the Naharvali, whose priest wears women's dress. Tacitus says the Romans would call them Castor and Pollux, and notes that there are no images and nothing foreign about the cult.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Alcis were a pair of divine young brothers worshipped by the Naharvali, an ancient Germanic tribe of Central Europe; they are solely attested by Tacitus in the Germania of about 98 AD; Tacitus identifies the Alcis with the Graeco-Roman Castor and Pollux, another probable reflex of the Divine Twins; the Naharvali are the keepers of the sanctuary of the Lugii, a grove dedicated to the twin gods Alcis." } ] } ],
+    "domains": [
+      { "sphereId": "the-sacred-grove", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Naharvali keep the sanctuary of the Lugii, a grove dedicated to the Alcis." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "grove sanctuary of the Lugii, kept by the Naharvali", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Naharvali are the keepers of the sanctuary of the Lugii, a grove dedicated to the twin gods Alcis." } ] } ],
+    "sources": [ { "claim": "The Alcis are the twin gods of the Naharvali's grove, attested only by Tacitus, whom he equates with Castor and Pollux.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Alcis and of the Nahanarvali in Tacitus's Germania." } ], "weight": "high" } ],
+    "notes": "ONE RECORD FOR TWO BEINGS, BECAUSE THE SOURCE GIVES ONE NAME. Tacitus names a pair in the plural and gives no individual names; splitting them would invent two designations the evidence does not have, and refusing them would lose a cult with a grove and a priest. TACITUS'S OWN EQUATION WITH CASTOR AND POLLUX IS ON THE RECORD AS HIS, AND NO EDGE IS DRAWN TO THE DIOSKOUROI: an ancient writer's interpretatio is a fact about how a Roman described a cult, and this registry records it as prose rather than as a relation between beings. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE THREE A SAXON HAD TO RENOUNCE BY NAME
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_wodan",
+    "name": { "primary": "Wodan", "alt": ["Uuoden", "Wôdan", "Godan", "Guodan", "Wuotan"],
+      "transliterations": { "Old High German": "Wuotan", "Old Saxon": "Uuoden", "Lombard": "Godan", "etymology": "From a root meaning fury, inspiration, frenzy — the same element as Old English Woden and Old Norse Óðinn." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "First of the three gods named in the Old Saxon Baptismal Vow, the ninth-century formula in which a convert renounces Uuoden, Thunaer and Saxnot by name.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Old Saxon Baptismal Vow, found in a ninth-century manuscript in Mainz, mentions three Germanic pagan gods which the reader is to forsake: Uuôden, Thunaer and Saxnōt." } ] },
+      { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 1,
+        "startEvent": "In the Second Merseburg Incantation he rides to the wood with Phol, and when a foal's foot is sprained it is he who speaks the charm last and best, after Sinthgunt, Sunna, Frija and Volla: bone to bone, blood to blood, limb to limb, as though they were glued.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the second Merseburg charm describes the gods Phol and Wodan riding in the woods when Balder's foal's foot was sprained, and Sinthgunt, Sunna, Frija and Volla conjuring it, and Wodan conjuring it as well he could — bone to bone, blood to blood, joints to joints." } ] },
+      { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 2,
+        "startEvent": "As Godan in the Origo gentis Langobardorum: asked to grant victory, he says he will give it to whoever he sees first at sunrise, and on seeing the Winnili women standing with their hair tied across their faces he asks who the long-beards are — and by naming them, gives them the victory and their name.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Origo Gentis Langobardorum is the textual source of the Lombard theonym Godan, and is a seventh-century Latin account offering a founding myth of the Longobard people, describing the origin and naming of the Lombards." } ] } ],
+    "domains": [
+      { "sphereId": "healing-charms", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: Wodan conjures the sprain as well he could." } ] },
+      { "sphereId": "victory", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Origo gentis Langobardorum and the naming of the Lombards." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rode-with", "personId": "continental_germanic_phol",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Phol and Wodan were riding to the woods." } ], "notes": "In-batch." },
+      { "kind": "consort-of", "personId": "continental_germanic_frija",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Origo gentis Langobardorum: Frea advises the Winnili women and Godan grants the victory, the two acting as a married pair." } ],
+        "notes": "In-batch, and deliberately NOT 'spouse': what the Origo shows is a husband outwitted by a wife, and what the Merseburg charm shows is two of six conjurers. The sources give the pairing and not a marriage-formula." },
+      { "kind": "named", "personId": "continental_germanic_gambara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Godan, seeing the women at dawn, asks who the long-beards are; Gambara and her sons led the emigration and the appeal was made to Frea on their behalf." } ], "notes": "In-batch." } ],
+    "cultRecords": [
+      { "practice": "renunciation by name at baptism", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Old Saxon Baptismal Vow requires the convert to forsake Uuôden, Thunaer and Saxnōt by name." } ] } ],
+    "sources": [ { "claim": "Wodan is the chief god of the continental Germanic sources: first of the three renounced in the Old Saxon Baptismal Vow, the last and best conjurer of the Second Merseburg Incantation, and the Godan of the Lombard origin legend.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Old Saxon Baptismal Vow, the Merseburg charms, and the Origo gentis Langobardorum." } ], "weight": "high" } ],
+    "notes": "GODAN IS AN ALIAS AND NOT A SECOND RECORD. The Origo's Godan is this god under a Lombard spelling, and the Lombard episode is on this record's lifecycle. Lane 20 found the corpus holding Väinämöinen twice under two keys and said that duplicating a figure to record a second attestation makes the registry worse; this is that decision taken in advance, inside one tradition key, where the temptation is strongest. NO CROSS-TRADITION EDGE to anglosaxon_woden or norse_odin: three traditions, three attestation-sets, three records, and a shared name is a fact about the languages."
+  },
+  {
+    "id": "continental_germanic_donar",
+    "name": { "primary": "Donar", "alt": ["Thunaer", "Thonar", "Þunraz"],
+      "transliterations": { "Old High German": "Donar", "Old Saxon": "Thunaer", "etymology": "'Thunder' — the common noun and the god's name are the same word, as with Old English Thunor and Old Norse Þórr." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "Second of the three named in the Old Saxon Baptismal Vow, between Wodan and Saxnot.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Old Saxon Baptismal Vow mentions three Germanic pagan gods which the reader is to forsake: Uuôden, Thunaer and Saxnōt." } ] } ],
+    "domains": [
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "donar", "script": "Latin", "rom": "donar" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Thunaer/Donar, whose name is the word for thunder." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "renunciation by name at baptism", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the convert forsakes Uuôden, Thunaer and Saxnōt by name." } ] } ],
+    "sources": [ { "claim": "Donar, Old Saxon Thunaer, is the continental Germanic thunder-god, second of the three renounced in the Old Saxon Baptismal Vow.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Old Saxon Baptismal Vow and of Thunaer." } ], "weight": "high" } ],
+    "notes": "The record does not carry a hammer, a chariot or a goat: those are Norse and this is a continental record built from a continental text. What the source gives is a name in a renunciation formula, and a name that is also the word for thunder. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_saxnot",
+    "name": { "primary": "Saxnot", "alt": ["Saxnōt", "Sahsnot", "Sahsnōt"],
+      "transliterations": { "Old Saxon": "Saxnōt", "etymology": "Usually read as 'sword-companion' or 'companion of the Saxons', from sahs, the short sword the Saxons are named from." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "Third of the three named in the Old Saxon Baptismal Vow. Because the formula lists exactly three, and this is one of them, Jacob Grimm argued that he must be a major god of the Saxons, of a standing with Wodan and Thunaer.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: since the Old Saxon Baptismal Vow lists three gods, usually interpreted as a Germanic divine triad, Jacob Grimm argued that Saxnôt must have been a major deity, comparable in stature to Woden and Thunaer." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "renunciation by name at baptism", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the convert forsakes Uuôden, Thunaer and Saxnōt by name." } ] } ],
+    "sources": [ { "claim": "Saxnot is the third god of the Old Saxon Baptismal Vow, argued on the strength of that triad to have been a major god of the Saxons.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Old Saxon Baptismal Vow and of Saxnôt." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HOLDS anglosaxon_seaxneat AND NO EDGE IS DRAWN. The English Seaxnēat stands in the Essex royal genealogy; this is the continental Saxon god of a baptismal formula. Two traditions, two attestations, two records, on the same footing as Wodan beside Woden and Odin. GRIMM'S ARGUMENT IS ON THE RECORD AS AN ARGUMENT: what the source gives is a name third in a list of three, and the inference from the list's shape to the god's importance is stated as the inference it is. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE MERSEBURG INCANTATION
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_phol",
+    "name": { "primary": "Phol", "alt": ["Fol", "Pholo"],
+      "transliterations": { "Old High German": "Phol", "etymology": "Unresolved and much argued. The identification with Balder, whose foal the charm goes on to mention, is the commonest reading and is not settled." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "The first name in the Second Merseburg Incantation: Phol and Wodan rode to the wood, and there a foal's foot was sprained.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: Phol and Wodan were riding to the woods, and the foot of Balder's foal was sprained; the Merseburg incantations are the only known instance of Old High German to feature figures from the Germanic pantheon — Wodan, Balder, Frija, Volla, Sunna, Phol and Sinthgunt." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "rode-with", "personId": "continental_germanic_wodan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Phol and Wodan were riding to the woods." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Phol is the first-named figure of the Second Merseburg Incantation, riding to the wood with Wodan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Merseburg charms and of Phol." } ], "weight": "high" } ],
+    "notes": "PHOL IS INGESTED AND BALDER IS NOT, AND NEITHER DECIDES THE QUESTION. The charm names Phol in its first line and Balder's foal in its second, and whether that is one figure under two names or two figures in one scene is the text's central crux. The corpus holds norse_baldr; creating a Continental Germanic Balder would either duplicate that record or assert an answer, so Balder is a census row. This record says what the charm says: a name, a ride, and a horse that goes lame."
+  },
+  {
+    "id": "continental_germanic_frija",
+    "name": { "primary": "Frija", "alt": ["Frea", "Frîja", "Friia"],
+      "transliterations": { "Old High German": "Frija", "Lombard": "Frea", "etymology": "From a root meaning 'beloved' — cognate with Old English Frig and Old Norse Frigg, and the source of Friday." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "One of the four goddesses who conjure over the lamed foal in the Second Merseburg Incantation, named there as Volla's sister.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: 'So Sinthgunt, Sunna's sister, conjured it; and Frija, Volla's sister, conjured it; and Wodan conjured it, as well he could.'" } ] },
+      { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 1,
+        "startEvent": "As Frea in the Origo gentis Langobardorum: Gambara asks her for help, and she tells the Winnili women to tie their hair across their faces and stand where Godan will see them first at dawn — which is how the Lombards get their name and their victory.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Origo Gentis Langobardorum is a seventh-century Latin founding myth describing the origin and naming of the Lombards, and is the textual source of the Lombard theonym Godan; Ybor and Agio and their mother Gambara led the emigration." } ] } ],
+    "domains": [
+      { "sphereId": "healing-charms", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Frija conjures over the sprain in the Second Merseburg Incantation." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_volla",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: 'and Frija, Volla's sister, conjured it'." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "consort-of", "personId": "continental_germanic_wodan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Origo gentis Langobardorum: Frea advises the women and Godan grants the victory." } ], "notes": "Reciprocated in-batch with the same kind." },
+      { "kind": "advised", "personId": "continental_germanic_gambara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gambara appeals to Frea on behalf of her sons, who led the emigration." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Frija is the goddess of the Second Merseburg Incantation, Volla's sister, and the Frea of the Lombard origin legend who outwits Godan to name the Lombards.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Merseburg charms and of the Origo gentis Langobardorum." } ], "weight": "high" } ],
+    "notes": "FREA IS AN ALIAS AND NOT A SECOND RECORD, on the same reasoning as Godan. In the Lombard story she is the one who has the idea and her husband is the one who is caught by it, which is worth recording as what the source says rather than as a note about a goddess of marriage."
+  },
+  {
+    "id": "continental_germanic_volla",
+    "name": { "primary": "Volla", "alt": [],
+      "transliterations": { "Old High German": "Volla", "etymology": "Probably 'fullness, abundance'; cognate with Old Norse Fulla." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "Named in the Second Merseburg Incantation only as Frija's sister — she is identified by the relationship and does not act.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: 'and Frija, Volla's sister, conjured it'; the charm features Wodan, Balder, Frija, Volla, Sunna, Phol and Sinthgunt." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_frija",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Frija is named as Volla's sister." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Volla is named in the Second Merseburg Incantation as the sister of Frija.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Merseburg charms." } ], "weight": "high" } ],
+    "notes": "A GODDESS WHOSE WHOLE ATTESTATION IS A GENITIVE. The charm identifies Frija by naming Volla, so Volla exists in the text only as the person Frija is the sister of. That is a real attestation and a small one, and the record does not enlarge it with material from the Norse Fulla."
+  },
+  {
+    "id": "continental_germanic_sunna",
+    "name": { "primary": "Sunna", "alt": [],
+      "transliterations": { "Old High German": "Sunna", "etymology": "'Sun' — the common noun and the name are the same word." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "Named in the Second Merseburg Incantation as the sister of Sinthgunt, who conjures over the sprain.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: 'So Sinthgunt, Sunna's sister, conjured it'; the charm features Wodan, Balder, Frija, Volla, Sunna, Phol and Sinthgunt." } ] } ],
+    "domains": [
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "sunna", "script": "Latin", "rom": "sunna" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sunna, whose name is the word for sun." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_sinthgunt",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sinthgunt is named as Sunna's sister." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sunna is the sun-goddess named in the Second Merseburg Incantation as the sister of Sinthgunt.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Merseburg charms." } ], "weight": "high" } ],
+    "notes": "The sweep resolved 'Sunna' onto norse_sol, which carries the name as an alias. NO EDGE IS DRAWN: an Old High German charm and an Eddic poem are two traditions' attestations of one Germanic word for the sun, and that is a fact about the languages."
+  },
+  {
+    "id": "continental_germanic_sinthgunt",
+    "name": { "primary": "Sinthgunt", "alt": ["Sinhtgunt", "Sinthgund"],
+      "transliterations": { "Old High German": "Sinthgunt", "etymology": "UNRESOLVED, AND FAMOUSLY SO. Readings include 'night-walker', from a proposed sinht- 'night', and 'the one going the way', from sind 'journey' and gund 'battle'; the manuscript spelling has itself been emended in both directions." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "The first of the four goddesses to conjure over the lamed foal in the Second Merseburg Incantation, named there as Sunna's sister. She is attested nowhere else in any Germanic language.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Second Merseburg Incantation: 'So Sinthgunt, Sunna's sister, conjured it'; the Merseburg charms are the only known instance of Old High German to feature figures from the Germanic pantheon, among them Sinhtgunt." } ] } ],
+    "domains": [
+      { "sphereId": "healing-charms", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sinthgunt conjures over the sprain in the Second Merseburg Incantation." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_sunna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sinthgunt is named as Sunna's sister." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sinthgunt is a goddess named only in the Second Merseburg Incantation, sister of Sunna, who conjures over the sprained foal.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Merseburg charms and of Sinthgunt." } ], "weight": "high" } ],
+    "notes": "ONE ATTESTATION, ONE LINE, AND NOT A SECOND ANYWHERE IN GERMANIC. The record does not gloss the name, because the glosses disagree and each of them is an argument about what kind of goddess she would then be; the etymology field states the disagreement instead. Reading her as a moon-goddess because her sister is the sun is exactly the sort of inference this registry does not make for its records."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE LOMBARD ORIGIN LEGEND
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_gambara",
+    "name": { "primary": "Gambara", "alt": [],
+      "transliterations": { "Latin": "Gambara", "etymology": "Unresolved; a Lombard name preserved only in Latin sources." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "Mother of Ybor and Agio, who leads the emigration of the Winnili with her sons — and who, when the war comes, goes to Frea rather than to Godan and asks for help.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Origo Gentis Langobardorum: Ybor and Agio, brothers, together with their mother Gambara, led the emigration from Scandinavia; the account describes the origin and naming of the Lombards." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "continental_germanic_ibor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers, together with their mother Gambara, led the emigration." } ], "notes": "In-batch; Ibor carries her in parentIds." },
+      { "kind": "mother-of", "personId": "continental_germanic_aio",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers, together with their mother Gambara." } ], "notes": "In-batch; Aio carries her in parentIds." },
+      { "kind": "petitioned", "personId": "continental_germanic_frija",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Origo gentis Langobardorum and the naming of the Lombards: the appeal is made to Frea." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gambara is the mother of Ybor and Agio, who leads the Winnili emigration with her sons and appeals to Frea for victory.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Origo Gentis Langobardorum and of Paul the Deacon's History of the Lombards." } ], "weight": "high" } ],
+    "notes": "A PEOPLE'S ORIGIN LEGEND IN WHICH THE DECISIVE ACTORS ARE TWO WOMEN. Gambara goes to the goddess and not the god; the goddess gives her a trick; the god is caught by it and names the people in the act of being caught. The record says what the Origo says and does not soften the joke into a miracle."
+  },
+  {
+    "id": "continental_germanic_ibor",
+    "name": { "primary": "Ibor", "alt": ["Ybor"],
+      "transliterations": { "Latin": "Ybor", "etymology": "Generally connected with the word for boar." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["continental_germanic_gambara"],
+    "parentRoles": [ { "personId": "continental_germanic_gambara", "role": "mother" } ],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "One of the two brothers who lead the Winnili out of Scandinavia with their mother, and whose people become the Lombards.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers, together with their mother Gambara, led the emigration from Scandinavia." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_aio",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ibor is one of the two brothers who lead the Winnili emigration with their mother Gambara.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Origo Gentis Langobardorum." } ], "weight": "high" } ],
+    "notes": "Boar and, in his brother's name, a second animal — the pairing that lane 21 met in Eofor and Wulf. The record notes the etymology and draws nothing from it."
+  },
+  {
+    "id": "continental_germanic_aio",
+    "name": { "primary": "Aio", "alt": ["Agio", "Ajo"],
+      "transliterations": { "Latin": "Agio", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["continental_germanic_gambara"],
+    "parentRoles": [ { "personId": "continental_germanic_gambara", "role": "mother" } ],
+    "temporal": { "era": "continental-germanic-migration-and-conversion (4th–10th c.)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "continental-germanic-migration-and-conversion (4th–10th c.)", "eraOrdering": 0,
+      "startEvent": "The second of the two brothers of the Winnili emigration.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers, together with their mother Gambara, led the emigration from Scandinavia." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "continental_germanic_ibor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ybor and Agio, brothers." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aio is one of the two brothers who lead the Winnili emigration with their mother Gambara.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Origo Gentis Langobardorum." } ], "weight": "high" } ],
+    "notes": "The Winnili themselves are NOT ingested: a people, on the rule that rejected the Ingaevones in this same batch."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. SIX MORE ALTARS
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_hludana",
+    "name": { "primary": "Hludana", "alt": ["Hluðena"],
+      "transliterations": { "Latin": "Hludana", "etymology": "Disputed; connected by some with a root meaning 'famous' and by others with Hlóðyn, a Norse name for the earth." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Attested in five Latin inscriptions from the Rhineland and Frisia, all dated between 197 and 235 CE — the best-attested Germanic goddess of the group by number of stones.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hludana is a Germanic goddess attested in five ancient Latin inscriptions from the Rhineland and Frisia, all dating from 197–235 AD." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive dedication, Rhineland and Frisia", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: five Latin inscriptions from the Rhineland and Frisia, 197–235 AD." } ] } ],
+    "sources": [ { "claim": "Hludana is a Germanic goddess attested in five Latin inscriptions from the Rhineland and Frisia dated 197–235 CE.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hludana and of the Germanic votive inscriptions." } ], "weight": "high" } ],
+    "notes": "FIVE INSCRIPTIONS, AND SHE WAS NOT IN A CORPUS THAT HELD BEDA AND FIMMILENA, who are attested at one site each. The identification with the Norse Hlóðyn is a proposal and no edge is drawn from it. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_hariasa",
+    "name": { "primary": "Hariasa", "alt": [],
+      "transliterations": { "Latin": "Hariasa", "etymology": "The first element is generally the Germanic harja-, 'army'." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Attested on a single stone bearing a Latin dedication, found at Cologne and dated to 187 CE. The stone is now lost.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hariasa is attested on a now-lost stone bearing a Latin dedication to her; the stone was found in Cologne, Germany and dated to 187 CE." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive dedication, Cologne, 187 CE", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a stone bearing a Latin dedication to Hariasa, found in Cologne and dated 187 CE." } ] } ],
+    "sources": [ { "claim": "Hariasa is a Germanic goddess attested on a single, now-lost dedicatory stone from Cologne dated 187 CE.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hariasa and of the Germanic votive inscriptions." } ], "weight": "high" } ],
+    "notes": "A GODDESS WHOSE ONE PIECE OF EVIDENCE NO LONGER EXISTS. The record says so, because a corpus that files an attestation should say when the attestation has been lost and survives only in transcription. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_vagdavercustis",
+    "name": { "primary": "Vagdavercustis", "alt": [],
+      "transliterations": { "Latin": "Vagdavercustis", "etymology": "Unresolved; readings have connected the second element with a word for excellence or virtue." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Known from a dedicatory inscription on an altar found at Cologne, dating from about the second century and now in a museum there.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vagdavercustis is a Germanic goddess known from a dedicatory inscription on an altar found at Cologne, Germany; the stone dates from around the 2nd century CE and is now in a museum in Cologne." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive altar, Cologne, 2nd century", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a dedicatory inscription on an altar found at Cologne, dating from around the 2nd century CE." } ] } ],
+    "sources": [ { "claim": "Vagdavercustis is a Germanic goddess known from a second-century dedicatory altar found at Cologne.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vagdavercustis and of the Germanic votive inscriptions." } ], "weight": "high" } ],
+    "notes": "Carries a verified-solitary verdict: an altar gives a name and a dedicator and no kin."
+  },
+  {
+    "id": "continental_germanic_sandraudiga",
+    "name": { "primary": "Sandraudiga", "alt": [],
+      "transliterations": { "Latin": "Sandraudiga", "etymology": "Generally read as containing a word for 'red' — 'she who dyes the sand red' has been proposed and is not settled." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Attested on a stone with a Latin inscription found in North Brabant, in the modern Netherlands, dated to the second century.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sandraudiga is a Germanic goddess attested on a stone with a Latin inscription found in North Brabant, the Netherlands; the altar stone dates back to the 2nd century CE." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive stone, North Brabant, 2nd century", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a stone with a Latin inscription found in North Brabant, dated to the 2nd century CE." } ] } ],
+    "sources": [ { "claim": "Sandraudiga is a Germanic goddess attested on a second-century inscribed stone from North Brabant.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sandraudiga and of the Germanic votive inscriptions." } ], "weight": "high" } ],
+    "notes": "The 'red' reading is recorded as a reading. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_vihansa",
+    "name": { "primary": "Vihansa", "alt": [],
+      "transliterations": { "Latin": "Vihansa", "etymology": "The first element is generally the Germanic wīh-, 'battle' or 'holy'; the readings differ." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Named on a bronze tablet found at Sint-Huibrechts-Hern near Tongeren, in modern Belgium.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vihansa is the name of a Germanic goddess written on a bronze tablet found in Sint-Huibrechts-Hern, near Tongeren in modern Belgium." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "bronze votive tablet, near Tongeren", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a bronze tablet found in Sint-Huibrechts-Hern near Tongeren bearing the name Vihansa." } ] } ],
+    "sources": [ { "claim": "Vihansa is a Germanic goddess named on a bronze votive tablet from near Tongeren.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vihansa and of the Germanic votive inscriptions." } ], "weight": "medium" } ],
+    "notes": "Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_harimella",
+    "name": { "primary": "Harimella", "alt": [],
+      "transliterations": { "Latin": "Harimella", "etymology": "The first element is generally harja-, 'army', as in Hariasa." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Known from an inscription at Birrens in Dumfriesshire — a Germanic goddess attested on the Scottish side of the Roman frontier, dedicated by a soldier far from home.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Harimella is a Germanic goddess known from an inscription in Dumfriesshire, Scotland." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive inscription, Birrens, Dumfriesshire", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Harimella is known from an inscription in Dumfriesshire, Scotland." } ] } ],
+    "sources": [ { "claim": "Harimella is a Germanic goddess attested by an inscription at Birrens in Dumfriesshire.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Harimella and of the Germanic votive inscriptions." } ], "weight": "medium" } ],
+    "notes": "A GERMANIC GODDESS ATTESTED IN SCOTLAND, which is what the Roman army does to a religious map — the same mechanism that put Boudihillia, Friagabis and Fimmilena, already in this corpus, on the northern frontier. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. THE ROMAN NAMES ON GERMANIC ALTARS
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_hercules_magusanus",
+    "name": { "primary": "Hercules Magusanus", "alt": ["Magusanus", "Hercules Magusenus"],
+      "transliterations": { "Latin": "Hercules Magusanus", "etymology": "Magusanus is Germanic and unresolved; Hercules is the Roman name the dedicators used for the god they meant." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "The chief god of the Batavians as the inscriptions name him: a Germanic epithet fixed to a Roman theonym on altars through the Lower Rhine, in the region where the Batavian auxiliaries were raised.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Germanic deities under Roman names: Hercules Magusanus is attested on Rhineland dedications as a Germanic god under a Roman name." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive dedication under a Roman theonym, Lower Rhine", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Germanic gods appear on Roman-era altars under paired Roman names with Germanic epithets, Hercules Magusanus among them." } ] } ],
+    "sources": [ { "claim": "Hercules Magusanus is a Germanic god attested on Roman-era altars of the Lower Rhine under a paired Roman theonym and Germanic epithet.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Continental Germanic gods and of the Roman-era Germanic dedications." } ], "weight": "medium" } ],
+    "notes": "WHAT THE EVIDENCE IS, AND WHAT IT IS NOT. The altar is the fact: a dedicator wrote a Roman god's name and a Germanic epithet together, and that pairing IS the record. WHICH Germanic god stands behind the Roman name is the disputed part, and this record does not answer it — no edge is drawn to Donar, to Thunaer or to any Norse figure. The corpus's Sogdian and Bactrian cult-forms are filed the same way. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_mars_thingsus",
+    "name": { "primary": "Mars Thingsus", "alt": ["Thingsus", "Mars Thincsus"],
+      "transliterations": { "Latin": "Mars Thingsus", "etymology": "Thingsus is generally connected with the Germanic þing, the assembly — a god of the assembly, under the Roman name for a god of war." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Attested on Hadrian's Wall, dedicated by Frisian troops, and named on the same stone as the Alaisiagae — among them Boudihillia, Friagabis, Beda and Fimmilena, whom this corpus already holds.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Germanic dedications on the northern frontier: Mars Thingsus is named with the Alaisiagae on altars set up by Frisian units at Housesteads on Hadrian's Wall." } ] } ],
+    "domains": [
+      { "sphereId": "the-assembly", "contextTag": "lifelong", "term": { "value": "þing", "script": "Latin", "rom": "thing" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Thingsus is connected with the Germanic word for the assembly." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive dedication by Frisian troops, Hadrian's Wall", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mars Thingsus is attested with the Alaisiagae on the northern frontier, dedicated by Germanic units in Roman service." } ] } ],
+    "sources": [ { "claim": "Mars Thingsus is a Germanic god of the assembly under a Roman theonym, attested on Hadrian's Wall with the Alaisiagae.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Continental Germanic gods and of the Housesteads dedications." } ], "weight": "medium" } ],
+    "notes": "A GOD OF THE LAW-COURT UNDER THE ROMAN NAME FOR A GOD OF WAR, which is worth a record for the mismatch alone. THE EQUATION WITH TIW IS NOT ASSERTED and no edge is drawn to anglosaxon_tiw or norse_tyr; the connection is the standard reading and it is a reading. He stands on a stone with four goddesses the corpus already held, and the corpus held the four and not him. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "continental_germanic_mercurius_cimbrianus",
+    "name": { "primary": "Mercurius Cimbrianus", "alt": ["Cimbrianus", "Mercurius Cimbrius"],
+      "transliterations": { "Latin": "Mercurius Cimbrianus", "etymology": "Cimbrianus is generally taken from the Cimbri; Mercurius is the Roman name Tacitus says the Germanic peoples' chief god was called by." } },
+    "type": "deity", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Attested on dedications in the Roman province of Upper Germany, a Germanic god carrying the Roman name Tacitus reports for the god the Germanic peoples worship above all others.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Continental Germanic gods: Mercurius Cimbrianus is attested on Roman-era dedications in Germania Superior as a Germanic god under a Roman name." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "votive dedication under a Roman theonym, Germania Superior", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mercurius Cimbrianus is attested on Roman-era dedications in Upper Germany." } ] } ],
+    "sources": [ { "claim": "Mercurius Cimbrianus is a Germanic god attested on Roman-era dedications in Upper Germany under a paired Roman theonym and Germanic epithet.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Continental Germanic gods and of the Roman-era Germanic dedications." } ], "weight": "medium" } ],
+    "notes": "TACITUS SAYS THE GERMANIC PEOPLES WORSHIP MERCURY ABOVE ALL OTHERS, AND EVERY MODERN READER TAKES THAT TO MEAN WODAN. This record does not: it holds the inscription's own pairing, and the identification with the Wodan ingested in this same batch is left unasserted, because it is the same class of claim as reading Mars Thingsus as Tiw. A registry can hold both records and let the reader make the equation the Romans made. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VII. THE SEERESSES
+================================================================================
+
+```json
+[
+  {
+    "id": "continental_germanic_veleda",
+    "name": { "primary": "Veleda", "alt": [],
+      "transliterations": { "Latin": "Veleda", "etymology": "Generally taken to be a title rather than a personal name, from a Celtic or Germanic root for seeing or prophecy." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "A seeress of the Bructeri who came to prominence in the Batavian revolt of 69–70 CE, correctly predicting the rebels' first successes against the Roman legions. She lived in a tower and was not spoken to directly; a relative carried the questions in and the answers out.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Veleda was a seeress of the Bructeri, a Germanic people who achieved some prominence during the Batavian rebellion of AD 69–70, when she correctly predicted the initial successes of the rebels against Roman legions." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Veleda correctly predicted the initial successes of the rebels against the Roman legions." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "succeeded-by", "personId": "continental_germanic_ganna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ganna was a Germanic seeress of the Semnones who succeeded the seeress Veleda as the leader of a Germanic alliance in rebellion against the Roman Empire." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Veleda is the seeress of the Bructeri who predicted the rebels' successes in the Batavian revolt of 69–70 CE and was treated by Romans and Germans alike as an authority.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Veleda and of the Germanic seeress." } ], "weight": "high" } ],
+    "notes": "A LIVING WOMAN IN A REGISTRY OF GODS, AND THE REASON IS THAT THE SOURCES PUT HER THERE. The Romans negotiated with her as a power and reported that she was held as something close to a divinity; her people did not approach her in person. She is typed mortal because this schema's type is a function of descent and she has no divine parent, and the treatment of her standing is on the record rather than in the type."
+  },
+  {
+    "id": "continental_germanic_ganna",
+    "name": { "primary": "Ganna", "alt": [],
+      "transliterations": { "Latin": "Ganna", "etymology": "Connected with a Germanic word for a magic wand or staff; like Veleda, possibly a title." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "A seeress of the Semnones who followed Veleda as the authority behind a Germanic alliance against Rome, and who travelled to Rome with her king and was received by the emperor Domitian.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ganna was a Germanic seeress of the Semnoni tribe, who succeeded the seeress Veleda as the leader of a Germanic alliance in rebellion against the Roman Empire." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ganna as a Germanic seeress succeeding Veleda." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "successor-of", "personId": "continental_germanic_veleda",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ganna succeeded Veleda as the leader of a Germanic alliance." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ganna is the seeress of the Semnones who succeeded Veleda at the head of a Germanic alliance against Rome.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ganna and of the Germanic seeress." } ], "weight": "high" } ],
+    "notes": "THE SUCCESSION IS THE FINDING. That one seeress follows another at the head of an alliance means the position was an office and not a personal reputation, and an office is the kind of thing a registry of religion should be able to show. The corpus held neither holder of it."
+  },
+  {
+    "id": "continental_germanic_albruna",
+    "name": { "primary": "Albruna", "alt": ["Aurinia", "Albrinia", "Alirunia"],
+      "transliterations": { "Latin": "Albruna", "etymology": "The commonest emendation reads 'elf-secret' or 'endowed with the secret knowledge of elves'; the manuscripts give Aurinia and several other forms, and which is right is unsettled." } },
+    "type": "mortal", "origin": "canon", "tradition": "Continental Germanic", "primaryTradition": "Continental Germanic",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "Continental Germanic religion under Rome (1st c. BCE – 3rd c. CE)", "eraOrdering": 0,
+      "startEvent": "Named by Tacitus alongside Veleda as a woman the Germanic peoples venerated — in a manuscript reading that editors have emended in several directions.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Albruna is the name of a Germanic seeress named by Tacitus alongside Veleda; the name is an emendation of manuscript readings including Aurinia, and the reading is disputed." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Albruna is named among the venerated women of the Germanic peoples in Tacitus." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "named-alongside", "personId": "continental_germanic_veleda",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tacitus names Albruna alongside Veleda." } ],
+        "notes": "In-batch, and the kind is exact: Tacitus puts the two names side by side and says nothing about a relationship between them." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Albruna is a Germanic seeress named by Tacitus beside Veleda, under a name whose manuscript reading is disputed.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Albruna and of the Germanic seeress." } ], "weight": "medium" } ],
+    "notes": "THE RECORD'S PRIMARY NAME IS AN EMENDATION AND IT SAYS SO. Aurinia is what the manuscripts give, Albruna is what most editors print, and a corpus that filed her under one without recording the other would be hiding the shape of the evidence. Both are on the record, and the etymology field states that the choice is unsettled."
+  }
+]
+```
+
