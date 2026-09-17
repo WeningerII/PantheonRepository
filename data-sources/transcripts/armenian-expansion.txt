@@ -1,0 +1,645 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Armenian
+Eras (registered, exact): pantheon-era | haykazuni-mythohistorical |
+  arsacid-historical | medieval-sasna-tsrer | modern-collection
+Author pass: Armenian held 23 records. This adds 22.
+
+================================================================================
+THE GAP — THE CORPUS HELD HAYK AND NOT BEL
+================================================================================
+
+A 68-name check across the WHOLE registry returned 28 hits and 40 absences.
+
+**Hayk is in the registry. Bel is not.**
+
+The founding act of the Armenian nation, as Movses Khorenatsi tells it, is a
+single arrow. Hayk refuses to submit to Bel, the tyrant of Babylon; Bel follows
+him north with an army; Hayk draws a wide bow and shoots him through the breast;
+and the people take their name — *Hay* — from the man who fired it. The corpus
+held the archer and not the target.
+
+That is this programme's recurring finding once more, and in the form it has
+taken in eleven traditions running: **the registry holds the famous name and not
+the thing it is defined against.**
+
+It also held **Vahagn Vishapakagh**, "Vahagn the Dragon-reaper", and no dragon.
+
+================================================================================
+THE PANTHEON WAS HELD AT FOUR
+================================================================================
+
+The `pantheon-era` bucket contained **Aramazd, Anahit, Astghik and Vahagn** —
+and nothing else. Absent:
+
+    Mihr          god of light, heaven and the sun; the temple at Garni is his
+    Nane          goddess of motherhood, war and wisdom, with spear and shield
+    Tir           god of learning, writing and the sciences, and the interpreter
+                  of dreams; the messenger of the gods
+    Barsamin      the weather and sky god
+    Vanatur       the New Year god of Navasard, and by one account the supreme
+                  god of the pantheon BEFORE Aramazd displaced him
+    Spandaramet   god of the underworld
+    Tork Angegh   the giant who hurls boulders across the sea and scratches
+                  pictures into rock with his fingernails
+    Grogh         "the writer", who records what a person does and settles what
+                  becomes of them
+
+**Vanatur is the one that costs most.** A tradition whose pantheon the corpus
+held four of was missing the god that pantheon is said to have replaced.
+
+================================================================================
+AND A REGISTERED ERA WITH NOBODY IN IT
+================================================================================
+
+The Armenian era vocabulary registers five eras. Two of them held **nothing**:
+
+    pantheon-era               4 records
+    haykazuni-mythohistorical 12 records
+    arsacid-historical         0
+    medieval-sasna-tsrer       7 records
+    modern-collection          0
+
+Lane 19 found six empty registered eras in the Welsh vocabulary and lane 20
+found one in the Finnish. `arsacid-historical` is the third case, and it is the
+span of the **Vipasankʻ** — the epic Khorenatsi quotes from and says the
+minstrels of his own day were still singing: Artashes lassoing the Alan princess
+Satenik with a red cord and a golden ring, the rain of gold at the wedding, the
+feast Argavan sets as a trap, and Artashes cursing his own son.
+
+**That era now holds four records.** `modern-collection` still holds none, and
+this batch declines to fill it, for the reason lane 20 gave about Elias Lönnrot:
+it is the era of **Garegin Srvantdziants**, who wrote the Sasna Tsrer down in
+1873, and a collector is not a figure of the tradition.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+The **aralez** — the winged dog-like spirits who come down to lick a dead hero's
+wounds, and whom Shamiram calls on for Ara — are a **collective of unnamed
+beings**, and are rejected on the ground that rejected the Cwn Annwn in lane 19
+and the Matronae in lane 22, even though they are the most distinctive thing in
+Armenian mythology and the corpus already holds both figures of the story they
+belong to. The **vishaps** are likewise a class, and the **shahapet** of the
+hearth is a class. Garni, Bagaharich, Ashtishat and Masis are **places**.
+Navasard and Vardavar are **festivals**.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE REST OF THE PANTHEON
+================================================================================
+
+```json
+[
+  {
+    "id": "armenian_mihr",
+    "name": { "primary": "Mihr", "alt": ["Mher", "Mihr of Bagaharich"],
+      "transliterations": { "Armenian": "Մihr", "etymology": "From the Iranian Mithra; the Armenian form gives the name Mher, which is why the two Mhers of the Sasna Tsrer carry it." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "God of light, of heaven and of the sun, whose centre of worship was at Bagaharich and to whom the temple at Garni — the one pre-Christian temple still standing in Armenia — was dedicated.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Mihr, the god of light, heaven and sun; his centre of worship was located in Bagaharich, and the pagan temple of Garni was dedicated to him." } ] } ],
+    "domains": [
+      { "sphereId": "light", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mihr as god of light, heaven and sun." } ] },
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mihr as sun god of the Armenian pantheon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "armenian_aramazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Mihr is reckoned among the children of Aramazd, the father of the gods." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Aramazd record — AND DELIBERATELY NOT parentIds, because in this corpus the tier is computed from descent and the sources give the filiation as a position in a pantheon rather than as a genealogy." } ],
+    "cultRecords": [
+      { "practice": "temple cult at Garni and Bagaharich", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mihr's centre of worship was at Bagaharich and the temple of Garni was dedicated to him." } ] } ],
+    "sources": [ { "claim": "Mihr is the Armenian god of light, heaven and the sun, worshipped at Bagaharich and at the Garni temple.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Armenian pantheon and of its pre-Christian gods." } ], "weight": "high" } ],
+    "notes": "HIS NAME IS WHY THE SASNA TSRER HAS TWO MHERS. The corpus already held Mher the Elder and Mher the Younger, a thousand years downstream of this god, and did not hold the god. NO CROSS-TRADITION EDGE to zoroastrian_mithra: an Iranian name in Armenian dress is a fact about the languages, which is the rule since lane 13."
+  },
+  {
+    "id": "armenian_nane",
+    "name": { "primary": "Nane", "alt": ["Nanea"],
+      "transliterations": { "Armenian": "Նանե", "etymology": "Generally connected with the Mesopotamian Nanaya; the Armenian word nan, 'grandmother', is also invoked and the direction of borrowing is argued." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "Goddess of motherhood, of war and of wisdom, shown with a spear in one hand and a shield in the other.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Nane, the goddess of motherhood, wisdom and family protection; a spear in one hand and a shield in the other, she is the Armenian goddess of motherhood, war and wisdom." } ] } ],
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nane as goddess of motherhood and family protection." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nane shown with spear and shield as a goddess of war." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "armenian_aramazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Nane is reckoned a daughter of Aramazd." } ],
+        "notes": "Non-symmetric and deliberately not parentIds, as on Mihr's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nane is the Armenian goddess of motherhood, war and wisdom, figured with spear and shield.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Armenian pantheon and of its pre-Christian gods." } ], "weight": "high" } ],
+    "notes": "A GODDESS OF MOTHERHOOD WHO IS ARMED, which is the kind of combination a registry of domains should be able to show and could not, because she was not in it."
+  },
+  {
+    "id": "armenian_tir",
+    "name": { "primary": "Tir", "alt": ["Tiur"],
+      "transliterations": { "Armenian": "Տիր", "etymology": "Generally from the Iranian Tir, the name of the planet Mercury and of a Zoroastrian yazata; the Armenian month Tre is named from him." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "God of wisdom, of culture, of the sciences and of study, the interpreter of dreams and the messenger of the gods; the Greeks who wrote about the Armenian cults matched him with Apollo.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Tir, god of wisdom, culture, science and studies, who was also an interpreter of dreams; he was the messenger of the gods and was associated with Apollo." } ] } ],
+    "domains": [
+      { "sphereId": "learning-and-writing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tir as god of wisdom, culture, science and studies." } ] },
+      { "sphereId": "dream-interpretation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tir was an interpreter of dreams." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tir is the Armenian god of learning, writing and the sciences, interpreter of dreams and messenger of the gods.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Armenian pantheon and of its pre-Christian gods." } ], "weight": "high" } ],
+    "notes": "THE EQUATION WITH APOLLO IS RECORDED AS AN ANCIENT EQUATION AND NO EDGE IS DRAWN, on the treatment lane 22 gave Tacitus's Mercury and the Alcis: a Greek writer's interpretatio is a fact about how the cult was described. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "armenian_barsamin",
+    "name": { "primary": "Barsamin", "alt": ["Barshamin", "Barshimnia"],
+      "transliterations": { "Armenian": "Բարշամին", "etymology": "From the Semitic Baʿal Šamin, 'lord of the heavens' — a Syrian god taken into the Armenian pantheon under a lightly Armenised form of his title." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "A weather and sky god of the pre-Christian Armenians, with a cult centre and an ivory statue that Armenian tradition says was brought as spoil from Mesopotamia.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Barsamin was a weather or sky god among the pre-Christian Armenians." } ] } ],
+    "domains": [
+      { "sphereId": "sky-and-weather", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Barsamin as a weather or sky god." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Barsamin is a weather and sky god of the pre-Christian Armenian pantheon.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Barsamin and of the Armenian pantheon." } ], "weight": "high" } ],
+    "notes": "NO EDGE TO canaanite_baal OR TO phoenician_baalshamin, whom this corpus holds. That Barsamin's name IS the title Baʿal Šamin is stated in the etymology, where a fact about a name belongs; drawing a relation from it would make an assertion about two beings that the sources do not. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "armenian_vanatur",
+    "name": { "primary": "Vanatur", "alt": ["Amanor", "Amanor Vanatur"],
+      "transliterations": { "Armenian": "Վանատուր", "etymology": "Vanatur is read as 'lord of the dwelling' or 'giver of shelter'; Amanor is 'new year', from am, 'year'." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "The god of the Armenian New Year and lord of the new harvest, whose feast — Navasard — fell at the end of July.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Amanor or Vanatur, the same god with different names, was the deity of the Armenian new year; Amanor and Vanatur, possibly the same god under different names, were the deities of the Armenian New Year and the lord of the new harvest, and the celebration in their honour took place at the end of July and was known as Navasard." } ] },
+      { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 1,
+        "startEvent": "By one account he was the supreme god of the Armenian pantheon before Aramazd replaced him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the supreme god of the Armenian pantheon, Vanatur, was later replaced by Aramazd." } ] } ],
+    "domains": [
+      { "sphereId": "the-new-year", "contextTag": "lifelong", "term": { "value": "Նավասարդ", "script": "Armenian", "rom": "Navasard" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Amanor was the deity of the Armenian new year, whose feast Navasard was held at the end of July." } ] },
+      { "sphereId": "harvest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: lord of the new harvest." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "displaced-by", "personId": "armenian_aramazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the supreme god of the Armenian pantheon, Vanatur, was later replaced by Aramazd." } ],
+        "notes": "Non-symmetric toward a pre-existing record, and the kind is careful: the sources say 'later replaced by', which is a statement about a pantheon's history and not about a fight." } ],
+    "cultRecords": [
+      { "practice": "Navasard, the New Year feast at the end of July", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the celebration in their honour took place at the end of July and was known as Navasard." } ] } ],
+    "sources": [ { "claim": "Vanatur, also called Amanor, is the Armenian god of the New Year and of the new harvest, whose feast is Navasard, and whom one account makes the supreme god before Aramazd.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Armenian pantheon and of Amanor and Vanatur." } ], "weight": "high" } ],
+    "notes": "THE GOD THE CORPUS'S ARAMAZD IS SAID TO HAVE REPLACED, AND THE CORPUS HELD THE REPLACEMENT AND NOT HIM. Amanor and Vanatur are ONE RECORD WITH TWO NAMES because the treatments consulted say 'the same god with different names' and 'possibly the same god under different names' — and the record carries that 'possibly' rather than hiding it. A second record would be the duplicate this programme forbids; a silent merge would hide a question."
+  },
+  {
+    "id": "armenian_spandaramet",
+    "name": { "primary": "Spandaramet", "alt": ["Sandaramet", "Spandarat"],
+      "transliterations": { "Armenian": "Սպանդարամետ", "etymology": "From the Iranian Spenta Armaiti, the Zoroastrian amesha spenta of the earth — whose name in Armenian came to mean the underworld itself." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "God of the underworld and of the kingdom of the dead; the Greek-facing treatments equate him with Hades.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Armenian pantheon: Spandaramet, the god of the dungeon and the kingdom of the dead, identified with the Greek god Hades." } ] } ],
+    "domains": [
+      { "sphereId": "the-underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Spandaramet as god of the kingdom of the dead." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Spandaramet is the Armenian god of the underworld and the kingdom of the dead.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Armenian pantheon and of its pre-Christian gods." } ], "weight": "high" } ],
+    "notes": "A NAME THAT CHANGED SIDES. The Iranian Spenta Armaiti is the beneficent spirit of the EARTH; the Armenian Spandaramet is the lord of what is UNDER it, and the word came to mean the underworld outright. No cross-tradition edge is drawn to the Zoroastrian figure and the etymology carries the fact. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "armenian_tork_angegh",
+    "name": { "primary": "Tork Angegh", "alt": ["Tork", "Turk Angegh"],
+      "transliterations": { "Armenian": "Տորք Անգեղ", "etymology": "Angegh is read as 'ugly', which is how Khorenatsi explains the by-name. The first element is generally connected with the Anatolian Tarku and the second with a god of the province of Angegh, so that the figure is taken to be two deities run together." } },
+    "type": "deity", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "A deity of strength, courage, making and the arts. Movses Khorenatsi describes a giant of extraordinary force who could hurl boulders across the sea, flatten the face of a rock with his hands, and scratch pictures into it with his fingernails. He was called Angegh, 'ugly', for his appearance.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tork Angegh is a deity of strength, courage, manufacturing and the arts in Armenian mythology; according to Movses Khorenatsi he was a giant of extraordinary force who could hurl boulders across the seas, flatten the surfaces of rocks and draw pictures on them with his fingernails, and he was named Angegh, 'ugly', because of his appearance." } ] } ],
+    "domains": [
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tork Angegh as a deity of strength and courage." } ] },
+      { "sphereId": "the-crafts", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tork Angegh as a deity of manufacturing and the arts." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "descendant-of", "personId": "armenian_hayk",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tork was considered one of the great-grandsons of Hayk, the legendary patriarch of the Armenian people." } ],
+        "notes": "A RELATION AND NOT parentIds, because the intervening generations are not named on the evidence retrieved and this corpus computes the tier from descent. Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tork Angegh is the Armenian deity of strength, courage and the crafts, described by Khorenatsi as a giant who hurls boulders and scratches pictures into rock with his fingernails.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tork Angegh and of Armenian mythology." } ], "weight": "high" } ],
+    "notes": "A GOD WHO IS ALSO AN ARTIST, and the detail is the whole record: he tears the face off a cliff and then draws on it with his nails. The sources say he is taken to be TWO deities run together — the Anatolian Tarku and a god of the province of Angegh — and this batch ingests ONE record, because one name with one biography is what the tradition has; the compound reading is on the etymology as a reading. The onward comparison to Thor and Týr is noted in the sources as conceivable and is not carried onto this record at all."
+  },
+  {
+    "id": "armenian_grogh",
+    "name": { "primary": "Grogh", "alt": ["Groh"],
+      "transliterations": { "Armenian": "Գրող", "etymology": "'The writer', from grel, 'to write' — the same word that in later Armenian is a common euphemism for death." } },
+    "type": "numen", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "unknown", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "The being who settles what becomes of a person — who writes a life down at birth and reads it back at death.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Armenian mythology: Grogh is an entity believed to determine human destiny." } ] } ],
+    "domains": [
+      { "sphereId": "fate", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grogh determines human destiny." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Grogh, 'the writer', is the being of Armenian belief who determines a person's destiny.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Armenian mythology and of its supernatural beings." } ], "weight": "medium" } ],
+    "notes": "TYPE numen AND NOT deity, because the sources call it an entity that determines destiny and not a god with a cult, and numen is the category this schema respects as authored. COMPARE LANE 21'S WYRD, WHICH WAS BLOCKED: there the question was whether there was a figure under the word at all and the scholarship divided; here the sources name a being and give it an act, and the record holds it at exactly that strength and no higher. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE ARROW THE NATION IS NAMED FOR
+================================================================================
+
+```json
+[
+  {
+    "id": "armenian_bel",
+    "name": { "primary": "Bel", "alt": ["Bel the Titan", "Nimrod"],
+      "transliterations": { "Armenian": "Բել", "etymology": "The Akkadian bēlu, 'lord' — the title of Marduk, taken into the Armenian account as a personal name. Khorenatsi's sources and their successors also identify him with Nimrod." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "The tyrant of Babylon under whom Hayk is living, and whom Hayk refuses to submit to; Hayk takes his household north to the country around Ararat rather than obey him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Movses Khorenatsi recounts the foundation myth of the Armenian nation, the story of Hayk and Bel; Hayk, a descendant of Japheth, rebelled against Bel the evil Babylonian tyrant and returned to his homeland around Mount Ararat." } ] },
+      { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 1,
+        "startEvent": "He follows with an army; the two meet in battle; Hayk draws a wide bow and shoots him dead, and the people take their name from the archer.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Bel followed Hayk and his relations, a mighty battle ensued in which Bel was killed; Hayk then gave his name to his descendants, the Hay people, and to the region, Hayastan." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "armenian_hayk",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a mighty battle ensued in which Bel was killed by Hayk." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Hayk record. THE CORPUS HELD THE ARCHER AND NOT THE TARGET." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bel is the Babylonian tyrant of the Armenian foundation myth, whom Hayk refuses and then kills with an arrow, and from whose defeat the Armenian people take their name.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hayk, of Bel, and of Movses Khorenatsi's History of the Armenians." } ], "weight": "high" } ],
+    "notes": "NO EDGE TO mesopotamian_marduk OR TO ANY MESOPOTAMIAN RECORD, though 'Bel' is Marduk's title and this corpus holds him. Khorenatsi's Bel is a person in an Armenian story; the Akkadian bēlu is where the name came from, and that belongs in the etymology. The identification with Nimrod is likewise recorded as an identification the tradition makes and not as a second record."
+  },
+  {
+    "id": "armenian_torgom",
+    "name": { "primary": "Torgom", "alt": ["Togarmah", "Torkom", "Thorgom"],
+      "transliterations": { "Armenian": "Թորգոմ", "etymology": "The biblical Togarmah, son of Gomer, in Armenian form; Armenia is 'the house of Togarmah' in the genealogies that reach back to Noah." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "Hayk's father, and the point at which the Armenian genealogy joins the biblical one: Khorenatsi traces the line from Noah through Japheth to Torgom and so to Hayk. Georgian tradition makes the same man the founder of its own nation.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Movses Khorenatsi's account, Hayk son of Torgom had a child named Armanak while he was living in Babylon; both the Armenian Moses of Chorene and the Georgian Leonti Mroveli regarded Togarmah as the founder of their nations along with other Caucasian people, and Armenians call themselves Hayer and their country Hayastan after Hayk, who was son of Togarmah." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "armenian_hayk",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hayk son of Torgom; Hayk was son of Togarmah." } ],
+        "notes": "Non-symmetric toward a pre-existing record. The pre-existing Hayk record carries no parentIds and cannot be given any, so the descent is stated from this end only — the asymmetry this programme has reported since lane 15." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Torgom is Hayk's father and the point at which the Armenian genealogy joins the biblical line from Noah through Japheth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Togarmah, of Hayk, and of Movses Khorenatsi." } ], "weight": "high" } ],
+    "notes": "THE SAME MAN IS THE FOUNDER OF TWO NATIONS AND THIS RECORD IS ONE OF THEM. Leonti Mroveli's Georgian chronicle makes Togarmah the ancestor of the Georgians as well; no Georgian record is created here and no cross-tradition edge drawn, because a shared ancestor-claim in two national genealogies is a fact about two historiographies."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. TIGRAN AND THE DRAGON-KING
+================================================================================
+
+```json
+[
+  {
+    "id": "armenian_tigran_haykazuni",
+    "name": { "primary": "Tigran", "alt": ["Tigranes", "Tigran Yervanduni"],
+      "transliterations": { "Armenian": "Տիգրան", "etymology": "Unresolved; connected by some with the Iranian tigra-, 'pointed, arrow'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "The Armenian king who kills Azhdahak, the Median king whom the older tales make a dragon. Khorenatsi identifies the enemy with the Median Astyages and tells the war as the end of a plot against him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in ancient Armenian tales this mythological dragon becomes the king of Media, who is defeated and killed by the Armenian king Tigran; in his History of Armenia, Movses Khorenatsi identified Azhdahak with the Median king Astyages." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed", "personId": "armenian_azhdahak",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak is defeated and killed by the Armenian king Tigran." } ], "notes": "In-batch." },
+      { "kind": "sibling", "personId": "armenian_tigranuhi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak married Tigranuhi, the prominent sister of Tigranes." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tigran is the legendary Armenian king who kills the dragon-king Azhdahak of Media, whose sister Azhdahak had married.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tigranes the legendary, of Azhdahak and of Movses Khorenatsi." } ], "weight": "high" } ],
+    "notes": "THE ID IS QUALIFIED — armenian_tigran_haykazuni — because the name belongs to several historical Armenian kings and this is the legendary one of Khorenatsi's narrative. That is the within-tradition disambiguation lanes 16, 17, 18, 20 and 21 each had to make."
+  },
+  {
+    "id": "armenian_azhdahak",
+    "name": { "primary": "Azhdahak", "alt": ["Ajdahak", "Azhdahak of Media", "Astyages"],
+      "transliterations": { "Armenian": "Աժդահակ", "etymology": "From the Iranian Aži Dahāka, the three-headed serpent of the Avesta, whose name in Armenian becomes both a dragon-word and a king's name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "In the older Armenian tales a dragon; in Khorenatsi a king of Media identified with Astyages. He marries Tigranuhi, Tigran's sister, intending to use her to bring her brother into Media and kill him there.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in ancient Armenian tales this mythological dragon becomes the king of Media; Movses Khorenatsi identified Azhdahak with the Median king Astyages; Azhdahak married Tigranuhi, the prominent sister of Tigranes, and planned to use her to befriend Tigranes, invite him to Media and then kill him." } ] },
+      { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 1,
+        "startEvent": "Tigranuhi warns her brother; the plot fails; Tigran kills him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak is defeated and killed by the Armenian king Tigran." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "armenian_tigran_haykazuni",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak is defeated and killed by Tigran." } ], "notes": "In-batch." },
+      { "kind": "spouse", "personId": "armenian_tigranuhi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak married Tigranuhi, the prominent sister of Tigranes." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Azhdahak is the dragon of the older Armenian tales and the Median king of Khorenatsi's history, who marries Tigranuhi as part of a plot against her brother and is killed by him.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Azhdahak, of Tigranes the legendary and of Movses Khorenatsi." } ], "weight": "high" } ],
+    "notes": "TYPE mortal AND NOT numen, DELIBERATELY. The older layer makes him a dragon and Khorenatsi makes him a king, and what the corpus can record on the evidence retrieved is the king with the dragon-name; the record states the dragon layer in its lifecycle and its etymology rather than in its type. NO CROSS-TRADITION EDGE to the Zoroastrian Aži Dahāka, which the corpus holds: the name travelled and the figure changed shape and species along the way, and that is a fact about the languages, on the rule since lane 13."
+  },
+  {
+    "id": "armenian_tigranuhi",
+    "name": { "primary": "Tigranuhi", "alt": ["Tigranouhi"],
+      "transliterations": { "Armenian": "Տիգրանուհի", "etymology": "The feminine of Tigran, formed with the Armenian -uhi suffix: 'Tigran's woman', which is how the tradition names her." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "Tigran's sister, married to Azhdahak of Media as part of a plan to bring her brother within reach — and the person who tells her brother about it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak married Tigranuhi, the prominent sister of Tigranes, and planned to use her to befriend Tigranes, invite him to Media and then kill him." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "armenian_tigran_haykazuni",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tigranuhi is the sister of Tigranes." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "spouse", "personId": "armenian_azhdahak",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Azhdahak married Tigranuhi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tigranuhi is Tigran's sister, married to Azhdahak in a plot against her brother, whom she warns.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Azhdahak and of Tigranes the legendary." } ], "weight": "high" } ],
+    "notes": "A WOMAN MARRIED ACROSS A BORDER TO MAKE A PEACE THAT IS A TRAP, WHO BREAKS IT — the fourth in this programme after Freawaru, Hildeburh and Creiddylad, and the only one of the four whose warning works. HER NAME IS HER BROTHER'S WITH A SUFFIX, which the record states in the etymology because it is what the tradition did."
+  },
+  {
+    "id": "armenian_vahe",
+    "name": { "primary": "Vahe", "alt": [],
+      "transliterations": { "Armenian": "Վահե", "etymology": "Unresolved; the element vah- appears in Vahagn and in a range of Armenian and Iranian names." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "haykazuni-mythohistorical", "eraOrdering": 0,
+      "startEvent": "The last king of Armenia descended from Hayk, in the traditional history Khorenatsi records — the end of the line the corpus already holds twelve members of.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vahe, according to the traditional Armenian history recorded by Movses Khorenatsi, was the last king of Armenia descended from the legendary Armenian progenitor Hayk." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "last-of-the-line-of", "personId": "armenian_hayk",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vahe was the last king of Armenia descended from Hayk." } ],
+        "notes": "Non-symmetric toward a pre-existing record, and a relation rather than parentIds: the intervening generations are a king-list and not a fact about a father." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vahe is the last king of the Haykazuni line in Movses Khorenatsi's traditional history.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vahe and of Movses Khorenatsi's History of the Armenians." } ], "weight": "medium" } ],
+    "notes": "THE CORPUS HELD TWELVE MEMBERS OF A DYNASTY AND NOT ITS END. A king-list is only a list until something closes it, and this record closes the one the registry already had."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE VIPASANKʻ, AND AN ERA WITH NOBODY IN IT
+================================================================================
+
+```json
+[
+  {
+    "id": "armenian_artashes",
+    "name": { "primary": "Artashes", "alt": ["Artaxias", "Artashes the Merciful"],
+      "transliterations": { "Armenian": "Արտաշես", "etymology": "The Armenian form of the Iranian Artaxšaça; the Greek sources give Artaxias." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "arsacid-historical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 0,
+      "startEvent": "The king of the Vipasankʻ, the epic Khorenatsi quotes and says the minstrels of his own day were still singing. The Alans invade; the armies face each other across a river; and Artashes rides out on a black charger, throws a red leather cord with a golden ring round the waist of the Alan princess, and carries her back to his camp.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the story of Artashes and Satenik forms part of the ancient Armenian epic Vipasankʻ, fragments of which Movses Khorenatsi presents in his History of Armenia, and which he says was a well-known epic among the common people, told by travelling storytellers and minstrels; King Artashes mounted his fine black charger and took the red leathern cord with the golden ring, cast the golden ring round the waist of the Alan princess, causing much pain to the tender maiden, and bore her swiftly back to his camp." } ] },
+      { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 1,
+        "startEvent": "At the wedding, in the epic's own line, it rained gold when Artashes became a bridegroom and pearls when Satenik became a bride — which the tradition explains as the custom of Armenian kings to scatter coin among the people at the temple door.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: 'It rained showers of gold when Artashes became a bridegroom. It rained pearls when Satenik became a bride', for it was the custom of Armenian kings to scatter coins amongst the people when they arrived at the doors of the temple for their wedding." } ] },
+      { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 2,
+        "startEvent": "He curses his own son Artavazd, and the curse takes.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd, the sullen and impetuous prince, cursed by his own father, the kindly Artashes, was precipitated by the genii of Mount Massis into a profound abyss." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "թագավոր", "script": "Armenian", "rom": "tagavor" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Artashes as king of Armenia in the Vipasankʻ." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "armenian_satenik",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Satenik was an Alanian princess who married Artashes, the king of Armenia." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "cursed", "personId": "armenian_artavazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd, cursed by his own father, the kindly Artashes." } ], "notes": "In-batch." },
+      { "kind": "trapped-by", "personId": "armenian_argavan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Armenian epic, Artavazd, the son of Artashes and Satenik, fights Argavan, who was plotting to lure Artashes using a feast." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Artashes is the king of the Vipasankʻ who takes the Alan princess Satenik with a cord and a golden ring, and who curses his son Artavazd.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Satenik, of the Vipasankʻ and of Movses Khorenatsi's History of Armenia." } ], "weight": "high" } ],
+    "notes": "THE ERA LABEL IS WRONG AND THE RECORD SAYS SO. This corpus's Armenian vocabulary offers `arsacid-historical` as its only bucket for the historical period, and the Artashes of the tradition is identified with the ARTAXIAD Artaxias I, not with an Arsacid. The record is filed there because it is the only era that can hold it and because the alternative — filing a second-century BCE king in `haykazuni-mythohistorical` — would be worse. THE VOCABULARY QUESTION IS ESCALATED RATHER THAN SOLVED: lane 22 extended a tradition's era list where the case was unambiguous, and this one is a mislabel rather than a gap, which is the owner's call and not this batch's."
+  },
+  {
+    "id": "armenian_satenik",
+    "name": { "primary": "Satenik", "alt": ["Satinik", "Sathenik"],
+      "transliterations": { "Armenian": "Սաթենիկ", "etymology": "Unresolved; the Armenian sat', 'amber', has been proposed for the first element." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "arsacid-historical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 0,
+      "startEvent": "An Alan princess, taken from the far bank of the river by Artashes's cord and made queen of Armenia — and, in the epic, the mother of Artavazd.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Satenik was an Alanian princess who, according to Armenian tradition, married Artashes, the king of Armenia, the Artashes of the tradition being identified with the 2nd-century BC king Artaxias I, though the real historical basis is generally believed to come from the invasion of Armenia by the Alans in the 1st century AD." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "armenian_artashes",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Satenik married Artashes, the king of Armenia." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "mother-of", "personId": "armenian_artavazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd, the son of Artashes and Satenik." } ], "notes": "In-batch; Artavazd carries both parents in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Satenik is the Alan princess of the Vipasankʻ whom Artashes takes with a cord and a golden ring and makes queen, and the mother of Artavazd.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Satenik and of the Vipasankʻ." } ], "weight": "high" } ],
+    "notes": "THE EPIC IS FRANK ABOUT THE ABDUCTION. Its own line says the golden ring caused much pain to the tender maiden as he bore her off, and the record keeps that rather than rendering the scene as a courtship. The sources also note that the historical layer under the story is probably the ALAN INVASION OF THE FIRST CENTURY AD and not the second-century BCE king it is attached to — which is stated here and is part of why the era filing is escalated on Artashes's record."
+  },
+  {
+    "id": "armenian_artavazd",
+    "name": { "primary": "Artavazd", "alt": ["Artavasdes", "Artavazd of the abyss"],
+      "transliterations": { "Armenian": "Արտավազդ", "etymology": "From an Iranian compound, roughly 'having immortal strength'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["armenian_artashes", "armenian_satenik"],
+    "parentRoles": [ { "personId": "armenian_artashes", "role": "father" }, { "personId": "armenian_satenik", "role": "mother" } ],
+    "temporal": { "era": "arsacid-historical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 0,
+      "startEvent": "The sullen and impetuous son of Artashes and Satenik, who fights Argavan when Argavan lays a feast as a trap for his father.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Armenian epic, Artavazd, the son of Artashes and Satenik, fights Argavan, who was plotting to lure Artashes using a feast." } ] },
+      { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 1,
+        "startEvent": "Cursed by his father, he is thrown by the spirits of Mount Masis into a chasm, where he is chained and lives on — and where, the tradition says, his dogs gnaw at the chains, because if he ever got out he would destroy the world. Smiths strike their anvils at New Year to make the links hold.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd, cursed by his own father, was precipitated by the genii of Mount Massis into a profound abyss, where he lives through all eternity chained to a rock, for 'should he ever come out, he would destroy the world'; according to the Armenian legend of Mount Ararat, King Artavazd is chained and with the help of his faithful dogs tries to free himself and rule the world." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "cursed-by", "personId": "armenian_artashes",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd, cursed by his own father, the kindly Artashes." } ], "notes": "In-batch." },
+      { "kind": "fought", "personId": "armenian_argavan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd fights Argavan, who was plotting to lure Artashes using a feast." } ], "notes": "In-batch." } ],
+    "cultRecords": [
+      { "practice": "striking the anvil so that the chains hold", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the legend of Artavazd chained beneath Mount Ararat, whose dogs gnaw at his chains." } ] } ],
+    "sources": [ { "claim": "Artavazd is the son of Artashes and Satenik, cursed by his father and chained in a chasm under Mount Masis, where his dogs gnaw at the chains and from which his escape would end the world.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Vipasankʻ, of Movses Khorenatsi, and of the legends of Mount Ararat." } ], "weight": "high" } ],
+    "notes": "vitalStatus IS RECORDED AS living AND THAT IS THE POINT OF HIM. The tradition does not say he died; it says he is down there, and that the smiths' hammers at New Year are what keeps the chains whole. THE DOGS ARE NOT INGESTED — animals identified by an owner, the rejection lanes 13 through 22 have applied to five horses, two hounds and Balder's foal — which in this one case costs the record its most-told detail, and the lifecycle carries it as prose instead."
+  },
+  {
+    "id": "armenian_argavan",
+    "name": { "primary": "Argavan", "alt": ["Argam"],
+      "transliterations": { "Armenian": "Արգավան", "etymology": "Unresolved; the name is given as Argavan and Argam in the tradition." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "arsacid-historical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "arsacid-historical", "eraOrdering": 0,
+      "startEvent": "The man who sets a feast in order to have Artashes at his mercy, and whom Artashes's son fights instead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Armenian epic, Artavazd, the son of Artashes and Satenik, fights Argavan, who was plotting to lure Artashes using a feast." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "plotted-against", "personId": "armenian_artashes",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Argavan was plotting to lure Artashes using a feast." } ], "notes": "In-batch." },
+      { "kind": "fought-by", "personId": "armenian_artavazd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Artavazd fights Argavan." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Argavan is the man of the Vipasankʻ who lays a feast as a trap for Artashes and is fought by Artashes's son.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Vipasankʻ and of Movses Khorenatsi." } ], "weight": "medium" } ],
+    "notes": "A TREACHEROUS FEAST, WHICH IS THE THIRD IN THIS PROGRAMME after the Finnsburg truce and Ysbaddaden's tasks. The record does not say how it ends, because the retrieved treatment does not."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE REST OF THE HOUSE OF SASSOUN
+================================================================================
+
+```json
+[
+  {
+    "id": "armenian_keri_toros",
+    "name": { "primary": "Keri Toros", "alt": ["Uncle Toros", "Toros"],
+      "transliterations": { "Armenian": "Քեռի Թորոս", "etymology": "Keri is 'maternal uncle' — the title is half the name, and it is what he is to everyone in the cycle." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "medieval-sasna-tsrer" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "medieval-sasna-tsrer", "eraOrdering": 0,
+      "startEvent": "The mentor and leader of the young men of Sassoun across the whole cycle — the constant beside four generations of heroes who rampage, are exiled, found their own outpost in the backwoods and fight in a battle-frenzy.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Daredevils of Sassoun: the young heroes include recurrent motifs of their rampage followed by exile, the foundation of their own outpost in the backwoods, young warrior brotherhoods, their defence of herds and warding off enemy attacks, battle frenzy — a common characteristic of all the Sassoun heroes — and their immutable mentor and leader, 'uncle' Keri Toros." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mentor-of", "personId": "armenian_david_of_sassoun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Keri Toros is the immutable mentor and leader of the heroes of Sassoun." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Keri Toros is the constant mentor and leader of the heroes of the Daredevils of Sassoun across the cycle's generations.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Daredevils of Sassoun." } ], "weight": "high" } ],
+    "notes": "THE ONE FIGURE WHO IS IN ALL FOUR BRANCHES, and the corpus held seven Sassoun records without him. The sources call him 'immutable', which in an epic about four generations of men who each go mad in battle and die is the whole of his function."
+  },
+  {
+    "id": "armenian_dzenov_ohan",
+    "name": { "primary": "Dzenov Ohan", "alt": ["Dzenov Hovhan", "Ohan of the Loud Voice", "Uncle Ohan"],
+      "transliterations": { "Armenian": "Ձենով Օհան", "etymology": "Dzenov is 'with the voice' — Ohan of the Voice, whose shout is his attribute." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "medieval-sasna-tsrer" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "medieval-sasna-tsrer", "eraOrdering": 0,
+      "startEvent": "David's uncle, whose voice is loud enough to be a weapon and whose nerve is not — the cautious half of the household, in a cycle where everyone else charges.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: David of Sassoun's family includes Great Mher (father), Armaghan (mother), Dzenov Ohan (uncle) and Sanasar (grandfather), with his spouse being Khantout and his child being Little Mher." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "uncle-of", "personId": "armenian_david_of_sassoun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Dzenov Ohan is David of Sassoun's uncle." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Dzenov Ohan is David of Sassoun's uncle, named in the cycle for his voice.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Daredevils of Sassoun and of David of Sassoun." } ], "weight": "high" } ],
+    "notes": "A HERO WHOSE EPITHET IS A NOISE. The record does not narrate the episodes in which he uses it, because the retrieved treatment names the relationship and not the scenes."
+  },
+  {
+    "id": "armenian_khandut",
+    "name": { "primary": "Khandut", "alt": ["Khantout", "Khandut Khatun"],
+      "transliterations": { "Armenian": "Խանդութ", "etymology": "Unresolved; Khatun is a Turkic title of rank that the cycle attaches to her." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "medieval-sasna-tsrer" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "medieval-sasna-tsrer", "eraOrdering": 0,
+      "startEvent": "David of Sassoun's wife, and the mother of Mher the Younger — the join between the third branch of the cycle and the fourth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: David of Sassoun's spouse is Khantout and his child is Little Mher." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "married", "personId": "armenian_david_of_sassoun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: David of Sassoun's spouse is Khantout." } ],
+        "notes": "Non-symmetric toward a pre-existing record; 'spouse' is the honest kind and cannot be used — the cost this programme has reported since lane 17." },
+      { "kind": "mother-of", "personId": "armenian_mher_the_younger",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: David of Sassoun's spouse is Khantout and his child is Little Mher." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Khandut is David of Sassoun's wife and the mother of Mher the Younger.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Daredevils of Sassoun and of David of Sassoun." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HELD BOTH MEN OF THIS RECORD AND NEITHER OF THEM COULD SAY WHERE THE SECOND CAME FROM. Mher the Younger's record carries no parentIds, so the descent is written from this end only."
+  },
+  {
+    "id": "armenian_armaghan",
+    "name": { "primary": "Armaghan", "alt": ["Armaghan Khatun"],
+      "transliterations": { "Armenian": "Արմաղան", "etymology": "Unresolved." } },
+    "type": "mortal", "origin": "canon", "tradition": "Armenian", "primaryTradition": "Armenian",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "medieval-sasna-tsrer" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "medieval-sasna-tsrer", "eraOrdering": 0,
+      "startEvent": "Mher the Elder's wife and David of Sassoun's mother — the third generation of the house, and the one the cycle is named after by way of her son.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: David of Sassoun's family includes Great Mher (father), Armaghan (mother), Dzenov Ohan (uncle) and Sanasar (grandfather)." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "married", "personId": "armenian_mher_the_elder",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Great Mher is David of Sassoun's father and Armaghan his mother." } ],
+        "notes": "Non-symmetric toward a pre-existing record." },
+      { "kind": "mother-of", "personId": "armenian_david_of_sassoun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Armaghan is David of Sassoun's mother." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Armaghan is Mher the Elder's wife and the mother of David of Sassoun.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Daredevils of Sassoun and of David of Sassoun." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HELD FOUR GENERATIONS OF MEN AND ONE WOMAN. Tsovinar, who conceives Sanasar and Baghdasar from a spring, was in the registry; Armaghan and Khandut, who carry the line through the two generations after her, were not — which is lane 16's mechanism exactly: the corpus reached each woman through a son it already held, and stopped where the son's mother had no story of her own attached."
+  }
+]
+```
+
