@@ -1,0 +1,1026 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Anglo-Saxon
+Eras (registered, exact): mythic | heroic-age
+Author pass: Anglo-Saxon held 22 records. This adds 37.
+
+================================================================================
+THE GAP — THE REGISTRY HELD BEOWULF AND NOT GRENDEL
+================================================================================
+
+A 91-name check across the WHOLE registry returned 25 hits and 66 absences.
+
+The corpus held **Beowulf**. It held his father **Ecgtheow**, his king
+**Hygelac**, Hygelac's queen **Hygd**, Hygelac's father **Hrethel**, Hrethel's
+three sons **Herebeald**, **Haethcyn** and Hygelac, Hrethel's daughter,
+Hygelac's son **Heardred**, and the two men who are with Beowulf at the end,
+**Wiglaf** and **Weohstan**. Eleven records: **the whole Geatish royal house.**
+
+**It did not hold Grendel.**
+
+Nor Grendel's mother. Nor the dragon. The poem is in three parts and each part
+is a fight with one of them; the registry held the man who fights and not one
+of the three things he fights.
+
+And it did not hold **any Dane at all**:
+
+- no **Hrothgar**, whose hall the poem is about
+- no **Wealhtheow**, his queen
+- no **Unferth**, who challenges Beowulf at the feast
+- no **Æschere**, whose death sends Beowulf into the mere
+- no **Scyld Scefing**, who arrives as a child alone in a boat and is sent back
+  out to sea in one, in the passage the poem opens with
+- no **Freawaru**, **Hrothulf**, **Heorogar**, **Halga**, **Beow** or
+  **Healfdene**
+
+The corpus held one side of a poem about two courts.
+
+It also held, in the Swedish half of the story, **Weohstan** — and not
+**Eanmund**, the man Weohstan kills, whose sword Weohstan takes and whose sword
+is the one Wiglaf carries into the dragon fight. The registry held the sword's
+second owner and not its first.
+
+================================================================================
+AND THREE GODS BEDE, ASSER AND A FIELD-CHARM ATTEST
+================================================================================
+
+The corpus held Woden, Thunor, Tiw, Frig, Eostre and Seaxneat. It did not hold:
+
+- **Hretha**, whom Bede names in the SAME SENTENCE-PATTERN as Eostre — the month
+  Hrēþmōnaþ "is named for their goddess Hretha, to whom they sacrificed at this
+  time." Bede gives two goddesses and the registry took one.
+- **Erce**, called on three times in the Æcerbot field-charm — *Erce, Erce,
+  Erce, eorþan modor*, "Erce, mother of earth."
+- **Ing**, whom the Old English Rune Poem says was first seen among the East
+  Danes and went east over the wave with his wagon after him.
+- **Geat**, of whom Asser, King Alfred's biographer, says the pagans long
+  worshipped him as a god.
+
+================================================================================
+A CROSS-LANE JOIN
+================================================================================
+
+Lane 19 ingested **Vortigern** under the Welsh key. This batch ingests
+**Hengist** and **Horsa**, the men he invited, and draws the edge. The corpus
+can now state the event from both ends.
+
+================================================================================
+TWO MEN NAMED HENGEST, AND THIS BATCH ASSERTS NOTHING ABOUT THEM
+================================================================================
+
+**Hengest** appears in the Finnsburg episode of *Beowulf* and in the *Finnsburg
+Fragment* as a Danish retainer who takes a winter's truce with the Frisians and
+breaks it in the spring. **Hengist** appears in Bede, the *Historia Brittonum*
+and the *Anglo-Saxon Chronicle* as the Jutish leader who lands in Kent.
+
+Tolkien argued at length that they are one man. Others do not. **The two are
+ingested as two records under qualified ids**, each built only from its own
+sources; **neither asserts they are the same man and neither asserts they are
+not.** That is lane 19's handling of the two Myrddins, arrived at from the
+opposite direction: there the tradition distinguished two figures and later
+scholarship merged them; here the sources are simply separate and later
+scholarship proposes the merger.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+Heorot, Finnsburg, Ravenswood and the barrow are **places**. The Scyldings, the
+Geats, the Heathobards, the Wægmundings and the Heodenings are **peoples**.
+Nægling, Hrunting and the giant sword are **objects**. Bede, Asser, Alcuin,
+Ælfric and Cædmon are **historical writers**, not figures of the tradition —
+the restraint lane 20 applied to Elias Lönnrot.
+
+**Wyrd is BLOCKED and not ingested.** The word is fate and it is grammatically
+feminine and its Norse cognate *urðr* is the name of a Norn; whether there is a
+*figure* under the Old English word is exactly what the scholarship disagrees
+about, and a registry that ingested her would be taking a side. The corpus
+already holds `norse_urdr` and the sweep resolves "Wyrd" onto it, which is a
+fact about the cognate and not about the English goddess.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE THREE THE POEM IS ABOUT
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_grendel",
+    "name": { "primary": "Grendel", "alt": [],
+      "transliterations": { "Old English": "Grendel", "etymology": "Disputed; connected with grindan 'to grind' and with words for a sandy bottom or a storm. The poem does not gloss it." } },
+    "type": "numen", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_grendels_mother"],
+    "parentRoles": [ { "personId": "anglosaxon_grendels_mother", "role": "mother" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A being of the fens, descended from Cain and therefore outcast from mankind, who hears the singing in Hrothgar's new hall and comes to it. For twelve years he takes men out of Heorot at night and the Danes can do nothing against him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: the jubilant noise from Heorot angers Grendel, a horrible demon who lives in the swamplands of Hrothgar's kingdom; Grendel, a descendant of Cain and therefore an outcast from society, hears the singing from his home in the swamp and terrorises the Danes every night, killing them and defeating their efforts to fight back; the Danes suffer many years of fear, danger and death." } ] },
+      { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Beowulf takes hold of him bare-handed and tears his arm from the socket. He goes back to the fen to die, and the arm is hung high in the hall.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf summons greater strength and rips Grendel's arm completely out of its socket; fatally wounded, Grendel slinks back to his swampy home to die, and the arm is hung high on the wall of Heorot as proof of the victory." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf rips Grendel's arm out of its socket and Grendel goes back to the swamp to die." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Beowulf record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Grendel is the fen-dwelling descendant of Cain who empties Hrothgar's hall for twelve years and is killed by Beowulf, who tears off his arm.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of Grendel." } ], "weight": "high" } ],
+    "notes": "THE REGISTRY HELD BEOWULF AND NOT GRENDEL. The poem is in three parts and each is a fight with one being; the corpus held eleven Geats and none of the three. The record does NOT describe him as a giant, a troll or a dragon: the poem calls him a creature of the fens, a descendant of Cain, and an eoten and a scucca, and what he looks like is the thing the poem most conspicuously withholds."
+  },
+  {
+    "id": "anglosaxon_grendels_mother",
+    "name": { "primary": "Grendel's mother", "alt": ["the mere-wife", "Grendles modor"],
+      "transliterations": { "Old English": "Grendles modor", "etymology": "A patronymic phrase, not a name. The poem never gives her one." } },
+    "type": "numen", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "She comes to Heorot the night after her son dies, to take a life for a life, and kills Æschere — Hrothgar's closest counsellor — and goes back to the mere with him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Grendel's mother, a swamp-hag who lives in a desolate lake, comes to Heorot seeking revenge for her son's death; she murders Aeschere, one of Hrothgar's most trusted advisers, before slinking away." } ] },
+      { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Beowulf dives into the mere and fights her in her hall under the water. His own sword fails; he kills her with a sword forged for a giant that he finds there, then beheads Grendel's corpse and takes the head back.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: to avenge Aeschere's death the company travels to the murky swamp, where Beowulf dives into the water and fights Grendel's mother in her underwater lair; he kills her with a sword forged for a giant, then finds Grendel's corpse and decapitates it, bringing the head as a prize to Hrothgar." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "anglosaxon_grendel",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grendel's mother comes to Heorot seeking revenge for her son's death." } ], "notes": "In-batch; Grendel also carries her in parentIds." },
+      { "kind": "killed", "personId": "anglosaxon_aeschere",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she murders Aeschere, one of Hrothgar's most trusted advisers." } ], "notes": "In-batch." },
+      { "kind": "killed-by", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf kills her with a sword forged for a giant in her underwater lair." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Grendel's mother avenges her son by killing Æschere and is killed by Beowulf in her hall beneath the mere.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of Grendel's mother." } ], "weight": "high" } ],
+    "notes": "A FIGURE WITH NO NAME AND THE CLEAREST MOTIVE IN THE POEM. She does exactly what the poem's own ethic requires of a kinsman: she takes one life for one life, and she takes it from the man the king loves best. The record files her under the phrase the poem uses and invents no name, as lane 20 did for Marjatta's son."
+  },
+  {
+    "id": "anglosaxon_beowulf_dragon",
+    "name": { "primary": "the dragon of the barrow", "alt": ["the worm", "se draca", "the hoard-guard"],
+      "transliterations": { "Old English": "draca", "etymology": "Old English draca, from Latin draco. The poem also calls it wyrm, 'worm, serpent'." } },
+    "type": "numen", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "unknown", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "An ancient serpent lying on a hoard in a hidden mound, roused after three hundred years when a single cup is stolen from it, and burning the country for it — including Beowulf's own hall.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: an ancient, powerful serpent, the dragon guards a hoard of treasure in a hidden mound; Beowulf's fight with the dragon constitutes the third and final part of the epic." } ] },
+      { "typeStatus": "numen", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Beowulf, now an old king, goes against it with eleven men. All but one run. Wiglaf stays, the two of them kill it, and Beowulf dies of the bite.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf is divided into three main parts, each centring on the hero's struggle against a particular monster - first Grendel, then Grendel's mother, then the dragon - and the dragon fight is the last." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the dragon fight is the third and final part of the epic, in which Beowulf dies." } ], "notes": "Non-symmetric." },
+      { "kind": "fought-by", "personId": "anglosaxon_wiglaf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Wiglaf is the only retainer who stays with Beowulf at the dragon fight." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "The dragon of Beowulf's third part is the barrow-serpent roused by the theft of a cup, which burns the Geatish country and kills Beowulf as it dies.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of its three-part structure." } ], "weight": "high" } ],
+    "notes": "THE ONE OF THE THREE WITH NO NAME AT ALL, AND THE ONE THAT WINS. The corpus holds Wiglaf and Weohstan and Beowulf and held nothing for them to be standing in front of. The id is qualified as anglosaxon_beowulf_dragon because 'dragon' alone is a class and this is one."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE DANISH COURT
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_hrothgar",
+    "name": { "primary": "Hrothgar", "alt": ["Hroðgar", "Hrólfr's uncle", "Ro"],
+      "transliterations": { "Old English": "Hroðgar", "etymology": "'Glory-spear', from hroð 'glory, fame' and gar 'spear'. The Old Norse cognate is Hróarr." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["anglosaxon_healfdene"],
+    "parentRoles": [ { "personId": "anglosaxon_healfdene", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of the Danes, second of Healfdene's three sons, who builds the greatest hall ever built and names it Heorot — and then cannot use it, because Grendel takes it every night for twelve years.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: King Hrothgar of Denmark, a descendant of the great king Shield Sheafson, enjoys a prosperous reign and builds a great mead-hall called Heorot; the noise from Heorot angers Grendel, who terrorises the Danes every night." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Beowulf comes from Geatland unasked; Hrothgar, who knew his father Ecgtheow and once settled a feud for him, receives him, and the hall is cleared.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a young Geatish warrior named Beowulf hears of Hrothgar's plight and sails to Denmark with a small company, determined to defeat Grendel; a banquet follows his arrival." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "cyning", "script": "Latin", "rom": "cyning" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hrothgar as king of the Danes in Beowulf." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "anglosaxon_wealhtheow",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothgar married Wealhtheow and became the father of two sons, Hrethric and Hrothmund, and of a daughter named Freawaru." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "lord-of", "personId": "anglosaxon_unferth",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Unferth, a Danish thane, voices doubt about Beowulf's past accomplishments at the banquet in Hrothgar's hall." } ], "notes": "In-batch." },
+      { "kind": "counselled-by", "personId": "anglosaxon_aeschere",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeschere is one of Hrothgar's most trusted advisers." } ], "notes": "In-batch." },
+      { "kind": "hosted", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf sails to Denmark and is received at a banquet in Hrothgar's hall." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Beowulf record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hrothgar is the Danish king of Beowulf, builder of Heorot, husband of Wealhtheow, and the man Beowulf comes to help.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf, of Hrothgar, and of the Scylding genealogy." } ], "weight": "high" } ],
+    "notes": "THE POEM IS ABOUT HIS HALL AND THE REGISTRY DID NOT HOLD HIM."
+  },
+  {
+    "id": "anglosaxon_wealhtheow",
+    "name": { "primary": "Wealhtheow", "alt": ["Wealhþeow"],
+      "transliterations": { "Old English": "Wealhþeow", "etymology": "Literally 'foreign servant' or 'Celtic slave', which for a queen is a name scholarship has never satisfactorily explained." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Queen of the Danes, who carries the cup through the hall in order — the king first, then the company, then Beowulf — and who speaks twice in public to ask that her own sons not be passed over.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Hrothgar married Wealhtheow and became the father of two sons, Hrethric and Hrothmund, and of a daughter named Freawaru; Wealhtheow is one of the key figures of Hrothgar's court." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "anglosaxon_hrothgar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothgar married Wealhtheow." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "mother-of", "personId": "anglosaxon_freawaru",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothgar and Wealhtheow's daughter is named Freawaru." } ], "notes": "In-batch; Freawaru carries both parents in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Wealhtheow is Hrothgar's queen, mother of Hrethric, Hrothmund and Freawaru, and the cup-bearer whose two speeches in the hall are about the succession.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding family." } ], "weight": "high" } ],
+    "notes": "HER SONS ARE A BLOCKED ROW AND SHE IS NOT. Hrethric and Hrothmund are named in the poem and do nothing in it; she speaks, in public, twice, about what is to become of them. The record gives her no parentage because the poem gives her none, and the name — 'foreign servant' — is recorded as a fact and not explained, because nobody has explained it."
+  },
+  {
+    "id": "anglosaxon_unferth",
+    "name": { "primary": "Unferth", "alt": ["Hunferth", "Unferð"],
+      "transliterations": { "Old English": "Unferð", "etymology": "Usually read as 'un-peace' or 'mar-peace', from un- and frið 'peace'. The manuscript spells it Hunferð throughout, which complicates the reading." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A thane who sits at Hrothgar's feet and challenges Beowulf at the feast over the swimming match with Breca. Beowulf answers him and says that he killed his own brothers.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: during the banquet that follows Beowulf's arrival, Unferth, a Danish thane, voices doubt about Beowulf's past accomplishments, and Beowulf in return accuses Unferth of killing his brothers." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Before the fight in the mere he lends Beowulf his sword Hrunting, which is the best thing he has and which fails.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Unferth lends Beowulf the sword Hrunting before the descent into the mere, and the sword fails against Grendel's mother." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "thane-of", "personId": "anglosaxon_hrothgar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Unferth is a Danish thane at Hrothgar's court." } ], "notes": "In-batch." },
+      { "kind": "challenged", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Unferth voices doubt about Beowulf's past accomplishments at the banquet." } ], "notes": "Non-symmetric." },
+      { "kind": "contended-with", "personId": "anglosaxon_breca",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Unferth's challenge concerns Beowulf's swimming match against Breca." } ],
+        "notes": "In-batch, and not a fight - the contention is over whose account of the match is true." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Unferth is the Danish thane who challenges Beowulf at the feast over the Breca swimming match and later lends him the sword Hrunting.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of Unferth." } ], "weight": "high" } ],
+    "notes": "The record does not settle whether he is a villain, an office-holder whose office is to challenge, or a man being generous with a sword after being wrong; the poem does not, and two centuries of criticism have not."
+  },
+  {
+    "id": "anglosaxon_aeschere",
+    "name": { "primary": "Æschere", "alt": ["Aeschere", "Æschere the counsellor"],
+      "transliterations": { "Old English": "Æschere", "etymology": "'Ash-army' or 'spear-army', from æsc, the ash tree and by extension the spear, and here 'army'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hrothgar's closest counsellor and shoulder-companion, taken out of Heorot by Grendel's mother the night after Grendel dies. His head is left on the cliff above the mere.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Grendel's mother murders Aeschere, one of Hrothgar's most trusted advisers, before slinking away, and it is to avenge his death that the company travels to the swamp." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counsellor-of", "personId": "anglosaxon_hrothgar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aeschere is one of Hrothgar's most trusted advisers." } ], "notes": "In-batch." },
+      { "kind": "killed-by", "personId": "anglosaxon_grendels_mother",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Grendel's mother murders Aeschere in revenge for her son." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Æschere is Hrothgar's chief counsellor, killed by Grendel's mother in revenge, and the reason Beowulf goes into the mere.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of Æschere." } ], "weight": "high" } ],
+    "notes": "The second half of the Danish story happens because of him. The corpus held the mere-fight's winner and not its cause."
+  },
+  {
+    "id": "anglosaxon_freawaru",
+    "name": { "primary": "Freawaru", "alt": ["Freawaru of the Danes"],
+      "transliterations": { "Old English": "Freawaru", "etymology": "'Lord-protection' or 'protection of the Frea', from frea 'lord' and waru 'guard, protection'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["anglosaxon_hrothgar", "anglosaxon_wealhtheow"],
+    "parentRoles": [ { "personId": "anglosaxon_hrothgar", "role": "father" }, { "personId": "anglosaxon_wealhtheow", "role": "mother" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hrothgar's daughter, promised to Ingeld of the Heathobards to settle a feud. Beowulf, reporting home, says plainly that it will not hold — that an old spearman will see an old sword at the wedding and say something, and the killing will start again.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothgar and Wealhtheow's daughter is named Freawaru; both Anglo-Saxon and Scandinavian traditions mention a feud with men named Froda and Ingeld, suggesting a marriage alliance between Freawaru and Ingeld." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "anglosaxon_ingeld",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a marriage alliance between Freawaru and Ingeld is suggested by the Anglo-Saxon and Scandinavian traditions of the Froda and Ingeld feud." } ], "notes": "In-batch, reciprocated." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Freawaru is Hrothgar's daughter, promised to Ingeld of the Heathobards to end a feud that Beowulf predicts will restart at the wedding.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf, of Freawaru and of the Ingeld episode." } ], "weight": "high" } ],
+    "notes": "THE POEM'S OWN TERM FOR HER ROLE IS freoðuwebbe, 'peace-weaver', AND THE POEM SAYS IT DOES NOT WORK. Hildeburh in this same batch is the other one, and the Finnsburg episode is what happens to a peace-weaver told at length."
+  },
+  {
+    "id": "anglosaxon_hrothulf",
+    "name": { "primary": "Hrothulf", "alt": ["Hroðulf", "Hrólfr Kraki"],
+      "transliterations": { "Old English": "Hroðulf", "etymology": "'Glory-wolf'. The Old Norse cognate is Hrólfr, and the Hrólfr Kraki of the Norse tradition is generally taken to be the same figure." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hrothgar's nephew, sitting beside him in the hall while Wealhtheow says in public that she trusts him to be good to her boys. The poem's audience knew how that ended and the poem does not say.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothulf is Hrothgar's nephew, and generally taken to be Halga's son because of other sources, although his parentage is not explicit in the text of Beowulf itself." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "nephew-of", "personId": "anglosaxon_hrothgar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothulf is Hrothgar's nephew." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hrothulf is Hrothgar's nephew in Beowulf, seated beside him in Heorot, whose parentage the poem does not state.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding family." } ], "weight": "high" } ],
+    "notes": "parentIds IS DELIBERATELY EMPTY. The sources say he is generally taken to be Halga's son ON THE STRENGTH OF OTHER TEXTS and that Beowulf itself does not say so. This registry records descent it is prepared to assert; Halga's record carries the claim as a relation with the qualification on it, and the descent field stays empty."
+  },
+  {
+    "id": "anglosaxon_heorogar",
+    "name": { "primary": "Heorogar", "alt": ["Heregar", "Hiorogar"],
+      "transliterations": { "Old English": "Heorogar", "etymology": "'Sword-spear', from heoru 'sword' and gar 'spear'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_healfdene"],
+    "parentRoles": [ { "personId": "anglosaxon_healfdene", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Healfdene's eldest son and king of the Danes before Hrothgar, dead before the poem begins. His war-gear comes to Hrothgar and Hrothgar gives it to Beowulf.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene had three sons, Heorogar, Hrothgar and Halga, and a daughter; Hrothgar became king after Heorogar." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_halga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene had three sons, Heorogar, Hrothgar and Halga." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Heorogar is Healfdene's eldest son and Hrothgar's predecessor as king of the Danes.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding genealogy." } ], "weight": "high" } ],
+    "notes": "The sibling edge to Hrothgar is not written as 'sibling' in both directions but is carried structurally: all three brothers name Healfdene in parentIds, which is the corpus's own way of saying it."
+  },
+  {
+    "id": "anglosaxon_halga",
+    "name": { "primary": "Halga", "alt": ["Helgi", "Halga the Good"],
+      "transliterations": { "Old English": "Halga", "etymology": "'Holy, hallowed'. The Old Norse cognate is Helgi." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_healfdene"],
+    "parentRoles": [ { "personId": "anglosaxon_healfdene", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Healfdene's youngest son, named once in the poem and given nothing to do in it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene had three sons, Heorogar, Hrothgar and Halga." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_heorogar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene had three sons, Heorogar, Hrothgar and Halga." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "reputed-father-of", "personId": "anglosaxon_hrothulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothulf is generally taken to be Halga's son because of other sources, although his parentage is not explicit in the text of Beowulf itself." } ],
+        "notes": "DELIBERATELY A RELATION AND NOT parentIds ON HROTHULF. The kind carries the qualification the sources make: Beowulf does not say it and the Norse material does." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Halga is Healfdene's youngest son, and is taken outside Beowulf to be the father of Hrothulf.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding genealogy." } ], "weight": "high" } ],
+    "notes": "A RECORD WHOSE ONLY CONTENT IS A NAME AND A DISPUTED FATHERHOOD, and that is exactly what the poem gives. The registry can say what the poem says and mark what it does not."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE LINE THE POEM OPENS WITH
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_scyld_scefing",
+    "name": { "primary": "Scyld Scefing", "alt": ["Scyld", "Shield Sheafson", "Skjöldr"],
+      "transliterations": { "Old English": "Scyld Scefing", "etymology": "Scyld is 'shield'. Scefing may mean 'son of Sceaf', 'descendant of Sceaf', or 'of the sheaf' — the ambiguity is the whole question about him." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Found as a child alone in a boat, destitute, and grown to take mead-benches from whole nations. Founder of the Danish royal house that is named after him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Scyld Scefing was the founder of the Danish royal house known as the Scyldings, and his son Beow succeeded him at his death; Hrothgar traces his lineage back to him." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "At his death his people lay him in a ship piled with treasure and push it out to sea, and nobody, the poem says, knows who received that cargo.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the opening of Beowulf: the story of the boy who arrives alone in a boat is applied to Scyld, eponym of the Scyldings, whose funeral sends him back out to sea." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "cyning", "script": "Latin", "rom": "cyning" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Scyld Scefing as founder of the Danish royal house." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "anglosaxon_beow",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Scyld Scefing's son Beow succeeded him at his death." } ], "notes": "In-batch; Beow carries him in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Scyld Scefing arrives as a destitute child alone in a boat, founds the Danish royal house, and is sent back out to sea in a loaded ship at his death.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf's opening and of Sceafa." } ], "weight": "high" } ],
+    "notes": "THE FIRST PERSON IN THE POEM, AND THE REGISTRY DID NOT HOLD HIM. No parentIds: whether Scefing makes him the son of Sceaf or only 'of the sheaf' is the open question, and this batch ingests Sceaf separately WITHOUT drawing the edge, because drawing it would decide the question."
+  },
+  {
+    "id": "anglosaxon_beow",
+    "name": { "primary": "Beow", "alt": ["Beaw", "Beowulf the Dane", "Beowulf Scyldinga"],
+      "transliterations": { "Old English": "Beow", "etymology": "'Barley, grain'. The manuscript calls him Beowulf at this point, which is generally taken to be a scribe's slip toward the poem's hero." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_scyld_scefing"],
+    "parentRoles": [ { "personId": "anglosaxon_scyld_scefing", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Scyld's son, who succeeds him and holds the Danes a long time, and is the father of Healfdene.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Scyld Scefing's son Beow succeeded him at his death, and when Beow died his son Healfdene came to the throne." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "anglosaxon_healfdene",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Beow died his son Healfdene came to the throne." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Beow is Scyld Scefing's son and successor and the father of Healfdene.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding genealogy." } ], "weight": "high" } ],
+    "notes": "TWO BEOWULFS IS THE POEM'S OWN PROBLEM AND NOT THIS REGISTRY'S. The manuscript writes 'Beowulf' for this Dane in the opening lines, which is one of the reasons the poem has the title it has; the record files him under Beow, the reading the genealogies support, and carries the manuscript form as an alias. His name means 'barley', which is why the argument about whether the Scylding line begins with a corn-god is an argument at all."
+  },
+  {
+    "id": "anglosaxon_healfdene",
+    "name": { "primary": "Healfdene", "alt": ["Halfdan", "Healfdene the Dane"],
+      "transliterations": { "Old English": "Healfdene", "etymology": "'Half-Dane'. The Old Norse cognate is Halfdan, and what the name implies about his mother is not stated anywhere." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_beow"],
+    "parentRoles": [ { "personId": "anglosaxon_beow", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of the Danes after Beow, father of Heorogar, Hrothgar and Halga and of a daughter who married Onela of the Swedes.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Beow died his son Healfdene came to the throne, and Healfdene had three sons, Heorogar, Hrothgar and Halga; his daughter married the Swedish king Onela." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "anglosaxon_hrothgar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene had three sons, Heorogar, Hrothgar and Halga." } ], "notes": "In-batch; all three sons carry him in parentIds." },
+      { "kind": "father-in-law-of", "personId": "anglosaxon_onela",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Healfdene's daughter married the Swedish king Onela." } ],
+        "notes": "In-batch. THE DAUGHTER HERSELF IS A BLOCKED ROW - the treatments name her Yrse in one place and leave her unnamed in others - so the marriage is recorded between the two men it is recorded between, which is what the sources do and is itself the point." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Healfdene is Beow's son and king of the Danes, father of Heorogar, Hrothgar and Halga and of the daughter who married Onela of the Swedes.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Scylding genealogy." } ], "weight": "high" } ],
+    "notes": "He is the join between the two royal houses this batch ingests. Four records above him and three below, and the registry had none of them."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE SWEDISH WARS
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_ongentheow",
+    "name": { "primary": "Ongentheow", "alt": ["Ongenþeow", "Angantyr"],
+      "transliterations": { "Old English": "Ongenþeow", "etymology": "The second element is þeow, 'servant'; the first is disputed." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of the Swedes. At Ravenswood he rescues his wife, whom the Geats have taken, and kills the Geatish king Haethcyn; the next day Hygelac comes up, and Hygelac's thegn Eofor kills him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Swedish wars in Beowulf: there is a back-and-forth battle at Ravens' Wood in Sweden; Ongentheow rescues his wife and Haethcyn is killed, but the next day Hygelac arrives and his thegn Eofor kills Ongentheow." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed", "personId": "anglosaxon_haethcyn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: at Ravens' Wood Ongentheow rescues his wife and Haethcyn is killed." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Haethcyn record. THE CORPUS HELD HAETHCYN AND NOT THE MAN WHO KILLS HIM." },
+      { "kind": "killed-by", "personId": "anglosaxon_eofor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hygelac's thegn Eofor kills Ongentheow at Ravens' Wood." } ], "notes": "In-batch." },
+      { "kind": "father-of", "personId": "anglosaxon_ohthere",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela was the youngest son of Ongentheow and brother of Ohthere." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ongentheow is the Swedish king who kills Haethcyn at Ravenswood and is killed there by Hygelac's thegn Eofor.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf and of Ongentheow." } ], "weight": "high" } ],
+    "notes": "His wife is a BLOCKED row: the poem has her taken by the Geats and rescued by him and does not name her."
+  },
+  {
+    "id": "anglosaxon_eofor",
+    "name": { "primary": "Eofor", "alt": [],
+      "transliterations": { "Old English": "Eofor", "etymology": "'Boar'. His brother, who fights beside him, is Wulf — 'wolf'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hygelac's thegn, who kills Ongentheow at Ravenswood and is given Hygelac's daughter for it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Swedish wars in Beowulf: Hygelac's thegn Eofor kills Ongentheow at Ravens' Wood." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed", "personId": "anglosaxon_ongentheow",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Eofor kills Ongentheow at Ravens' Wood." } ], "notes": "In-batch." },
+      { "kind": "thegn-of", "personId": "anglosaxon_hygelac",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Eofor is Hygelac's thegn." } ], "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Eofor is the Geatish thegn who kills the Swedish king Ongentheow at Ravenswood.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf." } ], "weight": "high" } ],
+    "notes": "The corpus held Hygelac and not the man who wins Hygelac's battle for him. HIS BROTHER WULF IS A BLOCKED ROW, which is a shame, because the two of them are named Boar and Wolf and fight side by side."
+  },
+  {
+    "id": "anglosaxon_ohthere",
+    "name": { "primary": "Ohthere", "alt": ["Óttarr", "Ohtere"],
+      "transliterations": { "Old English": "Ohthere", "etymology": "'Terrible army' or 'fear-army'; the Old Norse cognate is Óttarr." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_ongentheow"],
+    "parentRoles": [ { "personId": "anglosaxon_ongentheow", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Ongentheow's elder son, who with his brother Onela pillages Geatland after Hrethel's death, and whose own two sons are driven out by that brother when he dies.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela was the youngest son of Ongentheow, brother of Ohthere, and uncle of Eanmund and Eadgils; he and his brother Ohthere score a major victory in pillaging Geatland after the death of King Hrethel; Onela later steals the throne after the death of his brother and banishes his nephews." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_onela",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela was the youngest son of Ongentheow and brother of Ohthere." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "father-of", "personId": "anglosaxon_eadgils",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela is uncle of Eanmund and Eadgils, the sons of Ohthere." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ohthere is Ongentheow's elder son, Onela's brother, and the father of Eanmund and Eadgils.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf." } ], "weight": "high" } ],
+    "notes": ""
+  },
+  {
+    "id": "anglosaxon_onela",
+    "name": { "primary": "Onela", "alt": ["Áli", "Onela the Scylfing"],
+      "transliterations": { "Old English": "Onela", "etymology": "The Old Norse cognate is Áli." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_ongentheow"],
+    "parentRoles": [ { "personId": "anglosaxon_ongentheow", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Ongentheow's youngest son, who starts the Swedish-Geatish wars with his brother; who takes the throne when his brother dies and drives out his brother's sons; who follows them into Geatland and kills the Geatish king Heardred there; and who is killed at last when Beowulf backs Eadgils against him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela's main role in Beowulf is starting the Swedish-Geatish wars; he later steals the throne after the death of his brother and banishes his nephews Eanmund and Eadgils, who seek refuge with the Geats; during the battle Eanmund was killed by Onela's champion Weohstan and Heardred was killed as well; at a later time Beowulf avenges the death of Heardred by supporting Eadgils in an invasion of Sweden, in which Onela is slain." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_ohthere",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela was the youngest son of Ongentheow and brother of Ohthere." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "killed", "personId": "anglosaxon_heardred",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: during Onela's pursuit of his nephews into Geatland, Heardred was killed." } ],
+        "notes": "Non-symmetric. The corpus held Heardred and not the king who kills him." },
+      { "kind": "lord-of", "personId": "anglosaxon_weohstan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Eanmund was killed by Onela's champion Weohstan." } ],
+        "notes": "Non-symmetric. WEOHSTAN IS WIGLAF'S FATHER AND THE CORPUS HELD BOTH OF THEM WITHOUT THE KING THEY SERVED OR THE MAN THEY KILLED FOR HIM." },
+      { "kind": "overthrown-by", "personId": "anglosaxon_eadgils",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf supports Eadgils in an invasion of Sweden in which Onela is slain." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Onela is the Swedish king who usurps his brother's line, kills the Geatish king Heardred, and is overthrown by his nephew Eadgils with Beowulf's backing.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf and of Onela." } ], "weight": "high" } ],
+    "notes": "HE IS ALSO THE HUSBAND OF HEALFDENE'S DAUGHTER, which joins the Danish and Swedish houses of this batch — and she is a BLOCKED row, because the treatments name her Yrse once and leave her unnamed elsewhere."
+  },
+  {
+    "id": "anglosaxon_eanmund",
+    "name": { "primary": "Eanmund", "alt": [],
+      "transliterations": { "Old English": "Eanmund", "etymology": "The second element is mund, 'protection'; the first is disputed." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["anglosaxon_ohthere"],
+    "parentRoles": [ { "personId": "anglosaxon_ohthere", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Driven out of Sweden by his uncle with his brother, given refuge by the Geats, and killed in Geatland by Onela's champion Weohstan — who takes his sword and his mail, keeps them all his life, and leaves them to his son Wiglaf.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela banishes his nephews Eanmund and Eadgils, who seek refuge with the Geats; during the battle Eanmund was killed by Onela's champion Weohstan." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_eadgils",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Onela is the uncle of Eanmund and Eadgils, sons of Ohthere." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "killed-by", "personId": "anglosaxon_weohstan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Eanmund was killed by Onela's champion Weohstan." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Eanmund is Ohthere's son, exiled by Onela and killed in Geatland by Weohstan, whose sword passes to Weohstan's son Wiglaf.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf and of Eanmund." } ], "weight": "high" } ],
+    "notes": "THE SWORD IN THE DRAGON FIGHT IS HIS. The corpus held Weohstan, who killed him, and Wiglaf, who inherits the sword and carries it to the barrow — and did not hold the man it was taken from. The registry held the weapon's second owner and not its first."
+  },
+  {
+    "id": "anglosaxon_eadgils",
+    "name": { "primary": "Eadgils", "alt": ["Aðils", "Athils"],
+      "transliterations": { "Old English": "Eadgils", "etymology": "'Wealth-hostage' or 'blessed pledge'; the Old Norse cognate is Aðils." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["anglosaxon_ohthere"],
+    "parentRoles": [ { "personId": "anglosaxon_ohthere", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Exiled with his brother, survives him, and comes back over the ice with Geatish support to kill his uncle and take Sweden.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf avenges the death of Heardred by supporting Eadgils in an invasion of Sweden, in which Onela is slain." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_eanmund",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Eanmund and Eadgils are the sons of Ohthere." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "supported-by", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Beowulf supports Eadgils in an invasion of Sweden in which Onela is slain." } ],
+        "notes": "Non-symmetric toward a pre-existing record. THIS IS THE ONE WAR BEOWULF FIGHTS THAT IS NOT AGAINST A MONSTER, and the corpus could not state it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Eadgils is Ohthere's surviving son, who takes the Swedish throne from his uncle Onela with Beowulf's backing.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Swedish wars in Beowulf and of Eadgils." } ], "weight": "high" } ],
+    "notes": "The Swedish wars are a third of Beowulf by line count and the registry held four Geats of them and no Swede at all."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. FINNSBURG
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_finn",
+    "name": { "primary": "Finn", "alt": ["Finn Folcwalding", "Finn of the Frisians"],
+      "transliterations": { "Old English": "Finn", "etymology": "A personal name; the poem calls him Folcwalding, 'son of Folcwalda', 'ruler of the people'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of the Frisians, married to the Danish princess Hildeburh to end a feud. Her brother visits, the feud starts again, and after the fighting Finn and the surviving Danes swear a truce and winter in the same hall.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Finnsburg episode: a feud between Danes and Frisians had been solved by a political marriage between the Frisian prince Finn and the Danish princess Hildeburh; a visit by Hildeburh's brother Hnaef to Finnsburg renewed the hostilities and resulted in the death of Hnaef and of Hildeburh's son among others." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "In the spring Hengest breaks the truce. Finn is killed in his own hall, the hall is stripped, and Hildeburh is taken back to Denmark.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when spring came, the Danish warrior Hengest broke the truce and took violent revenge, killing Finn and plundering the Frisian hall before taking Hildeburh back to Denmark." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "anglosaxon_hildeburh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the feud was solved by a political marriage between Finn and the Danish princess Hildeburh." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "killed-by", "personId": "anglosaxon_hengest_finnsburg",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengest broke the truce and killed Finn." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Finn is the Frisian king of the Finnsburg episode, husband of Hildeburh, who keeps a winter truce with the Danes and is killed by Hengest in the spring.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Finnsburg episode and the Finnsburg Fragment." } ], "weight": "high" } ],
+    "notes": "THE EPISODE IS SUNG IN HEOROT AT THE HEIGHT OF THE CELEBRATION, immediately after Grendel dies, and it is about a peace-marriage that fails and a hall where the two sides sit together all winter knowing what will happen in the spring. The corpus held the poem's hero and not one person in the story his victory feast is entertained with."
+  },
+  {
+    "id": "anglosaxon_hildeburh",
+    "name": { "primary": "Hildeburh", "alt": [],
+      "transliterations": { "Old English": "Hildeburh", "etymology": "'Battle-fortress', from hild 'battle' and burh 'stronghold'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A Danish princess married to Finn to end a feud. In one battle she loses her brother, her son and eventually her husband, and she has her son laid on the same pyre as the brother he was killed fighting.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Finnsburg episode: Hildeburh lost her brother Hnaef, her son and her husband in the fighting; the hostilities resulted in the death of Hnaef and of Hildeburh's son among others." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "After Hengest kills Finn she is taken back to Denmark, to the people whose feud the marriage was meant to end.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengest killed Finn and plundered the Frisian hall before taking Hildeburh back to Denmark." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "anglosaxon_finn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a political marriage between Finn and the Danish princess Hildeburh." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "anglosaxon_hnaef",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a visit by Hildeburh's brother Hnaef renewed the hostilities; Hildeburh lost her brother Hnaef." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hildeburh is the Danish princess married to Finn of the Frisians, who loses her brother, her son and her husband in the Finnsburg fighting and is taken home.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Finnsburg episode and of Hildeburh." } ], "weight": "high" } ],
+    "notes": "THE OTHER PEACE-WEAVER IN THIS BATCH, AND THE ONE THE POEM FOLLOWS TO THE END. Freawaru's marriage is predicted to fail; Hildeburh's has already failed, in front of her, and she is sent back to the side she was sent from. HER SON IS A BLOCKED ROW: he is not named, and the poem's most quoted image in the episode is his body going onto his uncle's pyre."
+  },
+  {
+    "id": "anglosaxon_hnaef",
+    "name": { "primary": "Hnæf", "alt": ["Hnaef", "Hnæf Hocing"],
+      "transliterations": { "Old English": "Hnæf", "etymology": "Disputed. Widsith calls him lord of the Hocings." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hildeburh's brother, a Danish lord visiting Finnsburg with sixty men, attacked in the hall at night and killed in the five days of fighting. The Finnsburg Fragment is the defence of that door.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: a visit by Hildeburh's brother Hnaef to Finnsburg renewed the hostilities and resulted in the death of Hnaef and Hildeburh's son among others." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_hildeburh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hnaef is Hildeburh's brother." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "lord-of", "personId": "anglosaxon_hengest_finnsburg",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after Hnaef's death the Danish warrior Hengest leads the survivors and later avenges him." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hnæf is Hildeburh's brother, the Danish lord killed at Finnsburg, whom Hengest afterwards avenges.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Finnsburg episode and the Finnsburg Fragment." } ], "weight": "high" } ],
+    "notes": "The Finnsburg Fragment is fifty lines long and it is the only Old English poem that is an action scene from start to finish. The registry held nobody in it."
+  },
+  {
+    "id": "anglosaxon_hengest_finnsburg",
+    "name": { "primary": "Hengest of Finnsburg", "alt": ["Hengest"],
+      "transliterations": { "Old English": "Hengest", "etymology": "'Stallion, gelding'. The name is also that of the Jutish leader who lands in Kent, which is why the identification has been argued for a century." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hnæf's man, who takes command of the surviving Danes after his lord is killed and swears a truce with the man who killed him, because the sea is closed and there is nowhere to go.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Finnsburg episode: after the fighting the surviving Danes under Hengest take a truce with Finn and winter in the Frisian hall." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "In the spring he breaks it, kills Finn, strips the hall and takes Hildeburh home.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when spring came, the Danish warrior Hengest broke the truce and took violent revenge, killing Finn and plundering the Frisian hall before taking Hildeburh back to Denmark." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "retainer-of", "personId": "anglosaxon_hnaef",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengest leads Hnaef's surviving men after his lord's death." } ], "notes": "In-batch." },
+      { "kind": "killed", "personId": "anglosaxon_finn",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengest broke the truce and killed Finn." } ], "notes": "In-batch." },
+      { "kind": "distinguished-by-this-registry-from", "personId": "anglosaxon_hengist_kent",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Finn and Hengest, Tolkien's lectures, argue that the Hengest of the Finnsburg episode is the Hengist who lands in Kent; the identification is not universally accepted." } ],
+        "notes": "Reciprocated in-batch. THE EDGE ASSERTS ONLY THAT THIS REGISTRY HOLDS TWO RECORDS AND WHY. It does not assert they are two men and it does not assert they are one." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hengest of the Finnsburg episode is Hnæf's retainer, who takes the winter truce with Finn and breaks it in the spring.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Finnsburg episode, the Finnsburg Fragment, and of Finn and Hengest." } ], "weight": "high" } ],
+    "notes": "ONE OF TWO RECORDS FOR A NAME THAT MAY BE ONE MAN. Built only from the Finnsburg material: nothing about Kent, nothing about Vortigern, nothing about the Anglo-Saxon Chronicle is on this record. The id is qualified, as lanes 16, 17, 18 and 20 qualified ids where one tradition had two claimants to a name."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. KENT, AND LANE 19'S VORTIGERN
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_hengist_kent",
+    "name": { "primary": "Hengist of Kent", "alt": ["Hengist", "Hengest"],
+      "transliterations": { "Old English": "Hengest", "etymology": "'Stallion'. His brother's name, Horsa, is 'horse'; a pair of brothers named Stallion and Horse is one of the reasons the pair is read as legend rather than record." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Invited to Britain with his brother by Vortigern, king of the Britons, to fight the Picts — the Anglo-Saxon Chronicle puts it at 449 — and turning on the men who invited him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to these sources Hengist and Horsa arrived in Britain as mercenaries serving Vortigern, king of the Britons; the Anglo-Saxon Chronicle records that in the year 449 Vortigern invited Hengist and Horsa to Britain to assist his forces in fighting the Picts." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Horsa is killed at Aegelsthrep in 455; Hengist begins to reign in the same year and fights the Britons until his death, which the Chronicle implies at 488.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Anglo-Saxon Chronicle says that Horsa was killed at Aegelsthrep, possibly Aylesford in Kent, in 455; Hengist began to reign in 455 and fought against the Britons, and the Chronicle implies that he died in 488." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "cyning", "script": "Latin", "rom": "cyning" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengist began to reign in 455 in Kent." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_horsa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengist and Horsa arrived in Britain as brothers and mercenaries serving Vortigern." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "invited-by", "personId": "welsh_vortigern",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Anglo-Saxon Chronicle records that in 449 Vortigern invited Hengist and Horsa to Britain to assist his forces in fighting the Picts." } ],
+        "notes": "A CROSS-TRADITION EDGE, AND A DELIBERATE ONE. Lane 19 ingested Vortigern under the Welsh key; this is not an identity claim between two traditions' gods but a single event that two literatures record from opposite sides. Non-symmetric, so nothing is written onto the Welsh record." },
+      { "kind": "distinguished-by-this-registry-from", "personId": "anglosaxon_hengest_finnsburg",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the identification of the Kentish Hengist with the Hengest of the Finnsburg episode has been argued and is not universally accepted." } ],
+        "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hengist of Kent is the Jutish leader invited to Britain by Vortigern, whose brother Horsa dies at Aegelsthrep and who reigns in Kent from 455.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hengist and Horsa, of Bede's Historia ecclesiastica, the Historia Brittonum and the Anglo-Saxon Chronicle." } ], "weight": "high" } ],
+    "notes": "THE RECORD CARRIES ITS OWN DOUBT. The sources say plainly that the detailed ninth-century account of these two 'says more about ninth-century attitudes to the past than about the time in which they are said to have existed'; the record dates the entries and does not assert that the men existed. Bede's genealogy — son of Wictgils, son of Witta, son of Wecta, son of Woden — is on the record as a claim the sources make and NOT in parentIds, because it is a royal house's descent-claim from a god and not a fact about a father."
+  },
+  {
+    "id": "anglosaxon_horsa",
+    "name": { "primary": "Horsa", "alt": [],
+      "transliterations": { "Old English": "Horsa", "etymology": "'Horse'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Hengist's brother, who comes with him at Vortigern's invitation and is killed at Aegelsthrep — possibly Aylesford in Kent — in 455.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengist and Horsa arrived in Britain as mercenaries serving Vortigern; the Anglo-Saxon Chronicle says that Horsa was killed at Aegelsthrep, possibly Aylesford, Kent, in 455." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "anglosaxon_hengist_kent",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hengist and Horsa are brothers." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "invited-by", "personId": "welsh_vortigern",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in 449 Vortigern invited Hengist and Horsa to Britain to assist his forces against the Picts." } ],
+        "notes": "Cross-tradition, non-symmetric; see the note on Hengist's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Horsa is Hengist's brother, one of the two leaders Vortigern invites to Britain, killed at Aegelsthrep in 455.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hengist and Horsa and of the Anglo-Saxon Chronicle." } ], "weight": "high" } ],
+    "notes": "TWO BROTHERS CALLED STALLION AND HORSE. The record states the names' meanings and does not draw the conclusion from them, which is the same restraint this programme applied to Otso's by-names in lane 20: an etymology is a fact about a name."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VII. THE GODS BEDE, ASSER AND A FIELD-CHARM ATTEST
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_hretha",
+    "name": { "primary": "Hretha", "alt": ["Rheda", "Hrēðe", "Hrēða"],
+      "transliterations": { "Old English": "Hrēðe", "etymology": "Possibly 'the famous' or 'the victorious'. Bede Latinises it as Rheda; the month Hrēþmōnaþ is named from her." } },
+    "type": "deity", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Named by Bede in De temporum ratione: Hrēþmōnaþ, which answers to March, is named for the goddess Hretha, to whom they sacrificed at that time.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Rheda, Latinised from Old English Hrēðe or Hrēða, possibly meaning 'the famous' or 'the victorious', is a goddess connected with the month Rhedmonth; Bede records that Hrethmonath is analogous to March and that it 'is named for their goddess Hretha, to whom they sacrificed at this time'; she is attested solely by Bede in De temporum ratione." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "sacrifice in Hrēþmōnaþ", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bede states that the month is named for the goddess Hretha, to whom they sacrificed at this time." } ] } ],
+    "sources": [ { "claim": "Hretha is the Anglo-Saxon goddess Bede names as the eponym of Hrēþmōnaþ, to whom sacrifice was made in that month.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rheda and of Bede's De temporum ratione." } ], "weight": "high" } ],
+    "notes": "BEDE NAMES TWO GODDESSES IN ONE PASSAGE AND THE REGISTRY TOOK ONE. Eostre was held; Hretha, attested in the same work by the same author in the same construction, was not — and the difference between them is that one of them gave her name to Easter. That is lane 16's mechanism in its purest form: a corpus that grows by adding the name people know. The record notes, as the sources do, that she is attested SOLELY by Bede. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "anglosaxon_erce",
+    "name": { "primary": "Erce", "alt": ["eorþan modor", "Erce mother of earth"],
+      "transliterations": { "Old English": "Erce", "etymology": "Unresolved and much argued; the charm gives no gloss and the word occurs nowhere else." } },
+    "type": "deity", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Called three times in the Æcerbot, the eleventh-century field-remedy for a barren or bewitched field: Erce, Erce, Erce, eorþan modor — 'Erce, Erce, Erce, mother of earth'.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Erce is attested only in a single source, the Æcerbot, an eleventh-century Anglo-Saxon charm known as the field-charm, where her name is chanted three times, 'Erce, Erce, Erce eorþan modor', earth-mother." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The rite she is called in is openly syncretic: it opens with Christian prayers, contains ritual forms that are older, and runs the two together as one ceremony over turf cut from the four sides of the field.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Æcerbot, or Field Remedy, is a ritual for restoring fertility to a barren or cursed field; it is explicitly syncretic, beginning with Christian prayers, including what appear to be older non-Christian ritual forms, and blending the two into a coherent ceremonial sequence." } ] } ],
+    "domains": [
+      { "sphereId": "the-earth", "contextTag": "lifelong", "term": { "value": "eorþe", "script": "Latin", "rom": "eorthe" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Erce is called eorþan modor, earth-mother, in the Æcerbot." } ] },
+      { "sphereId": "field-fertility", "contextTag": "episodic", "term": { "value": "æcer", "script": "Latin", "rom": "aecer" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Æcerbot as a ritual for restoring fertility to a barren field." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "Æcerbot", "contextTag": "attested",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Æcerbot field-remedy, in which Erce is invoked three times as earth-mother." } ] } ],
+    "sources": [ { "claim": "Erce is invoked three times as 'mother of earth' in the Anglo-Saxon field-charm Æcerbot, her only attestation.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Erce and of the Æcerbot." } ], "weight": "medium" } ],
+    "notes": "ONE WORD, THREE TIMES, IN ONE MANUSCRIPT, AND IT IS THE ONLY TIME AN ENGLISH EARTH-MOTHER IS CALLED BY NAME. The record does NOT identify her with Nerthus, whom the corpus holds as continental_germanic_nerthus, and does not translate the name, because the sources do neither. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "anglosaxon_ing",
+    "name": { "primary": "Ing", "alt": ["Ingwine", "Ingw"],
+      "transliterations": { "Old English": "Ing", "etymology": "Cognate with Old Norse Yngvi and Old High German Ing/Ingwi; the group appears to preserve an older name for the god the Norse call Freyr." } },
+    "type": "deity", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The Old English Rune Poem gives him four lines: Ing was first seen among the East Danes, then went away eastward over the wave, and his wagon ran after him. That is the whole of his English attestation and it is a departure.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Old Norse Yngvi, Old High German Ing/Ingwi and Old English Ing are names relating to a theonym that appears to have been the older name for the god Freyr; the Old English Rune Poem indicates that the god Ing was seen first among the eastern Danes, that he departed eastward over a wave and that his chariot went after him." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ing is named in the Old English Rune Poem as the god first seen among the East Danes who went east over the wave with his wagon following.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Old English Rune Poem and of Yngvi." } ], "weight": "high" } ],
+    "notes": "NO CROSS-TRADITION EDGE TO norse_freyr, on the rule this programme has applied since lane 13: that Ing, Yngvi and Ingwi are one name is a fact about the languages and not a relation between beings. The sweep resolves 'Ing' onto the Norse record, because Yngvi is carried there as an alias — which is precisely why the English figure needed a record of his own. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "anglosaxon_geat",
+    "name": { "primary": "Geat", "alt": ["Gēat", "Geata"],
+      "transliterations": { "Old English": "Gēat", "etymology": "The same word as the name of Beowulf's people, which is one of the things that makes the figure hard to read." } },
+    "type": "deity", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A name high in the West Saxon royal genealogy, above Woden — and Asser, King Alfred's own biographer, says of him that the pagans long worshipped him as a god.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to Asser, King Alfred's biographer, Geat was a figure in the royal genealogy whom 'the pagans long worshipped as a god'; a runic poem mentions a god known as Ingwine and the writer Asser mentioned a god known as Gēat." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "practice": "worship reported by Asser", "contextTag": "reported",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Asser says of Geat that the pagans long worshipped him as a god." } ] } ],
+    "sources": [ { "claim": "Geat is a figure of the West Saxon royal genealogy of whom Asser reports that the pagans long worshipped him as a god.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Anglo-Saxon paganism and of Asser's Life of King Alfred." } ], "weight": "medium" } ],
+    "notes": "A GOD ATTESTED BY A BISHOP WRITING A KING'S BIOGRAPHY, IN A SENTENCE EXPLAINING THE KING'S ANCESTRY. The genealogy is not written into parentIds: a royal house's claim to descend from Woden through Geat is a claim about a dynasty's legitimacy, and this registry records descent it is prepared to assert. Carries a verified-solitary verdict."
+  },
+  {
+    "id": "anglosaxon_sceaf",
+    "name": { "primary": "Sceaf", "alt": ["Sceafa", "Scef", "Sheaf"],
+      "transliterations": { "Old English": "Sceaf", "etymology": "'Sheaf' — the bundle of grain he is said to have been found clutching." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A child who arrives on the shore alone in a boat, asleep on a sheaf of grain, and is taken up and made king.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to the story, Sceaf arrived on Scandinavian shores as a child, sailing alone in a boat and clutching a sheaf of golden wheat that inspired his name." } ] },
+      { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1,
+        "startEvent": "Beowulf gives the same arrival to Scyld and calls him Scyld Scefing, which may mean son of Sceaf, descendant of Sceaf, or simply 'of the sheaf'. Which of the three is meant is not settled.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Old English poem Beowulf applies the story of the boy in the boat to the Danish Scyld, eponym of the Scyldings; in the opening lines Scyld is called Scyld Scefing, which might mean Scyld descendant of Scef, Scyld son of Scef, or Scyld of the Sheaf." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sceaf is the child who comes ashore alone in a boat on a sheaf of grain and is made king, whose story Beowulf transfers to Scyld.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sceafa and of the opening of Beowulf." } ], "weight": "medium" } ],
+    "notes": "NO EDGE TO SCYLD, DELIBERATELY. Whether 'Scefing' makes Scyld his son is exactly what the sources leave open, and an edge would decide it. THE TWO RECORDS SIT SIDE BY SIDE IN THE CORPUS WITH THE SAME ARRIVAL STORY AND NOTHING BETWEEN THEM, which is the honest shape of the evidence. Carries a verified-solitary verdict."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VIII. THE DIGRESSIONS AND THE SINGERS
+================================================================================
+
+```json
+[
+  {
+    "id": "anglosaxon_breca",
+    "name": { "primary": "Breca", "alt": ["Breca the Bronding"],
+      "transliterations": { "Old English": "Breca", "etymology": "Connected with brecan, 'to break' — of waves, plausibly." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Lord of the Brondings and Beowulf's companion in the swimming match of their youth — five nights at sea in mail with drawn swords, which Unferth says Beowulf lost and Beowulf says he did not.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Unferth voices doubt about Beowulf's past accomplishments, the swimming match against Breca, and Beowulf answers with his own account." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "contended-with", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the swimming match between Beowulf and Breca, disputed at the feast." } ],
+        "notes": "Non-symmetric toward a pre-existing record, and the kind is chosen carefully: this was a contest and not a fight." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Breca is Beowulf's opponent in the youthful swimming match that Unferth raises at the feast.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Unferth exchange." } ], "weight": "high" } ],
+    "notes": "THE POEM GIVES TWO INCOMPATIBLE ACCOUNTS OF THIS RACE AND THE RECORD GIVES BOTH. Unferth's version and Beowulf's version differ on who won and on what happened at sea, and a registry that picked one would be adjudicating a quarrel the poem stages on purpose."
+  },
+  {
+    "id": "anglosaxon_ingeld",
+    "name": { "primary": "Ingeld", "alt": ["Ingjaldr", "Hinieldus"],
+      "transliterations": { "Old English": "Ingeld", "etymology": "The first element is the Ing- of the god's name. Alcuin Latinises it Hinieldus." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["anglosaxon_froda"],
+    "parentRoles": [ { "personId": "anglosaxon_froda", "role": "father" } ],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Prince of the Heathobards, whose father the Danes killed, betrothed to Hrothgar's daughter to close the feud. Beowulf tells Hygelac it will not hold.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: both Anglo-Saxon and Scandinavian traditions mention a feud with men named Froda and Ingeld, suggesting a marriage alliance between Freawaru and Ingeld." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "betrothed-to", "personId": "anglosaxon_freawaru",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a marriage alliance between Freawaru and Ingeld." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ingeld is the Heathobard prince, son of Froda, betrothed to Freawaru in a peace-marriage that Beowulf predicts will fail.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Froda and Ingeld feud." } ], "weight": "high" } ],
+    "notes": "THE ONE FIGURE IN THIS BATCH WHOSE POPULARITY IS DOCUMENTED BY SOMEONE COMPLAINING ABOUT IT. Around 797 Alcuin wrote to a bishop asking what Ingeld has to do with Christ — Quid Hinieldus cum Christo? — which is the earliest evidence that anybody in England was still listening to these stories, and it survives because a churchman wanted them stopped."
+  },
+  {
+    "id": "anglosaxon_froda",
+    "name": { "primary": "Froda", "alt": ["Fróði"],
+      "transliterations": { "Old English": "Froda", "etymology": "'The wise' or 'the old'; the Old Norse cognate Fróði is the name of several legendary Danish kings." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of the Heathobards, killed by the Danes. His death is the feud his son's marriage is meant to settle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: both Anglo-Saxon and Scandinavian traditions mention a feud with men named Froda and Ingeld, and a marriage alliance between Freawaru and Ingeld intended to settle it." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "anglosaxon_ingeld",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the feud with men named Froda and Ingeld; Ingeld is Froda's son." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Froda is the Heathobard king whose killing by the Danes is the feud behind the Freawaru and Ingeld marriage.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of the Froda and Ingeld feud." } ], "weight": "medium" } ],
+    "notes": "A dead man who is the reason for a wedding, which is a recognisable shape in this literature."
+  },
+  {
+    "id": "anglosaxon_heremod",
+    "name": { "primary": "Heremod", "alt": ["Heremód"],
+      "transliterations": { "Old English": "Heremod", "etymology": "'War-mind' or 'army-courage', from here 'army' and mod 'mind, spirit'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A Danish king before the Scyldings, gifted beyond other men and turned tyrant: he gave his people nothing and killed his own companions at his own table, and was driven out.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Beowulf: Heremod is depicted as an evil and tyrannical king of the Danes, known for his cruelty and the murder of his supporters, leading to his banishment; the Danes' chief example of a gifted king gone wrong, who not only failed to treat his people generously but actually killed other Danes in his own hall." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "held-up-as-a-warning-to", "personId": "anglosaxon_beowulf",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrothgar uses Heremod as the example of a gifted king gone wrong in the speech he makes to Beowulf." } ],
+        "notes": "Non-symmetric. The kind is unusual and it is what the poem does with him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Heremod is the tyrannical Danish king held up in Hrothgar's speech as the example of a gifted man who turned on his own people.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Beowulf and of Heremod." } ], "weight": "high" } ],
+    "notes": "A FIGURE WHO EXISTS IN THE POEM ENTIRELY AS A CAUTIONARY EXAMPLE, twice, both times in a speech about what a king must not become. Killing men in your own hall is the unforgivable act in this literature, and the corpus had no record for the man who is its byword."
+  },
+  {
+    "id": "anglosaxon_deor",
+    "name": { "primary": "Deor", "alt": ["Déor"],
+      "transliterations": { "Old English": "Déor", "etymology": "'Brave, bold' as an adjective; also 'wild animal'. The poem's speaker gives it as his name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "A scop who held a place among the Heodenings for many years and lost it to a better poet, and who consoles himself by listing other people's misfortunes — including Weland's and Beadohild's — and saying after each that it passed, and so may this.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: at the conclusion of the Old English poem Deor the speaker reveals that he was once a great poet among the Heodenings until he was displaced and sent wandering by Heorrenda, a more skilful poet; Deor consoles himself by recounting the sufferings and trials of sundry characters in Germanic tradition." } ] } ],
+    "domains": [
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "scop", "script": "Latin", "rom": "scop" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Deor was a poet among the Heodenings." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "supplanted-by", "personId": "anglosaxon_heorrenda",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Deor was displaced and sent wandering by Heorrenda, a more skilful poet." } ], "notes": "In-batch." },
+      { "kind": "sang-of", "personId": "anglosaxon_wayland",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Deor recounts the sufferings of characters of Germanic tradition, among them Weland." } ],
+        "notes": "Non-symmetric toward a pre-existing record. THE CORPUS ALREADY HELD WAYLAND, BEADOHILD AND NITHHAD — the cast of Deor's first two stanzas — AND NOT THE MAN SINGING THEM." },
+      { "kind": "sang-of", "personId": "anglosaxon_beadohild",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Deor's second stanza is Beadohild's grief." } ], "notes": "Non-symmetric." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Deor is the displaced scop of the Old English poem that bears his name, who recites others' misfortunes and their ending as consolation for his own.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Deor and of Heorrenda." } ], "weight": "high" } ],
+    "notes": "THE FOURTH FRAMING NARRATOR THIS PROGRAMME HAS FOUND MISSING IN FOUR LANES — after Sanjaya in lane 17, Oisín in lane 18 and Cynon in lane 19. Deor is the only one of the four who is also the subject of his poem. The corpus held three of the figures he sings about and not the singer."
+  },
+  {
+    "id": "anglosaxon_heorrenda",
+    "name": { "primary": "Heorrenda", "alt": ["Horant"],
+      "transliterations": { "Old English": "Heorrenda", "etymology": "Unresolved. The Middle High German Horant of the Kudrun is generally taken to be the same figure." } },
+    "type": "mortal", "origin": "canon", "tradition": "Anglo-Saxon", "primaryTradition": "Anglo-Saxon",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "The poet who takes Deor's place and Deor's land among the Heodenings, named in the last lines of Deor and nowhere else in Old English.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the name Heorrenda appears in the Old English poem Deor, where Heorrenda was a bard who supplanted Deor in their lord's favour." } ] } ],
+    "domains": [
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "scop", "script": "Latin", "rom": "scop" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Heorrenda is the more skilful poet who displaces Deor." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "supplanted", "personId": "anglosaxon_deor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Heorrenda displaced Deor and sent him wandering." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Heorrenda is the poet who supplants Deor in their lord's favour in the Old English poem Deor.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Deor and of Heorrenda." } ], "weight": "high" } ],
+    "notes": "A CHARACTER WHOSE ENTIRE ATTESTATION IS SOMEBODY ELSE'S COMPLAINT ABOUT HIM. Tolkien, in his lectures, jokingly gave the name of Heorrenda to the anonymous author of Beowulf; the record notes that this is a modern conceit and asserts nothing from it."
+  }
+]
+```
+
