@@ -2,7 +2,7 @@
 
 **[www.listofgods.com](https://www.listofgods.com/)**
 
-One index of the world's mythologies: **5,767 figures across 560 traditions**,
+One index of the world's mythologies: **5,786 figures across 560 traditions**,
 every one of them source-cited, cross-linked by genealogy, and browsable as a
 table, a relation graph, or a map of where each tradition was attested.
 
@@ -15,10 +15,10 @@ show you where they overlapped on the ground.
 
 | | |
 |---|---|
-| Figures | 5,767 |
+| Figures | 5,786 |
 | Traditions | 560 |
-| Domains | 5,213 |
-| Powers | 7,900 |
+| Domains | 5,215 |
+| Powers | 7,901 |
 | Items | 3,166 |
 | Mapped territories | 241 |
 
@@ -128,7 +128,7 @@ npm test      # builds the gitignored test fixtures (python3 build.py --pages),
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-  corpus (the full 5,767-figure corpus, exactly 241 territories, the `window.__PR`
+  corpus (the full 5,786-figure corpus, exactly 241 territories, the `window.__PR`
   surface, no hard-schema violations, and ceilings on warn-level integrity drift).
 - `test/render.test.cjs` boots the whole app in jsdom and exercises the views,
   keyboard navigation (j/k/Enter/Escape, ⌘K and Ctrl+K), the detail panel, the
