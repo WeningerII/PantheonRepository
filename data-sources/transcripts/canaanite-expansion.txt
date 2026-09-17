@@ -1,0 +1,939 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Traditions: Canaanite (Ugaritic) and Phoenician
+Eras (registered, exact):
+  Canaanite  — cosmogonic | mythic | heroic-age
+  Phoenician — mythic | phoenician-archaic | phoenician-classical |
+               phoenician-colonial | punic
+Author pass: Canaanite held 19 records and Phoenician 7. The Ugaritic tablets
+             are among the best-preserved bodies of Bronze Age myth in
+             existence — the Baal Cycle, the Kirta epic and the Aqhat epic are
+             continuous narratives with named casts — and the registry was
+             carrying the principals without the casts.
+
+================================================================================
+THE GAP
+================================================================================
+
+A corpus-wide name check, over canonical names and aliases with Unicode
+normalisation and across the WHOLE registry, ran 56 candidates. Five resolved
+to existing records. **Fifty-one were absent**, among them:
+
+- **Athtar**, who climbs onto Baal's empty throne and whose feet do not reach
+  the footstool — the most quoted scene in the Baal Cycle after the fight with
+  Yam, and the closest Near Eastern parallel to Isaiah's fallen morning star.
+  (The South Arabian cognate Athtar is in the registry under Sabaean and
+  Aksumite; the Ugaritic god is not.)
+- **Pidray, Tallay and Arsay** — Baal's three daughters.
+- **Gupan and Ugar**, his two messengers, and **Qudshu-wa-Amrur**, Athirat's.
+- **Lotan**, the seven-headed serpent, and **Tunnanu**, the dragon Anat strikes
+  down. The registry carried Leviathan under Yahwism and not the Ugaritic
+  serpent the Hebrew text is quoting.
+- **Shahar and Shalim**, Dawn and Dusk, the subject of their own tablet.
+- **Horon**, **Milku**, **Rapiu** and **Ilib** — the exorcist, the underworld
+  king, the singular of Rephaim, and the ancestral god.
+- **The entire human cast of the Kirta epic**: Pabil, Hurraya, Yassib, Ilhu,
+  Thitmanat and Shataqat, the healer El makes out of clay when no god will
+  answer him. The registry held Kirta alone.
+- **Yatpan**, who kills Aqhat, in a registry holding Aqhat and Paghat.
+- **Baalat Gebal**, the chief deity of Byblos, and most of the cast of Philo of
+  Byblos's *Phoenician History*.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — every fetch is refused at the
+proxy — so research went through server-side web search and the citations name
+what was actually consulted: the standard reference treatments of the Ugaritic
+deities, and the primary texts where the claim comes from the text itself (the
+Baal Cycle, KTU 1.23 "Dawn and Dusk", KTU 1.100, the Kirta epic, the Aqhat
+epic, and Philo of Byblos's *Phoenician History* as preserved by Eusebius). No
+printed monograph is cited as though it had been read. Where the reference
+literature records a scholarly disagreement — whether Arsay belongs with the
+other two daughters, whether Milku and Rapiu are one god — the record states
+the disagreement instead of settling it.
+
+================================================================================
+TWO PRE-EXISTING RECORDS THIS PASS MODIFIES, AND WHY
+================================================================================
+
+`enemy` is a symmetric relation kind, and the two defining facts about Lotan
+and Tunnanu are who kills them. Recording those on the new records alone would
+leave the corpus one-legged, so `canaanite_baal` gains `enemy → canaanite_lotan`
+and `canaanite_anat` gains `enemy → canaanite_tunnanu`, both added to their own
+transcript. Nothing else about either record changes, and the record-level diff
+against origin/main is checked to prove it.
+
+================================================================================
+AUTHORED FIGURES — I. THE BAAL CYCLE'S CAST
+================================================================================
+
+```json
+[
+  {
+    "id": "canaanite_athtar",
+    "name": { "primary": "Athtar", "alt": ["Attar", "Athtar the Terrible", "Athtar the Brilliant", "ʿṯtr"],
+      "transliterations": { "Ugaritic": "ʿṯtr", "etymology": "The masculine of the name behind Athtart and Ishtar; the same theonym stands behind the South Arabian Athtar and the Aksumite Astar. In Ugarit it belongs to a god associated with the morning star and with irrigation." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Put forward as king when Baal is dead, he goes up to the heights of Zaphon and sits on Baal's throne — and his feet do not reach the footstool. He says he will not be king on Zaphon, comes down, and rules the earth instead.",
+      "sources": [ { "kind": "primary", "reference": "The Baal Cycle (KTU 1.6): Athtar the Brilliant goes up into the uttermost parts of Zaphon and sits on the throne of Valiant Baal, but his feet do not reach the footstool; he says he will not rule there, comes down from the throne, and rules in the earth." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "phase", "term": { "value": "ʿṯtr", "script": "Ugaritic (transliterated)", "rom": "Athtar" },
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, on Athtar's attempt on the throne of Zaphon." } ] },
+      { "sphereId": "irrigation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Athtar, associating the Ugaritic god with artificial irrigation as against Baal's rain." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "canaanite_baal",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle: Athirat proposes Athtar as king in Baal's place, and he takes the throne and fails to fit it." } ],
+        "notes": "The substitute who does not fit. The scene exists to establish that Baal's kingship is not an office anybody can hold — the throne is the wrong size for anyone else, which is the point made physically rather than argued." },
+      { "kind": "counterpart-of", "personId": "sabaean_athtar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Athtar and of the South Arabian and Aksumite gods of the same name." } ],
+        "notes": "The same theonym as the South Arabian Athtar and the Aksumite Astar, which the registry already carried; what it did not carry was the Ugaritic god the Baal Cycle is about." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Athtar is the Ugaritic god who takes Baal's throne on Zaphon during his absence, finds his feet do not reach the footstool, descends and rules the earth instead.",
+      "citations": [ { "kind": "primary", "reference": "The Baal Cycle (KTU 1.6)." },
+                     { "kind": "secondary", "reference": "Reference treatments of Athtar and of his relation to the South Arabian and Aksumite gods of the same name." } ], "weight": "high" } ],
+    "notes": "Athtar's scene is four lines long and it has been read for a century as the ancestor of Isaiah's fallen morning star. Baal is dead; the throne of Zaphon is empty; Athirat proposes her own candidate; and Athtar climbs up, sits down, and discovers that his feet do not reach the stool. He says, in effect, that he will not be king up here — and goes down and rules the earth. Nothing is said about humiliation and nothing needs to be: the poem makes its argument about kingship by measuring a chair. The registry already carried the South Arabian and Aksumite gods of this name and not the Ugaritic one."
+  },
+  {
+    "id": "canaanite_pidray",
+    "name": { "primary": "Pidray", "alt": ["Pidraya", "Pdry", "Pidray daughter of Ar"],
+      "transliterations": { "Ugaritic": "pdry", "etymology": "Generally connected with a word for mist or fat cloud; her standing epithet is 'daughter of Ar', read as light or as mist depending on the treatment. The final -y is the common feminine ending." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["canaanite_baal"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daughter of Baal, the best attested of the three, named in the Baal Cycle among the household he asks Kothar to build a window for and in the offering lists of Ugarit.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pidray: described in the Ugaritic myths as a daughter of the weather god Baal, and the best attested of the Ugaritic goddesses regarded as his daughters." } ] } ],
+    "domains": [ { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "pdry", "script": "Ugaritic (transliterated)", "rom": "Pidray" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baal's daughters, whose epithets are routinely related to weather phenomena." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_tallay",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, naming Pidray, Tallay and Arsay together as daughters of Baal." } ], "notes": "One of the three." },
+      { "kind": "sibling", "personId": "canaanite_arsay",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, naming Pidray, Tallay and Arsay together." } ], "notes": "One of the three, with the caveat recorded on Arsay's own record." } ],
+    "cultRecords": [
+      { "tradition": "Canaanite", "placeName": "Ugarit", "kind": "offering-list", "period": "late bronze age",
+        "attestation": "her appearances in the Ugaritic offering and god lists", "source": "Reference treatment of Pidray's attestation.",
+        "note": "She is the one of the three who has a cult as well as a line of poetry: the ritual texts name her where the other two are largely literary." } ],
+    "sources": [ { "claim": "Pidray is a daughter of Baal in the Ugaritic texts, the best attested of the three so described, with a weather-related epithet and a presence in the Ugaritic ritual texts.",
+      "citations": [ { "kind": "primary", "reference": "The Baal Cycle." },
+                     { "kind": "secondary", "reference": "Reference treatment of Pidray and of Baal's daughters." } ], "weight": "high" } ],
+    "notes": "Pidray is the daughter of Baal who actually got worshipped. All three of them are named in one passage of the Baal Cycle and their epithets are weather words, which is what you would expect from the household of a storm god; but Pidray turns up in the offering lists too, which the other two barely do. Her epithet is 'daughter of Ar', and what Ar means — light, mist, honeydew — has been argued over for as long as the tablets have been read."
+  },
+  {
+    "id": "canaanite_tallay",
+    "name": { "primary": "Tallay", "alt": ["Talay", "Ṭly", "Tallay daughter of Rabb"],
+      "transliterations": { "Ugaritic": "ṭly", "etymology": "From ṭl, 'dew', with the feminine -y: 'Dewy'. Her epithet 'daughter of Rabb' is generally taken to mean showers or light rain." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["canaanite_baal"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daughter of Baal, the goddess of dew and light rain, named with her two sisters in the Baal Cycle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tallay: an Ugaritic goddess associated with the weather, especially with dew and light rain, her name derived from the Ugaritic ṭl, 'dew', and translated 'Dewy'." } ] } ],
+    "domains": [ { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "ṭly", "script": "Ugaritic (transliterated)", "rom": "Dewy" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tallay as goddess of dew and light rain." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_pidray",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, naming the three daughters together." } ], "notes": "One of the three." },
+      { "kind": "sibling", "personId": "canaanite_arsay",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, naming the three daughters together." } ], "notes": "One of the three, with the caveat recorded on Arsay's own record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tallay is a daughter of Baal in the Ugaritic texts, the goddess of dew and light rain, her name meaning 'Dewy'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Tallay, her name and her sphere." } ], "weight": "high" } ],
+    "notes": "Tallay is dew. In a country where the summer brings no rain at all, the dew that forms overnight is the difference between a crop surviving August and not, so a storm god's daughter named Dewy is a serious agricultural proposition rather than a decorative one. Her epithet, 'daughter of Rabb', is usually read as showers."
+  },
+  {
+    "id": "canaanite_arsay",
+    "name": { "primary": "Arsay", "alt": ["Arsaya", "Arṣy", "Arsay daughter of Yaabdar"],
+      "transliterations": { "Ugaritic": "arṣy", "etymology": "From arṣ, 'earth' or 'underworld', with the feminine -y — which is why she is read as either a goddess of the ground water or a goddess of the world below." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["canaanite_baal"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A goddess of Ugarit named once in the Baal Cycle alongside Pidray and Tallay as a daughter of Baal, proposed as a goddess of the underworld or of groundwater without either reading winning general agreement.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arsay: a goddess worshipped at Ugarit in the late Bronze Age, proposed to be associated with the underworld or with groundwater, though neither theory found universal support; she appears alongside Pidray and Tallay in a single passage of the Baal Cycle, which is why the three are often grouped." } ] } ],
+    "domains": [ { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "arṣy", "script": "Ugaritic (transliterated)", "rom": "Arsay" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arsay and the readings of her name." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_pidray",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, the single passage naming the three together." } ], "notes": "Grouped with the other two on the strength of one passage; see the variant on this record." },
+      { "kind": "sibling", "personId": "canaanite_tallay",
+        "sources": [ { "kind": "primary", "reference": "The Baal Cycle, the single passage naming the three together." } ], "notes": "Grouped with the other two on the strength of one passage." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Arsay is a goddess of Ugarit named in the Baal Cycle beside Pidray and Tallay as a daughter of Baal, with proposed underworld or groundwater associations that have not been generally accepted.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Arsay, her grouping with Baal's other daughters and the disputed reading of her sphere." } ], "weight": "medium" } ],
+    "notes": "Arsay is in the triad because of one line. The Baal Cycle names her once beside Pidray and Tallay, and scholarship has grouped the three ever since; the reference treatment is explicit that there is no evidence associating her with them anywhere else. Her name is built on the word for earth or underworld, which has produced two readings — groundwater or the world below — and neither has won. The record keeps her in the triad, because that is where the text puts her, and says on its face that the grouping rests on a single passage.",
+    "variants": [
+      { "id": "canaanite_arsay_triad_doubt",
+        "claim": "Whether Arsay belongs with Pidray and Tallay at all rests on one passage.",
+        "description": "It is often assumed that the three formed a triad; the reference treatment notes that she appears alongside Pidray and Tallay in a single passage of the Baal Cycle and that there is no evidence they were associated in any other context. Her sphere is likewise unsettled between the underworld and groundwater.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Arsay, noting that the grouping rests on one passage and that neither proposed sphere found universal support." } ] } ]
+  },
+  {
+    "id": "canaanite_gupan",
+    "name": { "primary": "Gupan", "alt": ["Gapn", "Gupanu", "Gapnu", "gpn"],
+      "transliterations": { "Ugaritic": "gpn", "etymology": "The word for a vine or a vineyard. With his partner's name the binomial gpn w ugr reads 'vine and field'." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of Baal's two messengers, always paired with Ugar, carrying his master's words to Anat, to Kothar-wa-Hasis and — most dangerously — to Mot.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar: two Ugaritic gods who functioned as the messengers of the weather god Baal, always appearing as a pair, well attested in the Baal Cycle where they carry messages from their master to other deities such as Anat, Kothar-wa-Khasis and Mot." } ] } ],
+    "domains": [ { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "gpn", "script": "Ugaritic (transliterated)", "rom": "vine" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar as Baal's messengers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "canaanite_ugar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting that Gupan and Ugar always appear as a pair in the known texts." } ],
+        "notes": "Never appears without him. The two are effectively one office with two names, in the same way Kothar-wa-Hasis is one god with two." },
+      { "kind": "subordinate-to", "personId": "canaanite_baal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar as the messengers of Baal, and of their place at the lowest level of the Ugaritic divine hierarchy." } ],
+        "notes": "Baal's messenger, at the bottom of the Ugaritic hierarchy, which is where the messengers always are." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gupan is one of Baal's two messengers in the Ugaritic texts, always paired with Ugar, their binomial name reading 'vine and field'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar, their pairing, their role and their name." } ], "weight": "high" } ],
+    "notes": "Gupan is a vine and Ugar is a field, and between them they carry the storm god's post. The pairing is not decorative: a vineyard and a ploughed field are what a storm god's rain is for, so his two runners are named after the two things that depend on him. They go everywhere together, they are at the very bottom of the Ugaritic divine hierarchy, and one of their errands is to carry Baal's message down to Mot, which is the sort of job a messenger at the bottom of the hierarchy gets."
+  },
+  {
+    "id": "canaanite_ugar",
+    "name": { "primary": "Ugar", "alt": ["Ugaru", "ugr"],
+      "transliterations": { "Ugaritic": "ugr", "etymology": "The word for a field. It is also, not coincidentally, the element behind the name of the city Ugarit." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The second of Baal's two messengers, always paired with Gupan.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar as the paired messengers of Baal in the Baal Cycle." } ] } ],
+    "domains": [ { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "ugr", "script": "Ugaritic (transliterated)", "rom": "field" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "canaanite_gupan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting the two always appear as a pair." } ],
+        "notes": "The other half of the pair." },
+      { "kind": "subordinate-to", "personId": "canaanite_baal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the pair as Baal's messengers." } ],
+        "notes": "Baal's messenger." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ugar is the second of Baal's two messengers in the Ugaritic texts, always paired with Gupan, his name meaning 'field'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Gupan and Ugar." } ], "weight": "high" } ],
+    "notes": "Ugar is a field with legs. He never appears without Gupan and he has no independent mythology, which is exactly the situation of a messenger in this literature: the office is what is recorded, not the person. His name is the word for a field, and it is the same element that names the city whose tablets preserve all of this."
+  },
+  {
+    "id": "canaanite_qudshu_wa_amrur",
+    "name": { "primary": "Qudshu-wa-Amrur", "alt": ["Qadesh-wa-Amrur", "Qudšu-wa-Amrur", "qdš w amrr"],
+      "transliterations": { "Ugaritic": "qdš w amrr", "etymology": "A binomial theonym of the same shape as Kothar-wa-Hasis: 'Holy-and-Blessed', or 'Sanctuary-and-Amrur', depending on the reading of the second element." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The fisherman and messenger of Athirat, who saddles her donkey and leads it when she goes to El; called 'the fisherman of Athirat' in the texts.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Qudšu-wa-Amrur: a minor Ugaritic god, or pair of gods, regarded as the fisherman and messenger of Athirat, attested in the Baal Cycle in his role as the servant of his mistress and referred to as 'the fisherman of Athirat'." } ] } ],
+    "domains": [ { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "qdš w amrr", "script": "Ugaritic (transliterated)", "rom": "Qudshu-wa-Amrur" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Qudšu-wa-Amrur as Athirat's fisherman and messenger." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "canaanite_athirat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Qudšu-wa-Amrur as the servant of Athirat." } ],
+        "notes": "Athirat's servant: he saddles her donkey, and the poem takes its time over the saddling, which is how Ugaritic narrative signals that something important is about to be asked of El." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Qudshu-wa-Amrur is the fisherman and messenger of Athirat in the Ugaritic texts, occupying the lowest level of the divine hierarchy alongside Gupan and Ugar.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Qudšu-wa-Amrur, his binomial name and his service to Athirat." } ], "weight": "medium" } ],
+    "notes": "Athirat's servant has a double name, like Kothar-wa-Hasis, which in this literature seems to mark a functionary rather than a great god — the name describes the job in two words. He is her fisherman, which is a real occupational title for the household of a goddess called Lady Athirat of the Sea, and his set-piece is saddling her donkey. The Baal Cycle spends more lines on the saddling than on some battles, which is the poem's way of dignifying the errand."
+  },
+  {
+    "id": "canaanite_lotan",
+    "name": { "primary": "Lotan", "alt": ["Litan", "Litanu", "Ltn", "the fugitive serpent"],
+      "transliterations": { "Ugaritic": "ltn", "etymology": "An adjectival formation meaning 'coiled', used as a proper name. The Hebrew Leviathan is the same word." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The seven-headed sea dragon of the Ugaritic texts, a servant of Yam, called the fugitive serpent and the wriggling serpent, defeated by Baal — in some readings by the hand of his sister Anat.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lotan, also known as Litan or Litanu: a seven-headed sea dragon of Canaanite mythology, in the Baal Cycle a servant of the sea god Yam defeated by the storm god Baal, possibly with the help or by the hand of Anat, his name an adjectival formation meaning 'coiled' with epithets including 'the fugitive serpent'." } ] } ],
+    "domains": [ { "sphereId": "chaos", "contextTag": "lifelong", "term": { "value": "ltn", "script": "Ugaritic (transliterated)", "rom": "the coiled one" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lotan as the serpent of chaos in Yam's service." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "canaanite_yam",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lotan as a servant of the sea god Yam." } ],
+        "notes": "Yam's creature: the sea's own monster, which is why killing him and beating Yam are the same victory told twice." },
+      { "kind": "enemy", "personId": "canaanite_baal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lotan's defeat by Baal in the Baal Cycle." } ],
+        "notes": "Killed by Baal. The reciprocal edge is added to Baal's own record in this pass, since `enemy` is symmetric and the registry would otherwise carry the fight from one side only." },
+      { "kind": "counterpart-of", "personId": "yahwism_leviathan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting that the Hebrew Leviathan is described in words that shadow the Ugaritic Lotan almost syllable for syllable, and that the Baal Cycle's description is paralleled in the Apocalypse of Isaiah." } ],
+        "notes": "The registry already held Leviathan under Yahwism. Lotan is the older text's version of the same serpent, and the Hebrew descriptions track the Ugaritic closely enough that the relationship is a quotation rather than a resemblance." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lotan is the seven-headed Ugaritic sea serpent, a servant of Yam defeated by Baal, whose name means 'coiled' and who is the direct antecedent of the Hebrew Leviathan.",
+      "citations": [ { "kind": "primary", "reference": "The Baal Cycle." },
+                     { "kind": "secondary", "reference": "Reference treatments of Lotan, his epithets, his defeat and his relation to Leviathan." } ], "weight": "high" } ],
+    "notes": "Lotan is Leviathan, a few centuries earlier and in a different language. He has seven heads, he belongs to Yam, and he is called the fugitive serpent and the coiled one — the same epithets, nearly word for word, that Isaiah uses of Leviathan when Yahweh kills him. The registry held the Hebrew serpent and not the Ugaritic one, which is the wrong way round: this is the text the other one is quoting. Whether Baal or Anat lands the blow depends on which passage you read, and the record says so."
+  },
+  {
+    "id": "canaanite_tunnanu",
+    "name": { "primary": "Tunnanu", "alt": ["Tunnan", "Tannin", "tnn"],
+      "transliterations": { "Ugaritic": "tnn", "etymology": "The same word as the Hebrew tannin, a sea monster or dragon; it survives into later Hebrew as the ordinary word for a large serpent." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A sea monster of the Ugaritic texts whose seven heads Anat strikes down in her catalogue of victories, alongside Yam, the fugitive serpent and the other creatures of the sea.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tunnanu: the twisty serpent sea monster whose seven heads Anat strikes down in the Ugaritic text, mirroring the crushing of the heads of Leviathan in Psalm 74 and the slaying of the sea dragon in Isaiah 27." } ] } ],
+    "domains": [ { "sphereId": "chaos", "contextTag": "lifelong", "term": { "value": "tnn", "script": "Ugaritic (transliterated)", "rom": "Tunnanu" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tunnanu as one of the sea monsters of the Ugaritic texts." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "canaanite_anat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Anat's catalogue of victories, in which she strikes down the seven heads of Tunnanu." } ],
+        "notes": "Killed by Anat, in the speech where she lists what she has already destroyed. The reciprocal edge is added to Anat's own record in this pass, since `enemy` is symmetric." },
+      { "kind": "subordinate-to", "personId": "canaanite_yam",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the sea monsters of the Ugaritic texts as belonging to the sea." } ],
+        "notes": "One of the sea's creatures, listed with Yam in Anat's catalogue." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tunnanu is an Ugaritic sea monster, the tannin, whose seven heads Anat strikes down, and the direct antecedent of the tannin of the Hebrew Bible.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tunnanu, of Anat's catalogue of victories and of the biblical parallels." } ], "weight": "medium" } ],
+    "notes": "Tunnanu is the word the Hebrew Bible keeps using and the King James Version keeps translating as 'whale' or 'dragon' depending on the verse. At Ugarit he is one of the things Anat has killed, listed in the speech where she recites her victories — Yam, the fugitive serpent, the seven-headed one — and the list is close enough to Psalm 74 that the psalm reads as the same catalogue with a different god's name at the top. Whether Tunnanu and Lotan are two monsters or one monster twice named is not settled; both are recorded, because the text names both."
+  },
+  {
+    "id": "canaanite_shahar",
+    "name": { "primary": "Shahar", "alt": ["Šaḥar", "Shachar", "šḥr"],
+      "transliterations": { "Ugaritic": "šḥr", "etymology": "The word for dawn. The same root gives the Hebrew shachar, and the name Helel ben Shachar — 'shining one, son of dawn' — in Isaiah 14." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["canaanite_el"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Dawn personified, born with his twin Shalim to El in the tablet known as 'Dawn and Dusk'; the newborns' hunger is so violent that they are sent out to wander the steppe for seven years.",
+      "sources": [ { "kind": "primary", "reference": "KTU 1.23, in which El fathers Shahar and Shalim, the 'gracious gods', whose hunger for suckling is ravenous and who are sent to the steppe." } ] } ],
+    "domains": [ { "sphereId": "dawn", "contextTag": "lifelong", "term": { "value": "šḥr", "script": "Ugaritic (transliterated)", "rom": "dawn" },
+      "sources": [ { "kind": "primary", "reference": "KTU 1.23, on Shahar as dawn." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "canaanite_shalim",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalim as consistently portrayed as the twin brother of Shahar, the god of dawn." } ],
+        "notes": "Dawn and dusk, born together — the two ends of the day as a pair of twins, and both of them the planet Venus in its two appearances." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shahar is the Ugaritic personification of dawn, son of El and twin of Shalim, born in the tablet KTU 1.23 and sent with his brother to wander the steppe.",
+      "citations": [ { "kind": "primary", "reference": "KTU 1.23 ('Dawn and Dusk' / 'The Gracious Gods')." },
+                     { "kind": "secondary", "reference": "Reference treatments of Shahar and Shalim." } ], "weight": "high" } ],
+    "notes": "Shahar is the morning, and he is the reason Isaiah has a phrase to reach for. 'Helel ben Shachar' — shining one, son of dawn — is the line that Latin turned into Lucifer, and the father in it is this god. KTU 1.23 is one of the strangest texts from Ugarit: El's sexual prowess, two goddesses, twin births, and infants so hungry that one lip touches the earth and the other the sky, who have to be exiled to the steppe for seven years until they can be fed like anyone else.",
+    "variants": [
+      { "id": "canaanite_shahar_mother",
+        "claim": "Which of El's two partners in KTU 1.23 bears which twin is not resolved.",
+        "description": "The text has El father the twins on two women, named as Athirat and Rahmay in the reference treatments. It does not distribute the twins between the mothers in a way the record can assert, so the paternity is linked and the maternity is stated in prose.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of KTU 1.23, describing El fathering Shahar and Shalim on the goddesses Athirat and Rahmay." } ] } ]
+  },
+  {
+    "id": "canaanite_shalim",
+    "name": { "primary": "Shalim", "alt": ["Shalem", "Šalim", "šlm"],
+      "transliterations": { "Ugaritic": "šlm", "etymology": "The root of 'peace', 'completion', 'to be whole' — and of the city name Jerusalem, generally read as a foundation of, or for, this god." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["canaanite_el"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Dusk personified: son of El, twin brother of Shahar, standing for the evening aspect of Venus and for peace and completion.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalim: depicted as the son of El and consistently portrayed as the twin brother of Shahar, the god of dawn, personifying dusk, the evening aspect of the planet Venus, and the concepts of peace and completion." } ] } ],
+    "domains": [ { "sphereId": "dusk", "contextTag": "lifelong", "term": { "value": "šlm", "script": "Ugaritic (transliterated)", "rom": "dusk / completion" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalim as the personification of dusk." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "canaanite_shahar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalim as the twin brother of Shahar." } ],
+        "notes": "The other end of the day." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shalim is the Ugaritic personification of dusk, son of El and twin of Shahar, associated with the evening star and with peace and completion.",
+      "citations": [ { "kind": "primary", "reference": "KTU 1.23." },
+                     { "kind": "secondary", "reference": "Reference treatment of Shalim, his parentage, his twin and his sphere." } ], "weight": "high" } ],
+    "notes": "Shalim is the evening, and his name is the root that means whole, finished, at peace — the day completed rather than merely ended. The same root stands in the name of Jerusalem, which is generally read as a foundation of Shalim, so a god who appears in one surviving Ugaritic tablet has his name on one of the most-said place names in the world. He and Shahar are the morning and evening appearances of Venus, born as twins because the planet is one object seen twice."
+  },
+  {
+    "id": "canaanite_rahmay",
+    "name": { "primary": "Rahmay", "alt": ["Rahmaya", "Raḥmay", "rḥmy"],
+      "transliterations": { "Ugaritic": "rḥmy", "etymology": "From the root rḥm, 'womb' and 'mercy' — the same root behind the Hebrew rachamim. The name reads roughly as 'the merciful one' or 'the womb-one'." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "One of the two goddesses on whom El fathers Shahar and Shalim in KTU 1.23, named there beside Athirat; the reference treatments read her name from the root for womb and mercy.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of KTU 1.23: El displays his prowess to the goddesses Ashirat and Rahmay and fathers on them the deities Shahar and Shalim." } ] } ],
+    "domains": [ { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "rḥmy", "script": "Ugaritic (transliterated)", "rom": "Rahmay" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rahmay and of her role in KTU 1.23." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "canaanite_el",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of KTU 1.23, in which El fathers the twins on Athirat and Rahmay." } ],
+        "notes": "One of El's two partners in KTU 1.23, beside Athirat. Which of the two bears which twin the text does not settle, so this record links the union and not the maternity." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Rahmay is one of the two goddesses on whom El fathers Shahar and Shalim in the Ugaritic tablet KTU 1.23, her name built on the root for womb and mercy.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of KTU 1.23 and of Rahmay." } ], "weight": "medium" } ],
+    "notes": "Rahmay appears in one tablet and has been argued about ever since — whether she is a goddess in her own right, an epithet of Anat, or a doublet of Athirat is unresolved, and this record does not resolve it. What the text says is that El fathers the twins on two women and that she is one of them, and her name is built on the root that gives both 'womb' and 'mercy', which is the same double meaning the Hebrew Bible works with constantly."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE EXORCIST, THE UNDERWORLD KING, AND THE ANCESTORS
+================================================================================
+
+```json
+[
+  {
+    "id": "canaanite_horon",
+    "name": { "primary": "Horon", "alt": ["Hauron", "Haurunu", "Ḥrn"],
+      "transliterations": { "Ugaritic": "ḥrn", "etymology": "No agreed derivation; the Egyptian form is Hauron, and the same name stands behind the place name Beth-Horon." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A god of magic and exorcism, and above all of spells against snakes: in KTU 1.100 the sun goddess Shapshu applies to god after god on behalf of a figure troubled by serpents, and Horon is the one who answers. Taken into Egypt as Hauron, where his name could be used of the Great Sphinx of Giza.",
+      "sources": [ { "kind": "primary", "reference": "KTU 1.100, in which Shapshu implores Horon to help a figure troubled by snakes." },
+                   { "kind": "secondary", "reference": "Reference treatment of Horon/Hauron: a god worshipped in Canaan and Ugarit whose Egyptian form Hauron was worshipped at Giza and closely associated with Harmachis, his name usable as a designation of the Great Sphinx; in Ugaritic texts a deity associated with magic and exorcisms who casts spells against snakes." } ] } ],
+    "domains": [
+      { "sphereId": "magic", "contextTag": "lifelong", "term": { "value": "ḥrn", "script": "Ugaritic (transliterated)", "rom": "Horon" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Horon as a god of magic and exorcism." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "KTU 1.100, on Horon's spells against snakes." } ] } ],
+    "faculties": [
+      { "id": "canaanite_bind_the_serpent",
+        "name": "to bind a serpent's venom by incantation",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The whole point of KTU 1.100: the mare's plea goes up to god after god, all of whom are apparently unable or unwilling, until it reaches Horon, who comes and does the thing.",
+        "sources": [ { "kind": "primary", "reference": "KTU 1.100, the snakebite incantation text." } ] } ],
+    "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Canaanite", "placeName": "Ugarit, and Giza in Egypt", "kind": "regional-cult", "period": "late bronze age to new kingdom",
+        "attestation": "the Ugaritic incantation texts, and the Egyptian cult of Hauron at Giza", "source": "Reference treatment of Horon and Hauron.",
+        "note": "One of the few Levantine gods whose Egyptian career is better documented than his Levantine one: at Giza his name attaches to the Sphinx, and Egyptian kings build for him there." } ],
+    "sources": [ { "claim": "Horon is a Canaanite and Ugaritic god of magic and exorcism, especially of spells against snakes, invoked by Shapshu in KTU 1.100, and worshipped in Egypt as Hauron, whose name could designate the Great Sphinx.",
+      "citations": [ { "kind": "primary", "reference": "KTU 1.100." },
+                     { "kind": "secondary", "reference": "Reference treatments of Horon and of the Egyptian Hauron at Giza." } ], "weight": "high" } ],
+    "notes": "Horon is the god you call about a snake. KTU 1.100 is a long incantation in which the mother of the mare, bitten, appeals in turn to El, Baal, Dagan, Anat and Athtart, Yarikh, Resheph, Athirat, Shapshu — the whole pantheon, in order — and none of them is the answer; the answer is Horon, who comes from Mount Arashih and does the work. He is also the clearest case of a Levantine god exported into Egypt and doing better there: as Hauron he is worshipped at Giza, closely associated with Harmachis, and his name can be used of the Great Sphinx itself. Whether he has an underworld side is argued; the consensus has moved toward reading him as protective."
+  },
+  {
+    "id": "canaanite_milku",
+    "name": { "primary": "Milku", "alt": ["Milk", "Malik", "mlk"],
+      "transliterations": { "Ugaritic": "mlk", "etymology": "The ordinary Semitic word for 'king', used as a divine name. The same consonants stand behind the biblical Molech, and the relationship between the god and the biblical term has been argued about for a century." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A god of the underworld worshipped in the kingdoms of Ugarit and Amurru, described in the Ugaritic ritual texts as ruling in Ashtaroth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Milku: in Ugaritic ritual texts a god described as ruling in Ashtaroth, associated with the underworld and worshipped in the kingdoms of Ugarit and Amurru." } ] } ],
+    "domains": [ { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "mlk", "script": "Ugaritic (transliterated)", "rom": "king" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Milku's underworld associations." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "canaanite_rapiu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Milku, described as ruling in Ashtaroth, and of Rapiu, described as the god enthroned at Ashtaroth who rules in Edrei." } ],
+        "notes": "Both are described as ruling at Ashtaroth, and some treatments identify them outright. The record links them and does not merge them, because the texts give each a separate name and the identification is an inference." } ],
+    "cultRecords": [
+      { "tradition": "Canaanite", "placeName": "Ashtaroth, and Ugarit and Amurru", "kind": "regional-cult", "period": "late bronze age",
+        "attestation": "the Ugaritic ritual texts naming him at Ashtaroth", "source": "Reference treatment of Milku.",
+        "note": "Ashtaroth is a real town in the Bashan and also, in this material, the seat of an underworld kingship — the same two-layer geography the Rephaim have." } ],
+    "sources": [ { "claim": "Milku is a Canaanite god of the underworld ruling at Ashtaroth, worshipped in Ugarit and Amurru, whose name is the word for king.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Milku, of his seat at Ashtaroth and of the underworld associations of his name." } ], "weight": "medium" } ],
+    "notes": "Milku is 'king' used as a name, which makes him hard to see in the texts — the word is everywhere and the god is only sometimes. What the Ugaritic ritual material gives is a god of the underworld seated at Ashtaroth, a real town in the Bashan that this literature treats as a capital of the dead. The same consonants stand behind the biblical Molech, and the argument over whether that is a god, a kind of sacrifice, or both is older than the Ugaritic tablets and was not settled by them."
+  },
+  {
+    "id": "canaanite_rapiu",
+    "name": { "primary": "Rapiu", "alt": ["Rapi'u", "Rpu", "King of Eternity"],
+      "transliterations": { "Ugaritic": "rpu", "etymology": "The singular of the word whose plural is Rephaim; the root means 'to heal' or, in another reading, relates to shades of the dead. His standing title is 'king of eternity'." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The King of Eternity, described in the Ugaritic texts as the god enthroned at Ashtaroth who rules in Edrei — the same two cities the Hebrew Bible gives to Og, the last of the Rephaim.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rapiu: identified in Ugaritic texts as a Canaanite deity called the 'King of Eternity' who reigned at the cities of Ashtaroth and Edrei, the singular form of Rephaim, believed to rule the underworld from those two cities." } ] } ],
+    "domains": [ { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "rpu mlk ʿlm", "script": "Ugaritic (transliterated)", "rom": "Rapiu, king of eternity" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rapiu as the underworld king at Ashtaroth and Edrei." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "canaanite_rephaim",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rapiu as the singular form of Rephaim." } ],
+        "notes": "The singular of the plural the registry already carried. Whether he is their king, their eponym, or the word for one of them used as a title is not settled." },
+      { "kind": "counterpart-of", "personId": "canaanite_milku",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments placing both Rapiu and Milku as rulers at Ashtaroth." } ],
+        "notes": "Both are seated at Ashtaroth; some treatments identify the two." } ],
+    "cultRecords": [
+      { "tradition": "Canaanite", "placeName": "Ashtaroth and Edrei", "kind": "regional-cult", "period": "late bronze age",
+        "attestation": "the Ugaritic Rephaim texts and the funerary text KTU 1.161", "source": "Reference treatment of Rapiu and of the Rephaim material.",
+        "note": "Ashtaroth and Edrei are the two cities the Book of Deuteronomy assigns to Og of Bashan, the last of the Rephaim — the same pair of names, in the same order, in two literatures five hundred years apart." } ],
+    "sources": [ { "claim": "Rapiu, the 'King of Eternity', is the Ugaritic underworld king enthroned at Ashtaroth and ruling in Edrei, the singular form of Rephaim.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rapiu, of the Rephaim and of the Ashtaroth-and-Edrei formula." } ], "weight": "medium" } ],
+    "notes": "Rapiu is the singular of a plural the registry already had. The Rephaim are the shades of dead kings in the Ugaritic funerary texts; Rapiu is one of them used as a title, or their king, or the god the word is named for — the material does not distinguish as tidily as one would like. What is striking is the geography: he is the god enthroned at Ashtaroth who rules in Edrei, and Deuteronomy gives those same two cities, in that order, to Og of Bashan, the last of the Rephaim. Two literatures, half a millennium apart, put the same pair of place names in the same formula."
+  },
+  {
+    "id": "canaanite_ilib",
+    "name": { "primary": "Ilib", "alt": ["Il-ib", "ilib"],
+      "transliterations": { "Ugaritic": "ilib", "etymology": "Read as 'god of the father' or 'divine ancestor' — il, god, plus ab, father. It is a common noun for an ancestral spirit as well as the name of a god." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "A god heading the Ugaritic offering lists, most likely regarded as a primordial deity, whose name is also the generic term for the spirits of ancestors.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ilib: an Ugaritic god most likely regarded as a primordial deity, whose name as a generic term seemingly also referred to spirits of ancestors." } ] } ],
+    "domains": [ { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "ilib", "script": "Ugaritic (transliterated)", "rom": "god of the father" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ilib and of the ancestral use of his name." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Canaanite", "placeName": "Ugarit", "kind": "offering-list", "period": "late bronze age",
+        "attestation": "his position at the head of the Ugaritic god and offering lists, before El", "source": "Reference treatment of Ilib and the Ugaritic god-lists.",
+        "note": "He stands ahead of El in the canonical list, which is the sort of detail that tells you the list is not ranked by power: the ancestors come first because they came first." } ],
+    "sources": [ { "claim": "Ilib is an Ugaritic god, most likely primordial, heading the god-lists, whose name is also the generic term for an ancestral spirit.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ilib, his primordial character and the ancestral sense of his name." } ], "weight": "medium" } ],
+    "notes": "Ilib is 'the god of the father', and he is first in the Ugaritic god-list — ahead of El, which surprises people until they notice that the list is not a ranking. He is the ancestral god, and the same word is used as a common noun for an ancestor's spirit, which makes him the point where a family's dead and the state pantheon meet. Every household had an ilib; the list has the Ilib."
+  },
+  {
+    "id": "canaanite_shataqat",
+    "name": { "primary": "Shataqat", "alt": ["Shatiqatu", "Shaʿtiqatu", "šʿtqt"],
+      "transliterations": { "Ugaritic": "šʿtqt", "etymology": "From a causative of the verb 'to pass away': 'she who causes to pass away' — the illness being what passes. The name is a job title." } },
+    "type": "deity", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Made by El when he has asked the assembled gods seven times who will drive the sickness out of Kirta and none of them will answer: he forms a being for the purpose, names her 'she who causes illness to pass away', and sends her, and she cures the king.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: when none of the gods will answer El's call, he creates a being named Shataqat to cure illness and sends her to heal Kirta, and she succeeds in restoring him to full health; her name translates as 'she who causes evil to pass away' or 'she who causes illness to pass away'." } ] } ],
+    "domains": [ { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "šʿtqt", "script": "Ugaritic (transliterated)", "rom": "she who causes illness to pass away" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shataqat as the healer created by El in the Kirta epic." } ] } ],
+    "faculties": [
+      { "id": "canaanite_drive_out_the_sickness",
+        "name": "to drive death out of a body that is already dying",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "She is made for one purpose and performs it once: she flies to Kirta, washes him of sweat, opens his throat to food, and Death is driven off.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Shataqat narrative in the Kirta epic." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "canaanite_el",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, in which El creates Shataqat when no other god will answer." } ],
+        "notes": "El's creature, made to order. He asks the assembly seven times, gets no answer, and makes the answer himself — which is the closest the Ugaritic texts come to saying that the head of the pantheon is also its last resort." },
+      { "kind": "guide-of", "personId": "canaanite_kirta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, in which Shataqat is sent to Kirta and restores him to full health." } ],
+        "notes": "Sent to Kirta, and successful: the king who was dying gets up and eats." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shataqat is the being El creates in the Kirta epic to cure the king's illness when no other god will answer, her name meaning 'she who causes illness to pass away'.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Shataqat narrative and of her name." } ], "weight": "high" } ],
+    "notes": "Shataqat is made on the spot to solve a problem, which makes her one of the few deities in any literature whose origin is an engineering decision. Kirta is dying; El asks the divine assembly who among them will drive out the sickness; he asks seven times and nobody answers. So he takes clay, or takes something, and makes a being whose name is the thing he needs done — 'she who causes illness to pass away' — and sends her. She flies to Kirta, drives Death out, washes him, and he asks for food. Then the epic moves on and she is never mentioned again."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE HUMAN CAST OF THE EPICS
+================================================================================
+
+The registry held Kirta and Aqhat and the people around them were missing.
+These six are mortals in the Ugaritic narrative poems: a besieged king, a
+bride, three royal children and a hired killer.
+
+```json
+[
+  {
+    "id": "canaanite_pabil",
+    "name": { "primary": "Pabil", "alt": ["Pabilu", "Pbl", "King Pabil of Udum"],
+      "transliterations": { "Ugaritic": "pbl", "etymology": "No agreed derivation; a personal name rather than a descriptive one." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "King of Udum, besieged by Kirta for seven days; he offers silver, gold, slaves and chariots to make the army go away, and Kirta refuses everything and demands his daughter Hurraya instead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: Pabil, king of Udum, after a seven-day siege by Kirta offers silver, gold, slaves and chariots, but Kirta insists on taking his daughter Hurraya as his wife." } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, on Pabil's kingship at Udum." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "canaanite_hurraya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, naming Hurraya as Pabil's daughter." } ],
+        "notes": "The daughter the siege is actually about." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Pabil is the king of Udum in the Kirta epic, besieged for seven days, who offers treasure to lift the siege and is refused because Kirta wants his daughter Hurraya.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its cast." } ], "weight": "medium" } ],
+    "notes": "Pabil is on the losing side of the clearest transaction in Ugaritic literature. Kirta has lost his whole family and is told by El in a dream to raise an army and march on Udum; he does; the city is surrounded for seven days; and Pabil sends out an offer of silver, gold, slaves and chariots — everything a besieging king would normally want. Kirta says no and names the one thing he came for: Hurraya. The poem is very clear that the war exists to produce an heir, not a profit."
+  },
+  {
+    "id": "canaanite_hurraya",
+    "name": { "primary": "Hurraya", "alt": ["Huraya", "Ḥry"],
+      "transliterations": { "Ugaritic": "ḥry", "etymology": "No agreed derivation. In the epic her beauty is compared to Anat's and Athtart's, which is the poem's highest available compliment." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "deceased",
+    "parentIds": ["canaanite_pabil"], "parentRoles": ["father"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Daughter of Pabil of Udum, taken by Kirta as the price of lifting the siege; she bears him many children, and when he falls ill she grieves for him with their son Ilhu and daughter Thitmanat.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: Hurraya bears Kirta many children and grieves when he falls seriously ill, along with his son Iluhau and daughter Thitmanatu." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "canaanite_kirta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, on Kirta's marriage to Hurraya and the children she bears him." } ],
+        "notes": "Kirta's wife, obtained by siege. The epic's whole first movement exists to get her into his house, because he has lost every child he had and needs an heir." },
+      { "kind": "mother-of", "personId": "canaanite_yassib",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Mother of Yassib." },
+      { "kind": "mother-of", "personId": "canaanite_ilhu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Mother of Ilhu." },
+      { "kind": "mother-of", "personId": "canaanite_thitmanat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Mother of Thitmanat." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hurraya is the daughter of Pabil of Udum whom Kirta takes as his wife at the end of the siege, and the mother of his children, including Yassib, Ilhu and Thitmanat.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Kirta epic, naming Hurraya and the children." } ], "weight": "medium" } ],
+    "notes": "Hurraya is what the war was for. Kirta's family has been destroyed — the epic opens on a king with no line at all — and El tells him in a dream where to go and what to ask for. He besieges Udum, refuses the ransom, and takes her, and she bears him the children the story needed. She is not a cipher in the poem: when Kirta falls ill it is her grief, and Thitmanat's, that the text lingers on, and Thitmanat's speech at her father's sickbed is one of the most-quoted passages in Ugaritic literature."
+  },
+  {
+    "id": "canaanite_yassib",
+    "name": { "primary": "Yassib", "alt": ["Yassub", "Yaṣṣib"],
+      "transliterations": { "Ugaritic": "yṣb", "etymology": "Generally read from a root meaning 'to stand' or 'to be established' — an heir's name, which is the joke the epic ends on." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["canaanite_kirta", "canaanite_hurraya"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Son of Kirta and Hurraya, who — with his father just recovered from a mortal illness — tells him he is no longer fit to reign and asks him to step down, and is cursed by Kirta for it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: Kirta's son Yassub, also spelled Yassib, declares that Kirta is no longer fit to reign and asks him to abdicate." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_ilhu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Brother of Ilhu." },
+      { "kind": "sibling", "personId": "canaanite_thitmanat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Brother of Thitmanat." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yassib is the son of Kirta and Hurraya who declares his recovered father unfit to rule and demands his abdication, and is cursed by him.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Kirta epic's closing scene." } ], "weight": "medium" } ],
+    "notes": "Yassib is the point of the whole epic and he arrives in the last surviving lines. Kirta fought a war to get a wife to get an heir; the heir grows up; the king falls ill and is saved by a goddess El made out of nothing; and then the heir walks in and tells his father that a king who could not get out of bed cannot judge the widow's case or feed the orphan, so he should abdicate. Kirta curses him, invoking Horon and Athtart, and the tablet breaks off. It is an unusually adult piece of writing for the Bronze Age: the boy is not wrong, and the poem does not say he is."
+  },
+  {
+    "id": "canaanite_ilhu",
+    "name": { "primary": "Ilhu", "alt": ["Iluhau", "Ilḥu"],
+      "transliterations": { "Ugaritic": "ilḥu", "etymology": "Built on il, 'god'; read as something like 'the god is brother' or 'god lives'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["canaanite_kirta", "canaanite_hurraya"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Son of Kirta and Hurraya, who grieves at his father's sickbed and is sent to fetch his sister Thitmanat without telling her how bad it is.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: Hurraya grieves when Kirta falls seriously ill, along with his son Iluhau and daughter Thitmanatu." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_yassib",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Brother of Yassib." },
+      { "kind": "sibling", "personId": "canaanite_thitmanat",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Brother of Thitmanat." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ilhu is a son of Kirta and Hurraya who grieves at his father's sickbed in the Kirta epic.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its cast." } ], "weight": "medium" } ],
+    "notes": "Ilhu is the brother who is sent to fetch his sister and told not to say why. The sickbed section of the Kirta epic is domestic in a way almost nothing else from the Bronze Age is: the weeping in the house, the errand, the instruction to keep it from her for a few hours longer. He is a minor figure and the registry did not have him, which for a poem the registry does have is a gap worth closing."
+  },
+  {
+    "id": "canaanite_thitmanat",
+    "name": { "primary": "Thitmanat", "alt": ["Thitmanatu", "Ṯtmnt", "Octavia"],
+      "transliterations": { "Ugaritic": "ṯtmnt", "etymology": "From the numeral eight: 'the eighth' — she is the eighth and youngest child, and the epic says El's blessing made the youngest the firstborn in rank." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "deceased",
+    "parentIds": ["canaanite_kirta", "canaanite_hurraya"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "Youngest daughter of Kirta and Hurraya — 'the eighth' — who weeps at her father's sickbed in the passage the epic gives its most famous lines to.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic: Kirta's daughter Thitmanatu grieves along with Hurraya and Iluhau when he falls seriously ill." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "canaanite_yassib",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Sister of Yassib." },
+      { "kind": "sibling", "personId": "canaanite_ilhu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its royal family." } ], "notes": "Sister of Ilhu." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Thitmanat is the youngest daughter of Kirta and Hurraya in the Kirta epic, whose name means 'the eighth', and who grieves at her father's sickbed.",
+      "citations": [ { "kind": "primary", "reference": "The Kirta epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Kirta epic and its cast." } ], "weight": "medium" } ],
+    "notes": "Thitmanat is called 'the eighth' because she is, and the epic makes a point of El having blessed Kirta so that the youngest would hold the rank of the firstborn — which is the kind of clause that turns up again in a great deal of later Near Eastern literature. Her scene at the sickbed is what the Kirta epic is remembered for outside specialist reading: a daughter weeping over a father who is not supposed to be able to die, because a king is a son of El, and finding out that he can."
+  },
+  {
+    "id": "canaanite_yatpan",
+    "name": { "primary": "Yatpan", "alt": ["Yaṭpan", "Yatpanu", "Yatpan the Soldier"],
+      "transliterations": { "Ugaritic": "yṭpn", "etymology": "No agreed derivation; the epic gives him the standing epithet mhr, 'soldier' or 'warrior'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0,
+      "startEvent": "The soldier Anat employs to kill Aqhat: she turns him into a bird of prey, or hides him among a flock of them, and he strikes the boy down over his refusal to give her his bow — and the bow falls into the sea and is lost.",
+      "sources": [ { "kind": "primary", "reference": "The Aqhat epic, in which Anat engages the warrior Yatpan to kill Aqhat over the bow Kothar made." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "canaanite_anat",
+        "sources": [ { "kind": "primary", "reference": "The Aqhat epic: Anat employs Yatpan and carries him to the killing." } ],
+        "notes": "Anat's hired man. He kills Aqhat for her, and Paghat then goes after him to avenge her brother — she gets him drunk and the tablet breaks before the blow lands, which is one of the more frustrating gaps in the whole corpus." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yatpan is the warrior Anat employs in the Aqhat epic to kill Aqhat over his refusal to surrender his bow, and the man Paghat sets out to avenge her brother on.",
+      "citations": [ { "kind": "primary", "reference": "The Aqhat epic." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Aqhat epic and its cast." } ], "weight": "medium" } ],
+    "notes": "Yatpan does the killing in a story the registry already carried both ends of: Aqhat and Paghat were in the corpus and the man between them was not. Anat wants the composite bow Kothar made for the boy, offers him silver and gold and then immortality for it, and is told no — with a line about how bows are not for women that the poem plainly intends as a fatal mistake. She gets El's permission, hires Yatpan, carries him over the field disguised among birds of prey, and drops him on Aqhat. Then Paghat goes looking for him with a knife under her clothes and a jug of wine, and the tablet breaks."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. PHOENICIAN: BYBLOS, AND PHILO'S COSMOGONY
+================================================================================
+
+The Phoenician tradition held seven records — Astarte, Baal Hammon,
+Baalshamin, Eshmun, Melqart, Resheph, Tanit — and not the chief deity of
+Byblos, nor any of the cast of the one surviving Phoenician cosmogony.
+
+That cosmogony comes through Philo of Byblos, who claims to be translating a
+much older Phoenician writer, Sanchuniathon, and survives only because
+Eusebius quoted him at length in order to attack him. Philo is euhemeristic:
+he presents gods as ancient kings and inventors. The Ras Shamra tablets,
+found in 1929, turned out to corroborate a good deal of what he reports, which
+is why the material is taken seriously now and was not in 1850. These records
+say on their face that the source is Philo, and what Philo is.
+
+```json
+[
+  {
+    "id": "phoenician_baalat_gebal",
+    "name": { "primary": "Baalat Gebal", "alt": ["Baalat", "Baʿalat Gebal", "Lady of Byblos"],
+      "transliterations": { "Phoenician": "bʿlt gbl", "etymology": "'Lady of Byblos' — baʿalat is the feminine of baʿal, 'lord', and Gebal is the Semitic name of the city the Greeks called Byblos." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "phoenician-archaic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "phoenician-archaic", "eraOrdering": 0,
+      "startEvent": "Chief deity of Byblos, a goddess of earth and fertility and the protector of the city's kings, whose temple stands on the acropolis; because of Byblos's Egyptian ties she is shown in Egyptian dress and headdress and was equated with Hathor by the Twelfth Dynasty.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baalat Gebal: 'Our Lady of Byblos', from West Semitic baʿalat, 'lady', the chief deity of Byblos, a female deity associated with the earth and fertility, often represented with an Egyptian hairstyle, headdress and costume because of the close ties between Byblos and Egypt, and equated with Hathor by the 12th dynasty." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "bʿlt gbl", "script": "Phoenician (transliterated)", "rom": "Lady of Byblos" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baalat Gebal as chief deity and protector of Byblos and its kings." } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baalat Gebal's association with earth and fertility." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "egyptian_hathor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baalat Gebal, equated with the Egyptian goddess Hathor by the 12th dynasty and represented in Egyptian dress." } ],
+        "notes": "Equated with Hathor, and drawn as her: Byblos sold cedar and papyrus to Egypt for two thousand years and its goddess is dressed accordingly." } ],
+    "cultRecords": [
+      { "tradition": "Phoenician", "placeName": "Byblos (Gebal)", "kind": "temple", "period": "bronze age to roman",
+        "attestation": "her temple on the Byblos acropolis and the royal dedications to her", "source": "Reference treatment of Baalat Gebal and the Temple of Baalat Gebal.",
+        "note": "Byblite kings date their inscriptions by her and call themselves her servants; the Ahiram sarcophagus and the Yehimilk inscription are part of that record." } ],
+    "sources": [ { "claim": "Baalat Gebal, 'Lady of Byblos', is the chief deity of Byblos, a goddess of earth and fertility and protector of its kings, equated with the Egyptian Hathor and represented in Egyptian dress.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Baalat Gebal, her temple and her equation with Hathor." } ], "weight": "high" } ],
+    "notes": "Baalat Gebal is the goddess of the city that gave its name to the book. Byblos ran the papyrus trade into the Greek world — biblion, the book, is named for the port — and it ran cedar into Egypt for a thousand years before that, which is why its chief goddess is drawn wearing an Egyptian wig and a Hathor headdress and is treated by Egyptians as Hathor herself. Her name is simply her office: the Lady, of Byblos. The city's kings call themselves her servants in inscriptions that are among the earliest alphabetic writing anyone has."
+  },
+  {
+    "id": "phoenician_adon",
+    "name": { "primary": "Adon", "alt": ["Adonis", "Adoni", "ʾdn"],
+      "transliterations": { "Phoenician": "ʾdn", "etymology": "The ordinary Semitic word for 'lord' — the same word as the Hebrew adon and adonai — used as a divine name and taken into Greek as Adonis." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "phoenician-archaic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "phoenician-archaic", "eraOrdering": 0,
+      "startEvent": "Worshipped at Byblos alongside El and Baalat Gebal; he stands for the annual cycle of nature, dying and returning with the year, and the Greeks took both his cult and his title — 'lord' — and made a name of it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Phoenician religion: El, Baalat and Adonis were particularly worshipped at Byblos, Adonis representing for the Phoenicians the annual cycle of nature, his original Semitic name meaning 'lord'." } ] } ],
+    "domains": [ { "sphereId": "vegetation", "contextTag": "lifelong", "term": { "value": "ʾdn", "script": "Phoenician (transliterated)", "rom": "lord" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Adon as representing the annual cycle of nature at Byblos." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Phoenician", "placeName": "Byblos, and the river Adonis (Nahr Ibrahim)", "kind": "festival", "period": "phoenician-archaic to roman",
+        "attestation": "the Byblos cult and the annual mourning", "source": "Reference treatment of the cult of Adon at Byblos.",
+        "note": "The river ran red each spring with iron-bearing silt off the mountains, and the city read it as the god's blood; the festival is mourning followed by rejoicing, which is the shape the whole Mediterranean eventually borrowed." } ],
+    "sources": [ { "claim": "Adon is the Phoenician god worshipped at Byblos beside El and Baalat Gebal, representing the annual cycle of nature, whose name means 'lord' and whom the Greeks received as Adonis.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Phoenician religion and of the Byblos triad." } ], "weight": "medium" } ],
+    "notes": "Adon is a title that became a name in a foreign language. In Phoenician he is 'the lord' — worshippers would have used the word the way the Hebrew Bible uses adonai, as a way of not saying the name — and Greeks hearing it took the substitution for the thing itself, which is how the West ended up with a god called Adonis. He is the dying-and-returning god of Byblos, mourned each spring when the Nahr Ibrahim runs red with silt. The registry had no record of him under any tradition."
+  },
+  {
+    "id": "phoenician_elioun",
+    "name": { "primary": "Elioun", "alt": ["Elyon", "Hypsistos", "Most High"],
+      "transliterations": { "Phoenician": "ʿlywn", "Greek": "Ἐλιοῦν", "etymology": "'Most High' — the same word as the Hebrew Elyon, which the Bible uses both as a title of God and, in Deuteronomy 32, in a line that has been read as older theology showing through." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "In Philo of Byblos's Phoenician History, a figure called Elioun — 'Most High' — who with a woman called Berouth settles the country around Byblos; their son is the one Philo calls Ouranos, Heaven.",
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History, as preserved by Eusebius: 'Among their contemporaries was a certain Elioun, called Most High, and a woman called Berouth, who settled the area around Byblos. From these were born Terrestrial Native, subsequently called Ouranos.'" } ] } ],
+    "domains": [ { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "ʿlywn", "script": "Phoenician (transliterated)", "rom": "Most High" },
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "phoenician_berouth",
+        "sources": [ { "kind": "primary", "reference": "Philo of Byblos, naming Elioun and Berouth together as the settlers of the country around Byblos and the parents of Ouranos." } ],
+        "notes": "Paired with Berouth in Philo's genealogy; their son is Heaven, and Heaven's son is the god Philo calls Kronos and identifies with El." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Elioun, 'Most High', is a figure in Philo of Byblos's Phoenician History who with Berouth settles the country around Byblos and fathers the figure Philo calls Ouranos.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History, preserved in Eusebius, Praeparatio Evangelica." },
+                     { "kind": "secondary", "reference": "Reference treatment of Philo of Byblos and Sanchuniathon." } ], "weight": "medium" } ],
+    "notes": "Elioun is 'Most High' in the only Phoenician cosmogony that survives, and the word is one the Hebrew Bible knows very well: El Elyon, God Most High, is what Melchizedek is priest of, and Deuteronomy 32:8 has Elyon apportioning the nations in a way that has kept commentators busy for a long time. Philo has him as a man — he is euhemeristic throughout, turning gods into early kings — and has him settle the Byblos country with a woman called Berouth. Whether that reflects real Phoenician theology or Philo's Hellenistic reworking of it is the standing question about this whole text."
+  },
+  {
+    "id": "phoenician_berouth",
+    "name": { "primary": "Berouth", "alt": ["Baruth", "Beruth"],
+      "transliterations": { "Greek": "Βηρούθ", "etymology": "Generally connected with the city name Beirut, or with the Semitic word for a covenant or a well; Philo does not gloss it." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The woman who with Elioun settles the country around Byblos in Philo of Byblos's Phoenician History, and the mother of the figure Philo calls Ouranos.",
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History: 'a certain Elioun, called Most High, and a woman called Berouth, who settled the area around Byblos'." } ] } ],
+    "domains": [], "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "phoenician_elioun",
+        "sources": [ { "kind": "primary", "reference": "Philo of Byblos, naming the pair together." } ],
+        "notes": "Paired with Elioun. The record does not add a maternity link to a son the registry does not carry: Philo's Ouranos is a Greek name for a Phoenician figure and is not recorded here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Berouth is the woman paired with Elioun in Philo of Byblos's Phoenician History, with whom he settles the country around Byblos.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." } ], "weight": "low" } ],
+    "notes": "Berouth gets one clause in one quoted fragment of one lost book, and that clause is the whole of the evidence. Her name looks like Beirut's, which would make her a city personified in the ordinary Levantine way, but Philo does not say so and the record does not either. She is here because a cosmogony with a named couple at the start of it should not be recorded with only the husband."
+  },
+  {
+    "id": "phoenician_baetylos",
+    "name": { "primary": "Baetylos", "alt": ["Baitylos", "Betyl", "bt ʾl"],
+      "transliterations": { "Greek": "Βαίτυλος", "etymology": "Generally read from the Semitic bet-el, 'house of god' — the name of a class of sacred standing stones as well as, in Philo, of a person." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the four sons of Ouranos in Philo of Byblos's theogony, alongside the figures Philo calls Kronos, Dagon and Atlas; his name is also the ordinary word for the sacred stones the Phoenicians worshipped as inhabited by a god.",
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History: Baitylos is named as one of the four sons of Ouranos." },
+                   { "kind": "secondary", "reference": "Reference treatment of the baetyl: a sacred stone regarded as housing a god, the class of object from which the name comes." } ] } ],
+    "domains": [ { "sphereId": "sacred-stones", "contextTag": "lifelong", "term": { "value": "bt ʾl", "script": "Phoenician (transliterated)", "rom": "house of god" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of baetyls as stones inhabited by a god." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Phoenician", "placeName": "throughout the Phoenician and Punic world", "kind": "cult-object", "period": "phoenician-archaic to roman",
+        "attestation": "the standing stones of Phoenician and Punic sanctuaries", "source": "Reference treatment of the baetyl.",
+        "note": "Not an image of a god but a residence: an unworked or lightly worked stone in which the god is present. The practice runs from Phoenician tophets through the black stone of Emesa to the Kaaba's own building history." } ],
+    "sources": [ { "claim": "Baetylos is named as a son of Ouranos in Philo of Byblos's Phoenician theogony, and his name is also the word for the sacred stones the Phoenicians worshipped as housing a god.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." },
+                     { "kind": "secondary", "reference": "Reference treatment of baetyls." } ], "weight": "medium" } ],
+    "notes": "Baetylos is a stone with a genealogy. In Philo he is one of four brothers, the others being the figures Philo calls Kronos — whom he explicitly identifies with El — Dagon and Atlas; in the rest of the Phoenician world the word is not a name at all but a thing, a standing stone in which a god lives. The two uses are the same idea seen from opposite ends: a sacred stone is a house of god, bet-el, and if you are writing a theogony in Greek every house of god has to be somebody's son. The registry carries El and Dagan as Canaanite records; his other brothers are not recorded, because Ouranos and Atlas are Philo's Greek names for figures this registry has no Phoenician evidence for."
+  },
+  {
+    "id": "phoenician_taautos",
+    "name": { "primary": "Taautos", "alt": ["Taaut", "Thouth", "Tautos"],
+      "transliterations": { "Greek": "Τάαυτος", "etymology": "The Egyptian Thoth, rendered through Phoenician into Greek; Philo says explicitly that this is the god the Egyptians call Thouth, the Alexandrians Thoth and the Greeks Hermes." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["phoenician_misor"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Son of Misor in Philo's genealogy and the inventor of the first letters; Philo names him as the ultimate source of the tradition Sanchuniathon transmits, and identifies him with the Egyptian Thoth and the Greek Hermes.",
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History: 'From Misor came Taautos, who discovered how to write the first letters. He is the one whom the Egyptians called Thouth, the Alexandrians Thoth, and the Greeks Hermes.'" } ] } ],
+    "domains": [ { "sphereId": "writing", "contextTag": "lifelong", "term": { "value": "Τάαυτος", "script": "Greek", "rom": "Taautos" },
+      "sources": [ { "kind": "primary", "reference": "Philo of Byblos, on Taautos as the discoverer of letters." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "egyptian_thoth",
+        "sources": [ { "kind": "primary", "reference": "Philo of Byblos, identifying Taautos with the god the Egyptians call Thouth." } ],
+        "notes": "Philo says the identification outright, which makes this one of the few cross-tradition equations in the registry that comes from an ancient source rather than a modern comparison." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Taautos is the inventor of letters in Philo of Byblos's Phoenician History, son of Misor, whom Philo identifies with the Egyptian Thoth and the Greek Hermes.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." },
+                     { "kind": "secondary", "reference": "Reference treatment of Philo of Byblos, who claims to draw on a Phoenician source by Sanchuniathon, who in turn drew on the teachings of Taautos." } ], "weight": "medium" } ],
+    "notes": "Taautos is Philo's chain of custody. The claim is that Philo translated Sanchuniathon, who in turn drew on Taautos, who invented writing — so the text presents itself as coming from the person who invented the medium it is written in, which is a very old move. He is Thoth, and Philo says so, listing the names the Egyptians, the Alexandrians and the Greeks use. In a Phoenician cosmogony the alphabet is the invention that gets a god, which is fair: the Phoenicians did more than anyone to spread it."
+  },
+  {
+    "id": "phoenician_chousor",
+    "name": { "primary": "Chousor", "alt": ["Chusor", "Chrysor", "Khousor"],
+      "transliterations": { "Greek": "Χουσώρ", "etymology": "Generally taken as the Phoenician reflex of the Ugaritic Kothar — the same craftsman god, the name worn down." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The inventor of iron and of metalwork in Philo's account, and — because Philo is euhemeristic — presented as a man rather than a god; the reference literature reads him as the Phoenician form of Kothar-wa-Hasis.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chousor: attested in the Phoenician History of Philo of Byblos, assumed to represent a Phoenician reflection of Kothar-wa-Khasis, and presented by Philo as a human rather than a god because of his euhemeristic views; the god Chusor was thought to have invented iron and metalwork." } ] } ],
+    "domains": [ { "sphereId": "craft", "contextTag": "lifelong", "term": { "value": "Χουσώρ", "script": "Greek", "rom": "Chousor" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chousor as the inventor of iron and metalwork." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "canaanite_kothar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chousor as the Phoenician reflection of the Ugaritic Kothar-wa-Hasis." } ],
+        "notes": "The same craftsman god a thousand years later and in a Greek transcription: Kothar builds Baal's palace and makes Aqhat's bow at Ugarit; Chousor invents iron in Philo." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chousor is the craftsman figure of Philo of Byblos's Phoenician History, credited with the invention of iron and metalwork, and identified as the Phoenician form of the Ugaritic Kothar-wa-Hasis.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." },
+                     { "kind": "secondary", "reference": "Reference treatment of Chousor and his relation to Kothar-wa-Khasis." } ], "weight": "medium" } ],
+    "notes": "Chousor is Kothar with the vowels worn off and a Greek ending. At Ugarit, Kothar-wa-Hasis is the divine craftsman who builds Baal's house, makes the maces that beat Yam and forges the bow that gets Aqhat killed; in Philo, a thousand years later, Chousor invents iron and is described as a man, because Philo's whole method is to say that the gods were clever early people. That the two names are the same god is one of the clearest demonstrations that Philo is transmitting something real and not inventing it — the Ugaritic tablets that prove it were not dug up until 1929."
+  },
+  {
+    "id": "phoenician_sydyk",
+    "name": { "primary": "Sydyk", "alt": ["Sedek", "Sydik", "Ṣdq"],
+      "transliterations": { "Phoenician": "ṣdq", "Greek": "Σύδυκ", "etymology": "'Righteousness' or 'justice' — the same root as the Hebrew tsedeq, and the element in the name Melchizedek, 'my king is Sydyk' or 'the king is righteousness'." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "One of the personified abstractions in Philo's cosmogony, standing for justice, paired with Misor; Philo makes the pair the ancestors of the discoverers of salt and of letters.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Phoenician religion: several deities were personifications of ideals, such as Sydyk and Misor, who represented Justice and Righteousness respectively." } ] } ],
+    "domains": [ { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "ṣdq", "script": "Phoenician (transliterated)", "rom": "righteousness" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sydyk as a personification of justice." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "phoenician_misor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment pairing Sydyk and Misor as the personifications of Justice and Righteousness in Philo's account." } ],
+        "notes": "Always paired with Misor. The two words are near-synonyms in Semitic and the pair is a hendiadys — 'justice and uprightness' — that Philo has made into two people." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sydyk is a personification of justice in Philo of Byblos's Phoenician History, paired with Misor, and the element behind the name Melchizedek.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." },
+                     { "kind": "secondary", "reference": "Reference treatment of Sydyk and Misor as Phoenician personifications of ideals." } ], "weight": "medium" } ],
+    "notes": "Sydyk is righteousness with a father and a brother. His name is the root behind Melchizedek — the priest-king of Salem in Genesis whose name means 'my king is righteousness', or 'my king is Sydyk', depending on how much Canaanite religion you are willing to hear in it — and behind Adonizedek in Joshua. Philo makes him and Misor a pair, which is what the language does anyway: sedeq and mishor are a standing word-pair in Northwest Semitic for right dealing, and a euhemerist writing in Greek turns a word-pair into two brothers."
+  },
+  {
+    "id": "phoenician_misor",
+    "name": { "primary": "Misor", "alt": ["Mishor", "Misōr", "Myšr"],
+      "transliterations": { "Phoenician": "myšr", "Greek": "Μισώρ", "etymology": "'Uprightness', 'level dealing' — from a root meaning straight or level. The word-pair sedeq-mishor is standing Northwest Semitic idiom for justice." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Personification of uprightness in Philo's cosmogony, paired with Sydyk, and the father of Taautos, who invented letters.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Phoenician religion: Sydyk and Misor represented Justice and Righteousness; from Misor came Taautos, who discovered how to write the first letters." } ] } ],
+    "domains": [ { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "myšr", "script": "Phoenician (transliterated)", "rom": "uprightness" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Misor as a personification of uprightness." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "phoenician_sydyk",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment pairing Misor with Sydyk." } ],
+        "notes": "The other half of the word-pair." },
+      { "kind": "father-of", "personId": "phoenician_taautos",
+        "sources": [ { "kind": "primary", "reference": "Philo of Byblos: 'From Misor came Taautos, who discovered how to write the first letters.'" } ],
+        "notes": "Father of the inventor of the alphabet, which makes writing the child of uprightness — a genealogy that is clearly doing moral work as well as narrative work." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Misor is a personification of uprightness in Philo of Byblos's Phoenician History, paired with Sydyk and named as the father of Taautos, the inventor of letters.",
+      "citations": [ { "kind": "primary", "reference": "Philo of Byblos, Phoenician History." },
+                     { "kind": "secondary", "reference": "Reference treatment of Sydyk and Misor." } ], "weight": "medium" } ],
+    "notes": "Misor is level ground used as a moral term, the way English uses 'straight'. He and Sydyk are a pair because the words are a pair — sedeq and mishor turn up together throughout Northwest Semitic as the formula for dealing rightly — and Philo, writing a genealogy, has to make them brothers. His son invents the alphabet, which places writing one generation downstream of honest dealing. For a Phoenician account of the world's useful inventions that is a defensible order."
+  },
+  {
+    "id": "phoenician_shadrafa",
+    "name": { "primary": "Shadrafa", "alt": ["Shadrapa", "Satrapes", "Šdrpʾ"],
+      "transliterations": { "Phoenician": "šdrpʾ", "etymology": "Generally read 'the spirit that heals', from šd, a spirit or genius, and rpʾ, the root for healing — the same root as the Rephaim." } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "phoenician-archaic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "phoenician-archaic", "eraOrdering": 0,
+      "startEvent": "A Phoenician healing god, shown as a youth gripping a serpent or a lion, worshipped at Amrit and across the Phoenician and Punic world and named in inscriptions from Palmyra to Carthage.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Phoenician religion, listing Shadrafa among the Phoenician deities, and reference treatment of Shadrafa as a healing god of the Phoenician and Punic sphere." } ] } ],
+    "domains": [ { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "šdrpʾ", "script": "Phoenician (transliterated)", "rom": "the spirit that heals" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shadrafa as a healing deity." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Phoenician", "placeName": "Amrit, and across the Phoenician and Punic world", "kind": "temple", "period": "phoenician-classical to roman",
+        "attestation": "the Amrit stele and Phoenician and Punic inscriptions naming him", "source": "Reference treatment of Shadrafa and of Phoenician religion.",
+        "note": "The Amrit stele shows him standing on a lion, holding a small lion in one hand and a weapon in the other — a healing god drawn as a hunter, which is how this culture usually draws a god who fights disease." } ],
+    "sources": [ { "claim": "Shadrafa is a Phoenician healing god, named in inscriptions across the Phoenician and Punic world, whose name is read as 'the spirit that heals'.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Phoenician religion and of Shadrafa." } ], "weight": "medium" } ],
+    "notes": "Shadrafa heals by fighting. His name is built on the same root as the Rephaim — rpʾ, to heal — and his image on the Amrit stele has him standing on a lion with another lion held by the scruff in one hand and a weapon raised in the other, which is not how a modern reader expects a healing god to be drawn. It is, though, how the Levant drew them: disease is an attacker and the god who cures it is a god who wins fights. The registry held Eshmun, the other great Phoenician healer, and not him."
+  }
+]
+```
