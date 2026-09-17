@@ -1,0 +1,832 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Slavic
+Eras (registered, exact): primordial | mythic | pantheon-era |
+  kievan-rus-historical | bylina-medieval | modern-collection
+Author pass: Slavic held 18 records — the thinnest of any major tradition in
+             this registry. This adds 23.
+
+================================================================================
+THE GAP
+================================================================================
+
+A 48-name check across the WHOLE registry returned 19 hits and 29 absences,
+and all nineteen hits were deliberate controls: the registry's own Slavic
+pantheon records plus three bogatyrs. Nothing outside the eighteen came back.
+
+That sweep was then re-run, widened to 92 names, after the first nineteen
+records had been generated — which is how block VI was found. The second sweep
+turned up the worst absence in the tradition and three more attested gods; see
+block VI. A sweep is worth re-running once its own results are in the corpus,
+because the names that were checked the first time were the names that came to
+mind the first time.
+
+Eighteen records is the smallest holding of any tradition in this corpus with
+a literature, and the shape of it is unusual. What was there was the East
+Slavic pantheon of the Kiev idols — Perun, Veles, Mokosh, Svarog, Dazhbog,
+Stribog, Simargl — plus a handful of reconstructed abstractions and three
+bogatyrs. What was missing was everything with a physical attestation and
+everything with a story:
+
+- **The Rügen temples.** Svetovid of Arkona, whose four-headed statue Saxo
+  Grammaticus described and whose temple the Danes destroyed in 1168, was
+  absent — and so were Rugievit, Porevit and Porenut, the three multi-headed
+  gods of the same island whose statues Saxo also described. These are the
+  best-attested Slavic deities there are, because a hostile eyewitness wrote
+  down what the statues looked like before knocking them over.
+- **The seasonal cycle.** The registry held Marzanna, who is winter and death,
+  and neither Jarilo, whom she marries and murders every autumn, nor Zhiva,
+  who is born out of her death, nor Kupala, whose midsummer night the cycle
+  turns on.
+- **The folklore.** No Baba Yaga. No Koschei the Deathless. No Zmey Gorynych.
+- **The bylina cast beyond three names.** The registry held Ilya Muromets,
+  Dobrynya Nikitich and Alyosha Popovich and not Svyatogor, whom the earth
+  cannot carry; not Mikula Selyaninovich, the ploughman who is stronger than
+  all of them; not Sadko; not the Nightingale the Robber; and not Prince
+  Vladimir, whose court the whole Kiev cycle is set at.
+- **The bird-maidens.** Alkonost, Sirin and Gamayun.
+- **One of the six idols of Kiev.** The Primary Chronicle's entry for 980 lists
+  the gods Vladimir set up on the hill: Perun, Khors, Dazhbog, Stribog, Simargl
+  and Mokosh. The registry held five of the six. It did not hold **Khors**, who
+  is the most frequently mentioned Slavic god after Perun. This was found by the
+  second sweep, not the first.
+- **Three more chronicle-attested West Slavic gods.** Yarovit, whose temple at
+  Wolgast held a shield instead of a statue; and Prove and Podaga, the two
+  Wagrian gods Helmold names, one worshipped at an oak grove with no image and
+  one at an image with no grove.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+**The household and landscape spirits are classes.** Domovoi, rusalka, leshy,
+vodyanoy, bannik, kikimora and vila are kinds of being — there is a domovoi
+behind every stove in the Slavic world, not one Domovoi — and this programme
+does not record kinds. They are REJECT rows.
+
+**The bird-maidens are not.** Alkonost, Sirin and Gamayun are three named
+individuals with distinct offices, depicted as three in the same lubok prints,
+and they go in as three records.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search, and the citations
+name the reference treatments consulted. Slavic mythology has a particular
+source problem, which the records state where it bites: there is almost no
+native written tradition, the best descriptions of the gods are by hostile
+Christian chroniclers, and a good deal of what circulates as Slavic mythology
+is nineteenth-century Romantic reconstruction. Where a figure rests on
+reconstruction rather than attestation the record says so.
+
+================================================================================
+AUTHORED FIGURES — I. THE TEMPLES ON RÜGEN
+================================================================================
+
+```json
+[
+  {
+    "id": "slavic_svetovid",
+    "name": { "primary": "Svetovid", "alt": ["Svetovit", "Svantevit", "Sventovit", "Svyatovit"],
+      "transliterations": { "Slavic": "Svętovitъ", "etymology": "The second element is -vit, a common element of West Slavic theonyms; the first is read either as svętъ, holy, or as světъ, light or world. Saxo's Latin form is Svantovitus." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "God of abundance and of war, and the chief god of the Rani, the Slavic tribe of the island of Rügen. His cult was organised at Cape Arkona, where his principal temple stood.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Svetovit: the god of abundance and war and the chief god of the Slavic tribe of the Rani, with his organised cult located on the island of Rügen at Cape Arkona, where his main temple was also located." } ] },
+      { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 1,
+        "startEvent": "The medieval chroniclers describe his statue as four-headed, holding a horn and a sword. Saxo Grammaticus, writing of Valdemar I of Denmark's war on the Wends of Rügen in 1168, described the worship, the customs and the tall four-headed statue in detail — and then the taking of Arkona and the destruction of the temple.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to the descriptions of medieval chroniclers the statue representing this god had four heads and held a horn and a sword; and the Danish chronicler Saxo Grammaticus in his Gesta Danorum described the war fought in 1168 by the Danish king Valdemar I against the Wends of Rügen, the conquest of their city at cape Arkona and the destruction of the grand temple of Svantevit that stood there, meticulously describing the worship of Svantevit, the customs associated with it and the tall four-headed statue of the god." } ] } ],
+    "domains": [
+      { "sphereId": "abundance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Svetovit as the god of abundance." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Svetovit as a god of war and chief god of the Rani." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the worship and customs at Arkona as described by Saxo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "Cape Arkona, Rügen", "kind": "temple-cult", "period": "pantheon-era to 1168",
+        "attestation": "Saxo Grammaticus's eyewitness-derived account in the Gesta Danorum", "source": "Reference treatments of Svetovit and of the destruction of Arkona in 1168.",
+        "note": "The cult ends on a date: the temple was destroyed by Valdemar I's Danes in 1168, which is also the reason there is a description of it." } ],
+    "sources": [ { "claim": "Svetovid is the four-headed god of abundance and war, chief deity of the Rani of Rügen, whose temple at Cape Arkona was described by Saxo Grammaticus and destroyed by the Danes in 1168.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Svetovit, Arkona and Saxo Grammaticus's account." } ], "weight": "high" } ],
+    "notes": "He is the best-attested god in this whole tradition and the registry did not have him, which is the central oddity of the Slavic holding: the corpus had the reconstructed abstractions and not the god whose statue a named twelfth-century writer stood in front of and measured. The four heads face the four directions; the horn was filled with wine each year and the level in it the following year was read as the harvest forecast. Saxo describes all of it, in detail, in the course of explaining why it was right to pull it down."
+  },
+  {
+    "id": "slavic_rugievit",
+    "name": { "primary": "Rugievit", "alt": ["Rugiaevit", "Rugiewit", "Ruyevit"],
+      "transliterations": { "Slavic": "Rujevitъ", "etymology": "The -vit element again; the first is usually connected to the name of Rügen itself or to the Rani." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "One of the three gods of the stronghold at Charenza on Rügen, each with his own temple. Saxo describes his statue as having seven faces, seven swords at his belt and an eighth in his hand.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Saxo Grammaticus mentioned multi-headed deities of other Slavic tribes — Rugievit, Porewit and Porentius; Rugiaevit's statue had seven faces, seven swords at his belt and an eighth one in his hand; and in the stronghold there were three temples dedicated to Rugiaevit, Porevit and Porenut." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rugiaevit's eight swords." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_porevit",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three temples in the stronghold, dedicated to Rugiaevit, Porevit and Porenut." } ],
+        "notes": "One of the three gods of the same stronghold." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "the stronghold at Charenza, Rügen", "kind": "temple-cult", "period": "pantheon-era to 1168",
+        "attestation": "Saxo Grammaticus's description of the three temples", "source": "Reference treatment of the Rügen cults.",
+        "note": "Three gods, three temples, one fortified site — the only Slavic temple complex described from the outside by someone who saw it." } ],
+    "sources": [ { "claim": "Rugievit is one of the three gods of the Rügen stronghold described by Saxo Grammaticus, his statue having seven faces, seven swords at his belt and an eighth in his hand.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rugiaevit and the Rügen temples." } ], "weight": "high" } ],
+    "notes": "Eight swords and seven faces, and nothing else survives: no myth, no consort, no story. That is the ordinary condition of Slavic religion in the written record — a statue counted by an enemy and then destroyed — and the record does not pad it out with reconstruction."
+  },
+  {
+    "id": "slavic_porevit",
+    "name": { "primary": "Porevit", "alt": ["Porewit", "Porevith"],
+      "transliterations": { "Slavic": "Porevitъ", "etymology": "The -vit element; the first is unresolved, with 'strength' and a personal-name derivation both proposed." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "The second of the three gods of the Rügen stronghold. Saxo describes his statue as having five faces and no weapons at all.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Porevit had a statue with five faces and no weapons; in the stronghold there were three temples dedicated to Rugiaevit, Porevit and Porenut." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_rugievit",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three temples of the stronghold." } ], "notes": "One of the three." },
+      { "kind": "companion", "personId": "slavic_porenut",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three temples of the stronghold." } ], "notes": "One of the three." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Porevit is one of the three gods of the Rügen stronghold, whose statue had five faces and no weapons.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Porevit and the Rügen temples." } ], "weight": "high" } ],
+    "notes": "The unarmed one, which in a set of three where the other two carry eight swords and a raised chin is the only distinguishing fact anyone recorded. The domains array is empty because the sources give no sphere and this programme does not invent one from an iconographic absence."
+  },
+  {
+    "id": "slavic_porenut",
+    "name": { "primary": "Porenut", "alt": ["Porenutius", "Porentius", "Poremut"],
+      "transliterations": { "Slavic": "Porenutъ", "etymology": "Unresolved, as with Porevit; Saxo's Latin is Porenutius." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "The third of the three gods of the Rügen stronghold. His statue had four faces and a fifth on its breast, which the figure held by the forehead with its left hand and by the chin with its right.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Porenut had four faces and one additional one that was placed on his breast, held by the forehead with his left hand while with the right he held up its chin." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_porevit",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three temples of the stronghold." } ], "notes": "One of the three." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Porenut is one of the three gods of the Rügen stronghold, whose statue had four faces and a fifth on the breast, held up by both hands.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Porenut and the Rügen temples." } ], "weight": "high" } ],
+    "notes": "A statue holding its own fifth face up by the chin is the single most peculiar image in the Slavic record, and what it meant is not known. Saxo counted the faces and moved on. This is what the tradition's attestation actually looks like, and it is worth having in the corpus in that condition rather than dressed up."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE SEASONAL CYCLE
+================================================================================
+
+The registry held Marzanna, who is winter and death, and held nothing she acts
+on. The reconstructed Slavic year is a cycle of four: a god who is born, grows,
+marries, betrays and is killed; the goddess who kills him and then dies herself;
+the life that comes out of her death; and the midsummer night on which the turn
+happens. Three of those four were missing.
+
+These four records are the most heavily qualified in this batch, and the
+qualification is on the records, not buried here. Jarilo's myth is a twentieth-
+century reconstruction by Radoslav Katičić and Vitomir Belaj out of comparative
+folk-song material; Kupala as a *god* is a personification of a festival, named
+as an idol only in a seventeenth-century chronicle; Devana rests on Jan Długosz,
+whose Slavic pantheon most modern scholars do not accept. Živa alone has a
+straightforward medieval attestation, in Helmold's Chronica Slavorum. Each
+record says which of these it is.
+
+```json
+[
+  {
+    "id": "slavic_jarilo",
+    "name": { "primary": "Jarilo", "alt": ["Yarilo", "Jarylo", "Jaryło", "Juraj", "Jurij"],
+      "transliterations": { "Slavic": "Jarilo", "etymology": "From the root jar-, carrying both 'spring' and 'vigour, ardour, heat'; the same root gives jarina, spring wheat, and jar, the spring sowing." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "cyclically slain and reborn", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of vegetation, fertility and spring, whose mythical life cycle is that of the wheat crop: born when it is sown, flourishing in youth, and dying a sacrificial death at harvest. He is born and killed again every year.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Radoslav Katičić and Vitomir Belaj reconstructed Jarilo as a life-death-rebirth deity, believed to be reborn and killed every year, whose mythical life cycle mirrored that of the wheat crop, from its birth when sown through its flourishing youth to its sacrificial death at harvest time." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "He marries Morana at the summer solstice, and the union of the two is what assures the earth abundance and fertility for the year. He then betrays her, and she kills him for it — which is how she becomes the goddess of winter and how the cycle of the seasons begins.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the divine wedding of Jarilo and Morana was celebrated at the summer solstice, and their sacred union assured abundance, fertility and blessing to the earth; after the marriage Jarilo was unfaithful, which enraged Morana and caused her to kill him, whereupon she became a winter goddess and the cycle of the seasons began." } ] } ],
+    "domains": [
+      { "sphereId": "vegetation-and-spring", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Jarilo as a god of vegetation, fertility and springtime." } ] },
+      { "sphereId": "agrarian-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: his life cycle mirrors that of the wheat crop, and his marriage assures the earth's fertility for the year." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "slavic_marzanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the solstice marriage of Jarilo and Morana, whose union assures abundance and fertility." } ],
+        "notes": "Recorded with a non-symmetric kind on purpose. The marriage is the centre of the reconstruction and it lasts one season; recording it as a standing spouse edge would state something the cycle contradicts every autumn." },
+      { "kind": "killed-by", "personId": "slavic_marzanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Jarilo was unfaithful after the marriage, Morana killed him for it, and in doing so became the goddess of winter." } ],
+        "notes": "The registry already held the killer. It did not hold the person killed, which is the whole reason her winter means anything." },
+      { "kind": "reconstructed-son-of", "personId": "slavic_perun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Katičić and Belaj reconstruction, in which Jarilo is the son of the thunder god, stolen on the night of his birth and raised in the underworld." } ],
+        "notes": "The kind says 'reconstructed' because that is the evidential status of it. No medieval source names Jarilo's father; the filiation is inferred from comparative folk-song material by twentieth-century scholars. It is not entered in parentIds, because parentIds is where this corpus records descent it is prepared to assert." },
+      { "kind": "reconstructed-fosterling-of", "personId": "slavic_veles",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the same reconstruction, in which the newborn is taken to the underworld and raised by the god who took him." } ],
+        "notes": "Same status, same reason, and the same refusal to write it into parentIds." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "South Slavic and East Slavic countryside", "kind": "seasonal-rite", "period": "attested in folk practice into the modern period",
+        "attestation": "Spring processions in which a youth on a white horse is led through the village as Jarilo, recorded by folklorists", "source": "Reference treatments of Jarilo and of the Jurjevo/Green George spring rites.",
+        "note": "The rite outlived the god by a thousand years and is the main reason anyone can reconstruct him at all. Scholars have also proposed that he had equine characteristics or was conceived of as a horse." } ],
+    "sources": [ { "claim": "Jarilo is a Slavic vegetation and fertility god of the spring, reconstructed by Katičić and Belaj as a life-death-rebirth deity who marries Morana at midsummer, betrays her, and is killed by her at harvest, beginning the cycle of the seasons.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Jarilo, of the Katičić and Belaj reconstruction, and of the Jarilo–Morana seasonal myth." } ], "weight": "medium" } ],
+    "notes": "The weight on this record is medium and not high, and the reason is stated rather than hidden: there is no medieval text that tells this story. It is assembled in the twentieth century out of Croatian, Serbian and Russian spring songs by Katičić and Belaj, and what it reconstructs is a Common Slavic myth nobody wrote down. That is worth having in the registry — it is the single most developed reconstruction Slavic studies has produced — but it is worth having labelled. The registry's prior state was worse in both directions: it held Marzanna with no husband to murder, and it held the reconstructed abstractions Belobog and Chernobog with no label at all."
+  },
+  {
+    "id": "slavic_kupala",
+    "name": { "primary": "Kupala", "alt": ["Kupalo", "Kupailo", "Ivan Kupala"],
+      "transliterations": { "Slavic": "Kupalo", "etymology": "From kupati, to bathe — the bathing is the rite, and the name of the god is taken from the name of the night rather than the other way round. The Ivan is John the Baptist, attached when the festival was fixed to his nativity." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "unspecified", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The personification of the Slavic midsummer festival — the night of the summer solstice, the longest day and shortest night of the year — named as an idol in early modern East Slavic chronicles. The rites are of fertility and self-purification: bonfires leapt over in couples, bathing in rivers, wreaths floated on the water, and the search for the fern flower that blooms on that night alone.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ivan Kupala Night is an ancient Slavic festival marking midsummer and the summer solstice, the longest day and shortest night of the year, drawing on pagan and Slavic traditions; it is one of the oldest surviving Slavic pagan festivals, celebrated across Russia, Ukraine, Belarus and Poland, with rituals mainly concerned with fertility and self-purification, and it coincides with the nativity of John the Baptist." } ] } ],
+    "domains": [
+      { "sphereId": "midsummer-and-solstice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kupala Night as the Slavic midsummer and solstice festival." } ] },
+      { "sphereId": "purification-by-water-and-fire", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the rituals are mainly about fertility and self-purification, by bathing and by fire." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "Russia, Ukraine, Belarus and Poland", "kind": "seasonal-rite", "period": "pre-Christian through the present",
+        "attestation": "Continuously observed midsummer festival, one of the oldest surviving Slavic pagan festivals, syncretised with the nativity of John the Baptist", "source": "Reference treatments of Ivan Kupala Night.",
+        "note": "Unlike every other figure in this batch, the evidence here is not a chronicle but an unbroken practice. It is still kept." } ],
+    "sources": [ { "claim": "Kupala is the personified Slavic midsummer festival of the summer solstice, whose rites concern fertility and self-purification and which survives, syncretised with the nativity of John the Baptist, as Ivan Kupala Night.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kupala Night and Ivan Kupala Night across the Slavic world." } ], "weight": "medium" } ],
+    "notes": "The record states the awkward thing about this figure rather than working around it: the festival is certainly old and certainly pagan, and the *god* is probably a back-formation from its name. Kupalo is named as an idol in early modern East Slavic chronicles, but the noun means 'bather', and the consensus reading is that a clerical writer met a festival called Kupala and inferred a god behind it. Sex is left unspecified for the same reason — the sources do not agree, and a figure derived from a neuter festival name has no attested sex to record. This is ingested because a personification named as a god in the source tradition's own chronicles is a figure the registry should hold; it is ingested at medium weight with the derivation stated because the alternative — quietly writing a solstice god with a birth, a consort and a domain list — is exactly the kind of invention this programme refuses."
+  },
+  {
+    "id": "slavic_zhiva",
+    "name": { "primary": "Živa", "alt": ["Zhiva", "Siwa", "Siva", "Živena", "Żywia", "Razivia"],
+      "transliterations": { "Slavic": "Živa", "etymology": "From živъ, 'living, alive' — the name is the adjective. Helmold's Latin is Siwa." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "Goddess of life, worshipped by one of the tribes of the Obodrite confederation of the Polabian Slavs. She appears in exactly one medieval source, the Chronica Slavorum of Helmold of Bosau, who names her as the goddess of the Polabians.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Živa, Zhiva, Latin Siwa, is a mother goddess of one of the tribes belonging to the Obodritic confederation of the Polabian Slavs, and the goddess appears only in the Chronicle of Helmold of Bosau; later tradition treats her as a goddess of life, love, marriage and fertility worshipped in the area of modern Poland, Slovakia and parts of Germany." } ] } ],
+    "domains": [
+      { "sphereId": "life", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Živa as the goddess of life, her name being the adjective 'living'." } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Živa in later tradition as a goddess of life, love, marriage and fertility." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "slavic_marzanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Slavic seasonal opposition between the goddess of life and the goddess of winter and death." } ],
+        "notes": "A non-symmetric kind, deliberately. The life-against-death pairing is how the seasonal material is read, but it is a reading, and this record will not push a symmetric claim onto a pre-existing record that was not authored with it." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "the Obodrite lands, Polabia", "kind": "tribal-cult", "period": "pantheon-era",
+        "attestation": "Helmold of Bosau, Chronica Slavorum, twelfth century", "source": "Reference treatment of Živa and of Helmold's Chronica Slavorum.",
+        "note": "Helmold's chronicle covers the conquest and conversion of the Polabian Slavs from about 800 to 1171, and is one of the two chronicles — with Saxo's — on which nearly the whole of West Slavic religion rests." } ],
+    "sources": [ { "claim": "Živa is the goddess of life of an Obodrite tribe of the Polabian Slavs, named in Helmold of Bosau's twelfth-century Chronica Slavorum.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Živa, of the Polabian Slavs and of Helmold's Chronica Slavorum." } ], "weight": "high" } ],
+    "notes": "The equation of Živa with Vesna is not made here, and Vesna is not ingested. It is a modern conflation: Vesna is a personification of spring in later South Slavic folklore and literature with no medieval attestation as a deity, and Živa is a Polabian tribal goddess named once, in Latin, by a German priest. Popular sources merge them because both are 'the opposite of winter'. That is not an identification, and the census carries Vesna as a REJECT row on exactly that ground. What Živa has, and what most of this tradition does not, is one clean sentence in a dated chronicle."
+  },
+  {
+    "id": "slavic_devana",
+    "name": { "primary": "Devana", "alt": ["Dziewanna", "Dzievana", "Dziewonna"],
+      "transliterations": { "Slavic": "Děvana", "etymology": "Usually from děva, 'maiden'; Długosz's own derivation is from the Latin Diana, which is the problem with the whole entry." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Goddess of hunting and of the wilderness, named by the fifteenth-century Polish historian Jan Długosz in his Annales seu cronici incliti regni Poloniae, where she is given as the Slavic equivalent of the Roman Diana.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Devana or Dziewanna is the Slavic equivalent of the Roman goddess Diana, mentioned by the fifteenth-century Polish historian Jan Długosz in Annales seu cronici incliti regni Poloniae; she was the goddess of hunting and wilderness, and in her attributes resembles the Greek Artemis and the Roman Diana." } ] } ],
+    "domains": [
+      { "sphereId": "hunting", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Devana as the goddess of hunting." } ] },
+      { "sphereId": "wilderness", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Devana as the goddess of the wilds." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Devana is a Polish goddess of hunting and the wilderness named by Jan Długosz in the fifteenth century as the Slavic Diana, an attribution most modern scholars do not accept.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Devana, of Dziewanna, and of the reliability of Długosz's Annales as a source for Slavic mythology." } ], "weight": "low" } ],
+    "notes": "Weight low, and the record says why on its face: most contemporary scholars do not regard the Annales as a reliable source for Slavic mythology and doubt that such a deity existed. Długosz's method was to read Roman gods onto Poland — he supplies a Slavic Jupiter, a Slavic Ceres, a Slavic Pluto and a Slavic Diana, in order, which is not how pantheons are found. She is ingested rather than rejected for one reason: the name is real and old in Polish, dziewanna is still the word for mullein, and the figure has been a fixed part of the Polish tradition for five hundred years on the strength of the entry. A registry of what traditions hold should hold her, at low weight, with the objection attached. The cultRecords array is empty because there is no cult to record — that is the objection."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE THREE ANTAGONISTS OF THE FOLKTALE
+================================================================================
+
+These three are the best-known Slavic figures in the world and the registry held
+none of them. They are not deities and they are not recorded as deities; they are
+the antagonists of the East Slavic wonder-tale and the bylina, and they are named
+individuals rather than classes — there is one Koschei and one Baba Yaga, which
+is exactly what distinguishes them from the domovoi and the rusalka that this
+batch rejects.
+
+Zmey Gorynych is the reason the omission mattered most: the registry already held
+Dobrynya Nikitich, and Dobrynya's single defining deed is killing this dragon.
+
+```json
+[
+  {
+    "id": "slavic_baba_yaga",
+    "name": { "primary": "Baba Yaga", "alt": ["Baba Jaga", "Baba Roga", "Ježibaba"],
+      "transliterations": { "Slavic": "Баба Яга", "etymology": "Baba is 'old woman, grandmother' across Slavic; the second element is unresolved, with cognates in Polish jędza and Czech jezinka, all meaning something like 'witch' or 'fury'." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "modern-collection" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 0,
+      "startEvent": "A hag of the East Slavic tale who flies through the air in a mortar, using the pestle as a rudder and sweeping away her tracks behind her with a broom of silver birch. She lives in the forest in a log cabin that stands and moves on a pair of dancing chicken legs.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Russian tales Baba Yaga is portrayed as a hag who flies through the air in a mortar, using the pestle as a rudder and sweeping away the tracks behind her with a broom made of silver birch, and who lives in a log cabin that moves around on a pair of dancing chicken legs." } ] },
+      { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 1,
+        "startEvent": "Her function in the tale is not fixed. She appears as the villain who threatens to eat the child who comes to her door, and equally as the donor who gives the hero the horse, the advice or the object without which the quest fails — sometimes both within one tale, depending on how the visitor behaves at her threshold.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baba Yaga's ambiguous role in the Russian wonder-tale, appearing as villain, as donor and as both." } ] } ],
+    "domains": [
+      { "sphereId": "witchcraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baba Yaga as the witch of the Russian tale." } ] },
+      { "sphereId": "the-forest-threshold", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: she lives in the forest in a hut on chicken legs, at the boundary the hero must cross." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Baba Yaga is the hag of East Slavic folklore who flies in a mortar steered with a pestle, sweeps away her tracks with a birch broom, lives in a hut on chicken legs, and functions in the tale as villain, as donor, or as both.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Baba Yaga in Russian folklore and in the Afanasyev tale corpus." } ], "weight": "high" } ],
+    "notes": "The best-known figure this tradition has produced, and the registry did not hold her. No relations are recorded, and that is not an oversight: she meets a different hero in every tale and is kin to none of them, which is precisely her position in the structure — she is what stands between the ordinary world and the other one, and the hero is a stranger at her door by definition. A verified-solitary verdict carries this rather than inventing her a family."
+  },
+  {
+    "id": "slavic_koschei",
+    "name": { "primary": "Koschei the Deathless", "alt": ["Koshchei", "Kashchei", "Koshchey Bessmertny", "Koschei the Immortal"],
+      "transliterations": { "Slavic": "Кощей Бессмертный", "etymology": "Contested: derived either from kostь, 'bone', which suits his emaciated depiction, or from a Turkic loan košči, 'captive, slave'. The epithet Bessmertny is simply 'deathless'." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "deathless", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "modern-collection" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 0,
+      "startEvent": "An immortal antagonist of the East Slavic wonder-tale, who abducts the hero's bride and cannot be killed by any ordinary means, because his death is kept outside his body.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of 'The Death of Koschei the Deathless' in the tale collection of Alexander Afanasyev." } ] },
+      { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 1,
+        "startEvent": "His soul is hidden separately from his body, inside a needle, which is inside an egg, which is inside a duck, which is inside a hare, which is inside an iron chest, which is buried under a green oak, which stands on the island of Buyan in the ocean. Breaking the needle kills him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Koschei's soul is hidden separate from his body inside a needle, which is in an egg, which is in a duck, which is in a hare, which is in an iron chest, which is buried under a green oak tree, which is on the island of Buyan, in the ocean." } ] } ],
+    "domains": [
+      { "sphereId": "deathlessness", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Koschei as the Deathless, whose death is kept outside his body." } ] },
+      { "sphereId": "abduction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Koschei as the abductor of the hero's bride in the Afanasyev tales." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [
+      { "epithetId": "Бессмертный", "original": "Бессмертный", "language": "russian", "transliteration": "Bessmertny",
+        "contextTag": "standing epithet", "notes": "The Deathless; it is part of the name in the tale titles and is the whole of his characterisation.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Koschei Bessmertny, 'Koschei the Deathless', as the title under which the tale is collected." } ] } ],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Koschei the Deathless is the immortal antagonist of the East Slavic wonder-tale whose death is hidden in a needle inside an egg inside a duck inside a hare inside an iron chest buried under an oak on the island of Buyan.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Koschei and of Afanasyev's 'The Death of Koschei the Deathless'." } ], "weight": "high" } ],
+    "notes": "The nested hiding of the soul is one of the most widely distributed motifs in Eurasian folklore and this is its most famous instance, which is reason enough to hold the record. He is entered as a numen and not a deity because no source treats him as one; he has no cult, no prayer and no festival, and the record does not manufacture him any. No relation is recorded to Baba Yaga. They appear in the same tale — in 'Marya Morevna' the hero wins from her the horse that can outrun his — but the sources make them neither allies nor enemies, and this programme does not draw an edge because two figures share a page."
+  },
+  {
+    "id": "slavic_zmey_gorynych",
+    "name": { "primary": "Zmey Gorynych", "alt": ["Zmiy Gorynych", "Zmaj Ognjeni", "Gorynych"],
+      "transliterations": { "Slavic": "Змей Горыныч", "etymology": "Zmey is 'serpent, dragon'. Gorynych is read either as a patronymic from gora, 'mountain' — the son of the mountain — or from goret', 'to burn'. Both readings are current and both fit the creature." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "bylina-medieval" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "bylina-medieval", "eraOrdering": 0,
+      "startEvent": "A dragon of East Slavic epic and tale: in the Russian and Ukrainian descriptions he has three heads, is green, walks on two back paws with small front paws, and breathes fire.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Russia and Ukraine Zmey Gorynych has three heads, is green, walks on two back paws, has small front paws, and spits fire." } ] },
+      { "typeStatus": "numen", "era": "bylina-medieval", "eraOrdering": 1,
+        "startEvent": "In the bylina he is killed by Dobrynya Nikitich, the second of the three great bogatyrs of the Kievan cycle. The fight is the deed Dobrynya is known for.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to one bylina, Zmey Gorynych was the dragon killed by Dobrynya Nikitich." } ] } ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zmey Gorynych as fire-breathing." } ] },
+      { "sphereId": "abduction-predation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the dragon of the bylina, who carries off captives and is fought by the bogatyr." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "slain-by", "personId": "slavic_dobrynya_nikitich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to one bylina, Zmey Gorynych was the dragon killed by Dobrynya Nikitich." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Dobrynya record. The direction is the informative one anyway: the registry held the dragon-slayer and not the dragon, which is the ninth instance of that exact fault this programme has now recorded." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Zmey Gorynych is the three-headed fire-breathing dragon of East Slavic epic, killed in the bylina by Dobrynya Nikitich.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Zmey Gorynych and of the Dobrynya Nikitich bylina." } ], "weight": "high" } ],
+    "notes": "Head-counts vary by version — three is standard in the Russian and Ukrainian material, and versions with six, nine and twelve are recorded, sometimes with the heads regrowing as they are cut. The record states the standard and does not average the variants into a number no source gives."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE BYLINA CAST BEYOND THE THREE
+================================================================================
+
+The registry held Ilya Muromets, Dobrynya Nikitich and Alyosha Popovich, the
+three bogatyrs of the standard triad, connected to each other by companion edges
+and to nothing else. It held no court for them to serve at, no opponent for any
+of them to fight, and neither of the two figures the epic tradition itself
+treats as stronger than all three.
+
+Five records: the giant the earth will not carry; the ploughman who is stronger
+than the giant; the Novgorod guslar, who belongs to the other cycle entirely;
+the robber Ilya brings in on a stirrup; and the prince whose hall the whole
+Kievan cycle is set in.
+
+```json
+[
+  {
+    "id": "slavic_svyatogor",
+    "name": { "primary": "Svyatogor", "alt": ["Svyatogor the Giant", "Sviatogor"],
+      "transliterations": { "Slavic": "Святогор", "etymology": "From svyatoy, 'holy', and gora, 'mountain' — the Holy Mountain, which is both his name and where he lives, because level ground will not hold him." } },
+    "type": "mortal", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "bylina-medieval" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 0,
+      "startEvent": "A giant bogatyr of the byliny, so heavy that Mother Earth cannot carry him; he keeps to the mountains because the ordinary ground will not bear his weight.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Svyatogor is a mythical bogatyr in the Russian byliny, with a name derived from the words for 'sacred mountain', whom Mother Earth cannot support." } ] },
+      { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 1,
+        "startEvent": "He meets a ploughman carrying a small bag, and cannot lift it: the bag holds the pull of the earth, and the strongest being in the epic tradition sinks into the ground trying. His strength is the largest in the cycle and the story about it is a story about its limit.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Svyatogor cannot overcome the 'pull of the earth' contained in the bag, which the ploughman Mikula Selyaninovich is able to lift." } ] } ],
+    "domains": [
+      { "sphereId": "prodigious-strength", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Svyatogor as the giant bogatyr whose weight the earth cannot support." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "outmatched-by", "personId": "slavic_mikula_selyaninovich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the meeting of Svyatogor and the ploughman, and of the bag with the weight of the whole earth in it that Svyatogor cannot lift." } ],
+        "notes": "The kind is non-symmetric and directional because the encounter is. It is not a feud and not a rivalry — it is a test the giant fails once, conclusively." },
+      { "kind": "associate-of", "personId": "slavic_ilya_muromets",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the tale 'Ilya Muromets and Svyatogor' forms part of the Ilya Muromets cycle." } ],
+        "notes": "Deliberately the weakest available kind. They travel together in the cycle and in most versions Svyatogor's strength passes to Ilya at his death, but the bylina record is inconsistent about what passes and how, and 'companion' would assert a settled bond the sources do not settle. Non-symmetric, so nothing is written onto the pre-existing Ilya record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Svyatogor is the giant bogatyr of the Russian byliny whom the earth cannot carry, and who cannot lift the small bag holding the pull of the earth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Svyatogor, of the byliny cycles, and of the bag of earthly weight." } ], "weight": "high" } ],
+    "notes": "The byliny about the giants are studied outside both the Kievan and the Novgorodian series, on the grounds that they connect to a pre-Christian cult of Mother Earth rather than to any court. That placement is why he is easy to miss from a registry built out of the Kiev cycle, and it is also why he matters: he is the oldest-looking layer the Russian epic has."
+  },
+  {
+    "id": "slavic_mikula_selyaninovich",
+    "name": { "primary": "Mikula Selyaninovich", "alt": ["Mikula the Villager's Son", "Mikula Selianinovich"],
+      "transliterations": { "Slavic": "Микула Селянинович", "etymology": "Mikula is the Slavic form of Nicholas; the patronymic is from selyanin, 'villager, peasant' — the son of the countryman, which is the entire point of him." } },
+    "type": "mortal", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "bylina-medieval" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 0,
+      "startEvent": "A bogatyr who is a ploughman, from the Novgorodian cycle of byliny. The recurring plot is that a warrior bogatyr turns out to be weaker than he is: cannot pull his plough out of the soil, cannot lift his bag, cannot outrace him — because Mother Earth loves him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mikula Selyaninovich is a Russian epic hero and bogatyr-plowman of the Novgorod Republic bylina cycle; a common plot trope is that another bogatyr of the warrior type turns out to be weaker than Mikula — cannot pull his plow out of the soil, cannot lift his bag, cannot race him — because Mother Earth loves him." } ] },
+      { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 1,
+        "startEvent": "He alone can lift the bag with the weight of the whole earth in it, which Svyatogor cannot.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: this ploughman is able to lift a bag with an 'all-Earth weight' that Svyatogor cannot overcome." } ] } ],
+    "domains": [
+      { "sphereId": "agriculture-ploughing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mikula as the bogatyr-ploughman of the Novgorodian cycle." } ] },
+      { "sphereId": "prodigious-strength", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: warrior bogatyrs are shown to be weaker than Mikula, because Mother Earth loves him." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "outmatched", "personId": "slavic_svyatogor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Svyatogor's failure to lift the bag of earthly weight that Mikula carries." } ],
+        "notes": "The other half of the same encounter, written from this side because a reader coming to either record should find the other." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mikula Selyaninovich is the ploughman-bogatyr of the Novgorodian byliny, stronger than the warrior heroes because the earth favours him, and the only one who can lift the bag containing the weight of the whole earth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mikula Selyaninovich and of the bag of earthly weight." } ], "weight": "high" } ],
+    "notes": "The most ideologically loaded figure in the Russian epic — the peasant who is stronger than every armed hero in the cycle, and stronger because he works the ground rather than in spite of it — and the registry held the armed heroes and not him. His usual companion in the byliny is Volga Svyatoslavich, who is not in this batch: the search that returned Mikula did not return a usable treatment of Volga, and he is carried as a BLOCKED row rather than written from memory."
+  },
+  {
+    "id": "slavic_sadko",
+    "name": { "primary": "Sadko", "alt": ["Sadko the Guslar", "Sadko of Novgorod"],
+      "transliterations": { "Slavic": "Садко", "etymology": "A hypocoristic personal name; no mythological etymology is claimed for it, which is consistent with a hero of the merchant cycle rather than the heroic one." } },
+    "type": "mortal", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "bylina-medieval" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 0,
+      "startEvent": "A poor musician of Novgorod who plays the gusli, the East Slavic multi-string zither. Playing beside Lake Ilmen, he is heard and rewarded by the Sea Tsar, and on that advantage wagers the Novgorod merchants that he can take fish of gold from the lake — wins, and becomes a merchant with ships of his own.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Sadko bylina is an epic oral poem about a merchant-musician of Novgorod who plays the gusli; beside Lake Ilmen his playing is heard by the household of the Tsar of the Sea, who tells him how to make a fortune by catching golden fish, whereupon he wagers the merchants of Novgorod, wins, and gains ships laden with goods." } ] },
+      { "typeStatus": "mortal", "era": "bylina-medieval", "eraOrdering": 1,
+        "startEvent": "At sea his ships stop dead and the lot falls on him; he goes overboard and down to the kingdom of the Tsar of the Sea, where his playing sets the Sea Tsar dancing — and the dancing raises the storms that are wrecking ships above. He is got home again, and the bylina is understood as an account of how Novgorod came to be joined to the sea.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sadko is thrown overboard and ends up in the world of the Tsar of the Sea; the epic speaks of the superiority of Sadko the guslar over the wealthy Novgorod merchants, since by his art he defeats both them and the Sea Tsar, the lord of Lake Ilmen, and tells of how the historic city of Novgorod came to be connected to the sea." } ] } ],
+    "domains": [
+      { "sphereId": "music", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sadko as the guslar whose art defeats both the merchants and the Sea Tsar." } ] },
+      { "sphereId": "seafaring-and-trade", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sadko as the merchant-musician of Novgorod whose story explains the city's connection to the sea." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sadko is the gusli-playing merchant hero of the Novgorodian bylina cycle, who wins a fortune on a wager made on the Sea Tsar's advice and is taken down to the Sea Tsar's kingdom.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Sadko bylina and of the Novgorodian cycle." } ], "weight": "high" } ],
+    "notes": "Two things this record deliberately does not say, both of which the popular accounts do. The sea princess Volkhova, who falls in love with Sadko and dissolves into the river that bears her name, and Lyubava, the wife he leaves in Novgorod, are Rimsky-Korsakov's opera of 1898 and not the bylina; the epic gives the Sea Tsar a daughter to be married to but nothing like that plot. And no relation is recorded to the Sea Tsar, because the Sea Tsar is not in this corpus and this batch does not add him — a Novgorodian sea-lord known only from this one cycle needs a census pass of his own. Sadko carries a verified-solitary verdict instead. He is also the reason this batch does not treat 'bylina hero' as one thing: he belongs to the Novgorod merchant cycle, which has a different subject matter, a different politics and a different hero from the Kiev cycle the registry's three bogatyrs come from."
+  },
+  {
+    "id": "slavic_solovei",
+    "name": { "primary": "Nightingale the Robber", "alt": ["Solovei Razboynik", "Solovey the Brigand", "Solovei Odikhmantievich"],
+      "transliterations": { "Slavic": "Соловей-разбойник", "etymology": "Solovei is simply 'nightingale'; razboynik is 'brigand, robber'. The name is the weapon." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "bylina-medieval" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "bylina-medieval", "eraOrdering": 0,
+      "startEvent": "An epic robber of the Russian byliny, part human and part bird: he can fly, lives in a nest in a tree by the road to Kiev in the forest near Bryansk, has a human family, and takes a cup in his hands. He sits in the tree and stuns travellers with his whistle.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nightingale the Robber, Solovey-Razboynik, is an epic robber of the traditional Russian byliny; the monster had partial human and bird-like features, was able to fly, lived in a nest, had a human family and received drinks with his hands, lived in a forest near Bryansk, and would sit in a tree by the road to Kiev and stun strangers with his powerful whistle." } ] },
+      { "typeStatus": "numen", "era": "bylina-medieval", "eraOrdering": 1,
+        "startEvent": "Ilya Muromets, on the journey that the bylina calls his first, shoots him down with arrows to the eye and temple and drags him to Kiev as a prisoner. At court the prince asks to hear the whistle; when it comes, palaces fall and men are left dead.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nightingale the Robber was shot down with arrows to the eye and temple by Ilya Muromets, who dragged the defeated monster to Vladimir, prince of Kiev; Vladimir wished to hear him whistle, and when he whistled all of Vladimir's palaces were destroyed and many lay dead. The bylina is also called 'The First Journey of Ilya Muromets' and is one of the most popular Russian epics, recorded 132 times." } ] } ],
+    "domains": [
+      { "sphereId": "brigandage", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Solovei as the epic robber of the road to Kiev." } ] },
+      { "sphereId": "destructive-sound", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the whistle that stuns travellers and, at Kiev, destroys the prince's palaces." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "defeated-by", "personId": "slavic_ilya_muromets",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nightingale the Robber was shot down with arrows to the eye and temple by Ilya Muromets, who then dragged him to Vladimir of Kiev." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ilya record. This is the deed that opens Ilya's cycle, and the registry held the archer without the target." },
+      { "kind": "captive-of", "personId": "slavic_prince_vladimir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ilya presents Nightingale the Robber as a prisoner at Vladimir's court, earning the prince's admiration, and Vladimir asks to hear him whistle." } ],
+        "notes": "In-batch, and the scene is the point of the whole journey — the robber is brought in alive so that the court can be shown what Ilya has done." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nightingale the Robber is the part-bird epic brigand of the road to Kiev whose whistle stuns and kills, shot down by Ilya Muromets and brought as a prisoner to Prince Vladimir's court.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Nightingale the Robber and of 'The First Journey of Ilya Muromets'." } ], "weight": "high" } ],
+    "notes": "Recorded as a numen rather than a mortal because the byliny do not treat him as a man: he flies, he nests, and his whistle is not a human capacity — though he has a house, a wife and daughters, which is why the record says part human and does not resolve the question the epic leaves open. The bylina in which he appears was recorded 132 times, making it one of the most collected Russian epics there is, and he was not in the registry."
+  },
+  {
+    "id": "slavic_prince_vladimir",
+    "name": { "primary": "Prince Vladimir", "alt": ["Vladimir Krasnoye Solnyshko", "Vladimir the Fair Sun", "Vladimir Bright Sun"],
+      "transliterations": { "Slavic": "Владимир Красное Солнышко", "etymology": "Krasnoye Solnyshko is 'the Fair Little Sun' — a standing epithet of the epic prince, not a title he held in life." } },
+    "type": "mortal", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "kievan-rus-historical" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "kievan-rus-historical", "eraOrdering": 0,
+      "startEvent": "The prince of Kiev at whose court the Kievan cycle of byliny is set. The bogatyrs serve him, arrive at his hall, are sent out from it and bring their captives back to it; the cycle is named for his city and organised around his table.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kievan cycle of byliny, set at the court of Vladimir, prince of Kiev, to whom Ilya Muromets brings Nightingale the Robber as a prisoner and who wished to hear the robber whistle." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vladimir as the prince of Kiev at whose court the bogatyrs of the Kievan cycle serve." } ] } ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [
+      { "epithetId": "Красное Солнышко", "original": "Красное Солнышко", "language": "russian", "transliteration": "Krasnoye Solnyshko",
+        "contextTag": "epic", "notes": "The Fair Sun; the fixed epithet by which the byliny name him, and the reason the epic prince is recognisable as a distinct figure from the ruler.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the epic epithet Krasnoye Solnyshko attached to Vladimir in the byliny." } ] } ],
+    "relations": [
+      { "kind": "overlord-of", "personId": "slavic_ilya_muromets",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Ilya arrives at Vladimir's court presenting Nightingale the Robber as a prisoner and earning the prince's admiration." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing record." },
+      { "kind": "overlord-of", "personId": "slavic_dobrynya_nikitich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kievan cycle of byliny, in which the bogatyrs including Dobrynya Nikitich serve at the court of Prince Vladimir." } ],
+        "notes": "Same kind, same reason." },
+      { "kind": "overlord-of", "personId": "slavic_alyosha_popovich",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Kievan cycle of byliny, in which the bogatyrs including Alyosha Popovich serve at the court of Prince Vladimir." } ],
+        "notes": "Same kind, same reason. With these three edges the registry's bogatyr triad stops floating free of the cycle it belongs to." },
+      { "kind": "captor-of", "personId": "slavic_solovei",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nightingale the Robber is brought as a prisoner to Vladimir, who asks to hear him whistle." } ],
+        "notes": "In-batch reciprocal of the robber's captive-of edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Prince Vladimir, called the Fair Sun, is the ruler of Kiev at whose court the Kievan cycle of byliny is set and to whom the bogatyrs bring their captives.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Kievan bylina cycle and of Vladimir's court in 'The First Journey of Ilya Muromets'." } ], "weight": "high" } ],
+    "notes": "This record is the epic Vladimir and says so. The byliny stand at several centuries' remove from Vladimir Svyatoslavich, who ruled Kiev from about 980 to 1015 and converted the Rus, and the epic prince who sits at table while his bogatyrs do the work is a composite: the epic material also draws on Vladimir Monomakh, and the figure behaves in ways the historical ruler is not recorded to have behaved. The record is filed at kievan-rus-historical because that is where the cycle places him and no earlier; it does not assert an identity with the historical prince, and no dates are given, because giving them would make exactly that assertion. What he is here is the centre the Kiev cycle organises itself around, which is the function the registry was missing entirely."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE BIRD-MAIDENS
+================================================================================
+
+Three named bird-women, grouped as a triad in the Slavic tradition itself and
+printed together on the same lubok sheets: joy, sorrow and prophecy. This is
+the distinction the batch draws between an individual and a class — there is one
+Gamayun, and there is a rusalka in every river.
+
+The companion edges among the three are reciprocated inside the batch and their
+notes say exactly what they rest on, which is a pictorial and typological
+grouping rather than a narrative in which the three meet.
+
+```json
+[
+  {
+    "id": "slavic_alkonost",
+    "name": { "primary": "Alkonost", "alt": ["Alkonest", "Alkonos"],
+      "transliterations": { "Slavic": "Алконост", "etymology": "A corruption of the Greek alkyon, the halcyon — by way of a Slavonic manuscript reading of 'alkyon estin', 'it is a halcyon', taken as a name." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "modern-collection" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 0,
+      "startEvent": "A beautiful woman with the body of a bird, who lives in Rai — paradise. Her voice brings joy and happiness to the hearts of those who hear it, making them forget everything; to evil souls the same voice brings pain and despair.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Alkonost is described as a beautiful woman with the body of a bird who lived in Rai, 'Heaven'; her voice brought joy and happiness to the heart of men making them forget everything, but brought pain, despair and torture to evil souls." } ] } ],
+    "domains": [
+      { "sphereId": "joy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Alkonost's voice as bringing joy and happiness and causing men to forget everything." } ] },
+      { "sphereId": "paradise", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Alkonost as dwelling in Rai." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_sirin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Alkonost, Sirin and Gamayun are often grouped together in Slavic mythic tradition as a symbolic triad, each representing different emotional and spiritual states." } ],
+        "notes": "The pairing is the standard one — the bird of joy against the bird of sorrow — and the two are printed facing each other on lubok sheets. It is a grouping in the tradition's own iconography, not an episode in which they meet, and this note is here so that nobody reads the edge as the latter." },
+      { "kind": "companion", "personId": "slavic_gamayun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three bird-maidens as a symbolic triad of the Slavic tradition." } ],
+        "notes": "Third of the triad. Same basis, same caveat." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Alkonost is the bird-woman of Slavic tradition who dwells in paradise and whose voice brings joy to the hearer and despair to the wicked.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Alkonost and of the Slavic bird-maidens." } ], "weight": "high" } ],
+    "notes": "Her name is a scribal accident that hardened into a person: a Greek phrase about the halcyon, misread in a Slavonic manuscript as a proper noun, and then given a body, a voice and a dwelling place over several centuries of copying and painting. The record says so rather than supplying a Slavic etymology that does not exist. She is also, with Sirin, the subject of one of the most reproduced images in Russian art — Vasnetsov's 1896 painting sets the two of them in one tree."
+  },
+  {
+    "id": "slavic_sirin",
+    "name": { "primary": "Sirin", "alt": ["Sirena"],
+      "transliterations": { "Slavic": "Сирин", "etymology": "From the Greek seiren, the siren, by way of Byzantine transmission — as with Alkonost, a Greek creature naturalised into the Slavic image tradition." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "modern-collection" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 0,
+      "startEvent": "A creature of Russian folklore with the head of a beautiful woman and the body of a bird, usually an owl. She is the bird of sorrow and of temptation: the hearer who follows her song does not come back.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Sirin is a legendary creature of Russian folklore with the head of a beautiful woman and the body of a bird, usually an owl, associated with sorrow and temptation; Alkonost, Sirin and Gamayun are often grouped as a symbolic triad representing different emotional and spiritual states." } ] } ],
+    "domains": [
+      { "sphereId": "sorrow", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Sirin as associated with sorrow." } ] },
+      { "sphereId": "temptation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Sirin as associated with temptation." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_alkonost",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three bird-maidens as a symbolic triad of the Slavic tradition." } ],
+        "notes": "Reciprocal of the edge on the Alkonost record, and carrying the same caveat: a grouping in the iconography, not a meeting in a story." },
+      { "kind": "companion", "personId": "slavic_gamayun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three bird-maidens as a symbolic triad of the Slavic tradition." } ],
+        "notes": "Third of the triad." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sirin is the bird-woman of Russian folklore with the head of a woman and the body of an owl, associated with sorrow and with temptation.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sirin and of the Slavic bird-maidens." } ], "weight": "high" } ],
+    "notes": "The Greek siren arrives in Rus by way of Byzantium and changes function on the way: the classical siren sings sailors onto rocks, and the Slavic Sirin sings a hearer into forgetting the world, which is a religious danger rather than a maritime one. The record keeps the distinction. She is entered separately from Alkonost, and not as an alias or a variant of her, because the tradition itself keeps them separate and paints both in the same picture."
+  },
+  {
+    "id": "slavic_gamayun",
+    "name": { "primary": "Gamayun", "alt": ["Gamaun", "Gamajun"],
+      "transliterations": { "Slavic": "Гамаюн", "etymology": "Unresolved; a Persian derivation from homayun, 'auspicious', has been proposed, which would make her a third naturalised foreign bird alongside the Greek two." } },
+    "type": "numen", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "modern-collection" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "modern-collection", "eraOrdering": 0,
+      "startEvent": "The prophetic bird of the three: she reveals truths about fate and the future. In books of the seventeenth to nineteenth centuries she is described as legless and wingless, flying perpetually by means of her tail, and her fall is read as foreshadowing the death of statesmen.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Gamayun serves as a prophetic voice revealing truths about fate and the future; in books dating to the 17th–19th centuries the Gamayun is described as a legless and wingless bird, ever-flying with the help of her tail, foreshadowing the death of statesmen by her fall." } ] } ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gamayun as the prophetic voice revealing fate and the future." } ] },
+      { "sphereId": "omens-of-death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: her fall foreshadows the death of statesmen." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "slavic_alkonost",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three bird-maidens as a symbolic triad of the Slavic tradition." } ],
+        "notes": "Reciprocal of the edge on the Alkonost record." },
+      { "kind": "companion", "personId": "slavic_sirin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three bird-maidens as a symbolic triad of the Slavic tradition." } ],
+        "notes": "Reciprocal of the edge on the Sirin record. With these six edges the triad is closed in the corpus the way it is closed on the printed sheet." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gamayun is the prophetic bird-woman of Slavic tradition, described in early modern Russian books as legless and wingless and flying by her tail, whose fall foretells the death of statesmen.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gamayun and of the Slavic bird-maidens." } ], "weight": "high" } ],
+    "notes": "A bird with no legs and no wings that never stops flying is a heraldic description before it is a mythological one — the legless bird of paradise is a known figure of early modern European natural history, arriving in Europe as trade skins with the feet cut off — and the Russian books take it and give it a woman's head and the office of prophecy. The record states the description the sources give and does not rationalise it. Blok wrote the poem on Vasnetsov's Gamayun in 1899, which is how the image reached the twentieth century, but the bird is older than either."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. FOUR GODS THE SWEEP TURNED UP AFTER THE FACT
+================================================================================
+
+These four were found by re-running the corpus sweep after the first nineteen
+records were generated, which is why they are in a sixth block rather than the
+first. One of them is the most consequential single absence in the tradition.
+
+**The registry held five of the six idols of Kiev.** The Primary Chronicle, under
+the year 980, records that Vladimir set up idols on the hill outside his hall:
+Perun with a head of silver and a moustache of gold, and Khors, Dazhbog, Stribog,
+Simargl and Mokosh. The registry held Perun, Dazhbog, Stribog, Simargl and
+Mokosh. It did not hold Khors — who is, after Perun, the most frequently
+mentioned god in the entire East Slavic written record.
+
+The other three are West Slavic gods named by the two chroniclers this tradition
+depends on: Yarovit from the Lives of Otto of Bamberg, and Prove and Podaga from
+Helmold, who names Prove and Živa in the same sentence.
+
+```json
+[
+  {
+    "id": "slavic_khors",
+    "name": { "primary": "Khors", "alt": ["Hors", "Chors", "Khursu"],
+      "transliterations": { "Slavic": "Хърсъ", "etymology": "Generally taken as an Iranian loan, from a word for the sun — Persian xoršid, Ossetian xur — which would make him one of the few Slavic theonyms with a foreign source, and is one reason the Simargl–Khors pair is read as a Sarmatian layer in the Kiev pantheon." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "A solar deity, generally interpreted as a sun god and sometimes as a moon god. He first appears in the Primary Chronicle among the gods to whom Vladimir the Great erected idols in 980 — Perun in wood with a silver head and a gold moustache, and Khors, Dazhbog, Stribog, Simargl and Mokosh.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Khors is generally interpreted as a sun god, sometimes as a moon god; he first appears in the Primary Chronicle along with the other gods to whom Vladimir the Great erected statues, including Perun in wood with a silver head and gold moustache, and Khors, Dazhbog, Stribog, Simargl and Mokosh. According to the Primary Chronicle for the year 980, Volodymyr set up idols of Perun, Khors, Dazhboh, Stryboh and others." } ] },
+      { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 1,
+        "startEvent": "He is the most frequently mentioned Slavic god after Perun, appearing across the East Slavic written record — the chronicles, the sermons against paganism, and the Tale of Igor's Campaign, where Vseslav is said to cross Khors's path before the cock crows.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Khors is the most frequently mentioned Slavic god after Perun." } ] } ],
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Khors as generally interpreted a sun god, sometimes as a moon god." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "co-enshrined-with", "personId": "slavic_perun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Primary Chronicle records that Vladimir the Great erected statues of Perun, in wood with a silver head and gold moustache, and of Khors, Dazhbog, Stribog, Simargl and Mokosh." } ],
+        "notes": "Not a kinship and not an alliance: the six were set up together on the hill at Kiev in 980, and that joint erection is the only thing the source says relates them. The kind is chosen to say exactly that and nothing more, and it is non-symmetric, so nothing is written onto the pre-existing record." },
+      { "kind": "co-enshrined-with", "personId": "slavic_dazhbog",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Primary Chronicle's list of the idols erected by Vladimir in 980." } ], "notes": "Second of the six." },
+      { "kind": "co-enshrined-with", "personId": "slavic_stribog",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Primary Chronicle's list of the idols erected by Vladimir in 980." } ], "notes": "Third of the six." },
+      { "kind": "co-enshrined-with", "personId": "slavic_simargl",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Primary Chronicle's list of the idols erected by Vladimir in 980." } ], "notes": "Fourth of the six, and the other member of the pair usually read as an Iranian layer in the Kiev pantheon." },
+      { "kind": "co-enshrined-with", "personId": "slavic_mokosh",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Primary Chronicle's list of the idols erected by Vladimir in 980." } ], "notes": "Fifth of the six, and the only goddess in the list." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "the hill outside the prince's hall, Kiev", "kind": "state-cult", "period": "980 to 988",
+        "attestation": "Primary Chronicle, entry for the year 980", "source": "Reference treatments of Khors and of the Primary Chronicle's list of Vladimir's idols.",
+        "note": "The shortest-lived state pantheon on record: erected in 980 by the prince who threw it into the Dnieper eight years later on converting. The list is nonetheless the single most important document in East Slavic religion, because it is the only place a ruler's own pantheon is enumerated." } ],
+    "sources": [ { "claim": "Khors is an East Slavic solar deity, one of the six idols erected by Vladimir the Great at Kiev in 980 according to the Primary Chronicle, and the most frequently mentioned Slavic god after Perun.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Khors, of the Primary Chronicle entry for 980, and of the Kiev pantheon." } ], "weight": "high" } ],
+    "notes": "This is the fault this programme keeps finding, in its clearest form yet. The Primary Chronicle names six gods in one sentence; the registry held five of them and had done so through every prior pass. Five-of-six is worse than none, because a corpus with a hole in the middle of its only enumerated pantheon looks complete. He is also, on the frequency count, the second-best-attested god the East Slavs have. The record does not resolve the sun-or-moon question, because the sources do not: the Tale of Igor's Campaign passage that is the main evidence for either reading is ambiguous, and the record says so rather than choosing."
+  },
+  {
+    "id": "slavic_yarovit",
+    "name": { "primary": "Yarovit", "alt": ["Jarovit", "Gerovit", "Iarovit", "Herovit"],
+      "transliterations": { "Slavic": "Jarovitъ", "etymology": "The -vit element shared with Svetovid, Rugievit and Porevit; the first element is jar-, the same root as in Jarilo, carrying 'vigour, ardour, spring'. Gerovit is a German rendering of the Slavic name." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "A war god of the Polabian Slavs, known from one source only: the twelfth-century biographies of Bishop Otto of Bamberg, who on his missions to convert the Wendish and Polabian tribes met festivals held in his honour at Wolgast and Havelberg.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the only historic source that mentions this deity is a 12th-century biography of the proselytizing German bishop Otto of Bamberg, who during his expeditions to convert the pagan tribes of Wendish and Polabian Slavs encountered festivals in honour of the war-god Gerovit in the cities of Wolgast and Havelberg; Gerovit is most likely a German derivation of the Slavic name Jarovit." } ] },
+      { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 1,
+        "startEvent": "Otto's mission of 1128 destroyed his temple at Wolgast. Ebbo records that when Otto's men went in looking for idols they found only an enormous shield hanging on the wall; afraid of the crowd outside, they carried the shield out with them, and the crowd fell to the ground, taking it for the war god appearing in person.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Otto's mission of 1128 destroyed the temple at Wolgast; according to Ebbo, when Otto's men entered the temple in search of idols they found only a gigantic shield hanging on the wall, and fearing the crowd gathered outside they carried the shield with them, whereupon the crowd fell to the ground thinking it was an appearance of the war god Gerovit." } ] } ],
+    "domains": [
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gerovit or Jarovit as the war god honoured with festivals at Wolgast and Havelberg." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "Wolgast and Havelberg", "kind": "temple-cult", "period": "pantheon-era to 1128",
+        "attestation": "The Lives of Otto of Bamberg, by Ebbo and Herbord, twelfth century", "source": "Reference treatments of Yarovit and of Otto of Bamberg's Pomeranian missions.",
+        "note": "A cult with a shield for a cult image and no statue, which is unlike every other West Slavic cult described, and a cult whose end is dated: the temple at Wolgast was destroyed in 1128." } ],
+    "sources": [ { "claim": "Yarovit is a Polabian war god attested only in the twelfth-century Lives of Otto of Bamberg, whose temple at Wolgast held a great shield as his cult object and was destroyed in 1128.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yarovit and Gerovit, of Ebbo's Life of Otto, and of the 1128 mission." } ], "weight": "high" } ],
+    "notes": "No relation is recorded to Jarilo, and the omission is deliberate. The two names share the jar- root, and a connection between them is a standing scholarly proposal — some treatments go as far as making them the same god under a western and an eastern name. It is a proposal. This programme has declined to write edges on proposals in every lane so far, and declines here: the philological observation belongs in this note, and the relations array stays empty. He carries a verified-solitary verdict instead, which states the same thing in the place the corpus checks."
+  },
+  {
+    "id": "slavic_prove",
+    "name": { "primary": "Prove", "alt": ["Proven", "Prono", "Porove"],
+      "transliterations": { "Slavic": "Prove", "etymology": "Unresolved and much argued: readings include pravo, 'law, right' — which would suit the assemblies held at his grove — and a corruption of Perun. Helmold's Latin is Prove." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "The god of the land of Oldenburg among the Wagrians, named by Helmold of Bosau in the course of describing the pagan revival among the Wends in 1134 — 'Prove deus Aldenburgensis terrae', in the same sentence that names Živa goddess of the Polabians and Radegast god of the land of the Obodrites.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Helmold of Bosau, writing of the pagan revival among the Wends in 1134, mentions 'Prove deus Aldenburgensis terrae'." } ] },
+      { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 1,
+        "startEvent": "Helmold saw the cult himself. Travelling with Bishop Gerald to Oldenburg in 1156, he came on a grove in which an oak stood inside a courtyard enclosed by a fence of stakes, dedicated to the god of that land — and containing no idol at all.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: on his trip with the bishop Gerald to Oldenburg and to the interior between that city and Lubeck in 1156, Helmold saw a grove where an oak tree was enclosed within a courtyard surrounded by a fence of stakes, dedicated to the god of that land, Proven, for whom no idol was present." } ] } ],
+    "domains": [
+      { "sphereId": "sacred-grove-and-assembly", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the enclosed oak grove at Oldenburg dedicated to Prove, in which no idol stood." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "named-alongside", "personId": "slavic_zhiva",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Helmold's sentence naming Prove god of the land of Oldenburg and Siwa goddess of the Polabians." } ],
+        "notes": "A textual relation and labelled as one. Helmold names them in a single sentence as the gods of neighbouring peoples; there is no myth in which they appear together, because there is no Polabian myth at all. The kind says 'named alongside' so that nobody can read a pantheon into it." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "the oak grove at Oldenburg, Wagria", "kind": "grove-cult", "period": "pantheon-era to the mid-twelfth century",
+        "attestation": "Helmold of Bosau, Chronica Slavorum, who visited the site in 1156", "source": "Reference treatments of Prove and of Helmold's Chronica Slavorum.",
+        "note": "An eyewitness description of a functioning Slavic sanctuary, by a priest who was there to end it. Prove's cult has a sacred oak grove and no image; Podaga's, a few days away, has an image in a temple and no grove. The contrast is the best evidence there is that West Slavic religion was not one system." } ],
+    "sources": [ { "claim": "Prove is the god of the land of Oldenburg among the Wagrians, named by Helmold of Bosau and worshipped at an enclosed oak grove that held no idol, which Helmold saw in 1156.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Prove, of Helmold's Chronica Slavorum and of the Oldenburg grove." } ], "weight": "high" } ],
+    "notes": "The domains array holds one entry and it describes the cult rather than a sphere, because Helmold gives a place, a tree, a fence and a negative — no idol — and no function whatever. Writing him up as a god of law on the strength of a contested etymology would be inventing a sphere out of a guess about a name, which this programme does not do. What he is, on the evidence, is a god known by where he was worshipped."
+  },
+  {
+    "id": "slavic_podaga",
+    "name": { "primary": "Podaga", "alt": ["Podaga of Plön"],
+      "transliterations": { "Slavic": "Podaga", "etymology": "Unresolved. Proposals include pod-, 'under', with a root for burning or for weather, and a scribal corruption of Dazhbog; none is established." } },
+    "type": "deity", "origin": "canon", "tradition": "Slavic", "primaryTradition": "Slavic",
+    "sex": "unspecified", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pantheon-era" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "pantheon-era", "eraOrdering": 0,
+      "startEvent": "A Polabian deity whose statue stood in a temple at Plön. Named only by Helmold, whose chronicle gives neither a description of the image nor a function for the god.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Podaga is a Polabian deity who had his statue in a temple in Plön, mentioned only in Helmold's Chronicle, which does not give a depiction or function of the deity; the two cults differed in form, a sacred oak grove being dedicated to Prove whereas Podaga's effigy was venerated inside his temple." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "named-alongside", "personId": "slavic_prove",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Helmold's chronicle names both, and the two cults differed in form — a sacred grove for Prove, an effigy in a temple for Podaga." } ],
+        "notes": "The contrast between the two cults is the only substantive thing said about either, and it is said by setting them side by side, so the edge records that and no more." } ],
+    "cultRecords": [
+      { "tradition": "Slavic", "placeName": "the temple at Plön, Wagria", "kind": "temple-cult", "period": "pantheon-era",
+        "attestation": "Helmold of Bosau, Chronica Slavorum", "source": "Reference treatment of Podaga and of Helmold's Chronica Slavorum.",
+        "note": "A statue in a building, which is all that is recorded." } ],
+    "sources": [ { "claim": "Podaga is a Polabian deity whose effigy was venerated in a temple at Plön, named only in Helmold's Chronica Slavorum, which gives no description and no function.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Podaga and of Helmold's Chronica Slavorum." } ], "weight": "medium" } ],
+    "notes": "The emptiest record in this batch, and it is left empty on purpose. Domains is an empty array because the source names no sphere; sex is unspecified because the source does not say and the name gives no grammatical certainty; there is no iconography because Helmold, who describes Svetovid's neighbours in detail elsewhere, describes nothing here. The value of the record is that the name existed and had a temple, which is more than can be said for several better-known figures in this tradition. This is what the bottom of the Slavic evidence looks like, and the registry is better for holding it in that condition than for not holding it or for holding it dressed up."
+  }
+]
+```
