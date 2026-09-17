@@ -1,0 +1,1002 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Yoruba
+Eras (registered, exact): cosmogonic | primordial | mythic |
+  oduduwa-foundation | ife-classical | oyo-empire | post-oyo | colonial
+Author pass: Yoruba held 20 records for a tradition whose own reckoning counts
+             its divinities in the hundreds — the commonly cited figure is four
+             hundred and one, and one reference treatment puts the pantheon as
+             high as six thousand. This adds 32, taking Yoruba from 20 to 52.
+
+================================================================================
+THE GAP, AND WHAT THIS BATCH DOES AND DOES NOT CLOSE
+================================================================================
+
+A 72-name check across the WHOLE registry returned 24 hits and 48 absences.
+Three of the 24 hits are false positives on the normalised name — `idoma_aje`
+is an Idoma figure and not Aje the orisha of wealth, `tahitian_oro` is not the
+Yoruba Oro, and `santeria_elegua` is the Cuban form of Eshu, who was already
+here under his own name. The absences include several that are structurally
+odd:
+
+- **Oshosi**, the hunter orisha, was in the registry — as `santeria_ochosi`,
+  under Cuban Santería. The diaspora form was present and the Yoruba original
+  was not. (The same pattern this programme found with Nanaya and the Sogdian
+  Nana, and with Lotan and the Hebrew Leviathan.)
+- **Oba**, the senior wife of Shango, in a registry holding Shango, Oya and
+  Oshun — three of the four principals of that household and not the fourth.
+- **Yemowo**, the consort of Obatala, in a registry holding Obatala.
+- **Ori** — the personal head, the destiny each person kneels and chooses
+  before Olodumare — which is arguably the most-invoked religious object in
+  Yoruba practice and which the registry did not have.
+- **Iku**, death, who heads the eight chief Ajogun.
+- **Moremi Ajasoro**, the heroine of Ife, in a registry holding her husband
+  Oranmiyan.
+- **The Oyo ruling line beyond Shango, Aganju and Ajaka** — which is to say
+  the whole of it with dates on. No Orompoto, the first female Alaafin; no
+  Ojigi, who brought Dahomey to tribute in 1730; none of the eight
+  eighteenth-century Alaafins destroyed by their own council; no Bashorun Gaa,
+  who destroyed four of them; no Abiodun, no Aole, no Afonja, no Oluewu, no
+  Atiba. The registry held three Oyo rulers and stopped.
+
+**This batch is still smaller than the gap, and deliberately so.** Yoruba
+religion is very well documented in some places and very thinly documented in
+the sources reachable from this session in others, and several strong
+candidates — Logunede, Obalufon, Odu, Oke, Ayao, Olosa, Onile, Aroni, and
+Egungun as a named figure rather than as an institution — could not be
+substantiated here at all. They are recorded BLOCKED with the exact
+uncertainty rather than written from memory. Thirty-two verified additions
+that take the tradition from 20 records to 52 are worth more than sixty of
+which a third are guesses; the census says which is which.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — every fetch is refused at the
+proxy — so research went through server-side web search and the citations name
+what was consulted: the standard reference treatments of the individual orisha
+and of the Oyo and Ife rulers. No printed monograph is cited as though it had
+been read, and no Ifa verse is cited that was not returned by the search.
+
+One caution particular to this tradition: a great deal of what circulates
+online about the orisha is Santería or Candomblé practice presented as Yoruba
+practice, and the two have diverged over four centuries. Where a record rests
+on diaspora material it says so; where the Yoruba and the diaspora forms are
+both in this registry they are linked and kept separate.
+
+================================================================================
+AUTHORED FIGURES — I. THE ORISHA THE REGISTRY DID NOT HAVE
+================================================================================
+
+```json
+[
+  {
+    "id": "yoruba_oshosi",
+    "name": { "primary": "Oshosi", "alt": ["Ọ̀ṣọ́ọ̀sì", "Oxossi", "Ochosi"],
+      "transliterations": { "Yoruba": "Ọ̀ṣọ́ọ̀sì", "etymology": "No agreed derivation. His emblem is the single-barbed iron bow, and his praise names turn on the one arrow that does not miss." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The hunter orisha: patron of hunters, of the forest and of those who track, and in the diaspora also the orisha of justice and of the falsely accused.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ọ̀ṣọ́ọ̀sì, the Yoruba orisha of the hunt, and of his Cuban form Ochosi." } ] } ],
+    "domains": [
+      { "sphereId": "hunting", "contextTag": "lifelong", "term": { "value": "Ọ̀ṣọ́ọ̀sì", "script": "Yoruba", "rom": "Oshosi" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oshosi as the hunter orisha." } ] },
+      { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ochosi's association with justice in the diaspora traditions." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "santeria_ochosi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ochosi as the Cuban Santería form of the Yoruba Ọ̀ṣọ́ọ̀sì." } ],
+        "notes": "The registry already carried the Cuban form and not the Yoruba one, which is the wrong way round: Ochosi is what happened to Oshosi after the middle passage, not the other way about." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oshosi is the Yoruba orisha of the hunt and of the forest, whose Cuban Santería form Ochosi is also an orisha of justice.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ọ̀ṣọ́ọ̀sì and of Ochosi." } ], "weight": "high" } ],
+    "notes": "Oshosi hunts, and in the Americas he also judges. He belongs with Ogun and Eshu in the group a Yoruba household deals with when it needs something found, taken or decided — Ogun clears the path with iron, Oshosi finds the thing at the end of it. In Cuba he acquired a second office, patron of people wrongly accused, which is not hard to account for. The registry had the Cuban Ochosi and not him."
+  },
+  {
+    "id": "yoruba_erinle",
+    "name": { "primary": "Erinle", "alt": ["Erinlẹ̀", "Inle", "Inlé"],
+      "transliterations": { "Yoruba": "Erinlẹ̀", "etymology": "Read as 'elephant of the earth' — erin, elephant, and ilẹ̀, earth or ground — which suits a hunter who went into the ground." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A great hunter who became an orisha: the tradition says that one day near Ilobu he sank into the earth and became a river. The Erinle, a tributary of the Osun, carries his name.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Erinlẹ̀: in the Yoruba tradition a great hunter who became an orisha, who one day sank into the earth near Ilobu and became a river, the Erinlẹ̀ River, a tributary of the Osun, taking his name." } ] } ],
+    "domains": [
+      { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "Erinlẹ̀", "script": "Yoruba", "rom": "Erinle" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Erinle and the river that bears his name." } ] },
+      { "sphereId": "hunting", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Erinle as a great hunter before his deification." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Ilobu, and the Erinle river", "kind": "regional-cult", "period": "mythic to colonial",
+        "attestation": "the river named for him and the cult at Ilobu", "source": "Reference treatment of Erinle.",
+        "note": "A god who is a named watercourse on a modern map is the ordinary Yoruba arrangement, not an exception: Oshun, Oba, Yewa and Erinle are all rivers you can stand beside." } ],
+    "sources": [ { "claim": "Erinle is a Yoruba orisha who was a great hunter before he sank into the earth near Ilobu and became the river that bears his name.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Erinlẹ̀, his hunt, his transformation and his river." } ], "weight": "high" } ],
+    "notes": "Erinle went into the ground and came out as water. The pattern is standard in this tradition and worth stating plainly: a number of the orisha were people, and the moment of their deification is usually a disappearance into a specific place — Oshun into her river, Erinle into his, Shango into the earth at Koso. You can go and look at the result. The Erinle river runs into the Osun, which is why the two are spoken of together."
+  },
+  {
+    "id": "yoruba_osumare",
+    "name": { "primary": "Osumare", "alt": ["Ọ̀ṣùmàrè", "Oshumare", "Oxumaré"],
+      "transliterations": { "Yoruba": "Ọ̀ṣùmàrè", "etymology": "The word means the rainbow, and also the serpent that is the rainbow. One word does both jobs." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The serpent of the rainbow: the arc that stands between earth and sky after rain, understood as a snake, and as a snake that swallows its own tail.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oshumare: 'Òṣùmàrè' in the Yoruba language signifies both the intangible rainbow and the mythic serpent that devours its own tail." } ] } ],
+    "domains": [ { "sphereId": "rainbow", "contextTag": "lifelong", "term": { "value": "Ọ̀ṣùmàrè", "script": "Yoruba", "rom": "rainbow / rainbow serpent" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oshumare as the rainbow and the rainbow serpent." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Osumare is the Yoruba rainbow serpent, the word for the rainbow itself and for the snake that devours its own tail.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Oshumare, his name and his double sense." } ], "weight": "medium" } ],
+    "notes": "Osumare is a word that is also a god that is also a weather event. The Yoruba term names the rainbow and the serpent at once, with no seam between them, and the serpent is the kind that has its tail in its mouth — a closed circuit rather than an arc, which is what a rainbow is if you could see the half that is under the ground. The registry already carries related rainbow-serpents under Fon and Ewe (Dan, Da); this is the Yoruba one, and it is absent there."
+  },
+  {
+    "id": "yoruba_oba",
+    "name": { "primary": "Oba", "alt": ["Ọba", "Obba"],
+      "transliterations": { "Yoruba": "Ọba", "etymology": "The word is also the ordinary Yoruba title for a king, written with a different tone; hers is the river Oba, which joins the Osun." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The senior wife of Shango, and the river Oba. The story told of her turns on her ear: she gave it — in the telling, literally cut it off and put it in his food, having been advised to by a rival — and the marriage did not survive it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ọba: traditionally identified as the senior wife of Shango, the third king of the Oyo Empire and an orisha, who metaphorically 'gave her ear' to Shango by listening and being attentive to her husband." } ] } ],
+    "domains": [ { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "Ọba", "script": "Yoruba", "rom": "Oba" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oba and the river that carries her name." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "shango",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ọba as the senior wife of Shango." } ],
+        "notes": "His senior wife. The registry held Shango, Oya and Oshun — three of the four principals in that household — and not the fourth, which is the one the household's best-known story is about." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oba is the Yoruba orisha of the river Oba and the senior wife of Shango, from whom the tradition of her giving her ear derives.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ọba, her marriage and the ear tradition." } ], "weight": "medium" } ],
+    "notes": "The registry had Shango's household three-quarters complete. Oba is the senior wife, and the story attached to her is the famous and uncomfortable one: told by a rival that Shango would love her more if she fed him her ear, she did it, and he would not eat, and she fled and became her river. The reference treatment offers the metaphorical reading too — that she gave him her ear in the sense of listening — and the record keeps both, because the tradition plainly does."
+  },
+  {
+    "id": "yoruba_yewa",
+    "name": { "primary": "Yewa", "alt": ["Yewá", "Yéwà", "Oyeku"],
+      "transliterations": { "Yoruba": "Yéwà", "etymology": "No agreed derivation; the Yewa river in the west of Yorubaland carries the name, and so does the region around it." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The orisha of the Yewa river, and of death, dreams, purity, chastity and decomposition — a cemetery power rather than a household one, who works at the point where a body stops being a person.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yewá: an orisha of death, dreams, purity, chastity, decomposition and the Yewa River in the Yoruba religion and in the syncretic religions derived from it." } ] } ],
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "Yéwà", "script": "Yoruba", "rom": "Yewa" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yewá as an orisha of death and decomposition." } ] },
+      { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yewá and the Yewa river." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Yewa is the Yoruba orisha of the Yewa river and of death, dreams, purity, chastity and decomposition.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Yewá and her spheres." } ], "weight": "medium" } ],
+    "notes": "Yewa holds the strangest combination in the pantheon and it is coherent once you see the order: chastity, dreams, purity, death, decomposition. She is the orisha of the point where things are set apart and left alone — the cemetery, the body between death and rot, the woman who does not marry — and her river runs through the western country that carries her name. In the diaspora her priesthood is small and her rites are kept apart from the others, which is the same idea in practice."
+  },
+  {
+    "id": "yoruba_aje",
+    "name": { "primary": "Aje", "alt": ["Àjẹ́", "Aje Shaluga", "Àjẹ́ Ṣàlùgà"],
+      "transliterations": { "Yoruba": "Àjẹ́", "etymology": "The word for wealth and profit. The cowrie is her sign — the shell that was the currency, so that the goddess of money is made of the money." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["olokun"], "parentRoles": ["mother"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The orisha of wealth, property, prosperity, fortune and success, and a child of Olokun — which places money in the sea, where the cowries came from.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ajé: a deity of wealth, property, prosperity, fortune and success, of whom Olokun is believed to be the parent." } ] } ],
+    "domains": [ { "sphereId": "wealth", "contextTag": "lifelong", "term": { "value": "Àjẹ́", "script": "Yoruba", "rom": "wealth" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ajé as the orisha of wealth and prosperity." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aje is the Yoruba orisha of wealth, property and prosperity, whose parent is Olokun.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ajé and of Olokun as her parent." } ], "weight": "medium" } ],
+    "notes": "Aje is money, and her mother is the sea, because that is where money came from. West African currency was the cowrie shell, imported across the Indian Ocean and landed on the coast in quantity, so a goddess of wealth who is Olokun's daughter is a plain statement of economic fact dressed as a genealogy. Her sign is the shell itself. The registry held Olokun and not the child."
+  },
+  {
+    "id": "yoruba_ori",
+    "name": { "primary": "Ori", "alt": ["Orí", "Orí Inú", "the inner head"],
+      "transliterations": { "Yoruba": "Orí", "etymology": "The ordinary word for 'head'. Orí inú, the inner head, is the part meant — the spiritual head as against the physical one." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Each person's own head, and their destiny: before descending to earth a soul kneels before Olodumare and chooses its Ori, which carries the destiny, the purpose and the shape of the life to come. It is the most personal of all the orisha and the one each person can only have one of.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orí: literally 'head', referring to spiritual intuition and destiny; the most sacred and personal deity for each individual, the inner head and spiritual essence, chosen by each soul kneeling before Olodumare before descending to earth, embodying destiny, purpose and life's path." } ] } ],
+    "domains": [
+      { "sphereId": "destiny", "contextTag": "lifelong", "term": { "value": "Orí", "script": "Yoruba", "rom": "head, destiny" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orí as destiny." } ] },
+      { "sphereId": "personhood", "contextTag": "lifelong", "term": { "value": "orí inú", "script": "Yoruba", "rom": "ori inu (the inner head)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orí as the inner head and spiritual essence." } ] } ],
+    "faculties": [
+      { "id": "yoruba_choose_the_head",
+        "name": "to be chosen, kneeling, before birth — and then not remembered",
+        "term": { "value": "àkúnlẹ̀yàn", "script": "Yoruba", "rom": "akunleyan (that which is chosen kneeling)" }, "inheritability": "none",
+        "notes": "The doctrine has a sharp edge: the destiny is chosen by the person, freely, and then forgotten on the way into the world — so a life is the working out of an agreement you made and cannot recall. Divination exists largely to find out what you agreed to.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orí, chosen by each soul before Olodumare before descending to earth." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "olodumare",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orí, chosen by the soul kneeling before Olodumare." } ],
+        "notes": "Chosen in Olodumare's presence, which is the only transaction in this system that is strictly between a person and the supreme being." } ],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "throughout Yorubaland, in the household", "kind": "ritual", "period": "primordial to colonial",
+        "attestation": "the feeding of one's own head (ibori)", "source": "Reference treatment of Orí and of Yoruba religious practice.",
+        "note": "A person makes offerings to their own head. It is the most commonly performed rite in the tradition and the one that needs no priest." } ],
+    "sources": [ { "claim": "Ori is each person's inner head and destiny in Yoruba religion, chosen by the soul kneeling before Olodumare before birth, and the most personal of the orisha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Orí, of ori inu and of Yoruba destiny doctrine." } ], "weight": "high" } ],
+    "notes": "The registry had no Ori, which for a Yoruba corpus is the largest single omission available. Ori is your own head, and it is a god — the one you feed, the one you consult, the one whose agreement you are living out. The doctrine is precise: before birth the soul kneels in front of Olodumare and chooses its destiny, and then crosses into the world and forgets. Everything else in the tradition, divination especially, is machinery for finding out what you picked. There is a standing Yoruba observation that a person's Ori matters more than any other orisha, because the others can be petitioned and this one is already inside the argument."
+  },
+  {
+    "id": "yoruba_iyami_osoronga",
+    "name": { "primary": "Iyami Osoronga", "alt": ["Ìyámi Òṣòròngà", "Iyami Aje", "Awon Iya Wa", "Eleye", "Iyanla"],
+      "transliterations": { "Yoruba": "Ìyámi Òṣòròngà", "etymology": "Ìyá mi is literally 'my mother'; the honorific form Ìyààmi is read as 'the super-powerful ones' or 'my mysterious mother'. Eleye, one of her praise names, means 'owner of the bird'." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Female ancestral power, protective and dangerous at once: associated with fertility and among the most feared powers in the tradition, addressed under praise names including Our Mothers, Owner of the Sacred Bird, and the Wise and Formidable Elders.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iyami Aje: female ancestral power, both protective and dangerous, associated with fertility and one of the most feared deities; Ìyá mi literally 'my mother', the honorific Ìyààmi translating as 'the super-powerful ones' or 'my mysterious mother'; known by praise names including Iyami Osoronga, Awon Iya Wa (Our Mothers), Eleye (Owner of the Sacred Bird), Iyanla and Awon Agbalagba." } ] } ],
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "Ìyámi Òṣòròngà", "script": "Yoruba", "rom": "my mysterious mother" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iyami as female ancestral power." } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iyami's association with fertility." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "throughout Yorubaland", "kind": "ritual", "period": "primordial to colonial",
+        "attestation": "the Gelede masquerade, performed to placate the mothers", "source": "Reference treatment of Iyami and of the propitiation of the mothers.",
+        "note": "An entire masking tradition exists to keep them satisfied, which is a fair measure of how seriously the power was taken." } ],
+    "sources": [ { "claim": "Iyami Osoronga is the Yoruba female ancestral power, protective and dangerous, associated with fertility and addressed under praise names including Our Mothers and Owner of the Sacred Bird.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Iyami Aje, her names and her character." } ], "weight": "medium" } ],
+    "notes": "The mothers are the power nobody in this tradition wants to be on the wrong side of. The name is 'my mother' said with enormous care, the praise names run to the owner of the sacred bird and the wise and formidable elders, and the whole Gelede masking tradition exists to keep them pleased. Whether Iyami Osoronga is one goddess or the collective name of many is not a question the sources answer cleanly, and the record does not force it.",
+    "variants": [
+      { "id": "yoruba_iyami_one_or_many",
+        "claim": "Whether Iyami Osoronga is a single goddess or a collective is not settled by the sources.",
+        "description": "The name is used both as a proper name for a Great Mother figure and as a collective for the powerful ancestral women generally, and the praise names — 'Our Mothers', 'the Wise and Formidable Elders' — are plural while 'my mysterious mother' is singular. This programme does not ingest collectives; the record is authored because the name also functions as a proper name, and this variant states the ambiguity instead of resolving it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iyami Aje, which gives both the singular address and the plural praise names." } ] } ]
+  },
+  {
+    "id": "yoruba_orisha_oko",
+    "name": { "primary": "Orisha Oko", "alt": ["Òrìṣà Oko", "Orisa Oko", "Oko"],
+      "transliterations": { "Yoruba": "Òrìṣà Oko", "etymology": "Oko is the farm — the cultivated land outside the town. He is simply 'the orisha of the farm'." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "transformed", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A strong hunter and farmer before his death and deification, and a fighter against sorcery; his festival is the annual new harvest of the white African yam.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Òrìṣà Oko: an orisha worshipped in the Yoruba religion who, before his death and deification, was a strong hunter and farming deity as well as a fighter against sorcery, associated with the annual new harvest of the white African yam." } ] } ],
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "Òrìṣà Oko", "script": "Yoruba", "rom": "orisha of the farm" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orisha Oko as a farming deity." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orisha Oko as a fighter against sorcery." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Irawo, and throughout the farming country", "kind": "festival", "period": "mythic to colonial",
+        "attestation": "the new-yam festival", "source": "Reference treatment of Orisha Oko and the white yam harvest.",
+        "note": "The new-yam festival is the hinge of the West African agricultural year: nobody eats the new crop until the rite has been done, which is a food-safety rule and a religious one at the same time." } ],
+    "sources": [ { "claim": "Orisha Oko is the Yoruba orisha of the farm, a hunter and farmer deified after death, a fighter against sorcery, associated with the new harvest of the white yam.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Òrìṣà Oko, his life, his sphere and his festival." } ], "weight": "medium" } ],
+    "notes": "Orisha Oko is the farm, and his festival is the one that lets everybody eat. The new-yam rite is the pivot of the year across a wide stretch of West Africa — the crop is not touched until it has been performed — and he presides over it. His second office, fighting sorcery, follows from the first in a way that is easy to miss: a failed harvest in this system is not bad luck, it is somebody's malice, and the god of the farm is therefore the god who resists it."
+  },
+  {
+    "id": "yoruba_iku",
+    "name": { "primary": "Iku", "alt": ["Ikú", "Death"],
+      "transliterations": { "Yoruba": "Ikú", "etymology": "The ordinary word for death, used as a name. He is the noun with a personality attached." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Death personified, and the head of the eight chief Ajogun — the malevolent powers who stand opposite the orisha and are at war with humanity, two hundred in number and led by eight, of whom he is first.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Ajogun: malevolent spiritual forces seen as the polar opposite of the benevolent orisha, in constant battle with them and at war with mankind, two hundred in number but led by eight spirits, of whom the spirit of death, Iku, is the head." } ] } ],
+    "domains": [ { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "Ikú", "script": "Yoruba", "rom": "death" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Iku as the head of the Ajogun." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Iku is death personified in Yoruba religion and the head of the eight chief Ajogun, the malevolent forces opposed to the orisha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Ajogun and of Iku at their head." } ], "weight": "medium" } ],
+    "notes": "Iku is death with a name and a rank. The Ajogun are the other side of the Yoruba cosmos — two hundred malevolent powers at war with people, in permanent opposition to the orisha, and headed by eight of whom Iku is first — and the point of the arrangement is that the system is not benign by default. It holds because the orisha are fighting for you, which is why they have to be fed. The collective is not recorded here; its head is."
+  },
+  {
+    "id": "yoruba_yemowo",
+    "name": { "primary": "Yemowo", "alt": ["Yemòwó", "Yemoo", "Yemòó"],
+      "transliterations": { "Yoruba": "Yemòwó", "etymology": "No agreed derivation. The name resembles Yemoja's without being it, and the two are distinct goddesses." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Orisha of water, maternity and creation, and the consort of Obatala; shown white-clad and maternal, an elder among the water powers, with her shrine at Ifewara in Ile-Ife.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yemòwó: an orisha of water, maternity and creation whose consort is Ọbatala, appearing white-clad, maternal and dignified, an elder among water powers, with a Yemòó shrine at Ifẹwara in Ile-Ife, and whose role in the modern Yoruba religion has been largely confined to Ife despite the widespread worship of her husband." } ] } ],
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "Yemòwó", "script": "Yoruba", "rom": "Yemowo" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yemowo as an orisha of maternity and creation." } ] },
+      { "sphereId": "waters", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yemowo among the water powers." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "obatala",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Yemòwó, whose consort is Ọbatala." } ],
+        "notes": "Obatala's wife. The registry carried him — one of the most widely worshipped orisha there is — and not her, which the reference treatment notes is roughly what has happened to her in practice: his cult spread everywhere and hers stayed in Ife." } ],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Ifewara, Ile-Ife", "kind": "temple", "period": "primordial to colonial",
+        "attestation": "the Yemoo shrine", "source": "Reference treatment of Yemowo's cult.",
+        "note": "Her worship contracted to one town while her husband's went across the Atlantic. The asymmetry is worth recording as part of what the record of a goddess is." } ],
+    "sources": [ { "claim": "Yemowo is the Yoruba orisha of water, maternity and creation, consort of Obatala, worshipped chiefly at Ife.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Yemòwó, her spheres, her consort and her shrine." } ], "weight": "medium" } ],
+    "notes": "Yemowo is not Yemoja and the names are close enough to make trouble. She is Obatala's wife, white-clad like him, an elder among the water powers, and her worship has contracted to Ife while his has gone worldwide — which is a fairly ordinary fate for a consort in any tradition and worth writing down rather than losing. The registry had Obatala and Yemoja and not her."
+  },
+  {
+    "id": "yoruba_agemo",
+    "name": { "primary": "Agemo", "alt": ["Agẹmọ", "the chameleon"],
+      "transliterations": { "Yoruba": "Agẹmọ", "etymology": "The ordinary word for a chameleon. The animal's changing colour is the whole of his qualification for the job he is given." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "cosmogonic", "eraOrdering": 0,
+      "startEvent": "The chameleon, sent by Olorun as his messenger: down the chain to see how Obatala was getting on with the making of the world, and to Olokun when she challenged the sky god to a contest of cloth — where he matched every fabric she produced exactly on his own skin, and she conceded.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Yoruba creation and the cloth contest: Olorun sent his servant Agemo, the chameleon, down the gold chain to check how things were with Obatala, and sent Agemo as a messenger to ask Olokun to show some of her cloth, each fabric she showed being duplicated exactly on his skin." } ] } ],
+    "domains": [ { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "Agẹmọ", "script": "Yoruba", "rom": "chameleon" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Agemo as Olorun's messenger." } ] } ],
+    "faculties": [
+      { "id": "yoruba_match_any_cloth",
+        "name": "to reproduce on his own skin any cloth he is shown",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The device that wins the contest with Olokun: she brings out one magnificent cloth after another and each time the messenger is already wearing it, so she concludes that if the servant can do this the master is beyond her and withdraws the challenge.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the cloth contest between Olorun and Olokun and of Agemo's part in it." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "olodumare",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Agemo as the servant and messenger of Olorun." } ],
+        "notes": "Olorun's servant. The registry carries the supreme being under the name Olodumare, with Olorun among its aliases." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Agemo is the chameleon, messenger and servant of Olorun in Yoruba cosmogony, sent to check on Obatala's work and to out-match Olokun in the contest of cloth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Yoruba creation account and of the cloth contest." } ], "weight": "medium" } ],
+    "notes": "Agemo wins the best argument in the Yoruba creation story without saying anything clever. Olokun, who owns the sea and all the cloth in it, challenges the sky god to a contest of dress; the sky god does not go, and sends the chameleon. She brings out her finest cloth and the messenger is already wearing it; she brings out another and so is he; and after a while she works out that if this is the servant she is not going to beat the master. The moral is about knowing when you have been outclassed, and it is delivered by a lizard."
+  },
+  {
+    "id": "yoruba_iroko",
+    "name": { "primary": "Iroko", "alt": ["Ìrókò", "the iroko spirit"],
+      "transliterations": { "Yoruba": "Ìrókò", "etymology": "The name of the tree — Milicia excelsa, a large hardwood — and of the spirit understood to inhabit it." } },
+    "type": "deity", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The spirit of the iroko tree, described as an old man who goes about at night with a torch; anyone who sees his face is driven out of their mind and dies. Cutting the tree without the proper rites is held to bring the same on the cutter's household.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Iroko tree: haunted by a spirit in the form of an old man who lurks around at night with a torch and frightens travellers, anyone who sees his face being driven insane and dying." } ] } ],
+    "domains": [ { "sphereId": "trees", "contextTag": "lifelong", "term": { "value": "Ìrókò", "script": "Yoruba", "rom": "Iroko" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Iroko tree spirit." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "wherever the tree stands", "kind": "regional-cult", "period": "mythic to colonial",
+        "attestation": "the offerings made before felling an iroko", "source": "Reference treatment of the iroko and its spirit.",
+        "note": "The tree is valuable timber and the rites before cutting it are correspondingly elaborate. A belief that protects a slow-growing hardwood from casual felling is doing more than one job." } ],
+    "sources": [ { "claim": "Iroko is the spirit of the iroko tree in Yoruba tradition, an old man with a torch who walks at night, the sight of whose face brings madness and death.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Iroko tree and its spirit." } ], "weight": "medium" } ],
+    "notes": "The iroko is a big slow hardwood that takes a century to grow and is worth a great deal cut, and the spirit in it walks about at night with a torch and will drive you mad if you see his face. Whether that belief evolved to keep people from felling the things casually is not answerable, but the effect is real enough: an iroko is not taken without rites, and the rites are expensive. He crossed to Cuba and Brazil with everyone else and is still received there."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. IFE AND OYO: THE PEOPLE
+================================================================================
+
+The registry held Oranmiyan and not his wife; it held Shango, Aganju and Ajaka
+and then nothing for the next three hundred years of the Oyo line, which is the
+part with dates on it. What follows is ten people: two from the Ife foundation
+cycle and eight from the Oyo empire and its collapse.
+
+Two cautions, both recorded in the records themselves rather than smoothed out.
+
+First, Oyo regnal chronology before the eighteenth century is oral and
+contested. Ajagbo is credited with a hundred and forty years on the throne,
+which no one believes literally; scholars hold that the reigns of other
+Alaafins have been absorbed into his. The record says so.
+
+Second, the sources reachable here disagree about when Afonja died — one gives
+c. 1813, others put his killing in 1823 or early 1824, after the 1817 secession
+of Ilorin and after Alimi's death in 1823. The record carries the disagreement
+instead of choosing.
+
+```json
+[
+  {
+    "id": "yoruba_moremi",
+    "name": { "primary": "Moremi Ajasoro", "alt": ["Mọremi Àjàṣorò", "Moremi", "Moremi Ajansoro"],
+      "transliterations": { "Yoruba": "Mọremi Àjàṣorò", "etymology": "Àjàṣorò is the by-name she is always given and not a separate person; no derivation of Mọremi is offered in the sources consulted here, and none is invented." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oduduwa-foundation" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oduduwa-foundation", "eraOrdering": 0,
+      "startEvent": "Queen of Ile-Ife in the twelfth century, a woman of Offa married to Oranmiyan, in a period when Ife was being raided repeatedly by the neighbouring Ugbo — the forest people — who looted the market and carried off Ife's people.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi Ajasoro: a woman of Offa married to Oranmiyan, heir of Oduduwa, at a time when Ile-Ife was subject to repeated raids by the neighbouring Ugbo." } ] },
+      { "typeStatus": "mortal", "era": "oduduwa-foundation", "eraOrdering": 1,
+        "startEvent": "She went to the Esimirin river and made a pact with its spirit: she would let herself be taken captive, learn what the raiders were, and pay afterwards whatever was asked. She was taken, she learned, she came back, and Ife stopped losing.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi's vow at the Esimirin river, her deliberate capture by the Ugbo, and the end of the raids that followed." } ] },
+      { "typeStatus": "mortal", "era": "oduduwa-foundation", "eraOrdering": 2,
+        "startEvent": "The river demanded her only son. She gave Oluorogbo, and the people of Ife offered themselves as her children in his place. The Edi festival at Ile-Ife dates from after her death and is held for her.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the river spirit's demand for Oluorogbo, Moremi's only son; of Ife's offer to stand as her children in his place; and of the Edi festival begun after her death." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi as queen of Ile-Ife and wife of Oranmiyan." } ] },
+      { "sphereId": "self-sacrifice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi's vow and of the sacrifice she paid to keep it." } ] },
+      { "sphereId": "deliverance", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi's role in freeing Ile-Ife from the Ugbo raids." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "oranmiyan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Moremi Ajasoro as the wife of Oranmiyan." } ],
+        "notes": "The registry carried Oranmiyan and not her, which in the Ife material is the wrong figure to have kept: he founds cities, she is the reason there is an Ife left to found them from." },
+      { "kind": "mother-of", "personId": "yoruba_oluorogbo",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluorogbo as Moremi's only son, given to the Esimirin river in payment of her vow." } ],
+        "notes": "Her only son, and the price of the bargain." } ],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Ile-Ife", "kind": "civic-festival", "period": "oduduwa-foundation to present",
+        "attestation": "the Edi festival, and the iron rods (opa) carried for Moremi and Oluorogbo", "source": "Reference treatments of the Edi festival at Ile-Ife and of the objects carried in it.",
+        "note": "The festival is reported as beginning shortly after her death and as still kept; the iron rods representing her and her son are described as requiring annual pacification, the worshippers holding that the two spirits live in them." } ],
+    "sources": [ { "claim": "Moremi Ajasoro is a twelfth-century queen of Ile-Ife, wife of Oranmiyan, who had herself captured by the Ugbo raiders in order to learn their secret, freed Ife from them, and paid her vow to the Esimirin river with her only son Oluorogbo; the Edi festival at Ile-Ife commemorates her.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Moremi Ajasoro, of the Esimirin vow, of the sacrifice of Oluorogbo and of the Edi festival." } ], "weight": "high" } ],
+    "notes": "Moremi's story is an intelligence operation with a price attached. She does not fight the Ugbo; she arranges to be taken by them, lives among them long enough to find out what they are — the accounts turn on their costumes, which is what made them terrifying and what made them beatable — and comes home with it. What the story is actually about is the second half: she owes the river, the river names her son, and she pays. Ife's answer, that the whole town would be her children instead, is the closing line and the reason the Edi festival exists. Her husband was already in this registry."
+  },
+  {
+    "id": "yoruba_oluorogbo",
+    "name": { "primary": "Oluorogbo", "alt": ["Olúorogbo", "Oluorogbo of Ife"],
+      "transliterations": { "Yoruba": "Olúorogbo", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["yoruba_moremi"], "parentRoles": ["mother"],
+    "temporal": { "era": "oduduwa-foundation" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oduduwa-foundation", "eraOrdering": 0,
+      "startEvent": "The only son of Moremi, demanded by the spirit of the Esimirin river as the payment for Ife's deliverance from the Ugbo and given up by his mother in fulfilment of her vow. A shrine at Ile-Ife is his, and it has worshippers.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluorogbo: Moremi's only son, sacrificed in fulfilment of her vow to the river, with a shrine dedicated to him at Ile-Ife and worshippers attached to it." } ] } ],
+    "domains": [
+      { "sphereId": "sacrifice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluorogbo as the offering paid for Ife's deliverance." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Ile-Ife", "kind": "shrine-cult", "period": "oduduwa-foundation to present",
+        "attestation": "the shrine of Oluorogbo at Ile-Ife and its worshippers; the iron rod carried for him at the Edi festival", "source": "Reference treatments of the Oluorogbo shrine and of the Edi festival objects.",
+        "note": "He is not a by-product of his mother's story in cult terms: the shrine is his own and is reported as having its own attached worshippers." } ],
+    "sources": [ { "claim": "Oluorogbo is the only son of Moremi Ajasoro, given to the Esimirin river in payment of her vow after Ife's deliverance from the Ugbo, and the holder of a shrine at Ile-Ife.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oluorogbo, of his sacrifice and of his shrine at Ile-Ife." } ], "weight": "medium" } ],
+    "notes": "He is the cost. The Moremi story is told for her, and he is the item she hands over, but Ife did not leave it there: he has a shrine, he has worshippers, and an iron rod is carried for him beside hers at the Edi festival. Other Ife traditions attach further material to his name; none of it was reachable from this session in a form worth citing, and none is asserted here."
+  },
+  {
+    "id": "yoruba_orompoto",
+    "name": { "primary": "Orompoto", "alt": ["Ọrọmpọtọ", "Ajiun Orompoto", "Orompoto of Igboho"],
+      "transliterations": { "Yoruba": "Ọrọmpọtọ", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "female", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "The first woman to reign as Alaafin of Oyo, c. 1554-1562, raised because her family had no male successor; sister of her predecessor Eguguojo, and the second Oyo monarch to rule from the exile capital at Igboho.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orompoto: first female Alaafin of the Oyo Empire, reigning c. 1554-1562, sister of her predecessor Eguguojo, raised because there was no male successor in her family, and the second Oyo monarch to reign at the new capital of Igboho." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "She drove the Nupe out of Oyo in 1555 and built the cavalry the Oyo empire was afterwards made of: a specialised order of mounted officers, horses imported from as far as Timbuktu in 1557, and a thousand horse-archers shooting poisoned arrows.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orompoto's campaign driving the Nupe from Oyo in 1555, her order of cavalry officers, her importation of horses from Timbuktu in 1557 and her thousand mounted archers with poisoned arrows." } ] } ],
+    "domains": [
+      { "sphereId": "queenship", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin (owner of the palace)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orompoto as the first female Alaafin." } ] },
+      { "sphereId": "horsemanship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orompoto's skill on horseback and of the cavalry order she created." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Orompoto's expulsion of the Nupe from Oyo in 1555." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Orompoto is the first female Alaafin of Oyo, reigning c. 1554-1562 from Igboho, sister of Eguguojo, who expelled the Nupe in 1555 and founded the Oyo cavalry, importing horses from Timbuktu in 1557.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Orompoto's reign, her succession after Eguguojo, the Nupe campaign of 1555 and the cavalry she raised." } ], "weight": "high" } ],
+    "notes": "The thing Oyo was feared for in the seventeenth and eighteenth centuries was its cavalry, and the cavalry traces to a woman who took the throne in the 1550s because her house had run out of men. Oyo was in exile at Igboho when she reigned — the Nupe had taken the old capital — and she is the ruler who turned that round. The transformation story, that she became a man before mounting the throne, is reported in the oral tradition and is reported here as tradition rather than as event; what the same tradition does not do is doubt that she reigned. She was absent from a registry that carried three Oyo rulers already."
+  },
+  {
+    "id": "yoruba_ajagbo",
+    "name": { "primary": "Ajagbo", "alt": ["Àjàgbó", "Alaafin Ajagbo"],
+      "transliterations": { "Yoruba": "Àjàgbó", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "A warlike Alaafin of Oyo credited with a reign of a hundred and forty years in the seventeenth century, given approximately as 1600-1659. The hundred and forty years is not believed: scholars hold that the reigns of other Alaafins, Oluodo among them, have been folded into his.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ajagbo: a warlike Alaafin said to have reigned for 140 years in the seventeenth century, his reign given approximately as 1600-1659, with the 140-year figure questioned by scholars who hold that the reigns of other Alaafins such as Oluodo have been attributed to him." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ajagbo's kingship at Oyo." } ] },
+      { "sphereId": "military-command", "contextTag": "lifelong", "term": { "value": "Aare Ona Kakanfo", "script": "Yoruba", "rom": "Are Ona Kakanfo (field marshal)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ajagbo's introduction of the title of Are Ona Kakanfo, a role comparable to field marshal, and of his professionalisation of the Oyo army." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "foundational-precursor-to", "personId": "yoruba_afonja",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Ajagbo as the Alaafin who introduced the title of Are Ona Kakanfo, and of Afonja as the Are Ona Kakanfo of the early nineteenth century." } ],
+        "notes": "Ajagbo created the office; Afonja held it and used it to break the empire it was invented to defend. The link is the office, not descent." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ajagbo is a warlike seventeenth-century Alaafin of Oyo, conventionally dated c. 1600-1659 and credited with an implausible 140-year reign, who introduced the title of Are Ona Kakanfo and professionalised the Oyo army.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ajagbo, his disputed reign length and his institution of the Are Ona Kakanfo." } ], "weight": "medium" } ],
+    "notes": "Ajagbo matters for one act of constitutional engineering. The Oyo Mesi and their head the Bashorun could unmake an Alaafin; a standing field marshal appointed by the Alaafin, outranking them in war, was the counterweight. It worked for a century and then did the opposite — the two men who ended the empire were a Bashorun, Gaa, and an Are Ona Kakanfo, Afonja. The hundred and forty years attributed to his reign are a chronological artefact and the record says so rather than repeating it."
+  },
+  {
+    "id": "yoruba_bashorun_gaa",
+    "name": { "primary": "Bashorun Gaa", "alt": ["Gáà", "Gaha", "Bashorun Gaha", "Basorun Gaa"],
+      "transliterations": { "Yoruba": "Gáà", "etymology": "Bashorun (Baṣọ̀run) is the office, not part of the name: the head of the Oyo Mesi, the council of seven that could require an Alaafin to take his own life." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Named Bashorun of Oyo in 1754, head of the Oyo Mesi, at the height of the empire's wealth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha: named Basorun of Oyo in 1754, nobleman and leader of the military of the old Oyo Empire in the eighteenth century." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He used the council's constitutional power of deposition as an instrument of rule, forcing four successive Alaafins to take their own lives after the symbolic parrot's egg was presented to them. Two of them died between June and October of 1754 alone; Labisi was never crowned and was dead seventeen days into his reign, Awonbioju lasted a hundred and thirty days.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Gaha's conspiracy with the Oyo Mesi to force four successive Alaafins to ritual suicide by presentation of the parrot's egg; of two such deaths between June and October 1754; of Labisi's seventeen days and Awonbioju's hundred and thirty." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 2,
+        "startEvent": "Abiodun, whose daughter Agbonyin he had killed, feigned illness, left the palace in disguise and raised the Onikoyi and the Are Ona Kakanfo Oyabi of Ajase against him. Around 1774 Oyabi's soldiers took him alive; he was tied to a pole in the Akesan market and the city was ordered to cut him to pieces.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaa's fall: the murder of Abiodun's daughter Agbonyin, Abiodun's feigned illness and disguised flight to the Onikoyi and to the Are Ona-Kakanfo Oyabi of Ajase, the overwhelming of Gaa around 1774 and his execution at the Akesan market." } ] } ],
+    "domains": [
+      { "sphereId": "tyranny", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaa's rule over four Alaafins." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "Baṣọ̀run", "script": "Yoruba", "rom": "Bashorun, head of the Oyo Mesi" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the office of Bashorun and of Gaa's holding of it from 1754." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_alaafin_abiodun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the conflict between Bashorun Gaa and Alaafin Abiodun, including Gaa's killing of Abiodun's daughter Agbonyin." } ],
+        "notes": "The fifth Alaafin of his tenure, and the one who outlived him." },
+      { "kind": "killed-by", "personId": "yoruba_alaafin_abiodun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaa's capture by the forces Abiodun raised and of his execution at Abiodun's order around 1774." } ],
+        "notes": "Taken alive by Oyabi's soldiers and executed on Abiodun's order at the Akesan market." },
+      { "kind": "enemy", "personId": "yoruba_labisi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Labisi's forced suicide seventeen days into his reign at Gaha's hands, marking the beginning of the overthrow of the Alaafinate." } ],
+        "notes": "The first of the four." },
+      { "kind": "killer-of", "personId": "yoruba_labisi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha as responsible for the death of Labisi, forced to kill himself seventeen days into an uncrowned reign in July 1754." } ],
+        "notes": "Seventeen days, and never crowned." },
+      { "kind": "enemy", "personId": "yoruba_awonbioju",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awonbioju's compelled suicide under Gaha, the second of two between June and October 1754." } ],
+        "notes": "The second of the four." },
+      { "kind": "killer-of", "personId": "yoruba_awonbioju",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two Alaafins forced to commit suicide by Gaha between June and October 1754, Awonbioju having spent 130 days on the throne." } ],
+        "notes": "A hundred and thirty days." },
+      { "kind": "enemy", "personId": "yoruba_agboluaje",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha's declaration of war against Agboluaje's friend Elewi-odo." } ],
+        "notes": "The third of the four. Gaa went at his friend rather than at him." },
+      { "kind": "killer-of", "personId": "yoruba_agboluaje",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha's war on Elewi-odo and of Agboluaje's taking poison and dying before his emissaries returned; and of Gaha as responsible for the deaths of four Alaafins." } ],
+        "notes": "By his own hand, and counted to Gaa in the reference treatments along with the other three." },
+      { "kind": "enemy", "personId": "yoruba_majeogbe",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Majeogbe's fortifying himself with charms against Gaha and of his poisoning of him." } ],
+        "notes": "The fourth, and the only one who marked him: Majeogbe's poison left Gaa paralysed." },
+      { "kind": "killer-of", "personId": "yoruba_majeogbe",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Majeogbe as the last Alaafin Gaha killed, and of Majeogbe's death unable to withstand Gaa's sons." } ],
+        "notes": "The last of the four, and the exchange that crippled him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bashorun Gaa was named head of the Oyo Mesi in 1754 and forced four successive Alaafins to ritual suicide before Alaafin Abiodun raised the Onikoyi and the Are Ona Kakanfo Oyabi against him and had him executed at Akesan market around 1774.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gaha's tenure as Bashorun, the four forced suicides and his death under Abiodun." } ], "weight": "high" } ],
+    "notes": "Gaa is the constitutional crisis of eighteenth-century Oyo in one man. The Oyo Mesi's power to present the parrot's egg — after which the Alaafin had no option but to die — was meant as a check on a bad king; Gaa turned it into a method, and for twenty years the Alaafin was whoever he currently permitted. The empire did not recover the balance afterwards. His end at Akesan, with every citizen ordered to take a pound of his flesh, is told in Yoruba tradition as the standard example of what is owed to a tyrant, and 'ohun t'a se f'ọlọrun Gaa' entered the language from it. He was absent from this registry entirely, as were all four of the Alaafins he killed."
+  },
+  {
+    "id": "yoruba_alaafin_abiodun",
+    "name": { "primary": "Abiodun", "alt": ["Abíọ́dún", "Alaafin Abiodun"],
+      "transliterations": { "Yoruba": "Abíọ́dún", "etymology": "A name of the ordinary Yoruba circumstantial type — born at a festival — and not a throne-name coined for the office." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin of Oyo, given as c. 1770-1789 or 1774-1789 depending on where the reign is counted from — the fifth Alaafin of Gaa's tenure and the first to survive it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abiodun, Alaafin of Oyo, whose reign is given as c. 1770-1789 and as 1774-1789 in different sources." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He broke Bashorun Gaa around 1774 by going outside the capital for force — feigning illness, leaving in disguise, and raising the Onikoyi and the Are Ona Kakanfo Oyabi of Ajase. The reign that followed is remembered for peace and prosperity, and he died in 1789.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abiodun's overthrow of Bashorun Gaa around 1774, of his reign as noted for peace and prosperity, and of his death in 1789, after which Awole was elected Alaafin." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abiodun's kingship at Oyo." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abiodun's reign as a period of peace and prosperity." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the conflict between Alaafin Abiodun and Bashorun Gaa." } ],
+        "notes": "Gaa had killed his daughter Agbonyin; Abiodun killed Gaa." },
+      { "kind": "killer-of", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Abiodun's raising of the Onikoyi and Oyabi against Gaa and of the execution he ordered at the Akesan market around 1774." } ],
+        "notes": "He did not do it with the palace's own resources, which is the point: the palace no longer had any." },
+      { "kind": "father-of", "personId": "yoruba_atiba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Atiba Atobatele as the son of Alaafin Abiodun of Oyo and of Eni-Olufan Adegoolu of Akeitan." } ],
+        "notes": "The son who rebuilt the kingdom fifty years after his father's death, in a different place." },
+      { "kind": "grandfather-of", "personId": "yoruba_oluyole",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole as born to Olukuoye by Omoba Agbonrin, a daughter of the Alaafin Abiodun." } ],
+        "notes": "Through his daughter Agbonrin. The two men who divided post-imperial Yorubaland between them, Atiba at Oyo and Oluyole at Ibadan, were his son and his grandson." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Abiodun is the Alaafin of Oyo of c. 1770/1774-1789 who destroyed Bashorun Gaa around 1774 and whose reign afterwards is remembered for peace and prosperity; he was succeeded on his death in 1789 by Awole.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Abiodun's reign, his overthrow of Gaa and his death in 1789." } ], "weight": "high" } ],
+    "notes": "Abiodun is the last Alaafin who ruled rather than presided. He killed Gaa and got fifteen quiet years out of it, and Yoruba tradition treats his reign as the empire's last good period — which is a way of saying that everything after 1789 goes wrong quickly. It went wrong partly because of how he won: he beat the Bashorun by calling in provincial commanders, which taught the provinces that the capital could not manage its own affairs. Afonja learned that lesson from the same event. Abiodun is also the father of Atiba, who is the reason there is still an Alaafin."
+  },
+  {
+    "id": "yoruba_aole_arogangan",
+    "name": { "primary": "Aole Arogangan", "alt": ["Awole Arogangan", "Àwọlé Arógangan", "Alaafin Aole"],
+      "transliterations": { "Yoruba": "Àwọlé Arógangan", "etymology": "Arógangan is the by-name, not a second person; it is the sense in which he is remembered rather than a lineage name." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Elected Alaafin in 1789 on the death of Abiodun, to whom he was related; he reigned to 1796.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awole Arogangan, Alaafin of the Oyo empire from 1789 to 1796, elected on the death of Abiodun." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He ordered the Are Ona Kakanfo Afonja to destroy Iwere-Ile, the maternal town of his predecessor Abiodun. Afonja refused that order, being under oath, but sacked Apomu as instructed; and on the army's return he marched it on Oyo-Ile itself, which was forbidden, and sent the Alaafin an empty covered calabash.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awole's order against Iwere-Ile, Abiodun's maternal town; of Afonja's refusal on account of an oath; of the sack of Apomu; of the army's forbidden march on Oyo-Ile and of the empty covered calabash sent to Aole." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 2,
+        "startEvent": "He took his own life in 1796, and cursed the men who had sent the calabash before he did. The curse is still quoted in Yoruba political speech.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aole's ritual suicide in 1796 and of the curse he laid on the Oyo Mesi who betrayed him, which is still invoked in Yoruba political commentary." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awole Arogangan's kingship." } ] },
+      { "sphereId": "curse", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the curse Aole pronounced on the Oyo Mesi at his death." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_afonja",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the breach between Awole and his Are Ona Kakanfo Afonja over the order against Iwere-Ile and of the calabash sent to Aole afterwards." } ],
+        "notes": "The Alaafin who gave the order and the field marshal who refused it and then came for him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aole Arogangan is the Alaafin of Oyo from 1789 to 1796 whose order against Iwere-Ile broke his relations with the Are Ona Kakanfo Afonja, and who took his own life in 1796 after the army marched on the capital and sent him the empty calabash, pronouncing a curse on the Oyo Mesi as he died.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Awole Arogangan's reign, the Iwere-Ile order, Afonja's march and the curse at his death." } ], "weight": "high" } ],
+    "notes": "Seven years is all it took. Aole inherited an empire that Abiodun had held together and gave a suicidal order in the first of them — Iwere-Ile was the home town of his predecessor's mother, and asking the army to burn it told the army exactly what kind of king it now had. Afonja refused, and the refusal was the end: an Are Ona Kakanfo who has publicly declined an order and kept his command is a second government. The covered calabash is the Oyo formula, the same instrument Gaa had used four times, and it worked on Aole as designed. What the tradition kept is not his reign but his last words, which are quoted in Nigerian political argument to this day."
+  },
+  {
+    "id": "yoruba_afonja",
+    "name": { "primary": "Afonja", "alt": ["Àfọ̀njá", "Afonja of Ilorin", "Aare Ona Kakanfo Afonja"],
+      "transliterations": { "Yoruba": "Àfọ̀njá", "etymology": "No derivation is given in the sources consulted here. Are Ona Kakanfo (Aàrẹ Ọ̀nà Kakanfò) is the office: the empire's supreme field commander, an office created by Ajagbo." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Born in the 1750s at Ilorin into the town's Yoruba ruling line — his great-grandfather Laderin founded the city, and the succession ran Laderin, Pasin, Alugbin, Afonja — and raised to Are Ona Kakanfo, supreme military commander of the Oyo Empire, in the late eighteenth century.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afonja of Ilorin, c. 1750s, Are-Ona-Kakanfo of the Oyo Empire, whose great-grandfather Laderin founded Ilorin and whose line ran Laderin, Pasin, Alugbin, Afonja." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He seceded Ilorin from Oyo in 1817, supported by Oyo Muslims and by the Fulani cleric Alimi, who raised a revolt of Hausa slaves in his interest.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afonja's secession of Ilorin from Oyo in 1817 with the help of Oyo Muslims and of Alimi, a Fulani Muslim cleric, who incited a revolt of Hausa slaves." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 2,
+        "startEvent": "He lost control of the force he had raised and was killed by it — besieged in his own compound and shot down with arrows and spears. The date is disputed: c. 1813 in one reference treatment, 1823 or early 1824 in others, the later dating placing his death after Alimi's in 1823 and before Ilorin's submission to the Sokoto Caliphate in 1824.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Afonja's death: given as c. 1813 in one, as 1823 in another, and as early 1824 in a third, where the Jamaa besieged his compound and killed him with arrows and spears; and of Alimi's death about 1823 and Abd Salaam's declaration as emir under Sokoto in 1824." } ] } ],
+    "domains": [
+      { "sphereId": "military-command", "contextTag": "lifelong", "term": { "value": "Aàrẹ Ọ̀nà Kakanfò", "script": "Yoruba", "rom": "Are Ona Kakanfo" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afonja as Are-Ona-Kakanfo, supreme military commander of the Oyo Empire." } ] },
+      { "sphereId": "rebellion", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afonja's secession of Ilorin from Oyo in 1817." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_aole_arogangan",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Afonja's refusal of Aole's order against Iwere-Ile, of his march on Oyo-Ile and of the calabash sent to the Alaafin." } ],
+        "notes": "He refused the order, kept the army, and finished the king." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Afonja of Ilorin, born in the 1750s into the line of Laderin who founded the city, was Are-Ona-Kakanfo of the Oyo Empire, seceded Ilorin in 1817 with Muslim and Fulani support led by Alimi, and was killed by the force he had raised, at a date variously given as c. 1813, 1823 and early 1824.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Afonja, his lineage, the 1817 secession, Alimi's support and the disputed date of his death." } ], "weight": "high" } ],
+    "notes": "Afonja is the hinge. Two men had already shown the empire that its provinces could overrule its capital — Gaa from inside, Abiodun by calling in the provinces to beat him — and Afonja drew the conclusion: took Ilorin out in 1817, and to hold it, brought in a religious constituency the Oyo system had no way to absorb. Alimi's men were not his men, and when he could no longer pay them in war they killed him and kept the city, which went to Sokoto. Ilorin has been an emirate ever since, and the argument about whether it is a Yoruba town is a direct consequence of one field marshal's calculation. The disagreement about his death date is real and is left standing here: the earliest citation is irreconcilable with the 1817 secession being his."
+  },
+  {
+    "id": "yoruba_oluewu",
+    "name": { "primary": "Oluewu", "alt": ["Olúewu", "Alaafin Oluewu"],
+      "transliterations": { "Yoruba": "Olúewu", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin of Oyo from 1833 to 1835, who came to a throne already hollowed out by the rebellions and wars of the 1810s and 1820s and set out to restore the empire's standing.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluewu, Alaafin of the Oyo empire 1833-1835, determined on his accession to restore the glory of an empire much diminished by the rebellions and wars of the 1810s and 1820s." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He attacked Ilorin and lost. On the second day of the battle in 1835 a wing of his allied force collapsed and he was surrounded; his eldest son rode up, saluted him, and went into the fighting, and both died there. The defeat ended imperial Oyo.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Battle of Ilorin of 1835: the collapse of one wing of the allied force on the second day, Oluewu's encirclement, the salute and death of his eldest son, the death of the Alaafin and the final collapse of the Oyo state." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluewu's reign at Oyo, 1833-1835." } ] },
+      { "sphereId": "warfare", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluewu's campaign against Ilorin and his death at the Battle of Ilorin in 1835." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oluewu is the Alaafin of Oyo from 1833 to 1835 whose defeat and death at the Battle of Ilorin in 1835, alongside his eldest son, marked the end of Oyo's imperial period.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oluewu's reign and of the Battle of Ilorin of 1835." } ], "weight": "high" } ],
+    "notes": "Oluewu is where the Oyo empire stops. He inherited a state that had been losing provinces for twenty years and decided to reverse it in the only way a defeat of that kind can be reversed, by going at Ilorin — the town Afonja had taken out and the Fulani had kept — and the attempt destroyed what was left. The detail the sources keep is his son riding up to salute him inside the encirclement before going into the fighting, which is the kind of thing that survives a battle when nothing else does. After 1835 there is no imperial Oyo; there is Atiba's town."
+  },
+  {
+    "id": "yoruba_atiba",
+    "name": { "primary": "Atiba Atobatele", "alt": ["Atiba", "Alaafin Atiba", "Atobatele"],
+      "transliterations": { "Yoruba": "Àtìbà Atóbátẹ̀lẹ̀", "etymology": "Atobatele is the by-name he reigned under. New Oyo is called Ọ̀yọ́ Àtìbà after him, which is unusual: the town carries the king's name rather than the other way round." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["yoruba_alaafin_abiodun"], "parentRoles": ["father"],
+    "temporal": { "era": "post-oyo" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-oyo", "eraOrdering": 0,
+      "startEvent": "A son of Alaafin Abiodun by Eni-Olufan Adegoolu of Akeitan, who before his elevation had lived by thieving and kidnapping, moved to the town of Ago and raised a private army there.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Atiba Atobatele: son of Alaafin Abiodun of Oyo and of Eni-Olufan Adegoolu from Akeitan, who was involved in thievery and kidnapping before relocating to the town of Ago and raising a private army." } ] },
+      { "typeStatus": "mortal", "era": "post-oyo", "eraOrdering": 1,
+        "startEvent": "After Oluewu's death he was chosen to rebuild the kingdom and made Alaafin. He moved the capital to Ago Oja; New Oyo was founded in 1838 and he reigned there to 1858. He persuaded Oluyole of Ibadan — himself a grandson of Abiodun through his mother Agbonrin — to accept the Alaafin as nominal sovereign, which is why there is still an Alaafin.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Atiba's selection to rebuild the kingdom after the death of Oluewu, of his removal of the capital to Ago Oja, of the founding of Ago d'Oyo (New Oyo) in 1838 and his reign there to 1858, and of his persuading Oluyole of Ibadan, a descendant of Abiodun, to take the title of Bashorun and accept the Alaafin as nominal sovereign." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Atiba as Alaafin of Oyo." } ] },
+      { "sphereId": "city-founding", "contextTag": "phase", "term": { "value": "Ọ̀yọ́ Àtìbà", "script": "Yoruba", "rom": "Oyo Atiba, 'New Oyo'" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the founding of Ago d'Oyo, New Oyo, in 1838 and of the town's name Ọ̀yọ́ Àtìbà." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Atiba's arrangement with Oluyole of Ibadan." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Yoruba", "placeName": "Oyo (New Oyo, Ago d'Oyo)", "kind": "dynastic-seat", "period": "1838 to present",
+        "attestation": "the town founded in 1838 and known to its people as Ọ̀yọ́ Àtìbà", "source": "Reference treatments of the founding of New Oyo and of the Alaafin's seat there.",
+        "note": "The old capital to the north was abandoned; the Alaafin's line continues from the town Atiba made, which is why the distinction 'New Oyo' is still drawn locally." } ],
+    "sources": [ { "claim": "Atiba Atobatele, a son of Alaafin Abiodun, was chosen after the death of Oluewu to rebuild the kingdom, moved the capital to Ago Oja where New Oyo was founded in 1838, reigned to 1858, and brought Oluyole of Ibadan to accept the Alaafin as nominal sovereign.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Atiba Atobatele's parentage, his rise at Ago, the founding of New Oyo and his settlement with Ibadan." } ], "weight": "high" } ],
+    "notes": "Atiba is the salvage operation. The empire was gone, the old capital was abandoned, and the man who put a kingdom back together had been a bandit with a private army in a market town — which is the honest version, and the reference treatments give it without embarrassment. What he did that mattered was political rather than military: Ibadan had the soldiers and could have simply ignored him, and he talked Oluyole into taking the title of Bashorun under a nominal Alaafin instead of ruling in his own name. The office survives to the present because of that conversation. He is the son of Abiodun, which closes the arc: the last Alaafin who ruled, and the son who rebuilt the throne fifty years after him."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE PARROT'S EGG: EIGHT EIGHTEENTH-CENTURY ALAAFINS
+================================================================================
+
+Oyo's constitution gave the Oyo Mesi, the council of seven under the Bashorun,
+the power to reject an Alaafin: they sent him a covered calabash or a parrot's
+egg, and he was then obliged to take his own life. The eighteenth century is
+the record of what happens when that instrument is used routinely, and it ends
+with an empire that cannot govern itself. Eight of the men on the receiving end
+are here. None of the eight was in the registry.
+
+Two internal contradictions in the reachable sources are recorded rather than
+resolved. Gberu's reign is given as c. 1735-1746 and his successor
+Amuniwaiye's as c. 1738-1742, which cannot both be right; and Onisile's
+accession is given as 1746 while the Dahomey campaigns attributed to his reign
+are dated 1742 and 1743. Both records say so on their face.
+
+```json
+[
+  {
+    "id": "yoruba_ojigi",
+    "name": { "primary": "Ojigi", "alt": ["Ọjìgí", "Alaafin Ojigi"],
+      "transliterations": { "Yoruba": "Ọjìgí", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin of Oyo c. 1724-1735, at the point where the empire's cavalry could still impose terms on its neighbours.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ojigi, Alaafin of Oyo circa 1724-1735." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He launched four incursions against Dahomey, having been asked for help by kingdoms that Agaja was threatening, and in 1730 Dahomey agreed to pay Oyo an annual tribute: forty men, forty women, guns, and four hundred loads of cowries and corals.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ojigi's four military incursions against the Kingdom of Dahomey, undertaken at the request of kingdoms threatened by Agaja, and of the annual tribute of forty men, forty women, guns and four hundred loads of cowries and corals agreed in 1730." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ojigi's reign at Oyo." } ] },
+      { "sphereId": "conquest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ojigi's campaigns against Dahomey and the tribute of 1730." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ojigi is the Alaafin of Oyo of c. 1724-1735 who made four incursions against Dahomey and brought Agaja's kingdom to terms in 1730, on an annual tribute of forty men, forty women, guns and four hundred loads of cowries and corals.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ojigi's reign and of the Dahomey campaigns and the 1730 tribute." } ], "weight": "medium" } ],
+    "notes": "Ojigi is what Oyo looked like when the system worked. A neighbouring state expands, the states it is eating appeal to Oyo, Oyo's cavalry goes four times and the aggressor ends up paying tribute in people, guns and cowries — a hundred and fifty years of institutional design, Ajagbo's field marshal included, doing exactly what it was for. Within a decade of his death the same institutions were being used to kill kings. The Dahomean side of this, Agaja and Tegbesu, is absent from the registry under any tradition and is not written here: it belongs to a Fon pass, and this record names them without pretending to hold them."
+  },
+  {
+    "id": "yoruba_gberu",
+    "name": { "primary": "Gberu", "alt": ["Gbérú", "Alaafin Gberu"],
+      "transliterations": { "Yoruba": "Gbérú", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin of Oyo, his reign given as c. 1735-1746 — a dating that cannot be reconciled with the c. 1738-1742 given for his successor Amuniwaiye, and the disagreement is left standing.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gberu, Alaafin of Oyo circa 1735-1746, and of Amuniwaiye, given as reigning circa 1738-1742 in succession to him." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "Bashorun Jambu and the Oyo Mesi rejected him and required him to take his own life. Jambu is described in the tradition as having been his friend.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gberu's rejection by Bashorun Jambu and the Oyo Mesi and his forced ritual suicide, Jambu being described as his former friend." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gberu's reign at Oyo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "yoruba_amuniwaiye",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amuniwaiye as the crown prince of the late Alaafin Gberu." } ],
+        "notes": "His crown prince, and his successor." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gberu is an Alaafin of Oyo, dated c. 1735-1746, whom Bashorun Jambu and the Oyo Mesi rejected and required to take his own life, and who was the father of his successor Amuniwaiye.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gberu's reign, his forced suicide under Bashorun Jambu, and his son Amuniwaiye." } ], "weight": "medium" } ],
+    "notes": "Gberu is the first of the eighteenth-century Alaafins in this batch to be killed by his own council, and the detail the tradition keeps is that the Bashorun who did it had been his friend. That is not decoration: the Oyo Mesi's power was a formal instrument with no appeal, so the only thing standing between a king and it was personal, and Gberu's case is the one that demonstrates how little that was worth. Twenty years later Gaa was using the same instrument four times in twenty years without pretending friendship at all."
+  },
+  {
+    "id": "yoruba_amuniwaiye",
+    "name": { "primary": "Amuniwaiye", "alt": ["Amúniwáíyé", "Alaafin Amuniwaiye"],
+      "transliterations": { "Yoruba": "Amúniwáíyé", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["yoruba_gberu"], "parentRoles": ["father"],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Crown prince of Gberu and Alaafin after him, his reign given as c. 1738-1742 — which overlaps the c. 1735-1746 given for his father's, and the two datings are left as the sources give them.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amuniwaiye, Alaafin of Oyo circa 1738-1742, crown prince of the late Alaafin Gberu, who had been forced to commit suicide by his former friend Bashorun Jambu." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He set out to avenge his father on Bashorun Jambu with the help of a medicine man, Olukoyisi. The tradition then turns: he abused Olukoyisi's wife, and the medicine man treated her so that the next time the Alaafin came to her the two could not be separated.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the legend of Amuniwaiye: his attempt on Bashorun Jambu with the help of the medicine man Olukoyisi, his sexual abuse of Olukoyisi's wife, and Olukoyisi's treatment of her so that she and the Alaafin were inextricably joined when they next met." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amuniwaiye's reign at Oyo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Amuniwaiye is an Alaafin of Oyo, dated c. 1738-1742, crown prince of Gberu, who sought revenge on Bashorun Jambu through the medicine man Olukoyisi and was destroyed by that medicine man after abusing his wife.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Amuniwaiye's reign, his parentage and the Olukoyisi legend." } ], "weight": "medium" } ],
+    "notes": "The Olukoyisi story is told as legend and is recorded here as legend. What it is doing in the tradition is plain enough: a king who inherits a vendetta hires power he does not control, uses his rank on the household of the man who holds it, and is destroyed by the same power in a manner designed so that the whole city sees what he was doing when it happened. Oyo's political memory is full of this shape — the instrument a king reaches for turns in his hand — and the eighteenth century is where it stops being a story and starts being the constitution."
+  },
+  {
+    "id": "yoruba_onisile",
+    "name": { "primary": "Onisile", "alt": ["Oníṣílẹ̀", "Alaafin Onisile"],
+      "transliterations": { "Yoruba": "Oníṣílẹ̀", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin of Oyo c. 1746-1754, described as the more capable ruler whose accession changed Oyo's posture toward Dahomey; the campaigns attributed to that change are dated 1742 and 1743, which is before the accession date the same treatment gives, and the inconsistency is recorded rather than adjusted. Dahomey was invaded and Tegbesu forced to withdraw from Abomey.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Onisile, Alaafin circa 1746-1754, whose accession in 1746 is said to have altered Oyo's relations with Dahomey, which was invaded in 1742 and 1743, forcing King Tegbesu to retreat from Abomey." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He was struck by lightning and left paralysed, and the Oyo Mesi rejected him. His reign ends in 1754, the year Gaa was named Bashorun.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Onisile's being struck by lightning and paralysed, and of his consequent rejection by the Oyo Mesi; and of Gaha's appointment as Basorun of Oyo in 1754." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Onisile's reign at Oyo." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Dahomey campaigns associated with Onisile's reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Onisile is the Alaafin of Oyo of c. 1746-1754 associated with the invasions of Dahomey that forced Tegbesu from Abomey, who was struck by lightning, left paralysed, and rejected by the Oyo Mesi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Onisile's reign, the Dahomey campaigns and his rejection after the lightning strike." } ], "weight": "medium" } ],
+    "notes": "The lightning is the whole record. An Alaafin of Oyo struck by lightning is not a weather report in the tradition that produced Shango — the fourth Alaafin of Oyo is the thunder orisha, and lightning falling on his successor's person is read, and the reading is that the office has withdrawn from the man. The Oyo Mesi's rejection follows as the formality it was. The sources reachable here do not make that inference explicitly and this record does not assert it as theirs; what they do report is the sequence, struck, paralysed, rejected, and that the sequence ended his reign in the year Gaa took the Bashorunate."
+  },
+  {
+    "id": "yoruba_labisi",
+    "name": { "primary": "Labisi", "alt": ["Lábísí", "Alaafin Labisi"],
+      "transliterations": { "Yoruba": "Lábísí", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin for seventeen days in July 1754, and never crowned: Gaa's first, and the beginning of the overthrow of the Alaafinate by the head of the Oyo Mesi.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Labisi: Alaafin reigning in July 1754, never crowned, forced to kill himself seventeen days into his reign, marking the beginning of the overthrow of the Alaafinate by Bashorun Gaha." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Labisi's uncrowned reign." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Labisi's forced suicide seventeen days into his reign at the hands of Bashorun Gaha." } ],
+        "notes": "The first of the four. Seventeen days." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Labisi is the Alaafin of Oyo who reigned for seventeen days in July 1754 without ever being crowned, forced to take his own life by Bashorun Gaa.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Labisi's seventeen-day uncrowned reign and his death under Gaha." } ], "weight": "medium" } ],
+    "notes": "Seventeen days and no coronation. Labisi is in the registry now because a list of Alaafins that skips the ones who lasted a fortnight is a list of the ones who survived, which is a different subject. What the Oyo Mesi did to him in July 1754 it did again in October, and the interval is the measure of how completely the constitutional check had become a weapon."
+  },
+  {
+    "id": "yoruba_awonbioju",
+    "name": { "primary": "Awonbioju", "alt": ["Awọnbíọjú", "Awonbijou", "Alaafin Awonbioju"],
+      "transliterations": { "Yoruba": "Awọnbíọjú", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin for a hundred and thirty days in 1754, the second of the two Gaa killed between June and October of that year, and compelled like the first to take his own life.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awonbijou, who spent 130 days on the throne, and of the two Alaafins forced to commit suicide by Gaha between June and October 1754." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awonbioju's reign of 130 days." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Awonbioju's compelled suicide under Bashorun Gaha within the same year as Labisi's." } ],
+        "notes": "The second of the four. A hundred and thirty days." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Awonbioju is the Alaafin of Oyo who spent a hundred and thirty days on the throne in 1754 before Bashorun Gaa compelled him to take his own life, the second of two such deaths between June and October of that year.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Awonbioju's 130-day reign and of the 1754 suicides under Gaha." } ], "weight": "medium" } ],
+    "notes": "Two Alaafins died in one year at the Bashorun's instance, and the second knew exactly what the first had been sent. A hundred and thirty days is long enough to understand the position and much too short to alter it. After Awonbioju the council installed Agboluaje, who lasted long enough to have a policy and was destroyed over it."
+  },
+  {
+    "id": "yoruba_agboluaje",
+    "name": { "primary": "Agboluaje", "alt": ["Àgbọ́lúajé", "Alaafin Agboluaje"],
+      "transliterations": { "Yoruba": "Àgbọ́lúajé", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Installed as Alaafin after Awonbioju's death, the third of the Alaafins of Gaa's tenure.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Agboluaje, installed as Alaafin of Oyo after the death of King Awonbioju." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "Gaa declared war on Elewi-odo, who was his friend. He poisoned himself, and died before the emissaries he had sent came back.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha's declaration of war against Agboluaje's friend Elewi-odo, and of Agboluaje's taking poison and dying before his emissaries returned." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Agboluaje's reign at Oyo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the war Gaha declared on Agboluaje's friend Elewi-odo and of Agboluaje's death by his own hand in consequence." } ],
+        "notes": "The third of the four. He did not wait for the calabash." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Agboluaje is the Alaafin of Oyo installed after Awonbioju, who poisoned himself and died before his emissaries returned, in the course of Bashorun Gaa's war on his friend Elewi-odo.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Agboluaje's installation, of Gaha's war on Elewi-odo, and of Agboluaje's self-poisoning." } ], "weight": "medium" } ],
+    "notes": "Agboluaje's death is the same act as Labisi's and Awonbioju's with the form removed: no council, no calabash, no parrot's egg, simply an Alaafin who understood what was coming and did it himself while a message was still in transit. The proximate cause was Gaa attacking a man the king was bound to, which is what a Bashorun does when he wants a king to know the throne has no friends. Elewi-odo is not in the registry and is not written here; nothing was reachable about him beyond his place in this episode."
+  },
+  {
+    "id": "yoruba_majeogbe",
+    "name": { "primary": "Majeogbe", "alt": ["Májẹ̀ọgbẹ̀", "Alaafin Majeogbe"],
+      "transliterations": { "Yoruba": "Májẹ̀ọgbẹ̀", "etymology": "No derivation is given in the sources consulted here." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "oyo-empire" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 0,
+      "startEvent": "Alaafin after Agboluaje's death, dated c. 1770-1772. He came to the throne knowing what had happened to the last three and armed himself against it with charms, Gaa being famous for exactly that kind of power.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Majeogbe, who became king after the death of Agboluaje, was already aware of the terror Gaha had unleashed and fortified himself with charms; Gaha himself being renowned for his juju prowess. His reign is given as c. 1770-1772." } ] },
+      { "typeStatus": "mortal", "era": "oyo-empire", "eraOrdering": 1,
+        "startEvent": "He poisoned Gaa, and the poison left the Bashorun weak and paralysed — which is why Abiodun was able to finish him four years later. Majeogbe himself could not overcome Gaa's sons, and the tradition says he died of frustration.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gaha's being poisoned by Majeogbe, the last Alaafin he killed, leaving him weak, paralysed and vulnerable; and of Majeogbe's inability to withstand Gaa's sons and his death in frustration." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "aláàfin", "script": "Yoruba", "rom": "Alaafin" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Majeogbe's reign at Oyo." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "yoruba_bashorun_gaa",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Majeogbe's fortification against Gaha and of his poisoning of him." } ],
+        "notes": "The fourth of the four, and the only one who marked him: the poison that paralysed Gaa is Majeogbe's, and Abiodun killed a man who was already crippled." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Majeogbe is the Alaafin of Oyo of c. 1770-1772, the last of the four Alaafins Bashorun Gaa destroyed, who fortified himself with charms against Gaa and poisoned him, leaving him weak and paralysed, before dying himself unable to overcome Gaa's sons.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Majeogbe's reign, his charms, his poisoning of Gaha and his death." } ], "weight": "medium" } ],
+    "notes": "Majeogbe is the one who fought back, and the record of it is precise about the arms used: Gaa's power was understood as juju as much as constitutional, so Majeogbe met him on that ground and won the exchange. It cost him the reign — Gaa's sons held the city whatever state their father was in — but the poison is the reason there was anything left for Abiodun to overthrow two years later. Nigerian popular history gives the credit for Gaa's fall entirely to Abiodun; the sources consulted here are clear that the man Abiodun's allies dragged to the Akesan market had already been paralysed by this king."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. IBADAN AND THE NOMINAL CROWN
+================================================================================
+
+The settlement that ended the Oyo collapse had two parties. Atiba had the title
+and Ibadan had the army, and the man who agreed to hold the army under the
+title was Abiodun's grandson. He is here for that reason and no other; the rest
+of Ibadan's nineteenth-century leadership — Oluyedun, Oderinlo, Ogunmola,
+Ibikunle, Latoosa — is real, is absent from the registry, and belongs to an
+Ibadan pass rather than to this one. The census says so under BLOCKED.
+
+```json
+[
+  {
+    "id": "yoruba_oluyole",
+    "name": { "primary": "Oluyole", "alt": ["Olúyọ̀lé", "Bashorun Oluyole", "Iba Oluyole"],
+      "transliterations": { "Yoruba": "Olúyọ̀lé", "etymology": "No derivation is given in the sources consulted here. Baṣọ̀run is the office he took, the same title Gaa had held at Oyo two generations before." } },
+    "type": "mortal", "origin": "canon", "tradition": "Yoruba", "primaryTradition": "Yoruba",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "post-oyo" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "post-oyo", "eraOrdering": 0,
+      "startEvent": "Born at Old Oyo to the polygamous household of Olukuoye, his mother Omoba Agbonrin a daughter of the Alaafin Abiodun; he flourished in the middle of the nineteenth century, and the sources reachable here give his death as 1850 in one place and do not date it at all in another.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole: born in Old Oyo to the polygamous family of Olukuoye by Omoba Agbonrin, a daughter of the Alaafin Abiodun, flourishing c. mid-1800s, with one source giving his death as 1850 and the principal reference treatment giving no death date." } ] },
+      { "typeStatus": "mortal", "era": "post-oyo", "eraOrdering": 1,
+        "startEvent": "He was crowned Oloye Bashorun — military leader of Ibadan and ex officio prime minister of Oyo — and was one of the men who built Ibadan's army and its economy in the city's formative years; after the death of Aare Oluyedun he was installed as the first Baale of Ibadanland.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole's crowning as Oloye Bashorun, military leader of Ibadan and ex officio prime minister of Oyo, of his part in the military and economic development of Ibadan in its formative years, and of his installation as the first Baale of Ibadanland after the death of Aare Oluyedun." } ] },
+      { "typeStatus": "mortal", "era": "post-oyo", "eraOrdering": 2,
+        "startEvent": "Atiba persuaded him to accept the Alaafin as nominal sovereign. He declined the title of Baale in that arrangement and took Bashorun instead — the office of the man who had destroyed four Alaafins at Old Oyo — and the Alaafinate survived on those terms.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Atiba's persuading Oluyole to accept the Alaafin as his nominal sovereign, and of Oluyole's declining the title of Baale in favour of Bashorun." } ] } ],
+    "domains": [
+      { "sphereId": "military-command", "contextTag": "lifelong", "term": { "value": "Baṣọ̀run", "script": "Yoruba", "rom": "Bashorun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole as Bashorun and military leader of Ibadan." } ] },
+      { "sphereId": "statecraft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole's arrangement with Alaafin Atiba and his installation as first Baale of Ibadanland." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "grandchild-of", "personId": "yoruba_alaafin_abiodun",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole's mother Omoba Agbonrin as a daughter of the Alaafin Abiodun." } ],
+        "notes": "Through his mother. His parents are named in the sources — Olukuoye and Agbonrin — and neither is in the registry, so the descent is carried as a relation rather than as parentIds." },
+      { "kind": "subordinate-to", "personId": "yoruba_atiba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Oluyole's acceptance of the Alaafin as nominal sovereign at Atiba's persuasion." } ],
+        "notes": "Nominally. Ibadan had the soldiers and Oyo had the title, and the record of the arrangement is careful to say which was which." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Oluyole, a grandson of Alaafin Abiodun through his mother Agbonrin, was Bashorun and military leader of Ibadan in the city's formative years, first Baale of Ibadanland after the death of Aare Oluyedun, and the man Atiba brought to accept the Alaafin as nominal sovereign.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Oluyole's parentage, his offices at Ibadan and his settlement with Alaafin Atiba." } ], "weight": "medium" } ],
+    "notes": "The choice of title is the whole story. Oluyole could have ruled Ibadan in his own name — he had the army, and Atiba had a town he had built out of a market and a claim — and instead he took Bashorun, which is the Oyo constitution's second office, and thereby placed himself inside a system rather than beside it. That the same office had been used by Gaa to kill four kings two generations earlier is not lost on the Yoruba sources. The arrangement held; there is still an Alaafin, and Ibadan became the largest city in the region under men who called themselves the Alaafin's officers. Oluyole is Abiodun's grandson and Atiba's nephew, which makes the whole nineteenth-century settlement a family arrangement about a ruined empire."
+  }
+]
+```
