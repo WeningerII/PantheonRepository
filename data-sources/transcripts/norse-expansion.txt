@@ -1,0 +1,1022 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Norse
+Eras (registered, exact): primordial | mythic-prehistoric | migration-age |
+  viking-age | christianization | medieval-saga | modern
+Author pass: Norse held 67 records, strong on the Æsir and the Völsungs and
+             missing almost everything either of them acts upon. This adds 34.
+
+================================================================================
+THE GAP: THE REGISTRY HELD SIGURD AND NOT THE DRAGON
+================================================================================
+
+A 51-name check across the WHOLE registry returned 11 hits and 40 absences.
+Eight of the eleven were deliberate controls. The other three are false: "Sol"
+matched `roman_sol` and `roman_mithraic_mysteries_sol`, "Mani" matched
+`nuer_mani`, and "Nerthus" matched `continental_germanic_nerthus` — a Germanic
+goddess under a different key, not the Norse figure.
+
+The headline absence is the one this programme has now found in eight
+traditions running. **The registry held Sigurd — and Fáfnir was not in it.**
+Nor Regin, who forged the sword and set him on; nor Ótr, whose skin had to be
+covered in gold; nor Hreiðmarr, who demanded the ransom; nor Andvari, whose
+ring carried the curse that kills everyone in the Völsung cycle the corpus
+already holds in full. Sigurd, Brynhildr, Gudrún, Sigmund, Signý, Sinfjötli,
+Svanhild, Jǫrmunrekkr and a dozen more were here; the gold they all die over
+was not.
+
+Beyond that:
+
+- **Mímir and Kvasir**, the two beings whose deaths are the source of Odin's
+  wisdom and of poetry itself, in a registry holding Odin and Bragi.
+- **Hœnir**, one of the three gods who make the first humans and one of the two
+  hostages of the Æsir-Vanir war.
+- **The whole sky.** No Sól, no Máni, no Nótt, no Dagr, and neither of the two
+  wolves that chase the sun and the moon and catch them at Ragnarök.
+- **Níðhöggr and Ratatoskr**, the dragon at the root of the world tree and the
+  squirrel that carries insults up and down it.
+- **Every jötunn Thor is famous for fighting**: Hrungnir, Þrymr, Útgarða-Loki,
+  Geirröðr, Hymir. The registry held Þjazi and Angrboða and none of the rest.
+- **Sigyn**, who holds the bowl over Loki's face, in a registry holding Loki
+  and the sons whose entrails bind him.
+- **Brokkr and Eitri**, who made Mjölnir.
+- **Völundr**, the smith of the Völundarkviða.
+- **Gullveig**, who is speared and burned three times and is, on the common
+  reading, the cause of the Æsir-Vanir war.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the
+proxy — so research went through server-side web search, and the citations
+name the reference treatments consulted and, where the treatment quotes them,
+the Eddas. Where the sources disagree — Sindri against Eitri for the name of
+Brokkr's brother, or the identity of Gullveig — the record carries the
+disagreement.
+
+================================================================================
+AUTHORED FIGURES — I. THE OTTER'S RANSOM
+================================================================================
+
+```json
+[
+  {
+    "id": "norse_hreidmarr",
+    "name": { "primary": "Hreiðmarr", "alt": ["Hreidmar", "Hreidmarr"],
+      "transliterations": { "Old Norse": "Hreiðmarr", "etymology": "Not securely derived; the second element is the common -marr of Norse masculine names." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A king with three sons — Regin, Ótr and Fáfnir. When Odin, Loki and Hœnir killed Ótr in his otter shape, skinned him and ate him, Hreiðmarr took them prisoner and demanded that they fill the skin with gold and cover it over.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Völsunga saga and the otter's ransom: Regin's father Hreidmar had three sons, Regin, Otr and Fáfnir; Odin, Loki and Hœnir killed Otr in his otter shape, skinned and ate him; and King Hreidmar demanded they fill and cover the skin with gold, which was known as the Otter Ransom." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He released his prisoners when the gold was paid and the curse on it began working at once: he would not share the treasure with his two surviving sons, and Fáfnir murdered him for it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hreidmar released his prisoners upon receiving the gold but the curse began working immediately, and because he did not want to share the treasure with his two surviving sons, Fafnir murdered his father and took the whole treasure for himself, driving away his brother Regin." } ] } ],
+    "domains": [
+      { "sphereId": "greed", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hreiðmarr's refusal to share the ransom." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "norse_fafnir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hreidmar's three sons, Regin, Otr and Fáfnir." } ],
+        "notes": "The son who killed him." },
+      { "kind": "father-of", "personId": "norse_regin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Regin as Hreidmar's son." } ], "notes": "" },
+      { "kind": "father-of", "personId": "norse_otr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Otr as Hreidmar's son, killed in otter shape by Odin, Loki and Hœnir." } ], "notes": "The son whose skin set the price." },
+      { "kind": "killed-by", "personId": "norse_fafnir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fafnir murdered his father and took the whole treasure." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hreiðmarr is the father of Regin, Ótr and Fáfnir, who imprisoned Odin, Loki and Hœnir for killing Ótr and demanded the otter's skin be filled and covered with gold, and who was murdered by Fáfnir for refusing to share it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hreiðmarr, the otter's ransom and the Völsunga saga." } ], "weight": "high" } ],
+    "notes": "Everything in the Völsung cycle that this registry already held — Sigurd's death, Brynhildr on the pyre, Gudrún feeding her children to their father, Jǫrmunrekkr, Svanhild under the horses — proceeds from a bag of gold this man demanded as compensation for an otter. He is the first link and he was not in the corpus."
+  },
+  {
+    "id": "norse_otr",
+    "name": { "primary": "Ótr", "alt": ["Otr", "Ott", "Otter"],
+      "transliterations": { "Old Norse": "Ótr", "etymology": "The Old Norse word for an otter, which is what he spent his days as." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["norse_hreidmarr"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A son of Hreiðmarr who fished in the shape of an otter. Odin, Loki and Hœnir found him in that shape, killed him, skinned him and ate him, not knowing what he was.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hreidmar had three sons, Regin, Otr — an otter-like fisherman — and Fáfnir; one day Odin, Loki and Hœnir kill Otr in his otter shape, skin and eat him." } ] } ],
+    "domains": [
+      { "sphereId": "shapeshifting", "contextTag": "lifelong", "term": { "value": "ótr", "script": "Old Norse", "rom": "otter" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ótr as fishing in otter shape." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_fafnir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Hreiðmarr." } ], "notes": "" },
+      { "kind": "killed-by", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Odin, Loki and Hœnir killed Otr in his otter shape." } ],
+        "notes": "The treatments name all three gods; the edge is written to Loki because the corpus holds him and because the ransom is his to pay." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ótr is a son of Hreiðmarr who fished in the shape of an otter and was killed, skinned and eaten by Odin, Loki and Hœnir, his skin becoming the measure of the ransom.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Ótr and the otter's ransom." } ], "weight": "high" } ],
+    "notes": "He does nothing and is killed by accident in the first scene, and the entire Völsung tragedy is the bill for it. That is the mechanism the Norse cycle runs on — wergild, compensation paid for a killing — and the story is a demonstration of what happens when the price is met exactly and the object handed over is cursed."
+  },
+  {
+    "id": "norse_andvari",
+    "name": { "primary": "Andvari", "alt": ["Andvare", "Alberich (German cognate)"],
+      "transliterations": { "Old Norse": "Andvari", "etymology": "Read as 'careful one' or 'the one who breathes carefully'; and-vari also suggests a breath of wind." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A dwarf with a hoard, from whom Loki took the gold to pay the otter's ransom.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Loki takes the dwarf Andvari's gold to pay the ransom for Ótr's skin." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He cursed the last of it — the ring Andvaranaut, 'Andvari's gift' — so that it would bring death to whoever owned it and ruin to that owner's family. It did.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the dwarf curses the ring Andvaranaut, 'Andvari's gift', saying it will bring death to anyone who owns it, and Andvari cursed the ring to bring about the downfall of any wearer and the wearer's family." } ] } ],
+    "domains": [
+      { "sphereId": "gold", "contextTag": "lifelong", "term": { "value": "Andvaranautr", "script": "Old Norse", "rom": "Andvaranaut, Andvari's gift" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Andvari's hoard and the ring." } ] },
+      { "sphereId": "curse", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the curse Andvari laid on the ring." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "robbed-by", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Loki taking Andvari's gold to pay the otter's ransom." } ],
+        "notes": "The robbery and the curse pronounced over it are what the rest of the Volsung cycle is. A non-symmetric kind is used deliberately: the relation runs one way, and calling it enmity would flatter Loki's side of it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Andvari is the dwarf whose gold Loki took to pay the otter's ransom, and who cursed the ring Andvaranaut to bring death to its owner and ruin to that owner's family.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Andvari, Andvaranaut and the otter's ransom." } ], "weight": "high" } ],
+    "notes": "A dwarf, a stolen hoard, a ring that destroys whoever holds it, and a curse pronounced by the robbed party: this is the source of the Nibelungen material and, through it, of a very large part of modern fantasy. His German cognate Alberich is not in this registry under any tradition and is named here without being claimed."
+  },
+  {
+    "id": "norse_fafnir",
+    "name": { "primary": "Fáfnir", "alt": ["Fafnir", "Frænir"],
+      "transliterations": { "Old Norse": "Fáfnir", "etymology": "Not securely derived. The name has been connected to a root meaning 'to embrace' — which would make him the one who clasps the hoard." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["norse_hreidmarr"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "The large and fierce son of Hreiðmarr. When his father would not share the otter's ransom, he murdered him, took the whole hoard and drove his brother Regin off.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hreidmar had three sons — Regin, Otr and Fáfnir, who was large and fierce; Hreidmar didn't want to share his treasure with his two surviving sons, so Fafnir murdered his father, took the whole treasure for himself and drove away his brother Regin." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He turned himself into a dragon and lay on the gold, and was killed at last by Sigurd, the Völsung, who was his brother Regin's foster-son.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fafnir transformed himself into a dragon and guarded the treasure until he was eventually killed by the Volsung hero Sigurd, Regin's foster-son; the Völsunga saga covers the killing of the dragon Fáfnir and the influence of the cursed ring Andvaranaut." } ] } ],
+    "domains": [
+      { "sphereId": "dragons", "contextTag": "lifelong", "term": { "value": "ormr", "script": "Old Norse", "rom": "ormr, serpent or dragon" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fáfnir's transformation into a dragon." } ] },
+      { "sphereId": "greed", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the murder of Hreiðmarr over the hoard." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_regin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Regin and Fáfnir as brothers." } ], "notes": "The brother he drove off, who sent the boy who killed him." },
+      { "kind": "sibling", "personId": "norse_otr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the three sons of Hreiðmarr." } ], "notes": "" },
+      { "kind": "killer-of", "personId": "norse_hreidmarr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fafnir's murder of his father." } ], "notes": "" },
+      { "kind": "killed-by", "personId": "norse_sigurd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fáfnir's death at the hands of Sigurd." } ],
+        "notes": "Written one way because the existing Sigurd record cannot be given a reciprocal from here. The registry held the dragon-slayer and not the dragon." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fáfnir is the son of Hreiðmarr who murdered his father for the otter's ransom, became a dragon to guard it, and was killed by Sigurd.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fáfnir, the otter's ransom and the Völsunga saga." } ], "weight": "high" } ],
+    "notes": "The most consequential absence in the Norse part of this corpus. Sigurd is in the registry and is called the dragon-slayer; the dragon was not there to be slain. Fáfnir is also the clearest statement the Norse material makes about money: a man who takes gold he will not share turns into an animal that can do nothing with it but lie on it, and the word for his kind of dragon is the ordinary word for a snake."
+  },
+  {
+    "id": "norse_regin",
+    "name": { "primary": "Regin", "alt": ["Reginn", "Mímir the smith (in some later readings)"],
+      "transliterations": { "Old Norse": "Reginn", "etymology": "Regin is also the ordinary Old Norse plural for 'the powers', the gods — an uncomfortable name for a dwarf-smith and one the commentators have argued about." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["norse_hreidmarr"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Son of Hreiðmarr and brother of Ótr and Fáfnir, driven off by Fáfnir when the dragon took the whole hoard.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fafnir murdered his father and took the whole treasure for himself, driving away his brother Regin." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He became foster-father to the Völsung Sigurd, forged him a sword, and set him on to kill the dragon — his own brother — for the gold.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Fáfnir was eventually killed by the Volsung hero Sigurd, Regin's foster-son." } ] } ],
+    "domains": [
+      { "sphereId": "smithing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Regin as the smith who fostered Sigurd." } ] },
+      { "sphereId": "fosterage", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sigurd as Regin's foster-son." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_fafnir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Regin and Fáfnir as brothers." } ], "notes": "" },
+      { "kind": "guide-of", "personId": "norse_sigurd",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sigurd as Regin's foster-son, whom he set on to kill Fáfnir." } ],
+        "notes": "He raised the boy, made the sword, and pointed it at his brother." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Regin is the son of Hreiðmarr and brother of Fáfnir, driven off from the hoard, who fostered the Völsung Sigurd and set him to kill the dragon.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Regin, Fáfnir and the Völsunga saga." } ], "weight": "high" } ],
+    "notes": "He is the plot. Sigurd does not seek out the dragon: a foster-father with a grievance about an inheritance arranges the whole thing, forges the weapon, and is killed by the boy immediately afterwards when the dragon's blood lets Sigurd understand the birds, who tell him what Regin intends. That the registry held the foster-son and not the man who raised him is the shape of the omission this batch is mostly about."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE WAR, THE HEAD, AND THE MEAD
+================================================================================
+
+The Æsir-Vanir war ends in a hostage exchange and a truce sealed by spitting
+into a vat, and both produce a being whose death is the source of something
+the corpus already holds. Mímir is beheaded by the Vanir and his head goes on
+advising Odin. Kvasir is made from the spittle, murdered by two dwarfs, and
+brewed into the mead that makes poets.
+
+The registry held Odin, who consults the head, and Bragi, who is the god of
+the poetry the mead makes, and neither Mímir nor Kvasir.
+
+```json
+[
+  {
+    "id": "norse_mimir",
+    "name": { "primary": "Mímir", "alt": ["Mimir", "Mim", "Mímr"],
+      "transliterations": { "Old Norse": "Mímir", "etymology": "Connected by most commentators to a root for memory — the same family as Latin memor — which suits a head kept for what it knows." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "One of the gods of Asgard during the Æsir-Vanir war, and the wisest of them. When the two sides made peace they exchanged hostages, and Mímir was sent to the Vanir with Hœnir.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mimir was among the gods of Asgard during the Aesir-Vanir War, and following the war the Aesir and Vanir exchanged hostages, with Mimir and Hoenir sent to the Vanir." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Hœnir, who could not answer a question without Mímir beside him, kept saying 'let others decide' until the Vanir concluded they had been cheated in the exchange. They beheaded Mímir and sent the head back to Asgard.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hoenir was a slow-witted simpleton at a loss for words when Mimir was not available to counsel him, and after he responded to the Vanir's entreaties with 'Let others decide' once too often the Vanir thought they had been cheated in the hostage exchange, beheaded Mimir and sent the severed head back to Asgard." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 2,
+        "startEvent": "Odin chanted spells over the head and embalmed it in herbs, and so preserved it went on giving him counsel whenever he needed it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the distraught Odin chanted magic poems over the head and embalmed it in herbs, and thus preserved, Mimir's head continued to give indispensable advice to Odin in times of need." } ] } ],
+    "domains": [
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "Mímir", "script": "Old Norse", "rom": "Mimir" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mimir as the wisest of the gods." } ] },
+      { "sphereId": "counsel", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mimir's head advising Odin." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "norse_hoenir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mimir and Hoenir sent together to the Vanir as hostages." } ],
+        "notes": "The hostage he was sent with, and the reason he was beheaded." },
+      { "kind": "guide-of", "personId": "norse_odin",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the preserved head giving Odin indispensable advice." } ],
+        "notes": "After death and in the form of a head, which is the arrangement the sources are explicit about." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mímir is the wisest of the Æsir, sent to the Vanir as a hostage with Hœnir, beheaded by them, and preserved by Odin as a head that continued to give counsel.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mímir, the Æsir-Vanir war and Mímir's head." } ], "weight": "high" } ],
+    "notes": "Odin's wisdom has two sources and this is one of them; the other is the eye he left in the well that bears the same name. A registry that holds Odin the all-knowing without Mímir is holding the effect and not the cause. The detail the sources will not let go of is that the head keeps talking: it is not a memory or a symbol, it is a preserved head on a shelf that answers questions."
+  },
+  {
+    "id": "norse_hoenir",
+    "name": { "primary": "Hœnir", "alt": ["Hoenir", "Hœnir", "Hœnnir", "Vili (in one reading)"],
+      "transliterations": { "Old Norse": "Hœnir", "etymology": "Not securely derived. Some connect it to a word for a cock or a swan; nothing is settled." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "One of the three gods who travel with Odin and Loki — the party that killed Ótr and paid the otter's ransom.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Odin, Loki and Hœnir kill Otr in his otter shape, skin and eat him." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Sent to the Vanir as a hostage with Mímir after the Æsir-Vanir war. Without Mímir to advise him he could say nothing but 'let others decide', and the Vanir, concluding they had been cheated, beheaded his companion.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Mimir and Hoenir were sent to the Vanir as hostages; Hoenir was a slow-witted simpleton at a loss for words when Mimir was not available to counsel him, and after he answered the Vanir's entreaties with 'Let others decide' one too many times they thought they had been cheated and beheaded Mimir." } ] } ],
+    "domains": [
+      { "sphereId": "indecision", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hoenir's inability to answer without Mimir." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "norse_mimir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as fellow hostages." } ],
+        "notes": "The counsellor he could not function without." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hœnir is one of the three gods who killed Ótr and paid the otter's ransom, and the hostage sent to the Vanir with Mímir, whose inability to answer without him led to Mímir's beheading.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hœnir, the otter's ransom and the Æsir-Vanir hostage exchange." } ], "weight": "high" } ],
+    "notes": "He is in two of the most important scenes in the mythology and is a cipher in both: one of the three who make the first humans in the Völuspá, one of the three who kill the otter, one of the two hostages — and the sources are so uninterested in him that the only characteristic they give him is that he cannot make up his mind. Some readings identify him with Vili, whom the registry holds. This record does not make that identification, because the sources consulted do not."
+  },
+  {
+    "id": "norse_kvasir",
+    "name": { "primary": "Kvasir", "alt": ["Kvasi"],
+      "transliterations": { "Old Norse": "Kvasir", "etymology": "Connected to a Slavic and Norse word-family for fermented drink — kvass — which would make him named for what he was turned into." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Made at the end of the Æsir-Vanir war, when both sides sealed the truce by spitting into a great vat and formed a being out of the spittle. He was the wisest that had ever lived: no one could put a question to him he could not answer.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: at the conclusion of the Aesir-Vanir War the Aesir and Vanir sealed their truce by spitting into a great vat, and from their spittle they formed a being whom they named Kvasir, the wisest human that had ever lived, none being able to present him with a question for which he did not have a satisfying answer." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He was invited to the house of two dwarfs, Fjalar and Galar, who killed him on arrival and brewed mead with his blood — the mead that makes a poet of whoever drinks it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kvasir was invited to the home of two dwarves, Fjalar and Galar, and upon his arrival the dwarves slew Kvasir and brewed mead with his blood." } ] } ],
+    "domains": [
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kvasir as the wisest being that had ever lived." } ] },
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "skáldskaparmjöðr", "script": "Old Norse", "rom": "the mead of poetry" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the mead brewed from Kvasir's blood." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "norse_fjalar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the dwarves Fjalar and Galar slaying Kvasir on his arrival." } ], "notes": "" },
+      { "kind": "killed-by", "personId": "norse_galar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two dwarves who killed Kvasir and brewed the mead." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kvasir is the being formed from the spittle of the Æsir and Vanir at their truce, the wisest that ever lived, killed by the dwarfs Fjalar and Galar and brewed into the mead of poetry.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kvasir, the Æsir-Vanir truce and the mead of poetry." } ], "weight": "high" } ],
+    "notes": "Norse poetry has a physical origin and this is it: a person made out of a peace treaty, murdered by two dwarfs for no reason the sources give, and fermented. Every kenning for poetry in the skaldic corpus — Kvasir's blood, the dwarfs' drink, Odin's theft — refers back to this, which makes him the most cited figure in Old Norse verse and one the registry did not hold."
+  },
+  {
+    "id": "norse_fjalar",
+    "name": { "primary": "Fjalar", "alt": ["Fjalarr"],
+      "transliterations": { "Old Norse": "Fjalarr", "etymology": "Read as 'hider' or 'deceiver'. The name is used of more than one being in the sources and the commentators do not agree that they are the same." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "One of the two dwarfs who invited Kvasir to their home, killed him on arrival, and brewed the mead of poetry from his blood.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Kvasir was invited to the home of two dwarves, Fjalar and Galar, who slew him on his arrival and brewed mead with his blood." } ] },
+      { "typeStatus": "numen", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "They also killed the jötunn Gilling and his wife. Gilling's son Suttungr seized them, carried them out to a reef at low tide, and they bought their lives with the mead.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Suttung learned of his father's murder he seized the dwarves and, at low tide, carried them out to a reef, and the dwarves agreed to give him the mead they had brewed with Kvasir's blood." } ] } ],
+    "domains": [
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the mead brewed by the two dwarfs." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "norse_galar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Fjalar and Galar as a pair." } ], "notes": "" },
+      { "kind": "killer-of", "personId": "norse_kvasir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the dwarves slaying Kvasir." } ], "notes": "" },
+      { "kind": "enemy", "personId": "norse_suttungr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Suttung seizing the dwarves for his father's murder and carrying them to a reef at low tide." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Fjalar is one of the two dwarfs who killed Kvasir and brewed the mead of poetry from his blood, and who surrendered it to Suttungr to save their lives.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fjalar, Galar and the mead of poetry." } ], "weight": "high" } ],
+    "notes": "Norse dwarfs in the sources are not small people with beards; they are makers who kill without motive and trade their way out of it. Fjalar and Galar murder the wisest being alive, ferment him, murder a giant and his wife for the fun of it, and then give the mead away to stay alive. The mead is in Suttungr's mountain because of that transaction."
+  },
+  {
+    "id": "norse_galar",
+    "name": { "primary": "Galar", "alt": ["Galarr"],
+      "transliterations": { "Old Norse": "Galarr", "etymology": "Connected to gala, to crow or to chant a spell — the root of galdr, the Norse word for incantation." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The second of the two dwarfs who killed Kvasir and brewed the mead of poetry, and who gave it up to Suttungr on the reef.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the dwarves Fjalar and Galar slew Kvasir and brewed mead with his blood; Suttung seized them and carried them to a reef at low tide, and they agreed to give him the mead." } ] } ],
+    "domains": [
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the mead brewed by the two dwarfs." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "norse_fjalar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as a pair." } ], "notes": "" },
+      { "kind": "killer-of", "personId": "norse_kvasir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the dwarves slaying Kvasir." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Galar is one of the two dwarfs who killed Kvasir and brewed the mead of poetry from his blood.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Fjalar, Galar and the mead of poetry." } ], "weight": "high" } ],
+    "notes": "Recorded separately from Fjalar because the sources name them separately and act them as two. His name is from the root of galdr, the chanted spell, which in a pair of brewers of the drink that makes poetry is either apt or the reason the pair exists."
+  },
+  {
+    "id": "norse_suttungr",
+    "name": { "primary": "Suttungr", "alt": ["Suttung", "Sutting"],
+      "transliterations": { "Old Norse": "Suttungr", "etymology": "Not securely derived; read by some as 'the heavy-drinking one', which would be a joke about what he was guarding." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "A jötunn whose father Gilling the dwarfs Fjalar and Galar had murdered. He seized them, carried them out to a reef at low tide, and took the mead of poetry as his price for letting them live.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: when Suttung learned of his father's murder he seized the dwarves and at low tide carried them out to a reef, and the dwarves agreed to give him the mead they had brewed with Kvasir's blood." } ] },
+      { "typeStatus": "numen", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He hid the vats in a chamber under the mountain Hnitbjörg and set his daughter Gunnlöð to watch them. Odin, with the help of Suttungr's brother Baugi, bored a hole into the mountain and got in.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suttung hid the vats of mead in a chamber beneath the mountain Hnitbjorg, where he appointed his daughter Gunnlod to watch over them; Odin went to the farm of Suttung's brother Baugi and, with Baugi's help, drilled a hole into the mountain and thereby gained access to the mead." } ] } ],
+    "domains": [
+      { "sphereId": "guardianship", "contextTag": "lifelong", "term": { "value": "Hnitbjörg", "script": "Old Norse", "rom": "Hnitbjorg, the clashing rocks" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the mead hidden beneath Hnitbjorg under Gunnlod's watch." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "norse_fjalar",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Suttung seizing the dwarves for his father's murder." } ], "notes": "" },
+      { "kind": "father-of", "personId": "norse_gunnlod",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suttung appointed his daughter Gunnlod to watch over the mead." } ], "notes": "The guard he posted." },
+      { "kind": "sibling", "personId": "norse_baugi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baugi as Suttung's brother, whose help Odin used to get into the mountain." } ],
+        "notes": "The brother who drilled the hole for Odin." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Suttungr is the jötunn who took the mead of poetry from the dwarfs as compensation for his father's murder, hid it under Hnitbjörg and set his daughter Gunnlöð to guard it, and lost it to Odin by way of his brother Baugi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Suttungr, the mead of poetry and Hnitbjorg." } ], "weight": "high" } ],
+    "notes": "He does everything right and loses anyway: takes lawful compensation, hides the goods inside a mountain, posts a guard he can trust. Odin gets in through his own brother and out past his own daughter, and the skalds who told the story were the people who had the mead afterwards — which is worth remembering about whose account this is."
+  },
+  {
+    "id": "norse_baugi",
+    "name": { "primary": "Baugi", "alt": ["Baugr"],
+      "transliterations": { "Old Norse": "Baugi", "etymology": "baugr is a ring or an arm-ring, the standard Norse unit of portable wealth." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Suttungr's brother, at whose farm Odin arrived, and who drilled the hole through the mountain by which Odin reached the mead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Odin went to the farm of Suttung's brother Baugi, and with Baugi's help drilled a hole into the mountain and thereby gained access to the mead." } ] } ],
+    "domains": [
+      { "sphereId": "farming", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baugi's farm, where Odin arrived." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_suttungr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Baugi as Suttung's brother." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Baugi is Suttungr's brother, at whose farm Odin worked and who bored the hole into Hnitbjörg through which Odin reached the mead of poetry.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Baugi and the theft of the mead." } ], "weight": "high" } ],
+    "notes": "The full story has Odin kill Baugi's nine field-hands with a whetstone, hire himself out to do their whole season's work alone, and take a drink of his brother's mead as the wage — which is a labour contract, not a theft, and Baugi honours it because he agreed to it. He is in this batch because a story about how a god got poetry out of a mountain needs the man with the drill."
+  },
+  {
+    "id": "norse_gunnlod",
+    "name": { "primary": "Gunnlöð", "alt": ["Gunnlod", "Gunnlodd"],
+      "transliterations": { "Old Norse": "Gunnlǫð", "etymology": "gunnr, battle; lǫð, invitation or welcome. 'Invitation to battle' — an odd name for a cellarer, and one the commentators have found suggestive." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["norse_suttungr"], "parentRoles": ["father"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Daughter of Suttungr, appointed to watch the vats of the mead of poetry in the chamber beneath the mountain Hnitbjörg.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Suttung hid the vats of mead in a chamber beneath the mountain Hnitbjorg, where he appointed his daughter Gunnlod to watch over them." } ] } ],
+    "domains": [
+      { "sphereId": "guardianship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gunnlod's watch over the mead." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gunnlöð is the daughter of Suttungr, set to guard the vats of the mead of poetry beneath Hnitbjörg.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Gunnlod and the hiding of the mead." } ], "weight": "high" } ],
+    "notes": "Odin spends three nights with her and she lets him drink all three vats. The Hávamál, which is Odin's own poem, says in one stanza that he repaid her badly for her good will and in another that he swore an oath on a ring and broke it — which is the closest thing to remorse anywhere in the Norse corpus, expressed by a god about a woman the registry did not hold."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE SKY AND THE TREE
+================================================================================
+
+The Norse sky is a chase. A woman drives the sun, her brother drives the moon,
+and two wolves run behind them and will catch them at Ragnarök. Night comes
+first and Day is her son, each with a named horse. At the world tree a dragon
+chews the root and a squirrel runs up and down carrying the insults between him
+and the eagle at the top, which is why the tree is always dying and always
+growing.
+
+The registry had none of it.
+
+```json
+[
+  {
+    "id": "norse_sol",
+    "name": { "primary": "Sól", "alt": ["Sol", "Sunna", "Sunne"],
+      "transliterations": { "Old Norse": "Sól", "etymology": "The ordinary Old Norse word for the sun, which is feminine — the sun is a woman in this language before she is a goddess." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The sun. The gods set her and her brother Máni to drive the chariots of the sun and moon, which they had shaped out of sparks flying from Muspelheim. Her chariot is drawn by the horses Árvakr and Alsviðr.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Norse mythology Sól, or Sunna, and her brother Máni are the sun and moon; the gods took Sól and Máni and set them to drive the chariots of the sun and moon, which the gods had shaped from sparks flying out of Muspelheim, per Gylfaginning 11; and Sól's chariot is drawn by the horses Árvakr and Alsviðr." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "The wolf Sköll runs behind her chariot, and catches her at the end of the world.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sköll is a wolf that, according to Snorri Sturluson's Prose Edda, chases the Sun, personified as the goddess Sól, riding her chariot across the sky." } ] } ],
+    "domains": [
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "Sól", "script": "Old Norse", "rom": "Sol" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sól as the Norse sun." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_mani",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sól and her brother Máni as the sun and moon." } ], "notes": "" },
+      { "kind": "enemy", "personId": "norse_skoll",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sköll chasing Sól across the sky." } ], "notes": "The wolf behind her." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sól is the Norse sun, set by the gods to drive the sun-chariot made from sparks of Muspelheim, drawn by Árvakr and Alsviðr, and pursued by the wolf Sköll.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sól, Máni and the Gylfaginning account." } ], "weight": "high" } ],
+    "notes": "The sun is a driver, not a light: she is a woman under orders, on a route, being chased. The Norse sky is the only major cosmology in this registry in which the sun is permanently in danger and finally caught, which is what a Ragnarök-shaped religion looks like from underneath. The registry held neither her nor her brother; the sweep matched 'Sol' to the Roman sun god and 'Mani' to a Nuer figure, which is how a name-only check misleads."
+  },
+  {
+    "id": "norse_mani",
+    "name": { "primary": "Máni", "alt": ["Mani"],
+      "transliterations": { "Old Norse": "Máni", "etymology": "The ordinary Old Norse word for the moon, which is masculine — the moon is a man in this language, as the sun is a woman." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The moon, brother of Sól, set by the gods to drive the moon-chariot; and pursued by the wolf Hati as his sister is pursued by Sköll.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sól and her brother Máni represent the sun and moon; the gods set them to drive the chariots; and Máni, guiding the moon, is chased by the wolf Hati." } ] } ],
+    "domains": [
+      { "sphereId": "the-moon", "contextTag": "lifelong", "term": { "value": "Máni", "script": "Old Norse", "rom": "Mani" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Máni as the Norse moon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_sol",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sól and Máni as siblings." } ], "notes": "" },
+      { "kind": "enemy", "personId": "norse_hati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hati chasing Máni." } ], "notes": "The wolf behind him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Máni is the Norse moon, brother of Sól, who drives the moon-chariot and is chased across the sky by the wolf Hati.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Máni, Sól and the wolves." } ], "weight": "high" } ],
+    "notes": "The gendering is the interesting part and it is grammatical before it is theological: in Germanic the sun is feminine and the moon masculine, the opposite of Latin and Greek, and the mythology follows the grammar. English still carries the trace in 'Sunday' and 'Monday'."
+  },
+  {
+    "id": "norse_skoll",
+    "name": { "primary": "Sköll", "alt": ["Skoll", "Skǫll"],
+      "transliterations": { "Old Norse": "Skǫll", "etymology": "Read as 'treachery' or as 'mockery'; some read it instead as a word for a loud noise, a howl." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["norse_fenrir"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "The wolf that chases the sun across the sky. He and Hati are sons of Fenrir by an unnamed giantess.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sköll is a wolf that, per the Prose Edda, chases the Sun personified as Sól riding her chariot across the sky; and Sköll and Hati are the sons of the wolf Fenrir and an unnamed giantess." } ] } ],
+    "domains": [
+      { "sphereId": "pursuit", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sköll's pursuit of the sun." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "norse_sol",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sköll chasing Sól." } ], "notes": "" },
+      { "kind": "sibling", "personId": "norse_hati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sköll and Hati as sons of Fenrir by an unnamed giantess." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sköll is the wolf that pursues the sun across the sky, a son of Fenrir by an unnamed giantess, and the brother of Hati who pursues the moon.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sköll, Hati and the wolves of the sky." } ], "weight": "high" } ],
+    "notes": "The registry held Fenrir and neither of his sons. That the sun is chased daily by a wolf which will eventually catch her is the Norse answer to a question most cosmologies do not ask — why the sun hurries — and the eclipse is the near miss."
+  },
+  {
+    "id": "norse_hati",
+    "name": { "primary": "Hati", "alt": ["Hati Hróðvitnisson"],
+      "transliterations": { "Old Norse": "Hati", "etymology": "hati is 'he who hates'." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["norse_fenrir"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "The wolf that chases the moon, brother of Sköll and son of Fenrir by an unnamed giantess.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Máni, guiding the moon, is chased by the wolf Hati, and Sköll and Hati are the sons of the wolf Fenrir and an unnamed giantess." } ] } ],
+    "domains": [
+      { "sphereId": "pursuit", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hati's pursuit of the moon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "norse_mani",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hati chasing Máni." } ], "notes": "" },
+      { "kind": "sibling", "personId": "norse_skoll",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as brothers." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hati is the wolf that pursues the moon across the sky, son of Fenrir by an unnamed giantess and brother of Sköll.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Hati and Sköll." } ], "weight": "high" } ],
+    "notes": "His name means 'the one who hates', which is all the characterisation the sources give and all they need to. The mother is unnamed in every version, which the record states rather than filling in."
+  },
+  {
+    "id": "norse_nott",
+    "name": { "primary": "Nótt", "alt": ["Nott", "Night"],
+      "transliterations": { "Old Norse": "Nótt", "etymology": "The ordinary Old Norse word for night." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Night personified, and a jötunn, where her son Day is of the Æsir. She rides the horse Hrímfaxi, Frost-Mane, and goes first: night comes before day in this reckoning.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the eternal dance of night and day in Norse myth is personified by Nótt (Night) and Dagr (Day), their continuous succession with Nótt being a jötun and Dagr an Aesir emphasising the balance of different cosmic entities; and Nótt has the horse Hrímfaxi, 'Frost Mane'." } ] } ],
+    "domains": [
+      { "sphereId": "night", "contextTag": "lifelong", "term": { "value": "Nótt", "script": "Old Norse", "rom": "Nott" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nótt as night personified." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "norse_dagr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nótt and Dagr as night and day in continuous succession, Nótt a jötun and Dagr of the Æsir." } ],
+        "notes": "The son who follows her round the sky." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nótt is night personified in Norse myth, a jötunn, mother of Dagr, riding the horse Hrímfaxi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Nótt and Dagr." } ], "weight": "high" } ],
+    "notes": "Night is a giantess and Day is her son by one of the gods, and night rides first. Germanic peoples counted time in nights rather than days — a fortnight is fourteen nights — and the mythology says why: the dark is older, and the light is descended from it. The frost on the grass in the morning is from her horse's bit."
+  },
+  {
+    "id": "norse_dagr",
+    "name": { "primary": "Dagr", "alt": ["Dag", "Day"],
+      "transliterations": { "Old Norse": "Dagr", "etymology": "The ordinary Old Norse word for day." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["norse_nott"], "parentRoles": ["mother"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Day personified, son of Nótt, and of the Æsir where his mother is a jötunn. His horse is Skinfaxi, Shining-Mane, whose mane lights the air and the earth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Nótt and Dagr personify night and day, Nótt being a jötun and Dagr an Aesir; and Dagr is said to have the horse Skinfaxi, 'Shining Mane'." } ] } ],
+    "domains": [
+      { "sphereId": "day", "contextTag": "lifelong", "term": { "value": "Dagr", "script": "Old Norse", "rom": "Dagr" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dagr as day personified." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Dagr is day personified in Norse myth, son of the jötunn Nótt and counted among the Æsir, riding the horse Skinfaxi whose mane lights the sky.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Dagr and Nótt." } ], "weight": "high" } ],
+    "notes": "Two horses, two riders, one route: the Norse day is a relay and not a cycle, and the light is the reflection off a horse's mane rather than a property of the air. The registry held the sky of eight other traditions and not this one."
+  },
+  {
+    "id": "norse_nidhoggr",
+    "name": { "primary": "Níðhöggr", "alt": ["Nidhogg", "Nidhoggr", "Nithhogg"],
+      "transliterations": { "Old Norse": "Níðhǫggr", "etymology": "níð is malice, or the specific legal insult that made a man an outlaw; höggr is a hewer or striker. 'The one who strikes in malice', or 'the striker from below'." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "A dragon that gnaws at one of the roots of the world tree Yggdrasil — the root that lies over Niflheim — chewing it from beneath.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Níðhögg is a dragon who gnaws at a root of the world tree Yggdrasil, the root being placed over Niflheimr and Níðhöggr gnawing it from beneath." } ] },
+      { "typeStatus": "numen", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "He is in a standing quarrel with the eagle at the top of the tree, conducted entirely through a squirrel; the two of them attacking the tree from either end is what keeps it in its cycle of decay and renewal.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a squirrel named Ratatoskr runs the trunk of Yggdrasil end to end carrying insults from the eagle at the crown down to Níðhöggr at the root and his replies back up; most theories hold this is to stir up hostilities between the two, and in turn the two attack the tree, leading to a cycle of decay and rebirth that refreshes it; a great eagle representing wisdom and virtue perches in the uppermost branches while Nidhogg, representing chaos, lurks in the roots." } ] } ],
+    "domains": [
+      { "sphereId": "dragons", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Níðhöggr as the dragon at the root of Yggdrasil." } ] },
+      { "sphereId": "decay", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the cycle of decay and rebirth the two ends of the tree produce." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "norse_ratatoskr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ratatoskr carrying insults between Níðhöggr and the eagle to stir up hostility." } ],
+        "notes": "Strictly the quarrel is with the eagle, whom the sources leave unnamed and whom this batch therefore does not record; the squirrel is the party Níðhöggr actually deals with." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Níðhöggr is the dragon that gnaws the root of Yggdrasil from beneath in Niflheim, in a quarrel with the eagle at the crown conducted through the squirrel Ratatoskr, the two of them keeping the tree in a cycle of decay and renewal.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Níðhöggr, Ratatoskr and Yggdrasil." } ], "weight": "high" } ],
+    "notes": "The world tree is not healthy and is not supposed to be. A dragon eats the root, deer eat the leaves, the trunk rots, and the tree stands anyway — a cosmology in which the structure of everything is maintained by being continually damaged. Níðhöggr is the damage at the bottom, and níð, the word in his name, is the Norse legal term for the insult that strips a man of his standing."
+  },
+  {
+    "id": "norse_ratatoskr",
+    "name": { "primary": "Ratatoskr", "alt": ["Ratatosk", "Ratatoskr the squirrel"],
+      "transliterations": { "Old Norse": "Ratatoskr", "etymology": "The second element, toskr, is 'tusk' or 'tooth'; the first is disputed — 'drill-tooth' and 'traveller-tooth' have both been proposed." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "A squirrel that runs the whole length of the trunk of Yggdrasil, carrying insults from the eagle at the crown down to Níðhöggr at the root and carrying his replies back up.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: a squirrel named Ratatoskr runs the trunk of Yggdrasil end to end, carrying insults from the eagle perched at the crown down to Níðhöggr at the root, then carrying his replies back up; most theories believe this is to stir up hostilities between the two, spreading slander and gossip." } ] } ],
+    "domains": [
+      { "sphereId": "slander", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ratatoskr as spreading slander and gossip between the eagle and the dragon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "norse_nidhoggr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ratatoskr carrying insults to Níðhöggr at the root." } ],
+        "notes": "He is the messenger and, on the standard reading, the instigator: the quarrel he carries is a quarrel he is stoking." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ratatoskr is the squirrel that runs the trunk of Yggdrasil carrying insults between the eagle at the crown and Níðhöggr at the root, and is generally read as stirring the quarrel up rather than merely reporting it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ratatoskr and Yggdrasil." } ], "weight": "high" } ],
+    "notes": "The load-bearing structure of the Norse universe is being slowly destroyed by two parties who have never met, because a squirrel is telling each of them what the other said. There is no other cosmology in this registry in which the mechanism of cosmic decay is gossip, and the registry did not have him."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE JÖTNAR THOR IS FAMOUS FOR FIGHTING
+================================================================================
+
+The registry held Thor, Mjölnir's owner, and two jötnar — Þjazi, who took
+Iðunn, and Angrboða, who bore Loki's children. It did not hold a single one of
+the giants the Thor stories are actually about. Five here: the one he duelled,
+the one who stole the hammer, the one who humiliated him with illusions, the
+one who got him without his weapons, and the one whose cauldron he went to
+fetch and whose boat he hooked the world serpent from.
+
+```json
+[
+  {
+    "id": "norse_hrungnir",
+    "name": { "primary": "Hrungnir", "alt": ["Hrungner"],
+      "transliterations": { "Old Norse": "Hrungnir", "etymology": "Connected to a root for noise or brawling; read by some as 'the brawler'." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A jötunn made of stone. He raced Odin, was given a drink in Ásgarðr, and began threatening to destroy the place.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hrungnir: a jötunn in Norse mythology described as made of stone, who had taken part in a race with Odin and was enjoying a drink in Ásgard when he began making threats to destroy Ásgard." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He was killed in a duel with Thor. He fought with a great whetstone and Thor threw Mjölnir; the hammer shattered the stone in mid-air and then struck him down, and a fragment of the whetstone lodged in Thor's head.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hrungnir is ultimately killed in a duel with the thunder god Thor; Hrungnir fights with a large whetstone while Thor throws Mjölnir, the hammer shatters the stone in midair and then strikes Hrungnir down, and a fragment of the whetstone lodges in Thor's head." } ] } ],
+    "domains": [
+      { "sphereId": "stone", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hrungnir as made of stone." } ] },
+      { "sphereId": "single-combat", "contextTag": "phase", "term": { "value": "hólmganga", "script": "Old Norse", "rom": "holmgang, the formal duel" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the duel with Thor." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "norse_thor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hrungnir's death in the duel with Thor." } ],
+        "notes": "Written one way because the existing Thor record cannot be given a reciprocal from here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hrungnir is the stone jötunn who raced Odin, threatened Ásgarðr while drunk, and was killed by Thor in a duel in which his whetstone shattered and left a fragment in Thor's head.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Hrungnir and the duel with Thor." } ], "weight": "high" } ],
+    "notes": "The piece of whetstone stays in Thor's head for the rest of the mythology, which is the sort of detail the Norse material keeps and most traditions would tidy away. The duel is a hólmganga — a formal, legal single combat with rules and seconds — and the giant's second is a clay man nine leagues high who wets himself when he sees Thor coming. The registry held the god and none of his opponents."
+  },
+  {
+    "id": "norse_thrymr",
+    "name": { "primary": "Þrymr", "alt": ["Thrym", "Thrymr"],
+      "transliterations": { "Old Norse": "Þrymr", "etymology": "þrymr is a noise, a din, a crash — the sound of thunder, which for the thief of the thunder-god's hammer is either apt or the whole joke." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "King of the jötnar and ruler of Jötunheimr, who had Thor's hammer. He had stolen it in the hope of trading it back for Freyja's hand.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Þrymr, king of the jötnar who ruled over the kingdom of Jötunheimr, possessed Thor's hammer, which had been stolen in the hope that it could be traded back for Freyja's hand in marriage." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "Thor came to the wedding dressed as the bride, with Loki as his maid; the hammer was brought out and laid in the bride's lap to hallow the match, and Thor killed the whole hall with it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Thor was suggested to dress up as a bride and pretend to be Freyja, whilst Loki should go in disguise as his maid." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Jötunheimr", "script": "Old Norse", "rom": "Jotunheim" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Þrymr as king of the jötnar." } ] },
+      { "sphereId": "theft", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the theft of Mjölnir and the bride-price demanded for it." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "killed-by", "personId": "norse_thor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the recovery of the hammer at the wedding feast." } ],
+        "notes": "With the hammer he had stolen, handed to the disguised god as a wedding rite." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Þrymr is the king of the jötnar who stole Mjölnir and demanded Freyja in exchange, and was killed with his own stolen hammer when Thor came to the wedding disguised as the bride.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Þrymr, the theft of Mjölnir and the Þrymskviða." } ], "weight": "high" } ],
+    "notes": "The Þrymskviða is the funniest poem in the Edda and one of the best preserved, and the registry had no one in it but Thor and Loki. Þrymr's mistake is procedural: he asks for the hammer to be brought in and laid in the bride's lap to sanctify the marriage, which is apparently the correct rite, and hands a weapon to the person he is marrying."
+  },
+  {
+    "id": "norse_utgarda_loki",
+    "name": { "primary": "Útgarða-Loki", "alt": ["Utgarda-Loki", "Utgardaloki", "Skrýmir (in the disguise)"],
+      "transliterations": { "Old Norse": "Útgarða-Loki", "etymology": "'Loki of the Outyards' — útgarðr being the land outside the fence, the wild. He is not the Loki the registry holds, and the shared name is one of the puzzles of the material." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "The jötunn in whose hall Thor and his companions were set a series of contests — and lost every one of them, because every one was an illusion.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: during the tale of Útgarða-Loki, after facing a series of challenges it is revealed that the giants were able to win through trickery." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "When he admitted the deception Thor raised the hammer to destroy him and the hall — and the whole thing vanished, leaving Thor standing in an empty field.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Thor is outraged and as he raises his hammer to destroy Útgarða-Loki and his castle, it all disappears around him, leaving him standing in an empty field." } ] } ],
+    "domains": [
+      { "sphereId": "illusion", "contextTag": "lifelong", "term": { "value": "sjónhverfing", "script": "Old Norse", "rom": "sjonhverfing, the turning of sight" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the contests at Útgarðr being won by trickery." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Útgarða-Loki is the jötunn who defeated Thor and his companions in a series of contests at his hall by illusion, and whose hall vanished when he admitted it.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Útgarða-Loki episode." } ], "weight": "high" } ],
+    "notes": "The only story in the corpus in which Thor is beaten, and he is beaten by stagecraft: the cat he cannot lift is the world serpent, the old woman who wrestles him to one knee is old age, the horn he cannot drain is the sea, and he did better than anyone could have. The Norse position on their own strongest god is that the world is bigger than he is and he is not told so to his face until he has left. The shared name with Loki is unexplained and this record does not explain it."
+  },
+  {
+    "id": "norse_geirrodr",
+    "name": { "primary": "Geirröðr", "alt": ["Geirrod", "Geirrodr"],
+      "transliterations": { "Old Norse": "Geirrøðr", "etymology": "geirr, spear, plus a second element read as 'reddener' — 'he who reddens the spear'." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A jötunn who caught Loki, shut him in a box and kept him there three months, and would not let him out until he agreed to bring Thor to his hall without the hammer, the belt of strength or the iron gauntlets.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the giant Geirrod captured Loki in a box and refused to let him out for three months until he convinced Thor to come to his court without his hammer Mjölnir, his belt of strength or iron gauntlets." } ] } ],
+    "domains": [
+      { "sphereId": "captivity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Geirröðr's imprisonment of Loki." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "captor-of", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Geirrod capturing Loki in a box and refusing to release him for three months." } ],
+        "notes": "A non-symmetric kind is used deliberately: the relation is a captivity with a ransom attached, not a feud, and it runs one way." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Geirröðr is the jötunn who imprisoned Loki in a box for three months and released him only on condition that he bring Thor to his hall unarmed.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Geirröðr episode." } ], "weight": "high" } ],
+    "notes": "The one jötunn with a plan that should have worked. He does not fight Thor; he arranges for Thor to arrive without any of the three things that make Thor dangerous, using Loki as the delivery mechanism, and it fails only because a giantess on the road lends Thor a staff, a belt and a pair of gloves. He was not in the registry and neither was the box."
+  },
+  {
+    "id": "norse_hymir",
+    "name": { "primary": "Hymir", "alt": ["Hymer"],
+      "transliterations": { "Old Norse": "Hymir", "etymology": "Not securely derived; connected by some to a word for twilight or dusk." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A jötunn who owned a cauldron big enough to brew ale for all the gods, which is why Thor came to his hall.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the gods wanted a cauldron big enough to brew ale for them all, and such a cauldron existed in the home of a jötunn named Hymir, so Thor departed to meet with him." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "After a series of trials at the feast the two went out to sea to test their strength against each other. Thor baited his line with the head of the largest ox in Hymir's herd and hooked Jörmungandr, the world serpent.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: both the Prose Edda and the Poetic Edda have Thor going out to sea with the giant Hymir to test their strength after a series of challenges at a feast to win Hymir's cauldron, and using the head of the largest ox in Hymir's herd Thor manages to hook the giant and world serpent Jörmungandr, whom he battles." } ] } ],
+    "domains": [
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hymir's cauldron, big enough to brew ale for all the gods." } ] },
+      { "sphereId": "fishing", "contextTag": "phase", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the fishing trip on which Thor hooked Jörmungandr." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "host", "personId": "norse_thor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the trials at Hymir's feast and of the contest of strength at sea that followed." } ],
+        "notes": "Host rather than enemy: Thor comes as a guest, is tested at table and then at sea, and leaves with the cauldron. The Norse material is precise about the difference and so is this edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hymir is the jötunn whose cauldron Thor came to fetch for the gods' ale, and in whose boat, baiting with an ox-head from Hymir's herd, Thor hooked the world serpent.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Hymiskviða and the fishing of Jörmungandr." } ], "weight": "high" } ],
+    "notes": "The most depicted scene in Viking-age art after the crucifixion is Thor in a boat with a line over the side and a serpent on the end of it, and the man in the other end of the boat — who cuts the line — is Hymir. The registry held the god and the serpent and not the boat's owner. The errand is a domestic one: the gods want to brew beer and need a pot."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE SMITHS, THE WIFE, AND THE ONES WHO GO
+================================================================================
+
+Eight to close: the two dwarfs who made Mjölnir, the smith of the
+Völundarkviða, the woman who holds the bowl over Loki's face, the goddess who
+ploughed Zealand out of Sweden, the god who rode to Hel to ask for Baldr back,
+the horse he rode, and the being the Æsir speared and burned three times.
+
+```json
+[
+  {
+    "id": "norse_brokkr",
+    "name": { "primary": "Brokkr", "alt": ["Brokk", "Brok"],
+      "transliterations": { "Old Norse": "Brokkr", "etymology": "Connected to a word for a badger or for a smith's apron; neither reading is settled." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A dwarf of Svartálfaheimr and the brother of Eitri. Loki wagered his own head that the two of them could not make anything better than the sons of Ivaldi had made.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Brokkr is a dwarf and the brother of Eitri or Sindri, the two famous dwarves being brothers who resided in Svartaflahiem; and Loki made a wager with Brokk and Eiti that they could not make anything better than the sons of Ivaldi, the bet being that Loki would lose his head if they did." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He worked the bellows while his brother shaped the metal, and a fly — Loki — stung him repeatedly to spoil the work. They made three of the gods' greatest treasures anyway: Thor's hammer Mjölnir, Odin's ring Draupnir, and Freyr's golden boar Gullinbursti.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the dwarf brothers forged three of the gods' greatest treasures — Thor's hammer Mjolnir, Odin's ring Draupnir and Freyr's golden boar Gullinbursti; Brokkr worked the bellows while Eitri shaped the metal in the forge, and during the process a fly, widely interpreted as Loki in disguise, stung Brokkr repeatedly trying to sabotage their work, though the dwarves succeeded despite the interruptions." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 2,
+        "startEvent": "Loki conceded the bet and then argued that the dwarfs had won his head but not his neck, and that the head could not be taken without cutting the neck, which was not in the agreement. Denied his prize, Brokkr sewed Loki's lips shut with an awl and a leather cord.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Loki conceded the bet but argued that the dwarves had won his head, not his neck, and that cutting the head required cutting the neck, which was not part of the agreement; Brokkr, denied his prize, sewed Loki's lips shut with an awl and leather cord instead." } ] } ],
+    "domains": [
+      { "sphereId": "smithing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Brokkr at the bellows while his brother forged." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_eitri",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Brokkr as the brother of Eitri or Sindri." } ], "notes": "" },
+      { "kind": "tricked-by", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Loki taking the form of a fly to sting Brokkr at the bellows, and of Loki's argument that the dwarves had won his head but not his neck." } ],
+        "notes": "Twice: at the forge, and then over the terms of the wager." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Brokkr is the dwarf who, with his brother Eitri, forged Mjölnir, Draupnir and Gullinbursti to win a wager against Loki, and who sewed Loki's lips shut when denied the head he had won.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Brokkr, Eitri and the forging of the gods' treasures." } ], "weight": "high" } ],
+    "notes": "Mjölnir is in this registry as an item and the men who made it were not in it as figures. The hammer's short handle, which is its one defect, is the fly's doing: Brokkr let go of the bellows for a moment to swat it. The lawyer's argument Loki uses to keep his head — you own the head but not the neck — is the oldest joke about contracts in Germanic literature and it works."
+  },
+  {
+    "id": "norse_eitri",
+    "name": { "primary": "Eitri", "alt": ["Sindri", "Eiti"],
+      "transliterations": { "Old Norse": "Eitri", "etymology": "eitr is poison, and also the venom that drips in the Norse cosmogony; sindr is the slag or cinder thrown off by a forge. The sources give the brother both names and the treatments consulted use them interchangeably." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Brokkr's brother, who shaped the metal in the forge while Brokkr worked the bellows, and who made Mjölnir, Draupnir and Gullinbursti.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Brokkr worked the bellows while Eitri shaped the metal in the forge, and the dwarf brothers forged Thor's hammer Mjolnir, Odin's ring Draupnir and Freyr's golden boar Gullinbursti." } ] } ],
+    "domains": [
+      { "sphereId": "smithing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Eitri as the smith of the pair." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "norse_brokkr",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the two as brothers." } ], "notes": "" } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Eitri, also called Sindri, is the dwarf smith who with his brother Brokkr forged Mjölnir, Draupnir and Gullinbursti.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Eitri, Sindri and Brokkr." } ], "weight": "high" } ],
+    "notes": "One record and two names, because the sources use both for the same brother and the treatments consulted here do not separate them. Making him two figures would be the duplicate this programme forbids; the alternative name is an alias and the census says so."
+  },
+  {
+    "id": "norse_volundr",
+    "name": { "primary": "Völundr", "alt": ["Volund", "Wayland the Smith", "Wéland", "Weyland"],
+      "transliterations": { "Old Norse": "Vǫlundr", "etymology": "Not securely derived. The Old English form is Wéland and the German Wieland; the figure is pan-Germanic and older than any of the three languages." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "A master smith, the subject of the Völundarkviða in the Poetic Edda. King Níðuðr took him in his sleep, had him hamstrung, and imprisoned him on the island of Sævarstöð to work.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Völundr was captured in his sleep by King Niðhad, also Níðuðr or Niðung, who ordered him hamstrung and imprisoned on the island of Sævarstöð; Völund is a mythical smith-god of the Nordic and Germanic peoples whose tale of revenge is relayed in the Völundarkviða, a poem in the Poetic Edda." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "He killed the king's two sons when they came to him in secret, made cups of their skulls, gems of their eyes and a brooch of their teeth, and sent the cups to the king, the gems to the queen and the brooch to the daughter. When the daughter brought him her ring to mend he took it, seduced her, fathered a son and flew away on wings he had made.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in revenge Weyland killed the king's sons when they came to him secretly, made mugs from their skulls, gemstones from their eyes and a pin from their teeth, sending the mugs to the king, the gemstones to the queen and the pin to the king's daughter; when Bodvild took her ring to him to be mended he took the ring and seduced her, fathering a son and fleeing on wings he made." } ] } ],
+    "domains": [
+      { "sphereId": "smithing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Völundr as a master smith." } ] },
+      { "sphereId": "vengeance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Völundr's revenge on Níðuðr." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Völundr is the master smith of the Völundarkviða, hamstrung and imprisoned by King Níðuðr, who killed the king's sons, worked their bodies into tableware and jewellery for their own family, took the daughter, and escaped on wings of his own making.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Völundr, Wayland the Smith and the Völundarkviða." } ], "weight": "high" } ],
+    "notes": "The most brutal story in the Edda and one of the oldest: Wayland is carved on the Franks Casket in the eighth century, is named in Beowulf and in Deor, and gives his name to a Neolithic long barrow in Berkshire that people were already calling Wayland's Smithy a thousand years ago. The sequence — the crippling, the workshop, the children, the flight — is told without a word of judgement in either direction. He is pan-Germanic and is recorded here under Norse because the Völundarkviða is; the census notes the Continental and English forms."
+  },
+  {
+    "id": "norse_sigyn",
+    "name": { "primary": "Sigyn", "alt": ["Siguna"],
+      "transliterations": { "Old Norse": "Sigyn", "etymology": "sigr, victory, plus vina, friend — 'victory-friend', which is either ironic or very old." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Loki's wife. When the gods bound him in a cave with the entrails of his own son, turned to iron, in vengeance for Baldr's death, she stayed beside him with a bowl held up to catch the venom dripping from the snake above his face.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Loki was fastened to three rocks in a cave with the entrails of his slain son, which the gods had turned into iron chains, and his faithful wife Sigyn sat by his side with a bowl that she held up to the snake's mouth to catch poison; Loki was bound in vengeance for his role in the death of Baldr." } ] },
+      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "When the bowl fills she has to leave to empty it, and in those moments the venom falls on his face and he convulses — which is what an earthquake is.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: when the bowl became full Sigyn would have to leave to dispose of its contents, at which point the venom drops falling on Loki's face would cause him to shake violently, bringing about earthquakes in Midgard." } ] } ],
+    "domains": [
+      { "sphereId": "loyalty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sigyn as Loki's faithful wife, remaining at his side." } ] },
+      { "sphereId": "earthquakes", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the earthquakes caused when she leaves to empty the bowl." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sigyn as Loki's wife, who stayed beside him at the binding." } ],
+        "notes": "Written one way because the existing Loki record cannot be given a reciprocal from here." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sigyn is Loki's wife, who holds a bowl over his face to catch the venom of the snake set above him at his binding, and whose absences to empty it are the cause of earthquakes.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sigyn and the binding of Loki." } ], "weight": "high" } ],
+    "notes": "She is standing there now, in the present tense, for the whole remainder of the mythology until Ragnarök: the Norse have a goddess whose entire function is an unbroken act of care performed for someone everyone else has given up on, and they made her absences the explanation for the ground moving. The registry held Loki, the sons whose guts bind him and the serpent-daughter above him, and not her."
+  },
+  {
+    "id": "norse_gefjon",
+    "name": { "primary": "Gefjon", "alt": ["Gefjun", "Gefion"],
+      "transliterations": { "Old Norse": "Gefjun", "etymology": "From gefa, to give — 'the giver', or 'she who gives'." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "She ploughed out of Sweden what is now Lake Mälaren, and made of the ploughed-up land the island of Zealand in Denmark.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gefjon ploughed away what is now lake Mälaren in Sweden, and with this land formed the island of Zealand, Denmark." } ] } ],
+    "domains": [
+      { "sphereId": "ploughing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gefjon's ploughing of Zealand out of Sweden." } ] },
+      { "sphereId": "land", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the formation of Zealand and Lake Mälaren." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Norse", "placeName": "Zealand and Lake Mälaren", "kind": "aetiological-cult", "period": "mythic-prehistoric to modern",
+        "attestation": "the island and the lake, and the Gefion Fountain in Copenhagen", "source": "Reference treatment of Gefjon and the ploughing of Zealand.",
+        "note": "The largest fountain in Copenhagen is this story, and the shapes of the island and the lake are cited as the evidence for it." } ],
+    "sources": [ { "claim": "Gefjon is the Norse goddess who ploughed the land that became Zealand out of Sweden, leaving the hole that is Lake Mälaren.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Gefjon and the ploughing of Zealand." } ], "weight": "high" } ],
+    "notes": "An aetiology with a map attached: a Swedish king promises her as much land as she can plough in a day and night, she turns her four sons by a giant into oxen and takes a whole island, and the hole in Sweden and the island in Denmark are both still there to be measured. The Danes have built the story as a bronze fountain in their capital. The registry did not have her."
+  },
+  {
+    "id": "norse_hermodr",
+    "name": { "primary": "Hermóðr", "alt": ["Hermod", "Hermodr"],
+      "transliterations": { "Old Norse": "Hermóðr", "etymology": "herr, army or host; móðr, courage or wrath. 'War-spirited'." } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "The god who rode down to the underworld on Sleipnir to ask Hel to let Baldr come back.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hermod was a god who travelled to the Underworld on Sleipnir to beg Hel to let Baldur go." } ] } ],
+    "domains": [
+      { "sphereId": "messenger", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hermod's errand to Hel." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "norse_sleipnir",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hermod riding Sleipnir to the underworld." } ],
+        "notes": "He borrowed Odin's horse for the errand, which is the only occasion anyone else rides it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hermóðr is the god who rode Sleipnir down to Hel to beg for Baldr's release.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Hermod's ride to the underworld." } ], "weight": "high" } ],
+    "notes": "The errand succeeds and then fails on a technicality: Hel agrees to release Baldr if every single thing in the world weeps for him, and one giantess will not. The registry held Baldr, Hel and Odin and not the messenger who went between them, which left the most consequential negotiation in the mythology without a negotiator."
+  },
+  {
+    "id": "norse_sleipnir",
+    "name": { "primary": "Sleipnir", "alt": ["Sleipner"],
+      "transliterations": { "Old Norse": "Sleipnir", "etymology": "From sleipr, slippery or gliding — 'the slipper', for a horse that travels over land, sea and air." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["norse_loki"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 0,
+      "startEvent": "Odin's eight-legged horse, and Loki's child: Loki is the father of Fenrir, Hel and Jörmungandr and the mother of Sleipnir.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Loki is the father of Fenrir, Hel and Jormungandr the Midgard Serpent, and is also the mother of Sleipnir." } ] },
+      { "typeStatus": "numen", "era": "mythic-prehistoric", "eraOrdering": 1,
+        "startEvent": "Hermóðr rode him down to Hel to ask for Baldr, which is the one occasion on which anyone but Odin is on his back.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hermod travelled to the Underworld on Sleipnir to beg Hel to let Baldur go." } ] } ],
+    "domains": [
+      { "sphereId": "horses", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sleipnir as Odin's horse." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "norse_loki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Loki as the mother of Sleipnir, and as the father of Fenrir, Hel and Jormungandr." } ],
+        "notes": "Carried as a relation as well as in parentIds, because the parentage is the one thing every source about him says." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sleipnir is Odin's eight-legged horse and Loki's child, the horse Hermóðr rode to Hel to ask for Baldr.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sleipnir, Loki's offspring and Hermod's ride." } ], "weight": "high" } ],
+    "notes": "The registry held three of Loki's four children — Fenrir, Jörmungandr and Hel — and not the fourth, who is a horse, because Loki turned himself into a mare to distract a stallion and came back pregnant. He is recorded as a figure on the same footing as his siblings and for the same reason: the sources treat him as a person with a parent, not as an animal with an owner."
+  },
+  {
+    "id": "norse_gullveig",
+    "name": { "primary": "Gullveig", "alt": ["Heiðr", "Heid", "Gullveig-Heiðr"],
+      "transliterations": { "Old Norse": "Gullveig", "etymology": "gull is gold; the second element is read as 'strength', 'drink' or 'greed' depending on the commentator. Heiðr, the name she takes at her third rebirth, means 'bright' and is also a standard name for a völva." } },
+    "type": "numen", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "She came to Odin's hall, and the Æsir speared her and burned her three times, and three times she was reborn.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in Norse mythology Gullveig is a being who was speared by the Æsir, burnt three times and yet thrice reborn; in the poem Völuspá she came to the hall of Odin (Hár) where she is speared by the Æsir three times, burned three times, and yet is reborn three times." } ] },
+      { "typeStatus": "numen", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "At the third rebirth her name becomes Heiðr and she is described as a knowledgeable and skilful völva. Scholars have variously identified her with Freyja, read her death as a parable about gold corrupting the Æsir, and held that her treatment is what began the Æsir-Vanir war.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: upon her third rebirth Gullveig's name becomes Heiðr and she is described as a knowledgeable and skilful völva; scholars have variously proposed that Gullveig/Heiðr is the same figure as the goddess Freyja, that her death may have been connected to corruption by way of gold among the Æsir, and that her treatment by the Æsir may have led to the Æsir-Vanir War, and she is considered the main reason for that war." } ] } ],
+    "domains": [
+      { "sphereId": "gold", "contextTag": "lifelong", "term": { "value": "gull", "script": "Old Norse", "rom": "gold" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gullveig's name and of the reading connecting her to corruption by gold." } ] },
+      { "sphereId": "sorcery", "contextTag": "lifelong", "term": { "value": "völva", "script": "Old Norse", "rom": "volva, the staff-bearing seeress" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Heiðr as a knowledgeable and skilful völva." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gullveig is the being the Æsir speared and burned three times in Odin's hall and who was three times reborn, taking the name Heiðr and becoming a völva; her treatment is commonly held to have started the Æsir-Vanir war, and some scholars identify her with Freyja.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Gullveig, Heiðr and the Völuspá." } ], "weight": "high" } ],
+    "notes": "Everything about her is disputed and the record says so rather than choosing: whether she is Freyja, whether the burning is about gold or about sorcery, whether the war follows from it. What is not disputed is the stanza — they stabbed her with spears and burned her in the high one's hall, three times burned and three times born, and she lives still. No relation is written to Freyja, because an identification the scholarship treats as a proposal is not an edge. Heiðr is carried as an alias on the same record rather than as a second figure, since the poem makes the renaming explicit."
+  }
+]
+```
