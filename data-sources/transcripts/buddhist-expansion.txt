@@ -1,0 +1,3034 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Buddhist
+Eras (registered, exact): mythic
+Author pass: Buddhist held 14 records. This adds 34.
+
+================================================================================
+THE GAP — THE REGISTRY HELD MĀRA AND HIS THREE DAUGHTERS AND NOT THE MAN
+THEY WERE SENT TO TEMPT
+================================================================================
+
+The Buddhist key held **fourteen records**. Here is all of them:
+
+    Māra                        the tempter
+    Taṇhā, Aratī, Rāgā          his three daughters
+    Śakra                       king of the Trāyastriṃśa heaven
+    Sujā                        Śakra's wife
+    Vemacitrin                  the asura lord Śakra fights
+    Brahmā Sahāmpati            who asks the Buddha to teach
+    Pṛthivī                     the earth, called to witness
+    Yama                        the judge of the dead
+    Dhṛtarāṣṭra, Virūḍhaka,     the Four Heavenly Kings
+    Virūpākṣa, Vaiśravaṇa
+
+Every one of those is a **deva or an adversary** — a figure Buddhism inherited
+from the Indian pantheon and filed in its cosmology.
+
+**There is no Buddha in it.** No Śākyamuni. No Amitābha, no Vairocana, no
+Bhaiṣajyaguru, no Dīpaṃkara. **There is no bodhisattva in it**: no
+Avalokiteśvara, no Mañjuśrī, no Maitreya, no Kṣitigarbha, no Tārā. **There is
+nobody from the Buddha's household**: no Māyā, no Śuddhodana, no Yaśodharā, no
+Rāhula, no Mahāprajāpatī. **There is not one disciple**: no Śāriputra, no
+Maudgalyāyana, no Ānanda, no Devadatta.
+
+Four of the fourteen records exist only in order to attack or petition a man the
+registry did not hold. **Pṛthivī is in the corpus because she was called to
+witness — and the corpus did not hold who called her.**
+
+This is the programme's recurring finding at the largest scale it has yet been
+found: not a missing adversary, not a missing household, but **a world religion
+filed entirely through the beings on its margins.**
+
+================================================================================
+A SCHEMA PROBLEM THIS BATCH CANNOT SOLVE AND WILL NOT HIDE
+================================================================================
+
+This registry's `type` vocabulary is `deity | numen | demigod | quartigod |
+scion | mortal`. **Buddhism does not regard a Buddha as a god**, and a bodhisattva
+is not a god either; the devas the registry already holds are, in this
+tradition's own view, unenlightened beings inside saṃsāra, and it is the Buddhas
+and bodhisattvas — who are *not* gods — that stand above them.
+
+The schema has no category for that, so:
+
+- **Śākyamuni is `mortal`**, with his parents in `parentIds` and his awakening on
+  his lifecycle, where the tradition puts it. His disciples and household are
+  `mortal` for the same reason.
+- **The Buddhas and bodhisattvas are `deity`**, because it is the nearest
+  category the vocabulary has, **and every one of those records says on its face
+  that the tradition does not call them gods.**
+
+**This is escalated and not papered over.** It is the same class of problem lane
+23 escalated about the Armenian era labels: a vocabulary that fits most of the
+corpus and misdescribes one tradition.
+
+================================================================================
+AND ONE REGISTERED ERA FOR EVERYTHING
+================================================================================
+
+The Buddhist era vocabulary has exactly one entry, `mythic` — so the historical
+Buddha's lifetime, the celestial Buddhas of the pure lands, and Maitreya, who has
+not come yet, are all filed in the same bucket.
+
+**This batch does not extend the vocabulary.** Lane 22 extended the Continental
+Germanic list because a label's stated date range *contradicted* the material
+being filed under it; here the single label is merely coarse, not wrong, and
+splitting a tradition's era vocabulary is a claim about that tradition's shape
+that the owner should make.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+The **Eighteen Arhats**, the **Twenty-Eight Buddhas** as a series, the **Thirty-
+Five Confession Buddhas** and the **Thousand Buddhas of this aeon** are
+**collectives and series**; individuals are ingested where the sources give them
+an act. **Kaṇṭhaka**, the horse Siddhārtha rides out of the palace, is an animal
+identified by an owner — the rejection this programme has applied to five horses,
+two hounds, Balder's foal and the dogs of Artavazd. Kapilavastu, Bodh Gayā,
+Sārnāth and Kuśinagara are **places**; Sukhāvatī and Vaiḍūryanirbhāsa are
+**places** too, even though they are pure lands. The Bodhi tree is a **tree**.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE BUDDHA AND HIS HOUSEHOLD
+================================================================================
+
+```json
+[
+ {
+  "id": "buddhist_shakyamuni",
+  "name": {
+   "primary": "Siddhārtha Gautama",
+   "alt": [
+    "Śākyamuni",
+    "the Buddha",
+    "Gautama Buddha",
+    "Siddhattha Gotama"
+   ],
+   "transliterations": {
+    "Sanskrit": "Siddhārtha Gautama",
+    "Pali": "Siddhattha Gotama",
+    "etymology": "Siddhārtha is 'he whose aim is accomplished'; Śākyamuni is 'the sage of the Śākyas', his father's people."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_suddhodana",
+   "buddhist_maya"
+  ],
+  "parentRoles": [
+   {
+    "personId": "buddhist_suddhodana",
+    "role": "father"
+   },
+   {
+    "personId": "buddhist_maya",
+    "role": "mother"
+   }
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Son of Śuddhodana, leader of the Śākya, and of Māyā, who died shortly after he was born; raised by Māyā's sister Mahāprajāpatī. Married at sixteen to his cousin Yaśodharā, and the father of Rāhula, born on the day he left the palace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Māra sends his three daughters and his armies against him under the tree, and the earth is called to witness; he is not moved, and he awakens. Brahmā Sahāmpati then asks him to teach.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha: after his awakening the Buddha devoted himself to teaching and attracted hundreds of followers."
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "He teaches for the rest of his life, ordains his own son at seven, and at the persistent request of his stepmother and with Ānanda's advocacy establishes an order of nuns.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "awakening",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   },
+   {
+    "sphereId": "teaching",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "tempted-by",
+    "personId": "buddhist_mara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Mara as the tempter who opposes the Buddha's awakening."
+     }
+    ],
+    "notes": "Non-symmetric, so nothing is written onto the pre-existing Mara record. THE REGISTRY HELD MARA AND HIS THREE DAUGHTERS AND NOT THE MAN THEY WERE SENT TO TEMPT."
+   },
+   {
+    "kind": "called-to-witness",
+    "personId": "buddhist_prthivi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: the earth is called to witness the Buddha's right to the seat of awakening."
+     }
+    ],
+    "notes": "Non-symmetric. PRTHIVI IS IN THE CORPUS BECAUSE SHE WAS CALLED TO WITNESS, AND THE CORPUS DID NOT HOLD WHO CALLED HER."
+   },
+   {
+    "kind": "entreated-by",
+    "personId": "buddhist_brahma_sahampati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Brahma Sahampati asks the Buddha to teach after his awakening."
+     }
+    ],
+    "notes": "Non-symmetric."
+   },
+   {
+    "kind": "spouse",
+    "personId": "buddhist_yashodhara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "father-of",
+    "personId": "buddhist_rahula",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch; Rāhula carries both parents in parentIds."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Siddhārtha Gautama, the Śākyamuni Buddha, is the son of Śuddhodana and Māyā, husband of Yaśodharā and father of Rāhula, who awakens under the tree against Māra and teaches for the rest of his life.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "TYPE mortal AND THAT IS THE TRADITION'S OWN POSITION. A Buddha is not a god and was not one before he was a Buddha; he is a man who woke up, and what he BECAME is on the lifecycle where the tradition puts it. This is the decision lane 24 made for Princess Bari and lanes 16, 17 and 18 each lost a test cycle to. THE FOURTEEN RECORDS THE CORPUS ALREADY HELD UNDER THIS KEY ARE DEVAS AND ADVERSARIES, four of them existing only in order to attack or petition him."
+ },
+ {
+  "id": "buddhist_maya",
+  "name": {
+   "primary": "Māyā",
+   "alt": [
+    "Mahāmāyā",
+    "Māyādevī"
+   ],
+   "transliterations": {
+    "Sanskrit": "Māyā",
+    "etymology": "'Illusion' or 'art'; the fuller form Mahāmāyā is 'great Māyā'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Śuddhodana's wife and the Buddha's mother, who died shortly after he was born.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch; he carries her in parentIds."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_mahaprajapati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "spouse",
+    "personId": "buddhist_suddhodana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Śuddhodana's wife and the Buddha's mother, who died shortly after he was born.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A WOMAN WHOSE WHOLE RECORDED LIFE IS A BIRTH AND A DEATH SEVEN DAYS APART, and the sources say so plainly. The record does not narrate the dream of the white elephant or the birth from her side, because the treatment consulted does not."
+ },
+ {
+  "id": "buddhist_suddhodana",
+  "name": {
+   "primary": "Śuddhodana",
+   "alt": [
+    "Suddhodana"
+   ],
+   "transliterations": {
+    "Sanskrit": "Śuddhodana",
+    "Pali": "Suddhodana",
+    "etymology": "'Pure rice'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A powerful leader of the Śākya, husband of Māyā and, after her death, of her sister Mahāprajāpatī; the Buddha's father.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch."
+   },
+   {
+    "kind": "spouse",
+    "personId": "buddhist_maya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "spouse",
+    "personId": "buddhist_mahaprajapati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A powerful leader of the Śākya, husband of Māyā and, after her death, of her sister Mahāprajāpatī; the Buddha's father.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The sources make him a leader of a people rather than the king of a kingdom, and the record follows them."
+ },
+ {
+  "id": "buddhist_mahaprajapati",
+  "name": {
+   "primary": "Mahāprajāpatī Gautamī",
+   "alt": [
+    "Mahāpajāpatī Gotamī",
+    "Gautamī"
+   ],
+   "transliterations": {
+    "Sanskrit": "Mahāprajāpatī Gautamī",
+    "Pali": "Mahāpajāpatī Gotamī",
+    "etymology": "Prajāpatī is 'lord of creatures'; Gautamī is the feminine of the clan name."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Māyā's sister, elevated to chief consort after her death, who raised the Buddha.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Her persistent request, with Ānanda's advocacy, is why an order of nuns exists — and she is its first member.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_maya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "spouse",
+    "personId": "buddhist_suddhodana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "raised",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch."
+   },
+   {
+    "kind": "supported-by",
+    "personId": "buddhist_ananda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch. The sources make Ānanda's advocacy part of how the order of nuns came to exist."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Māyā's sister, elevated to chief consort after her death, who raised the Buddha.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE FIRST NUN, AND THE ORDER EXISTS BECAUSE SHE WOULD NOT STOP ASKING. The sources say the request was persistent and that the order was established 'with additional rules', which the record states without softening either half."
+ },
+ {
+  "id": "buddhist_yashodhara",
+  "name": {
+   "primary": "Yaśodharā",
+   "alt": [
+    "Yasodhara",
+    "Bimbā"
+   ],
+   "transliterations": {
+    "Sanskrit": "Yaśodharā",
+    "Pali": "Yasodharā",
+    "etymology": "'Bearer of glory'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha's cousin, married to him at sixteen when he was sixteen; a long time conceiving, and the mother of Rāhula, born on the day his father left the palace. She is Devadatta's sister.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "buddhist_rahula",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch; Rāhula carries her in parentIds."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_devadatta",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha's cousin, married to him at sixteen when he was sixteen; a long time conceiving, and the mother of Rāhula, born on the day his father left the palace. She is Devadatta's sister.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE MAN WHO BECOMES THE BUDDHA'S GREAT ENEMY IS HIS WIFE'S BROTHER, which the corpus could not say because it held neither of them."
+ },
+ {
+  "id": "buddhist_rahula",
+  "name": {
+   "primary": "Rāhula",
+   "alt": [],
+   "transliterations": {
+    "Sanskrit": "Rāhula",
+    "Pali": "Rāhula",
+    "etymology": "Traditionally read as 'fetter'; the name is also that of the eclipse-demon."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_shakyamuni",
+   "buddhist_yashodhara"
+  ],
+  "parentRoles": [
+   {
+    "personId": "buddhist_shakyamuni",
+    "role": "father"
+   },
+   {
+    "personId": "buddhist_yashodhara",
+    "role": "mother"
+   }
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born on the day his father left the palace; made a novice monk at seven, and spent the rest of his life with him. One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch; he also carries both parents in parentIds."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Born on the day his father left the palace; made a novice monk at seven, and spent the rest of his life with him. One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A CHILD ORDAINED AT SEVEN BY HIS OWN FATHER, and named — the tradition says — for a fetter."
+ },
+ {
+  "id": "buddhist_devadatta",
+  "name": {
+   "primary": "Devadatta",
+   "alt": [],
+   "transliterations": {
+    "Sanskrit": "Devadatta",
+    "Pali": "Devadatta",
+    "etymology": "'God-given'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Yaśodharā's brother, who became a disciple of the Buddha and then, by some accounts, a dangerous rival.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_yashodhara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "rival-of-and-disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch, and the kind holds both halves because the source does: a disciple who became a rival."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Yaśodharā's brother, who became a disciple of the Buddha and then, by some accounts, a dangerous rival.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE RECORD DOES NOT NARRATE THE SCHISM, THE ROCK OR THE ELEPHANT, because the treatment consulted says only that he became a disciple and then, BY SOME ACCOUNTS, a dangerous rival — and 'by some accounts' is part of what the source says."
+ },
+ {
+  "id": "buddhist_ananda",
+  "name": {
+   "primary": "Ānanda",
+   "alt": [],
+   "transliterations": {
+    "Sanskrit": "Ānanda",
+    "Pali": "Ānanda",
+    "etymology": "'Bliss, joy'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha's disciple and personal attendant, called the Treasurer of the Dhamma for the retentiveness of his memory. One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "His advocacy, with Mahāprajāpatī's persistence, is why an order of nuns exists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "attendant-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   },
+   {
+    "kind": "advocated-for",
+    "personId": "buddhist_mahaprajapati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the life of the Buddha and the family of Gautama Buddha: Suddhodana was a powerful leader of the Shakya tribe and Maya was his wife; Maya died shortly after Siddhartha was born and her sister Mahapajapati Gotami was elevated to chief consort; at the age of 16 he was married to his cousin Yasodhara, who was also 16; it took Yasodhara a long time to conceive a child, a boy named Rahula born on the day Siddhartha left the palace; Yasodhara was also a sister of Devadatta, who became a disciple of the Buddha and then, by some accounts, a dangerous rival; Rahula became a novice monk at the age of seven and spent the rest of his life with his father; at the persistent request of his stepmother Mahapajapati Gotami and with the advocacy of his attendant Ananda, the Buddha eventually established an order of nuns."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha's disciple and personal attendant, called the Treasurer of the Dhamma for the retentiveness of his memory. One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE MAN THE CANON IS REMEMBERED THROUGH. 'Thus have I heard' opens the sutras because he is the one who heard them, and the tradition's word for what he was is Treasurer of the Dhamma."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE TEN GREAT DISCIPLES
+================================================================================
+
+```json
+[
+ {
+  "id": "buddhist_sariputra",
+  "name": {
+   "primary": "Śāriputra",
+   "alt": [
+    "Sāriputta"
+   ],
+   "transliterations": {
+    "Sanskrit": "Śāriputra",
+    "etymology": "'Son of Śāri', his mother."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the two Chief Disciples, foremost among the disciples of great wisdom.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "buddhist_maudgalyayana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the two Chief Disciples, foremost among the disciples of great wisdom.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE TWO CHIEF DISCIPLES ARE PAIRED IN EVERY LIST AND THE CORPUS HELD NEITHER. Their relics travel together and are recorded together; the pairing is on both records."
+ },
+ {
+  "id": "buddhist_maudgalyayana",
+  "name": {
+   "primary": "Maudgalyāyana",
+   "alt": [
+    "Mahā Moggallāna",
+    "Moggallāna"
+   ],
+   "transliterations": {
+    "Sanskrit": "Maudgalyāyana",
+    "etymology": "A clan name."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The other Chief Disciple, foremost among the disciples of great supernatural powers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "buddhist_sariputra",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The other Chief Disciple, foremost among the disciples of great supernatural powers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The tradition divides the two chief disciples between wisdom and power, and files every later pair of attendants on that model."
+ },
+ {
+  "id": "buddhist_mahakashyapa",
+  "name": {
+   "primary": "Mahākāśyapa",
+   "alt": [
+    "Mahā Kassapa",
+    "Kāśyapa"
+   ],
+   "transliterations": {
+    "Sanskrit": "Mahākāśyapa",
+    "etymology": "'Great Kāśyapa'; a clan name."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The tradition makes him the one who convenes the first council after the Buddha's death, and the first holder of the transmission in the Chan and Zen lineages; the retrieved treatment names him among the ten and does not narrate either, so neither is on the record."
+ },
+ {
+  "id": "buddhist_subhuti",
+  "name": {
+   "primary": "Subhūti",
+   "alt": [],
+   "transliterations": {
+    "Sanskrit": "Subhūti",
+    "etymology": "'Good existence'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "He is the interlocutor of the Diamond Sutra, which the retrieved treatment does not say; the record holds what it does say."
+ },
+ {
+  "id": "buddhist_purna",
+  "name": {
+   "primary": "Pūrṇa",
+   "alt": [
+    "Puṇṇa"
+   ],
+   "transliterations": {
+    "Sanskrit": "Pūrṇa",
+    "etymology": "'Full, complete'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "buddhist_katyayana",
+  "name": {
+   "primary": "Kātyāyana",
+   "alt": [
+    "Mahākaccāna",
+    "Kaccāna"
+   ],
+   "transliterations": {
+    "Sanskrit": "Kātyāyana",
+    "etymology": "A clan name."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "buddhist_aniruddha",
+  "name": {
+   "primary": "Aniruddha",
+   "alt": [
+    "Anuruddha",
+    "Anuradha"
+   ],
+   "transliterations": {
+    "Sanskrit": "Aniruddha",
+    "etymology": "'Unrestrained'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A cousin of Śākyamuni, who became a disciple at the same time as Ānanda; one of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "ordained-alongside",
+    "personId": "buddhist_ananda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "Non-symmetric, because the Ānanda record is already written in this batch's first block and 'companion' is a symmetric kind; the source says only that they became disciples at the same time."
+   },
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A cousin of Śākyamuni, who became a disciple at the same time as Ānanda; one of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The retrieved treatment gives his name as Anuradha in one list and Anuruddha in another; both are on the record and neither is silently preferred."
+ },
+ {
+  "id": "buddhist_upali",
+  "name": {
+   "primary": "Upāli",
+   "alt": [],
+   "transliterations": {
+    "Sanskrit": "Upāli",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A barber before he joined the Buddha, foremost in observing the precepts, who became a disciple while cutting the Buddha's hair; one of the ten great disciples.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "disciple-of",
+    "personId": "buddhist_shakyamuni",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A barber before he joined the Buddha, foremost in observing the precepts, who became a disciple while cutting the Buddha's hair; one of the ten great disciples.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A BARBER WHO BECAME THE AUTHORITY ON MONASTIC LAW. The tradition makes him the reciter of the Vinaya at the first council, which is the point of the detail about his trade, and the retrieved treatment gives the trade and the precedence without the council."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE EIGHT GREAT BODHISATTVAS, AND TĀRĀ
+================================================================================
+
+```json
+[
+ {
+  "id": "buddhist_avalokiteshvara",
+  "name": {
+   "primary": "Avalokiteśvara",
+   "alt": [
+    "Guanyin",
+    "Chenrezig",
+    "Kannon"
+   ],
+   "transliterations": {
+    "Sanskrit": "Avalokiteśvara",
+    "etymology": "'The lord who looks down'; the East Asian Guanyin and the Tibetan Chenrezig are the same figure under other names."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "unknown",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the eight principal attendants of the Buddhas, and one of the three great bodhisattvas; he embodies compassion.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "compassion",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the eight principal attendants of the Buddhas, and one of the three great bodhisattvas; he embodies compassion.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "PROBABLY THE MOST WIDELY VENERATED FIGURE IN BUDDHISM AND THE BUDDHIST KEY HELD NOTHING OF HIM — while the corpus DOES hold chinese_guanyin, under the Chinese key. That is not a duplicate of this record and this batch does not make one: the East Asian Guanyin is a distinct cultic development with her own iconography and her own tradition, filed where she is practised, and the Indian Avalokitesvara of the eight great bodhisattvas is filed here. NO EDGE IS DRAWN between them, on the rule this programme has applied since lane 13, and the Chinese record is a census row. The other language-forms - Chenrezig, Kannon - are carried as aliases because the corpus holds no record under those keys; if a Tibetan or Japanese pass ever creates one, the alias is what will surface the overlap, which is exactly how lane 25's Umbu duplicate was caught. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_manjushri",
+  "name": {
+   "primary": "Mañjuśrī",
+   "alt": [
+    "Wenshu",
+    "Jampelyang"
+   ],
+   "transliterations": {
+    "Sanskrit": "Mañjuśrī",
+    "etymology": "'Gentle glory'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the three great bodhisattvas, who embodies wisdom, and who vowed to return as a bodhisattva to share the Buddha's teaching about voidness and selflessness.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_avalokiteshvara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the three great bodhisattvas, who embodies wisdom, and who vowed to return as a bodhisattva to share the Buddha's teaching about voidness and selflessness.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The sword and the book are his standard attributes; the retrieved treatment gives the vow and the quality and not the iconography, so the record gives the vow and the quality. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_vajrapani",
+  "name": {
+   "primary": "Vajrapāṇi",
+   "alt": [
+    "Chana Dorje"
+   ],
+   "transliterations": {
+    "Sanskrit": "Vajrapāṇi",
+    "etymology": "'Thunderbolt in hand'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the three great bodhisattvas, who represents power; his mantra invokes protection from external and internal obstacles.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "power",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the three great bodhisattvas, who represents power; his mantra invokes protection from external and internal obstacles.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE THREE GREAT BODHISATTVAS ARE A SET AND THE TRADITION SAYS WHY: wisdom, compassion and the power of enlightened activity, the three foundations of practice. The corpus held none of the three. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_maitreya",
+  "name": {
+   "primary": "Maitreya",
+   "alt": [
+    "Metteyya",
+    "Jampa",
+    "Mile"
+   ],
+   "transliterations": {
+    "Sanskrit": "Maitreya",
+    "etymology": "From maitrī, 'loving-kindness'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The bodhisattva who represents loving-kindness, and who is prophesied to be the next Buddha, appearing in the world when the teachings of Śākyamuni fade.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "loving-kindness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The bodhisattva who represents loving-kindness, and who is prophesied to be the next Buddha, appearing in the world when the teachings of Śākyamuni fade.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A FIGURE WHO HAS NOT ARRIVED YET, filed in the same single era as the historical Buddha's lifetime — which is the era-vocabulary problem this batch escalates, in its sharpest form. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_ksitigarbha",
+  "name": {
+   "primary": "Kṣitigarbha",
+   "alt": [
+    "Dizang",
+    "Jizō"
+   ],
+   "transliterations": {
+    "Sanskrit": "Kṣitigarbha",
+    "etymology": "'Earth-womb' or 'earth-store'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The bodhisattva who embodies the vow to rescue beings from the lowest realms of suffering, and particularly from the hells; he also increases the richness and fertility of the land.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rescue-from-the-hells",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The bodhisattva who embodies the vow to rescue beings from the lowest realms of suffering, and particularly from the hells; he also increases the richness and fertility of the land.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE CORPUS HELD YAMA, WHO JUDGES THE DEAD, AND NOT THE BODHISATTVA WHOSE VOW IS TO EMPTY THE PLACE HE SENDS THEM TO. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_samantabhadra",
+  "name": {
+   "primary": "Samantabhadra",
+   "alt": [
+    "Puxian",
+    "Fugen",
+    "Kuntuzangpo"
+   ],
+   "transliterations": {
+    "Sanskrit": "Samantabhadra",
+    "etymology": "'Universally good'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the eight great bodhisattvas, whose particular specialty is making the most potent aspirations and wishing prayers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "aspiration",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the eight great bodhisattvas, whose particular specialty is making the most potent aspirations and wishing prayers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A BODHISATTVA WHOSE SPECIALITY IS A KIND OF SPEECH ACT, which is an unusual thing for a registry of domains to be able to record and it could not before. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_akashagarbha",
+  "name": {
+   "primary": "Ākāśagarbha",
+   "alt": [
+    "Akasagarbha",
+    "Kokūzō"
+   ],
+   "transliterations": {
+    "Sanskrit": "Ākāśagarbha",
+    "etymology": "'Space-womb' or 'sky-store', formed exactly as Kṣitigarbha's name is."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the eight principal attendants of the Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the eight principal attendants of the Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "NAMED AS ONE OF THE EIGHT AND GIVEN NO QUALITY IN THE RETRIEVED TREATMENT, which lists the quality for six of the eight and not for him or Sarvanivaraṇaviṣkambhin. The record holds the membership and does not invent the quality. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_sarvanivaranaviskambhin",
+  "name": {
+   "primary": "Sarvanivaraṇaviṣkambhin",
+   "alt": [
+    "Sarvanivaranaviskambhin"
+   ],
+   "transliterations": {
+    "Sanskrit": "Sarvanivaraṇaviṣkambhin",
+    "etymology": "'Remover of all obstructions'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the eight principal attendants of the Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-eight-great-bodhisattvas-with",
+    "personId": "buddhist_manjushri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The kind records a SET MEMBERSHIP the source states outright, on the footing lane 25 used for the circle of Hebat in the kaluti — it is not a claim about a relationship between two beings."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the eight principal attendants of the Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Likewise named among the eight without a quality attached in the retrieved treatment; the etymology is the nearest thing to one and it is recorded as an etymology. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_tara",
+  "name": {
+   "primary": "Tārā",
+   "alt": [
+    "Drolma",
+    "Duoluo"
+   ],
+   "transliterations": {
+    "Sanskrit": "Tārā",
+    "etymology": "'Star', or from tṛ, 'to cross over' — she who ferries across."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The embodiment of compassion and of swift activity, in the bodhisattva tradition of Avalokiteśvara.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "swift-compassion",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-bodhisattva-tradition-of",
+    "personId": "buddhist_avalokiteshvara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "notes": "In-batch. The source says Tārā 'is related to this bodhisattva tradition', which is what the kind records and no more."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The embodiment of compassion and of swift activity, in the bodhisattva tradition of Avalokiteśvara.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the eight great bodhisattvas: they are the eight principal attendants of the Buddhas in Mahayana and Vajrayana Buddhism, representing the main enlightened qualities of the Buddha — Manjushri, Avalokiteshvara, Vajrapani, Maitreya, Ksitigarbha, Akasagarbha, Samantabhadra and Sarvanivaranaviskambhin; Manjushri embodies wisdom, Avalokiteshvara compassion, Vajrapani power; Maitreya represents loving-kindness and is prophesied to be the next Buddha when the teachings of Shakyamuni fade; Ksitigarbha embodies the vow to rescue beings from the lowest realms, particularly the hell realms; Samantabhadra's particular specialty is making the most potent aspirations and wishing prayers; Tara, the embodiment of compassion and swift activity, is related to this bodhisattva tradition."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE CORPUS HELD NO FEMALE FIGURE OF THE BUDDHIST KEY AT ALL EXCEPT MARA'S THREE DAUGHTERS AND SAKRA'S WIFE. Tārā is among the most widely practised figures in Tibetan Buddhism and the registry had nothing. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha or a bodhisattva as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and the figures in this block stand above them precisely by NOT being gods. The record says so rather than letting the type field make the claim."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE BUDDHAS
+================================================================================
+
+```json
+[
+ {
+  "id": "buddhist_vairocana",
+  "name": {
+   "primary": "Vairocana",
+   "alt": [
+    "Dainichi",
+    "Nangpar Nangdze"
+   ],
+   "transliterations": {
+    "Sanskrit": "Vairocana",
+    "etymology": "'The illuminator', from vi-ruc, 'to shine'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of the centre among the Five Dhyani Buddhas, the Five Wisdom Buddhas of Vajrayana.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-centre",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-five-wisdom-buddhas-with",
+    "personId": "buddhist_akshobhya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; they are representations of enlightened awareness in Vajrayana Buddhism."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of the centre among the Five Dhyani Buddhas, the Five Wisdom Buddhas of Vajrayana.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE FIVE ARE A SYSTEM AND NOT A LIST: each carries a direction, a colour, an element, a mudra, a symbol, a wisdom, AND A NEGATIVE EMOTION TURNED INTO AWAKENED UNDERSTANDING. The registry holds domains and can hold the direction and the wisdom; it has no field for 'the affliction this Buddha is the transformation of', which is the substance of the scheme, and that is recorded here rather than flattened away. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_akshobhya",
+  "name": {
+   "primary": "Akṣobhya",
+   "alt": [
+    "Mikyöpa"
+   ],
+   "transliterations": {
+    "Sanskrit": "Akṣobhya",
+    "etymology": "'Immovable, imperturbable'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of the East among the Five Dhyani Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-east",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-five-wisdom-buddhas-with",
+    "personId": "buddhist_vairocana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; they are representations of enlightened awareness in Vajrayana Buddhism."
+     }
+    ],
+    "notes": "In-batch. A set membership the source states outright, with Vairocana at the centre of the scheme."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of the East among the Five Dhyani Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE FIVE ARE A SYSTEM AND NOT A LIST: each carries a direction, a colour, an element, a mudra, a symbol, a wisdom, AND A NEGATIVE EMOTION TURNED INTO AWAKENED UNDERSTANDING. The registry holds domains and can hold the direction and the wisdom; it has no field for 'the affliction this Buddha is the transformation of', which is the substance of the scheme, and that is recorded here rather than flattened away. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_ratnasambhava",
+  "name": {
+   "primary": "Ratnasambhava",
+   "alt": [
+    "Rinchen Jungne"
+   ],
+   "transliterations": {
+    "Sanskrit": "Ratnasambhava",
+    "etymology": "'Jewel-born'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of the South among the Five Dhyani Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-south",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-five-wisdom-buddhas-with",
+    "personId": "buddhist_vairocana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; they are representations of enlightened awareness in Vajrayana Buddhism."
+     }
+    ],
+    "notes": "In-batch. A set membership the source states outright, with Vairocana at the centre of the scheme."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of the South among the Five Dhyani Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE FIVE ARE A SYSTEM AND NOT A LIST: each carries a direction, a colour, an element, a mudra, a symbol, a wisdom, AND A NEGATIVE EMOTION TURNED INTO AWAKENED UNDERSTANDING. The registry holds domains and can hold the direction and the wisdom; it has no field for 'the affliction this Buddha is the transformation of', which is the substance of the scheme, and that is recorded here rather than flattened away. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_amitabha",
+  "name": {
+   "primary": "Amitābha",
+   "alt": [
+    "Amida",
+    "Amituofo",
+    "Öpame"
+   ],
+   "transliterations": {
+    "Sanskrit": "Amitābha",
+    "etymology": "'Measureless light'; the parallel name Amitāyus is 'measureless life'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of the West among the Five Dhyani Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-west",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-five-wisdom-buddhas-with",
+    "personId": "buddhist_vairocana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; they are representations of enlightened awareness in Vajrayana Buddhism."
+     }
+    ],
+    "notes": "In-batch. A set membership the source states outright, with Vairocana at the centre of the scheme."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of the West among the Five Dhyani Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE MOST WIDELY INVOKED BUDDHA IN EAST ASIA and the corpus held nothing of him. The Pure Land traditions are built on his vow and on the recitation of his name; the retrieved treatment gives his place in the five-Buddha scheme and not the vow, so the record gives the place. THE FIVE ARE A SYSTEM AND NOT A LIST: each carries a direction, a colour, an element, a mudra, a symbol, a wisdom, AND A NEGATIVE EMOTION TURNED INTO AWAKENED UNDERSTANDING. The registry holds domains and can hold the direction and the wisdom; it has no field for 'the affliction this Buddha is the transformation of', which is the substance of the scheme, and that is recorded here rather than flattened away. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_amoghasiddhi",
+  "name": {
+   "primary": "Amoghasiddhi",
+   "alt": [
+    "Dönyö Drupa"
+   ],
+   "transliterations": {
+    "Sanskrit": "Amoghasiddhi",
+    "etymology": "'Unfailing accomplishment'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of the North among the Five Dhyani Buddhas.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-north",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-five-wisdom-buddhas-with",
+    "personId": "buddhist_vairocana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; they are representations of enlightened awareness in Vajrayana Buddhism."
+     }
+    ],
+    "notes": "In-batch. A set membership the source states outright, with Vairocana at the centre of the scheme."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of the North among the Five Dhyani Buddhas.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Five Dhyani Buddhas: Vairocana is in the centre, Akshobhya in the East, Ratnasambhava in the South, Amitabha in the West and Amoghasiddhi in the North; the Five Dhyani Buddhas, or Tathagatas, the Five Wisdom Buddhas or Five Jinas, are representations of enlightened awareness in Vajrayana Buddhism, each associated with a colour, direction, element, mudra, symbol, wisdom, and a negative emotion turned into awakened understanding."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE FIVE ARE A SYSTEM AND NOT A LIST: each carries a direction, a colour, an element, a mudra, a symbol, a wisdom, AND A NEGATIVE EMOTION TURNED INTO AWAKENED UNDERSTANDING. The registry holds domains and can hold the direction and the wisdom; it has no field for 'the affliction this Buddha is the transformation of', which is the substance of the scheme, and that is recorded here rather than flattened away. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_bhaisajyaguru",
+  "name": {
+   "primary": "Bhaiṣajyaguru",
+   "alt": [
+    "the Medicine Buddha",
+    "Yakushi",
+    "Menla",
+    "Yaoshifo"
+   ],
+   "transliterations": {
+    "Sanskrit": "Bhaiṣajyaguru",
+    "etymology": "'Master of medicines'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Buddha of healing and medicine, who on achieving Buddhahood became the Buddha of the eastern pure land of Vaiḍūryanirbhāsa; lapis is nearly always in his image and he nearly always holds a lapis alms bowl or a medicine jar in his left hand.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Bhaisajyaguru is the Buddha of healing and medicine in the Mahayana tradition, the Medicine Buddha; when he achieved Buddhahood he became the Buddha of the eastern pure land of Vaiduryanirbhasa; the colour lapis is nearly always incorporated into his image and he nearly always holds a lapis alms bowl or medicine jar in his left hand."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "healing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Bhaisajyaguru is the Buddha of healing and medicine in the Mahayana tradition, the Medicine Buddha; when he achieved Buddhahood he became the Buddha of the eastern pure land of Vaiduryanirbhasa; the colour lapis is nearly always incorporated into his image and he nearly always holds a lapis alms bowl or medicine jar in his left hand."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The Buddha of healing and medicine, who on achieving Buddhahood became the Buddha of the eastern pure land of Vaiḍūryanirbhāsa; lapis is nearly always in his image and he nearly always holds a lapis alms bowl or a medicine jar in his left hand.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Bhaisajyaguru is the Buddha of healing and medicine in the Mahayana tradition, the Medicine Buddha; when he achieved Buddhahood he became the Buddha of the eastern pure land of Vaiduryanirbhasa; the colour lapis is nearly always incorporated into his image and he nearly always holds a lapis alms bowl or medicine jar in his left hand."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A BUDDHA WHOSE ICONOGRAPHY IS A COLOUR AND A CONTAINER. The lapis and the bowl are recorded because the source gives them as near-invariant, which is the strongest iconographic statement in this batch. His pure land, Vaidūryanirbhāsa, is a PLACE and is not ingested. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_dipankara",
+  "name": {
+   "primary": "Dīpaṃkara",
+   "alt": [
+    "Dipankara",
+    "Marmedze",
+    "Randeng"
+   ],
+   "transliterations": {
+    "Sanskrit": "Dīpaṃkara",
+    "etymology": "'Lamp-bearer'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A Buddha of a previous eon, fourth in the succession of twenty-eight named Buddhas before Gautama, famous for issuing the prophecy of Gautama's awakening; Tibetan Buddhism honours him as the Buddha of the Past, shown beside Śākyamuni the Buddha of the Present and Maitreya the Buddha of the Future.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Dipankara was a buddha of a previous eon, famous for having issued the prophecy of Gautama Buddha's awakening as a buddha; he was fourth in the succession of 28 named buddhas who preceded Gautama, and in Tibetan Buddhism is honoured as the Buddha of the Past, often depicted alongside Shakyamuni the Buddha of the Present and Maitreya the Buddha of the Future."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Dipankara was a buddha of a previous eon, famous for having issued the prophecy of Gautama Buddha's awakening as a buddha; he was fourth in the succession of 28 named buddhas who preceded Gautama, and in Tibetan Buddhism is honoured as the Buddha of the Past, often depicted alongside Shakyamuni the Buddha of the Present and Maitreya the Buddha of the Future."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "prophesied-the-awakening-of",
+    "personId": "buddhist_sumedha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sumedha and of Dipankara: Dipankara issued the prophecy of Gautama Buddha's awakening, and Sumedha is the ascetic of that previous eon to whom the prophecy was made."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A Buddha of a previous eon, fourth in the succession of twenty-eight named Buddhas before Gautama, famous for issuing the prophecy of Gautama's awakening; Tibetan Buddhism honours him as the Buddha of the Past, shown beside Śākyamuni the Buddha of the Present and Maitreya the Buddha of the Future.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Dipankara was a buddha of a previous eon, famous for having issued the prophecy of Gautama Buddha's awakening as a buddha; he was fourth in the succession of 28 named buddhas who preceded Gautama, and in Tibetan Buddhism is honoured as the Buddha of the Past, often depicted alongside Shakyamuni the Buddha of the Present and Maitreya the Buddha of the Future."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE THREE-BUDDHA GROUP IS PAST, PRESENT AND FUTURE, and with this batch the corpus holds all three: Dipamkara, Sakyamuni and Maitreya. THE TWENTY-EIGHT NAMED BUDDHAS BEFORE GAUTAMA ARE NOT INGESTED as a series; Dipamkara is ingested because the sources give him an ACT — the prophecy — and the other twenty-seven are a census row. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ },
+ {
+  "id": "buddhist_prabhutaratna",
+  "name": {
+   "primary": "Prabhūtaratna",
+   "alt": [
+    "Duobao",
+    "Taho"
+   ],
+   "transliterations": {
+    "Sanskrit": "Prabhūtaratna",
+    "etymology": "'Abundant treasures'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "An extinct Tathāgata who resides in a stupa made of precious substances, revered in conjunction with Śākyamuni, and who vowed that his jewelled stupa would appear wherever the Lotus Sutra is recited.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Prabhutaratna is the extinct Tathagata who resides in a stupa made of precious substances, revered in conjunction with Shakyamuni, and significant for having vowed that his jewelled stupa would manifest whenever the Lotus Sutra is recited."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "witness-to-the-Lotus-Sutra",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Prabhutaratna is the extinct Tathagata who resides in a stupa made of precious substances, revered in conjunction with Shakyamuni, and significant for having vowed that his jewelled stupa would manifest whenever the Lotus Sutra is recited."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An extinct Tathāgata who resides in a stupa made of precious substances, revered in conjunction with Śākyamuni, and who vowed that his jewelled stupa would appear wherever the Lotus Sutra is recited.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Prabhutaratna is the extinct Tathagata who resides in a stupa made of precious substances, revered in conjunction with Shakyamuni, and significant for having vowed that his jewelled stupa would manifest whenever the Lotus Sutra is recited."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "A BUDDHA WHOSE VOW IS A CONDITIONAL APPEARANCE: the stupa manifests whenever a particular text is recited, which makes him the only figure in this batch whose cult is triggered by an act of reading. The sources call him EXTINCT and still resident in the stupa, and the record keeps both without resolving them. TYPE deity IS THE NEAREST CATEGORY THIS SCHEMA HAS AND THE TRADITION DOES NOT USE IT. Buddhism does not regard a Buddha as a god; the devas this corpus already holds under the Buddhist key are, in this tradition's own view, unenlightened beings inside samsara, and a Buddha stands above them precisely by NOT being one. The record says so rather than letting the type field make the claim."
+ }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE ONE THE PROPHECY WAS MADE TO
+================================================================================
+
+```json
+[
+ {
+  "id": "buddhist_sumedha",
+  "name": {
+   "primary": "Sumedha",
+   "alt": [
+    "Sumati",
+    "Megha"
+   ],
+   "transliterations": {
+    "Sanskrit": "Sumedha",
+    "etymology": "'Of good wisdom'."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The ascetic of a previous eon to whom Dīpaṃkara issued the prophecy that he would become a Buddha.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sumedha and of Dipankara: Dipankara issued the prophecy of Gautama Buddha's awakening, and Sumedha is the ascetic of that previous eon to whom the prophecy was made."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "prophesied-over-by",
+    "personId": "buddhist_dipankara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sumedha and of Dipankara: Dipankara issued the prophecy of Gautama Buddha's awakening, and Sumedha is the ascetic of that previous eon to whom the prophecy was made."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Sumedha is the ascetic of a previous eon to whom Dīpaṃkara prophesied that he would become a Buddha.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sumedha and of Dipankara: Dipankara issued the prophecy of Gautama Buddha's awakening, and Sumedha is the ascetic of that previous eon to whom the prophecy was made."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "NO EDGE IS DRAWN TO SAKYAMUNI, AND THAT IS THE WHOLE POINT. The tradition identifies Sumedha as the Buddha's own former self, which is a claim about identity across rebirths — and THIS REGISTRY HAS NO KIND FOR THAT. Lane 17 escalated exactly this over Sati and Parvati and declined to invent one, because a kind for identity-across-lives would then apply to the avatars, the jatakas and every tradition with rebirth in it. TYPE mortal, because he is an ascetic in a story and not a god, and vitalStatus deceased, because whatever the tradition means by what happened to him, he is not walking around."
+ }
+]
+```
+
