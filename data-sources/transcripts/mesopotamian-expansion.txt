@@ -1,0 +1,1521 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Mesopotamian
+Eras (registered, exact): primordial | mythic | early-dynastic-sumer | early-dynastic |
+  akkadian | akkadian-empire | ur-iii | old-babylonian | kassite-middle |
+  late-bronze-age | neo-assyrian-neo-babylonian | achaemenid-hellenistic | modern
+Author pass: Mesopotamian held 41 records, but roughly 18 of those are
+             historical kings and priestesses — Sargon, Naram-Sin, Shulgi,
+             Ur-Nammu, Enheduanna and the rest. The pantheon itself was thin.
+             This adds 36 gods, heroes and demons.
+
+================================================================================
+THE GAP
+================================================================================
+
+A corpus-wide name check, over canonical names and aliases with Unicode
+normalisation, found the following absent from the WHOLE registry:
+
+- **Ninurta**, the warrior god of Lugal-e, and **Ashur**, head of the Assyrian
+  pantheon. The corpus carried Assyrian kings NAMED after them — Ninurta-apal-Ekur,
+  Ninurta-tukulti-Ashur, Ashur-dan I — but not the gods.
+- **Ninlil**, wife of Enlil; **Damkina**, wife of Enki; **Ningal**, wife of
+  Nanna. The three most important consorts in the pantheon.
+- **Anshar, Kishar and Lahamu**, the primordial pairs of Enuma Elish. Lahmu was
+  present without Lahamu, which is a pair split in half.
+- **Enkidu.**
+- **Anzu, Pazuzu, Lamashtu, Humbaba, Asag** — the whole monstrous register.
+- **Gula, Nisaba, Nanshe, Ninkasi, Uttu, Ninshubur, Namtar, Nusku, Ishum,
+  Ninazu, Ningishzida, Ishtaran, Ningirsu, Zababa, Nammu, Enmesharra.**
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session; research went through
+server-side web search. The principal reference consulted is Oracc's *Ancient
+Mesopotamian Gods and Goddesses* (AMGG), the University of Pennsylvania's
+scholarly deity database, together with the standard encyclopedic treatments of
+individual figures. Citations name those; no printed monograph is cited as
+though it had been read.
+
+================================================================================
+ONE IDENTITY DECISION UP FRONT — THE FLOOD HERO
+================================================================================
+
+Utnapishtim, Atra-hasis and Ziusudra are **one figure under three names** in
+three languages: the reference literature states plainly that the Sumerian
+Ziusudra becomes Atra-hasis in Akkadian and Utanapishtim in the Epic of
+Gilgamesh, the names meaning respectively "he of long life" and "he who found
+life". Creating three records would be exactly the duplicate-transliteration
+error this programme forbids. **One record** is authored, primary name
+Utnapishtim, with Atra-hasis, Ziusudra and Xisouthros as aliases and the
+three-version history stated in `variants[]`. Atra-hasis and Ziusudra are
+dispositioned ALIAS in the census.
+
+================================================================================
+AUTHORED FIGURES — I. PRIMORDIALS, GREAT GODS, AND CONSORTS
+================================================================================
+
+```json
+[
+  {
+    "id": "mesopotamian_lahamu",
+    "name": { "primary": "Lahamu", "alt": ["Laḫamu", "Lachamu"],
+      "transliterations": { "Akkadian": "Laḫamu", "etymology": "With Lahmu she forms the first pair produced by Apsu and Tiamat; the pair is generally understood to represent the powers in silt, the matter where fresh water and salt water meet." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Born with Lahmu as the first pair in Enuma Elish, the offspring of Apsu and Tiamat, and parent in turn of Anshar and Kishar.",
+      "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I: Lahmu and Lahamu are the first pair born of Apsu and Tiamat, and the parents of Anshar and Kishar." } ] } ],
+    "domains": [ { "sphereId": "primordial-matter", "contextTag": "lifelong", "term": { "value": "Laḫamu", "script": "Akkadian (transliterated)", "rom": "Lahamu" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Enuma Elish pairs: Lahmu and Lahamu represent the powers in silt, Anshar and Kishar those in the horizon." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_lahmu",
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I." } ],
+        "notes": "The female half of the first pair; Lahmu was already in this registry without her." },
+      { "kind": "mother-of", "personId": "mesopotamian_anshar",
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I: Anshar and Kishar are descendants of Lahmu and Lahamu." } ], "notes": "Mother of Anshar." },
+      { "kind": "mother-of", "personId": "mesopotamian_kishar",
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I." } ], "notes": "Mother of Kishar." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Lahamu is the female half of the first divine pair of Enuma Elish, born with Lahmu of Apsu and Tiamat, the pair representing the powers in silt, and mother of Anshar and Kishar.",
+      "citations": [ { "kind": "primary", "reference": "Enuma Elish, tablet I." },
+                     { "kind": "secondary", "reference": "Reference treatment of Lahamu and of the Enuma Elish succession of primordial pairs." } ], "weight": "high" } ],
+    "notes": "Lahamu is half of a pair the registry was carrying in half. Lahmu was already here; she was not. In Enuma Elish the two of them are the first thing born from the mingling of Apsu's fresh water and Tiamat's salt, and they are usually read as the powers in silt — the matter that forms where the two waters meet. From them come Anshar and Kishar, and from those two, Anu. She has no myth of her own; her whole function is to stand at the second rung of a ladder."
+  },
+  {
+    "id": "mesopotamian_anshar",
+    "name": { "primary": "Anshar", "alt": ["Anšar", "Ansar", "Assur (late identification)"],
+      "transliterations": { "Sumerian": "An-šar", "etymology": "an-šar means literally 'the entirety of heaven'; with Kishar, 'the entirety of earth', the pair are the totalities of sky and ground, or on another reading the powers in the horizon." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_lahmu", "mesopotamian_lahamu"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Born of Lahmu and Lahamu as the second primordial pair with his sister Kishar, and father of Anu; in Enuma Elish he presides over the assembly that first sends Anu and then Ea against Tiamat.",
+      "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablets I-II." },
+                   { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses: Anšar and Kišar occur with very few exceptions only in Enuma Elish; the names mean 'the entirety of heavens' and 'the entirety of earth', and the pair are descendants of Lahmu and Lahamu." } ] } ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "An-šar", "script": "Sumerian (transliterated)", "rom": "the entirety of heaven" },
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Anshar and Kishar." } ] },
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet II, in which Anshar presides over the divine assembly's response to Tiamat." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_kishar",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG: Kishar is the female principle, sister and wife of Anshar." } ],
+        "notes": "Brother and husband of Kishar; heaven entire to her earth entire." },
+      { "kind": "father-of", "personId": "mesopotamian_anu",
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I: Anshar and Kishar are the parents of Anu." } ], "notes": "Father of Anu." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Anshar, 'the entirety of heaven', is the second primordial pair of Enuma Elish with his sister and wife Kishar, son of Lahmu and Lahamu and father of Anu, presiding over the assembly that confronts Tiamat.",
+      "citations": [ { "kind": "primary", "reference": "Enuma Elish, tablets I-II." },
+                     { "kind": "secondary", "reference": "Oracc AMGG, 'Anšar and Kišar'." } ], "weight": "high" } ],
+    "variants": [ { "id": "mesopotamian_anshar_assur_identification",
+      "claim": "Assyrian theology identified Anshar with Ashur.",
+      "description": "Under the Assyrian empire the national god Ashur was written and understood as Anshar, which promoted him to the head of the Enuma Elish genealogy and let an Assyrian recension put him in Marduk's place. The two are kept as separate records here, with the identification recorded on both: it is a theological move of a particular period, not an original identity.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Assyrian recension of Enuma Elish and the Anshar-Ashur identification." } ] } ],
+    "notes": "Anshar is heaven taken as a totality — not the sky-god Anu, who is his son, but the whole of the upper region considered as one thing. He and Kishar are almost confined to Enuma Elish; outside that poem they scarcely appear. Within it they are the rung between Lahmu and Lahamu and the working gods, and Anshar chairs the increasingly desperate assembly that sends first Anu and then Ea against Tiamat, before Marduk takes the job. Assyrian theology later read his name as Ashur's, which is a promotion with imperial motives behind it."
+  },
+  {
+    "id": "mesopotamian_kishar",
+    "name": { "primary": "Kishar", "alt": ["Kišar", "Kisar"],
+      "transliterations": { "Sumerian": "Ki-šar", "etymology": "ki-šar, 'the entirety of earth', answering Anshar's 'entirety of heaven'." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_lahmu", "mesopotamian_lahamu"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "Born of Lahmu and Lahamu with her brother Anshar, whom she marries, and mother of Anu.",
+      "sources": [ { "kind": "secondary", "reference": "Oracc AMGG: Kishar is the female principle, sister and wife of Anshar, and the mother of Anu." } ] } ],
+    "domains": [ { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Ki-šar", "script": "Sumerian (transliterated)", "rom": "the entirety of earth" },
+      "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Anshar and Kishar." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_anshar",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG: Kishar is the sister and wife of Anshar." } ],
+        "notes": "Sister and wife of Anshar; earth entire to his heaven entire." },
+      { "kind": "mother-of", "personId": "mesopotamian_anu",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG: Kishar is the mother of Anu." } ], "notes": "Mother of Anu." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kishar, 'the entirety of earth', is the female half of the second primordial pair of Enuma Elish, sister and wife of Anshar and mother of Anu.",
+      "citations": [ { "kind": "primary", "reference": "Enuma Elish, tablet I." },
+                     { "kind": "secondary", "reference": "Oracc AMGG, 'Anšar and Kišar'." } ], "weight": "high" } ],
+    "notes": "Kishar is the earth entire, as Anshar is heaven entire — a totality rather than a place, which is what distinguishes her from the mother-goddesses who actually get worshipped. She can be read as an earth-mother figure, but the pair are essentially confined to Enuma Elish and have almost no cult. Her importance is genealogical: she and Anshar produce Anu, and everything that matters descends from there."
+  },
+  {
+    "id": "mesopotamian_ninurta",
+    "name": { "primary": "Ninurta", "alt": ["Ninĝirsu (Lagash form)", "Ningirsu", "Nin-Urta"],
+      "transliterations": { "Sumerian": "dNin-urta", "etymology": "Generally read as 'lord of barley' or 'lord of the earth', which fits a god who is both a warrior and the power behind the spring floods that make a crop possible." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_enlil"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Son of Enlil and the great warrior of the Sumerian pantheon; in the epic Lugal-e he wages war on his mountain rival Asag, destroys cities, crushes skulls, and afterwards restores the flow of the Tigris.",
+      "sources": [ { "kind": "primary", "reference": "Lugal-e (Ninurta's Exploits), the Sumerian epic of the warrior god and god of spring thundershowers and floods." } ] } ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "dNin-urta", "script": "Sumerian (transliterated)", "rom": "Ninurta" },
+        "sources": [ { "kind": "primary", "reference": "Lugal-e, on Ninurta's warfare against Asag." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Lugal-e, on Ninurta as god of spring thundershowers and floods and on his restoration of the Tigris." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_restore_the_tigris",
+        "name": "to set the Tigris flowing again after the mountain has blocked it",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The climax of Lugal-e: having killed Asag, the god reorganises the mountain's stones and turns the waters back into the river, which is the myth's account of why Mesopotamia has irrigation at all.",
+        "sources": [ { "kind": "primary", "reference": "Lugal-e, on the restoration of the flow of the Tigris." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_gula",
+        "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Gula/Ninkarrak: Gula is the wife of the warrior god Ninurta at Nippur." } ],
+        "notes": "Married to Gula at Nippur; under his Lagash name Ningirsu the wife is Bau, who is one of the goddesses absorbed into Gula." },
+      { "kind": "equated-with", "personId": "mesopotamian_ningirsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninĝirsu as the tutelary deity of Ĝirsu and chief god of Lagash, widely identified with Ninurta." } ],
+        "notes": "Identified with Ningirsu, the god of Girsu and chief god of the state of Lagash; the two are recorded separately because the Lagash cult has its own long history and its own consort." },
+      { "kind": "enemy", "personId": "mesopotamian_asag",
+        "sources": [ { "kind": "primary", "reference": "Lugal-e, on the war against Asag." } ],
+        "notes": "Kills Asag, the mountain demon of disorder, in Lugal-e." },
+      { "kind": "enemy", "personId": "mesopotamian_anzu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Anzu myth, in which the thunderbird steals the Tablet of Destinies and is hunted down." } ],
+        "notes": "Hunts down Anzu after the theft of the Tablet of Destinies, in the version of the myth in which Ninurta is the champion." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Nippur (the Eshumesha), and Kalhu under the Assyrians", "kind": "temple", "period": "early-dynastic to neo-Assyrian",
+        "attestation": "his temples at Nippur and later at the Assyrian capital", "source": "Reference treatment of the cult of Ninurta.",
+        "note": "Assyrian kings took his name — Ninurta-apal-Ekur and Ninurta-tukulti-Ashur are in this registry as kings; the god they were named for was not." } ],
+    "sources": [ { "claim": "Ninurta is the Mesopotamian warrior god, son of Enlil, god of spring thundershowers and floods, who in Lugal-e destroys the mountain demon Asag and restores the flow of the Tigris.",
+      "citations": [ { "kind": "primary", "reference": "Lugal-e (Ninurta's Exploits)." },
+                     { "kind": "secondary", "reference": "Reference treatment of Ninurta, of Lugal-e and of the Anzu myth." } ], "weight": "high" } ],
+    "notes": "Ninurta was missing, which for the Mesopotamian pantheon is a serious hole: he is Enlil's son, the champion the gods send when something has to be killed, and the power behind the spring floods. Lugal-e — 'Ninurta's Exploits' — has him make war on Asag, a demon of the mountain whose name means disorder, destroying cities and crushing skulls; and then, in the part that matters to a farming civilisation, reorganising the mountain's stones so that the Tigris flows again. He also hunts Anzu after the thunderbird steals the Tablet of Destinies. This registry already held two Assyrian kings named after him; now it holds him."
+  },
+  {
+    "id": "mesopotamian_ningirsu",
+    "name": { "primary": "Ningirsu", "alt": ["Ninĝirsu", "Nin-Girsu"],
+      "transliterations": { "Sumerian": "dNin-ĝir-su", "etymology": "'Lord of Girsu', the god named for the city whose tutelary deity he is." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "Tutelary deity of Girsu and chief god of the state of Lagash, in whose name the Lagash-Umma border war was fought and for whom Gudea built the Eninnu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninĝirsu as tutelary deity of Ĝirsu and chief god of the local pantheon of Lagash." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "dNin-ĝir-su", "script": "Sumerian (transliterated)", "rom": "Lord of Girsu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningirsu as the city god of Girsu." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Lagash-Umma border conflict, fought as a suit between Ningirsu and Shara over land." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_bau",
+        "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Baba: in sources from Lagash and Girsu, Bau's husband was the god Ningirsu." } ],
+        "notes": "His wife at Lagash, raised by Gudea to equal rank with him — the consort this record's note refers to." },
+      { "kind": "equated-with", "personId": "mesopotamian_ninurta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment identifying Ninĝirsu with Ninurta." } ],
+        "notes": "Identified with Ninurta; kept as a separate record because the Lagash cult has its own long history, its own temple and its own consort." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Girsu, in the state of Lagash", "kind": "temple", "period": "early-dynastic to ur-iii",
+        "attestation": "the Eninnu temple; the Lagash-Umma border documents", "source": "Reference treatment of Ningirsu and of the Lagash-Umma border conflict.",
+        "note": "The Lagash-Umma war is the earliest well-documented war between states, and it was conducted as a dispute between this god and Shara of Umma over a boundary." } ],
+    "sources": [ { "claim": "Ningirsu is the tutelary god of Girsu and chief deity of the state of Lagash, identified with Ninurta, in whose name the Lagash-Umma border conflict was prosecuted.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ninĝirsu, his city and his identification with Ninurta." },
+                     { "kind": "secondary", "reference": "Reference treatment of the Lagash-Umma border conflict as the earliest well-documented interstate war." } ], "weight": "high" } ],
+    "notes": "Ningirsu is Lagash's own version of Ninurta, and the distinction is worth keeping because his cult is so concrete: the earliest well-documented war between states, the long border conflict between Lagash and Umma, was conducted in the form of a lawsuit between Ningirsu and Shara of Umma about where a boundary ditch should run. Gudea built him the Eninnu and left cylinders describing the dream that told him to. He is recorded separately from Ninurta with the identification stated on both, on the same principle that keeps other local forms distinct in this registry."
+  },
+  {
+    "id": "mesopotamian_ashur",
+    "name": { "primary": "Ashur", "alt": ["Aššur", "Assur", "Anshar (Assyrian identification)"],
+      "transliterations": { "Akkadian": "Aššur", "etymology": "The god, the city and the land share one name, which is the clearest statement possible that Assyrian religion and Assyrian statehood were the same project." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "neo-assyrian-neo-babylonian" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "neo-assyrian-neo-babylonian", "eraOrdering": 0,
+      "startEvent": "Head of the Assyrian pantheon and god of the city that bears his name; Assyrian theology gave him Ninlil as wife and rewrote Enuma Elish to put him in Marduk's place.",
+      "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Ninlil: a goddess known as the wife of Enlil and later of Aššur, head of the Assyrian pantheon." },
+                   { "kind": "secondary", "reference": "Reference treatment of the Assyrian recension of Enuma Elish substituting Ashur for Marduk." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "Aššur", "script": "Akkadian (transliterated)", "rom": "Ashur" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ashur as head of the Assyrian pantheon." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Assyrian royal ideology, in which campaigns are waged at the god's command and their spoils reported to him." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_ninlil",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Ninlil, wife of Enlil and later of Aššur." } ],
+        "notes": "Given Ninlil as wife by Assyrian theology, which transferred Enlil's consort to the national god along with his position." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Assur (Qal'at Sherqat), on the Tigris", "kind": "temple", "period": "old-babylonian to neo-Assyrian",
+        "attestation": "the Ehursagkurkurra temple in the city of Assur", "source": "Reference treatment of the cult of Ashur.",
+        "note": "God, city and country share the name; the registry already held the king Ashur-dan I but not the god he was named for." } ],
+    "sources": [ { "claim": "Ashur is the head of the Assyrian pantheon and the god of the city and land of the same name, given Ninlil as consort and substituted for Marduk in the Assyrian recension of Enuma Elish.",
+      "citations": [ { "kind": "secondary", "reference": "Oracc AMGG on Ninlil as wife of Enlil and later of Aššur." },
+                     { "kind": "secondary", "reference": "Reference treatment of Ashur, his city and the Assyrian recension of Enuma Elish." } ], "weight": "high" } ],
+    "variants": [ { "id": "mesopotamian_ashur_anshar_identification",
+      "claim": "Assyrian theology wrote Ashur as Anshar.",
+      "description": "By reading the national god's name as Anshar, the primordial 'entirety of heaven' of Enuma Elish, Assyrian scholars placed him at the head of the Babylonian genealogy and justified rewriting the epic with him in Marduk's role. The two are kept as separate records with the identification noted on both: it is a theological manoeuvre of a particular empire, not an original identity.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Anshar-Ashur identification and the Assyrian recension of Enuma Elish." } ] } ],
+    "notes": "Ashur is the god of a city, and then of an empire that took the city's name with it. Assyrian kings campaigned at his command and wrote to him afterwards with the accounts. What makes him interesting theologically is how openly his rise was engineered: his scholars read his name as Anshar, the primordial heaven of Enuma Elish, which put him above Marduk in the genealogy, and then reissued the epic with him in Marduk's part. Ninlil was transferred to him as wife along with Enlil's position. The registry held the king Ashur-dan I and not the god; this fixes that."
+  },
+  {
+    "id": "mesopotamian_ninlil",
+    "name": { "primary": "Ninlil", "alt": ["Mulliltu", "Mullissu", "Mylitta", "Sud (earlier name)"],
+      "transliterations": { "Sumerian": "dNin-líl", "etymology": "'Lady Wind' or 'Lady of the air', answering Enlil, 'Lord Wind'. In Assyria the name appears as Mullissu, which Herodotus renders Mylitta." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["mesopotamian_haya", "mesopotamian_nisaba"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Wife of Enlil, head of the early Mesopotamian pantheon, and later of Ashur, head of the Assyrian pantheon.",
+      "sources": [ { "kind": "secondary", "reference": "Oracc AMGG, Ninlil (Mulliltu, Mullissu, Mylitta): a goddess mainly known as the wife of Enlil, the head of the early Mesopotamian pantheon, and later of Aššur, the head of the Assyrian pantheon." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "dNin-líl", "script": "Sumerian (transliterated)", "rom": "Ninlil" },
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Ninlil as consort of the head of the pantheon." } ] },
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG on Ninlil; she is the mother of Nanna and, in the Enlil and Ninlil myth, of underworld deities conceived during Enlil's exile." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_enlil",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG: Ninlil is mainly known as the wife of Enlil." } ],
+        "notes": "Wife of Enlil. The Sumerian myth Enlil and Ninlil has him exiled to the underworld for forcing her, and her following him down." },
+      { "kind": "mother-of", "personId": "mesopotamian_nanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Enlil and Ninlil myth, in which Nanna is conceived." } ],
+        "notes": "Mother of Nanna the moon god." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Nippur (the Ekur complex); later Assur", "kind": "temple", "period": "early-dynastic to neo-Assyrian",
+        "attestation": "her temple beside Enlil's at Nippur; her Assyrian cult as Mullissu", "source": "Oracc AMGG on Ninlil.",
+        "note": "Herodotus's Mylitta is her Assyrian name at one remove." } ],
+    "sources": [ { "claim": "Ninlil is the wife of Enlil and, in Assyrian religion as Mullissu, the wife of Ashur; she is the mother of the moon god Nanna.",
+      "citations": [ { "kind": "secondary", "reference": "Oracc AMGG, 'Ninlil (Mulliltu, Mullissu, Mylitta)'." } ], "weight": "high" } ],
+    "notes": "Ninlil is Lady Wind to Enlil's Lord Wind, and her absence from this registry was the most conspicuous of the missing consorts. The Sumerian myth Enlil and Ninlil is one of the strangest in the corpus: Enlil forces her by the river, is exiled to the underworld for it by the assembly of gods, and she follows him down, conceiving the moon god Nanna and then three underworld deities along the way as substitutes to buy Nanna's release. In Assyria she becomes Mullissu and is married to Ashur — the same transfer that moved Enlil's position to him. Herodotus's Mylitta is her name at one remove."
+  },
+  {
+    "id": "mesopotamian_damkina",
+    "name": { "primary": "Damkina", "alt": ["Damgalnuna", "Damgalnunna", "Damkianna"],
+      "transliterations": { "Sumerian": "dDam-gal-nun-na", "etymology": "Damgalnuna is 'great wife of the prince', the prince being Enki; Damkina is the later Akkadian form." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Wife of Enki, with major cult centres at Eridu and Malgium; mother of Nanshe and Asalluhi, and in Enuma Elish the mother of Marduk.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Damgalnuna, also known as Damkina, regarded as the wife of Enki, with major cult centres in Eridu and Malgium; among their children were Nanshe and Asalluhi." } ] } ],
+    "domains": [ { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "dDam-gal-nun-na", "script": "Sumerian (transliterated)", "rom": "great wife of the prince" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Damgalnuna as wife of Enki and mother of his children." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_enki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Damgalnuna/Damkina as the wife of Enki." } ],
+        "notes": "Wife of Enki, with him at Eridu." },
+      { "kind": "mother-of", "personId": "mesopotamian_nanshe",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: among the children of Enki and Damgalnuna were Nanshe and Asalluhi." } ], "notes": "Mother of Nanshe." },
+      { "kind": "mother-of", "personId": "mesopotamian_marduk",
+        "sources": [ { "kind": "primary", "reference": "Enuma Elish, tablet I, in which Marduk is born to Ea and Damkina." } ], "notes": "Mother of Marduk by Ea in Enuma Elish." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Eridu and Malgium", "kind": "temple", "period": "early-dynastic to old-babylonian",
+        "attestation": "her major cult centres", "source": "Reference treatment of Damgalnuna's cult." } ],
+    "sources": [ { "claim": "Damkina, Sumerian Damgalnuna, is the wife of Enki with cult centres at Eridu and Malgium, mother of Nanshe and Asalluhi, and in Enuma Elish the mother of Marduk.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Damgalnuna/Damkina, her marriage to Enki, her cult centres and her children." },
+                     { "kind": "primary", "reference": "Enuma Elish, tablet I." } ], "weight": "high" } ],
+    "notes": "Damkina is Enki's wife — Damgalnuna in Sumerian, 'great wife of the prince' — and she matters most for whom she bore. Nanshe and Asalluhi are her children in the Sumerian material, and in Enuma Elish she and Ea produce Marduk, which makes her the mother of the god who ends up ruling everything. Her cult sat at Eridu, Enki's city, and at Malgium. Asalluhi is already in this registry, absorbed into the Marduk record."
+  },
+  {
+    "id": "mesopotamian_ningal",
+    "name": { "primary": "Ningal", "alt": ["Nikkal (later West Semitic form)", "dNin-gal"],
+      "transliterations": { "Sumerian": "dNin-gal", "etymology": "'Great Lady'. The West Semitic Nikkal, who travels as far as Ugarit and later Arabia, is her name borrowed." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Goddess of reeds, daughter of Enki, and consort of the moon god Nanna at Ur, by whom she bore the sun god Utu and Inanna.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal: goddess of reeds, credited as daughter of Enki and consort of Nanna, with whom she gave birth to Utu, Inanna, and in some texts Ishkur." } ] } ],
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "dNin-gal", "script": "Sumerian (transliterated)", "rom": "Great Lady" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal as consort of Nanna and mother of Utu and Inanna." } ] },
+      { "sphereId": "reeds-and-marsh", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal as the goddess of reeds." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_nanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal as consort of Nanna, the moon god." } ],
+        "notes": "Consort of Nanna at Ur; the Lament for Ur puts her grief at the city's destruction at its centre." },
+      { "kind": "mother-of", "personId": "mesopotamian_utu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal as mother of Utu." } ], "notes": "Mother of the sun god Utu." },
+      { "kind": "mother-of", "personId": "mesopotamian_inanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningal as mother of Inanna." } ], "notes": "Mother of Inanna." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Ur, beside the temple of Nanna", "kind": "temple", "period": "early-dynastic to neo-Babylonian",
+        "attestation": "her temple at Ur; the Lament for Ur", "source": "Reference treatment of the cult of Ningal at Ur.",
+        "note": "Enheduanna, already in this registry, served at Ur in the cult of Nanna and Ningal." } ],
+    "sources": [ { "claim": "Ningal, 'Great Lady', is the goddess of reeds, daughter of Enki and consort of the moon god Nanna at Ur, mother of the sun god Utu and of Inanna.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ningal, her parentage, her consort and her children." } ], "weight": "high" } ],
+    "notes": "Ningal is the moon's wife and the mother of the sun — Nanna's consort at Ur, and by him the parent of Utu and Inanna, which places her at the head of the most important family in the Sumerian pantheon. She is a goddess of reeds, which is less humble than it sounds in a country built out of marsh. The Lament for Ur turns on her: it is her grief, as the city's goddess, that carries the poem. Her name travelled west as Nikkal and was still being used in Arabia long after Ur was gone."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. GODDESSES OF CRAFT AND CARE, VIZIERS, AND THE
+                        UNDERWORLD GODS
+================================================================================
+
+```json
+[
+  {
+    "id": "mesopotamian_gula",
+    "name": { "primary": "Gula", "alt": ["Ninisina", "Ninkarrak", "Nintinugga", "Meme"],
+      "transliterations": { "Akkadian": "Gula", "etymology": "gula means 'the great one'. Ninisina is 'lady of Isin', Ninkarrak and Nintinugga further names of healing goddesses syncretised with her — the aliases here record that syncretism, which was already well advanced in antiquity." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Worshipped as the healing goddess of Mesopotamia, portrayed as a divine physician and midwife, with major cult centres at Umma and later Nippur, and the dog as her emblem.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gula: a healing goddess of medicine portrayed as a divine physician and midwife, with major cult centres in Umma and later Nippur." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "Gula", "script": "Akkadian (transliterated)", "rom": "the great one" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gula as the Mesopotamian goddess of medicine." } ] },
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gula as a divine midwife." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_ninurta",
+        "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Gula/Ninkarrak: Gula is the wife of the warrior god Ninurta at Nippur." } ],
+        "notes": "Her marriage at Nippur. The pairing is a consequence of the same syncretism that gave her her aliases: as Bau she is the wife of Ningirsu at Lagash, and Ningirsu and Ninurta are one god by the historical period, so the healer of Isin ends up married to the champion of Nippur." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Isin, Umma and Nippur", "kind": "temple", "period": "ur-iii to neo-Babylonian",
+        "attestation": "her major cult centres", "source": "Reference treatment of Gula's cult.",
+        "note": "Dogs were buried in numbers at her Isin sanctuary; the dog is her standing emblem, and the association with healing is unexplained but consistent." } ],
+    "sources": [ { "claim": "Gula is the Mesopotamian goddess of healing, a divine physician and midwife, syncretised with Ninisina, Ninkarrak and Nintinugga, with cult centres at Isin, Umma and Nippur.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Gula, her role in medicine and her cult centres." } ], "weight": "high" } ],
+    "variants": [ { "id": "mesopotamian_gula_syncretism",
+      "claim": "Gula absorbs several originally distinct healing goddesses.",
+      "description": "Ninisina of Isin, Ninkarrak and Nintinugga were separate goddesses whose cults converged on Gula's; scholarship treats them as distinguishable in origin and largely merged in practice. They are carried here as aliases rather than as separate records, since the merging was already ancient, with this note recording that they began apart.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the syncretism of Mesopotamian healing goddesses." } ] } ],
+    "notes": "Gula is the doctor. She is shown as a physician and a midwife, and the sick prayed to her by name; her emblem is the dog, and excavation at her Isin sanctuary turned up dog burials in quantity, which nobody has satisfactorily explained. Several originally separate healing goddesses — Ninisina of Isin, Ninkarrak, Nintinugga — had largely merged into her by historical times, and they are carried here as her aliases with that noted rather than split into records the evidence cannot keep apart."
+  },
+  {
+    "id": "mesopotamian_nisaba",
+    "name": { "primary": "Nisaba", "alt": ["Nidaba", "Nissaba"],
+      "transliterations": { "Sumerian": "dNisaba", "etymology": "The name is written with the sign for grain, and the goddess holds grain and writing together — which is not a coincidence, since writing began as accountancy for grain." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Goddess of writing and of grain, with her major cult centre at Eresh and later at Nippur, and Haya as consort; Sumerian compositions habitually close by praising her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nisaba: the Mesopotamian goddess of writing and grain, with major cult centre in Eresh, later Nippur, and with consort Ḫaya." } ] } ],
+    "domains": [
+      { "sphereId": "writing", "contextTag": "lifelong", "term": { "value": "dNisaba", "script": "Sumerian (transliterated)", "rom": "Nisaba" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nisaba as goddess of writing." } ] },
+      { "sphereId": "harvest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nisaba as goddess of grain." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_hold_the_lapis_tablet_and_stylus",
+        "name": "to hold the tablet of lapis lazuli on which the measures and the stars are written",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "Her attribute in the literature is a tablet of lapis; the scribal schools invoked her, and Sumerian compositions conventionally end with praise of her.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nisaba's role as patron of scribes." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_haya",
+        "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Haya: a god of scribes, husband of Nisaba." } ],
+        "notes": "Her husband, the god of scribes and divine accountant — the administrative half of the same office she holds." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Eresh, later Nippur", "kind": "temple", "period": "early-dynastic to old-babylonian",
+        "attestation": "her major cult centres", "source": "Reference treatment of Nisaba's cult." } ],
+    "sources": [ { "claim": "Nisaba is the Mesopotamian goddess of writing and grain, with cult at Eresh and later Nippur and Haya as consort, invoked by the scribal schools and praised at the close of Sumerian compositions.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Nisaba, her spheres, her cult centres and her consort." } ], "weight": "high" } ],
+    "notes": "Nisaba holds grain and writing in the same hands, which is exactly right for a civilisation whose script began as a way of counting barley. Scribes invoked her, the schools were hers, and a great many Sumerian compositions close with the formula 'Nisaba be praised' — the ancient equivalent of a colophon. Her attribute is a tablet of lapis lazuli on which measures and stars are recorded. Her cult sat at Eresh and later at Nippur, and her consort is Haya."
+  },
+  {
+    "id": "mesopotamian_nanshe",
+    "name": { "primary": "Nanshe", "alt": ["Nazi", "dNanše"],
+      "transliterations": { "Sumerian": "dNanše", "etymology": "The name is written with a sign combining the elements for house and fish, which suits a goddess of the marshy Lagash coast." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_enki", "mesopotamian_damkina"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "Daughter of Enki and Damkina, worshipped in the Lagash state as the goddess who looks after the poor, the lonely and the disenfranchised, and as a divine soothsayer who interprets dreams.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanshe: a benevolent goddess in charge of looking after the poor, lonely and disenfranchised, and also described as a divine soothsayer; a child of Enki and Damgalnuna." } ] } ],
+    "domains": [
+      { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "dNanše", "script": "Sumerian (transliterated)", "rom": "Nanshe" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanshe's care for the poor and disenfranchised." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanshe as a divine soothsayer." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_weigh_the_treatment_of_the_weak",
+        "name": "to take account of how the widow, the orphan and the debtor have been used",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The Nanshe hymn sets out in detail the conduct she notices and the conduct she punishes — the clearest statement of social ethics in Sumerian literature.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanshe as protector of the poor, lonely and disenfranchised." } ] } ],
+    "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Nina (Sirara), in the state of Lagash", "kind": "temple", "period": "early-dynastic to ur-iii",
+        "attestation": "her city and temple in the Lagash state", "source": "Reference treatment of the cult of Nanshe." } ],
+    "sources": [ { "claim": "Nanshe is a Mesopotamian goddess of the Lagash state, daughter of Enki and Damkina, who looks after the poor, the lonely and the disenfranchised and acts as a divine soothsayer.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Nanshe, her parentage, her social role and her divinatory function." } ], "weight": "high" } ],
+    "notes": "Nanshe keeps the accounts nobody else keeps. The hymn to her lists what she notices — who cheated the orphan, who altered a weight, who took the debtor's last thing — and it amounts to the most explicit statement of social ethics surviving in Sumerian. She is also a dream-interpreter: Gudea of Lagash takes his famous dream to her to be read. She belongs to the marshy country around Nina in the Lagash state, and she is a daughter of Enki and Damkina."
+  },
+  {
+    "id": "mesopotamian_ninkasi",
+    "name": { "primary": "Ninkasi", "alt": ["dNin-ka-si"],
+      "transliterations": { "Sumerian": "dNin-ka-si", "etymology": "The name is generally rendered 'mistress of beer' — literally something close to 'lady who fills the mouth'." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_enki", "mesopotamian_ninti"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Goddess of beer and brewing, addressed in the Hymn to Ninkasi, which sets out the brewing process step by step in the form of a song of praise.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninkasi: the Mesopotamian goddess of beer and brewing, her name written dNin-ka-si, 'mistress of beer'." } ] } ],
+    "domains": [ { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "dNin-ka-si", "script": "Sumerian (transliterated)", "rom": "mistress of beer" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninkasi as goddess of beer and brewing." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ninkasi is the Mesopotamian goddess of beer and brewing, whose name means 'mistress of beer', daughter of Enki and Ninti, and who is addressed in the Hymn to Ninkasi.",
+      "citations": [ { "kind": "primary", "reference": "A hymn to Ninkasi (ETCSL 4.23.1): 'Your father is Enki, the lord Nudimmud, your mother is Ninti, the queen of the abzu' — and the brewing sequence that the hymn walks through." },
+                     { "kind": "secondary", "reference": "Reference treatment of Ninkasi and of her name and sphere." } ], "weight": "high" } ],
+    "notes": "Ninkasi is beer. The Hymn to Ninkasi is a praise-poem that doubles as a recipe: it walks through soaking the malt, spreading it to dry, mixing the bappir-bread, filtering the mash into the collector vat, and it is sung to her throughout. Beer was a staple ration in Mesopotamia rather than a luxury — brewers were paid in it — so a goddess of brewing is a goddess of the daily food supply, not of festivity. The hymn also gives her parents: Enki her father and Ninti, queen of the abzu, her mother. Both are added in this pass and both carry parent links."
+  },
+  {
+    "id": "mesopotamian_uttu",
+    "name": { "primary": "Uttu", "alt": ["dUttu"],
+      "transliterations": { "Sumerian": "dUttu", "etymology": "Written with the sign for spider; the goddess weaves, and the spider is the model. She is not to be confused with Utu, the sun god, whose name differs in the cuneiform." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_enki"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Spider goddess and patroness of weavers, weaving and clothing; daughter of Enki by Ninkurra, and the last in the chain of daughters Enki pursues in the myth of Enki and Ninhursag.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Uttu: the Sumerian spider goddess and patroness of weavers, weaving and clothing, daughter of Enki and Ninkurra." } ] } ],
+    "domains": [ { "sphereId": "weaving", "contextTag": "lifelong", "term": { "value": "dUttu", "script": "Sumerian (transliterated)", "rom": "Uttu" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Uttu as patroness of weavers and of weaving." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Uttu is the Sumerian spider goddess, patroness of weavers, weaving and clothing, and a daughter of Enki by Ninkurra.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Uttu, her sphere and her parentage." } ], "weight": "medium" } ],
+    "variants": [ { "id": "mesopotamian_uttu_not_utu",
+      "claim": "Uttu is not Utu.",
+      "description": "The weaving goddess Uttu and the sun god Utu are distinct deities written with different signs, and the near-identical transliterations are a standing source of confusion in non-specialist sources. Both are in this registry as separate records, and this note exists so the resemblance is not later mistaken for a duplication.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment distinguishing Uttu from Utu." } ] } ],
+    "notes": "Uttu weaves, and her sign is the spider. She is the last of the chain of daughters in the myth of Enki and Ninhursag: Enki fathers Ninnisig, then Ninkurra, then — by Ninkurra — Uttu, whom Ninhursag warns, and who demands cucumbers, apples and grapes as a bride-gift before she will have him. The myth ends with Ninhursag intervening. Her sphere is cloth, which in Mesopotamia was the second great industry after grain. She must not be confused with the sun god Utu, who is a different deity with a different sign; both are in this registry."
+  },
+  {
+    "id": "mesopotamian_nammu",
+    "name": { "primary": "Nammu", "alt": ["Namma", "dNammu"],
+      "transliterations": { "Sumerian": "dNammu", "etymology": "Written with a sign that can denote the sea; she is the primeval water, and the mother from whom heaven and earth come." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "The primordial Sumerian mother goddess, the sea from which the gods come; in Enki and Ninmah she rouses her son Enki to make humanity out of clay.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nammu as a primordial Sumerian mother goddess." } ] } ],
+    "domains": [
+      { "sphereId": "primordial-waters", "contextTag": "lifelong", "term": { "value": "dNammu", "script": "Sumerian (transliterated)", "rom": "Nammu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nammu as the primeval sea." } ] },
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nammu as primordial mother goddess." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "mesopotamian_enki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nammu as the mother of Enki, whom she rouses to create humanity in Enki and Ninmah." } ],
+        "notes": "Mother of Enki. In Enki and Ninmah she wakes him from sleep to make a substitute worker for the gods, and humanity is the result." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nammu is the primordial Sumerian mother goddess, the primeval sea, mother of Enki, who in Enki and Ninmah prompts the creation of humanity.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Nammu as primordial mother goddess and mother of Enki." } ], "weight": "medium" } ],
+    "notes": "Nammu is the water there was before anything. The Sumerian material makes her the mother of Enki and, behind him, of the ordered world; she is not much worshipped and not much described, which is usual for figures at this depth. Her one memorable scene is in Enki and Ninmah, where the gods are complaining about the labour of digging canals and she goes and wakes her sleeping son, tells him the gods are in distress, and sets in motion the making of human beings out of clay to do the work instead."
+  },
+  {
+    "id": "mesopotamian_ninshubur",
+    "name": { "primary": "Ninshubur", "alt": ["Ninšubur", "Papsukkal (Akkadian male form)", "Ilabrat"],
+      "transliterations": { "Sumerian": "dNin-šubur", "etymology": "'Lady of Subartu', or on another reading 'lady servant'. The Akkadians recast the figure as the male god Papsukkal, 'chief vizier'." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Sukkal and second-in-command to Inanna — friend, confidante, defender, adviser and travelling companion — who on Inanna's instructions raises the alarm among the great gods when her mistress does not return from the underworld.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninshubur: friend, confidant, defender, advisor and travelling companion to Inanna, a messenger goddess and second-in-command, later adapted by the Akkadians as the male god Papsukkal." } ] } ],
+    "domains": [
+      { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "dNin-šubur", "script": "Sumerian (transliterated)", "rom": "Ninshubur" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninshubur as a messenger goddess." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_raise_the_alarm_among_the_gods",
+        "name": "to go from god to god until one of them will act",
+        "term": { "value": "sukkal", "script": "Sumerian (transliterated)", "rom": "vizier, minister" }, "inheritability": "none",
+        "notes": "In Inanna's Descent she is instructed beforehand: if her mistress has not returned in three days, go to Enlil, then to Nanna, then to Enki. Only the third agrees to help.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninshubur's role in Inanna's Descent to the Underworld." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_inanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninshubur as Inanna's sukkal and second-in-command." } ],
+        "notes": "Sukkal — vizier — to Inanna, and the one figure in the Descent who is unambiguously loyal to her." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ninshubur is Inanna's sukkal and second-in-command, her messenger, defender and travelling companion, who raises the alarm among the great gods when Inanna does not return from the underworld; the Akkadians recast the figure as the male god Papsukkal.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ninshubur, her role beside Inanna and her Akkadian male counterpart Papsukkal." } ], "weight": "high" } ],
+    "notes": "Ninshubur is the one who does what she was told. Before Inanna goes down to the underworld she gives her sukkal precise instructions: if I have not come back in three days, set up a lament, and go to Enlil, and if he refuses go to Nanna, and if he refuses go to Enki. Ninshubur does exactly that, and Enki is the one who acts. In a story where almost everyone fails Inanna — her husband most of all — she is the exception. The Akkadians rebuilt the role as a male god, Papsukkal, 'chief vizier'; that form is carried here as an alias rather than as a separate record."
+  },
+  {
+    "id": "mesopotamian_namtar",
+    "name": { "primary": "Namtar", "alt": ["Namtaru", "dNam-tar"],
+      "transliterations": { "Sumerian": "dNam-tar", "etymology": "nam-tar is 'fate' or 'the cutting of fate' — the decree itself, personified as the officer who carries it out." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Minister of Ereshkigal and an underworld power, the bringer of the decreed death and of the sixty diseases he looses on the body.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Namtar/Namtaru as an underworld demon and minister of Ereshkigal." } ] } ],
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "nam-tar", "script": "Sumerian (transliterated)", "rom": "fate, decree" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Namtar as an underworld power." } ] },
+      { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Namtar as the bringer of disease." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_ereshkigal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Namtar as the minister of Ereshkigal." } ],
+        "notes": "Ereshkigal's sukkal; in Inanna's Descent he is sent to fetch what she demands, and in Nergal and Ereshkigal he carries her messages up to heaven." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Namtar is the minister of Ereshkigal and the Mesopotamian personification of the decreed death, credited with loosing sixty diseases upon the body.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Namtar/Namtaru as underworld demon and minister of Ereshkigal." } ], "weight": "high" } ],
+    "notes": "Namtar is fate in its bluntest sense: the word means the decree, the thing that has been cut, and the god is the officer who serves it. He is Ereshkigal's minister, the one sent to carry out what she has decided, and incantations against sickness name him as the power that looses the sixty diseases on a body. In Nergal and Ereshkigal he goes up to heaven on her behalf and is the occasion of the whole quarrel. He is not a tempter or an adversary; he is administration, which in Mesopotamian terms is worse."
+  },
+  {
+    "id": "mesopotamian_nusku",
+    "name": { "primary": "Nusku", "alt": ["dNusku"],
+      "transliterations": { "Akkadian": "Nusku", "etymology": "No agreed derivation; the god is fire and light, both the lamp and the flame of the offering." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of fire and light, heavenly and terrestrial, and sukkal of Enlil at Nippur; the lamp is his emblem and he carries the smoke of sacrifice upward.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nusku as the Babylonian god of fire, both heavenly and terrestrial, and patron god of civilization." } ] } ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Nusku", "script": "Akkadian (transliterated)", "rom": "Nusku" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nusku as god of fire." } ] },
+      { "sphereId": "light", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nusku's heavenly and terrestrial fire." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_enlil",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nusku as the sukkal of Enlil at Nippur." } ],
+        "notes": "Sukkal of Enlil; in Atra-hasis it is Nusku who wakes Enlil when the rebelling gods surround his house." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Nusku is the Mesopotamian god of fire and light, heavenly and terrestrial, and the sukkal of Enlil at Nippur.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Nusku as god of fire and patron of civilisation." } ], "weight": "medium" } ],
+    "notes": "Nusku is the lamp and the altar flame at once — fire as light to see by and fire as the thing that carries an offering upward. He serves Enlil as sukkal at Nippur, and in Atra-hasis it is Nusku who wakes his master in the night to tell him the junior gods have downed tools and surrounded the house. Incantations against witchcraft call on him: a god of light is the natural power to invoke against things done in the dark."
+  },
+  {
+    "id": "mesopotamian_ishum",
+    "name": { "primary": "Ishum", "alt": ["Išum", "Hendursaga (Sumerian counterpart)"],
+      "transliterations": { "Akkadian": "Išum", "etymology": "Associated with fire; the god is a herald and a night-watchman, the controlled flame beside Erra's destroying one." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of fire and herald of the night watch; in the Epic of Erra he is the companion and restrainer of Erra, and it is his counsel that finally halts the slaughter.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishum as the Babylonian god of fire." },
+                   { "kind": "secondary", "reference": "Reference treatment of the Epic of Erra, in which Ishum accompanies Erra and argues him down." } ] } ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Išum", "script": "Akkadian (transliterated)", "rom": "Ishum" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishum as a god of fire." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishum as a night-watchman god who guards the streets." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_nergal",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Epic of Erra; Erra is carried in this registry as an alias of Nergal." } ],
+        "notes": "Herald and companion of Erra, who is carried here on the Nergal record. In the epic he walks beside the god through the destruction and talks him into stopping." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ishum is a Mesopotamian god of fire and a night-watchman and herald, companion of Erra in the Epic of Erra, whose counsel brings the god's destruction to an end.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ishum as god of fire and as Erra's companion." } ], "weight": "medium" } ],
+    "notes": "Ishum is the fire that stays where it is put. He walks the streets at night as a watchman, and he is the herald and companion of Erra — plague and violence personified, carried in this registry on the Nergal record. The Epic of Erra is essentially a long argument between them: Erra wants slaughter, Ishum walks beside him through it, and it is Ishum's speech at the end that talks him down and gets the destruction stopped. A restraining god, which the Mesopotamian pantheon has few of."
+  },
+  {
+    "id": "mesopotamian_ninazu",
+    "name": { "primary": "Ninazu", "alt": ["dNin-a-zu"],
+      "transliterations": { "Sumerian": "dNin-a-zu", "etymology": "'Lord healer' or 'lord who knows the water' — the name itself carries the medical sense, which sits oddly beside his underworld character and is not fully explained." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of the underworld, of healing and of magical incantations, worshipped at Eshnunna and Enegi, and credited in one tradition with bringing grain to humanity.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninazu: a god of the underworld, healing and magic incantations, an underworld deity of healing who brought humanity the gift of grain." } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "dNin-a-zu", "script": "Sumerian (transliterated)", "rom": "Ninazu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninazu as an underworld god." } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninazu's healing and incantation spheres." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "mesopotamian_ningishzida",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningishzida as the son of Ninazu." } ],
+        "notes": "Father of Ningishzida." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Eshnunna and Enegi", "kind": "temple", "period": "early-dynastic to old-babylonian",
+        "attestation": "his cult centres", "source": "Reference treatment of the cult of Ninazu." } ],
+    "sources": [ { "claim": "Ninazu is a Mesopotamian god of the underworld, of healing and of magical incantations, worshipped at Eshnunna and Enegi and credited with bringing grain to humanity; he is the father of Ningishzida.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ninazu, his spheres, and his son Ningishzida." } ], "weight": "medium" } ],
+    "notes": "Ninazu holds together two things that look incompatible: he is a god of the underworld and a god of healing, and his name says healer outright. The combination is not explained in the sources, though a god who can go down and come back is the obvious one to ask about recovery from illness. He is also credited in one tradition with bringing grain to people. His cult sat at Eshnunna in the north and Enegi in the south, and his son is Ningishzida."
+  },
+  {
+    "id": "mesopotamian_ningishzida",
+    "name": { "primary": "Ningishzida", "alt": ["Ninĝišzida", "dNin-ĝiš-zid-da"],
+      "transliterations": { "Sumerian": "dNin-ĝiš-zid-da", "etymology": "Usually rendered 'lord of the good tree' or 'lord of the true tree' — a vegetation sense that sits with his snake iconography and his underworld office." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_ninazu"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "God of vegetation, of the underworld and sometimes of war, son of Ninazu, commonly associated with snakes; personal god of Gudea of Lagash and a doorkeeper of heaven in the Adapa myth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningishzida: a Mesopotamian deity of vegetation, the underworld and sometimes war, commonly associated with snakes, and the son of Ninazu." } ] } ],
+    "domains": [
+      { "sphereId": "vegetation", "contextTag": "lifelong", "term": { "value": "dNin-ĝiš-zid-da", "script": "Sumerian (transliterated)", "rom": "lord of the good tree" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningishzida as a deity of vegetation." } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ningishzida's underworld character and snake associations." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Girsu and Lagash", "kind": "personal-god cult", "period": "ur-iii",
+        "attestation": "Gudea's dedications naming Ningishzida as his personal god", "source": "Reference treatment of Ningishzida's cult at Lagash.",
+        "note": "Gudea is shown on his seal being led before a greater god by Ningishzida, who is drawn with horned serpents rising from his shoulders." } ],
+    "sources": [ { "claim": "Ningishzida is a Mesopotamian god of vegetation, the underworld and sometimes war, son of Ninazu, closely associated with snakes, and the personal god of Gudea of Lagash.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ningishzida, his spheres, his snake associations and his parentage." } ], "weight": "high" } ],
+    "notes": "Ningishzida is a snake god who is also a tree god, which in a country where the year dies and comes back is less of a contradiction than it sounds: what goes underground returns. He is Ninazu's son and belongs to the underworld, and he is drawn with horned serpents growing from his shoulders. Gudea of Lagash took him as a personal god and is shown on his seal being led by him into a greater god's presence. In the Adapa myth he and Dumuzi stand as doorkeepers at the gate of heaven, which is a strange posting for two gods who spend so much time below."
+  },
+  {
+    "id": "mesopotamian_ishtaran",
+    "name": { "primary": "Ishtaran", "alt": ["Ištaran", "Sataran"],
+      "transliterations": { "Akkadian": "Ištaran", "etymology": "No agreed derivation. He is the god of Der, on the Elamite frontier, and his business is judgment." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "God associated with justice and chief deity of the city-state of Der, east of the Tigris on the border between Mesopotamia and Elam; his sukkal was Qudmu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishtaran: a god associated with justice and the chief deity of the Sumerian city-state of Der, located east of the Tigris on the border between Mesopotamia and Elam, whose sukkal was Qudmu." } ] } ],
+    "domains": [ { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "Ištaran", "script": "Akkadian (transliterated)", "rom": "Ishtaran" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ishtaran as a god of justice." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Der, east of the Tigris on the Elamite border", "kind": "temple", "period": "early-dynastic to neo-Assyrian",
+        "attestation": "his position as chief deity of Der", "source": "Reference treatment of Ishtaran and the city of Der.",
+        "note": "A god of judgment on a contested frontier is a useful thing to have: Ishtaran is invoked to settle the Lagash-Umma boundary." } ],
+    "sources": [ { "claim": "Ishtaran is a Mesopotamian god of justice and the chief deity of the frontier city-state of Der, east of the Tigris on the Elamite border, with Qudmu as his sukkal.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Ishtaran, his association with justice, his city and his vizier." } ], "weight": "medium" } ],
+    "notes": "Ishtaran judges. He is the god of Der, a city sitting on the frontier between Mesopotamia and Elam, and it is not an accident that a border town's god should be the one gods and men call on to settle a dispute — he is invoked in the Lagash-Umma boundary quarrel, which is the oldest documented interstate lawsuit we have. His sukkal is named Qudmu. Like several of the frontier gods his character blurred over time, but the association with justice is constant."
+  },
+  {
+    "id": "mesopotamian_zababa",
+    "name": { "primary": "Zababa", "alt": ["dZa-ba4-ba4"],
+      "transliterations": { "Akkadian": "Zababa", "etymology": "No agreed derivation. He is the war god of Kish, and his emblem is the eagle-headed staff." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-dynastic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic", "eraOrdering": 0,
+      "startEvent": "War god and tutelary deity of Kish, counted among the consorts of Inanna and later assimilated toward Ninurta.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zababa: the Akkadian god of war and one of the many consorts of Inanna/Ishtar." } ] } ],
+    "domains": [ { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Zababa", "script": "Akkadian (transliterated)", "rom": "Zababa" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zababa as a god of war." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_inanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Zababa as one of the consorts of Inanna/Ishtar." } ],
+        "notes": "Counted among Inanna's consorts; the pairing of the war god of Kish with the goddess of war is a civic arrangement as much as a mythological one." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Kish", "kind": "temple", "period": "early-dynastic to old-babylonian",
+        "attestation": "his position as tutelary deity of Kish", "source": "Reference treatment of Zababa and his city.",
+        "note": "Kish carried enormous prestige — 'king of Kish' was a title claimed far beyond the city — and Zababa's standing follows from that." } ],
+    "sources": [ { "claim": "Zababa is the Mesopotamian war god and tutelary deity of Kish, counted among the consorts of Inanna.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Zababa as god of war and consort of Inanna/Ishtar." } ], "weight": "medium" } ],
+    "notes": "Zababa is the god of Kish, and Kish mattered: 'king of Kish' was a title that rulers hundreds of miles away claimed for the prestige of it, long after the city itself had stopped being dominant. He is a war god, paired with Inanna as consort — a match of the war god of a great city with the goddess of war, which reads as civic as much as mythological. Later theology pulled him toward Ninurta, as it pulled most of the warrior gods."
+  },
+  {
+    "id": "mesopotamian_enmesharra",
+    "name": { "primary": "Enmesharra", "alt": ["Enmešarra", "dEn-me-šar2-ra"],
+      "transliterations": { "Sumerian": "dEn-me-šar2-ra", "etymology": "Something close to 'lord of all the me' — the me being the divine offices and powers that make civilisation work. A god who once held them and holds them no longer." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "A god of the older generation, commonly described as a ghost or a resident of the underworld, and known chiefly from lists of primordial deities such as the theogony of Enlil.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Enmesharra: a Mesopotamian god associated with the underworld, regarded as a member of an old generation of deities and commonly described as a ghost or resident of the underworld, best known from lists of primordial deities such as the theogony of Enlil." } ] } ],
+    "domains": [ { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "dEn-me-šar2-ra", "script": "Sumerian (transliterated)", "rom": "Enmesharra" },
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Enmesharra's underworld associations." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Enmesharra is a Mesopotamian god of an older generation, associated with the underworld and commonly described as a ghost, known chiefly from lists of primordial deities including the theogony of Enlil.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Enmesharra, his generation and the god-lists he appears in." } ], "weight": "medium" } ],
+    "notes": "Enmesharra belongs to the generation that lost. He appears in the ancestor-lists — the theogony of Enlil runs through many generations of such deities — and he is described as a ghost, a resident of the underworld, a power that once was. Some late texts have him defeated and bound, his offices taken from him, which is what his name would suggest: lord of all the me, the divine powers of civilisation, in the mouth of a god who no longer has them. The Mesopotamian pantheon keeps a surprising number of these deposed ancestors on file."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE EPIC CYCLE AND THE MONSTROUS REGISTER
+================================================================================
+
+The Epic of Gilgamesh was represented in this registry by Gilgamesh, Ninsun and
+Lugalbanda alone. Enkidu — half the epic — was absent, and so were Humbaba,
+Siduri, Shamhat, Utnapishtim and the Bull of Heaven. The demons were absent
+wholesale: Anzu, Asag, Pazuzu, Lamashtu. Adapa and Etana, the two other great
+Akkadian legends of a mortal reaching for something the gods keep, were absent
+as well.
+
+Relations toward Gilgamesh use non-symmetric kinds throughout. His record is
+part of the seed core, which the generator does not rebuild, so a symmetric
+relation pointed at him could not be reciprocated and would leave the corpus
+one-legged.
+
+```json
+[
+  {
+    "id": "mesopotamian_enkidu",
+    "name": { "primary": "Enkidu", "alt": ["Enkidug", "dEn-ki-du10"],
+      "transliterations": { "Sumerian": "dEn-ki-du10", "etymology": "Read variously as 'Enki's creation' and as 'lord of the good place'; the second element du10 is the word for 'good', and no reading has carried the field." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "Created by the gods in the wilderness as a match for Gilgamesh, he lives with the animals, grazes with the herd at the watering hole, and fills in the trapper's pits.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet I: the creation of Enkidu as a rival to Gilgamesh and his life among the animals." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Drawn out of the wild by Shamhat, after which the animals will no longer run with him; he comes to Uruk, wrestles Gilgamesh in the street, and becomes his companion.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets I-II: Shamhat, the loss of the animals, the coming to Uruk and the wrestling match." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 2,
+        "startEvent": "Kills Humbaba in the Cedar Forest and the Bull of Heaven at Uruk alongside Gilgamesh; the gods require a life for the two killings, and it is his. His death is what sends Gilgamesh out after immortality.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets V-VIII: the killing of Humbaba, the killing of the Bull of Heaven, the divine sentence and the death of Enkidu." } ] } ],
+    "domains": [
+      { "sphereId": "wilderness", "contextTag": "phase", "term": { "value": "lullu", "script": "Akkadian (transliterated)", "rom": "lullû" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet I, on Enkidu's life among the animals before Shamhat." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_run_with_the_herd",
+        "name": "to graze and drink with the wild animals, and to undo a hunter's traps",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The capacity he has before Shamhat and loses after her: the herd flees him once he has known her, and the epic treats that loss as the price of becoming human.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet I: Enkidu fills in the trapper's pits and pulls up his snares; afterwards the animals run from him." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "mesopotamian_gilgamesh",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet I: the gods have Enkidu made as an equal to Gilgamesh, so that Uruk may have peace." } ],
+        "notes": "Made deliberately as Gilgamesh's double and counterweight — the epic's premise is that Uruk cannot be governed until the king has an equal. The pair then become inseparable; recorded here as counterpart rather than companion because Gilgamesh's record belongs to the seed core and cannot carry a reciprocal." },
+      { "kind": "enemy", "personId": "mesopotamian_humbaba",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet V: the killing of Humbaba in the Cedar Forest." } ],
+        "notes": "Urges the killing of Humbaba and takes part in it; it is the first of the two acts the gods punish." },
+      { "kind": "enemy", "personId": "mesopotamian_gugalanna",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet VI: Enkidu and Gilgamesh kill the Bull of Heaven, and Enkidu throws its haunch at Ishtar." } ],
+        "notes": "Kills the Bull of Heaven with Gilgamesh and then insults Ishtar with its haunch — the second killing, and the one that settles the sentence against him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Enkidu is the wild man created by the gods as a match for Gilgamesh, civilised by Shamhat, who becomes Gilgamesh's companion, helps kill Humbaba and the Bull of Heaven, and dies as the gods' penalty for those killings.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets I-VIII." },
+                     { "kind": "secondary", "reference": "Reference treatment of Enkidu: created by the gods as a rival to Gilgamesh, tamed by Shamhat, companion of Gilgamesh, condemned to death after the killings." } ], "weight": "high" } ],
+    "notes": "Enkidu was missing, which is the single most conspicuous absence in a registry that already held Gilgamesh, Ninsun and Lugalbanda. He is made in the wilderness as the king's equal — the gods' answer to a complaint about Gilgamesh's tyranny — and he lives with the animals until Shamhat takes him out of that life, after which the herd will not have him back. The epic is unusually clear that becoming human is a bargain with a loss in it. He and Gilgamesh kill Humbaba and then the Bull of Heaven, the gods decide that one of the two must die for it, and Enkidu is the one. Everything after Tablet VIII — the journey, Siduri, Utnapishtim, the failure to stay awake — happens because a man watched his friend die and could not accept it."
+  },
+  {
+    "id": "mesopotamian_humbaba",
+    "name": { "primary": "Humbaba", "alt": ["Huwawa", "Ḫumbaba", "Ḫuwawa"],
+      "transliterations": { "Akkadian": "Ḫumbaba", "Sumerian": "Ḫuwawa", "etymology": "The Sumerian Huwawa is the older form and the Akkadian Humbaba the later; the name has no agreed derivation and is generally taken as foreign, in keeping with a guardian placed in the far mountains." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "slain",
+    "parentIds": ["mesopotamian_hanbi"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Appointed by Enlil as the terror of the Cedar Forest and its guardian; killed there by Gilgamesh and Enkidu, who cut the cedars afterwards.",
+      "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet V, and the Sumerian poem 'Gilgamesh and Huwawa': the guardian of the Cedar Forest, set there by Enlil, and his killing." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "Ḫuwawa", "script": "Sumerian (transliterated)", "rom": "Huwawa" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet V, on Humbaba as guardian of the Cedar Forest." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_the_seven_terrors",
+        "name": "the auras of terror, which the guardian wears and can put off",
+        "term": { "value": "melammu", "script": "Akkadian (transliterated)", "rom": "melammū" }, "inheritability": "none",
+        "notes": "Humbaba is clothed in radiant terrors — seven of them in the Sumerian poem — and the heroes' approach works by stripping them off one at a time. The word is melammu, the dread-radiance that a god or a king wears.",
+        "sources": [ { "kind": "primary", "reference": "'Gilgamesh and Huwawa', on the auras of terror that Huwawa wears and that Gilgamesh strips from him." } ] } ],
+    "materialCulture": [
+      { "id": "mesopotamian_humbaba_mask",
+        "name": "the clay masks of Humbaba's face",
+        "kind": "ritual-object",
+        "role": "Old Babylonian clay masks render his face as a single coiled line, read as a coil of intestines; the same face appears in the diviner's repertoire, where a convolution of entrails shaped like it was a sign to be read.",
+        "sources": [ { "kind": "archaeological", "reference": "Old Babylonian clay masks of the face of Humbaba formed of one continuous coil, reported in reference treatments of Humbaba and in museum term records." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "mesopotamian_enkidu",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet V: Enkidu presses for the killing and takes part in it." } ],
+        "notes": "Killed by Gilgamesh and Enkidu together; in the epic he appeals to Gilgamesh and it is Enkidu who refuses the appeal." },
+      { "kind": "sibling", "personId": "mesopotamian_pazuzu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu: king of the demons of the wind, brother of Humbaba and son of the god Hanbi." } ],
+        "notes": "Brother of Pazuzu in the first-millennium demonology, both being sons of Hanbi, king of the underworld demons. Hanbi is attested almost solely as their father, and is recorded in this pass because the Pazuzu amulet inscription names him outright." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Humbaba, the Sumerian Huwawa, is the guardian of the Cedar Forest appointed by Enlil, clothed in auras of terror, killed by Gilgamesh and Enkidu, and known in the first millennium as the brother of Pazuzu and son of Hanbi.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet V; 'Gilgamesh and Huwawa'." },
+                     { "kind": "secondary", "reference": "Reference treatments of Humbaba as guardian of the Cedar Forest and of Pazuzu as his brother." } ], "weight": "high" } ],
+    "notes": "Humbaba is a guard doing his job. Enlil set him over the Cedar Forest as its terror, and the heroes go there specifically to kill him and take the timber — the epic does not pretend otherwise, and Enlil is furious afterwards. In the Sumerian poem he wears seven auras of terror that Gilgamesh strips off one by one; in the Akkadian he appeals for his life and Enkidu talks Gilgamesh out of sparing him. His face survives in clay: Old Babylonian masks draw it as one unbroken coil, which the diviners read as entrails, so that a liver with that convolution in it was Humbaba showing up in the sacrifice."
+  },
+  {
+    "id": "mesopotamian_siduri",
+    "name": { "primary": "Siduri", "alt": ["Šiduri", "the alewife", "sābītu"],
+      "transliterations": { "Akkadian": "Šiduri", "etymology": "Connected by some with a Hurrian word for 'young woman'; in the standard epic she is named and also called the sābītu, the alewife." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The divine alewife who keeps a tavern at the edge of the sea, at the end of the world; she bars her door against the wild-looking Gilgamesh, then hears him and sends him on to the ferryman and to Utnapishtim.",
+      "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X: the alewife by the sea, the barred door, and the directions to Urshanabi and Utnapishtim." } ] } ],
+    "domains": [
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "sābītu", "script": "Akkadian (transliterated)", "rom": "sābītu" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X, on Siduri as the alewife with her vats and her tavern." } ] },
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Old Babylonian Gilgamesh (Meissner fragment): the alewife's counsel to Gilgamesh on how a man should live." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "mesopotamian_gilgamesh",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X: Siduri tells Gilgamesh where to find Urshanabi and how the crossing to Utnapishtim is made." } ],
+        "notes": "She is the last person who tells him the truth before he gets what he asks for: that the crossing is possible, and that it will not give him what he wants." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Siduri is the divine alewife of the Epic of Gilgamesh, keeping a tavern at the edge of the sea, who counsels Gilgamesh to accept death and enjoy his life, and directs him onward to Utnapishtim.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X; Old Babylonian Meissner fragment." },
+                     { "kind": "secondary", "reference": "Reference treatment of Siduri as the alewife who lives in a tavern at the edge of the ocean and advises Gilgamesh to accept mortality." } ], "weight": "high" } ],
+    "notes": "Siduri keeps a bar at the end of the world and bolts the door when she sees Gilgamesh coming, which is a reasonable response to a man in a lion skin. What she then says to him, in the Old Babylonian version, is the oldest carpe diem speech we have: the gods kept life for themselves, so fill your belly, keep your clothes clean, wash your head, hold your child's hand, let your wife enjoy you. This is the whole answer to the epic's question, offered in Tablet X by a tavern-keeper, and Gilgamesh ignores it and goes on to Utnapishtim to be told the same thing at greater length. The standard Akkadian version cuts the speech down, which later readers have regretted.",
+    "variants": [
+      { "id": "mesopotamian_siduri_speech_recension",
+        "claim": "Siduri's famous counsel belongs to the Old Babylonian version and is abridged in the standard one.",
+        "description": "The advice to eat, drink and be content — the passage usually quoted as the first statement of the carpe diem theme — is preserved in the Old Babylonian fragment. The standard Akkadian recension keeps Siduri and her tavern but reduces her speech, so which Siduri a reader meets depends on which text is in front of them.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Siduri, noting the Old Babylonian advice passage and its interpretation as the first occurrence of the carpe diem theme." } ] } ]
+  },
+  {
+    "id": "mesopotamian_utnapishtim",
+    "name": { "primary": "Utnapishtim", "alt": ["Uta-napishti", "Utanapishtim", "Atra-hasis", "Atrahasis", "Ziusudra", "Xisouthros"],
+      "transliterations": { "Akkadian": "Ūta-napišti", "Sumerian": "Zi-u4-sud-ra", "etymology": "The Akkadian name is read 'he found life'; the Sumerian Ziusudra is 'life of long days'. Atra-hasis, the name he carries in the flood epic of that title, means 'exceedingly wise'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortalized", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "Warned of the coming flood by Ea, who speaks past the other gods' oath by addressing the reed wall of his house, he tears down the house, builds a boat, and takes aboard his kin, his craftsmen and the seed of all living things.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI: Ea's warning through the reed wall, the building of the boat and the loading of it." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "After the flood he sends out the dove, the swallow and the raven, sacrifices on the mountain, and is granted eternal life with his wife by Enlil, who settles them at the mouth of the rivers.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI: the birds, the sacrifice, and Enlil's grant of life 'like the gods' to Utnapishtim and his wife." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 2,
+        "startEvent": "Receives Gilgamesh at the world's edge, tells him the flood story, sets him the test of staying awake seven nights, which he fails, and finally tells him of the plant of rejuvenation on the sea floor.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI: the test of sleep, the loaves, and the plant of rejuvenation." } ] } ],
+    "domains": [
+      { "sphereId": "flood", "contextTag": "phase", "term": { "value": "abūbu", "script": "Akkadian (transliterated)", "rom": "abūbu" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI, the flood narrative." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "mesopotamian_gilgamesh",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI: Utnapishtim's account of the flood, the test of sleep and the disclosure of the plant." } ],
+        "notes": "The last teacher in the epic, and the one whose lesson is that his own case cannot be repeated: the immortality Gilgamesh wants was a one-off grant made in the aftermath of a flood that will not happen again." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Utnapishtim is the Mesopotamian flood hero, warned by Ea, granted eternal life after the flood and settled at the mouth of the rivers, who receives Gilgamesh and tells him the flood story; the Sumerian Ziusudra, the Atra-hasis of the flood epic and the Greek Xisouthros are the same figure under other names.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI; the Atra-hasis epic; the Sumerian flood story." },
+                     { "kind": "secondary", "reference": "Reference treatment of Utnapishtim, Atra-hasis and Ziusudra as one flood hero named differently across the Sumerian, Akkadian and later traditions." } ], "weight": "high" } ],
+    "notes": "One figure, four names. The Sumerian flood story calls him Ziusudra, the Akkadian flood epic calls him Atra-hasis, the Epic of Gilgamesh calls him Utnapishtim, and Berossus, writing in Greek, calls him Xisouthros. Making four records of that would be exactly the duplicate-transliteration error this registry forbids, so there is one record and the names are aliases. The story is constant: a god tips him off against the assembly's decision, he builds a boat, the flood comes, birds are sent out, he sacrifices, and the gods — who had not thought through what a world with no people would be like — settle the matter by making him and his wife deathless and putting them somewhere far away. Gilgamesh reaches him and learns that the precedent is useless, then fails to stay awake for seven nights, which rather settles the question of whether he could manage eternity.",
+    "variants": [
+      { "id": "mesopotamian_flood_hero_three_names",
+        "claim": "Ziusudra, Atra-hasis and Utnapishtim are one figure in three languages.",
+        "description": "The reference literature states the identity plainly: the Sumerian Ziusudra becomes Atra-hasis in the Akkadian flood epic and Uta-napishti in the Epic of Gilgamesh, the names meaning 'life of long days', 'exceedingly wise' and 'he found life'. Berossus' Xisouthros is the Greek rendering of Ziusudra. The versions differ in detail — which god warns him, where he is settled, how many days the flood lasts — but they are recensions of one story about one man.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Mesopotamian flood hero, giving Ziusudra, Atra-hasis, Utnapishtim and Xisouthros as names of the same figure in different traditions." } ] } ]
+  },
+  {
+    "id": "mesopotamian_shamhat",
+    "name": { "primary": "Shamhat", "alt": ["Šamḫat", "Shamhatu"],
+      "transliterations": { "Akkadian": "Šamḫat", "etymology": "From the root šamāḫu, to flourish or grow luxuriantly — something close to 'the voluptuous one'. The word for her office is ḫarimtu." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "mortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "A ḫarimtu of Uruk, brought by the trapper to the watering hole to draw Enkidu out of the wild; after six days and seven nights the animals will not run with him, and she clothes him, teaches him bread and beer, and brings him to the city.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets I-II: Shamhat at the watering hole, the week with Enkidu, and the journey to Uruk." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Cursed by the dying Enkidu for having taken him out of the wild, and then blessed by him when Shamash points out what she gave him — bread, beer, clothing, and Gilgamesh.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet VII: Enkidu's curse on Shamhat, Shamash's rebuke, and the withdrawal of the curse for a blessing." } ] } ],
+    "domains": [
+      { "sphereId": "civilisation", "contextTag": "lifelong", "term": { "value": "ḫarimtu", "script": "Akkadian (transliterated)", "rom": "ḫarimtu" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets I-II, on Shamhat's role in bringing Enkidu from the wild into the human world." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "guide-of", "personId": "mesopotamian_enkidu",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet II: Shamhat clothes Enkidu, teaches him to eat bread and drink beer, and leads him to Uruk." } ],
+        "notes": "She teaches him the whole of being human in one sequence — sex, clothing, bread, beer, the city — and the epic gives her the credit for it explicitly, in the mouth of Shamash." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shamhat is the ḫarimtu of Uruk who draws Enkidu out of the wilderness and civilises him, and whom the dying Enkidu first curses and then blesses after Shamash's rebuke.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets I, II and VII." },
+                     { "kind": "secondary", "reference": "Reference treatment of Shamhat as the ḫarimtu who tames Enkidu and is cursed and then blessed by him in Tablet VII." } ], "weight": "high" } ],
+    "notes": "Shamhat does more to move the plot than anyone in the epic except Enkidu himself, and she is usually described in a half-line as a prostitute. The word is ḫarimtu, and what she actually does is a civilising sequence: she takes Enkidu out of the herd, then clothes him, then feeds him bread, then gives him beer, then walks him to Uruk. Tablet VII is where the epic weighs it. Dying, Enkidu curses her for the whole business; Shamash answers that without her he would never have eaten good food or worn fine clothes or met Gilgamesh; and Enkidu takes the curse back and blesses her instead — 'my mouth that cursed you, let it bless you'. That exchange is one of the very few places in ancient literature where a character is made to reckon publicly with what he owes such a woman."
+  },
+  {
+    "id": "mesopotamian_gugalanna",
+    "name": { "primary": "Gugalanna", "alt": ["Gugalana", "Gud-an-na", "the Bull of Heaven"],
+      "transliterations": { "Sumerian": "gu4-gal-an-na", "etymology": "'The great bull of heaven', or 'of An' — the same element that names the sky god." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Husband of Ereshkigal, whose funeral rites are the pretext Inanna gives at the gate of the underworld; in the epic tradition the Bull of Heaven that Anu releases at Ishtar's demand and that Gilgamesh and Enkidu kill.",
+      "sources": [ { "kind": "primary", "reference": "Descent of Inanna: Inanna tells the gatekeeper she has come for the funeral rites of Gugalanna, husband of her elder sister." },
+                   { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet VI: the Bull of Heaven loosed on Uruk and killed by Gilgamesh and Enkidu." } ] } ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "gu4-gal-an-na", "script": "Sumerian (transliterated)", "rom": "Gugalanna" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Gugalanna, 'the great bull of heaven', husband of Ereshkigal." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "mesopotamian_ereshkigal",
+        "sources": [ { "kind": "primary", "reference": "Descent of Inanna: the funeral rites of Gugalanna, the husband of Ereshkigal." } ],
+        "notes": "His death is the machinery of the Descent: it gives Inanna a reason to be at the gate, and it gives Ereshkigal a mourning that Inanna's arrival interrupts." },
+      { "kind": "enemy", "personId": "mesopotamian_enkidu",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet VI: Enkidu seizes the Bull of Heaven and Gilgamesh kills it." } ],
+        "notes": "Killed by the two of them at Uruk after seven years of famine were promised with him; the killing is the second capital offence charged against Enkidu." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Gugalanna, 'the great bull of heaven', is the husband of Ereshkigal whose funeral rites give Inanna her pretext for descending, and is identified in the epic tradition with the Bull of Heaven killed by Gilgamesh and Enkidu.",
+      "citations": [ { "kind": "primary", "reference": "Descent of Inanna; Epic of Gilgamesh, Tablet VI." },
+                     { "kind": "secondary", "reference": "Reference treatment of Gugalanna as the Bull of Heaven and first husband of Ereshkigal, and of the scholarly debate over that identification." } ], "weight": "medium" } ],
+    "notes": "Gugalanna is a name that appears at exactly one hinge and a story that appears at another, and whether they are the same bull is an old argument. In the Descent, Inanna tells the gatekeeper that she has come for the funeral of Gugalanna, her elder sister's husband — a lie, or at least a pretext, but one that requires the bull to be dead and Ereshkigal to be mourning. In Tablet VI of the epic, Ishtar, refused by Gilgamesh, demands the Bull of Heaven from Anu and looses it on Uruk, and Gilgamesh and Enkidu kill it. Read together, the goddess kills her sister's husband twice over. The registry keeps the identification as reported and flags that it is disputed.",
+    "variants": [
+      { "id": "mesopotamian_gugalanna_bull_identity",
+        "claim": "Whether the Gugalanna of the Descent is the Bull of Heaven of the epic is debated.",
+        "description": "Gugalanna is named as Ereshkigal's husband in the Descent and the name means 'great bull of heaven'; the Bull of Heaven of Gilgamesh Tablet VI is the animal Anu gives Ishtar. Many treatments identify the two; others hold that the epic's bull is an instrument rather than the underworld queen's consort, and that the identification is a modern harmonisation. The record states both readings.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting the long scholarly debate over the dual identity of Gugalanna as celestial consort of Ereshkigal and as the punitive Bull of Heaven of the Epic of Gilgamesh." } ] } ]
+  },
+  {
+    "id": "mesopotamian_anzu",
+    "name": { "primary": "Anzu", "alt": ["Anzû", "Imdugud", "Im-dugud", "Zu"],
+      "transliterations": { "Sumerian": "dIm-dugud", "Akkadian": "Anzû", "etymology": "The Sumerian Imdugud is read 'heavy wind' or 'heavy cloud' — the black thunderhead. Anzu is the later Akkadian name for the same bird." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "slain", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The lion-headed storm bird, the thundercloud made a body; he steals the Tablet of Destinies from Enlil and carries it to the mountain, and is hunted down and killed by Ninurta.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Anzu myth: the divine storm bird, depicted as a lion-headed eagle, who steals the Tablet of Destinies from Enlil and is killed by Ninurta." } ] } ],
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "dIm-dugud", "script": "Sumerian (transliterated)", "rom": "Imdugud" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Anzu as the personification of the south wind and the thunderclouds." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_turn_back_a_weapon_with_the_tablet",
+        "name": "to unmake a weapon in flight by the authority of the Tablet of Destinies",
+        "term": { "value": "ṭuppi šīmāti", "script": "Akkadian (transliterated)", "rom": "ṭuppi šīmāti" }, "inheritability": "none",
+        "notes": "While he holds the Tablet, Anzu can order an arrow back into its reeds and a bowstring back into the sheep; the myth's problem is that whoever holds the Tablet decrees, so ordinary weapons cannot touch him. Ninurta wins by exhausting him rather than by out-decreeing him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Anzu myth, in which Anzu uses the Tablet of Destinies to neutralise each of Ninurta's weapons in turn." } ] } ],
+    "materialCulture": [
+      { "id": "mesopotamian_imdugud_relief",
+        "name": "the Imdugud relief of Tell al-Ubaid",
+        "kind": "cult-image",
+        "role": "The copper-alloy lintel relief from the Early Dynastic temple at Tell al-Ubaid shows the lion-headed eagle with wings spread, gripping a stag in each talon — the standard image of the storm bird, and one of the great surviving pieces of Sumerian metalwork.",
+        "sources": [ { "kind": "archaeological", "reference": "The lion-headed eagle (Imdugud) relief from the temple at Tell al-Ubaid, reported in museum and reference treatments of Anzu." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "mesopotamian_ninurta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Anzu myth: Ninurta severs the bird's wings and kills it, recovering the Tablet of Destinies." } ],
+        "notes": "Killed by Ninurta, who recovers the Tablet; a variant text gives the killing to Marduk instead." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Anzu, the Sumerian Imdugud, is the lion-headed storm bird who steals the Tablet of Destinies from Enlil and is killed by Ninurta.",
+      "citations": [ { "kind": "primary", "reference": "The Akkadian Anzu epic (the Epic of Anzu)." },
+                     { "kind": "secondary", "reference": "Reference treatment of Anzu as storm bird, of the theft of the Tablet of Destinies and of the versions in which Ninurta or Marduk kills him." } ], "weight": "high" } ],
+    "notes": "Anzu is what a thunderhead looks like if you give it a body: a lion's head on an eagle, which is exactly the shape of the Tell al-Ubaid relief. The myth is about administration. The Tablet of Destinies is the document by which the chief god decrees what happens, Anzu steals it while Enlil is bathing, and the difficulty is not that he is strong but that he now holds the office — he can order an arrow to go back to being a reed. The gods are asked in turn to go after him and decline; Ninurta goes, and wins by wearing the bird out rather than by out-ranking it. One version of the text gives the kill to Marduk, which is the usual Babylonian editing.",
+    "variants": [
+      { "id": "mesopotamian_anzu_slayer",
+        "claim": "Which god kills Anzu depends on the version.",
+        "description": "The standard Akkadian myth gives the killing to Ninurta; another text credits Marduk, and the Sumerian tradition also connects Lugalbanda with the bird in a different register, treating it as a benefactor rather than a thief. The record follows the Ninurta version and notes the others.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting that in one text Marduk kills Anzu and in another it dies by the arrows of Ninurta." } ] } ]
+  },
+  {
+    "id": "mesopotamian_lamashtu",
+    "name": { "primary": "Lamashtu", "alt": ["Lamaštu", "Dimme", "dDim3-me"],
+      "transliterations": { "Akkadian": "Lamaštu", "Sumerian": "dDim3-me", "etymology": "The Akkadian name stands behind the Sumerian writing Dimme; both name the same child-killing demoness." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_anu"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daughter of Anu, cast down from heaven; she menaces women in childbed and newborns, taking the child from the womb or from the breast, and acts on her own malice rather than at any god's order.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lamashtu: daughter of the sky god Anu, cast out of heaven, who attacks pregnant women and infants, and who unlike other demons acts on her own initiative." } ] } ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "Lamaštu", "script": "Akkadian (transliterated)", "rom": "Lamaštu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lamashtu as the demon of childbed and of infants." } ] },
+      { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Lamashtu's association with fever and the diseases of women in childbed." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "mesopotamian_lamashtu_plaque",
+        "name": "the Lamashtu plaques and amulets",
+        "kind": "amulet",
+        "role": "Bronze and stone plaques show her with a lioness's head, a donkey's teeth, a hairy body and bird's talons, suckling a piglet and a puppy and holding serpents. Such plaques hung by the bed of a woman in labour, and the head of Pazuzu is often worked into the top of the plaque, looking over its edge to drive her back.",
+        "sources": [ { "kind": "archaeological", "reference": "Lamashtu amulets and plaques in museum collections, described in reference treatments and in the Metropolitan Museum's record of an amulet with a Lamashtu demon." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "mesopotamian_pazuzu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu as the demon invoked on amulets to protect mothers and infants against Lamashtu." } ],
+        "notes": "The opposition is the whole point of the amulets: Pazuzu, himself a bringer of fevers, is set against her because a demon is what it takes." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "throughout Mesopotamia, in the household", "kind": "ritual", "period": "old-babylonian to neo-Assyrian",
+        "attestation": "the incantation series against her and the amulets worn in pregnancy", "source": "Reference treatment of the Lamashtu incantations and amulets.",
+        "note": "Her cult, if the word applies, is entirely negative: a body of incantations and objects designed to send her away. It is one of the best-attested bodies of household ritual from Mesopotamia, because infant mortality made it the ritual people actually needed." } ],
+    "sources": [ { "claim": "Lamashtu is the daughter of Anu, a demoness who kills infants and menaces women in childbirth, warded off by amulets and incantations and by the figure of Pazuzu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Lamashtu: her descent from Anu, her attacks on mothers and newborns, her iconography and the apotropaic use of Pazuzu against her." } ], "weight": "high" } ],
+    "notes": "Lamashtu is a goddess's daughter who behaves like a plague. Anu is her father and heaven threw her out; the incantations say she takes the baby from the womb, counts the months of a pregnancy, and puts her hand on the belly of a woman in labour. What distinguishes her from the ordinary run of Mesopotamian demons is that she is not an instrument: other demons are sent, and she comes on her own. Against her, the household had a whole apparatus — incantations, plaques, a dog buried under the threshold, and above all Pazuzu, whose head is worked into the top of her plaques looking down at her. Setting one demon on another is not a contradiction in this system; it is the system."
+  },
+  {
+    "id": "mesopotamian_pazuzu",
+    "name": { "primary": "Pazuzu", "alt": ["Pazūzu"],
+      "transliterations": { "Akkadian": "Pazūzu", "etymology": "No agreed derivation; the name resists Semitic etymology, which has been taken as a sign that the figure came into Mesopotamian demonology from outside." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_hanbi"], "parentRoles": ["father"],
+    "temporal": { "era": "neo-assyrian-neo-babylonian" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "neo-assyrian-neo-babylonian", "eraOrdering": 0,
+      "startEvent": "King of the demons of the wind and son of Hanbi; he brings the west and southwest wind with its fever and its drought, and from the first millennium is worn as an amulet against the very evils he carries, and above all against Lamashtu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu: king of the demons of the wind, brother of Humbaba and son of Hanbi, representing the southwestern wind as bearer of storms and drought, and invoked apotropaically in the first millennium BCE." } ] } ],
+    "domains": [
+      { "sphereId": "wind", "contextTag": "lifelong", "term": { "value": "Pazūzu", "script": "Akkadian (transliterated)", "rom": "Pazuzu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu as king of the wind demons and bearer of the southwestern wind." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu's apotropaic use on amulets against other demons, particularly Lamashtu." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "mesopotamian_pazuzu_head_amulet",
+        "name": "the bronze Pazuzu heads and figurines",
+        "kind": "amulet",
+        "role": "Small bronze heads with a loop for suspension, and complete figurines with a man's body, a lion's or dog's head, eagle's talons, two pairs of wings and a scorpion's tail. Pregnant women wore the heads; the figures stood by the cradle and were fixed to the Lamashtu plaques.",
+        "sources": [ { "kind": "archaeological", "reference": "First-millennium BCE bronze Pazuzu heads and statuettes in museum collections, described in reference treatments of the figure and his iconography." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "mesopotamian_humbaba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu as the brother of Humbaba, the guardian of the Cedar Forest, both sons of Hanbi." } ],
+        "notes": "Brother of Humbaba, both sons of Hanbi, king of the demons of the underworld, who is added in this same pass on the strength of the amulet inscription that names him." },
+      { "kind": "enemy", "personId": "mesopotamian_lamashtu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu as the demon invoked against Lamashtu on amulets protecting mothers and infants." } ],
+        "notes": "Set against Lamashtu on the amulets, and said in one account to have driven her back to the underworld." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Assyria and Babylonia, in the household", "kind": "amulet-use", "period": "neo-Assyrian and neo-Babylonian",
+        "attestation": "bronze heads and figurines worn and hung in the house", "source": "Reference treatment of the apotropaic use of Pazuzu in the first millennium BCE.",
+        "note": "Not a temple cult. Pazuzu belongs to household practice: the thing you hang over a cradle, not the thing you sacrifice to." } ],
+    "sources": [ { "claim": "Pazuzu is the king of the demons of the wind, son of Hanbi and brother of Humbaba, bearer of the southwestern wind, invoked apotropaically in the first millennium BCE against other demons and especially against Lamashtu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Pazuzu: his parentage and brother, his wind, his iconography and his apotropaic use on amulets." } ], "weight": "high" } ],
+    "notes": "Pazuzu is the best-known Mesopotamian demon in the modern world for reasons that have nothing to do with Mesopotamia, and the actual figure is more interesting than the film. He is the king of the wind demons, son of Hanbi and brother of Humbaba, and the wind he brings is the southwestern one that carries fever and dries the fields. He was worn anyway — bronze heads with a loop at the back, hung around the neck of a pregnant woman or set by a cradle — on the logic that the thing that frightens you is also the thing that frightens what you are afraid of. His head sits at the top of the Lamashtu plaques, looking over the edge at her. The first millennium made a whole household practice out of this, none of it temple cult."
+  },
+  {
+    "id": "mesopotamian_asag",
+    "name": { "primary": "Asag", "alt": ["Asakku", "Azag", "Asakku-demon"],
+      "transliterations": { "Sumerian": "Asag", "Akkadian": "Asakku", "etymology": "The word names a class of illness-demons in the incantation literature; in Lugal-e it is the name of a single monstrous being." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "slain",
+    "parentIds": ["mesopotamian_anu"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Offspring of An and Ki; he takes the mountain for a consort and begets an army of stones, is acknowledged king by the beings of the mountain, and makes the fish boil in the rivers. Ninurta kills him with the mace Sharur, breaks the stone host, and afterwards sets the waters in order.",
+      "sources": [ { "kind": "primary", "reference": "Lugal-e (Ninurta's Exploits): Asag, his stone offspring, his defeat by Ninurta with Sharur, and the ordering of the waters that follows." } ] } ],
+    "domains": [
+      { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "Asakku", "script": "Akkadian (transliterated)", "rom": "Asakku" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Asag/Asakku, who kills by headache, fever and sickness and whose name is the word for a class of illness-demons." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_boil_the_fish_in_the_river",
+        "name": "to make the fish boil alive in the water by his presence",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "Lugal-e's image for what he is: not a fighter with a weapon but a condition, a heat in the land that cooks the river from inside.",
+        "sources": [ { "kind": "primary", "reference": "Lugal-e, on the boiling of the fish in the rivers at Asag's presence." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "mesopotamian_ninurta",
+        "sources": [ { "kind": "primary", "reference": "Lugal-e: the war between Ninurta and Asag and the demon's death." } ],
+        "notes": "Killed by Ninurta with the talking mace Sharur, after Ninurta takes counsel from his father Enlil." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Asag, the Akkadian Asakku, is the mountain demon of Lugal-e, offspring of An and Ki, who begets an army of stones on the mountain and is killed by Ninurta with the mace Sharur.",
+      "citations": [ { "kind": "primary", "reference": "Lugal-e (Ninurta's Exploits)." },
+                     { "kind": "secondary", "reference": "Reference treatment of Asag as the offspring of An and Ki, his stone army, his sickness-dealing and his defeat by Ninurta." } ], "weight": "high" } ],
+    "notes": "Asag is disease given a mountain to live on. Lugal-e makes him the offspring of An and Ki — the mother Ki has no record in this registry and is therefore stated rather than linked — and has him mate with the mountain to produce a host of stones that acknowledge him as king. He kills people with headaches and fevers, and the fish boil in the rivers where he is. Ninurta kills him with Sharur, the mace that talks, and the poem then spends its length on the aftermath: the stones are judged one by one, some cursed and some blessed into useful minerals, and the waters that Asag had disordered are sent back down the Tigris. It is a myth about sickness and irrigation told as a war story."
+  },
+  {
+    "id": "mesopotamian_adapa",
+    "name": { "primary": "Adapa", "alt": ["Adapa of Eridu", "Uan-Adapa", "Adapa the sage"],
+      "transliterations": { "Akkadian": "Adapa", "etymology": "Taken in the myth itself as marking the wise one; the text calls him the sage, and his name is bound up with the tradition of the apkallu, the antediluvian sages of Eridu." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "mortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "Sage and priest of Ea at Eridu, given wisdom by his god but not eternal life; he serves the temple and fishes for it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the myth of Adapa: a wise sage and priest of Ea at Eridu, to whom Ea gave great wisdom but not eternal life." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "When the south wind capsizes his boat he breaks its wing, and it does not blow for seven days; summoned before Anu to answer for it, he follows Ea's instruction and refuses the bread and water set before him, which were the bread and water of life, and so loses immortality.",
+        "sources": [ { "kind": "primary", "reference": "The Akkadian myth of Adapa: the breaking of the south wind's wing, the summons to Anu, the counsel of Ea and the refusal of the food and drink of life." } ] } ],
+    "domains": [
+      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "apkallu", "script": "Akkadian (transliterated)", "rom": "apkallu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Adapa as the wise sage of Eridu in the apkallu tradition." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "mesopotamian_enki",
+        "sources": [ { "kind": "primary", "reference": "The myth of Adapa: Ea gives him wisdom, and instructs him how to behave before Anu and what not to accept there." } ],
+        "notes": "Ea's man in every sense — given his wisdom, serving his temple at Eridu, and destroyed by taking his advice literally at the one moment when the advice was wrong or was meant to be." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Eridu", "kind": "temple", "period": "old-babylonian and later",
+        "attestation": "his standing as priest and sage of Ea's city", "source": "Reference treatment of Adapa as priest of Ea at Eridu.",
+        "note": "Eridu is the oldest city in the Sumerian reckoning and Ea's own; Adapa belongs to it as its first sage." } ],
+    "sources": [ { "claim": "Adapa is the sage and priest of Ea at Eridu who broke the wing of the south wind, was summoned before Anu, and on Ea's instruction refused the bread and water of life, forfeiting immortality.",
+      "citations": [ { "kind": "primary", "reference": "The Akkadian myth of Adapa (Adapa and the Food of Life), known from fragments of about the seventeenth century BCE and from the Amarna archive." },
+                     { "kind": "secondary", "reference": "Reference treatment of Adapa: sage of Eridu, priest of Ea, the south wind, the refusal of the food of life." } ], "weight": "high" } ],
+    "notes": "Adapa is why people die, in one of the Mesopotamian accounts. He is Ea's sage at Eridu, given wisdom and not life — the text says so plainly, and the whole myth turns on the difference. The south wind capsizes his fishing boat and he breaks its wing in temper, the wind stops for seven days, and Anu summons him. Ea coaches him: win over the gatekeepers Dumuzi and Gishzida, and do not eat or drink what is offered, because it will kill you. What is offered is the bread and water of life. He refuses, and Anu laughs, or is exasperated, depending on the reading, and sends him back down mortal. Whether Ea meant to save him from an execution he expected, or to keep a human out of the immortals, or simply got it wrong, is an argument as old as the tablet.",
+    "variants": [
+      { "id": "mesopotamian_adapa_uanna",
+        "claim": "Adapa is widely identified with Uanna, the first of the seven antediluvian sages, whom Berossus calls Oannes.",
+        "description": "The apkallu tradition names Uanna as the first sage sent up from the Apsu to teach humanity, and the compound form Uan-Adapa appears in the lists, which is the basis for the identification. It is standard but not unanimous, and the Adapa myth itself does not make the equation.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatments of Adapa and of the apkallu tradition, on the identification of Adapa with Uanna/Oannes, the first of the seven sages." } ] } ]
+  },
+  {
+    "id": "mesopotamian_etana",
+    "name": { "primary": "Etana", "alt": ["Etana of Kish", "Etana the shepherd"],
+      "transliterations": { "Akkadian": "Etana", "etymology": "No agreed derivation. The Sumerian King List gives him the epithet sipa, the shepherd." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-dynastic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "early-dynastic", "eraOrdering": 0,
+        "startEvent": "Listed in the Sumerian King List among the kings of the first dynasty of Kish as 'the shepherd, who ascended to heaven and consolidated all the foreign countries', succeeded by his son Balih.",
+        "sources": [ { "kind": "primary", "reference": "Sumerian King List, on Etana the shepherd of the first dynasty of Kish, his ascent to heaven and his son Balih." } ] },
+      { "typeStatus": "mortal", "era": "early-dynastic", "eraOrdering": 1,
+        "startEvent": "Childless, he rescues a starving eagle that a serpent has thrown into a pit for eating its young, and the eagle carries him up toward heaven to find the plant of birth.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the legend of Etana: the eagle and the serpent, the rescue of the eagle and the flight in search of the plant of birth that allows Etana to father a son." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "sipa", "script": "Sumerian (transliterated)", "rom": "sipa" },
+        "sources": [ { "kind": "primary", "reference": "Sumerian King List, on Etana as shepherd-king of Kish." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "mesopotamian_balih",
+        "sources": [ { "kind": "primary", "reference": "Sumerian King List: Etana is succeeded by his son Balih." } ],
+        "notes": "The son the whole legend is about: Etana goes up on the eagle to find the plant of birth, and the king list records that Balih followed him on the throne." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Kish", "kind": "king-list", "period": "early-dynastic, recorded in the Ur III and Old Babylonian king lists",
+        "attestation": "his entry in the Sumerian King List as the thirteenth king of the first dynasty of Kish", "source": "Sumerian King List.",
+        "note": "The list gives him an impossible reign — 1,500 years in some copies, 635 in others — and the epithet that ties the king-list entry to the legend: the shepherd who went up to heaven." } ],
+    "sources": [ { "claim": "Etana is the shepherd-king of Kish in the Sumerian King List, said to have ascended to heaven, and the hero of a Babylonian legend in which an eagle he rescues from a pit carries him toward heaven in search of the plant of birth.",
+      "citations": [ { "kind": "primary", "reference": "Sumerian King List." },
+                     { "kind": "secondary", "reference": "Reference treatment of Etana: thirteenth king of the first dynasty of Kish, the eagle and the serpent, the plant of birth, and his son Balih." } ], "weight": "high" } ],
+    "notes": "Etana's problem is that he has no son, which in a king list is the only problem there is. The legend attaches it to a fable: an eagle and a serpent swear friendship before Shamash and share their food, the eagle eats the serpent's young anyway, and the serpent traps it in a pit to starve. Etana feeds the eagle and it takes him on its back toward the heaven of Anu to find the plant of birth, and in the best-known passage he looks down and watches the land shrink to a garden plot and the sea to a bread-basket. The King List, independently, calls him 'the shepherd, who ascended to heaven' and gives him a son, Balih, which suggests the flight worked. Balih is added in this same pass, so the flight has its result recorded as an edge."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. THE CONSORTS, VIZIERS AND CHILDREN THE FIRST THREE
+                       BLOCKS LEFT DANGLING
+================================================================================
+
+Writing blocks I-III surfaced ten more absences of a particular kind: figures
+whose only role in the reference literature is to stand next to somebody this
+pass had just added, and whose absence left that new record artificially
+kinless. Nisaba's husband Ḫaya. Ningirsu's wife Bau. Pazuzu's father Hanbi,
+who is named on the Louvre statuette's own inscription. Ninkasi's mother
+Ninti. Etana's son Balih. Utnapishtim's ferryman Urshanabi. Adding them
+converts six stated-in-prose facts into actual corpus edges.
+
+Three more are here on their own merits, not as connective tissue: Nanaya of
+Uruk, Shara of Umma and Isimud, Enki's two-faced vizier.
+
+One name was checked and NOT added: **Erra**. The registry already carries him,
+as an alias on `mesopotamian_nergal`, along with Erragal and Meslamtaea. A
+separate Erra record would be the duplicate this programme forbids.
+
+```json
+[
+  {
+    "id": "mesopotamian_bau",
+    "name": { "primary": "Bau", "alt": ["Baba", "Bawa", "dBa-u2"],
+      "transliterations": { "Sumerian": "dBa-u2", "etymology": "The name has no agreed derivation; the reading Baba is now generally preferred to the older Bau, and both are in use." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_anu"], "parentRoles": ["father"],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "Daughter of An and wife of Ningirsu, and from the time of Gudea the highest-ranking goddess of Lagash, displacing Nanshe and standing at equal rank with her husband; their children include Igalim, Shulshaga and Ḫegir.",
+      "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Baba: daughter of An, wife of Ningirsu, raised from the time of Gudea above Nanshe to equal rank with her husband, mother of Igalim, Shulshaga and Ḫegir." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "dBa-u2", "script": "Sumerian (transliterated)", "rom": "Baba" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bau as the chief goddess of the Lagash state." } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bau's healing character and her association with the dog, shared with the healing goddesses absorbed into Gula." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_ningirsu",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Baba: in sources from Lagash and Girsu her husband is Ningirsu." } ],
+        "notes": "Wife of Ningirsu at Lagash. Since Ningirsu and Ninurta are one god by the historical period and Gula is Ninurta's wife at Nippur, this marriage and Gula's are two local faces of the same pairing — which is part of why Bau was drawn into the Gula complex." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Girsu, in the state of Lagash", "kind": "temple", "period": "early-dynastic to ur-iii",
+        "attestation": "her sanctuary in the Girsu temple complex and the Gudea inscriptions", "source": "Oracc AMGG s.v. Baba.",
+        "note": "The Bau temple household at Girsu produced one of the largest archives of economic tablets from third-millennium Mesopotamia: her estate, its workers and its rations are documented in a detail almost nothing else from that period matches." } ],
+    "sources": [ { "claim": "Bau, also read Baba, is the daughter of An and wife of Ningirsu, chief goddess of Lagash from the time of Gudea, mother of Igalim, Shulshaga and Ḫegir, with healing associations and the dog as emblem.",
+      "citations": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Baba." },
+                     { "kind": "secondary", "reference": "Reference treatment of Bau: her parentage, her marriage, her rise over Nanshe at Lagash and her healing character." } ], "weight": "high" } ],
+    "notes": "Bau is the goddess whose household accounts we have. Her temple estate at Girsu kept records — barley rations, wool, personnel, fields — and those tablets are a large part of what anybody knows about the economy of a Sumerian city-state. As a goddess she is An's daughter and Ningirsu's wife, and Gudea's building programme raised her over Nanshe to stand level with her husband. Her emblem is the dog, and she has a healing character, which is why she was eventually absorbed into the Gula complex along with Ninisina and Ninkarrak — the dog-and-healing pattern is consistent across all of them and nobody has explained it satisfactorily."
+  },
+  {
+    "id": "mesopotamian_haya",
+    "name": { "primary": "Haya", "alt": ["Ḫaya", "Haia", "dHa-ià"],
+      "transliterations": { "Akkadian": "Ḫaya", "etymology": "No agreed derivation; the name is written dḪa-ià and may be of non-Sumerian origin." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "God of scribes, described as a divine accountant and archivist and also as a doorkeeper, with an association with grain; husband of Nisaba and father of Sud.",
+        "sources": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Haya: a god of scribes, possibly also of grain and agriculture, a doorkeeper, husband of Nisaba and father of Sud." } ] },
+      { "typeStatus": "deity", "era": "ur-iii", "eraOrdering": 1,
+        "startEvent": "Worshipped chiefly under the Third Dynasty of Ur, with temples at Umma, Ur and Kuara, and in later times at Assur and possibly Nineveh.",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Haya: worshipped mostly during the Third Dynasty of Ur, with temples at Umma, Ur and Kuara, and later a temple at Assur and possibly one at Nineveh." } ] } ],
+    "domains": [
+      { "sphereId": "writing", "contextTag": "lifelong", "term": { "value": "dḪa-ià", "script": "Akkadian (transliterated)", "rom": "Haya" },
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Haya, on his scribal and archival character." } ] },
+      { "sphereId": "harvest", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Haya, on his possible association with grain and agriculture." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_nisaba",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Haya: husband of the goddess Nisaba." } ],
+        "notes": "Husband of Nisaba. The pairing is coherent: she is the goddess of writing and of grain, he is the divine accountant with a grain association, and accountancy for grain is what writing was invented to do." },
+      { "kind": "father-of", "personId": "mesopotamian_ninlil",
+        "sources": [ { "kind": "secondary", "reference": "Oracc AMGG s.v. Haya: father of Sud; and the reference treatment of Ninlil, who was identified with Sud of Shuruppak and absorbed her, and whose parents are given as Nisaba and Haya." } ],
+        "notes": "Father of Sud of Shuruppak, who is Ninlil under her pre-marriage name — 'Ninlil' is the name Sud receives on marrying Enlil. This registry keeps one record, Ninlil, with Sud noted there, so the paternity is recorded as a link to that record." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Umma, Ur and Kuara, and later Assur", "kind": "temple", "period": "ur-iii to neo-Assyrian",
+        "attestation": "his Ur III temples and the later Assyrian one", "source": "Oracc AMGG s.v. Haya.",
+        "note": "His cult is concentrated in the Ur III period, which is also the period whose scribal bureaucracy produced the tablets we mostly read; a god of accountants belongs to the state that counted everything." } ],
+    "sources": [ { "claim": "Haya is the Mesopotamian god of scribes, a divine accountant, archivist and doorkeeper with a grain association, husband of Nisaba and father of Sud, worshipped chiefly in the Ur III period.",
+      "citations": [ { "kind": "secondary", "reference": "Oracc, Ancient Mesopotamian Gods and Goddesses, s.v. Haya." } ], "weight": "medium" } ],
+    "notes": "Haya was in the registry only as a sentence inside Nisaba's record — 'with Ḫaya as consort' — which is exactly the shape of gap this pass exists to close. He is the god of scribes on the administrative side: an accountant and an archivist, and also, oddly and specifically, a doorkeeper. His temples are Ur III, in the cities whose bureaucratic archives survive in tens of thousands of tablets, and he is married to the goddess who holds both writing and grain. Between them they cover the whole of what a Sumerian scribe actually did."
+  },
+  {
+    "id": "mesopotamian_ninti",
+    "name": { "primary": "Ninti", "alt": ["Nin-ti", "dNin-ti"],
+      "transliterations": { "Sumerian": "dNin-ti", "etymology": "The Sumerian ti means both 'rib' and 'to live', so the name reads as 'lady of the rib' and 'lady who makes live' at once, and the myth of Enki and Ninhursag plays on both — and on a third reading, 'lady of the month'." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_ninhursag"], "parentRoles": ["mother"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Born by Ninhursag to heal Enki's sore rib, the last of the eight healing deities she bears for his eight ailing parts; the Hymn to Ninkasi calls her the queen of the abzu and the mother of Ninkasi.",
+      "sources": [ { "kind": "primary", "reference": "Enki and Ninhursag: Ninhursag bears a deity for each of Enki's sick parts, and for the rib she bears Ninti." },
+                   { "kind": "primary", "reference": "A hymn to Ninkasi (ETCSL 4.23.1): 'your mother is Ninti, the queen of the abzu'." } ] } ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "dNin-ti", "script": "Sumerian (transliterated)", "rom": "lady of the rib / lady who makes live" },
+        "sources": [ { "kind": "primary", "reference": "Enki and Ninhursag, on Ninti's birth as the healer of Enki's rib." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "mesopotamian_ninkasi",
+        "sources": [ { "kind": "primary", "reference": "A hymn to Ninkasi (ETCSL 4.23.1): 'Your father is Enki, the lord Nudimmud, your mother is Ninti, the queen of the abzu'." } ],
+        "notes": "Mother of Ninkasi by Enki, on the Hymn to Ninkasi's own testimony." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ninti is the goddess born by Ninhursag to heal Enki's rib in Enki and Ninhursag, her name punning on the Sumerian ti as both rib and life, and the mother of Ninkasi in the Hymn to Ninkasi.",
+      "citations": [ { "kind": "primary", "reference": "Enki and Ninhursag; A hymn to Ninkasi (ETCSL 4.23.1)." },
+                     { "kind": "secondary", "reference": "Reference treatment of Ninti, on the double reading of her name as 'lady of the rib' and 'lady who makes live', and its reinterpretation as 'lady of the month' in the myth." } ], "weight": "high" } ],
+    "notes": "Ninti is a pun that became a goddess. Enki eats eight of Ninhursag's plants, she curses him, and he sickens in eight places; brought back, she bears a healing deity for each part, and the one for the rib is Ninti — where the Sumerian ti carries 'rib' and 'live' in the same syllable, so that the lady of the rib is also the lady who makes live. Anyone who has read the second chapter of Genesis has met a version of this joke without the pun surviving the translation into Hebrew, where rib and life are unrelated words. She turns up again as the queen of the abzu and the mother of Ninkasi, which is how she earns her place here: the brewing goddess's hymn names her parents, and one of them was in this registry and the other was not."
+  },
+  {
+    "id": "mesopotamian_hanbi",
+    "name": { "primary": "Hanbi", "alt": ["Hanpa", "Hanba", "Hanbu"],
+      "transliterations": { "Akkadian": "Ḫanbi", "etymology": "No agreed derivation. The name is written Hanbi, Hanpa and Hanbu across the incantation texts and the amulet inscriptions." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "King of the demons — lord of the udug spirits in the incantation texts — and father of Pazuzu and of Humbaba, the guardian of the Cedar Forest.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hanbi: lord of the evil forces (udug) and father of Pazuzu, of whom little else is known." } ] },
+      { "typeStatus": "deity", "era": "neo-assyrian-neo-babylonian", "eraOrdering": 1,
+        "startEvent": "Named in the first person on Pazuzu's own amulets of the first millennium: 'I am Pazuzu, son of Hanpa, king of the evil spirits of the air.'",
+        "sources": [ { "kind": "archaeological", "reference": "The inscription on the bronze Pazuzu statuette MNB 467 in the Louvre: 'I am Pazuzu, son of Hanpa, king of the evil spirits of the air who emerges violently from the mountains in rage, it is I.'" } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Ḫanbi", "script": "Akkadian (transliterated)", "rom": "Hanbi" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hanbi as king of the demons of the underworld and lord of the udug spirits." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "mesopotamian_pazuzu",
+        "sources": [ { "kind": "archaeological", "reference": "The Pazuzu statuette inscription naming the demon as 'son of Hanpa'." } ],
+        "notes": "The paternity is on the object itself, in Pazuzu's own voice — which is unusually direct evidence for a genealogy in this material." },
+      { "kind": "father-of", "personId": "mesopotamian_humbaba",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pazuzu as brother of Humbaba and son of Hanbi." } ],
+        "notes": "Father of Humbaba, on the first-millennium demonology that makes the Cedar Forest guardian Pazuzu's brother." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hanbi, also written Hanpa, is the Mesopotamian king of the demons and lord of the udug spirits, known almost entirely as the father of Pazuzu and Humbaba and named on Pazuzu's amulet inscriptions.",
+      "citations": [ { "kind": "archaeological", "reference": "The bronze Pazuzu statuette MNB 467, Louvre, whose inscription names Hanpa as Pazuzu's father." },
+                     { "kind": "secondary", "reference": "Reference treatment of Hanbi and of the incantation texts that call him a king of demons." } ], "weight": "medium" } ],
+    "notes": "Almost nothing is known about Hanbi except who his sons are, and this record does not pretend otherwise. He is the lord of the udug, the king of the demons, and the reason he is here at all is the inscription on the Louvre's Pazuzu statuette, where the demon introduces himself as 'son of Hanpa'. That single line is what converts two prose sentences in this pass — Pazuzu's parentage and Humbaba's — into actual parent links, which is why a figure this thin earns a record: he is the joint in the structure."
+  },
+  {
+    "id": "mesopotamian_urshanabi",
+    "name": { "primary": "Urshanabi", "alt": ["Ur-shanabi", "Sursunabu (Old Babylonian)"],
+      "transliterations": { "Akkadian": "Ur-šanabi", "etymology": "The Old Babylonian version calls him Sursunabu; the later name has been read as containing the numeral 'forty', a number associated with Ea." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "unknown", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0,
+        "startEvent": "Boatman in the service of Utnapishtim, the only one who can cross the Waters of Death, working the crossing with the 'stone things' that Gilgamesh smashes before he understands what they are.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X: Urshanabi the ferryman, the destruction of the stone things, and the crossing made instead with punting poles that must not touch the water." } ] },
+      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Dismissed from the crossing by Utnapishtim after ferrying Gilgamesh, he returns with him to Uruk, and the epic's last speech — the praise of the city's walls — is addressed to him.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet XI: Urshanabi is barred from the shore, goes back with Gilgamesh, and hears him praise the walls of Uruk." } ] } ],
+    "domains": [
+      { "sphereId": "waters", "contextTag": "lifelong", "term": { "value": "mê mūti", "script": "Akkadian (transliterated)", "rom": "mê mūti (waters of death)" },
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X, on the crossing of the Waters of Death." } ] } ],
+    "faculties": [
+      { "id": "mesopotamian_cross_the_waters_of_death",
+        "name": "to cross the Waters of Death without touching them",
+        "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none",
+        "notes": "The crossing is possible only with the stone things, or, once Gilgamesh has destroyed them, with three hundred punting poles used once each and thrown away, because a hand that touches the water is lost.",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablet X: the punting poles cut to replace the stone things, each used once." } ] } ],
+    "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_utnapishtim",
+        "sources": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets X-XI: Urshanabi is Utnapishtim's boatman, and Utnapishtim dismisses him from the crossing for having brought Gilgamesh over." } ],
+        "notes": "Utnapishtim's boatman, and then not: having made the crossing for a man who should not have made it, he is barred from the shore and sent back to the world with him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Urshanabi is the boatman in the service of Utnapishtim who ferries Gilgamesh across the Waters of Death, whose stone things Gilgamesh destroys, and who is dismissed from the crossing and returns with Gilgamesh to Uruk.",
+      "citations": [ { "kind": "primary", "reference": "Epic of Gilgamesh, Tablets X-XI." },
+                     { "kind": "secondary", "reference": "Reference treatment of Urshanabi as the boatman in the service of the flood hero, responsible for bringing Gilgamesh to Utnapishtim." } ], "weight": "high" } ],
+    "notes": "Urshanabi is the man who loses his job for doing a favour. He works the only crossing of the Waters of Death, using equipment the text calls the stone things, and Gilgamesh — arriving in the usual manner — destroys them before asking what they are. The crossing is then made with three hundred poles, each used once and thrown away, because touching that water is fatal. Utnapishtim, seeing the boat come in without its tackle, works out what has happened and bars Urshanabi from the shore for good. So he goes back to Uruk with Gilgamesh, and the very last speech of the epic is Gilgamesh telling him to look at the walls, examine the brickwork, see what the city is — the poem's answer to mortality delivered to a ferryman who has just lost the sea. The text does not settle whether he is a god, and this record does not either."
+  },
+  {
+    "id": "mesopotamian_balih",
+    "name": { "primary": "Balih", "alt": ["Balih of Kish", "Palakinatim"],
+      "transliterations": { "Akkadian": "Balīh", "etymology": "Uncertain; some copies of the king list give the name in the form Palakinatim." } },
+    "type": "mortal", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["mesopotamian_etana"], "parentRoles": ["father"],
+    "temporal": { "era": "early-dynastic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "early-dynastic", "eraOrdering": 0,
+      "startEvent": "Fourteenth king of the first dynasty of Kish in the Sumerian King List, son of Etana, credited with a reign of four hundred years; the son whose birth is the object of his father's flight on the eagle.",
+      "sources": [ { "kind": "primary", "reference": "Sumerian King List: Balih son of Etana, fourteenth king of the first dynasty of Kish, 400 years." },
+                   { "kind": "secondary", "reference": "Reference treatment of Balih: son and successor of Etana, not attested in Early Dynastic documents and so not counted as historical." } ] } ],
+    "domains": [
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Sumerian King List, on Balih's kingship at Kish." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Kish", "kind": "king-list", "period": "early-dynastic, recorded in the Ur III and Old Babylonian king lists",
+        "attestation": "his entry in the Sumerian King List", "source": "Sumerian King List.",
+        "note": "Like his father he is given an impossible reign and is absent from the contemporary record; the early Kish kings are a literary dynasty rather than a documented one." } ],
+    "sources": [ { "claim": "Balih is the son and successor of Etana in the Sumerian King List, fourteenth king of the first dynasty of Kish, whose birth is the object of the Etana legend.",
+      "citations": [ { "kind": "primary", "reference": "Sumerian King List." },
+                     { "kind": "secondary", "reference": "Reference treatment of Balih and of the historicity of the early Kish kings." } ], "weight": "medium" } ],
+    "notes": "Balih exists because his father wanted him. The Etana legend is about a childless king who feeds a starving eagle and is carried toward heaven to find the plant of birth; the Sumerian King List, keeping its own accounts, records that Etana was succeeded by his son Balih, who reigned four hundred years. Nothing outside the lists attests him and no one treats him as historical. He is in this registry because a legend about obtaining a son is incomplete without the son, and because his entry is what gives Etana a kin link at all."
+  },
+  {
+    "id": "mesopotamian_nanaya",
+    "name": { "primary": "Nanaya", "alt": ["Nanāy", "Nanaja", "Nanai", "Nanâ"],
+      "transliterations": { "Akkadian": "Nanaya", "etymology": "No agreed derivation; the name is rendered in Greek as Nanaia and Nana, the form under which her cult travelled east." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "ur-iii" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "ur-iii", "eraOrdering": 0,
+      "startEvent": "Goddess of love, closely associated with Inanna and attested continuously from the Third Dynasty of Ur to the fall of Babylon and beyond, with cult centres at Uruk, Larsa and Borsippa and her abode in the Eanna.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanaya: a Mesopotamian goddess of love closely associated with Inanna, well attested from the Ur III period to the fall of Babylon and after, with major cult centres at Uruk, Larsa and Borsippa." } ] } ],
+    "domains": [
+      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "Nanaya", "script": "Akkadian (transliterated)", "rom": "Nanaya" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanaya, whose primary role is that of a goddess of love." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "counterpart-of", "personId": "sogdian_nana",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanaya and of the Sogdian Nana, the pre-eminent goddess of Sogdiana, descended from the Sumero-Akkadian Nanaya." } ],
+        "notes": "The Sogdian Nana of Panjikent and Bukhara descends from her, and this registry already carried the eastern end of that line without the Mesopotamian original. The two are recorded separately because the cults are two thousand years and three thousand kilometres apart and the Sogdian goddess has her own iconography, consort and city; the link states the descent." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Uruk, Larsa and Borsippa", "kind": "temple", "period": "ur-iii to achaemenid-hellenistic",
+        "attestation": "her cult centres and her place in the Eanna", "source": "Reference treatment of the cult of Nanaya.",
+        "note": "One of the most widely worshipped goddesses in Mesopotamian history, and one whose cult outlived the language it started in: she is still being invoked in Aramaic and Greek long after Sumerian was a dead scribal subject." } ],
+    "sources": [ { "claim": "Nanaya is a Mesopotamian goddess of love closely associated with Inanna, worshipped continuously from the Ur III period into the Hellenistic era at Uruk, Larsa and Borsippa, and the ancestor of the Sogdian and Bactrian Nana.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Nanaya: her love-goddess character, her association with and possible origin as a hypostasis of Inanna, her cult centres, and her Greek renderings Nanaia and Nana." } ], "weight": "medium" } ],
+    "notes": "Nanaya was one of the most worshipped goddesses in Mesopotamia for two thousand years and was in this registry only as an alias on a Sogdian record — the eastern descendant without the original. Whether she began as a minor Akkadian goddess or as an aspect of Inanna that hardened into a separate deity is not settled; the genealogies are inconsistent about her too, giving her Urash or Anu for a father and sometimes Inanna for a mother, which is what one would expect of a goddess who may have started as somebody else's hypostasis. This record takes no position on the origin and leaves her parentage empty rather than choosing between the lists.",
+    "variants": [
+      { "id": "mesopotamian_nanaya_origin",
+        "claim": "Whether Nanaya began as an independent goddess or as a hypostasis of Inanna is unresolved.",
+        "description": "It has been proposed that she originated as a minor Akkadian goddess and, alternatively, that she began as a hypostasis of Sumerian Inanna that separated into a deity in her own right; the reference literature calls the evidence inconclusive. Her recorded parentage varies with the source — Urash, Anu, sporadically Inanna as mother, and Sin under syncretism with Ishtar — which the record leaves unresolved rather than picking one.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Nanaya, stating that the proposals of Akkadian origin and of origin as a hypostasis of Inanna are both inconclusive, and listing the variant parentages." } ] } ]
+  },
+  {
+    "id": "mesopotamian_shara",
+    "name": { "primary": "Shara", "alt": ["Šara", "dŠara2"],
+      "transliterations": { "Sumerian": "dŠara2", "etymology": "No agreed derivation. His symbol is a barbed arrow, and possibly a lion." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["mesopotamian_inanna"], "parentRoles": ["mother"],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "Tutelary deity of Umma, responsible for agriculture, animal husbandry and irrigation and also characterised as a divine warrior; at Umma he is the son of Inanna of Zabalam. In Inanna's Descent he is one of the gods found in mourning for her, and is spared.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shara: the Mesopotamian god of Umma, tutelary deity responsible for agriculture, animal husbandry and irrigation and also a divine warrior, regarded at Umma as the son of Inanna of Zabalam, and one of the servants mourning Inanna in her Descent." } ] } ],
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "dŠara2", "script": "Sumerian (transliterated)", "rom": "Shara" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shara's responsibility for agriculture, animal husbandry and irrigation at Umma." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shara as a divine warrior, with the barbed arrow as his symbol." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_ninura",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Ninura, a goddess of the same area, as Shara's wife in the third millennium BCE." } ],
+        "notes": "His wife in the third millennium; after the Old Babylonian period her cult fades and he is paired with Usaḫara or Kumulmul instead." },
+      { "kind": "child-of", "personId": "mesopotamian_inanna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shara: at Umma he was regarded as the son of Inanna of Zabalam by an unknown father." } ],
+        "notes": "Son of Inanna in the Umma tradition; the father is not named. In her Descent she finds him in mourning dress, sitting in the dust, and passes him over when choosing who will take her place." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Umma", "kind": "temple", "period": "early-dynastic to ur-iii",
+        "attestation": "his position as tutelary deity of Umma and the Umma temple hymn", "source": "Reference treatment of Shara and of the temple hymn for his house at Umma.",
+        "note": "Umma is the state that fought Lagash over the border for generations — the quarrel that put Ningirsu and Shara on opposite sides of the earliest documented war between states." } ],
+    "sources": [ { "claim": "Shara is the tutelary god of Umma, a god of agriculture, animal husbandry and irrigation who is also a divine warrior, regarded at Umma as the son of Inanna of Zabalam, and one of the gods found mourning in Inanna's Descent.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Shara: his city, his spheres, his parentage at Umma, his wife Ninura, and his appearance in Inanna's Descent." } ], "weight": "medium" } ],
+    "notes": "Shara is the god of the other side. The Lagash-Umma border war is the earliest well-documented war between states and it was fought as a lawsuit between gods; this registry carried Ningirsu of Lagash — added earlier in this same pass — and not Shara of Umma. He looks after irrigation, herds and fields, and carries a barbed arrow, which is the usual combination for a city god who has to feed his people and defend them. His mother at Umma is Inanna of Zabalam. His wife in the third millennium is Ninura, whose cult faded afterwards; she is added in this same pass, so the marriage is a link rather than a sentence."
+  },
+  {
+    "id": "mesopotamian_isimud",
+    "name": { "primary": "Isimud", "alt": ["Usmu", "Usmû", "dIsimud"],
+      "transliterations": { "Sumerian": "dIsimud", "Akkadian": "Usmû", "etymology": "The Akkadian Usmu is the same god under the later name; both are written with the divine determinative and belong to the two-faced messenger of Enki." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "The two-faced sukkal of Enki — vizier, messenger and doorkeeper of the Apsu — who carries his master's words in the myths of Enki and, in the cylinder seals, stands behind him with a face looking each way.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Isimud, also known as Usmu: the two-faced god who is the sukkal, or vizier, of Enki, and the messenger who delivers his words." } ] } ],
+    "domains": [
+      { "sphereId": "messengers", "contextTag": "lifelong", "term": { "value": "sukkal", "script": "Sumerian (transliterated)", "rom": "sukkal" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Isimud as Enki's sukkal and messenger." } ] } ],
+    "faculties": [], 
+    "materialCulture": [
+      { "id": "mesopotamian_isimud_seal_figure",
+        "name": "the two-faced attendant of the Akkadian cylinder seals",
+        "kind": "seal-iconography",
+        "role": "On Akkadian seals the god with two faces looking in opposite directions stands behind Enki as the water flows from his shoulders; the double face is his identifying attribute and is how he is recognised in the absence of an inscription.",
+        "sources": [ { "kind": "archaeological", "reference": "Akkadian cylinder seals showing the two-faced attendant behind Enki, identified as Isimud/Usmu in museum and reference treatments." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "subordinate-to", "personId": "mesopotamian_enki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Isimud as the sukkal of Enki, carrying his messages to the other gods." } ],
+        "notes": "Enki's vizier. In 'Inanna and Enki' he is the one sent after her to take back the me his master gave away while drunk, and he has to make the request seven times and be refused seven times, which is the closest thing this pantheon has to a running joke." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "Uruk and Babylon", "kind": "ritual", "period": "old-babylonian to neo-Babylonian",
+        "attestation": "ritual texts naming him, in the absence of any known temple", "source": "Reference treatment of Isimud's worship.",
+        "note": "No temple of his own is known; he is worshipped in the ritual texts of other gods' establishments, which is the normal position of a sukkal." } ],
+    "sources": [ { "claim": "Isimud, the Akkadian Usmu, is the two-faced sukkal and messenger of Enki, shown on Akkadian seals with a face looking in each direction, and worshipped at Uruk and Babylon without a temple of his own.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Isimud/Usmu: the two-faced god, sukkal of Enki, his messenger role and his appearance in the myth of Enki and Inanna." } ], "weight": "medium" } ],
+    "notes": "Isimud has two faces because he is a messenger: one looking where he came from, one where he is going. He is Enki's sukkal, the vizier who does the talking, and he shows up in the myths whenever Enki has to deal with somebody. In 'Inanna and Enki' his master hands over the me — the divine offices that make civilisation work — at a drinking party, sobers up, and sends Isimud after the boat to get them back; Isimud catches up seven times and is refused seven times, in the same words each time. He is on the Akkadian seals too, standing behind the god with the streams of water, recognisable from the double face alone."
+  },
+  {
+    "id": "mesopotamian_ninura",
+    "name": { "primary": "Ninura", "alt": ["Nin-ura", "dNin-ura"],
+      "transliterations": { "Sumerian": "dNin-ura", "etymology": "No agreed derivation; the name is formed on nin, 'lady'." } },
+    "type": "deity", "origin": "canon", "tradition": "Mesopotamian", "primaryTradition": "Mesopotamian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "early-dynastic-sumer" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "early-dynastic-sumer", "eraOrdering": 0,
+      "startEvent": "Goddess of the Umma region and, in the third millennium, the wife of Shara; her cult faded into obscurity in the Old Babylonian period, after which Shara is paired with other goddesses instead.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shara and of Ninura: in the third millennium BCE Shara's wife was Ninura, associated with the same area, whose cult later faded into obscurity, after which Shara was associated with Usaḫara or Kumulmul." } ] } ],
+    "domains": [
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "dNin-ura", "script": "Sumerian (transliterated)", "rom": "Ninura" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ninura as a goddess of the Umma area." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mesopotamian_shara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment naming Ninura as the wife of Shara in the third millennium BCE." } ],
+        "notes": "Wife of Shara at Umma in the third millennium. The pairing does not survive the Old Babylonian period, and the record says so rather than presenting it as the standing arrangement." } ],
+    "cultRecords": [
+      { "tradition": "Mesopotamian", "placeName": "the Umma region", "kind": "temple", "period": "early-dynastic to ur-iii",
+        "attestation": "her local cult beside Shara's", "source": "Reference treatment of Ninura.",
+        "note": "A goddess whose documented life is one region and one millennium; the Old Babylonian reorganisation of the pantheon left her out." } ],
+    "sources": [ { "claim": "Ninura is a goddess of the Umma area, wife of Shara in the third millennium BCE, whose cult fell into obscurity in the Old Babylonian period.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Shara and Ninura, on the marriage and on the later disappearance of her cult." } ], "weight": "medium" } ],
+    "notes": "Ninura is here because the alternative was to leave Shara's marriage as a sentence of prose. She is a local goddess of the Umma region, his wife while Umma mattered, and then she stops being attested: by the Old Babylonian period her cult has faded and Shara is paired with Usahara or Kumulmul instead. That pattern — a city goddess who exists for as long as her city's archives do — is worth having a record for, because it is what most of this pantheon actually looked like before the theologians tidied it into a family tree."
+  }
+]
+```
