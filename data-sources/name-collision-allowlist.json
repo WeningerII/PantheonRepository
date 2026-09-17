@@ -1,0 +1,12 @@
+{
+ "_README": "Accepted exceptions for test/name-collisions.test.cjs. Every entry needs a reason of at least 20 characters saying WHY it is accepted. The test fails on any collision NOT listed here, and equally on any entry here that no longer matches anything — a stale allowlist is how a ratchet quietly stops ratcheting. Added by lane 33; the defects it guards were found by hand in lanes 29-32.",
+ "primaryCollisions": {
+  "poia::blackfoot_poia|poia": "NOT A HOMONYM: the same Blackfoot figure recorded twice, with identical parentIds (ipisowaahs, soatsaki), identical era (star-stories) and overlapping aliases. Lane 32 deliberately did NOT disambiguate it, because renaming would entrench a duplicate behind a distinct-looking name. It needs a MERGE, which is an owner decision: blackfoot_poia holds the relations and poia holds the fuller notes and sources, so neither is simply discardable."
+ },
+ "aliasShadows": {},
+ "conflationAliases": {
+  "dan_bugle::Bagle": "UNRESOLVED IN THE SOURCE ITSELF, not in the corpus. The record's own notes say the war mask bugle 'is sometimes conflated with, or distinguished from, the lively entertaining dance mask bagle' — the scholarship does not settle whether bagle is a separate mask-spirit, so the corpus should not settle it either.",
+  "kalenjin_chemosit::Kerit": "BENIGN. The notes say Chemosit is 'conflated with the cryptid name Kerit' — Kerit is a cryptozoological label for the same folklore creature, not a separate figure of the tradition, so carrying it as an alias is correct.",
+  "mangaian_tangiia::Tangiia": "HEURISTIC FALSE POSITIVE. The conflation tell names the RAROTONGAN canoe-chief Tangiia, who is not in the corpus at all; the flagged alias is this record's own name repeated in its alt list. Nothing is hidden by it."
+ }
+}
