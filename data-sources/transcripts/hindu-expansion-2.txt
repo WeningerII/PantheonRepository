@@ -1,0 +1,967 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hindu (second pass)
+Eras (registered, exact): cosmogonic | primordial | mythic | satya-yuga |
+  treta-yuga | heroic-age | dvapara-yuga | kali-yuga | vedic | late-vedic |
+  epic-period | classical | medieval | early-modern | modern
+Author pass: Hindu held 177 records after lane 16. This adds 31.
+
+================================================================================
+WHAT LANE 16 LEFT, AND WHY THIS IS THE NEXT PASS
+================================================================================
+
+Lane 16 took the conflicts — the Kauravas, the four adversaries the gods are
+named after, the missing half of the Ramayana, and the lunar dynasty that makes
+the two great houses kin. Its audit named what should come next, and this is it.
+
+**THE NAVAGRAHA. The corpus held none of the nine as grahas.**
+
+The nine planetary deities are the most widely worshipped set of figures in
+living Hindu practice — a Navagraha shrine stands in most substantial temples in
+southern India, and the whole apparatus of Vedic astrology is addressed to them.
+The corpus held Surya and Soma for other reasons, and lane 16 added Shukra for
+his part in two stories. It held **Mangala, Budha, Brihaspati, Shani, Rahu and
+Ketu** not at all.
+
+Rahu and Ketu are the sharpest case. They are one being cut in half: the asura
+Svarbhanu drank the nectar in disguise, Vishnu took his head off before it could
+pass his throat, and because the nectar had already reached him both halves are
+immortal — the head is Rahu and the body is Ketu, and the eclipse is the head
+swallowing the sun. The corpus held the sun, the moon and the discus and neither
+half of the thing that eats them.
+
+**THE CHURNING OF THE OCEAN.** Rahu's story is an episode of it, and the corpus
+held no part of the churning either: not **Kurma**, the tortoise avatar who holds
+the mountain up; not **Vasuki**, the serpent used as the rope; not
+**Dhanvantari**, who comes out of the sea holding the pot; not **Mohini**, the
+form Vishnu takes to get the nectar back. Lane 16 blocked Kurma for want of a
+treatment; this pass has one.
+
+**THE HOUSEHOLDS OF THE SKY.** The corpus held Surya and did not hold either of
+his wives — **Sanjna**, who could not bear his heat, or **Chhaya**, the shadow
+she left in her place, who is Shani's mother. It held Soma and not **Tara**,
+whose abduction by him starts a war among the gods and whose son is Budha. Lane
+16 named this as its own pattern: the corpus holds the god and not the household.
+
+**THE DAKSHA CYCLE.** The corpus holds Shiva and Parvati and held nothing of what
+connects them: **Daksha**, who holds a sacrifice and does not invite his
+daughter's husband; **Sati**, who burns herself in the fire of it; and
+**Virabhadra**, whom Shiva tears out of his own hair to go and behead him.
+
+**THE SOLAR DYNASTY.** The corpus held the whole lunar line after lane 16 and
+nothing of the solar one — so it held Rama and could not say that he is an
+Ikshvaku. **Ikshvaku** himself, **Sagara**, **Bhagiratha** who brings the Ganges
+down, **Harishchandra**, and **Kapila**, whose glance burns Sagara's sons to ash.
+
+**SEVEN MORE VEDIC GODS**, in a corpus that holds Indra, Agni, Varuna, Vayu,
+Surya and Ushas: the Adityas **Mitra**, **Aryaman**, **Bhaga** and **Amsha**,
+plus **Pushan**, **Tvashtr**, **Dyaus Pita** and **Parjanya**.
+
+And **two more of the Kurukshetra principals** whose treatments this pass could
+retrieve: **Shalya**, who drives Karna's chariot while praising his enemy, and
+**Sanjaya**, whose narration to the blind king IS the Bhagavad Gita.
+
+================================================================================
+WHAT THIS PASS STILL DOES NOT TAKE
+================================================================================
+
+Virata, Satyaki, Yuyutsu and Ekalavya stay BLOCKED: the searches that returned
+Shalya and Sanjaya returned these four as names without treatments, and lane 16
+already established that a record built from a list entry is a name with nothing
+behind it. Parashurama and Kalki likewise. The Devi Mahatmya's other asuras
+likewise. They are census rows here, as they were there.
+
+================================================================================
+ONE THING THIS PASS DELIBERATELY DOES NOT RESOLVE
+================================================================================
+
+Lane 16 escalated an era-vocabulary inconsistency in this tradition: the corpus
+files Dhritarashtra at `epic-period` and his nephews the Pandavas at
+`dvapara-yuga`, which is earlier. This pass meets it again from the other end.
+`hindu_manu` is filed at `vedic`, and **Ikshvaku is his son** — so the founder of
+the solar dynasty must be filed at `vedic` or later, while his descendant Rama
+sits at `heroic-age`, which is earlier. The same inversion, in the same
+vocabulary, reached by a different route.
+
+This pass files Ikshvaku and his line at `vedic` because that is what keeps the
+parent-before-child invariant the suite enforces, and it does not mutate Manu or
+Rama to fix the underlying order. **Two lanes have now hit this from opposite
+directions**, which raises it from an oddity to a thing the owner should decide.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE NAVAGRAHA COMPLETED
+================================================================================
+
+```json
+[
+  {
+    "id": "hindu_brihaspati",
+    "name": { "primary": "Brihaspati", "alt": ["Brhaspati", "Guru", "Devaguru", "Jiva"],
+      "transliterations": { "Sanskrit": "बृहस्पति", "etymology": "'Lord of the sacred utterance', from brih-, 'prayer, sacred word', and pati, 'lord'. He is Guru, the teacher, and the graha he governs is Jupiter." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The guru of the devas, and the arch-nemesis of Shukracharya, the guru of the danavas. He governs the graha Jupiter, and is one of the Navagraha — Surya, Chandra, Mangala, Budha, Brihaspati, Shukra, Shani, Rahu and Ketu.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in later Hindu mythology Brihaspati is the guru of the Devas and the arch-nemesis of Shukracharya, the guru of the Danavas; the Navagrahas are Surya, Chandra, Mangal, Budha, Brihaspati, Shukra, Shani, Rahu and Ketu." } ] },
+      { "typeStatus": "deity", "era": "vedic", "eraOrdering": 1,
+        "startEvent": "His wife Tara is taken by Soma. She is returned to him already pregnant and gives birth to Budha; a dispute over the child's paternity follows, and Tara names Soma as the father.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tara, already pregnant, is ultimately returned to her husband and later gives birth to Budha; after another conflict arises over the paternity of Budha, Tara reveals the child's father being Soma." } ] } ],
+    "domains": [
+      { "sphereId": "preceptorship-of-the-devas", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Brihaspati as the guru of the Devas." } ] },
+      { "sphereId": "jupiter", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Brihaspati among the nine Navagrahas, governing Jupiter." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "arch-nemesis-of", "personId": "hindu_shukra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Brihaspati is the guru of the Devas and the arch-nemesis of Shukracharya, the guru of the Danavas." } ],
+        "notes": "THE RELATION IS SYMMETRIC IN FACT and the kind is not, and the reason is stated rather than hidden: Shukra was added by lane 16 and is now a pre-existing record, so a symmetric 'rival' here would be a one-way edge the validator reports as RECIPROCAL-NEEDED, and reciprocating it would mean editing a transcript from a batch already merged and audited as mutating nothing. 'arch-nemesis-of' is the treatment's own phrase, carries the full force of the claim, and costs the corpus no warning. Whoever next touches the lane-16 transcript can add the matching edge in one line." },
+      { "kind": "spouse", "personId": "hindu_tara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tara being returned to her husband Brihaspati." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Brihaspati is the guru of the devas, the arch-nemesis of Shukracharya, the graha of Jupiter, and the husband of Tara whose abduction by Soma produces Budha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Brihaspati, of the Navagraha and of Tara." } ], "weight": "high" } ],
+    "notes": "The two gurus are the cleanest opposed pair the tradition has after Indra and Vritra: one teaches the gods, the other teaches their enemies, and each is competent. Lane 16 added Shukra for his part in the Yayati and Bali stories without his opposite number; this supplies it."
+  },
+  {
+    "id": "hindu_tara",
+    "name": { "primary": "Tara", "alt": ["Tara of Brihaspati"],
+      "transliterations": { "Sanskrit": "तारा", "etymology": "'Star'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "Brihaspati's wife, taken by Soma. She is returned to her husband already pregnant and gives birth to Budha, and when a dispute arises over the child's paternity she names Soma as the father.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tara, already pregnant, is ultimately returned to her husband and later gives birth to Budha; after another conflict arises over the paternity of Budha, Tara reveals the child's father being Soma." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "spouse", "personId": "hindu_brihaspati",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tara as Brihaspati's wife." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "taken-by", "personId": "hindu_soma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tara being taken by Soma and returned to her husband already pregnant." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Soma record. The kind is deliberately the neutral one the treatment supports: the sources do not agree on whether she went willingly, and the record does not decide it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tara is Brihaspati's wife, taken by Soma, mother of Budha, who names Soma as the child's father.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tara and of the Tarakamaya war." } ], "weight": "high" } ],
+    "notes": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife."
+  },
+  {
+    "id": "hindu_budha",
+    "name": { "primary": "Budha", "alt": ["Soumya", "Rauhineya"],
+      "transliterations": { "Sanskrit": "बुध", "etymology": "'The awakened, the intelligent' — the same root as Buddha and a different word from budha meaning Wednesday's planet only by derivation. He is Mercury, and the graha of intellect." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_soma", "hindu_tara"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The graha of Mercury and ruler of intellect, born to Tara after her return to Brihaspati; the paternity dispute is settled when Tara names Soma as the father.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tara, already pregnant, is returned to her husband and later gives birth to Budha, and after a conflict arises over the paternity of Budha, Tara reveals the child's father being Soma. Budha is the god of the planet Mercury and ruler of intellect, one of the Navagraha." } ] } ],
+    "domains": [
+      { "sphereId": "intellect", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Budha as god of the planet Mercury and ruler of intellect." } ] },
+      { "sphereId": "mercury", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Budha among the nine Navagrahas." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Budha is the graha of Mercury and ruler of intellect, son of Soma and Tara.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Budha, of Tara and of the Navagraha." } ], "weight": "high" } ],
+    "notes": "He is also the father of Pururavas and so the head of the lunar dynasty that lane 16 recovered from Nahusha downward — which would join this batch to that one at the top. The treatment consulted does not state it, so no edge is drawn, and Pururavas remains a BLOCKED census row. That join is the single cheapest improvement a third Hindu pass could make."
+  },
+  {
+    "id": "hindu_mangala",
+    "name": { "primary": "Mangala", "alt": ["Mangal", "Angaraka", "Kuja", "Bhauma"],
+      "transliterations": { "Sanskrit": "मङ्गल", "etymology": "'Auspicious', which is a euphemism: the graha is the malefic Mars. Angaraka is 'the ember', Kuja and Bhauma both 'born of the earth'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The graha of Mars, one of the Navagraha. His origin is given two incompatible ways: in the Vaishnava account he is the son of Bhumi the earth goddess and of Vishnu, born when Vishnu raised her from the primordial waters as Varaha; in the Shaiva account he is born from Shiva, out of a drop of his blood or sweat.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to Vaishnavism, Mangala is the son of Bhumi, the earth goddess, and Vishnu, born when the latter raised her from the depths of the primordial waters in his Varaha avatar; according to Shaivism, he was born from the god Shiva through a drop of his blood or sweat." } ] } ],
+    "domains": [
+      { "sphereId": "mars", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mangala as the graha of Mars among the Navagraha." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "son-of-in-the-vaishnava-account", "personId": "hindu_prithvi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to Vaishnavism, Mangala is the son of Bhumi, the earth goddess, and Vishnu, born when Vishnu raised her from the primordial waters as Varaha." } ],
+        "notes": "The corpus holds Bhumi under the name Prithvi, which the lane-16 sweep confirmed. The kind names the sectarian account inside itself because the claim is true only within it." },
+      { "kind": "son-of-in-the-shaiva-account", "personId": "hindu_shiva",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: according to Shaivism, Mangala was born from the god Shiva through a drop of his blood or sweat." } ],
+        "notes": "The other account, recorded the same way. NOTHING IS ENTERED IN parentIds, because the two are incompatible and parentIds is where this corpus records descent it is prepared to assert. A figure whose paternity is a sectarian question should not be given a father by a registry." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mangala is the graha of Mars, given in Vaishnava sources as the son of Bhumi and Vishnu-as-Varaha and in Shaiva sources as born from a drop of Shiva's blood or sweat.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mangala and of the Navagraha." } ], "weight": "high" } ],
+    "notes": "This is the first record in the whole programme to carry TWO sectarian parentage accounts side by side, and the kinds say which is which on their face. It is a better outcome than either choosing one or dropping both: a registry that indexes traditions should be able to hold the fact that two schools of the same tradition answer the same question differently."
+  },
+  {
+    "id": "hindu_shani",
+    "name": { "primary": "Shani", "alt": ["Shanaishchara", "Sani", "Saturn"],
+      "transliterations": { "Sanskrit": "शनि", "etymology": "From shanaih, 'slowly' — Shanaishchara is 'the slow-mover', which is what Saturn is against the fixed stars." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_surya", "hindu_chhaya"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The graha of Saturn, and a son of Surya the sun god and his wife Chhaya.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shani is a demi-god and is a son of Surya, the Hindu Sun God, and his wife Chhaya; Shani is one of the Navagraha." } ] } ],
+    "domains": [
+      { "sphereId": "saturn", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shani as the graha of Saturn among the Navagraha." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shani is the graha of Saturn, a son of Surya and Chhaya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shani, of Chhaya and of the Navagraha." } ], "weight": "high" } ],
+    "notes": "TYPE CORRECTED UNDER TEST, and this is the SECOND lane running in which the same thing happened. The treatment says 'Shani is a demi-god' in as many words, and the record was authored that way. npm test rejected it as tier-classification drift: this corpus computes the tier from DESCENT, and both his parents — Surya and a woman made of shadow — are deities in the corpus, so the pipeline computes 'deity'. Lane 16 hit the identical problem from the other direction with Ashwatthama, authored 'demigod' against a computed 'mortal'. The finding is worth stating once: THE SOURCE'S WORD AND THE CORPUS'S COMPUTED TIER ARE DIFFERENT KINDS OF CLAIM. A treatment saying 'demi-god' is describing status; this schema's tier is a function of parentage. Where they disagree the schema wins, because the alternative is a corpus whose type field means two things. He is the most propitiated of the nine in living practice, and the one most people arrange their week around; the corpus held the sun who fathered him and not him."
+  },
+  {
+    "id": "hindu_rahu",
+    "name": { "primary": "Rahu", "alt": ["Svarbhanu (before the beheading)"],
+      "transliterations": { "Sanskrit": "राहु", "etymology": "From a root meaning to seize or abandon — the seizer, which is what an eclipse looked like." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "At the churning of the ocean, the asura Svarbhanu disguises himself among the gods and drinks the nectar of immortality. Vishnu sees through the disguise and severs his head with the Sudarshana discus before the nectar can pass his throat — but it had already reached him, so both halves are immortal.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: a clever demon named Svarbhanu disguised himself and attempted to drink the divine nectar, but Vishnu, seeing through the disguise, severed Svarbhanu's head before the nectar reached his throat; Vishnu used his Sudarshan Chakra to sever the head from the body, and since he had already consumed the nectar both head and body became immortal. The head came to be known as Rahu and the body was called Ketu." } ] },
+      { "typeStatus": "deity", "era": "vedic", "eraOrdering": 1,
+        "startEvent": "The head becomes Rahu, the north lunar node: one of two subtle grahas with no actual mass, marking the points where the paths of the sun and the moon intersect. He is the eternal seeker of material ambition, and the eclipse is him swallowing what took his body.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Rahu and Ketu are subtle grahas with no actual mass, representing the two points in space where the orbital path of the sun and moon intersect; the two became eternal seekers, one of material ambition, Rahu, and one of spiritual detachment, Ketu." } ] } ],
+    "domains": [
+      { "sphereId": "eclipse", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rahu as the north lunar node and cause of eclipses." } ] },
+      { "sphereId": "material-ambition", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Rahu as the eternal seeker of material ambition." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "severed-half-of", "personId": "hindu_ketu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the head of the demon came to be known as Rahu and the body was called Ketu." } ],
+        "notes": "Reciprocated in-batch. The registry has no vocabulary for this relation because nothing else in the corpus is two records that were one body; the kind is invented for it and says exactly what it is." },
+      { "kind": "beheaded-by", "personId": "hindu_vishnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vishnu used his Sudarshan Chakra to sever Svarbhanu's head from his body." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Vishnu record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Rahu is the severed, immortal head of the asura Svarbhanu, who drank the nectar in disguise before Vishnu beheaded him with the discus, and is the north lunar node and cause of eclipses.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rahu and Ketu, of Svarbhanu and of the Samudra Manthan." } ], "weight": "high" } ],
+    "notes": "Svarbhanu is recorded as an alt-name and not as a third record, because he is these two before the cut and neither after it. The corpus held Surya, Soma and the Sudarshana story's principals and did not hold the thing that eats the sun — an absence that is, among other things, the whole of pre-modern Indian eclipse theory."
+  },
+  {
+    "id": "hindu_ketu",
+    "name": { "primary": "Ketu", "alt": ["Svarbhanu (before the beheading)"],
+      "transliterations": { "Sanskrit": "केतु", "etymology": "'Banner, comet, sign' — the tail without the head." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The decapitated body of Svarbhanu, made immortal by the nectar he had already swallowed. He becomes the south lunar node, the second of the two subtle grahas with no mass, and the eternal seeker of spiritual detachment.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the severed head became Rahu and the decapitated body became Ketu, immortalized as celestial nodes; Rahu and Ketu are subtle grahas with no actual mass, and the two became eternal seekers, one of material ambition and one of spiritual detachment." } ] } ],
+    "domains": [
+      { "sphereId": "spiritual-detachment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ketu as the eternal seeker of spiritual detachment." } ] },
+      { "sphereId": "lunar-node", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ketu as the south lunar node." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "severed-half-of", "personId": "hindu_rahu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the head becoming Rahu and the body Ketu." } ], "notes": "Reciprocal of the in-batch edge." },
+      { "kind": "beheaded-by", "personId": "hindu_vishnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vishnu severing Svarbhanu with the Sudarshana discus." } ],
+        "notes": "The same act produced both records, so it is recorded on both." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ketu is the immortal decapitated body of Svarbhanu, the south lunar node and the seeker of spiritual detachment.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Rahu and Ketu and of the Samudra Manthan." } ], "weight": "high" } ],
+    "notes": "That the tradition assigned the two halves OPPOSITE dispositions — the head grasping at the world, the body turned away from it — is the part of the story worth a registry's attention, and it is on both records rather than summarised on one."
+  }
+]
+```
+
+NOTE ON THE ONE SYMMETRIC RELATION THIS PASS COULD NOT RECIPROCATE
+--------------------------------------------------------------------
+Brihaspati and Shukracharya are arch-nemeses — the guru of the gods and the guru
+of their enemies — and that is symmetric in fact. Shukra was added by lane 16,
+one commit ago, and is now a pre-existing record; a symmetric `rival` edge toward
+him would be one-way, which the validator reports as RECIPROCAL-NEEDED, and
+reciprocating it would mean editing a transcript from a batch already merged and
+audited as "zero pre-existing records mutated".
+
+The edge therefore uses `arch-nemesis-of`, which is the treatment's own phrase,
+is non-symmetric, carries the full force of the claim and leaves no warning
+behind. The fact that the underlying relation is mutual is recorded in the edge's
+own notes, on the record, where a reader meets it.
+
+This is worth naming as a general finding rather than a one-off. **The "never
+mutate a pre-existing record" rule has a cost, and this is the shape of it:**
+each lane's additions become the next lane's immovable objects, so genuinely
+mutual relations discovered later can only be recorded one-way. Six lanes have
+paid that cost silently by choosing directional kinds. It is cheap while the
+directional kind is also the truer one — as it was for every edge in lanes 13
+through 16 — and it starts to bite when it is not.
+
+================================================================================
+AUTHORED FIGURES — II. THE CHURNING OF THE OCEAN
+================================================================================
+
+Rahu's beheading is an episode of the Samudra Manthan, and the corpus held no
+part of the churning at all. Four records: the tortoise that holds the mountain
+up, the serpent used as the rope, the physician who comes out of the sea with
+the pot, and the woman Vishnu becomes to get it back.
+
+```json
+[
+  {
+    "id": "hindu_kurma",
+    "name": { "primary": "Kurma", "alt": ["Kurmavatara", "the Tortoise"],
+      "transliterations": { "Sanskrit": "कूर्म", "etymology": "'Tortoise'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "The tortoise avatar. At the churning of the Ocean of Milk, Vishnu takes the form of a giant turtle and supports Mount Mandara on his back, so that it does not sink into the ocean while the devas and asuras turn it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Vishnu, taking the form of a giant turtle named Kurma, supported Mount Mandara on his back, preventing it from sinking into the ocean; the Samudra Manthan is the churning of the Ocean of Milk by devas and asuras using Mount Mandara and the serpent Vasuki." } ] } ],
+    "domains": [
+      { "sphereId": "cosmic-support", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kurma supporting Mount Mandara on his back during the churning." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "avatar-of", "personId": "hindu_vishnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kurma as the form Vishnu takes at the churning, and among the ten avatars from Matsya to Kalki." } ],
+        "notes": "Non-symmetric, and following the treatment the corpus already gives Matsya, Varaha, Narasimha, Rama, Krishna, Balarama and — from lane 16 — Vamana." },
+      { "kind": "bore", "personId": "hindu_vasuki",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the churning: Kurma supports the mountain, the asuras hold Vasuki's head and the devas his tail." } ],
+        "notes": "In-batch. Not a kinship and not an alliance: the tortoise is under the mountain the serpent is wound around, which is the mechanical arrangement the whole episode consists of." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kurma is the tortoise avatar of Vishnu, who supports Mount Mandara on his back during the churning of the ocean.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Kurma, of the Samudra Manthan and of the Dashavatara." } ], "weight": "high" } ],
+    "notes": "Lane 16 BLOCKED this figure explicitly: the Dashavatara searches returned Kurma only as an item in a list, and the lane refused to build a record out of a list entry. This pass retrieved a treatment that gives him an act, so he is ingested. That is what a BLOCKED row is for, and it is the first time in this programme that a blocked row from one lane has been cleared by the next."
+  },
+  {
+    "id": "hindu_vasuki",
+    "name": { "primary": "Vasuki", "alt": ["Vasuki Naga"],
+      "transliterations": { "Sanskrit": "वासुकि", "etymology": "A naga name of disputed derivation; he is one of the three great naga kings with Shesha and Takshaka." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "The naga — half-human, half-cobra — procured as the churning rope for the Samudra Manthan. The asuras held his head and the devas his tail, and the ocean was churned by pulling him back and forth around Mount Mandara.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the asuras held the head of the naga, half-human and half-cobra, Vasuki, who was procured as a churning rope, and the devas held Vasuki's tail; the Samudra Manthan is the churning of the Ocean of Milk using Mount Mandara and the serpent Vasuki." } ] } ],
+    "domains": [
+      { "sphereId": "serpent-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Vasuki as the naga used as the churning rope." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "borne-by", "personId": "hindu_kurma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the arrangement of the churning." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Vasuki is the naga used as the rope of the churning, held at the head by the asuras and at the tail by the devas.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Vasuki and of the Samudra Manthan." } ], "weight": "high" } ],
+    "notes": "The corpus already holds `hindu_shesha`, the other great naga, and did not hold this one — so it held the serpent the world rests on and not the serpent the world was made with. He is also the reason the halahala poison is released at all, which is a story about being used as a tool by both sides at once; the treatment consulted gives the arrangement and not his part in the poison, so the record gives the arrangement."
+  },
+  {
+    "id": "hindu_dhanvantari",
+    "name": { "primary": "Dhanvantari", "alt": ["Dhanwantari"],
+      "transliterations": { "Sanskrit": "धन्वन्तरि", "etymology": "Read as 'moving in a curve' or as a compound with dhanvan, 'bow, desert'; the derivation is not settled." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "The heavenly physician, who emerges from the Ocean of Milk at the end of the churning carrying the pot that holds the amrita.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: eventually Dhanvantari, the Heavenly Physician, emerged from the Ocean of Milk with a pot containing the amrita." } ] } ],
+    "domains": [
+      { "sphereId": "medicine", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dhanvantari as the Heavenly Physician." } ] } ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [], "relations": [
+      { "kind": "emerged-from-the-churning-with", "personId": "hindu_kurma",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dhanvantari emerging from the Ocean of Milk during the churning that Kurma supports." } ],
+        "notes": "In-batch and deliberately weak. It records that the two belong to one episode and nothing more; there is no interaction between them in the sources." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Dhanvantari is the heavenly physician who rises from the churned ocean holding the pot of amrita.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Dhanvantari and of the Samudra Manthan." } ], "weight": "high" } ],
+    "notes": "He is the patron deity of Ayurveda and the figure a great deal of Indian medical practice is addressed to, which makes him one of the most consequential absences in the corpus's Hindu holdings after the Navagraha. The pot is not recorded in materialCulture, because the treatment gives it as the thing he emerges holding rather than as an attribute, and an items pass would do it better."
+  },
+  {
+    "id": "hindu_mohini",
+    "name": { "primary": "Mohini", "alt": ["Mohini-murti"],
+      "transliterations": { "Sanskrit": "मोहिनी", "etymology": "'The enchantress, the deluder', from moha, 'delusion, infatuation'. The name is what she does." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "satya-yuga" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "satya-yuga", "eraOrdering": 0,
+      "startEvent": "When the asuras seize the amrita and begin to celebrate, the gods appeal to Vishnu, who takes the form of Mohini. As a beautiful and enchanting woman she distracts the asuras, takes the nectar back, and distributes it among the Adityas, who drink it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the asuras eventually got hold of the nectar and started celebrating, but the gods appealed to Vishnu, who then took the form of Mohini; as the beautiful and enchanting damsel, Mohini distracted the asuras, took the amrita, and distributed it amongst the Adityas, who drank it." } ] } ],
+    "domains": [
+      { "sphereId": "enchantment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mohini distracting the asuras and taking back the amrita." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "form-taken-by", "personId": "hindu_vishnu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the gods appealed to Vishnu, who then took the form of Mohini." } ],
+        "notes": "Non-symmetric, and the kind is 'form-taken-by' rather than 'avatar-of' because the sources treat Mohini as a form assumed for one purpose rather than as one of the ten descents. The corpus files the avatars as separate records and this follows that, while marking the difference." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mohini is the female form Vishnu takes at the churning, who distracts the asuras, recovers the amrita and gives it to the Adityas.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mohini and of the Samudra Manthan." } ], "weight": "high" } ],
+    "notes": "Sex is recorded as female without qualification, because that is what the sources say and what the figure is for; the record does not editorialise about a male god taking a female form, and it does not merge her into the Vishnu record, because a registry that indexes figures should be able to hold a figure who is a form. She is the direct cause of Rahu's beheading — the disguise she is countering is Svarbhanu's — and the two records in this batch therefore describe the same minute from two sides."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE HOUSEHOLD OF THE SUN, AND THE DAKSHA CYCLE
+================================================================================
+
+Lane 16 named the pattern and this pass finishes two instances of it. The corpus
+held Surya and neither of his wives; and it held Shiva and Parvati with nothing
+of the cycle that connects them — the sacrifice Sati burns herself at, the
+father who holds it, and the thing Shiva makes out of his own hair to answer it.
+
+```json
+[
+  {
+    "id": "hindu_sanjna",
+    "name": { "primary": "Sanjna", "alt": ["Samjna", "Saranyu", "Sandhya"],
+      "transliterations": { "Sanskrit": "संज्ञा", "etymology": "'Consciousness, sign, name'. The Vedic form is Saranyu, the daughter of Tvashtr." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": ["hindu_tvashtr"], "parentRoles": ["father"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "Surya's wife, who could not bear his heat and left a shadow of herself, Chhaya, in her place before withdrawing.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chhaya as the shadow of Sanjna, Surya's wife, and as Surya's wife and Shani's mother in her stead." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "hindu_surya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sanjna as Surya's wife, whose shadow Chhaya takes her place." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Surya record, which the corpus holds with no wife at all." },
+      { "kind": "cast", "personId": "hindu_chhaya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chhaya as the shadow Sanjna leaves in her place." } ],
+        "notes": "In-batch and reciprocated by Chhaya's 'cast-by'. Not a kinship: one of these figures is the shadow of the other, and the registry has no other case of it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sanjna is Surya's wife, who could not endure his heat and left her shadow Chhaya in her place.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chhaya and of Surya's household." } ], "weight": "medium" } ],
+    "notes": "Her parentIds name Tvashtr, who is added in block V of this batch, on the Vedic identification of Sanjna with Saranyu the daughter of Tvashtr — which the alt-name list carries and which the record should be read as asserting only that far. Weight is medium because the treatment consulted describes her through Chhaya rather than in her own right, and because the Sanjna–Saranyu identification, while standard, is an identification."
+  },
+  {
+    "id": "hindu_chhaya",
+    "name": { "primary": "Chhaya", "alt": ["Chaya"],
+      "transliterations": { "Sanskrit": "छाया", "etymology": "'Shadow, shade, reflection'. The name is what she is." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The shadow Sanjna leaves in her place as Surya's wife, and the mother of Shani.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shani is a son of Surya, the Hindu Sun God, and his wife Chhaya; Chhaya is the shadow of Sanjna, who takes her place as Surya's wife." } ] } ],
+    "domains": [
+      { "sphereId": "shadow", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chhaya as the shadow standing in Sanjna's place." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "hindu_surya",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shani is a son of Surya and his wife Chhaya." } ],
+        "notes": "Non-symmetric, as with Sanjna's edge." },
+      { "kind": "cast-by", "personId": "hindu_sanjna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Chhaya as the shadow of Sanjna." } ], "notes": "Reciprocal of the in-batch edge." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Chhaya is the shadow of Sanjna who takes her place as Surya's wife, and the mother of Shani.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Chhaya and of Shani." } ], "weight": "high" } ],
+    "notes": "A figure who is literally a cast shadow with a household, children and a will of her own is the strangest thing in this batch, and the tradition treats her as a person throughout. The registry holds her as one, which is the only treatment consistent with what the sources do. Shani's parentIds name her and not Sanjna, because the treatment names her."
+  },
+  {
+    "id": "hindu_daksha",
+    "name": { "primary": "Daksha", "alt": ["Daksha Prajapati"],
+      "transliterations": { "Sanskrit": "दक्ष", "etymology": "'Able, skilful, competent'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "restored to life after death", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0,
+      "startEvent": "A Prajapati and a mind-born son of Brahma. He holds a great ritual sacrifice and invites all the deities and all of his own children and grandchildren — deliberately not inviting his daughter Sati and her husband Shiva.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daksha invited all the deities, as well as all of his children and grandchildren, in order to perform a ritual sacrifice, deliberately not inviting Sati and Shiva; Daksha is Brahma's mind-born son." } ] },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1,
+        "startEvent": "Sati comes anyway and is humiliated, Daksha disrespecting Shiva openly in front of her. Shiva's answer is Virabhadra, who destroys the sacrificial altar, defeats the gods defending Daksha, and beheads him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: upon arrival Sati faced humiliation as Daksha openly disrespected Shiva; enraged, Shiva tore a lock of his matted hair and created Virabhadra and Bhadrakali to avenge Sati's death, and they destroyed the sacrificial altar, defeated the deities who tried to defend Daksha, and ultimately beheaded Daksha." } ] } ],
+    "domains": [
+      { "sphereId": "ritual-sacrifice", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daksha's yajna." } ] },
+      { "sphereId": "progenitorship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daksha as a Prajapati with many children and grandchildren." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "beheaded-by", "personId": "hindu_virabhadra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Virabhadra and Bhadrakali destroyed the sacrificial altar, defeated the deities who tried to defend Daksha, and ultimately beheaded Daksha." } ], "notes": "In-batch." },
+      { "kind": "excluded", "personId": "hindu_shiva",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daksha deliberately did not invite Sati and Shiva, and openly disrespected Shiva." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Shiva record. The exclusion is the whole cause, and it is recorded as an act rather than as an enmity." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Daksha is the Prajapati whose sacrifice excludes Shiva and Sati, whose humiliation of his daughter leads to her death, and who is beheaded by Virabhadra.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Daksha, of the Daksha yajna and of Virabhadra." } ], "weight": "high" } ],
+    "notes": "vitalStatus reads 'restored to life after death', a value the corpus already uses, because the tradition does not leave him dead: Shiva relents and he is revived, in most tellings with a goat's head. The treatment consulted gives the beheading and not the revival, so the lifecycle stops at the beheading and the vitalStatus carries the rest with the honesty of a single word rather than an uncited paragraph."
+  },
+  {
+    "id": "hindu_sati",
+    "name": { "primary": "Sati", "alt": ["Dakshayani", "Shakti"],
+      "transliterations": { "Sanskrit": "सती", "etymology": "'The true one, the virtuous', feminine of sat, 'being, truth'. Dakshayani is the patronymic." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "female", "vitalStatus": "slain", "parentIds": ["hindu_daksha"], "parentRoles": ["father"],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Daksha's daughter and Shiva's wife, deliberately not invited to her father's sacrifice.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Daksha performed a ritual sacrifice, deliberately not inviting Sati and Shiva." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "She goes anyway and is humiliated, her father openly disrespecting her husband. Overwhelmed and unable to endure the dishonour done to him, she immolates herself in the sacred fire of the yajna.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: upon arrival, Sati faced humiliation as Daksha openly disrespected Shiva; overwhelmed by sorrow and unable to endure the dishonour towards her husband, Sati immolated herself in the sacred fire of the yajna." } ] } ],
+    "domains": [],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "consort-of", "personId": "hindu_shiva",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sati as Shiva's wife, uninvited to her father's sacrifice." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Shiva record, which the corpus holds with no spouse edge at all." },
+      { "kind": "humiliated-by", "personId": "hindu_daksha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Daksha openly disrespecting Shiva in front of Sati at the sacrifice." } ], "notes": "In-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sati is Daksha's daughter and Shiva's wife, who immolates herself in the fire of her father's sacrifice after he humiliates her husband.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sati and of the Daksha yajna." } ], "weight": "high" } ],
+    "notes": "NO EDGE IS DRAWN TO PARVATI, whom the corpus holds. The tradition makes Parvati her rebirth, and that is a theological claim about identity across lives which this programme will not encode as a relation between two records; the registry has no kind for 'is the same person later', and inventing one here would commit the corpus to a position on rebirth. Lane 16's Kaikeyi finding applies again: the corpus held Shiva and Parvati because both are famous, and not the marriage that precedes theirs. The sweep for this name matched `egyptian_satis`, a false positive that is a census row of its own."
+  },
+  {
+    "id": "hindu_virabhadra",
+    "name": { "primary": "Virabhadra", "alt": ["Veerabhadra"],
+      "transliterations": { "Sanskrit": "वीरभद्र", "etymology": "'The auspicious hero', from vira, 'hero', and bhadra, 'auspicious, blessed'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Made by Shiva out of a lock of his own matted hair, torn out in rage at Sati's death, together with Bhadrakali, to avenge her.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: enraged, Shiva tore a lock of his matted hair and created Virabhadra, a fierce warrior, and Bhadrakali, to avenge Sati's death." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "They destroy the sacrificial altar, defeat the gods who try to defend Daksha, and behead him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: they destroyed the sacrificial altar, defeated the deities who tried to defend Daksha, and ultimately beheaded Daksha." } ] } ],
+    "domains": [
+      { "sphereId": "vengeance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Virabhadra created to avenge Sati's death." } ] },
+      { "sphereId": "warfare", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Virabhadra as a fierce warrior who defeats the deities defending Daksha." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "made-by", "personId": "hindu_shiva",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shiva tore a lock of his matted hair and created Virabhadra." } ],
+        "notes": "Non-symmetric, and NOT entered in parentIds: he is made out of hair, not begotten, and writing it as descent would tell the corpus's genealogy something false." },
+      { "kind": "beheaded", "personId": "hindu_daksha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Virabhadra beheading Daksha." } ], "notes": "Reciprocal of the in-batch edge on Daksha's record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Virabhadra is the warrior Shiva creates from a lock of his own hair to avenge Sati, who destroys Daksha's sacrifice and beheads him.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Virabhadra and of the Daksha yajna." } ], "weight": "high" } ],
+    "notes": "Bhadrakali, created in the same act, is a BLOCKED census row rather than a second record. The corpus already holds `hindu_kali`, and whether Bhadrakali is that figure, an aspect of her, or a distinct being is exactly the kind of identification this programme does not make from one clause in one treatment. Ingesting her would risk duplicating a record the corpus already has."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — IV. SEVEN MORE VEDIC GODS
+================================================================================
+
+The corpus held Indra, Agni, Varuna, Vayu, Surya, Soma and Ushas and stopped.
+Four of the Adityas — the sons of Aditi, whom the corpus holds, by Kashyapa,
+whom it also holds — were absent, along with three more of the oldest layer.
+
+```json
+[
+  {
+    "id": "hindu_mitra",
+    "name": { "primary": "Mitra", "alt": ["Mitra the Aditya"],
+      "transliterations": { "Sanskrit": "मित्र", "etymology": "'Friend', and also 'contract, covenant' — the same word as the Iranian Mithra, and the one the corpus already holds under `zoroastrian_mithra`." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_kashyapa", "hindu_aditi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "One of the Adityas, the celestial sons of Aditi headed by Varuna and followed by Mitra. He is known as the friend, and twenty-eight hymns of the Rigveda are dedicated to him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Rigveda the Adityas are the seven celestial deities, sons of Aditi, headed by Varuna, followed by Mitra: Varuna, Mitra, Aryaman, Bhaga, Amsha, Dhatr or Daksha, and Indra. Mitra is known as the friend, and 28 hymns are dedicated to Mitra." } ] } ],
+    "domains": [
+      { "sphereId": "friendship-and-covenant", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Mitra as 'the friend', with 28 Rigvedic hymns." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_aryaman",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as the seven celestial sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_bhaga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as the sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_amsha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as the sons of Aditi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Mitra is the Aditya of friendship and covenant, second in the Rigvedic list after Varuna, with twenty-eight hymns of his own.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Mitra and of the Adityas." } ], "weight": "high" } ],
+    "notes": "CROSS-TRADITION NOTE, stated and not drawn as an edge. The corpus holds `zoroastrian_mithra` and now holds this record, and the two names are one Indo-Iranian word. That is a fact about the traditions rather than a relation between two beings, and lane 15 declined to draw the same kind of edge in the opposite direction, for the daeva Indra. The registry can hold both and say why without asserting they are one figure. No `sibling` edge is written toward `hindu_indra` or `hindu_varuna`, who ARE in the Rigvedic list of Adityas and ARE in the corpus, because `sibling` is symmetric and would mutate two pre-existing records; the list is on this record's lifecycle instead."
+  },
+  {
+    "id": "hindu_aryaman",
+    "name": { "primary": "Aryaman", "alt": ["Aryama"],
+      "transliterations": { "Sanskrit": "अर्यमन्", "etymology": "The name signifies 'life-partner', 'close friend', 'sun', 'play-fellow' or 'companion'." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_kashyapa", "hindu_aditi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The third son of Kashyapa and Aditi, depicted as the mid-morning sun disc, and the deity of the customs that rule the Vedic tribes and peoples.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Aryaman's name signifies 'Life-Partner', 'Close Friend', 'Sun', 'Play-Fellow' or 'Companion'; he is the third son of Kashyapa and Aditi, the father and mother of the adityas, and is depicted as the mid-morning sun disc; he is the deity of the customs that rule the various Vedic tribes and people." } ] } ],
+    "domains": [
+      { "sphereId": "custom-and-hospitality", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aryaman as the deity of the customs that rule the Vedic tribes and people." } ] },
+      { "sphereId": "the-mid-morning-sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aryaman depicted as the mid-morning sun disc." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_mitra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Kashyapa and Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_bhaga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_amsha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aryaman is the third Aditya, son of Kashyapa and Aditi, the mid-morning sun and the god of the customs that govern the Vedic peoples.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Aryaman among the Adityas." } ], "weight": "high" } ],
+    "notes": "He is the Vedic reflex of the same figure as the Iranian Airyaman, which lane 15 BLOCKED for want of a function to record. This record has one; the Zoroastrian one still does not, and the pair is a good illustration of how unevenly the same Indo-Iranian material is documented on the two sides."
+  },
+  {
+    "id": "hindu_bhaga",
+    "name": { "primary": "Bhaga", "alt": [],
+      "transliterations": { "Sanskrit": "भग", "etymology": "'A portion, a share' — and by extension fortune, the portion allotted to a person." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_kashyapa", "hindu_aditi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "An Aditya, and the bestower of fortune: bhaga in Sanskrit means a portion, and the portion allotted to a person in life is regulated by him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bhaga is bestower of fortune; bhaga in Sanskrit means 'a portion' so our portion in life is regulated by this divine celestial being. The Adityas are the sons of Aditi." } ] } ],
+    "domains": [
+      { "sphereId": "fortune-and-allotment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bhaga as the bestower of fortune who regulates one's portion in life." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_mitra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_aryaman",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_amsha",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bhaga is the Aditya who bestows fortune and regulates the portion allotted to each person in life.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Bhaga among the Adityas." } ], "weight": "high" } ],
+    "notes": "The name is the ancestor of the Slavic word for god — bogъ, which stands in Dazhbog, Stribog, Chernobog and Belobog, all of which this corpus holds after lane 14 — and it means 'portion' on both sides, a god being originally a distributor of shares. That is stated here because the registry now holds both ends of it, and it is stated as a philological fact and not as an edge."
+  },
+  {
+    "id": "hindu_amsha",
+    "name": { "primary": "Amsha", "alt": ["Ansha", "Amsa"],
+      "transliterations": { "Sanskrit": "अंश", "etymology": "'Share, portion, part' — a near-synonym of Bhaga, and the two stand next to each other in the list." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": ["hindu_kashyapa", "hindu_aditi"], "parentRoles": ["father", "mother"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "One of the seven Adityas of the Rigvedic list: Varuna, Mitra, Aryaman, Bhaga, Amsha, Dhatr and Indra.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Rigveda the Adityas are the seven celestial deities, sons of Aditi, headed by Varuna, followed by Mitra: Varuna, Mitra, Aryaman, Bhaga, Ansa or Amsa, Dhatr or Daksa, and Indra." } ] } ],
+    "domains": [
+      { "sphereId": "apportionment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Amsha among the seven Adityas; the name is the word for a share or portion." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "hindu_mitra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_aryaman",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." },
+      { "kind": "sibling", "personId": "hindu_bhaga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Adityas as sons of Aditi." } ], "notes": "Reciprocated in-batch." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Amsha is one of the seven Rigvedic Adityas, sons of Aditi.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the list of the Adityas." } ], "weight": "medium" } ],
+    "notes": "The thinnest record in this batch and ingested anyway, on the ground that a named member of an enumerated set of seven is an individual the tradition itself counts — the same ground on which lane 14 ingested Vikarna out of a hundred Kauravas. The domains entry is derived from the name and says so. DHATR, the sixth name in the same list, is NOT ingested, because the treatment gives him as 'Dhatr or Daksha' and this batch adds Daksha as a separate record: ingesting both would risk making one figure into two, and the census carries it as a BLOCKED row on exactly that question."
+  },
+  {
+    "id": "hindu_pushan",
+    "name": { "primary": "Pushan", "alt": ["Pusan"],
+      "transliterations": { "Sanskrit": "पूषन्", "etymology": "From push-, 'to nourish, make thrive' — the nourisher." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A pastoral god and the guardian of cattle, counted as one of the twelve Adityas, who nourishes both the sacrificer and the earth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Pushan is a pastoral God and guardian of cattle; Pushan is one of the twelve Adityas; he nourishes both the yajamana and the Earth." } ] } ],
+    "domains": [
+      { "sphereId": "pastoral-protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Pushan as a pastoral god and guardian of cattle." } ] },
+      { "sphereId": "nourishment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: he nourishes both the yajamana and the Earth." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Pushan is the Vedic pastoral god and guardian of cattle, one of the twelve Adityas, who nourishes the sacrificer and the earth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Pushan among the Adityas." } ], "weight": "high" } ],
+    "notes": "The treatment consulted counts him among TWELVE Adityas where the Rigvedic list quoted on the Mitra record gives SEVEN. Both numbers are in the tradition — the list grows between the Rigveda and the Puranas — and the two records state what their own sources state rather than being reconciled to one figure. No sibling edges are drawn from this record for the same reason: which list he is in depends on which text is being read."
+  },
+  {
+    "id": "hindu_tvashtr",
+    "name": { "primary": "Tvashtr", "alt": ["Tvashta", "Tvastr", "Tvashtar"],
+      "transliterations": { "Sanskrit": "त्वष्टृ", "etymology": "'The fashioner, the shaper', an agent noun from a root meaning to form or fashion." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The shaper among the Adityas — the divine craftsman of the Vedic pantheon.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Tvastr is known as the shaper among the Adityas." } ] } ],
+    "domains": [
+      { "sphereId": "craft-and-fashioning", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Tvashtr as the shaper among the Adityas." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "father-of", "personId": "hindu_sanjna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sanjna, identified with the Vedic Saranyu, as the daughter of Tvashtr." } ],
+        "notes": "In-batch and also carried in Sanjna's parentIds. The edge rests on the standard identification of Sanjna with Saranyu, which her record states and qualifies." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Tvashtr is the Vedic divine craftsman, the shaper among the Adityas, and the father of Saranyu.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Tvashtr and of the Adityas." } ], "weight": "medium" } ],
+    "notes": "He is the maker of Indra's vajra — the weapon that kills the Vritra this programme added in lane 16 — and he is also, in the fuller story, Vritra's father, which would make the vajra a father's tool used on his son. The treatment consulted gives neither, so neither is written, and both are census notes. The corpus separately holds `hindu_vishwakarma`, the later divine architect who takes over this office; the two are not merged, because the tradition itself keeps them distinct even while overlapping them."
+  },
+  {
+    "id": "hindu_dyaus",
+    "name": { "primary": "Dyaus Pita", "alt": ["Dyaus", "Dyauspitar"],
+      "transliterations": { "Sanskrit": "द्यौष्पितृ", "etymology": "'Sky father'. The single most securely reconstructed divine name in Indo-European — the same word as Zeus pater and Jupiter, both of which this corpus holds." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A deified natural phenomenon representing the sky, and the sky father of the Rigveda, paired with the earth.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Dyaus Pita is a deified natural phenomena representing the sky." } ] } ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dyaus Pita as the deified sky." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "paired-with", "personId": "hindu_prithvi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Dyaus Pita as the deified sky, standing against the earth in the Rigvedic pair Dyavaprithivi." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Prithvi record. The two are invoked as a compound in the Rigveda — Dyavaprithivi, sky-and-earth as one word — and holding one without the other was the corpus's position until now." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Dyaus Pita is the Vedic deified sky, the sky father, paired with the earth.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Dyaus Pita among the Rigvedic deities." } ], "weight": "high" } ],
+    "notes": "This corpus holds `greek_hesiod_zeus` and `roman_iuppiter`, and it did not hold the third member of that set — the one whose name is closest to the reconstructed original and which is the reason the other two are known to be related. NO cross-tradition edge is drawn, on the rule this programme has applied in every lane: a shared etymology is a fact about traditions and not a relation between beings. It is, though, the single most consequential such fact in comparative mythology, and a registry indexing 560 traditions ought at least to hold all three ends of it. Now it does."
+  },
+  {
+    "id": "hindu_parjanya",
+    "name": { "primary": "Parjanya", "alt": [],
+      "transliterations": { "Sanskrit": "पर्जन्य", "etymology": "'Rain-cloud, rain'; cognate with the Baltic thunder-god name Perkūnas and the Slavic Perun, both of which this corpus holds." } },
+    "type": "deity", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A deified natural phenomenon representing the rain, invoked as such in the Rigveda.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Parjanya is invoked as a deified natural phenomenon representing the rain." } ] } ],
+    "domains": [
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Parjanya as the deified rain." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Parjanya is the Vedic deified rain, invoked in the Rigveda.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Parjanya among the Rigvedic deities." } ], "weight": "high" } ],
+    "notes": "A short record for a figure with three Rigvedic hymns, and short because the treatment consulted gives one line. The etymological connection to Perun and Perkūnas — both of which lane 14 touched — is in the transliterations note and nowhere else, for the same reason as on the Dyaus record."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — V. THE SOLAR DYNASTY
+================================================================================
+
+Lane 16 recovered the lunar line and left the solar one untouched, so the corpus
+held Rama and could not say that he is an Ikshvaku. Five records: the founder,
+the king whose sixty thousand sons are burned to ash, the sage who burns them,
+the descendant who brings the Ganges down to deliver them, and the king the
+tradition keeps as its standard of truth.
+
+```json
+[
+  {
+    "id": "hindu_ikshvaku",
+    "name": { "primary": "Ikshvaku", "alt": ["Iksvaku"],
+      "transliterations": { "Sanskrit": "इक्ष्वाकु", "etymology": "Connected with ikshu, 'sugarcane'; the derivation is old and not certain." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": ["hindu_manu"], "parentRoles": ["father"],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The eponymous founder of the Ikshvaku dynasty, also called the Suryavansha or solar dynasty, which traces its origin to the sun god Vivasvan through his son Vaivasvata Manu and his grandson Ikshvaku. He established the kingdom of Kosala with Ayodhya as its capital.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Ikshvaku dynasty, also known as the Suryavansha or Solar Dynasty, is a prominent legendary royal lineage in Hindu mythology, tracing its origins to the sun god Vivasvan (Surya) through his son Vaivasvata Manu and grandson Ikshvaku, the eponymous founder who established the kingdom of Kosala with Ayodhya as its capital." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Ikshvaku as the founder of the solar dynasty and of the kingdom of Kosala at Ayodhya." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Ikshvaku is the son of Vaivasvata Manu and grandson of Surya, founder of the solar dynasty and of Kosala with its capital at Ayodhya.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Ikshvaku dynasty and of the solar dynasty." } ], "weight": "high" } ],
+    "notes": "His parentIds name `hindu_manu`, whom the corpus already holds WITH parentIds naming Surya — so with this one record the line from the sun god to the founder of Ayodhya is complete in the data. NO EDGE IS DRAWN TO RAMA, and the reason is the era problem this batch's header escalates: Manu is filed at `vedic` and Rama at `heroic-age`, which is EARLIER, so a descent chain joining them would be an era inversion the suite rejects. The corpus can now say that Ikshvaku founded Ayodhya and still cannot say that Rama is his descendant, and that is a vocabulary problem rather than an evidence problem."
+  },
+  {
+    "id": "hindu_sagara",
+    "name": { "primary": "Sagara", "alt": ["Sagara of Ayodhya"],
+      "transliterations": { "Sanskrit": "सगर", "etymology": "Read in the tradition as sa-gara, 'with poison', from the story of his birth; the ocean, sagara, is said to be named after him rather than the reverse." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A king of the solar dynasty whose sons, said in the Puranic legends to number sixty thousand, were burned to ashes by the sage Kapila.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Puranic legends say the number of his sons was 60 thousand; his story — of his sixty thousand sons burnt to ashes by Sage Kapila, and their deliverance through his descendant Bhagiratha, who brought the river Ganga down to Earth — symbolizes purification and redemption." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sagara as a king of the solar dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "of-the-line-of", "personId": "hindu_ikshvaku",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sagara within the Ikshvaku or solar dynasty." } ],
+        "notes": "In-batch, and a lineage edge rather than a filiation: the treatment places him in the dynasty and does not give the intervening generations, so nothing is entered in parentIds." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sagara is the solar-dynasty king whose sixty thousand sons were burned to ashes by Kapila and delivered by his descendant Bhagiratha.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sagara, of Kapila and of Bhagiratha." } ], "weight": "high" } ],
+    "notes": "The sixty thousand sons are NOT ingested — as a number they are a number and not a list, on exactly the rule that kept lane 16 from manufacturing ninety-six Kauravas. The record states the number the source states and leaves them as what they are: the largest collective death in the tradition and no individuals at all."
+  },
+  {
+    "id": "hindu_kapila",
+    "name": { "primary": "Kapila", "alt": ["Sage Kapila", "Kapila Muni"],
+      "transliterations": { "Sanskrit": "कपिल", "etymology": "'Reddish-brown, tawny'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "The sage whose anger burns Sagara's sixty thousand sons to ashes — the act the whole Ganges-descent story exists to undo.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sagara's sixty thousand sons were burnt to ashes by Sage Kapila, and delivered through his descendant Bhagiratha, who brought the river Ganga down to Earth." } ] } ],
+    "domains": [
+      { "sphereId": "ascetic-power", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Kapila burning Sagara's sons to ashes." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "destroyed-the-sons-of", "personId": "hindu_sagara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sagara's sixty thousand sons were burnt to ashes by Sage Kapila." } ],
+        "notes": "In-batch. The kind is unusual because the object of the act is a collective this batch does not record as individuals, so the edge points at their father instead and says so." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Kapila is the sage whose anger burns Sagara's sixty thousand sons to ashes.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Sagara and Bhagiratha story." } ], "weight": "medium" } ],
+    "notes": "The tradition also makes Kapila the founder of the Samkhya school — one of the six classical philosophical systems, and among the most consequential figures in Indian intellectual history. The treatment consulted gives only the burning, so only the burning is on the record, and the philosophy is a census note. Third rishi in the corpus's Hindu holdings, which held none before lane 16."
+  },
+  {
+    "id": "hindu_bhagiratha",
+    "name": { "primary": "Bhagiratha", "alt": ["Bhagirath"],
+      "transliterations": { "Sanskrit": "भगीरथ", "etymology": "'He whose chariot brings a share', from bhaga, 'portion' — the same word as the Aditya added in block IV — and ratha, 'chariot'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "Sagara's great-grandson, who after strenuous penances at last succeeded in bringing the Ganges down from heaven, so that the ashes of the sixty thousand could be delivered.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bhagiratha, Sagara's great-grandson, after strenuous penances at last succeeded in bringing Ganga down from heaven; the deliverance of the sixty thousand sons came through his descendant Bhagiratha, who brought the river Ganga down to Earth." } ] } ],
+    "domains": [
+      { "sphereId": "ascetic-perseverance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bhagiratha's strenuous penances to bring Ganga down." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "great-grandson-of", "personId": "hindu_sagara",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Bhagiratha as Sagara's great-grandson." } ],
+        "notes": "In-batch, and recorded as a relation rather than in parentIds because the treatment gives the degree and not the intervening names." },
+      { "kind": "brought-down", "personId": "hindu_ganga",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Bhagiratha, after strenuous penances, at last succeeded in bringing Ganga down from heaven." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Ganga record. THE CORPUS ALREADY HELD THE RIVER and did not hold the man who brought her, which is the lane-16 pattern once more: it held the famous name and not the act that put her where she is." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Bhagiratha is Sagara's great-grandson, who brought the Ganges down from heaven by penance to deliver the ashes of the sixty thousand.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Bhagiratha, Sagara and Kapila." } ], "weight": "high" } ],
+    "notes": "His name is a common noun in modern Indian languages — bhagirath prayatna, a Bhagiratha-effort, means an undertaking of superhuman persistence — which is a good measure of how large a figure the corpus was missing. The Ganges is called Bhagirathi after him along her upper course."
+  },
+  {
+    "id": "hindu_harishchandra",
+    "name": { "primary": "Harishchandra", "alt": ["Harish Chandra", "Satya Harishchandra"],
+      "transliterations": { "Sanskrit": "हरिश्चन्द्र", "etymology": "'Golden-bright', from hari, 'tawny, golden', and chandra, 'moon, bright'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "vedic" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "vedic", "eraOrdering": 0,
+      "startEvent": "A king of the solar dynasty, famous for an unshakeable commitment to truth: he faced extreme hardships and never lied, and his life is still taught as a moral example across India.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: famous for his unshakable commitment to truth, Harishchandra faced extreme hardships but never lied, and his life is still taught as a moral example across India." } ] } ],
+    "domains": [
+      { "sphereId": "truthfulness", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Harishchandra's unshakeable commitment to truth." } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Harishchandra as a king of the solar dynasty." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "of-the-line-of", "personId": "hindu_ikshvaku",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Harishchandra within the Ikshvaku or solar dynasty." } ], "notes": "A lineage edge, as with Sagara's." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Harishchandra is the solar-dynasty king whose refusal to lie under extreme hardship is still taught across India as a moral example.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Harishchandra and of the solar dynasty." } ], "weight": "high" } ],
+    "notes": "The hardships are not enumerated — selling his wife and son, and then himself to a keeper of a cremation ground — because the treatment consulted states that he faced them and never lied, and does not list them. He is the figure Gandhi named as the story that shaped him in childhood, which is a measure of reach the census records and the record does not assert."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — VI. TWO MORE FROM KURUKSHETRA
+================================================================================
+
+```json
+[
+  {
+    "id": "hindu_shalya",
+    "name": { "primary": "Shalya", "alt": ["Salya", "Madraraja"],
+      "transliterations": { "Sanskrit": "शल्य", "etymology": "'Dart, spear, thorn' — and also 'that which causes pain', which the epic makes something of." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "King of Madra and a great warrior, manipulated into becoming Karna's charioteer for the war.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shalya was the King of Madra, and a king and great warrior, was manipulated into becoming Karna's charioteer during the war." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "On the sixteenth and seventeenth days he drives Karna's chariot — and spends both of them praising the Pandava prince Karna is fighting and reciting Karna's shortcomings.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: on the 16th and 17th days of the war, Shalya served as Karna's charioteer, while continuously praising the Pandava prince and citing Karna's shortcomings." } ] } ],
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalya as King of Madra." } ] },
+      { "sphereId": "charioteering", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Shalya as Karna's charioteer on the sixteenth and seventeenth days." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "charioteer-of", "personId": "hindu_karna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Shalya was manipulated into becoming Karna's charioteer and continuously praised the Pandava prince while citing Karna's shortcomings." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Karna record. The corpus holds Karna, five of his sons and — since lane 16 — the friend who made him a king; this adds the man sitting in front of him on the day he dies, undermining him." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Shalya is the king of Madra, manipulated into driving Karna's chariot, who spent the sixteenth and seventeenth days of the war praising Karna's enemy to his face.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Shalya and of the Karna Parva." } ], "weight": "high" } ],
+    "notes": "He is also the Pandavas' maternal uncle — Madri, whom the corpus holds, is his sister — and the record does not say so, because the treatment consulted gives the kingship, the manipulation and the charioteering and not the kinship. That is a one-citation gap and a strong candidate for the third Hindu pass: it would connect the Kaurava order of battle to the Pandava household directly."
+  },
+  {
+    "id": "hindu_sanjaya",
+    "name": { "primary": "Sanjaya", "alt": ["Samjaya", "Sanjaya Gavalgani"],
+      "transliterations": { "Sanskrit": "सञ्जय", "etymology": "'Completely victorious', from sam-, 'wholly', and jaya, 'victory'." } },
+    "type": "mortal", "origin": "canon", "tradition": "Hindu", "primaryTradition": "Hindu",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "epic-period" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 0,
+      "startEvent": "Adviser and charioteer to the blind king Dhritarashtra, ruler of the Kuru kingdom and father of the Kauravas.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sanjaya is the advisor of the blind king Dhritarashtra, the ruler of the Kuru kingdom and the father of the Kauravas, as well as serving as his charioteer." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 1,
+        "startEvent": "He is given the divine ability to see events happening where he is not present, and becomes the eyes through which the blind king follows his sons' war.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sanjaya was gifted with the divine ability to see events occurring without actually being physically present, and became the eyes through which blind Dhritarashtra kept track of his sons' progress in the Kurukshetra war." } ] },
+      { "typeStatus": "mortal", "era": "epic-period", "eraOrdering": 2,
+        "startEvent": "The entire Bhagavad Gita is his narration to Dhritarashtra of what Krishna said to Arjuna just before the war began.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the entire Bhagavad Gita is Sanjaya's narration to Dhritarashtra of what Krishna was saying to Arjuna just before the war began." } ] } ],
+    "domains": [
+      { "sphereId": "clairvoyance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sanjaya's divine ability to see events he is not present at." } ] },
+      { "sphereId": "counsel-and-narration", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Sanjaya as Dhritarashtra's adviser and as the narrator of the Bhagavad Gita." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "advisor-of", "personId": "hindu_dhritarashtra",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Sanjaya is the advisor and charioteer of the blind king Dhritarashtra." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Dhritarashtra record." },
+      { "kind": "narrated-the-words-of", "personId": "hindu_krishna",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the entire Bhagavad Gita is Sanjaya's narration to Dhritarashtra of what Krishna was saying to Arjuna." } ],
+        "notes": "Non-symmetric, and the second author-and-subject relation this programme has recorded, after Valmiki and Rama in lane 16. The corpus holds Krishna and Arjuna and held nobody who was listening." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Sanjaya is Dhritarashtra's adviser and charioteer, given divine sight to follow the war, and the narrator whose report to the blind king constitutes the Bhagavad Gita.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Sanjaya and of the Bhagavad Gita." } ], "weight": "high" } ],
+    "notes": "THE MOST-READ TEXT IN THE TRADITION IS THIS MAN TALKING. The Bhagavad Gita is framed throughout as his report — the verses that open and close it are his, and every 'Krishna said' in it is inside his speech — and the corpus held Krishna, Arjuna, the chariot, the field and the blind king, and not the narrator. A registry of figures that holds a conversation without its reporter is holding the conversation at second hand without saying so."
+  }
+]
+```
