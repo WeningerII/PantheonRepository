@@ -1,0 +1,1817 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Hurrian
+Eras (registered, exact): mythic
+Author pass: Hurrian held 14 records. This adds 21.
+
+================================================================================
+THE GAP — THE CORPUS HELD KUMARBI AND NOT ANU
+================================================================================
+
+A 46-name check across the WHOLE registry returned 21 hits and 25 absences —
+and FOUR OF THE TWENTY-ONE HITS ARE FALSE for this tradition's purposes, which
+is part of the finding: see below.
+
+The Kumarbi cycle turns on one act. In the *Song of Emergence* — the Hittite
+adaptation of the Hurrian myth — **Alalu** is king in heaven; in the ninth year
+his cup-bearer **Anu** overthrows him; nine years later Anu's own cup-bearer
+**Kumarbi** overthrows him in turn, and in the struggle **bites off Anu's penis
+and swallows it.** Anu curses him and tells him that from the seed now inside him
+five gods will be born who will depose him, and the first of them is **Teshub**.
+
+The registry held **Alalu**. It held **Kumarbi**. It held **Teshub**. **It held
+no Hurrian Anu** — the god who is bitten, whose curse sets the whole cycle
+running, and who is the father of the god the cycle is about.
+
+And a name-sweep says otherwise, which is the point. "Anu" comes back as a HIT,
+against `mesopotamian_anu` and against `irish_danu`, which carries Anu as an
+alias. **Neither is the Anu of the Kumarbi cycle.** Four of this sweep's
+twenty-one hits are like that — Ishara resolving onto `eblaite_ishara`, Adamma
+onto `eblaite_adamma`, Kubaba onto `lydian_kuvava`, Nikkal onto
+`canaanite_nikkal` — all of them real figures in other traditions and none of
+them this tradition's record of the same cult.
+
+That is this programme's recurring finding in its most compressed form yet: the
+corpus held both ends of a swallowing and not the thing swallowed.
+
+It also held **Ullikummi**, the stone grown to overthrow Teshub, and not
+**Upelluri**, the giant on whose shoulder he was set to grow — the being who was
+already alive when heaven and earth were separated and who carries them on his
+back.
+
+And it held Kumarbi's son Ullikummi and Kumarbi's son Hedammu and not
+**Silver**, the son of Kumarbi who was king in heaven for a time and has a song
+of the cycle to himself.
+
+================================================================================
+AND THE CIRCLE OF HEBAT
+================================================================================
+
+Hurrian offering-lists — the *kaluti* — are organised around a principal deity
+and name the circle that goes with them. The corpus held **Hebat** and
+**Sharruma** and none of the rest of her circle: not **Takitu** her attendant,
+not **Allanzu** and **Kunzishalli** her other children, not **Shuwala**, not
+**Adamma**, not **Kubaba**, not **Nabarbi**.
+
+It held **Teshub** and not the two bulls that pull his wagon, **Sheri** and
+**Hurri** — "day" and "night" — nor **Tilla**, who replaces Hurri in the eastern
+tradition.
+
+It held the moon god **Kushuh** and not **Nikkal**, his consort.
+
+And it held no Hurrian goddess of the underworld at all: not **Allani**, whom
+the scholarship calls one of the three primary Hurrian goddesses beside Ishara
+and Shaushka, and not **Ishara**, who is invoked beside her.
+
+================================================================================
+WHAT THIS BATCH DOES NOT INGEST
+================================================================================
+
+The **Irsirra**, the nursery goddesses who carry the infant Ullikummi to
+Upelluri's shoulder, are **a collective** — the sources call them a collective in
+as many words — on the ground that rejected the Cwn Annwn, the Matronae, the
+aralez and the jeoseung saja. The *kaluti* themselves are **lists**. The Dark
+Earth is a **place**.
+
+**Hutena and Hutellura are ONE record**, because the sources write them as a
+hyphenated pair in the offering lists and give neither a separate act.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session — fetches are refused at the proxy
+— so research went through server-side web search, and the citations name the
+reference treatments consulted.
+
+================================================================================
+AUTHORED FIGURES — I. THE ACT THE CYCLE TURNS ON
+================================================================================
+
+```json
+[
+  {
+    "id": "hurrian_anu",
+    "name": { "primary": "Anu", "alt": ["Anu the sky", "Anu, king in heaven"],
+      "transliterations": { "Hurrian": "Anu", "etymology": "The Mesopotamian sky god An/Anu, taken into the Hurrian succession myth as the second king in heaven." } },
+    "type": "deity", "origin": "canon", "tradition": "Hurrian", "primaryTradition": "Hurrian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "Cup-bearer to Alalu, the first king in heaven, whom he overthrows in the ninth year of his reign and succeeds.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Song of Emergence: formerly, in ancient times, Alalu was king of the gods, king in heaven, but in the ninth year of his reign he was overthrown by his cup-bearer, Anu; after another nine years, Anu was overthrown by his cup-bearer, Kumarbi." } ] },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "Nine years later his own cup-bearer Kumarbi overthrows him, and in the struggle bites off his penis and swallows it. Anu curses him: from the seed now inside him five gods will be born who will depose him, and the first named is Teshub.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: during the struggle Kumarbi bites off Anu's penis and swallows it; Anu curses Kumarbi and promises that from the seed thus implanted in Kumarbi five gods will be born, to defeat and depose him, with Teshub being the first one mentioned and therefore the eldest." } ] } ],
+    "domains": [
+      { "sphereId": "kingship-in-heaven", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Anu is the second king in heaven in the Song of Emergence." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "overthrew", "personId": "hurrian_alalu",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the ninth year of his reign Alalu was overthrown by his cup-bearer, Anu." } ],
+        "notes": "Non-symmetric, so nothing is written onto the pre-existing Alalu record." },
+      { "kind": "overthrown-by", "personId": "hurrian_kumarbi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: after another nine years, Anu was overthrown by his cup-bearer, Kumarbi, who bit off his penis and swallowed it." } ], "notes": "Non-symmetric." },
+      { "kind": "father-of", "personId": "hurrian_teshub",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Anu promises that from the seed thus implanted in Kumarbi five gods will be born, with Teshub the first mentioned and therefore the eldest." } ],
+        "notes": "Non-symmetric, and DELIBERATELY NOT parentIds ON TESHUB, which is a pre-existing record this batch does not mutate. It is also the strangest paternity in the corpus: the father is bitten, the seed is swallowed, and the mother is the man who swallowed it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Anu is the second king in heaven of the Hurrian succession myth, overthrown by Kumarbi, who bites off and swallows his genitals, and whose curse makes Kumarbi the bearer of Teshub.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Kumarbi cycle, of Alalu and of the Song of Emergence." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HELD BOTH ENDS OF A SWALLOWING AND NOT THE THING SWALLOWED. Alalu, Kumarbi and Teshub were all in the registry and Anu was not — the god who is bitten, whose curse sets the cycle running, and who fathers the god the cycle is about. NO CROSS-TRADITION EDGE to mesopotamian_anu: this is the Mesopotamian sky god's name inside a Hurrian succession myth, and which is a fact about how the myth was built rather than a relation between two beings."
+  },
+  {
+    "id": "hurrian_silver",
+    "name": { "primary": "Silver", "alt": ["Ushhune", "Ušḫune"],
+      "transliterations": { "Hurrian": "Ušḫune", "etymology": "The name is the word for the metal; the Hittite tablets write it with the logogram for silver, which is why he is called Silver in English." } },
+    "type": "deity", "origin": "canon", "tradition": "Hurrian", "primaryTradition": "Hurrian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A son of Kumarbi who was king in heaven for a time, and who has a song of the Kumarbi cycle to himself — the Song of Silver.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: the texts usually agreed to belong to the Kumarbi cycle include the Song of Kumarbi, the Song of LAMMA, the Song of Silver, the Song of Hedammu and the Song of Ullikummi; the Song of Silver describes the birth of Silver, another son of Kumarbi, who was king in heaven for a time as well." } ] } ],
+    "domains": [
+      { "sphereId": "kingship-in-heaven", "contextTag": "episodic", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Silver was king in heaven for a time." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "child-of", "personId": "hurrian_kumarbi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Song of Silver describes the birth of Silver, another son of Kumarbi." } ],
+        "notes": "Non-symmetric toward a pre-existing record, and a relation rather than parentIds: the Kumarbi records in this corpus carry no descent and this batch does not mutate them." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Silver is a son of Kumarbi who held the kingship in heaven for a time, and the subject of one of the songs of the Kumarbi cycle.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of the Kumarbi cycle and of the Song of Silver." } ], "weight": "high" } ],
+    "notes": "THE CORPUS HELD TWO OF KUMARBI'S CHAMPIONS AND NOT THE THIRD. Ullikummi the stone and Hedammu the sea-serpent were in the registry; Silver, who actually reached the throne, was not. A GOD NAMED AFTER A METAL, and the record does not decide whether he is made of it."
+  },
+  {
+    "id": "hurrian_upelluri",
+    "name": { "primary": "Upelluri", "alt": ["Ubelluri"],
+      "transliterations": { "Hurrian": "Upelluri", "etymology": "Unresolved." } },
+    "type": "numen", "origin": "canon", "tradition": "Hurrian", "primaryTradition": "Hurrian",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [ { "typeStatus": "numen", "era": "mythic", "eraOrdering": 0,
+      "startEvent": "A primordial giant already alive when heaven and earth were separated, who carries them on his back and lives in the Dark Earth, the Hurrian underworld.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment: Upelluri or Ubelluri was a primordial giant in Hurrian mythology; it was believed that Upelluri was already alive during the separation of heaven and earth, which were placed on his back, and that he lived in the 'Dark Earth', the Hurrian underworld." } ] },
+      { "typeStatus": "numen", "era": "mythic", "eraOrdering": 1,
+        "startEvent": "The nursery goddesses set the infant Ullikummi secretly on his shoulder to grow, and he does not notice the stone rising on him.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: the Irsirra are the Hurrian collective of nursery goddesses; in the Ullikummi song they put little Ullikummi secretly on the shoulder of Ubelluri, the giant who carries the world." } ] } ],
+    "domains": [
+      { "sphereId": "bearing-the-world", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: heaven and earth were placed on Upelluri's back." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "bore-on-his-shoulder", "personId": "hurrian_ullikummi",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: in the Ullikummi song the Irsirra put little Ullikummi secretly on the shoulder of Ubelluri, the giant who carries the world." } ],
+        "notes": "Non-symmetric toward a pre-existing record." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Upelluri is the primordial giant who was alive when heaven and earth were separated and who carries them on his back, and on whose shoulder Ullikummi is set to grow.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatments of Upelluri and of the Song of Ullikummi." } ], "weight": "high" } ],
+    "notes": "A GIANT WHO CARRIES THE WORLD AND DOES NOT NOTICE A MOUNTAIN GROWING ON HIS SHOULDER, which is the joke the song is built on and the reason he matters. The corpus held Ullikummi and had nowhere to put him. NO CROSS-TRADITION EDGE to any Atlas-figure: the comparison is a scholar's and the record does not make it."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. THE WAGON, THE CIRCLE AND THE LISTS
+================================================================================
+
+```json
+[
+ {
+  "id": "hurrian_sheri",
+  "name": {
+   "primary": "Sheri",
+   "alt": [
+    "Šeri",
+    "Seri"
+   ],
+   "transliterations": {
+    "Hurrian": "Šeri",
+    "etymology": "'Day'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the two bulls that pull Teshub's wagon; his name is the word for day, and his fellow's is the word for night.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "drawing-the-storm-god's-wagon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "draws-the-wagon-of",
+    "personId": "hurrian_teshub",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hurri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "One of the two bulls that pull Teshub's wagon; his name is the word for day, and his fellow's is the word for night.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "THE CORPUS HELD TESHUB AND NOT WHAT PULLS HIM. The pair are gods portrayed as bulls, not bulls with names — which is why they are ingested where five named horses, two hounds and Balder's foal were rejected in lanes 13 to 22."
+ },
+ {
+  "id": "hurrian_hurri",
+  "name": {
+   "primary": "Hurri",
+   "alt": [
+    "Ḫurri"
+   ],
+   "transliterations": {
+    "Hurrian": "Ḫurri",
+    "etymology": "'Night'. The eastern tradition puts Tilla in his place."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The second of Teshub's two bulls, whose name is the word for night, and whom the eastern tradition replaces with Tilla.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "drawing-the-storm-god's-wagon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "draws-the-wagon-of",
+    "personId": "hurrian_teshub",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "Non-symmetric."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_sheri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "replaced-in-the-east-by",
+    "personId": "hurrian_tilla",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "In-batch, and the kind is exact: the sources say the NAME of Hurri is replaced by Tilla in the eastern tradition."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The second of Teshub's two bulls, whose name is the word for night, and whom the eastern tradition replaces with Tilla.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "A GOD WHO IS REPLACED BY ANOTHER GOD IN A DIFFERENT REGION, AND BOTH ARE INGESTED. Tilla is a separate record, because the sources describe a regional substitution rather than two names for one being — and neither record asserts they are the same."
+ },
+ {
+  "id": "hurrian_tilla",
+  "name": {
+   "primary": "Tilla",
+   "alt": [],
+   "transliterations": {
+    "Hurrian": "Tilla",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The bull who stands in Hurri's place in the eastern Hurrian tradition, drawing Teshub's wagon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "drawing-the-storm-god's-wagon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "replaces-in-the-east",
+    "personId": "hurrian_hurri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "notes": "In-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The bull who stands in Hurri's place in the eastern Hurrian tradition, drawing Teshub's wagon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: Sheri ('day') and Hurri ('night'), who pull Teshub's wagon and are portrayed as bulls, the name of Hurri being replaced by Tilla in the eastern tradition."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "THE SUBSTITUTION IS THE ATTESTATION and it is written as one: the sources say Hurri's name is replaced by Tilla in the eastern tradition, and both records carry that and neither says the two are the same being."
+ },
+ {
+  "id": "hurrian_ashtabi",
+  "name": {
+   "primary": "Ashtabi",
+   "alt": [
+    "Aštabi",
+    "Aštabil"
+   ],
+   "transliterations": {
+    "Hurrian": "Aštabi",
+    "etymology": "Of Eblaite background, taken into the Hurrian pantheon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Hurrian god of war.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Hurrian god of war.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "A PANTHEON WITH A STORM GOD, A SUN GOD, A MOON GOD AND NO WAR GOD is what the registry had. Ashtabi is one of the deities of Eblaite background the Hurrians took in, which the sources note of the pantheon generally."
+ },
+ {
+  "id": "hurrian_shuwaliyatti",
+  "name": {
+   "primary": "Shuwaliyatti",
+   "alt": [
+    "Šuwaliyat",
+    "Šuwaliyatti"
+   ],
+   "transliterations": {
+    "Hurrian": "Šuwaliyatti",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A god of the Hurrian pantheon, whose consort is Nabarbi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "consort-of",
+    "personId": "hurrian_nabarbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ],
+    "notes": "Reciprocated in-batch with the same kind."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A god of the Hurrian pantheon, whose consort is Nabarbi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Named in the pantheon lists with his consort and without an episode, which the record states rather than filling in."
+ },
+ {
+  "id": "hurrian_nabarbi",
+  "name": {
+   "primary": "Nabarbi",
+   "alt": [
+    "Nawarni"
+   ],
+   "transliterations": {
+    "Hurrian": "Nabarbi",
+    "etymology": "Generally connected with the city of Nawar."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Consort of Shuwaliyatti, and a member of the circle of Hebat in the offering lists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "consort-of",
+    "personId": "hurrian_shuwaliyatti",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   },
+   {
+    "kind": "of-the-circle-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Consort of Shuwaliyatti, and a member of the circle of Hebat in the offering lists.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon: the moon god Kushuh, protector of oaths, and his consort Nikkal; a sun god, Shimigi; Shuwaliyatti and his consort Nabarbi; Teshub's vizier Tasmisu; and Ashtabi, the god of war."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "She is attested from two directions — as a consort in the pantheon lists and as a member of Hebat's circle in the kaluti — which is more than most of this batch has."
+ },
+ {
+  "id": "hurrian_takitu",
+  "name": {
+   "primary": "Takitu",
+   "alt": [
+    "Takiti"
+   ],
+   "transliterations": {
+    "Hurrian": "Takitu",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Hebat's attendant, named in her circle in the offering lists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "attendant-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hebat's attendant, named in her circle in the offering lists.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "THE CORPUS HELD HEBAT AND NONE OF HER CIRCLE. In the Hurrian material a principal deity is documented through the kaluti that name the gods who go with them, so holding the principal without the circle is holding half the attestation."
+ },
+ {
+  "id": "hurrian_allanzu",
+  "name": {
+   "primary": "Allanzu",
+   "alt": [
+    "Alanzu"
+   ],
+   "transliterations": {
+    "Hurrian": "Allanzu",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A daughter of Hebat, attested in the kaluti alongside her siblings Sharruma and Kunzishalli.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric, and deliberately not parentIds; see notes."
+   },
+   {
+    "kind": "sibling-of",
+    "personId": "hurrian_sharruma",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record; 'sibling' is the honest kind and cannot be used."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_kunzishalli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A daughter of Hebat, attested in the kaluti alongside her siblings Sharruma and Kunzishalli.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The corpus held Sharruma and not his sister or his other sibling. DELIBERATELY NOT parentIds: the sources give the filiation through an offering list's ordering, this corpus computes the tier from descent, and a list's ordering is not a genealogy — the decision lane 23 made for Mihr and Nane."
+ },
+ {
+  "id": "hurrian_kunzishalli",
+  "name": {
+   "primary": "Kunzishalli",
+   "alt": [
+    "Kunzišalli"
+   ],
+   "transliterations": {
+    "Hurrian": "Kunzišalli",
+    "etymology": "Unresolved."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "unknown",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A child of Hebat, named in the kaluti with Sharruma and Allanzu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric, and deliberately not parentIds."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_allanzu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A child of Hebat, named in the kaluti with Sharruma and Allanzu.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "sex is recorded as unknown because the sources give a name in an offering list and no more."
+ },
+ {
+  "id": "hurrian_shuwala",
+  "name": {
+   "primary": "Shuwala",
+   "alt": [
+    "Šuwala"
+   ],
+   "transliterations": {
+    "Hurrian": "Šuwala",
+    "etymology": "Generally connected with the city of Mardaman."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A goddess of Hebat's circle in the offering lists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-circle-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A goddess of Hebat's circle in the offering lists.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "hurrian_adamma",
+  "name": {
+   "primary": "Adamma",
+   "alt": [],
+   "transliterations": {
+    "Hurrian": "Adamma",
+    "etymology": "Of Eblaite background."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A deity of Hebat's circle in the offering lists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-circle-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A deity of Hebat's circle in the offering lists.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "hurrian_kubaba",
+  "name": {
+   "primary": "Kubaba",
+   "alt": [],
+   "transliterations": {
+    "Hurrian": "Kubaba",
+    "etymology": "The goddess of Carchemish, taken into the Hurrian circle of Hebat."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of Carchemish, named in Hebat's circle in the offering lists.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-circle-of",
+    "personId": "hurrian_hebat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "notes": "Non-symmetric."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The goddess of Carchemish, named in Hebat's circle in the offering lists.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian pantheon and the kaluti: Allanzu is attested alongside deities such as her siblings Sharruma and Kunzishalli, as well as Takitu, Nabarbi, Shuwala, Adamma, Kubaba and others as a member of the circle of Hebat in kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "SHE IS A CITY'S GODDESS BEFORE SHE IS A MEMBER OF A CIRCLE, and the record holds the Hurrian attestation without asserting anything about the later Kybele question, which is a proposal and not a source."
+ },
+ {
+  "id": "hurrian_allani",
+  "name": {
+   "primary": "Allani",
+   "alt": [
+    "Allatu",
+    "Allatum"
+   ],
+   "transliterations": {
+    "Hurrian": "Allani",
+    "etymology": "The Akkadian form is Allatu or Allatum."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The Hurrian goddess of the underworld, and by extension one of the deities who take part in determining the fates of mortals. The scholarship names her one of the primary Hurrian goddesses beside Ishara and Shaushka.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani, also known under the Akkadian name Allatu or Allatum, was the Hurrian goddess of the underworld, and as an extension of this role she was also one of the deities who took part in the determining of fates of mortals; Alfonso Archi describes her as one of the primary Hurrian goddesses next to Ishara and Shaushka."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani, also known under the Akkadian name Allatu or Allatum, was the Hurrian goddess of the underworld, and as an extension of this role she was also one of the deities who took part in the determining of fates of mortals; Alfonso Archi describes her as one of the primary Hurrian goddesses next to Ishara and Shaushka."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "invoked-with",
+    "personId": "hurrian_ishara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani was often invoked alongside Ishara, who also was associated with the underworld in Hurrian religion; in the ritual of Allaiturahi, Allani is invoked alongside Ishara to protect a household from demonic forces."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The Hurrian goddess of the underworld, and by extension one of the deities who take part in determining the fates of mortals. The scholarship names her one of the primary Hurrian goddesses beside Ishara and Shaushka.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani, also known under the Akkadian name Allatu or Allatum, was the Hurrian goddess of the underworld, and as an extension of this role she was also one of the deities who took part in the determining of fates of mortals; Alfonso Archi describes her as one of the primary Hurrian goddesses next to Ishara and Shaushka."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "THE CORPUS HELD SHAUSHKA AND NEITHER OF THE OTHER TWO. The sources name three primary Hurrian goddesses and the registry had one of them."
+ },
+ {
+  "id": "hurrian_ishara",
+  "name": {
+   "primary": "Ishara",
+   "alt": [
+    "Išḫara"
+   ],
+   "transliterations": {
+    "Hurrian": "Išḫara",
+    "etymology": "Of Eblaite or Syrian background, taken into the Hurrian pantheon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A goddess associated with the underworld in Hurrian religion, invoked beside Allani — in the ritual of Allaiturahi the two are called on together to keep demonic forces out of a household.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani was often invoked alongside Ishara, who also was associated with the underworld in Hurrian religion; in the ritual of Allaiturahi, Allani is invoked alongside Ishara to protect a household from demonic forces."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani was often invoked alongside Ishara, who also was associated with the underworld in Hurrian religion; in the ritual of Allaiturahi, Allani is invoked alongside Ishara to protect a household from demonic forces."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "invoked-with",
+    "personId": "hurrian_allani",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani was often invoked alongside Ishara, who also was associated with the underworld in Hurrian religion; in the ritual of Allaiturahi, Allani is invoked alongside Ishara to protect a household from demonic forces."
+     }
+    ],
+    "notes": "Reciprocated in-batch."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A goddess associated with the underworld in Hurrian religion, invoked beside Allani — in the ritual of Allaiturahi the two are called on together to keep demonic forces out of a household.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Allani was often invoked alongside Ishara, who also was associated with the underworld in Hurrian religion; in the ritual of Allaiturahi, Allani is invoked alongside Ishara to protect a household from demonic forces."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "A RITE WITH A STATED PURPOSE, which is rarer in this batch than a name in a list: two goddesses invoked together to protect a house."
+ },
+ {
+  "id": "hurrian_hutena_hutellura",
+  "name": {
+   "primary": "Hutena and Hutellura",
+   "alt": [
+    "Hutena-Hutellura",
+    "Ḫutena and Ḫutellura"
+   ],
+   "transliterations": {
+    "Hurrian": "Ḫutena-Ḫutellura",
+    "etymology": "The pair is written as one hyphenated unit in the offering lists."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The paired goddesses of fate and of birth, named as a unit in the offering lists, after Ishara.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: offering lists in which Allani appears between Ishara and Hutena-Hutellura are known; the Hurrians organised their gods into kaluti."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fate",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: offering lists in which Allani appears between Ishara and Hutena-Hutellura are known; the Hurrians organised their gods into kaluti."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "named-after-in-the-kaluti",
+    "personId": "hurrian_ishara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: offering lists in which Allani appears between Ishara and Hutena-Hutellura are known; the Hurrians organised their gods into kaluti."
+     }
+    ],
+    "notes": "In-batch. The kind records an ORDERING IN A LIST and not a relationship, which is what the source gives."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "The paired goddesses of fate and of birth, named as a unit in the offering lists, after Ishara.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: offering lists in which Allani appears between Ishara and Hutena-Hutellura are known; the Hurrians organised their gods into kaluti."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "ONE RECORD FOR A PAIR THE SOURCES NEVER SEPARATE, on the ground that gave lane 22 one record for the Alcis: the offering lists write them as a hyphenated unit and give neither a separate act. Splitting them would invent two designations the evidence does not have."
+ },
+ {
+  "id": "hurrian_nikkal",
+  "name": {
+   "primary": "Nikkal",
+   "alt": [
+    "Nikkal-wa-Ib",
+    "Ningal"
+   ],
+   "transliterations": {
+    "Hurrian": "Nikkal",
+    "etymology": "From the Mesopotamian Ningal, 'great lady', by way of Ugaritic."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Consort of the moon god Kushuh, and a member of Hebat's circle in the offering lists, placed after Ishara and before the pair Umbu-Nikkal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Nikkal appears in offering lists (kaluti) focused on Hebat, in which she is typically placed after Ishara and before the pair Umbu-Nikkal; the moon god Kushuh's consort is Nikkal."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "consort-of",
+    "personId": "hurrian_kushuh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Nikkal appears in offering lists (kaluti) focused on Hebat, in which she is typically placed after Ishara and before the pair Umbu-Nikkal; the moon god Kushuh's consort is Nikkal."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record."
+   },
+   {
+    "kind": "paired-in-the-kaluti-as-Umbu-Nikkal-with",
+    "personId": "hurrian_kushuh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Nikkal appears in offering lists (kaluti) focused on Hebat, in which she is typically placed after Ishara and before the pair Umbu-Nikkal; the moon god Kushuh's consort is Nikkal."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record. THE SECOND SWEEP CAUGHT THIS: an Umbu record was authored and then removed, because hurrian_kushuh ALREADY CARRIES 'Umbu' AS AN ALIAS, and a second record would have been the within-tradition duplicate this programme forbids. The pairing is therefore written to Kushuh, where the name already lives."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Consort of the moon god Kushuh, and a member of Hebat's circle in the offering lists, placed after Ishara and before the pair Umbu-Nikkal.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Nikkal appears in offering lists (kaluti) focused on Hebat, in which she is typically placed after Ishara and before the pair Umbu-Nikkal; the moon god Kushuh's consort is Nikkal."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "THE CORPUS HELD KUSHUH AND NOT HIS CONSORT. The sources also place her before 'the pair Umbu-Nikkal', which is her own name inside a compound — the offering lists list her twice, alone and paired, and the record states that rather than resolving it. AN UMBU RECORD WAS AUTHORED AND REMOVED: the corpus's Kushuh already carries Umbu as an alias, which the second sweep surfaced, and the pairing is written to Kushuh instead."
+ },
+ {
+  "id": "hurrian_nupatik",
+  "name": {
+   "primary": "Nupatik",
+   "alt": [
+    "Lubadag",
+    "Nubadig"
+   ],
+   "transliterations": {
+    "Hurrian": "Nupatik",
+    "etymology": "Unresolved; the older form is Lubadag."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A Hurrian god attested at Ugarit together with Kumarbi and Nikkal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: in Ugarit, Nikkal occurs together with Kumarbi and Nupatik."
+     }
+    ]
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "attested-with",
+    "personId": "hurrian_kumarbi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: in Ugarit, Nikkal occurs together with Kumarbi and Nupatik."
+     }
+    ],
+    "notes": "Non-symmetric toward a pre-existing record, and the kind records a co-occurrence in a text rather than a relationship."
+   }
+  ],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A Hurrian god attested at Ugarit together with Kumarbi and Nikkal.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: in Ugarit, Nikkal occurs together with Kumarbi and Nupatik."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "hurrian_goddess_of_the_night",
+  "name": {
+   "primary": "the Goddess of the Night",
+   "alt": [
+    "the Deity of the Night",
+    "DINGIR.GE6"
+   ],
+   "transliterations": {
+    "Hurrian": "the Goddess of the Night",
+    "etymology": "The Hittite tablets write the name with a logogram meaning 'deity of the night'; the Hurrian name behind it is not recovered."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A Hurrian goddess for whom a Hittite ritual text prescribes the founding of a new temple and the dividing of her cult between the old sanctuary and the new.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian Goddess of the Night, a distinct Hurrian deity for whom a Hittite ritual text prescribes the founding of a new temple."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-night",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian Goddess of the Night, a distinct Hurrian deity for whom a Hittite ritual text prescribes the founding of a new temple."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [
+   {
+    "practice": "named in the kaluti, the Hurrian offering lists",
+    "contextTag": "attested",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment: Hurrians organised their gods into lists known as kaluti, offering lists focused on a principal deity and naming the circle that goes with them."
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "A Hurrian goddess for whom a Hittite ritual text prescribes the founding of a new temple and the dividing of her cult between the old sanctuary and the new.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Hurrian Goddess of the Night, a distinct Hurrian deity for whom a Hittite ritual text prescribes the founding of a new temple."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "FILED UNDER A DESIGNATION BECAUSE THE SOURCE GIVES A DESIGNATION, as lane 20 filed the Maiden of Pohjola, lane 21 Grendel's mother and lane 24 the Dragon King of the East Sea. The ritual is the interesting part: a text that sets out how to found a SECOND temple to a goddess who already has one, and how to divide her between them. Carries a verified-solitary verdict."
+ }
+]
+```
+
