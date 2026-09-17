@@ -105,3 +105,56 @@ Faliscan were not separate runtime tradition keys at the baseline. Their
 absence as keys does not mean their subtraditions have been audited. Roman
 Mithraic Mysteries is a separate key and needs an ownership agreement at the
 Roman/Iranian boundary; it is not silently claimed here.
+
+## Ingestion record — the 13 accepted candidates (second pass)
+
+PR #102 merged as a **census only**: all 13 candidates dispositioned `ADD` above
+stayed out of the corpus, and `added_count` stood at 0. This pass ingests them.
+
+- Transcript: `data-sources/transcripts/umbrian-expansion.txt` (13 figures).
+- Corpus figure count: **5,721 → 5,734**. Umbrian tradition: **7 → 20** records.
+- Ids as proposed in the census, unchanged: `umbrian_trebus_jovius`,
+  `umbrian_fisus_sancius`, `umbrian_tefer_jovius`, `umbrian_hondus`,
+  `umbrian_vesticius_sancius`, `umbrian_spector`, `umbrian_puemonus_popricus`,
+  `umbrian_vesuna`, `umbrian_cupra`, `umbrian_picus_martius`,
+  `umbrian_clitumnus`, `umbrian_valentia`, `umbrian_visidianus`.
+- A second era key, `"Roman-era Umbria; 1st-3rd c. CE"`, was registered in
+  `ERA_ORDER["Umbrian"]` and `ERA_DATES["Umbrian"]` for the three figures whose
+  attestation is Roman-imperial (Clitumnus, Valentia, Visidianus). The Iguvine
+  key was left untouched and still carries the other ten.
+- Seven figures carry cited relations (the inner-gate triad Trebus/Fisus/Tefer;
+  the Puemonus–Vesuna pair; the Vesticius–Spector pair in the Tabula II
+  remedial rite). All relation edges are co-invocation in a shared ritual
+  passage — no marriage, parentage or siblinghood was inferred, per the census.
+- The remaining six are genuinely kinless and are recorded in
+  `data-sources/verified-solitary.json` with cited reasons, satisfying the
+  corpus's "every name is verified" invariant.
+- Comparative identifications stayed out of the relation graph and were written
+  into `variants[]` and prose instead: Fisus Sancius ~ Semo Sancus / Dius
+  Fidius, Puemonus ~ Pomona, Vesticius ~ Vesta, Spector ~ Culśanś, Cupra ~ Bona
+  Dea / Venus, Clitumnus ~ Jupiter. `roman_pomona` and `roman_vesta` exist in
+  the corpus and were deliberately **not** linked or merged.
+- Latin Picus's royal genealogy and Circean transformation, and the
+  Oceanus/Tethys parentage conventional for river gods, were both checked and
+  refused; neither figure carries parents.
+
+### Sourcing constraint on this pass
+
+The ingesting session had no direct outbound web access — `attalus.org`,
+`en.wikipedia.org`, `tertullian.org`, `perseus.tufts.edu`, `persee.fr`,
+`keytoumbria.com` and `archive.org` are all refused by the environment's egress
+proxy. Research was done through server-side web search, which returns the
+substance of those pages without fetching them. Accordingly:
+
+- Tablet/face/line references are carried forward from the census rows above,
+  where the first pass recorded them from Poultney's translation, and are cited
+  as tablet references with this census named as the proximate record. No page
+  of the printed 1959 commentary is cited as though it had been read.
+- Ritual detail (victim, gate, cake, libation) is cited to the reference works
+  that state it and were consulted in this pass.
+- Etymologies are attributed to the scholar proposing them and marked as
+  proposals.
+
+`status` is therefore `BLOCKED`, not `DONE`: every `ADD` row is now in the
+corpus, but the 16 blocked philological/identity cases stand unresolved and
+exhaustive completion of the tradition is still not claimed.

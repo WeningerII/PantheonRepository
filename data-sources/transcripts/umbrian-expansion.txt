@@ -1,0 +1,2229 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Umbrian
+Eras (registered, exact): "Iguvine Umbrian religion; 3rd-1st c. BCE"
+                          "Roman-era Umbria; 1st-3rd c. CE"
+Author pass: Lane 1 expansion batch 2 — ingestion of the 13 candidates accepted
+             as ADD in data-sources/audits/lane-1/umbrian-census.tsv (PR #102),
+             which merged as a census only and left every accepted candidate out
+             of the corpus.
+
+================================================================================
+SOURCING NOTE — what was consulted, and how
+================================================================================
+
+This session has no direct outbound web access: the environment's egress policy
+blocks attalus.org, en.wikipedia.org, tertullian.org, perseus.tufts.edu,
+persee.fr, keytoumbria.com and archive.org alike (verified; all fail at the
+proxy). Research for this batch was therefore carried out through server-side
+web search, which returns the substance of those pages without fetching them.
+
+Consequently the citations below are scrupulous about provenance:
+
+- Tablet/face/line references for the Iguvine Tablets (TI) are carried forward
+  from the Lane 1 Umbrian census, where the previous pass recorded them directly
+  from Poultney's English translation as published at attalus.org. They are
+  cited here as tablet references, with the census named as the proximate
+  record. No page of the printed 1959 commentary is cited as if it had been read.
+- Ritual detail (which victim, which gate, which cake or libation) is cited to
+  the reference works that state it and that were actually consulted in this
+  pass — principally the Oxford Classical Dictionary entry on the tabulae
+  Iguvinae and the standard encyclopedic treatments of the Tablets.
+- Etymological claims are attributed to the scholar who made them (Poultney on
+  Vestiçe/vestiçia, the Proto-Italic *spek-tōr derivation for Speture) and are
+  marked as proposals, not settled results.
+- Comparative identifications (Fisus Sancius ~ Semo Sancus / Dius Fidius,
+  Puemonus ~ Pomona, Spector ~ Culśanś, Cupra ~ Bona Dea) are recorded in prose
+  and in `variants`, never as identity relations. The census disposition for
+  these candidates is explicit that resemblance is not identity, and the corpus
+  precedent (Umbrian Jupiter Grabovius, Roman Jupiter and Etruscan Tinia are
+  kept as separate records) is preserved.
+
+Relations authored here are confined to co-invocation attested in the same
+ritual passage. Six figures receive no relation at all, because none is
+attested; each is recorded in data-sources/verified-solitary.json with its
+reason, per the corpus's "every name is verified" invariant.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "umbrian_trebus_jovius",
+    "name": {
+      "primary": "Trebus Jovius",
+      "alt": [
+        "Trebo Iovie",
+        "Trebe Iuvie",
+        "Trebus Iovius"
+      ],
+      "transliterations": {
+        "Umbrian": "Trebo Iovie",
+        "etymology": "Trebo- is generally connected with the Italic word for a dwelling or built structure (cf. Oscan trííbúm 'house', Latin trabs 'beam'), giving a sense such as 'of the dwelling-place'; Iovie is the Jovian cult-title borne by several Iguvine recipients. The connection is the standard one reported in the reference literature, not a result established here."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Receives three pregnant sows sacrificed behind the Trebulan Gate, for the Fisian Mount and for the state of Iguvium, in the lustration liturgy of the Atiedian Brethren.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-10; VIa 58-59 (standard tablet/face/line numeration)."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "civic-lustration",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Trebo Iovie",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Trebus Iovius"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-10 — the sacrifice behind the Trebulan Gate 'for the Fisian Mount, for the state of Iguvium'."
+          }
+        ]
+      },
+      {
+        "sphereId": "boundary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae' — the second triad is honoured behind (within) the three city gates, answering the Grabovian triad honoured before them."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_inner_trebulan_offering",
+        "name": "to receive the offering made within the Trebulan Gate for the Fisian Mount and the state of Iguvium",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "His station is the inner face of the same gate at which Jupiter Grabovius is propitiated from outside.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-10; VIa 58-59."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_trebulan_pregnant_sows",
+        "name": "the three pregnant sows of the Trebulan Gate",
+        "kind": "sacrificial offering",
+        "role": "Three pregnant sows (Umbrian sif filiu) immolated to Trebus Jovius behind the Trebulan Gate in the lustration of the people of Iguvium.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Iguvine Tablets', encyclopedic summary of the gate liturgy: three pregnant sows, three suckling pigs and three ewe lambs to Trebus Jovius, Fisus Sancius and Tefer Jovius respectively."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Iovie",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-10 (Trebo Iovie, dative)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_fisus_sancius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-19; VIb 3-18 — consecutive recipients of the three inner-gate sacrifices in one liturgical sequence."
+          }
+        ],
+        "notes": "Co-invoked with Fisus Sancius in the sequence of sacrifices made behind the three gates of Iguvium."
+      },
+      {
+        "kind": "ally",
+        "personId": "umbrian_tefer_jovius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-34; VIb 22-42 — the third inner-gate recipient in the same sequence."
+          }
+        ],
+        "notes": "Co-invoked with Tefer Jovius, who completes the inner-gate series at the Veian Gate."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio), behind the Trebulan Gate",
+        "kind": "sacrificial station",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula Ia 8-10; VIa 58-59",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The Trebulan Gate (porta Trebulana) is the first of the three gates around which the lustration of the people is organised."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Trebus Jovius (Umbrian Trebo Iovie) is a divine recipient of the Iguvine lustration, receiving three pregnant sows behind the Trebulan Gate for the Fisian Mount and the state of Iguvium, and forming with Fisus Sancius and Tefer Jovius the inner-gate triad that answers the Grabovian triad honoured outside the same gates.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-10; VIa 58-59."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_trebus_structural_correspondence",
+        "claim": "Trebus Jovius stands in structural correspondence to Jupiter Grabovius.",
+        "description": "Scholarship reads the inner-gate triad as answering the Grabovian triad gate for gate, so that Trebus Jovius corresponds to Jupiter Grabovius, Fisus Sancius to Mars Grabovius and Tefer Jovius to Vofionus Grabovius. This is a correspondence of ritual position, and is not treated here as identity: the census disposition records Trebus as a named recipient distinct from Jupiter, and the registry keeps the two as separate figures.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Iguvine Tablets', encyclopedic summary of the two triads and their gate-by-gate correspondence."
+          }
+        ]
+      }
+    ],
+    "notes": "Trebus Jovius is one of the three gods of the second, inner triad of Iguvium, known only from the Iguvine Tablets. Where the Grabovian triad receives oxen in front of each of the city's three gates, the inner triad receives smaller victims behind them; Trebus Jovius takes three pregnant sows at the Trebulan Gate, the first station of the circuit. His name is usually referred to the Italic word for a dwelling or built structure, and the cult-title Iovius marks him as belonging to the Jovian sphere without making him Jupiter. Nothing in the tablets gives him kin, a consort or a myth: he is a recipient of sacrifice defined by his station in the liturgy."
+  },
+  {
+    "id": "umbrian_fisus_sancius",
+    "name": {
+      "primary": "Fisus Sancius",
+      "alt": [
+        "Fise Saci",
+        "Fiso Sansie",
+        "Fisovius Sancius",
+        "Fisouie Sansie"
+      ],
+      "transliterations": {
+        "Umbrian": "Fiso Sansie",
+        "etymology": "Fisus/Fisovius is linked to the name of the Fisian Mount (Fisia), the sacred height for which the Iguvine sacrifices are repeatedly said to be made; Sancius belongs with the Italic root of Sabine Semo Sancus and Latin Sancus / Dius Fidius, conventionally associated with sanction and sworn good faith. Both connections are reported in the reference literature as the standard readings."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Receives three suckling pigs behind the Tesenacan Gate, with mead, a mefa cake and a libation, for the Fisian Mount and for the state of Iguvium.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-19; VIb 3-18."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "civic-lustration",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Fiso Sansie",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Fisus Sancius"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-19 — the sacrifice behind the Tesenacan Gate."
+          }
+        ]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae' — the whole gate liturgy is performed 'for the Fisian Mount, for the state of Iguvium', i.e. for the safety of the sacred height and the community."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_tesenacan_pigs_and_libation",
+        "name": "to receive the suckling pigs, the mefa cake and the libation offered within the Tesenacan Gate",
+        "term": {
+          "value": "mefa spefa",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "mefa spefa (the sacrificial cake offered in a cup)"
+        },
+        "inheritability": "none",
+        "notes": "The officiant kneels to pour the libation and present the mefa spefa cake in a cup once the under-parts of the victims are placed at the back of the altar.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of the Iguvine gate liturgy: 'kneeling the officiant offers a libation and a mefa spefa cake in a cup to Fisovius Sancius for the Fisian Mount, for the state of Iguvium'."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_tesenacan_suckling_pigs",
+        "name": "the three suckling pigs of the Tesenacan Gate",
+        "kind": "sacrificial offering",
+        "role": "Three suckling pigs immolated to Fisus Sancius behind the Tesenacan Gate, accompanied by mead and a mefa cake.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-19."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_mefa_spefa_cup",
+        "name": "the mefa spefa offered in a cup",
+        "kind": "vessel",
+        "role": "The sacrificial cake presented in a cup, with a libation, to Fisovius Sancius at the altar of the Tesenacan Gate.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of the Iguvine gate liturgy, on the kneeling libation and the mefa spefa in a cup."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Sansie",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-19 (Fiso Sansie, dative)."
+          }
+        ]
+      },
+      {
+        "original": "Fisovius",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of the Tablets: 'Fisovius Sancius and Fisus Sancius are the same god'."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_trebus_jovius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-19; VIb 3-18 — consecutive recipients of the three inner-gate sacrifices in one liturgical sequence."
+          }
+        ],
+        "notes": "Co-invoked with Trebus Jovius, who opens the inner-gate series at the Trebulan Gate."
+      },
+      {
+        "kind": "ally",
+        "personId": "umbrian_tefer_jovius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-34; VIb 3-42 — the following recipient in the same sequence."
+          }
+        ],
+        "notes": "Co-invoked with Tefer Jovius, who completes the inner-gate series at the Veian Gate."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio), behind the Tesenacan Gate",
+        "kind": "sacrificial station",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula Ia 15-19; VIb 3-18",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The Tesenacan Gate is the second station of the lustration circuit; Mars Grabovius receives his oxen before the same gate."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Fisus Sancius (also Fisovius Sancius, Umbrian Fiso Sansie) receives three suckling pigs, mead, a mefa cake and a kneeling libation behind the Tesenacan Gate of Iguvium, for the Fisian Mount and the state of Iguvium; the two name-forms denote one god.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-19; VIb 3-18."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_fisus_sancius_sabine_comparison",
+        "claim": "Fisus Sancius is comparable to Sabine Semo Sancus and Roman Dius Fidius.",
+        "description": "The element Sancius is repeatedly compared with Sabine Semo Sancus and with Roman Dius Fidius, the aspect of Jupiter concerned with sworn good faith; of the three inner-gate gods this is the one whose existence is corroborated outside Iguvium, at Rome and elsewhere in Italy. The comparison is recorded here as a comparison. No Semo Sancus figure is merged with this record, and the registry's practice of keeping Umbrian, Roman and Etruscan counterparts as separate entries is followed.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Iguvine Tablets', encyclopedic summary: of the inner triad only Fisus Sancius is known with any certainty from attestations elsewhere in Italy, where he appears as Semo Sancus Dius Fidius."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_fisus_fisovius_forms",
+        "claim": "Fisus and Fisovius are one god under two name-forms.",
+        "description": "The tablets use both Fiso Sansie and Fisouie Sansie. The census consolidated them into a single record while acknowledging that the interpretive distinction between the forms is discussed in the philological literature; that consolidation is carried into the corpus here.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of the Tablets: 'Fisovius Sancius and Fisus Sancius are the same god'."
+          }
+        ]
+      }
+    ],
+    "notes": "Fisus Sancius is the second god of the inner triad of Iguvium, receiving three suckling pigs behind the Tesenacan Gate together with mead, a mefa cake and a libation poured by the kneeling officiant. His name ties him to the Fisian Mount, the sacred height for whose safety the whole lustration is performed, and the epithet Sancius places him with the Italic gods of sanction and sworn faith. He is the only member of the inner triad whose cult is corroborated beyond Iguvium, which is why the comparison with Semo Sancus and Dius Fidius is regularly made; the registry records that comparison without collapsing the figures into one."
+  },
+  {
+    "id": "umbrian_tefer_jovius",
+    "name": {
+      "primary": "Tefer Jovius",
+      "alt": [
+        "Tefrus Iovius",
+        "Tefre Iuvie",
+        "Tefro Ioui",
+        "Tefer Iovius"
+      ],
+      "transliterations": {
+        "Umbrian": "Tefrei Ioui",
+        "etymology": "Tefer is commonly connected with the Umbrian sacrificial vocabulary of burning (cf. tefra, a portion of the victim set aside to be burnt) and with the Italic root seen in Latin tepere 'to be warm'. The connection is a standing proposal in the literature rather than a settled result, and is recorded here as such."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Receives three ewe lambs sacrificed behind the Veian Gate, for the Fisian Mount and for the state of Iguvium, with a prayer of his own in the liturgy.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 24-34; VIb 22-42."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "civic-lustration",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Tefrei Ioui",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Tefro Iovio"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 24-34 — the sacrifice behind the Veian Gate."
+          }
+        ]
+      },
+      {
+        "sphereId": "boundary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae' — the inner triad is honoured within the three gates of the city."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_veian_lambs",
+        "name": "to receive the ewe lambs offered within the Veian Gate, with a prayer of his own",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Veian Gate is the last station of the lustration circuit; Vofionus Grabovius receives his oxen before the same gate.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 24-34; VIb 22-42."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_veian_ewe_lambs",
+        "name": "the three ewe lambs of the Veian Gate",
+        "kind": "sacrificial offering",
+        "role": "Three ewe lambs immolated to Tefer Jovius behind the Veian Gate, closing the sequence of inner-gate sacrifices.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Iguvine Tablets', encyclopedic summary of the gate liturgy: 'Behind the Veian Gate sacrifice three lambs to Tefer Jovius for the Fisian Mount, for the state of Iguvium'."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Ioui",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 24-34 (Tefrei Ioui, dative)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_trebus_jovius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 8-34; VIb 22-42 — recipients of the three inner-gate sacrifices in one liturgical sequence."
+          }
+        ],
+        "notes": "Co-invoked with Trebus Jovius, who opens the inner-gate series at the Trebulan Gate."
+      },
+      {
+        "kind": "ally",
+        "personId": "umbrian_fisus_sancius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 15-34; VIb 3-42 — the preceding recipient in the same sequence."
+          }
+        ],
+        "notes": "Co-invoked with Fisus Sancius, who takes the second station at the Tesenacan Gate."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio), behind the Veian Gate",
+        "kind": "sacrificial station",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula Ia 24-34; VIb 22-42",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The Veian Gate closes the circuit of the lustration of the people."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tefer Jovius (Umbrian Tefrei Ioui) receives three ewe lambs behind the Veian Gate of Iguvium, for the Fisian Mount and the state of Iguvium, completing the inner triad with Trebus Jovius and Fisus Sancius.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ia 24-34; VIb 22-42."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Oxford Classical Dictionary, s.v. 'tabulae Iguvinae'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_tefer_structural_correspondence",
+        "claim": "Tefer Jovius stands in structural correspondence to Vofionus Grabovius.",
+        "description": "In the gate-for-gate reading of the two Iguvine triads, Tefer Jovius answers Vofionus Grabovius at the Veian Gate. This is a correspondence of ritual position and is not encoded as identity; the two remain separate records.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "'Iguvine Tablets', encyclopedic summary of the two triads and their gate-by-gate correspondence."
+          }
+        ]
+      }
+    ],
+    "notes": "Tefer Jovius is the third god of the inner triad of Iguvium, receiving three ewe lambs behind the Veian Gate and a prayer of his own in the liturgy of the Atiedian Brethren. His name is usually referred to the vocabulary of burnt offering, which would make him the recipient defined by the burnt portion; the derivation is a proposal rather than a settled result. Like the other two inner-gate gods he is known only from the Tablets and has no attested kin, consort or narrative."
+  },
+  {
+    "id": "umbrian_hondus",
+    "name": {
+      "primary": "Hondus",
+      "alt": [
+        "Hontus",
+        "Hunte",
+        "Hondos",
+        "Hondus Jovius",
+        "Hondus Serfius",
+        "Hunte Iuvie",
+        "Hunte Cerfi"
+      ],
+      "transliterations": {
+        "Umbrian": "Hunte",
+        "etymology": "Hondus is generally referred to the Italic root meaning 'below, earth' (cf. Latin humus, Oscan-Umbrian hondo-), which is why the compound Hondus Jovius is often glossed 'chthonic Jupiter' or 'Jupiter of the earth below'. The gloss follows the offering he receives as much as the etymology."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Receives the sacrifice of a dog at the Hondia, the festival named for him, performed by the adfertor at the full moon with grain, a ficla cake, mead, wine and ground salt.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 15-43."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Hunte Iuvie",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Hondus Iovius"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of Tabula II: the Hondia, on which dogs were offered to Hondos Iovios, 'apparently Earthly or chthonic Zeus'."
+          }
+        ]
+      },
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of Tabula II: many scholars take Hondus for an underworld god of agricultural fertility and plenty on the grounds of the puppies he receives at his festival; Prosdocimi sets the declaration of the dog at the climax of the feriae, the intermestruae cereales."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_dog_of_the_hondia",
+        "name": "to receive the dog sacrificed at the Hondia, at the full moon between the moons of the Cerealia",
+        "term": {
+          "value": "Hondia",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Hondia (the festival named for Hondus)"
+        },
+        "inheritability": "none",
+        "notes": "Dog sacrifice is rare in Italic ritual and is the main ground for reading Hondus as a chthonic power of the harvest.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 15-43."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_hondia_dog",
+        "name": "the dog of the Hondia",
+        "kind": "sacrificial offering",
+        "role": "The dog appointed for sacrifice to Hondus Jovius at the Hondia, brought by the adfertor at the full moon together with grain, a ficla cake, mead, wine, ground salt and the vessels of the rite.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of Tabula II: the day for the sacrifice of the dog appointed for the final period of the Cerealia occurring between moons, the adfertor bringing dog, grain, ficla cake, mead, wine, ground salt and vessels."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Iuvie",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 15-43 (Hunte Iuvie, dative)."
+          }
+        ]
+      },
+      {
+        "original": "Cerfi",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ib 4-7; VIb 45-47 (Hunte Cerfi, dative) — the Cerfian cult-title, shared with Cerfus Martius and the Cerfian goddesses."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio)",
+        "kind": "festival",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula IIa 15-43 — the Hondia",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The Hondia is the festival named for the god; it falls at the full moon, in the period between moons closing the Cerealia."
+      },
+      {
+        "tradition": "Umbrian",
+        "placeName": "the Grove of Coredius",
+        "kind": "sacred grove",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets — sacrifice to Hondus Serfius at the Grove of Coredius",
+        "source": "Encyclopedic summary of the Iguvine Tablets, on the sacrifice to Hondus Serfius at the Grove of Coredius.",
+        "note": "The Serfian (Cerfian) affiliation is attached to a grove cult distinct from the Hondia; both cult-titles are kept on one record rather than split into two gods."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hondus (Umbrian Hunte), bearing the cult-titles Jovius and Serfius/Cerfius, is the divine recipient of the Hondia at Iguvium, the festival at which a dog is sacrificed to him at the full moon; the dog offering underlies the widely held reading of him as a chthonic power of agricultural plenty.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Ib 4-7; IIa 15-43; VIb 45-47."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Encyclopedic summary of the Iguvine Tablets on the Hondia, the dog sacrifice, the Grove of Coredius and the chthonic-fertility reading (with Prosdocimi's intermestruae cereales)."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Hondus is the god of the Hondia, the Iguvine festival that takes its name from him and at which a dog is killed in his honour — a victim rare enough in Italic practice to be the single most discussed detail of his cult. He appears with two cult-titles: Hondus Jovius, read by many as a chthonic Jupiter, and Hondus Serfius, worshipped at the Grove of Coredius. The two titles are kept on one record here, following the census's decision not to turn the god's cult affiliations into separate persons. The reading of him as an underworld god of agricultural plenty rests on the dog offering and on the festival's position at the close of the Cerealia, not on any statement in the tablets themselves."
+  },
+  {
+    "id": "umbrian_vesticius_sancius",
+    "name": {
+      "primary": "Vesticius Sancius",
+      "alt": [
+        "Vestice Sace",
+        "Vestiçe Saçe",
+        "Uestisier"
+      ],
+      "transliterations": {
+        "Umbrian": "vestiçe saçe",
+        "etymology": "Poultney proposed that Latin Vesta may be related to this Umbrian god — genitive Uestisier, dative Vestiçe, as if a Latin *Vesticius — and connected the name with the Umbrian words for libation, uestisiar 'libation' and uesticatu 'pour a libation', from *westikia and *westikatod; he compared Oscan Veskeí of the Agnone tablet. These are proposals of relationship, recorded here as such."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Named as a recipient in the remedial sacrifice of Tabula II, and named again in the augural description of the boundaries of Iguvium, where an avenue of Vesticius is listed among the landmarks.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4; VIa 14."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "boundary",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Uestisier",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "of Vesticius (genitive)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of the Iguvine Tablets: an avenue of Vesticius is named among the city boundaries described in the augural section."
+          }
+        ]
+      },
+      {
+        "sphereId": "civic-lustration",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vestiçe saçe",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Vesticio Sancio"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4 — recipient in the remedial sacrifice."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_the_remedial_offering_at_iguvium",
+        "name": "to receive offering in the sacrifice performed to make good an unnoticed fault in the rite",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The Tabula II sequence in which he is named is understood as expiatory, performed in atonement of possible ritual faults that went unobserved.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      {
+        "original": "Saçe",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4 (vestiçe saçe, dative) — the Sancius cult-title, shared with Fisus Sancius."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_spector",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4-5 — named in consecutive lines as recipients within the same remedial sacrifice."
+          }
+        ],
+        "notes": "Co-recipient with Spector in the remedial sacrifice of Tabula II; the two are named in consecutive lines of the same rite."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio)",
+        "kind": "sacrificial recipient",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula IIa 4",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation."
+      },
+      {
+        "tradition": "Umbrian",
+        "placeName": "the avenue of Vesticius, Iguvium",
+        "kind": "landmark",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula VIa 14",
+        "source": "Reference summary of the Iguvine Tablets, on the avenue of Vesticius among the boundary landmarks.",
+        "note": "A landmark bearing the god's name in the augural delimitation of the city's sacred boundary — an independent attestation of the name outside the sacrificial lists."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Vesticius Sancius (Umbrian vestiçe saçe, genitive Uestisier) is a named divine recipient in the remedial sacrifice of Tabula II of the Iguvine Tablets, and gives his name to an avenue listed among the boundary landmarks in the augural section of Tabula VI.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4; VIa 14."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — for the name-forms, the connection with the Umbrian libation vocabulary and the proposed relationship to Latin Vesta; the tablet references were recorded from his English translation, see data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_vesticius_vesta_proposal",
+        "claim": "Vesticius has been proposed as a relative of Latin Vesta.",
+        "description": "Poultney suggested a relationship between Latin Vesta and this Umbrian god, on the strength of the name-forms and of the Umbrian libation vocabulary uestisiar / uesticatu, comparing Oscan Veskeí. The registry keeps Roman Vesta as a separate figure and does not merge the two: the proposal is an etymological relationship argued in the literature, not an attested identification in any ancient source.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (1959), on Uestisier / Vestiçe and the libation vocabulary; reported in the standard reference discussion of Vesta's etymology."
+          }
+        ]
+      }
+    ],
+    "notes": "Vesticius Sancius is a minor but independently attested Iguvine god: he receives offering in the remedial sacrifice of Tabula II, and a street or avenue bearing his name is listed among the landmarks in the augural delimitation of the city boundary, which is what makes him a figure rather than a word in an offering formula. He shares the cult-title Sancius with Fisus Sancius. Poultney connected his name with the Umbrian vocabulary of libation and proposed a relationship with Latin Vesta; that proposal is recorded here as a proposal, and the Roman goddess is kept as a separate record. The evidence gives him no kin, no consort, no myth and no iconography, and the entry is deliberately left sparse."
+  },
+  {
+    "id": "umbrian_spector",
+    "name": {
+      "primary": "Spector",
+      "alt": [
+        "Speture",
+        "Spetture"
+      ],
+      "transliterations": {
+        "Umbrian": "speture",
+        "etymology": "Umbrian speture derives from Proto-Italic *spek-tor, 'the one who watches, the observer', from the root of Latin specio 'I look at'. The related adjective speturie is read either as 'augural, pertaining to the inspection of entrails' or, less often, as 'belonging to the god Spector'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Named in the dative as a recipient in the remedial sacrifice of Tabula II, where a victim brought from elsewhere is offered to him.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 5."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "augury",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "speture",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Spectori (dative)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion of Umbrian speture < Proto-Italic *spek-tor 'one who watches or sees', with the adjective speturie glossed 'augural / pertaining to the inspection of entrails'."
+          }
+        ]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion comparing Spector with the Etruscan Culśanś as a watchman figure."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch_over_the_rite",
+        "name": "to watch — the function carried by the name itself, 'the one who observes'",
+        "term": {
+          "value": "*spek-tor",
+          "script": "Latin (reconstructed Proto-Italic)",
+          "rom": "the one who watches or sees"
+        },
+        "inheritability": "none",
+        "notes": "The faculty is read out of the name and the cognate adjective; no tablet passage describes an act of watching.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion of Umbrian speture and speturie."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_spector_imported_victim",
+        "name": "the victim brought from away",
+        "kind": "sacrificial offering",
+        "role": "A victim brought from elsewhere and offered to Spector in the remedial sacrifice of Tabula II.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of Tabula II: 'a victim brought from away to Spector'."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_vesticius_sancius",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 4-5 — named in consecutive lines as recipients within the same remedial sacrifice."
+          }
+        ],
+        "notes": "Co-recipient with Vesticius Sancius in the remedial sacrifice of Tabula II; the two are named in consecutive lines of the same rite."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio)",
+        "kind": "sacrificial recipient",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula IIa 5",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The name appears in the dative singular in the early tablets."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Spector (Umbrian speture, dative) is a divine recipient in the remedial sacrifice of Tabula II of the Iguvine Tablets; the name derives from Proto-Italic *spek-tor, 'the one who watches'.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IIa 5."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion of Umbrian speture < Proto-Italic *spek-tor and of the adjective speturie; the comparison with Etruscan Culśanś as a watchman deity."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_spector_culsans_comparison",
+        "claim": "Spector has been compared with the Etruscan Culśanś.",
+        "description": "The watchman sense of the name has prompted comparison with Etruscan Culśanś, a double-faced guardian of thresholds. The comparison is typological and is recorded as such; no identification is encoded, and there is no Culśanś record merged with this one.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion comparing Spector with Etruscan Culśanś as a possible double-faced watchman deity."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_spector_speturie_reading",
+        "claim": "The adjective speturie need not refer to the god.",
+        "description": "speturie is read by most as 'augural, pertaining to the inspection of entrails', and only less often as 'belonging to the god Spector'. The record therefore rests on the dative theonym speture, not on the adjective.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lexical discussion of Umbrian speturie and its two readings."
+          }
+        ]
+      }
+    ],
+    "notes": "Spector is known from a single line of the Iguvine Tablets, where a victim brought from elsewhere is offered to him in the remedial sacrifice of Tabula II. His name means 'the one who watches', and the related adjective speturie belongs to the language of augury and of the inspection of entrails, which is the whole of the evidence for his function: the tablets describe no act of his. The comparison with the Etruscan threshold-guardian Culśanś rests on that sense of the name. The record is kept deliberately thin, since padding it would mean inventing a god out of an etymology."
+  },
+  {
+    "id": "umbrian_puemonus_popricus",
+    "name": {
+      "primary": "Puemonus Popricus",
+      "alt": [
+        "Pomonus Poplicus",
+        "Puemonos Popricos",
+        "Puemune Puprike",
+        "Puemune Pupřike"
+      ],
+      "transliterations": {
+        "Umbrian": "puemune pupřike",
+        "etymology": "The epithet Popricus corresponds to Latin publicus, 'of the people, public'. The theonym has been referred to the Indo-European root *po(i)- 'to pasture', which together with the *ues- of Vesuna's name gives the pair a pastoral sense; the resemblance to Latin Pomona has also been noted. Both are proposals in the literature."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped together with Vesuna in the rites of Tabulae III and IV, the oldest of the Iguvine Tablets, in which portions of the same sheep are assigned to the two of them.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula III 26-35; IV 1-33."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pastoralism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "puemune pupřike",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Puemono Poprico"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linguistic analysis relating the Umbrian forms to the Indo-European roots *po(i)- and *ues-, both 'to pasture'; pieces of the same sheep were sacrificed to both deities, which is taken to confirm their pastoral function."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Popricus",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Publicus, 'of the people'"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion: the theonym and the epithet Popricos (Publicus) together point to a universal fertility god comparable in scope to Latin Liber."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prosper_the_flocks_of_the_whole_people",
+        "name": "to prosper the flocks and increase of the community as a whole, as the epithet Popricus declares",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The public scope is carried by the epithet; the pastoral scope by the shared sheep offering and by the etymology of the two names.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion of Puemonos Popricos as a universal fertility god, with the pastoral etymology of the divine pair."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_puemonus_vesuna_sheep",
+        "name": "the shared sheep of Puemonus and Vesuna",
+        "kind": "sacrificial offering",
+        "role": "A single sheep whose parts are divided between Puemonus Popricus and Vesuna in the rites of Tabulae III and IV — the ritual fact on which their pairing and their pastoral character rest.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linguistic analysis noting that pieces of the same sheep were sacrificed to both deities."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Pupřike",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula III 26-35 (puemune pupřike, dative)."
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_vesuna",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula III 26-35; IV 1-33 — jointly worshipped, with portions of one sheep divided between them."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion: Puemonos Popricos and Vesuna appear as a divine pair only in Tabulae III and IV, the oldest of the Tablets."
+          }
+        ],
+        "notes": "Jointly worshipped with Vesuna, who receives portions of the same victim. The inscriptions pair the two in cult; they do not state that they are married, and no marriage is asserted here."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio)",
+        "kind": "joint cult",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula III 26-35; IV 1-33",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "The pair is confined to Tabulae III and IV, the oldest tablets of the series; neither god appears in the later lustration liturgy."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Puemonus Popricus (Umbrian puemune pupřike) is worshipped jointly with Vesuna in Tabulae III and IV of the Iguvine Tablets, receiving portions of the same sheep; the epithet Popricus renders Latin publicus, and the pair's names have been referred to roots meaning 'to pasture'.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula III 26-35; IV 1-33."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion of Puemonos Popricos and Vesuna as a divine pair restricted to the oldest tablets, with the *po(i)- / *ues- pastoral etymology and the shared sheep offering."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_puemonus_pomona_comparison",
+        "claim": "The name has been compared with that of Roman Pomona.",
+        "description": "The resemblance between Puemonus and Pomona is regularly noted. The census disposition for this candidate is explicit that identity must not be inferred from the name resemblance, and the registry keeps Roman Pomona as a separate figure: the two records are not linked as one being, and the comparison is recorded here only.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion noting that the name of Puemonos seems related to that of the Roman goddess Pomona."
+          }
+        ]
+      }
+    ],
+    "notes": "Puemonus Popricus belongs to the oldest layer of the Iguvine Tablets: he and Vesuna appear together in Tabulae III and IV and nowhere else in the series. The two share a victim, portions of one sheep being assigned to each, and it is this ritual fact — together with the derivation of both names from roots meaning 'to pasture' — that gives them their pastoral character. The epithet Popricus, Latin publicus, makes him a god of the community at large, which has invited comparison with Liber as a general god of increase. His name resembles that of Pomona, but resemblance is not identity and the registry keeps them apart."
+  },
+  {
+    "id": "umbrian_vesuna",
+    "name": {
+      "primary": "Vesuna",
+      "alt": [
+        "Vesona",
+        "Vesune"
+      ],
+      "transliterations": {
+        "Umbrian": "vesune",
+        "etymology": "Referred to the Indo-European root *ues- 'to pasture', pairing with the *po(i)- of Puemonus's name; the pastoral reading is supported by the shared sheep offering rather than by the etymology alone."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped with Puemonus Popricus in the rites of Tabula IV, receiving portions of the same sheep offered to him.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IV 3-13, 25-26."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "pastoralism",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "vesune",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Vesunae (dative)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linguistic analysis relating Umbrian vesune to Indo-European *ues- 'to pasture', with the shared sheep offering as corroboration."
+          }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IV 3-13 — her portion of the joint offering with Puemonus Popricus."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "share_the_victim_of_puemonus",
+        "name": "to receive her portion of the single victim divided with Puemonus Popricus",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "inheritability": "none",
+        "notes": "The division of one sheep between the two is the clearest statement of their cult association in the Tablets.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Linguistic analysis noting that pieces of the same sheep were sacrificed to both deities."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_vesuna_marsian_coin",
+        "name": "the Marsian coin bearing the name Vesuna",
+        "kind": "numismatic object",
+        "role": "A coin from Marsian territory carrying the goddess's name — the one attestation of Vesuna outside the Iguvine Tablets, and the evidence that her cult was not confined to Iguvium.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion: 'Vesuna is also found on a coin from Marsian territory'."
+          }
+        ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "umbrian_puemonus_popricus",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula III 26-35; IV 1-33 — jointly worshipped, with portions of one sheep divided between them."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion: Puemonos Popricos and Vesuna appear as a divine pair only in Tabulae III and IV, the oldest of the Tablets."
+          }
+        ],
+        "notes": "Jointly worshipped with Puemonus Popricus, with whom she shares a victim. The possessive phrasing of the inscription does not by itself establish marriage, descent or siblinghood, and none is asserted here."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Iguvium (Gubbio)",
+        "kind": "joint cult",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula IV 3-13, 25-26",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation."
+      },
+      {
+        "tradition": "Umbrian",
+        "placeName": "Marsian territory (central Italy)",
+        "kind": "numismatic attestation",
+        "period": "pre-Roman",
+        "attestation": "coin from Marsian territory bearing the name Vesuna",
+        "source": "Reference discussion of Vesuna's attestation on a Marsian coin.",
+        "note": "Evidence that the name was current among neighbouring Italic peoples as well as at Iguvium."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Vesuna (Umbrian vesune) is a goddess worshipped jointly with Puemonus Popricus in the oldest Iguvine Tablets, receiving portions of the same sheep; her name is also attested on a coin from Marsian territory.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula IV 3-13, 25-26."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reference discussion of the Puemonos/Vesuna pair, the shared sheep offering, the *ues- etymology, and the Marsian coin."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Vesuna is an Umbrian goddess known from the oldest pair of Iguvine Tablets, where she is worshipped together with Puemonus Popricus and shares a single sheep with him. Her name is referred to a root meaning 'to pasture', and the shared victim is the substantial evidence for reading the pair as pastoral powers. A coin from Marsian territory carries her name, showing that she was not a purely Iguvine figure. The tablets associate her with Puemonus in cult; they do not make her his wife, and no marriage, parentage or sibling tie is recorded here."
+  },
+  {
+    "id": "umbrian_cupra",
+    "name": {
+      "primary": "Cupra",
+      "alt": [
+        "Cubra",
+        "Cupra Mater",
+        "Cupra, Mother of the Plestini"
+      ],
+      "transliterations": {
+        "Umbrian": "cupras matres pletinas",
+        "Umbrian (later form)": "cubrar matrer",
+        "etymology": "The name is generally connected with the Sabellic adjective meaning 'good', so that Cupra Mater is 'the Good Mother' — a formation comparable to the Roman Bona Dea. The comparison of formation is not an identification of the goddesses."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Invoked as 'Cupra, mother of the Plestini' on four 4th-century BCE dedications from Plestia, and as Cubrar Matrer on the inscribed bronze plaque found in 1868 at Aja della Croce near Fossato di Vico, which dedicates a cistern to her.",
+        "sources": [
+          {
+            "kind": "epigraphic",
+            "reference": "Plestia dedications (4th c. BCE): cupras matres pletinas sacru esu, 'I am sacred to Cupra, mother of the Plestini'; bronze plaque from Aja della Croce near Fossato di Vico (ancient Helvillum), now in the Museo Archeologico Nazionale, Perugia."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "cupras matres",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Cuprae matris, 'of Cupra the mother'"
+        },
+        "sources": [
+          {
+            "kind": "epigraphic",
+            "reference": "Plestia dedications naming her matres pletinas, mother of the Plestini."
+          }
+        ]
+      },
+      {
+        "sphereId": "springs",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Study of the cult of Cupra in Picenum and Umbria: at the Umbrian sites she lost her martial attributes and became 'mother Cupra', but retained her association with springs; the Fossato di Vico inscription dedicates a cistern to her."
+          }
+        ]
+      },
+      {
+        "sphereId": "protection",
+        "contextTag": "earlier",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Study of the cult of Cupra: she originated as a Picene warrior goddess with a protective function in life and death, before her Umbrian transformation."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother_the_people_of_plestia",
+        "name": "to stand as mother to a named community, the Plestini",
+        "term": {
+          "value": "matres pletinas",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "mother of the Plestini"
+        },
+        "inheritability": "none",
+        "notes": "The dedications define her by the people whose mother she is, not by a natural sphere.",
+        "sources": [
+          {
+            "kind": "epigraphic",
+            "reference": "Four 4th-century BCE dedications from Plestia reading cupras matres pletinas sacru esu."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_cupra_bronze_plaque",
+        "name": "the bronze plaque of Aja della Croce",
+        "kind": "votive object",
+        "role": "An inscribed bronze plaque in the Umbrian language dedicating a cistern to the goddess, found in 1868 at Aja della Croce near Fossato di Vico, the site of Helvillum on the Via Flaminia; now in the Museo Archeologico Nazionale, Perugia.",
+        "sources": [
+          {
+            "kind": "epigraphic",
+            "reference": "Bronze plaque from Aja della Croce, Fossato di Vico, conventionally dated to the 2nd century BCE; Museo Archeologico Nazionale, Perugia."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Matres (Mater)",
+        "sources": [
+          {
+            "kind": "epigraphic",
+            "reference": "Plestia dedications, cupras matres pletinas; the later form cubrar matrer on the Fossato di Vico plaque."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Plestia (Colfiorito)",
+        "kind": "sanctuary",
+        "period": "4th c. BCE onward",
+        "attestation": "four dedications reading cupras matres pletinas sacru esu",
+        "source": "Epigraphic record of the Plestia dedications; study of the monumentalisation of Cupra's cult at the Umbrian sites.",
+        "note": "The sanctuary at Colfiorito is where her cult was monumentalised on the Umbrian side."
+      },
+      {
+        "tradition": "Umbrian",
+        "placeName": "Fossato di Vico (ancient Helvillum), Aja della Croce",
+        "kind": "cistern dedication",
+        "period": "2nd c. BCE",
+        "attestation": "inscribed bronze plaque, cubrar matrer",
+        "source": "Epigraphic record of the Fossato di Vico plaque; Museo Archeologico Nazionale, Perugia.",
+        "note": "The dedication of a cistern supports the association between the goddess and the water supply."
+      },
+      {
+        "tradition": "Picene",
+        "placeName": "Cupra Marittima and Cupramontana",
+        "kind": "sanctuary",
+        "period": "Iron Age to Roman imperial",
+        "attestation": "sanctuaries and the towns named for her",
+        "source": "Study of the cult of Cupra in Picenum and Umbria.",
+        "note": "Her cult is shared between Umbria and the neighbouring Picene area; two Picene towns carry her name."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cupra is a goddess of shared Umbrian and Picene cult, invoked at Plestia as 'Cupra, mother of the Plestini' on four 4th-century BCE dedications and as Cubrar Matrer on a bronze plaque from Fossato di Vico dedicating a cistern; originally a Picene warrior goddess, in Umbria she is worshipped as mother and retains an association with springs.",
+        "citations": [
+          {
+            "kind": "epigraphic",
+            "reference": "Plestia dedications (4th c. BCE); bronze plaque from Aja della Croce near Fossato di Vico (2nd c. BCE), Museo Archeologico Nazionale, Perugia."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Study of the presence and transformation of the cult of Cupra in Picenum and Umbria from the Iron Age to the Roman imperial period, on her Picene martial origin, her Umbrian maternal form and her link with springs."
+          },
+          {
+            "kind": "secondary",
+            "reference": "S. Marchesini, 'Cubrar matrer: goddess of the Picenes?' — on the name-forms and the goddess's Picene identity."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_cupra_bona_dea_comparison",
+        "claim": "Cupra Mater has been compared with Bona Dea and with Venus.",
+        "description": "Because the name is read as 'the Good (Mother)', Cupra Mater has been set beside Roman Bona Dea, and the Fossato di Vico plaque has been discussed in connection with Venus as well. The census disposition is explicit that comparisons with Hera, Venus or Bona Dea require distinct evidence and do not justify merging records; the comparison is kept in prose and no identification is encoded.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Marcattili, 'Tra Venere, Bona Dea e Cupra. Note a margine della lamina di Fossato di Vico', in Forme e strutture della religione nell'Italia mediana antica (2016), 469-489 — cited in the Lane 1 Umbrian census as the study supporting the Fossato di Vico sanctuary and the Bona Dea comparison."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_cupra_picene_origin",
+        "claim": "Cupra's cult is Picene in origin and Umbrian by diffusion.",
+        "description": "The cult is traced from Iron Age Picenum into Umbria along the routes of merchants and transhumant pastoralists, the goddess shedding her martial attributes as she became 'mother Cupra' at the Umbrian sanctuaries. The record is filed under Umbrian because the Umbrian-language dedications at Plestia and Fossato di Vico are its documentary basis, with the Picene sanctuaries recorded as cult sites.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Study of the cult of Cupra in Picenum and Umbria, on its spread via mobile populations and its Umbrian transformation."
+          }
+        ]
+      }
+    ],
+    "notes": "Cupra is the best-attested Umbrian goddess outside the Iguvine Tablets, and the only one in this batch documented by inscriptions rather than by a liturgy. Four dedications from Plestia, in the 4th century BCE, call her 'Cupra, mother of the Plestini'; a bronze plaque from Aja della Croce near Fossato di Vico, in the Umbrian language, dedicates a cistern to Cubrar Matrer. Her name is taken to mean 'the Good', making Cupra Mater 'the Good Mother'. She began as a Picene warrior goddess protective in life and death, and as her cult spread into Umbria with merchants and transhumant shepherds she lost the martial attributes and kept the association with water and springs; two towns in Picenum, Cupra Marittima and Cupramontana, still carry her name. Comparisons with Bona Dea and Venus are old and are recorded here as comparisons only."
+  },
+  {
+    "id": "umbrian_picus_martius",
+    "name": {
+      "primary": "Picus Martius",
+      "alt": [
+        "Piquier Martier",
+        "Picus of Mars"
+      ],
+      "transliterations": {
+        "Umbrian": "piquier martier",
+        "etymology": "Picus is the Italic name of the woodpecker, a bird of augury; Martius attaches him to Mars. The Umbrian genitive piquier martier in the tablets is the form in which he is named as the owner of land."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Iguvine Umbrian religion; 3rd-1st c. BCE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Iguvine Umbrian religion; 3rd-1st c. BCE",
+        "eraOrdering": 0,
+        "startEvent": "Named in Tabula V as the holder of two estates, the Ager Tlatius and the Ager Casilus, from which the Clavernii were required to supply spelt to the Atiedian Brethren.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Vb 8-18."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "piquier martier",
+          "script": "Latin (transliterated Umbrian)",
+          "rom": "Pici Martii, 'of Picus Martius' (genitive)"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of Tabula Vb: the Clavernii decuvia were to give the Atiedian Brethren spelt from the Ager Tlatius of Picus Martius; two fields are named, the Ager Tlatius and the Ager Casilus."
+          }
+        ]
+      },
+      {
+        "sphereId": "augury",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Picus",
+          "script": "Latin",
+          "rom": "the woodpecker"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "The name is that of the woodpecker, a bird of augury in Italic practice; the tablets themselves record only the landholding."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hold_the_sacred_estates_of_iguvium",
+        "name": "to hold the estates whose spelt supplies the sacrifices of the Atiedian Brethren",
+        "term": {
+          "value": "Ager Tlatius; Ager Casilus",
+          "script": "Latin",
+          "rom": "the Tlatian and Casilan fields"
+        },
+        "inheritability": "none",
+        "notes": "The god's presence in the tablets is entirely economic: land held in his name renders grain to the brotherhood.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Vb 8-18."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_picus_spelt_render",
+        "name": "the spelt of the Ager Tlatius and the Ager Casilus",
+        "kind": "offering",
+        "role": "The grain render owed from Picus Martius's two estates by the Clavernii to the Atiedian Brethren, for the sacrifices of the brotherhood.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of Tabula Vb on the spelt owed from the Ager Tlatius and the Ager Casilus of Picus Martius."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Martier (Martius)",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Vb 8-18 (piquier martier, genitive)."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Ager Tlatius and Ager Casilus, territory of Iguvium",
+        "kind": "sacred estate",
+        "period": "3rd-1st c. BCE",
+        "attestation": "Iguvine Tablets, Tabula Vb 8-18",
+        "source": "Iguvine Tablets, tablet/face/line references as recorded in data-sources/audits/lane-1/umbrian-census.tsv from Poultney's English translation.",
+        "note": "Land held in the god's name, from which the Clavernii owed spelt to the Atiedian Brethren."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Picus Martius (Umbrian piquier martier) is named in Tabula V of the Iguvine Tablets as the holder of the Ager Tlatius and the Ager Casilus, estates from which the Clavernii owed spelt to the Atiedian Brethren.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Iguvine Tablets, Tabula Vb 8-18."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Reference summary of Tabula Vb on the Clavernii, the spelt render and the two named fields of Picus Martius."
+          },
+          {
+            "kind": "secondary",
+            "reference": "J. W. Poultney, The Bronze Tables of Iguvium (American Philological Association, 1959) — the English translation from which these tablet references were recorded; see data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_picus_latin_legend_excluded",
+        "claim": "The Latin legend of Picus is not imported into this record.",
+        "description": "Latin tradition makes Picus a king of Latium, son of Saturn and father of Faunus, turned into a woodpecker by Circe. None of that is attested for the Umbrian Picus Martius, who appears in the tablets only as the holder of two estates. The census disposition for this candidate is explicit that no royal genealogy or transformation is to be imported from the Latin figure, and none is: the record carries no parents, no children and no transformation.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lane 1 Umbrian census, disposition for Picus Martius: 'The tablets name estates of this figure. No invented royal genealogy or transformation is imported from Latin Picus.' See data-sources/audits/lane-1/umbrian-census.tsv."
+          }
+        ]
+      }
+    ],
+    "notes": "Picus Martius enters the Iguvine Tablets as a landowner: the Clavernii owe the Atiedian Brethren spelt from the Ager Tlatius and the Ager Casilus, fields held in his name. That is the whole of his Umbrian dossier, and the record is kept to it. His name is the woodpecker's, a bird of augury in Italic practice, and the epithet ties him to Mars — but the well-known Latin story of Picus, king of Latium and father of Faunus, transformed by Circe, belongs to a different body of tradition and is deliberately not carried over. A god who is attested only as the owner of two grain fields is recorded as exactly that."
+  },
+  {
+    "id": "umbrian_clitumnus",
+    "name": {
+      "primary": "Clitumnus",
+      "alt": [
+        "Clitunno",
+        "Jupiter Clitumnus",
+        "Iuppiter Clitumnus"
+      ],
+      "transliterations": {
+        "Latin": "Clitumnus",
+        "etymology": "The god bears the name of the river that rises at his sanctuary, the Clitumnus (modern Clitunno) in southern Umbria."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman-era Umbria; 1st-3rd c. CE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman-era Umbria; 1st-3rd c. CE",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped at the springs of the Clitumnus, where Pliny the Younger describes an ancient temple housing the god standing clad in a toga, and an oracle that answered by lots.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8 — the description of the source of the Clitumnus, the temple, the statue of Iuppiter Clitumnus in a toga, the oracular lots and the bridge dividing the sacred water from the common stream."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rivers",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Clitumnus",
+          "script": "Latin",
+          "rom": "Clitumnus, the river and its god"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8 — the god of the spring at the head of the river, with a bridge marking the sacred water off from the ordinary stream."
+          }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "",
+          "script": "",
+          "rom": ""
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8 — the oracle at the sanctuary, answering by lots; the responses given there were held to prove that the god dwelt in the place."
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "answer_by_lots_at_the_spring",
+        "name": "to answer enquirers by lots at his spring, and so to foretell what is to come",
+        "term": {
+          "value": "sortes",
+          "script": "Latin",
+          "rom": "the lots of the oracle"
+        },
+        "inheritability": "none",
+        "notes": "Pliny reports that the oracular responses delivered there were taken as proof that the deity was present in the spring.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8."
+          }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "umbrian_clitumnus_togate_statue",
+        "name": "the togate cult statue of Clitumnus",
+        "kind": "cult-image",
+        "role": "The image of the god standing clad in a toga in the ancient temple beside the spring, described by Pliny; the toga marks him as a god of the place received into Roman civic dress rather than a Greek-style river figure.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8: beside the river 'an ancient and venerable temple rises where Jupiter Clitumnus himself stands clad in a toga'."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_clitumnus_bridge",
+        "name": "the bridge over the Clitumnus",
+        "kind": "structure",
+        "role": "The bridge that divides the sacred water from the common stream: above it only boats are allowed, below it bathing is permitted.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8."
+          }
+        ]
+      }
+    ],
+    "epithets": [
+      {
+        "original": "Iuppiter Clitumnus",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8, naming the cult statue Iuppiter Clitumnus."
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "the springs of the Clitumnus, Campello sul Clitunno",
+        "kind": "sanctuary and oracle",
+        "period": "1st-2nd c. CE (attested)",
+        "attestation": "Pliny the Younger, Epistles 8.8",
+        "source": "Pliny the Younger, Epistles 8.8; Princeton Encyclopedia of Classical Sites, s.v. Clitumnus (Temple of Jupiter-Clitumnus, Umbria).",
+        "note": "An ancient temple with the togate cult image, an oracle answering by lots, and lesser shrines around the spring."
+      },
+      {
+        "tradition": "Umbrian",
+        "placeName": "the sacred grove of the Clitumnus",
+        "kind": "sacred grove",
+        "period": "1st c. CE",
+        "attestation": "Suetonius, Caligula 43; noted also by Propertius",
+        "source": "Suetonius, Caligula 43 — Caligula visits the grove before his German expedition; the existence of the grove is noted by Propertius as well.",
+        "note": "An attestation of the cult independent of Pliny; the emperor's visit is generally read as a consultation of the oracle."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Clitumnus is the god of the springs at the head of the river Clitumnus in Umbria, worshipped at a temple where his togate image stood and where an oracle answered by lots; his sacred grove is attested independently by Suetonius and Propertius.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8."
+          },
+          {
+            "kind": "primary",
+            "reference": "Suetonius, Caligula 43 — the visit to the sacred grove of Clitumnus before the German expedition."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Princeton Encyclopedia of Classical Sites, s.v. 'Clitumnus, Temple of Jupiter-Clitumnus, Umbria, Italy'."
+          }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "umbrian_clitumnus_jupiter_identification",
+        "claim": "Clitumnus is identified with Jupiter in the Roman-period sources.",
+        "description": "Pliny names the cult image Iuppiter Clitumnus, and the site is conventionally called the temple of Jupiter-Clitumnus; the Umbrian god is thus described as a local manifestation of Jupiter. The census disposition retains this identification 'with caution', and the registry follows it: the record stays an Umbrian local god of the spring, and is not merged into any Jupiter record.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pliny the Younger, Epistles 8.8, on Iuppiter Clitumnus."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Princeton Encyclopedia of Classical Sites, s.v. 'Clitumnus'."
+          }
+        ]
+      },
+      {
+        "id": "umbrian_clitumnus_no_oceanid_parentage",
+        "claim": "No Oceanus and Tethys parentage is accepted for Clitumnus.",
+        "description": "Greek convention makes river gods children of Oceanus and Tethys, and that genealogy is sometimes extended to Italian river deities in later handbooks. No ancient source gives it to Clitumnus, and the Lane 1 census explicitly refused it. The record carries no parents.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Lane 1 Umbrian census, sources-consulted note for Clitumnus: 'No Oceanus/Tethys parentage was accepted.' See data-sources/audits/lane-1/umbrian-audit.md."
+          }
+        ]
+      }
+    ],
+    "notes": "Clitumnus is the god of the springs that feed the river Clitunno in southern Umbria, and the best-described local cult in Roman Umbria thanks to a letter of Pliny the Younger. Pliny saw an ancient temple at the source, with the god standing in a toga, an oracle that answered by lots, and a bridge across the stream dividing water too sacred to bathe in from water where bathing was allowed; the many small shrines around the spring each had their own god. Suetonius records that Caligula turned aside to the sacred grove of Clitumnus before his German expedition, and Propertius knew the grove too, so the cult is attested independently of Pliny. Pliny calls the cult image Iuppiter Clitumnus, and the sanctuary is conventionally the temple of Jupiter-Clitumnus; the registry keeps him as a local Umbrian god of the water, records the Jupiter identification as an identification made in the sources, and gives him no invented river-god genealogy."
+  },
+  {
+    "id": "umbrian_valentia",
+    "name": {
+      "primary": "Valentia",
+      "alt": [
+        "Valentia of Ocriculum"
+      ],
+      "transliterations": {
+        "Latin": "Valentia",
+        "etymology": "The name belongs with Latin valere, 'to be strong, to be in health', but the sense the goddess carried at Ocriculum is not recorded."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman-era Umbria; 1st-3rd c. CE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman-era Umbria; 1st-3rd c. CE",
+        "eraOrdering": 0,
+        "startEvent": "Named by Tertullian, drawing on a lost work of Varro, as the goddess consecrated by the municipality of Ocriculum.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8 (composed 197 CE) — the list of deities held by municipal consecration, in which Ocriculum has Valentia."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Valentia",
+          "script": "Latin",
+          "rom": "Valentia of Ocriculum"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8 — named as the deity of a single named town, in a list whose point is that each community has gods of its own."
+          }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Ocriculum (Otricoli)",
+        "kind": "municipal cult",
+        "period": "attested 197 CE, reporting earlier Varronian material",
+        "attestation": "Tertullian, Apologeticum 24.8",
+        "source": "Tertullian, Apologeticum 24.8, drawing on a lost work of Varro.",
+        "note": "Tertullian's list names the town and its deity together: Visidianus of Narnia, Valentia of Ocriculum, Nortia of Volsinii, Delventinus of Casinum, Ancharia of Asculum, Hostia of Satrium."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Valentia is the goddess of the Umbrian town of Ocriculum, named in Tertullian's list of deities held by municipal consecration.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Standard discussion of Apologeticum 24 as a list drawn from a lost work of Varro, used to argue that every community should be free to keep its own gods."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Valentia is known from a single sentence. Writing in 197 CE and drawing on a lost work of Varro, Tertullian lists the gods that Italian towns had taken for their own by municipal consecration, and gives Ocriculum — modern Otricoli, in southern Umbria — the goddess Valentia. Nothing else about her survives: no temple, no festival, no image, no myth, no kin. Her name belongs with Latin valere, 'to be strong', but what she was thought to do for Ocriculum is not recorded, and the entry does not supply a function she is not credited with. She is a local Italian deity reported by a Christian author, not a Christian figure."
+  },
+  {
+    "id": "umbrian_visidianus",
+    "name": {
+      "primary": "Visidianus",
+      "alt": [
+        "Visidianus of Narnia"
+      ],
+      "transliterations": {
+        "Latin": "Visidianus",
+        "etymology": "The name is of uncertain formation; no derivation is secure, and none is asserted here."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Umbrian",
+    "primaryTradition": "Umbrian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": {
+      "era": "Roman-era Umbria; 1st-3rd c. CE"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "Roman-era Umbria; 1st-3rd c. CE",
+        "eraOrdering": 0,
+        "startEvent": "Named by Tertullian, drawing on a lost work of Varro, as the indigenous god venerated by the municipality of Narnia.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8 (composed 197 CE) — the list of deities held by municipal consecration, in which Narnia has Visidianus."
+          }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": {
+          "value": "Visidianus",
+          "script": "Latin",
+          "rom": "Visidianus of Narnia"
+        },
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8 — named as the deity of a single named town, in a list whose point is that each community has gods of its own."
+          }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Umbrian",
+        "placeName": "Narnia (Narni)",
+        "kind": "municipal cult",
+        "period": "attested 197 CE, reporting earlier Varronian material",
+        "attestation": "Tertullian, Apologeticum 24.8",
+        "source": "Tertullian, Apologeticum 24.8, drawing on a lost work of Varro.",
+        "note": "Narnia is described as venerating Visidianus as its indigenous god."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Visidianus is the indigenous god of the Umbrian town of Narnia, named in Tertullian's list of deities held by municipal consecration.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Tertullian, Apologeticum 24.8."
+          },
+          {
+            "kind": "secondary",
+            "reference": "Standard discussion of Apologeticum 24 as a list drawn from a lost work of Varro, used to argue that every community should be free to keep its own gods."
+          }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Visidianus is the god of Narnia, modern Narni in southern Umbria, and like Valentia of Ocriculum he survives in one sentence of Tertullian's Apologeticum, written in 197 CE from a lost work of Varro. Tertullian's argument is that each Italian community had long kept gods of its own by municipal consecration, and he runs through the towns and their deities: Narnia's is Visidianus. No temple, festival, image, genealogy or healing power is attested for him, and the census disposition for this candidate was explicit that none should be supplied. The entry is correspondingly bare — a named local god of a named town, and nothing more."
+  }
+]
+```
