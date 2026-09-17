@@ -1,0 +1,813 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Traditions: Oscan | Messapian | Sicel
+Eras (registered, exact):
+  Oscan     — "Oscan-Sabellic religion; pre-Roman to Roman Italy"
+  Messapian — "iron-age-to-roman-messapia"
+  Sicel     — "pre-Greek Sikel-Sicani religion (Greco-Roman attested)"
+Author pass: Lane 1 — the smaller pre-Roman Italic and Italic-adjacent
+             traditions. 19 figures across three traditions holding 6, 6 and 9
+             records respectively at the start of this pass.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session; research went through
+server-side web search, which returns the substance of reference pages without
+fetching them. Citations name the attesting object or the reference work.
+
+The Oscan additions come almost entirely from ONE object: the Agnone Tablet
+(Tabula Osca / Tabula Agnonensis), a bronze of the 3rd-2nd century BCE found
+near Agnone in Molise in 1848 and in the British Museum since 1873
+(G_1873-0820-149). It carries two lists of divine names in the dative, all
+honoured in the "Garden of Ceres" (húrtúm Kerríiúm), and is one of the longest
+Oscan texts we have. The existing `oscan_kerres` record already cites it.
+
+The readings of several Agnone names, and almost all of the identifications
+proposed for them, are contested. The discipline followed here is the one the
+Lane 1 Umbrian pass established: the THEONYM is ingested, because the tablet
+securely attests it; the gloss is recorded as a proposal attributed to the
+literature, never as the figure's settled character.
+
+Three entries in the Agnone list are deliberately NOT ingested, because they
+name classes rather than individuals — Diumpaís Kerriíaís (the spring-nymphs,
+Latin Lymphae), Anafríss Kerriíúís (the rain-powers, Imbres) and Maatúís
+Kerriíúís (the dew-powers). This registry does not ingest creature or power
+classes. Hereklúí Kerriíúí is the existing `oscan_hercle` under his Cereal
+cult-title and is dispositioned ALIAS, not added again.
+
+Cult-title variants are SPLIT into their own records rather than folded in,
+following this corpus's own practice in these traditions: Messapian already
+keeps `messapian_zis`, `messapian_zis_menzanas` and `messapian_zis_batas` as
+three records joined by `manifested-as`, and Umbrian keeps Tursa Cerfia and
+Tursa Iovia apart. The two Agnone forms of Oscan Jupiter are therefore recorded
+beside the base theonym on the same pattern.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "oscan_diuvei",
+    "name": {
+      "primary": "Diúveí",
+      "alt": ["Diuvei", "Diúvilam", "Iúveis", "Oscan Jupiter"],
+      "transliterations": {
+        "Oscan": "diúveí",
+        "etymology": "The Oscan reflex of Italic *Diovem, the bright sky-father, cognate with Latin Iuppiter, Umbrian Iuve and Greek Zeus, from PIE *dyeus."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Worshipped across the Oscan-speaking communities as the sky-father, and honoured in the Garden of Ceres at Agnone under two distinct cult-titles.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149 — Diúveí Verehasiúí and Diúveí Regatureí in the dative list." } ] }
+    ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "diúveí", "script": "Oscan (transliterated)", "rom": "to Jupiter (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Standard treatment of the Oscan theonym as the reflex of Italic *Diovem, the sky-father." } ] },
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet: the two Jovian entries stand among the principal recipients of the Cereal sanctuary." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "manifested-as", "personId": "oscan_diuvei_verehasius",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Verehasiúí." } ],
+        "notes": "Honoured under the cult-title Verehasiús in the Agnone list." },
+      { "kind": "manifested-as", "personId": "oscan_diuvei_regatur",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Regatureí." } ],
+        "notes": "Honoured under the cult-title Regatur in the Agnone list." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet, dative list of recipients", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Diúveí is the Oscan sky-father, the Italic cognate of Latin Iuppiter and Umbrian Iuve, honoured at the Agnone sanctuary under the two cult-titles Verehasiús and Regatur.",
+        "citations": [
+          { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+          { "kind": "secondary", "reference": "Reference treatment of the Agnone Tablet as a list of divine names in the dative, all honoured in the Garden of Ceres." }
+        ], "weight": "high" }
+    ],
+    "notes": "Diúveí is Jupiter in Oscan — the same Italic sky-father as Umbrian Iuve and Latin Iuppiter, from the inherited word for the bright daytime sky. On the Agnone Tablet he appears twice, never bare: once as Diúveí Verehasiúí and once as Diúveí Regatureí, two cult-titles distinct enough that the tablet's compiler listed them separately. Those two forms are recorded here as their own entries on the pattern this registry already uses for Messapian Zis and his titles, with this record as the base theonym they both belong to."
+  },
+  {
+    "id": "oscan_diuvei_verehasius",
+    "name": {
+      "primary": "Diúveí Verehasiúí",
+      "alt": ["Diuvei Verehasiui", "Jupiter Verehasius", "Iuppiter Versor"],
+      "transliterations": {
+        "Oscan": "diúveí verehasiúí",
+        "etymology": "The cult-title Verehasiús has been connected with a verb of turning or overturning, whence the Latin gloss Iuppiter Versor; the reading of the epithet is agreed, its sense is not."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named in the dative among the recipients of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Verehasiúí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "verehasiúí", "script": "Oscan (transliterated)", "rom": "Verehasius (dative)" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, dative list." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Verehasiúí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Verehasiúí." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Diúveí Verehasiúí is a cult-form of the Oscan sky-father listed among the recipients of the Garden of Ceres on the Agnone Tablet.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." } ], "weight": "medium" }
+    ],
+    "notes": "One of the two Jovian entries on the Agnone Tablet. The epithet Verehasiús is read confidently but explained variously; a connection with a verb of turning gives the Latin gloss Iuppiter Versor, which is a proposal rather than a translation. Nothing else is known of this cult-form: the tablet lists him, assigns him his share of the sanctuary's offerings, and says no more."
+  },
+  {
+    "id": "oscan_diuvei_regatur",
+    "name": {
+      "primary": "Diúveí Regatureí",
+      "alt": ["Diuvei Regaturei", "Jupiter Regator", "Iuppiter Rigator"],
+      "transliterations": {
+        "Oscan": "diúveí regatureí",
+        "etymology": "The cult-title has been connected with irrigation or watering, whence the gloss Iuppiter Rigator, the rain-giving Jupiter; an alternative connects it with ruling. Both are proposals."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named in the dative among the recipients of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Regatureí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "rain-and-fertility", "contextTag": "lifelong", "term": { "value": "regatureí", "script": "Oscan (transliterated)", "rom": "Regator (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Diuvei Regaturei as Jupiter the rain-giver, in the list of Agnone recipients." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Regatureí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Diúveí Regatureí." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Diúveí Regatureí is a cult-form of the Oscan sky-father listed among the recipients of the Garden of Ceres, glossed in the reference literature as the rain-giving Jupiter.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of the Agnone list identifying Diuvei Regaturei with Jupiter Pluvius / the rain-giver." } ], "weight": "medium" }
+    ],
+    "notes": "The second Jovian entry on the Agnone Tablet. The reference literature glosses the title as the rain-giving Jupiter, which suits a sanctuary of grain — a god who waters the crop belongs in the Garden of Ceres — but the derivation is a proposal, and a rival explanation connects the word with ruling rather than watering. The record keeps the theonym and marks the gloss as a gloss."
+  },
+  {
+    "id": "oscan_vezkei",
+    "name": {
+      "primary": "Vezkeí",
+      "alt": ["Vezkei", "Veskeí", "Vesciae"],
+      "transliterations": {
+        "Oscan": "vezkeí",
+        "etymology": "No agreed etymology. Poultney compared the Umbrian Vestiçe and the vocabulary of libation when discussing the relatives of Latin Vesta; the comparison is a proposal and is not treated here as an identification."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "unknown", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named in the dative among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Vezkeí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "vezkeí", "script": "Oscan (transliterated)", "rom": "to Vezkeí (dative)" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — membership of the Cereal sanctuary's recipient list." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Vezkeí is a deity named in the dative among the recipients of the Garden of Ceres on the Agnone Tablet.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." } ], "weight": "medium" }
+    ],
+    "notes": "Vezkeí is a name in a list, and the list is the evidence. The Agnone Tablet puts the deity among those who receive offerings in the Garden of Ceres, which fixes the cult context and nothing else: no sex, no sphere, no image, no story. The name has been drawn into the discussion of Latin Vesta and Umbrian Vestiçe, but that is comparative philology rather than attestation, and the record does not adopt it."
+  },
+  {
+    "id": "oscan_evklui",
+    "name": {
+      "primary": "Evklúí Patereí",
+      "alt": ["Evklui", "Euklui", "Euclus", "Evklúí"],
+      "transliterations": {
+        "Oscan": "evklúí patereí",
+        "etymology": "Patereí is 'father'. The first element has been referred to a chthonic or messenger god, and the reference literature glosses the figure as Mercury or as Hades; neither identification is secure."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named with the title 'father' among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Evklúí Patereí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "evklúí patereí", "script": "Oscan (transliterated)", "rom": "to Father Evklúí (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Evklui Paterei in the Agnone list as a chthonic or messenger god, compared with Mercury and with Hades." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Patereí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Evklúí Patereí — the title 'father'." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Evklúí Patereí, 'Father Evklúí', is a deity named among the recipients of the Garden of Ceres on the Agnone Tablet, glossed in the reference literature as a chthonic or messenger god.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of the Agnone list comparing Evklui Paterei with Mercury and with Hades." } ], "weight": "medium" }
+    ],
+    "variants": [
+      { "id": "oscan_evklui_identification_open",
+        "claim": "The identification of Evklúí is unsettled.",
+        "description": "Reference treatments gloss him as Mercury or as Hades — two quite different gods — and the disagreement reflects genuine uncertainty rather than a scribal problem. The record keeps the title 'father' and the chthonic placement, which the context supports, and does not choose between the glosses.",
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Evklui Paterei as Mercury or Hades." } ] }
+    ],
+    "notes": "Evklúí is called Patereí, father, which is the one thing about him the tablet states outright. The reference literature glosses him as Mercury or as Hades, and the fact that two such different identifications are both on offer is a fair measure of how little is known. What the Agnone Tablet gives is a named father-god receiving offerings in a sanctuary of grain, which points chthonic without settling anything further."
+  },
+  {
+    "id": "oscan_futrei",
+    "name": {
+      "primary": "Futreí Kerriíaí",
+      "alt": ["Futrei", "Futreí", "the Cereal Daughter"],
+      "transliterations": {
+        "Oscan": "futreí kerriíaí",
+        "etymology": "futreí is the Oscan word for 'daughter', cognate with Greek thygater and English daughter; Kerriíaí is the Cereal cult-title shared by several figures in the Agnone list."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named as 'the Cereal Daughter' among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Futreí Kerriíaí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "futreí", "script": "Oscan (transliterated)", "rom": "daughter" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Futreí Kerriíaí." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Kerriíaí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — the Cereal cult-title." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres, under the Cereal cult-title." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres and carrying her cult-title. The tablet names her 'the Daughter' but does not state whose." },
+      { "kind": "ally", "personId": "oscan_ammai",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — Ammaí Kerriíaí and Futreí Kerriíaí, the Mother and the Daughter, both under the Cereal title." } ],
+        "notes": "Listed alongside Ammaí, the Mother, both bearing the Cereal title. The tablet sets them side by side without stating a kin relation, so none is authored." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Futreí Kerriíaí, 'the Cereal Daughter', is a goddess named among the recipients of the Garden of Ceres on the Agnone Tablet; the reference literature compares her with Persephone.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Futrei Kerriiai as the daughter-goddess, compared with Persephone." } ], "weight": "medium" }
+    ],
+    "notes": "Her name is the word for daughter, under the Cereal cult-title that several figures in the Agnone list share. The reference literature compares her with Persephone, and the comparison is natural — a Daughter beside a Mother in a sanctuary of grain — but the tablet neither names her mother nor tells a story about her, and this record does not supply either. She and Ammaí, the Mother, stand side by side in the list; that juxtaposition is recorded as co-invocation, not as kinship."
+  },
+  {
+    "id": "oscan_ammai",
+    "name": {
+      "primary": "Ammaí Kerriíaí",
+      "alt": ["Ammai", "Amma", "the Cereal Mother"],
+      "transliterations": {
+        "Oscan": "ammaí kerriíaí",
+        "etymology": "Ammaí belongs with the widespread Indo-European nursery-word for 'mother'; Kerriíaí is the Cereal cult-title of the Agnone sanctuary."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named as 'the Cereal Mother' among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Ammaí Kerriíaí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "ammaí", "script": "Oscan (transliterated)", "rom": "mother" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Ammaí Kerriíaí." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "kerriíaí", "script": "Oscan (transliterated)", "rom": "Cereal (dative fem.)" },
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — the Cereal cult-title." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Kerriíaí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — the Cereal cult-title." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres, under the Cereal cult-title." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres and carrying her cult-title." },
+      { "kind": "ally", "personId": "oscan_futrei",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — Ammaí Kerriíaí and Futreí Kerriíaí, the Mother and the Daughter." } ],
+        "notes": "Listed alongside Futreí, the Daughter, both bearing the Cereal title. The tablet sets them side by side without stating a kin relation, so none is authored." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Ammaí Kerriíaí, 'the Cereal Mother', is a goddess named among the recipients of the Garden of Ceres on the Agnone Tablet; the reference literature compares her with Demeter.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Amai Kerriiai as the mother-goddess, compared with Demeter." } ], "weight": "medium" }
+    ],
+    "notes": "The Mother of the Agnone list, under the same Cereal cult-title as the Daughter who stands beside her. Reference treatments gloss her as Demeter, and the pairing of a Mother and a Daughter in a grain sanctuary is obviously suggestive; but the tablet is a list of recipients, not a myth, and it does not say that the two are kin or that either is Ceres herself. What it does establish is that the Oscan sanctuary honoured a goddess addressed simply as Mother."
+  },
+  {
+    "id": "oscan_anter_statai",
+    "name": {
+      "primary": "Anter Stataí",
+      "alt": ["Anter Stataí", "Anter Stai", "Stata Mater"],
+      "transliterations": {
+        "Oscan": "anter stataí",
+        "etymology": "Reference treatment connects the name with the Stata Mater known among the Marsi, the 'standing' or 'staying' Mother; anter has been read as 'between' or as part of the divine name."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named among the deities of the Garden of Ceres on the Agnone Tablet, and connected by the reference literature with the Stata Mater of the Marsi.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Anter Stataí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "stataí", "script": "Oscan (transliterated)", "rom": "Stata (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss connecting Anter Stataí with the Stata Mater of the Marsi." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Anter Stataí is a goddess named among the recipients of the Garden of Ceres on the Agnone Tablet, connected by reference treatment with the Stata Mater of the Marsi.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss identifying Anter Stai with the Stata Mater dei Marsi." } ], "weight": "medium" }
+    ],
+    "notes": "A goddess of the Agnone list whom reference treatment connects with the Stata Mater worshipped among the Marsi — a figure of standing, staying, or holding firm, invoked in Italy against fire among other things. How much of the Marsian goddess belongs to the Oscan one is not established, and the record keeps the connection as a connection. The element anter is itself read either as part of the name or as the preposition 'between'."
+  },
+  {
+    "id": "oscan_liganakdikei",
+    "name": {
+      "primary": "Liganakdíkeí Entraí",
+      "alt": ["Liganakdikei", "Liganakdíkeí", "Ligenakdikei Entrai"],
+      "transliterations": {
+        "Oscan": "liganakdíkeí entraí",
+        "etymology": "A compound whose second element has been referred to the vocabulary of speaking or declaring (cf. Latin dicere); the whole is glossed in reference treatment as a power of vegetation and fruits. No derivation is agreed."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Liganakdíkeí Entraí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "vegetation", "contextTag": "lifelong", "term": { "value": "liganakdíkeí", "script": "Oscan (transliterated)", "rom": "to Liganakdíkeí (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Liganakdikei Entrai as a divinity linked to vegetation and fruits." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Liganakdíkeí Entraí is a deity named among the recipients of the Garden of Ceres on the Agnone Tablet, glossed in reference treatment as a power of vegetation and fruits.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Liganakdikei Entrai as a divinity linked to vegetation and fruits." } ], "weight": "low" }
+    ],
+    "notes": "One of the harder names on the Agnone Tablet. The compound resists confident analysis; a connection between its second element and the vocabulary of speaking or declaring has been proposed, and reference treatment glosses the whole as a power over vegetation and fruit, which fits the sanctuary if not the philology. The record keeps the theonym, the cult context, and the gloss marked as a gloss, and rates the source weight low accordingly."
+  },
+  {
+    "id": "oscan_patana_piistia",
+    "name": {
+      "primary": "Patanaí Piístíaí",
+      "alt": ["Patana Piistia", "Patanaí", "Patana"],
+      "transliterations": {
+        "Oscan": "patanaí piístíaí",
+        "etymology": "Both elements are obscure. Reference treatment glosses the figure as a goddess of the making of wine; the derivation is not established."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Patanaí Piístíaí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "wine", "contextTag": "lifelong", "term": { "value": "patanaí piístíaí", "script": "Oscan (transliterated)", "rom": "to Patana Piistia (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Patanai Piistiai as a goddess of winemaking." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Patanaí Piístíaí is a goddess named among the recipients of the Garden of Ceres on the Agnone Tablet, glossed in reference treatment as a goddess of winemaking.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Patanai Piistiai as the goddess of winemaking." } ], "weight": "low" }
+    ],
+    "notes": "A goddess of the Agnone list whose two name-elements are both obscure. Reference treatment makes her a goddess of winemaking, which would put the vine beside the grain in the sanctuary's care; the gloss is recorded as one, and the source weight is marked low because nothing corroborates it outside the list."
+  },
+  {
+    "id": "oscan_deiva_geneta",
+    "name": {
+      "primary": "Deívaí Genetaí",
+      "alt": ["Deiva Geneta", "Dea Geneta", "Geneta Mana"],
+      "transliterations": {
+        "Oscan": "deívaí genetaí",
+        "etymology": "Deívaí is 'goddess' (cf. Latin dea); Genetaí belongs with the vocabulary of birth and begetting, and reference treatment connects the figure with the Roman Geneta Mana."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named as 'the Goddess of Birth' among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Deívaí Genetaí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "genetaí", "script": "Oscan (transliterated)", "rom": "of birth / begetting" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Deivai Genetai, connecting her with the Roman Geneta Mana." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres at Agnone." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Deívaí Genetaí, the goddess of birth, is named among the recipients of the Garden of Ceres on the Agnone Tablet; reference treatment connects her with the Roman Geneta Mana.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Deivai Genetai as Mana Geneta." } ], "weight": "medium" }
+    ],
+    "notes": "Her name says what she is: the Goddess of Birth. The reference literature connects her with the Roman Geneta Mana, an obscure deity of birth and of the dead who received a puppy in sacrifice, and the connection is plausible on the name alone. The Agnone Tablet places her among the recipients of a grain sanctuary, which is a reminder that Italic agrarian cult did not separate the fertility of the field from that of the household."
+  },
+  {
+    "id": "oscan_perna",
+    "name": {
+      "primary": "Pernaí Kerriíaí",
+      "alt": ["Perna", "Pernaí", "the Cereal Perna"],
+      "transliterations": {
+        "Oscan": "pernaí kerriíaí",
+        "etymology": "No agreed derivation. Reference treatment glosses the figure as a goddess of shepherds; Kerriíaí is the Cereal cult-title of the sanctuary."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Named under the Cereal cult-title among the deities of the Garden of Ceres on the Agnone Tablet.",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet, Pernaí Kerriíaí." } ] }
+    ],
+    "domains": [
+      { "sphereId": "pastoralism", "contextTag": "lifelong", "term": { "value": "pernaí", "script": "Oscan (transliterated)", "rom": "to Perna (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference gloss of Pernai Kerriiai as a goddess of shepherds." } ] }
+    ],
+    "faculties": [], "materialCulture": [],
+    "epithets": [ { "original": "Kerriíaí", "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — the Cereal cult-title." } ] } ],
+    "relations": [
+      { "kind": "ally", "personId": "oscan_kerres",
+        "sources": [ { "kind": "epigraphic", "reference": "Agnone Tablet — a recipient in the Garden of Ceres, under the Cereal cult-title." } ],
+        "notes": "Co-honoured with Kerres in the Garden of Ceres and carrying her cult-title." }
+    ],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "the Garden of Ceres, Agnone (Molise)", "kind": "sanctuary", "period": "3rd-2nd c. BCE",
+        "attestation": "Agnone Tablet", "source": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." }
+    ],
+    "sources": [
+      { "claim": "Pernaí Kerriíaí is a goddess named under the Cereal cult-title among the recipients of the Garden of Ceres on the Agnone Tablet, glossed in reference treatment as a goddess of shepherds.",
+        "citations": [ { "kind": "epigraphic", "reference": "Agnone Tablet (Tabula Osca), British Museum G_1873-0820-149." },
+                       { "kind": "secondary", "reference": "Reference gloss of Pernai Kerriiai as the goddess of shepherds." } ], "weight": "low" }
+    ],
+    "notes": "Perna carries the Cereal cult-title like several others in the Agnone list, and reference treatment makes her a goddess of shepherds — grain and flock being the two halves of the same Samnite economy. The derivation of the name is not settled and the gloss is not corroborated outside the list, so the source weight is marked low and the record stays short."
+  },
+  {
+    "id": "oscan_angitia",
+    "name": {
+      "primary": "Angitia",
+      "alt": ["Anagtiai", "Angita", "Angitiae"],
+      "transliterations": {
+        "Oscan": "anagtiai",
+        "etymology": "The name has been connected with the Latin anguis, 'snake', which suits the goddess's association with serpents; the derivation is traditional rather than certain."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Oscan", "primaryTradition": "Oscan",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "Oscan-Sabellic religion; pre-Roman to Roman Italy", "eraOrdering": 0,
+        "startEvent": "Worshipped among the Marsi and the Samnites as a goddess of healing, of magic, and of serpents, with her chief sanctuary in the Lucus Angitiae by Lake Fucinus.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Angitia as a Samnite and Marsian goddess of healing, magic and serpents." } ] }
+    ],
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "anagtiai", "script": "Oscan (transliterated)", "rom": "to Angitia (dative)" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: a goddess associated with healing, magic and serpents, believed to cure disease and protect against venomous creatures." } ] },
+      { "sphereId": "magic", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Angitia's association with magic." } ] }
+    ],
+    "faculties": [
+      { "id": "oscan_cure_the_serpents_bite",
+        "name": "to cure disease and to make venom harmless",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The Marsi were famous in antiquity as snake-handlers and charmers, and the goddess's power over venom is the religious side of that reputation.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Angitia's power to cure disease and protect against venomous creatures." } ] }
+    ],
+    "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Oscan", "placeName": "Lucus Angitiae, by Lake Fucinus (Marsian territory)", "kind": "sacred grove", "period": "pre-Roman to Roman",
+        "attestation": "the sanctuary that carries her name", "source": "Reference treatment of the cult of Angitia among the Marsi.",
+        "note": "The grove gave its name to the settlement of Luco dei Marsi; the goddess is shared between Marsian and wider Oscan-Sabellic cult." }
+    ],
+    "sources": [
+      { "claim": "Angitia is a goddess of healing, magic and serpents worshipped by the Samnites and the Marsi, whose chief sanctuary was the grove by Lake Fucinus that bears her name.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Angitia as a Samnite goddess associated with healing, magic and serpents, depicted with snakes and credited with curing disease and protecting against venomous creatures." } ], "weight": "medium" }
+    ],
+    "notes": "Angitia belongs to the snake country of central Italy. Her grove stood by Lake Fucinus in Marsian territory, and the Marsi were known throughout antiquity as charmers and handlers of serpents — a reputation that survived into Roman folklore long after the goddess herself faded. She is credited with curing disease and with rendering venom harmless, and she is regularly shown with snakes. She is filed under the Oscan tradition key because that is the Oscan-Sabellic key this registry carries; her cult is Marsian in its centre and Samnite in its wider reach, and a future Marsian tradition should coordinate with this record rather than duplicate it."
+  },
+  {
+    "id": "messapian_venas",
+    "name": {
+      "primary": "Venas",
+      "alt": ["Venas", "Venus (Messapic)"],
+      "transliterations": {
+        "Messapic": "venas",
+        "etymology": "An inherited Indo-European theonym, cognate with Latin Venus and Old Indic vánas, 'desire'; the goddess is not a borrowing from Latin but a parallel development."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Messapian", "primaryTradition": "Messapian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "iron-age-to-roman-messapia" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "iron-age-to-roman-messapia", "eraOrdering": 0,
+        "startEvent": "Invoked in Messapic inscriptions, often together with the sky-god Zis and with Taotor.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion: Venas is an inherited deity, cognate with Latin Venus and Old Indic vánas, often invoked along with Zis and with Taotor." } ] }
+    ],
+    "domains": [
+      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "venas", "script": "Messapic (transliterated)", "rom": "Venas" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Venas as an inherited deity cognate with Venus and with Old Indic vánas, 'desire'." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "messapian_taotor",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Venas is often invoked along with the sky-god Zis and with Taotor." } ],
+        "notes": "Regularly invoked together with Taotor in the Messapic dedications." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      { "claim": "Venas is an inherited Messapic goddess, cognate with Latin Venus and with Old Indic vánas ('desire'), regularly invoked alongside the sky-god Zis and the god Taotor.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion and its inherited theonyms Zis, Venas and Taotor." } ], "weight": "medium" }
+    ],
+    "notes": "Venas matters because she is not borrowed. Her name is the Messapic reflex of the same Indo-European word that gave Latin Venus and Sanskrit vánas, 'desire', which makes her an inherited goddess of the Iapygian stock rather than a Roman import into it — a useful check on the assumption that everything Italic and southern came from Rome or from Greece. She is invoked in company: the dedications set her beside Zis, the sky-god, and beside Taotor."
+  },
+  {
+    "id": "messapian_taotor",
+    "name": {
+      "primary": "Taotor",
+      "alt": ["Taotor", "Tautor", "Taotor Andirahas"],
+      "transliterations": {
+        "Messapic": "taotor",
+        "etymology": "The name stems from PIE *teutéha-, 'the people, the tribe', so that the god is probably a power of the community itself; the function is inferred from the etymology."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Messapian", "primaryTradition": "Messapian",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "iron-age-to-roman-messapia" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "iron-age-to-roman-messapia", "eraOrdering": 0,
+        "startEvent": "Invoked in Messapic inscriptions together with Zis and Venas; his name points to the tribe or community he presides over.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion: Taotor, an unknown god probably related to the tribe or community, his name stemming from PIE *teutéha-." } ] }
+    ],
+    "domains": [
+      { "sphereId": "community", "contextTag": "lifelong", "term": { "value": "taotor", "script": "Messapic (transliterated)", "rom": "Taotor" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment deriving Taotor from PIE *teutéha-, 'people'." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "messapian_venas",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Venas is often invoked along with the sky-god Zis and with Taotor." } ],
+        "notes": "Regularly invoked together with Venas in the Messapic dedications." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      { "claim": "Taotor is a Messapic god invoked alongside Zis and Venas, whose name derives from PIE *teutéha-, 'the people', suggesting a god of the tribe or community.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion and the theonym Taotor." } ], "weight": "medium" }
+    ],
+    "notes": "Taotor is described in the literature, candidly, as an unknown god. What can be said is that his name comes from the inherited Indo-European word for the people or the tribe — the same root behind Oscan touto and Irish túath — so he is very probably the community itself made divine. He is invoked with Zis and with Venas, which places him in the front rank of Messapic cult without telling us what he did there. The record keeps the etymology, the company he keeps, and the admission that the rest is unknown."
+  },
+  {
+    "id": "messapian_athana",
+    "name": {
+      "primary": "Athana",
+      "alt": ["Athana", "Athena (Messapic)", "Athana of Iapygia"],
+      "transliterations": {
+        "Messapic": "athana",
+        "etymology": "The Messapic form of the name of Athena, taken over into Iapygian cult alongside Aprodita."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Messapian", "primaryTradition": "Messapian",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "iron-age-to-roman-messapia" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "iron-age-to-roman-messapia", "eraOrdering": 0,
+        "startEvent": "Worshipped in Iapygia under the Messapic form of her name, alongside Aprodita.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion: Aphrodite and Athena were worshipped in Iapygia as Aprodita and Athana respectively." } ] }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "athana", "script": "Messapic (transliterated)", "rom": "Athana" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Iapygian cult of Athana." } ] },
+      { "sphereId": "craft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Iapygian cult of Athana as the local form of Athena." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [
+      { "claim": "Athana is the Messapic form of Athena, worshipped in Iapygia alongside Aprodita.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Messapic religion: Aphrodite and Athena were worshipped in Iapygia as Aprodita and Athana." } ], "weight": "medium" }
+    ],
+    "notes": "Athana is Athena as the Messapians said her name and kept her cult. She is recorded in her own right for the same reason Aprodita already is in this registry, and for the same reason Etruscan Menrva stands apart from Greek Athena: the local cult is the thing attested, and the borrowed name does not make the worship Greek. What the Iapygians asked of her is not recorded, and the record does not invent it."
+  },
+  {
+    "id": "sicel_krimisos",
+    "name": {
+      "primary": "Krimisos",
+      "alt": ["Crimisus", "Crimissus", "Krimisos of Egesta"],
+      "transliterations": {
+        "Greek": "Κριμισός",
+        "etymology": "The god bears the name of the river Krimisos in north-western Sicily, which entered the sea near Egesta."
+      }
+    },
+    "type": "deity", "origin": "canon", "tradition": "Sicel", "primaryTradition": "Sicel",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)", "eraOrdering": 0,
+        "startEvent": "Worshipped as the god of the river Krimisos in the territory of Egesta in western Sicily, and named as the father of the city's founder-hero by the nymph Segesta.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Krimisos (Crimisus), the Sicilian river-god of north-western Sicily, whose river entered the sea near the colony of Egesta." } ] }
+    ],
+    "domains": [
+      { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "Κριμισός", "script": "Greek", "rom": "Krimisos" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Krimisos as a personified Sicilian river." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "lover", "personId": "sicel_segesta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Egestan foundation tradition, in which the river-god Krimisos fathers the city's founder on the nymph Segesta." } ],
+        "notes": "Father, by the nymph Segesta, of the founder-hero of Egesta in the western Sicilian foundation tradition." }
+    ],
+    "cultRecords": [
+      { "tradition": "Sicel", "placeName": "the river Krimisos, territory of Egesta (western Sicily)", "kind": "river cult", "period": "pre-Greek to Roman",
+        "attestation": "the personified river and the Egestan foundation tradition", "source": "Reference treatment of the Sicilian river-gods and of the Egestan foundation legend." }
+    ],
+    "sources": [
+      { "claim": "Krimisos is the god of the river of that name in north-western Sicily, near Egesta, and in the Egestan foundation tradition the father of the city's founder-hero by the nymph Segesta.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Krimisos (Crimisus), Sicilian river-god, and of the personified rivers of Sicily." } ], "weight": "medium" }
+    ],
+    "notes": "Krimisos is a river that fathers a city. His stream ran through the territory of Egesta in the Elymian west of Sicily, and the foundation tradition of that city made him the father of its founder-hero by the nymph Segesta — the pattern by which Greek and Sicilian communities alike traced themselves to the water they drank. He is recorded under the Sicel tradition key, which this registry uses for the indigenous Sicilian figures known through Greco-Roman report; the Elymian west had its own identity, and a future Elymian tradition should coordinate with this record rather than duplicate it."
+  },
+  {
+    "id": "sicel_segesta",
+    "name": {
+      "primary": "Segesta",
+      "alt": ["Egesta", "Aigesta", "Segesta the nymph"],
+      "transliterations": {
+        "Greek": "Αἴγεστα",
+        "etymology": "The nymph shares her name with the city of Segesta (Greek Egesta/Aigesta) in western Sicily, of which she is the eponym."
+      }
+    },
+    "type": "numen", "origin": "canon", "tradition": "Sicel", "primaryTradition": "Sicel",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)" },
+    "lifecycle": [
+      { "typeStatus": "numen", "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)", "eraOrdering": 0,
+        "startEvent": "Bore the founder-hero of Egesta to the river-god Krimisos, and gave the city her name.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Egestan foundation tradition, in which Segesta bears the city's founder to the river-god Krimisos." } ] }
+    ],
+    "domains": [
+      { "sphereId": "city-founding", "contextTag": "lifelong", "term": { "value": "Αἴγεστα", "script": "Greek", "rom": "Aigesta / Segesta" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Segesta as eponym of the Elymian city." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "lover", "personId": "sicel_krimisos",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Egestan foundation tradition." } ],
+        "notes": "Bore the founder-hero of Egesta to the river-god Krimisos." }
+    ],
+    "cultRecords": [
+      { "tradition": "Sicel", "placeName": "Segesta (Egesta), western Sicily", "kind": "eponymous association", "period": "pre-Greek to Roman",
+        "attestation": "the city's foundation tradition and its name", "source": "Reference treatment of the Egestan foundation legend." }
+    ],
+    "sources": [
+      { "claim": "Segesta is the nymph who bore the founder-hero of the western Sicilian city of Egesta to the river-god Krimisos, and who gave the city her name.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Segesta and the Egestan foundation tradition." } ], "weight": "medium" }
+    ],
+    "notes": "Segesta is the city and the nymph at once. In the foundation tradition of Elymian Egesta she bears the founder-hero to the river-god Krimisos, and the town keeps her name — Segesta in Latin, Aigesta or Egesta in Greek. The record is filed under the Sicel key, this registry's key for indigenous Sicilian figures known through Greco-Roman report, with the same caveat as Krimisos: the Elymians were their own people, and a future Elymian tradition should build on these records rather than beside them."
+  },
+  {
+    "id": "sicel_eryx",
+    "name": {
+      "primary": "Eryx",
+      "alt": ["Eryx of Sicily", "Erix", "Eryx the boxer"],
+      "transliterations": {
+        "Greek": "Ἔρυξ",
+        "etymology": "Eponym of Mount Eryx and of the city on it, in the Elymian west of Sicily, site of one of the most famous sanctuaries of the Mediterranean."
+      }
+    },
+    "type": "demigod", "origin": "canon", "tradition": "Sicel", "primaryTradition": "Sicel",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["greek_hesiod_aphrodite"], "parentRoles": ["mother"],
+    "temporal": { "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)" },
+    "lifecycle": [
+      { "typeStatus": "demigod", "era": "pre-Greek Sikel-Sicani religion (Greco-Roman attested)", "eraOrdering": 0,
+        "startEvent": "Ruled in western Sicily as a king renowned for his strength as a boxer, son of the goddess of love, and gave his name to the mountain and city of Eryx.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Eryx, king in Sicily, son of Aphrodite, known for his strength and skill as a fighter and connected with the city of Eryx." } ] }
+    ],
+    "domains": [
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "Ἔρυξ", "script": "Greek", "rom": "Eryx" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Eryx's renown as a fighter and boxer." } ] },
+      { "sphereId": "city-founding", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Eryx as eponym of the Sicilian mountain and city." } ] }
+    ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [
+      { "tradition": "Sicel", "placeName": "Mount Eryx (Erice), western Sicily", "kind": "sanctuary and eponymous association", "period": "pre-Greek to Roman",
+        "attestation": "the mountain and city bearing his name; the sanctuary of the mother goddess on its summit",
+        "source": "Reference treatment of Eryx and of the Elymian sanctuary on the mountain.",
+        "note": "Long before Greek or Roman ships reached the coast the Elymians venerated a mother goddess of fertility and the heavens on this summit; her sanctuary later became that of Aphrodite and then Venus Erycina." }
+    ],
+    "sources": [
+      { "claim": "Eryx is the eponymous hero of Mount Eryx and its city in western Sicily, a king celebrated for his strength as a fighter and named as a son of the goddess of love; the mountain carried an Elymian sanctuary of a mother goddess long before Greek or Roman contact.",
+        "citations": [ { "kind": "secondary", "reference": "Reference treatment of Eryx, king of Sicily and son of Aphrodite." },
+                       { "kind": "secondary", "reference": "Reference treatment of the Elymian sanctuary on Mount Eryx, venerating a mother goddess of fertility and the heavens." } ], "weight": "medium" }
+    ],
+    "variants": [
+      { "id": "sicel_eryx_paternity_open",
+        "claim": "Eryx's father is given differently in different accounts.",
+        "description": "His mother is consistently the goddess of love; his father is variously Butes the Argonaut and Poseidon. Because the accounts disagree, only the maternal line is authored, and the record's tier follows from that single divine parent.",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Eryx noting the divergent paternities." } ] }
+    ],
+    "notes": "Eryx gave his name to the most striking mountain in western Sicily and to the city on its summit. The tradition makes him a king and a boxer, strong enough that his contest with Heracles became the standard story about him, and a son of the goddess of love — which is why the sanctuary on his mountain belonged to Aphrodite for the Greeks and to Venus Erycina for the Romans. Underneath that lies something older: the Elymians venerated a mother goddess of fertility and the heavens on the summit long before either. His paternity is reported inconsistently, so only the maternal line is recorded here."
+  }
+]
+```
