@@ -1,0 +1,3113 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Arabian (pre-Islamic, Hijazi and North Arabian)
+Eras (registered, exact): pantheon-era; mu-allaqat-poetic; south-arabian-kingdoms; modern-collection
+Author pass: the Arabian key held 12 records. This adds 25.
+
+================================================================================
+THE GAP — FOUR GODS, EIGHT POETS, AND NOT ONE OTHER IDOL
+================================================================================
+
+The Arabian key held **twelve records**:
+
+    Hubal, Allat, al-'Uzza, Manat      four Hijazi deities
+    Imru' al-Qais, 'Antara, Hatim      eight figures of the Mu'allaqat
+    al-Tai, 'Abla, 'Adi, Hujr,         and the poetic tradition
+    Shaddad, Zabiba
+
+The four deities are **exactly the four the Qur'an argues with** — Hubal at the
+Ka'ba, and the three "daughters of Allah" of Surat al-Najm. Beyond them the key
+held **no idol at all**: not the five of Surat Nuh, not Isaf and Na'ila on the
+two hills of the Meccan rite, not Manaf, whom the sources say was once the most
+important deity in Mecca.
+
+And it held no **people of the cult** — no Amr ibn Luhayy, who in the tradition's
+own telling brought Hubal to Mecca; no Qusayy ibn Kilab, who set Isaf and Na'ila
+by Zamzam; and not one **kahin**, though the kahins were the religious leaders of
+pre-Islamic Hijazi spirituality. Eight poets and no priests.
+
+================================================================================
+WHAT THIS LANE IS NOT — A SCOPE CORRECTION MADE BEFORE AUTHORING
+================================================================================
+
+This lane began from the assumption that the Arabian key was missing the South
+Arabian and Nabataean pantheons too. **The sweep disproved that before a line was
+written.** The corpus already holds them under their own keys:
+
+    Sabaean     Almaqah, Athtar, Shams, Sin, Wadd, 'Amm       (6)
+    Nabataean   Dushara, Allat, al-Uzza, Manat, Qaws          (5)
+    Palmyrene   Bel, Baalshamin, Aglibol, Yarhibol, Malakbel  (6)
+    Aksumite    Almaqah, Astar, Beher, Mahrem, Medr, ...      (7)
+
+So this lane is scoped to the layer that genuinely has no key of its own: **the
+Hijazi and North Arabian idols and the people of their cult.** Deities belonging
+to the Nabataean or South Arabian keys are censused BLOCKED FOR THIS LANE, with
+the blocker being the key and not the evidence — they are real and should be
+ingested, just not here and not under this name.
+
+================================================================================
+THE SOURCE, AND ITS RELIABILITY, STATED UP FRONT
+================================================================================
+
+Nearly all of this batch rests on **Ibn al-Kalbi's Kitab al-Asnam** (early 9th c.
+CE), which the corpus's four existing Arabian deity records already cite as a
+primary source. It is the foundational Arabic compendium of Arabian idol-cult: an
+itemised list of nearly thirty idols with their tribes and territories.
+
+**It is also a source many historians today do not consider reliable** for
+Arabian religion before Islam. Ibn al-Kalbi wrote in the early ninth century from
+Arab oral tradition, about a religion that had been suppressed for two hundred
+years, and with an evident interest in its suppression.
+
+That caveat is carried **inside the source blob attached to every record in this
+batch**, not buried in an audit — so it travels with the data rather than with
+the paperwork.
+
+================================================================================
+BLOCK 1 — THE FIVE IDOLS OF QUR'AN 71:23
+================================================================================
+
+**Wadd, Suwa', Yaghuth, Ya'uq and Nasr** — the five idols Noah's people were
+urged not to abandon, and the best-attested list of pre-Islamic Arabian gods
+there is, since it stands in the Qur'an itself. The commentators give each a form:
+a man, a woman, a lion, a horse and an eagle. The tribes are named too: Kalb,
+Hudhayl, Murad and Madhhij, Hamdan, Himyar.
+
+**Only one of the five resolved in the corpus, and it resolved to the wrong key.**
+`Wadd` matched `sabaean_wadd` — the South Arabian moon-god — not the Qur'anic Wadd
+of the Kalb at Dumat al-Jandal. That is the **fourth sweep failure mode** this
+programme named two lanes ago, arriving now in its third consecutive tradition.
+
+```json
+[
+ {
+  "id": "arabian_wadd",
+  "name": {
+   "primary": "Wadd",
+   "alt": [
+    "Wadd of Dumat al-Jandal",
+    "Wudd",
+    "ود"
+   ],
+   "transliterations": {
+    "arabic-script": "ودّ",
+    "arabic-romanization": "Wadd",
+    "etymology": "Arabic wadd, commonly connected with 'love, affection'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine stood at Dumat al-Jandal; the first of the five idols Noah's people were urged not to abandon, worshipped in the form of a man.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-kalb",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-shrine-at-dumat-al-jandal",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   },
+   {
+    "sphereId": "manlike-idol-form",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "cross-tradition-counterpart-of",
+    "personId": "sabaean_wadd",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Non-symmetric, written from this end only; sabaean_wadd is a pre-existing record under the Sabaean key and this batch mutates none. FOUND BY THE SWEEP: 'Wadd' already resolved in the corpus — to the SOUTH ARABIAN moon-god of the Sabaean pantheon. This record is the NORTH ARABIAN Wadd of Kalb and Dumat al-Jandal, the one named in Qur'an 71:23, held under its own key as the registry already holds Allat and Manat under both the Arabian and Nabataean keys."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_suwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yaghuth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yauq",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_nasr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine stood at Dumat al-Jandal; the first of the five idols Noah's people were urged not to abandon, worshipped in the form of a man.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE ONLY ONE OF THE FIVE THAT RESOLVED, AND IT RESOLVED TO THE WRONG KEY. The Sabaean Wadd was already held; the Qur'anic Wadd of the Kalb was not. That is the fourth sweep failure mode this programme named two lanes ago, in its third consecutive tradition."
+ },
+ {
+  "id": "arabian_suwa",
+  "name": {
+   "primary": "Suwa'",
+   "alt": [
+    "Suwa",
+    "Suwāʿ",
+    "سواع"
+   ],
+   "transliterations": {
+    "arabic-script": "سُوَاع",
+    "arabic-romanization": "Suwa'",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The goddess of the Hudhayl, whose idol was a female figure; the second of the five idols of Qur'an 71:23.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-hudhayl",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   },
+   {
+    "sphereId": "womanlike-idol-form",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_wadd",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yaghuth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yauq",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_nasr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The goddess of the Hudhayl, whose idol was a female figure; the second of the five idols of Qur'an 71:23.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE ONE GODDESS AMONG THE FIVE. The commentators give each of the five a form — a man, a woman, a lion, a horse and an eagle — and hers is the woman."
+ },
+ {
+  "id": "arabian_yaghuth",
+  "name": {
+   "primary": "Yaghuth",
+   "alt": [
+    "Yaghūth",
+    "يغوث"
+   ],
+   "transliterations": {
+    "arabic-script": "يَغُوث",
+    "arabic-romanization": "Yaghuth",
+    "etymology": "Arabic yaghuth, commonly read as 'he helps'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The god of An'um, a branch of Tayy, and of some branches of Madhhij, worshipped in the form of a lion; the third of the five idols of Qur'an 71:23.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-tayy-and-madhhij",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   },
+   {
+    "sphereId": "lion-form",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_wadd",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_suwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yauq",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_nasr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The god of An'um, a branch of Tayy, and of some branches of Madhhij, worshipped in the form of a lion; the third of the five idols of Qur'an 71:23.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A LION FOR A TRIBE OF RAIDERS. His tribes, Tayy and Madhhij, are the ones the sources most often describe in martial terms, and the form given to the idol matches."
+ },
+ {
+  "id": "arabian_yauq",
+  "name": {
+   "primary": "Ya'uq",
+   "alt": [
+    "Yaʿūq",
+    "Yauq",
+    "يعوق"
+   ],
+   "transliterations": {
+    "arabic-script": "يَعُوق",
+    "arabic-romanization": "Ya'uq",
+    "etymology": "Arabic ya'uq, commonly read as 'he preserves' or 'he hinders'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen, worshipped in the form of a horse; the fourth of the five idols of Qur'an 71:23.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-hamdan",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   },
+   {
+    "sphereId": "horse-form",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_wadd",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_suwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yaghuth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_nasr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen, worshipped in the form of a horse; the fourth of the five idols of Qur'an 71:23.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE ONLY ONE OF THE FIVE WHOSE TERRITORY THE SOURCES NAME EXACTLY: Khaywan, in the land of Hamdan in the Yemen."
+ },
+ {
+  "id": "arabian_nasr",
+  "name": {
+   "primary": "Nasr",
+   "alt": [
+    "Naṣr",
+    "نسر"
+   ],
+   "transliterations": {
+    "arabic-script": "نَسْر",
+    "arabic-romanization": "Nasr",
+    "etymology": "Arabic nasr, 'eagle' or 'vulture' — the name IS the form"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The god of Himyar, worshipped in the form of an eagle; the fifth of the five idols of Qur'an 71:23.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-himyar",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   },
+   {
+    "sphereId": "eagle-form",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_wadd",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_suwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yaghuth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   },
+   {
+    "kind": "named-among-the-five-idols-of-surat-nuh-with",
+    "personId": "arabian_yauq",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     }
+    ],
+    "notes": "Reciprocated within this batch. Qur'an 71:23 names Wadd, Suwa', Yaghuth, Ya'uq and Nasr together in a single verse, and the commentators treat them as one list with one form assigned to each; the set is the attestation."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The god of Himyar, worshipped in the form of an eagle; the fifth of the five idols of Qur'an 71:23.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the five idols of Qur'an 71:23: Wadd, Suwa', Yaghuth, Ya'uq and Nasr are the five idols Noah's people were urged not to abandon. Islamic sources assign them to tribes: Wadd was worshipped by Kalb, Suwa' by Hudhayl, Yaghuth by Murad, Ya'uq by Hamdan and Nasr by Himyar. In more detail: Wadd was the god of the Banu Kalb ibn Wabara, a branch of the Quda'a, whose shrine was built at Dumat al-Jandal; Suwa' was the goddess of the Hudhayl and her idol was a female figure; Yaghuth was the god of An'um, a branch of Tayy, and of some branches of Madhhij; and Ya'uq was the god of Khaywan, a branch of Hamdan, in the territory of Hamdan in the Yemen. The commentators say that Wadd was worshipped in the form of a man, Suwa' in that of a woman, Yaghuth in that of a lion, Ya'uq in that of a horse and Nasr in that of an eagle."
+     },
+     {
+      "kind": "primary",
+      "reference": "Qur'an 71:23 (Surat Nuh)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "HIS NAME IS HIS SHAPE. Arabic nasr means eagle, and the commentators say he was worshipped in the form of one — the clearest case among the five of a name and an image that are the same fact."
+ }
+]
+```
+
+================================================================================
+BLOCK 2 — THE MECCAN IDOLS AND THE PRE-ISLAMIC ALLAH
+================================================================================
+
+**Isaf and Na'ila** stood on as-Safa and al-Marwa, the two hills of the Meccan
+running-rite, and guarded the well of Zamzam. The legend makes them a man and a
+woman **petrified for committing adultery inside the Ka'ba** — so the Quraysh
+worshipped, on their two most sacred hills, two people the story says were turned
+to stone for defiling the sanctuary. They are authored as a pair, reciprocally
+linked, because holding one would leave the rite with a single terminus.
+
+**Manaf** was, the sources say, once the most important deity at Mecca. The corpus
+held the four gods the Qur'an argues with and not the one they displaced.
+
+**Allah, the pre-Islamic Meccan deity**, is this lane's most sensitive call and is
+made carefully. The record is scoped **by its primary name** to the pre-Islamic
+Meccan figure the sources describe, and records exactly what they say: a deity
+some scholars count among those the Ka'ba was dedicated to, the guardian of
+contracts, of little relevance in the Meccan religion, whose chief god was Hubal.
+**The 1901 lunar-deity theory of Hugo Winckler is recorded only together with its
+rejection** — opponents reject it as speculative and unsupported by any
+archaeological or textual evidence from pre-Islamic Arabia — and this registry
+does not carry it as a live reading.
+
+```json
+[
+ {
+  "id": "arabian_isaf",
+  "name": {
+   "primary": "Isaf",
+   "alt": [
+    "Isāf",
+    "إساف"
+   ],
+   "transliterations": {
+    "arabic-script": "إساف",
+    "arabic-romanization": "Isaf",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "One of the two Meccan water deities and dual guardian spirits of the well of Zamzam, whose stone idol stood on the hill of as-Safa; the Quraysh directed a talbiya specifically to him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardianship-of-zamzam",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hill-of-as-safa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   },
+   {
+    "sphereId": "quraysh-sacrifice",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "petrified-with",
+    "personId": "arabian_naila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ],
+    "notes": "Reciprocated within this batch. The pair is inseparable in every telling: two idols, two hills, one transgression."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the two Meccan water deities and dual guardian spirits of the well of Zamzam, whose stone idol stood on the hill of as-Safa; the Quraysh directed a talbiya specifically to him.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A GOD MADE OUT OF A PUNISHMENT. The legend has him and Na'ila petrified for committing adultery inside the Ka'ba — so the Quraysh worshipped, on their two most sacred hills, two people the story says were turned to stone for defiling the sanctuary."
+ },
+ {
+  "id": "arabian_naila",
+  "name": {
+   "primary": "Na'ila",
+   "alt": [
+    "Nāʾila",
+    "Naila",
+    "نائلة"
+   ],
+   "transliterations": {
+    "arabic-script": "نائلة",
+    "arabic-romanization": "Na'ila",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The second of the two Meccan water deities and dual guardian spirits of the well of Zamzam, whose stone idol stood on the hill of al-Marwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardianship-of-zamzam",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hill-of-al-marwa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "petrified-with",
+    "personId": "arabian_isaf",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     }
+    ],
+    "notes": "Reciprocated within this batch; see the note on arabian_isaf."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The second of the two Meccan water deities and dual guardian spirits of the well of Zamzam, whose stone idol stood on the hill of al-Marwa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Isaf and Na'ila: two deities worshipped as a god and a goddess in pre-Islamic Arabia, Meccan water deities and the dual guardian spirits of the well of Zamzam, whose large stone idols stood atop the two sacred hills near the Ka'ba called as-Safa and al-Marwa; various legends existed about the idols, including one that they were petrified after committing adultery in the Ka'ba - taking advantage of the privacy of the Sacred House, Isaf committed adultery with her in the sanctuary, whereupon they were transformed into stone. They were primarily worshipped by the Quraysh and were said to be particularly important to that tribe, with Qurayshi sacrifices involving a talbiya directed specifically to Isaf; the Qurayshi Qusayy ibn Kilab had taken the two stones to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE SECOND HILL. Holding one of this pair without the other would leave the running between as-Safa and al-Marwa with only one terminus — the Legba-without-Kalfou fault this programme has now found in twenty-one traditions."
+ },
+ {
+  "id": "arabian_manaf",
+  "name": {
+   "primary": "Manaf",
+   "alt": [
+    "Manāf",
+    "مناف"
+   ],
+   "transliterations": {
+    "arabic-script": "مناف",
+    "arabic-romanization": "Manaf",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A deity venerated by the Quraysh who, at one time, seems to have been the most important deity at Mecca.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Manaf: the Quraysh venerated Manaf, and at one time Manaf seems to have been the most important deity at Mecca."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "quraysh-patronage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Manaf: the Quraysh venerated Manaf, and at one time Manaf seems to have been the most important deity at Mecca."
+     }
+    ]
+   },
+   {
+    "sphereId": "meccan-primacy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Manaf: the Quraysh venerated Manaf, and at one time Manaf seems to have been the most important deity at Mecca."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A deity venerated by the Quraysh who, at one time, seems to have been the most important deity at Mecca.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Manaf: the Quraysh venerated Manaf, and at one time Manaf seems to have been the most important deity at Mecca."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "ONCE THE MOST IMPORTANT GOD IN MECCA, AND THE CORPUS DID NOT HOLD HIM. The registry had Hubal, Allat, al-Uzza and Manat — the four the Qur'an argues with — and not the god the sources say once outranked them. His name survives in 'Abd Manaf, the Qurayshi ancestor, which is how a lapsed cult usually leaves its trace."
+ },
+ {
+  "id": "arabian_allah_preislamic",
+  "name": {
+   "primary": "Allah (the pre-Islamic Meccan deity)",
+   "alt": [
+    "Allāh",
+    "the guardian of contracts",
+    "الله"
+   ],
+   "transliterations": {
+    "arabic-script": "الله",
+    "arabic-romanization": "Allah (the pre-Islamic Meccan deity)",
+    "etymology": "Arabic Allāh, usually analysed as al-ilāh, 'the god'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A deity of the Meccan religion, named by some scholars among the gods to whom the Ka'ba shrine was dedicated, and the guardian of contracts — though contracts were at first still settled at a special ritual locality and so subordinate to the supervision of an idol.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Allah in pre-Islamic Mecca: the Ka'ba site housed about three hundred and sixty idols and attracted worshippers from all over Arabia, and the chief god in pre-Islamic Arabia was Hubal, whose icon was a human figure believed to control acts of divination performed by tossing arrows before the statue, the direction of the arrows answering the question put to him. Some scholars postulate that Allah may have been one of the gods of the Meccan religion to whom the shrine was dedicated, although it seems he had little relevance in that religion; Allah was the guardian of contracts, though at first these were still settled at a special ritual locality and so subordinate to the supervision of an idol. THE THEORY THAT ALLAH ORIGINATED AS A LUNAR DEITY began in 1901 with the archaeologist Hugo Winckler, who associated Allah with a pre-Islamic Arabian deity, either Lah or Hubal, whom he identified as lunar in nature; OPPONENTS HAVE REJECTED THIS THEORY for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardianship-of-contracts",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Allah in pre-Islamic Mecca: the Ka'ba site housed about three hundred and sixty idols and attracted worshippers from all over Arabia, and the chief god in pre-Islamic Arabia was Hubal, whose icon was a human figure believed to control acts of divination performed by tossing arrows before the statue, the direction of the arrows answering the question put to him. Some scholars postulate that Allah may have been one of the gods of the Meccan religion to whom the shrine was dedicated, although it seems he had little relevance in that religion; Allah was the guardian of contracts, though at first these were still settled at a special ritual locality and so subordinate to the supervision of an idol. THE THEORY THAT ALLAH ORIGINATED AS A LUNAR DEITY began in 1901 with the archaeologist Hugo Winckler, who associated Allah with a pre-Islamic Arabian deity, either Lah or Hubal, whom he identified as lunar in nature; OPPONENTS HAVE REJECTED THIS THEORY for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-kaba",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Allah in pre-Islamic Mecca: the Ka'ba site housed about three hundred and sixty idols and attracted worshippers from all over Arabia, and the chief god in pre-Islamic Arabia was Hubal, whose icon was a human figure believed to control acts of divination performed by tossing arrows before the statue, the direction of the arrows answering the question put to him. Some scholars postulate that Allah may have been one of the gods of the Meccan religion to whom the shrine was dedicated, although it seems he had little relevance in that religion; Allah was the guardian of contracts, though at first these were still settled at a special ritual locality and so subordinate to the supervision of an idol. THE THEORY THAT ALLAH ORIGINATED AS A LUNAR DEITY began in 1901 with the archaeologist Hugo Winckler, who associated Allah with a pre-Islamic Arabian deity, either Lah or Hubal, whom he identified as lunar in nature; OPPONENTS HAVE REJECTED THIS THEORY for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "ranked-below-in-the-meccan-cult",
+    "personId": "arabian_hubal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Allah in pre-Islamic Mecca: the Ka'ba site housed about three hundred and sixty idols and attracted worshippers from all over Arabia, and the chief god in pre-Islamic Arabia was Hubal, whose icon was a human figure believed to control acts of divination performed by tossing arrows before the statue, the direction of the arrows answering the question put to him. Some scholars postulate that Allah may have been one of the gods of the Meccan religion to whom the shrine was dedicated, although it seems he had little relevance in that religion; Allah was the guardian of contracts, though at first these were still settled at a special ritual locality and so subordinate to the supervision of an idol. THE THEORY THAT ALLAH ORIGINATED AS A LUNAR DEITY began in 1901 with the archaeologist Hugo Winckler, who associated Allah with a pre-Islamic Arabian deity, either Lah or Hubal, whom he identified as lunar in nature; OPPONENTS HAVE REJECTED THIS THEORY for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "notes": "Non-symmetric, written from this end only; arabian_hubal is a pre-existing record and this batch mutates none. The source says in one breath that the chief god in pre-Islamic Arabia was Hubal and that Allah 'had little relevance' in the Meccan religion."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A deity of the Meccan religion, named by some scholars among the gods to whom the Ka'ba shrine was dedicated, and the guardian of contracts — though contracts were at first still settled at a special ritual locality and so subordinate to the supervision of an idol.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Allah in pre-Islamic Mecca: the Ka'ba site housed about three hundred and sixty idols and attracted worshippers from all over Arabia, and the chief god in pre-Islamic Arabia was Hubal, whose icon was a human figure believed to control acts of divination performed by tossing arrows before the statue, the direction of the arrows answering the question put to him. Some scholars postulate that Allah may have been one of the gods of the Meccan religion to whom the shrine was dedicated, although it seems he had little relevance in that religion; Allah was the guardian of contracts, though at first these were still settled at a special ritual locality and so subordinate to the supervision of an idol. THE THEORY THAT ALLAH ORIGINATED AS A LUNAR DEITY began in 1901 with the archaeologist Hugo Winckler, who associated Allah with a pre-Islamic Arabian deity, either Lah or Hubal, whom he identified as lunar in nature; OPPONENTS HAVE REJECTED THIS THEORY for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "AUTHORED STRICTLY AS THE PRE-ISLAMIC MECCAN FIGURE THE SOURCES DESCRIBE, AND NOTHING ELSE. The primary name carries that scope so no reader can mistake the record's subject. The sources say he had little relevance in the Meccan religion and that Hubal was its chief god, and that is what is recorded. THE 1901 LUNAR-DEITY THEORY OF HUGO WINCKLER IS RECORDED ONLY TOGETHER WITH ITS REJECTION: opponents reject it for its speculative character and its lack of archaeological or textual evidence from pre-Islamic Arabia, and this registry does not carry it as a live reading."
+ }
+]
+```
+
+================================================================================
+BLOCK 3 — THE TRIBAL IDOLS OF THE BOOK OF IDOLS
+================================================================================
+
+Eight idols, each with a tribe and a place. **Dhu'l-Khalasa** was an oracle of the
+Daws, Bajila and Khath'am at Tabala, and his temple was called **the Ka'ba of
+Yemen**. **Dhu'l-Ka'bat**, of Bakr and Taghlib at Sandad, carries the same root —
+two sanctuaries in one batch named against the Meccan one.
+
+Several of these gods **were not made objects but found ones**: **Sa'd** of the
+Kinana was a tall stone in open desert, and **al-Fals** of Tayy was an outcrop of
+red granite on the black mountain of Jabal Aja that happened to take the shape of
+a man. With the two petrified Meccans, that is four cults in this batch whose idol
+is geology rather than sculpture.
+
+**Dhu al-Kaffayn** is recorded with his destruction as precisely as his cult —
+burned by al-Tufayl ibn 'Amr al-Dawsi. **Nuhm** survives mostly in the personal
+name 'Abd-Nuhm. **Umyanis** and **Ri'am** are each authored on a single sentence,
+and the records claim nothing beyond it.
+
+```json
+[
+ {
+  "id": "arabian_dhu_al_khalasa",
+  "name": {
+   "primary": "Dhu'l-Khalasa",
+   "alt": [
+    "Dhū al-Khalaṣa",
+    "Dhul-Khalasa",
+    "the Ka'ba of Yemen",
+    "ذو الخلصة"
+   ],
+   "transliterations": {
+    "arabic-script": "ذو الخلصة",
+    "arabic-romanization": "Dhu'l-Khalasa",
+    "etymology": "Arabic dhū al-khalaṣa, 'he of the khalaṣa'; the second element is not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "An ORACULAR god of the Banu Daws, also worshipped by the Bajila and Khath'am, reportedly as a 'god of redemption'; his temple in the Tabala area, forty-eight kilometres south of Mecca, became known as the Ka'ba of Yemen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Dhu'l-Khalasa: a god or temple of pre-Islamic Arabia associated with the worship of the tribe of Banu Daws; an ORACULAR god, also worshipped by the Bajila and Khath'am tribes and reportedly worshipped as a 'god of redemption', whose temple became known as THE KA'BA OF YEMEN; the idol was worshipped by the Daws, Khath'am and Bajila tribes and some other people in the Tabala area, forty-eight kilometres south of Mecca."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "oracle",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Dhu'l-Khalasa: a god or temple of pre-Islamic Arabia associated with the worship of the tribe of Banu Daws; an ORACULAR god, also worshipped by the Bajila and Khath'am tribes and reportedly worshipped as a 'god of redemption', whose temple became known as THE KA'BA OF YEMEN; the idol was worshipped by the Daws, Khath'am and Bajila tribes and some other people in the Tabala area, forty-eight kilometres south of Mecca."
+     }
+    ]
+   },
+   {
+    "sphereId": "redemption",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Dhu'l-Khalasa: a god or temple of pre-Islamic Arabia associated with the worship of the tribe of Banu Daws; an ORACULAR god, also worshipped by the Bajila and Khath'am tribes and reportedly worshipped as a 'god of redemption', whose temple became known as THE KA'BA OF YEMEN; the idol was worshipped by the Daws, Khath'am and Bajila tribes and some other people in the Tabala area, forty-eight kilometres south of Mecca."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sanctuary-at-tabala",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Dhu'l-Khalasa: a god or temple of pre-Islamic Arabia associated with the worship of the tribe of Banu Daws; an ORACULAR god, also worshipped by the Bajila and Khath'am tribes and reportedly worshipped as a 'god of redemption', whose temple became known as THE KA'BA OF YEMEN; the idol was worshipped by the Daws, Khath'am and Bajila tribes and some other people in the Tabala area, forty-eight kilometres south of Mecca."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An ORACULAR god of the Banu Daws, also worshipped by the Bajila and Khath'am, reportedly as a 'god of redemption'; his temple in the Tabala area, forty-eight kilometres south of Mecca, became known as the Ka'ba of Yemen.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Dhu'l-Khalasa: a god or temple of pre-Islamic Arabia associated with the worship of the tribe of Banu Daws; an ORACULAR god, also worshipped by the Bajila and Khath'am tribes and reportedly worshipped as a 'god of redemption', whose temple became known as THE KA'BA OF YEMEN; the idol was worshipped by the Daws, Khath'am and Bajila tribes and some other people in the Tabala area, forty-eight kilometres south of Mecca."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A RIVAL KA'BA, AND THE SOURCES SAY SO OUTRIGHT. His temple was called the Ka'ba of Yemen, which makes him the only figure in this batch whose sanctuary was named against the Meccan one. He is also the batch's one explicit oracle."
+ },
+ {
+  "id": "arabian_sad",
+  "name": {
+   "primary": "Sa'd",
+   "alt": [
+    "Saʿd",
+    "سعد"
+   ],
+   "transliterations": {
+    "arabic-script": "سعد",
+    "arabic-romanization": "Sa'd",
+    "etymology": "Arabic sa'd, 'good fortune, felicity' — the name IS the sphere"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A god of fortune revered by the Banu Kinana, whose cult image was a tall stone standing in the desert.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sa'd: a god of fortune in pre-Islamic Arabia revered by the Banu Kinana tribe; his cult image was a tall stone standing in the desert."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sa'd: a god of fortune in pre-Islamic Arabia revered by the Banu Kinana tribe; his cult image was a tall stone standing in the desert."
+     }
+    ]
+   },
+   {
+    "sphereId": "tribal-patronage-of-kinana",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sa'd: a god of fortune in pre-Islamic Arabia revered by the Banu Kinana tribe; his cult image was a tall stone standing in the desert."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-standing-stone",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sa'd: a god of fortune in pre-Islamic Arabia revered by the Banu Kinana tribe; his cult image was a tall stone standing in the desert."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A god of fortune revered by the Banu Kinana, whose cult image was a tall stone standing in the desert.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Sa'd: a god of fortune in pre-Islamic Arabia revered by the Banu Kinana tribe; his cult image was a tall stone standing in the desert."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A TALL STONE IN OPEN DESERT, with no temple around it. Several of this batch's idols are natural objects rather than made images — a standing stone here, a granite outcrop for al-Fals, two petrified people at Mecca."
+ },
+ {
+  "id": "arabian_al_fals",
+  "name": {
+   "primary": "al-Fals",
+   "alt": [
+    "al-Fals of Jabal Aja",
+    "الفلس"
+   ],
+   "transliterations": {
+    "arabic-script": "الفلس",
+    "arabic-romanization": "al-Fals",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A central Arabian mountain god worshipped by Tayy at a shrine on the black mountain of Jabal Aja near Ha'il in the Najd highlands; his idol was a distinctive outcrop of red granite in the shape of a man.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of al-Fals: a central Arabian mountain god worshipped by the tribe of Tayy at a shrine on the black mountain of Jabal Aja, near the town of Ha'il in the Najd highlands; the idol of al-Fals was a distinctive outcrop of red granite which took the shape of a man."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mountain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of al-Fals: a central Arabian mountain god worshipped by the tribe of Tayy at a shrine on the black mountain of Jabal Aja, near the town of Ha'il in the Najd highlands; the idol of al-Fals was a distinctive outcrop of red granite which took the shape of a man."
+     }
+    ]
+   },
+   {
+    "sphereId": "tribal-patronage-of-tayy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of al-Fals: a central Arabian mountain god worshipped by the tribe of Tayy at a shrine on the black mountain of Jabal Aja, near the town of Ha'il in the Najd highlands; the idol of al-Fals was a distinctive outcrop of red granite which took the shape of a man."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-red-granite-outcrop",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of al-Fals: a central Arabian mountain god worshipped by the tribe of Tayy at a shrine on the black mountain of Jabal Aja, near the town of Ha'il in the Najd highlands; the idol of al-Fals was a distinctive outcrop of red granite which took the shape of a man."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A central Arabian mountain god worshipped by Tayy at a shrine on the black mountain of Jabal Aja near Ha'il in the Najd highlands; his idol was a distinctive outcrop of red granite in the shape of a man.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of al-Fals: a central Arabian mountain god worshipped by the tribe of Tayy at a shrine on the black mountain of Jabal Aja, near the town of Ha'il in the Najd highlands; the idol of al-Fals was a distinctive outcrop of red granite which took the shape of a man."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE IDOL WAS THE MOUNTAIN. Not a statue placed at a shrine but an outcrop of red granite that happened to take the shape of a man, on a black mountain — the geology is the cult."
+ },
+ {
+  "id": "arabian_dhu_al_kaffayn",
+  "name": {
+   "primary": "Dhu al-Kaffayn",
+   "alt": [
+    "Dhū al-Kaffayn",
+    "he of the two palms"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Dhu al-Kaffayn",
+    "etymology": "Arabic dhū al-kaffayn, 'he of the two palms'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The idol of the Banu Munhib ibn Daws, 'he of the two palms'; when the tribe embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-daws",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-two-palms",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The idol of the Banu Munhib ibn Daws, 'he of the two palms'; when the tribe embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "ONE OF THE FEW WHOSE DESTRUCTION IS NAMED AS PRECISELY AS ITS CULT: burned by al-Tufayl ibn 'Amr al-Dawsi. The Book of Idols is as much a record of demolition as of worship, and this record keeps both halves."
+ },
+ {
+  "id": "arabian_nuhm",
+  "name": {
+   "primary": "Nuhm",
+   "alt": [
+    "Nuhm of Muzayna"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Nuhm",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The idol of the Muzayna, after whom they used to name their children 'Abd-Nuhm.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-muzayna",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   },
+   {
+    "sphereId": "theophoric-naming",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The idol of the Muzayna, after whom they used to name their children 'Abd-Nuhm.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "ATTESTED THROUGH PERSONAL NAMES. 'Abd-Nuhm, 'servant of Nuhm', is the kind of evidence that outlives a cult by centuries, and for this god it is most of what there is."
+ },
+ {
+  "id": "arabian_umyanis",
+  "name": {
+   "primary": "Umyanis",
+   "alt": [
+    "Umyanis of Khawlan"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Umyanis",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "An idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-khawlan",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "AUTHORED ON ONE SENTENCE, AND THE RECORD CLAIMS NOTHING MORE. The Book of Idols gives him a name, a tribe and a territory; no form, no rite and no story is supplied here because none was found."
+ },
+ {
+  "id": "arabian_riam",
+  "name": {
+   "primary": "Ri'am",
+   "alt": [
+    "Riʾām",
+    "Riam of Sana"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Ri'am",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "An idol worshipped by Himyar and the people of Sana in the Yemen.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-himyar",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-cult-at-sana",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An idol worshipped by Himyar and the people of Sana in the Yemen.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE SECOND HIMYARITE IDOL IN THIS BATCH, beside Nasr. The Yemen is the region the Book of Idols covers most thinly and the epigraphic record covers best — which is why the corpus holds the South Arabian pantheon under its own Sabaean key rather than here."
+ },
+ {
+  "id": "arabian_dhu_al_kabat",
+  "name": {
+   "primary": "Dhu'l-Ka'bat",
+   "alt": [
+    "Dhū al-Kaʿabāt",
+    "Dhul-Ka'bat"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Dhu'l-Ka'bat",
+    "etymology": "Arabic dhū al-kaʿabāt, 'he of the cube-shaped structures', from the same root as Ka'ba"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "An idol worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-patronage-of-bakr-and-taghlib",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sanctuary-at-sandad",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An idol worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the tribal idols of the Kitab al-Asnam: the Banu Munhib ibn Daws had an idol called Dhu al-Kaffayn, 'he of the two palms', and when they embraced Islam the Prophet sent al-Tufayl ibn 'Amr al-Dawsi to destroy it, and al-Tufayl set the idol on fire; the Muzayna had an idol called Nuhm, and they used to name their children 'Abd-Nuhm after it; al-Uqaysir was a place to which tribes were wont to go on pilgrimage and at whose shrine they used to shave their heads; Umyanis was the name of an idol worshipped in the land of Khawlan, by a branch of the Khawlan tribe; Himyar and the people of Sana in the Yemen worshipped an idol called Ri'am; and Dhu'l-Ka'bat was worshipped by Bakr, Taghlib, the descendants of Wa'il, and Iyad, in the Sandad area."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A SECOND NAME BUILT ON 'KA'BA'. With Dhu'l-Khalasa's 'Ka'ba of Yemen', this batch contains two sanctuaries named against the Meccan one, which is a fact about how the sources frame the pre-Islamic landscape as much as about the cults themselves."
+ }
+]
+```
+
+================================================================================
+BLOCK 4 — THE NORTH ARABIAN TRINITY
+================================================================================
+
+Every Arabian record before this batch was Hijazi or a poet. **The North Arabian
+epigraphic layer — Lihyanite, Safaitic, Thamudic — had no representation at all.**
+
+**Ruda, Nuha and Atarsamain** form a trinity in that material. Two entries in this
+block are deliberately imprecise, because the evidence is:
+
+* **Ruda's sex is recorded as `varies`**, because the sources say so explicitly:
+  MALE in the Lihyanite and north-western inscriptions, where the name is written
+  Rdw, and FEMALE among the Safaitic Bedouin. Picking one would have concealed the
+  most interesting thing about the deity.
+* **Atarsamain's sex is recorded as `unknown`**, because the evidence found names
+  the figure only as the third of a trinity, and nothing in this pass settles it.
+
+```json
+[
+ {
+  "id": "arabian_ruda",
+  "name": {
+   "primary": "Ruda",
+   "alt": [
+    "Ruḍā",
+    "Rdw",
+    "Ruda'"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Ruda",
+    "etymology": "not resolved in the sources consulted; the epigraphic form is Rdw"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "varies",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A North Arabian deity of the Lihyanite and Safaitic inscriptions — MALE in the Lihyanite and other north-western Arabian material, where the name is written Rdw, and FEMALE in the religion of the Safaitic Bedouin of the Syro-Arabian desert; one of a trinity with Nuha and Atarsamain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-arabian-trinity",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   },
+   {
+    "sphereId": "lihyanite-and-safaitic-cult",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_nuha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   },
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_atarsamain",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A North Arabian deity of the Lihyanite and Safaitic inscriptions — MALE in the Lihyanite and other north-western Arabian material, where the name is written Rdw, and FEMALE in the religion of the Safaitic Bedouin of the Syro-Arabian desert; one of a trinity with Nuha and Atarsamain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "SEX RECORDED AS 'varies', BECAUSE THE SOURCES DIFFER BY REGION AND SAY SO EXPLICITLY: male among the Lihyan and the north-western tribes, female among the Safaitic Bedouin. Picking one would have hidden the most interesting thing about this deity."
+ },
+ {
+  "id": "arabian_nuha",
+  "name": {
+   "primary": "Nuha",
+   "alt": [
+    "Nuhā"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Nuha",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A sun-associated deity worshipped among the northern Arabian tribes, forming part of a trinity with Ruda and Atarsamain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   },
+   {
+    "sphereId": "north-arabian-trinity",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_ruda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   },
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_atarsamain",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A sun-associated deity worshipped among the northern Arabian tribes, forming part of a trinity with Ruda and Atarsamain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A SUN-GODDESS IN A TRADITION THE CORPUS HELD ONLY THROUGH MECCA. Every Arabian record before this batch was Hijazi or a poet; the North Arabian epigraphic layer — Lihyanite, Safaitic, Thamudic — had no representation at all."
+ },
+ {
+  "id": "arabian_atarsamain",
+  "name": {
+   "primary": "Atarsamain",
+   "alt": [
+    "ʿAttar-samayin",
+    "Atarsamayin"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Atarsamain",
+    "etymology": "commonly analysed as 'Athtar of the heavens'; not resolved further in the sources consulted"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "unknown",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The third member of the North Arabian trinity with Ruda and Nuha.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-arabian-trinity",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_ruda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   },
+   {
+    "kind": "of-the-north-arabian-trinity-with",
+    "personId": "arabian_nuha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "notes": "Reciprocated within this batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The third member of the North Arabian trinity with Ruda and Nuha.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the North Arabian deities Ruda, Nuha and Atarsamain: in the inscriptions of the Lihyan and other north-western Arabian tribes the deity Ruda is named as Rdw and is a MALE deity, while in the religion of the Safaitic Bedouin of the Syro-Arabian desert and north-central Arabia Ruda remains a FEMALE goddess; Nuha is a deity worshipped among the northern Arabian tribes, associated with the sun, who formed part of a trinity of gods along with Ruda and Atarsamain. Ibn Ishaq additionally records a house of worship called Ruda' built by the Banu Rabi'a ibn Ka'b of Tamim."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "SEX RECORDED AS 'unknown', WHICH IS THE HONEST ENTRY. The evidence found names him or her only as the third of a trinity; the Athtar-type deity of the wider Semitic world varies in gender by region, and nothing in this pass settles it here."
+ }
+]
+```
+
+================================================================================
+BLOCK 5 — THE PEOPLE OF THE PRE-ISLAMIC CULT
+================================================================================
+
+**Amr ibn Luhayy** is the man the tradition blames. He went from Mecca to the Sham
+lands, saw idols worshipped at Ma'ab in the Balqa, was convinced that idols could
+act as **intermediaries** for God, and brought Hubal home. **The corpus held the
+chief idol of Mecca and not the man its own sources say fetched him.** His stated
+reasoning is recorded as the sources give it — intermediaries, not replacements.
+
+**Qusayy ibn Kilab**, chief of Mecca and leader of Quraysh, took the stones of
+Isaf and Na'ila to Zamzam. Between him and Amr, the Ka'ba's idols acquire a
+history with actors instead of a timeless pagan backdrop.
+
+**Zarqa al-Yamama** saw riders a week away and was not believed in time; "sharper
+than Zarqa al-Yamama" became a proverb, which is how her story survived at all.
+
+**Satih and Shiqq** are the two kahins, consulted together by Rabi'a ibn Nasr and
+giving the same prophecy. The sources are emphatic that the kahin was a religious
+office and not a curiosity: the kahins were the religious leaders of pre-Islamic
+Hijazi spirituality, gave imprecations and benedictions, alone offered the
+rain-prayer *istisqa*, and had garments and saliva with healing power and sacred,
+potent hair. **The corpus held eight pre-Islamic poets and not one of its priests.**
+
+```json
+[
+ {
+  "id": "arabian_amr_ibn_luhayy",
+  "name": {
+   "primary": "Amr ibn Luhayy",
+   "alt": [
+    "ʿAmr ibn Luḥayy al-Khuzāʿī",
+    "عمرو بن لحي"
+   ],
+   "transliterations": {
+    "arabic-script": "عمرو بن لحي",
+    "arabic-romanization": "Amr ibn Luhayy",
+    "etymology": "a personal name; 'Amr son of Luhayy, of the Khuza'a"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "Chief of the Banu Khuza'a, who travelled from Mecca to the Sham lands and at Ma'ab in the Balqa saw people worshipping idols; convinced that idols could act as intermediaries for God, he brought back Hubal — a huge idol in the shape of a man — and set it up for the Arabs to worship during the Hajj season, and it became Mecca's chief idol.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "introduction-of-idol-worship-to-mecca",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     }
+    ]
+   },
+   {
+    "sphereId": "chieftaincy-of-khuzaa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hajj-season",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "installed-the-idol-of",
+    "personId": "arabian_hubal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     }
+    ],
+    "notes": "Non-symmetric, written from this end only; arabian_hubal is a pre-existing record and this batch mutates none. The corpus held the chief idol of Mecca and not the man its own sources say brought it there."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Chief of the Banu Khuza'a, who travelled from Mecca to the Sham lands and at Ma'ab in the Balqa saw people worshipping idols; convinced that idols could act as intermediaries for God, he brought back Hubal — a huge idol in the shape of a man — and set it up for the Arabs to worship during the Hajj season, and it became Mecca's chief idol.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Amr ibn Luhayy: Amr ibn Luhayy al-Khuza'i was a chief of the Banu Khuza'a, a tribe of pre-Islamic Arabia; he went out of Mecca to the Sham lands, and when he came to Ma'ab in the Balqa he saw people worshipping idols, and they gave him an idol called Hubal, a huge idol in the shape of a man, which became Mecca's chief idol. Impressed by their idol worship, he became convinced that the idols could act as intermediaries for God, and was allowed to take one home, which he set up for the Arabs to worship during the Hajj season."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn al-Kalbi, Kitab al-Asnam (early 9th c. CE)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE CORPUS HELD HUBAL AND NOT THE MAN WHO FETCHED HIM. In the tradition's own telling the entire Meccan idol-cult has a named author and a journey attached to it, and the registry had the idol without the story. His stated reasoning is recorded as the sources give it — that the idols could act as INTERMEDIARIES for God, not as replacements."
+ },
+ {
+  "id": "arabian_qusayy",
+  "name": {
+   "primary": "Qusayy ibn Kilab",
+   "alt": [
+    "Quṣayy ibn Kilāb",
+    "قصي بن كلاب"
+   ],
+   "transliterations": {
+    "arabic-script": "قصي بن كلاب",
+    "arabic-romanization": "Qusayy ibn Kilab",
+    "etymology": "a personal name; Qusayy son of Kilab"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "Chief of Mecca and leader of the Quraysh, who took the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "chieftaincy-of-mecca",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   },
+   {
+    "sphereId": "leadership-of-quraysh",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   },
+   {
+    "sphereId": "emplacement-of-the-idols-at-zamzam",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "emplaced-the-idol-of",
+    "personId": "arabian_isaf",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     }
+    ],
+    "notes": "Written within this batch."
+   },
+   {
+    "kind": "emplaced-the-idol-of",
+    "personId": "arabian_naila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     }
+    ],
+    "notes": "Written within this batch."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "Chief of Mecca and leader of the Quraysh, who took the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Qusayy ibn Kilab: he rose to become chief of Mecca and leader of the Quraysh tribe, and was an important pre-Islamic Arabian figure; the Qurayshi Qusayy ibn Kilab had taken the two stones of Isaf and Na'ila to the well of Zamzam near the Ka'ba."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE SECOND NAMED AGENT OF THE MECCAN CULT IN THIS BATCH, after Amr ibn Luhayy. Between them the sources give the Ka'ba's idols a history with dates and actors rather than a timeless pagan backdrop, and that history is what the corpus was missing."
+ },
+ {
+  "id": "arabian_zarqa_al_yamama",
+  "name": {
+   "primary": "Zarqa al-Yamama",
+   "alt": [
+    "Zarqāʾ al-Yamāma",
+    "the blue-eyed woman of al-Yamama",
+    "زرقاء اليمامة"
+   ],
+   "transliterations": {
+    "arabic-script": "زرقاء اليمامة",
+    "arabic-romanization": "Zarqa al-Yamama",
+    "etymology": "Arabic zarqāʾ al-Yamāma, 'the blue(-eyed woman) of al-Yamama'"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "A legendary blue-eyed woman of the al-Yamama region, of the Jadis tribe, credited with exceptional intuition, sharp eyesight and foresight — she was believed to see riders a week's distance away, and her tribe relied on her to detect enemies; she warned them about the tribe of Tasm, and the conflict that followed ended in tragedy.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Zarqa al-Yamama: a legendary blue-eyed woman of the al-Yamama region who lived in pre-Islamic Arabia and belonged to the Jadis tribe; she was said to have had exceptional intuition, sharp eyesight and the ability to predict events before they occurred, such that the phrase 'sharper than Zarqa al-Yamama' became a popular saying. Her tribe relied on her powers to detect enemies and defend their land, as she was believed to be able to see riders a week's distance away; she warned her people about the tribe of Tasm, who held power and authority, and a conflict eventually arose between the two tribes, leading the story to a tragic end."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "far-sight",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Zarqa al-Yamama: a legendary blue-eyed woman of the al-Yamama region who lived in pre-Islamic Arabia and belonged to the Jadis tribe; she was said to have had exceptional intuition, sharp eyesight and the ability to predict events before they occurred, such that the phrase 'sharper than Zarqa al-Yamama' became a popular saying. Her tribe relied on her powers to detect enemies and defend their land, as she was believed to be able to see riders a week's distance away; she warned her people about the tribe of Tasm, who held power and authority, and a conflict eventually arose between the two tribes, leading the story to a tragic end."
+     }
+    ]
+   },
+   {
+    "sphereId": "foresight-and-warning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Zarqa al-Yamama: a legendary blue-eyed woman of the al-Yamama region who lived in pre-Islamic Arabia and belonged to the Jadis tribe; she was said to have had exceptional intuition, sharp eyesight and the ability to predict events before they occurred, such that the phrase 'sharper than Zarqa al-Yamama' became a popular saying. Her tribe relied on her powers to detect enemies and defend their land, as she was believed to be able to see riders a week's distance away; she warned her people about the tribe of Tasm, who held power and authority, and a conflict eventually arose between the two tribes, leading the story to a tragic end."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-war-of-tasm-and-jadis",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Zarqa al-Yamama: a legendary blue-eyed woman of the al-Yamama region who lived in pre-Islamic Arabia and belonged to the Jadis tribe; she was said to have had exceptional intuition, sharp eyesight and the ability to predict events before they occurred, such that the phrase 'sharper than Zarqa al-Yamama' became a popular saying. Her tribe relied on her powers to detect enemies and defend their land, as she was believed to be able to see riders a week's distance away; she warned her people about the tribe of Tasm, who held power and authority, and a conflict eventually arose between the two tribes, leading the story to a tragic end."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A legendary blue-eyed woman of the al-Yamama region, of the Jadis tribe, credited with exceptional intuition, sharp eyesight and foresight — she was believed to see riders a week's distance away, and her tribe relied on her to detect enemies; she warned them about the tribe of Tasm, and the conflict that followed ended in tragedy.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Zarqa al-Yamama: a legendary blue-eyed woman of the al-Yamama region who lived in pre-Islamic Arabia and belonged to the Jadis tribe; she was said to have had exceptional intuition, sharp eyesight and the ability to predict events before they occurred, such that the phrase 'sharper than Zarqa al-Yamama' became a popular saying. Her tribe relied on her powers to detect enemies and defend their land, as she was believed to be able to see riders a week's distance away; she warned her people about the tribe of Tasm, who held power and authority, and a conflict eventually arose between the two tribes, leading the story to a tragic end."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'SHARPER THAN ZARQA AL-YAMAMA' BECAME A PROVERB, which is how her story survived. She is the batch's one figure whose gift is a sense rather than an office — and the one whose warning is believed and still does not save anybody."
+ },
+ {
+  "id": "arabian_satih",
+  "name": {
+   "primary": "Satih",
+   "alt": [
+    "Saṭīḥ ibn Rabīʿa",
+    "Satih the kahin"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Satih",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "One of the two prominent South Arabian soothsayers (kahins) of the Jahiliyya, who in a tradition through Ibn Ishaq foretold to Rabi'a ibn Nasr the Abyssinian conquest of the Yemen, its reconquest by a native Yemeni dynasty, and the rise of Islam.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy-of-dynastic-change",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-office-of-the-kahin",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "fellow-kahin-of",
+    "personId": "arabian_shiqq",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     }
+    ],
+    "notes": "Reciprocated within this batch. The two are never consulted separately in the tradition: Rabi'a ibn Nasr puts the same dream to both."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "One of the two prominent South Arabian soothsayers (kahins) of the Jahiliyya, who in a tradition through Ibn Ishaq foretold to Rabi'a ibn Nasr the Abyssinian conquest of the Yemen, its reconquest by a native Yemeni dynasty, and the rise of Islam.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE KAHIN IS A RELIGIOUS OFFICE, NOT A CURIOSITY, and the sources are emphatic: the kahins were the religious leaders of Hijazi pre-Islamic spirituality, gave imprecations and benedictions, alone offered the rain-prayer istisqa with its peculiar ritual, and had garments and saliva with healing power and sacred, potent hair. The corpus held eight pre-Islamic poets and not one of its priests."
+ },
+ {
+  "id": "arabian_shiqq",
+  "name": {
+   "primary": "Shiqq",
+   "alt": [
+    "Shiqq al-Yashkurī",
+    "Shiqq the kahin"
+   ],
+   "transliterations": {
+    "arabic-romanization": "Shiqq",
+    "etymology": "not resolved in the sources consulted"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Arabian",
+  "primaryTradition": "Arabian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pantheon-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pantheon-era",
+    "eraOrdering": 0,
+    "startEvent": "The second of the two prominent South Arabian soothsayers of the Jahiliyya, who with Satih foretold to Rabi'a ibn Nasr the Abyssinian conquest of the Yemen and the rise of Islam.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy-of-dynastic-change",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-office-of-the-kahin",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "fellow-kahin-of",
+    "personId": "arabian_satih",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     }
+    ],
+    "notes": "Reciprocated within this batch; see the note on arabian_satih."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The second of the two prominent South Arabian soothsayers of the Jahiliyya, who with Satih foretold to Rabi'a ibn Nasr the Abyssinian conquest of the Yemen and the rise of Islam.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Satih and Shiqq and of the kahins: Satih ibn Rabi'a and Shiqq al-Yashkuri were two prominent South Arabian soothsayers (kahins) of the Jahiliyya, mysterious old fortunetellers whose accounts are heavily steeped in lore, reported by Muslim akhbaris to have predicted major historical events leading up to and including the rise of Islam; in a tradition stemming through Ibn Ishaq they foretold to the South Arabian chieftain Rabi'a ibn Nasr, progenitor of the Lakhmid dynasty, of the Abyssinian conquest of the Yemen, its subsequent reconquest by a native Yemeni dynasty, and the rise of Islam. The kahins, often uncharitably translated as soothsayers, were the religious leaders of the pre-Islamic spirituality of primarily the Hijaz: they gave imprecations and benedictions, they alone offered special prayers for rain (istisqa) with peculiar ritual, their garments and saliva had healing power, and their hair was sacred and potent."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ibn Ishaq, via Ibn Hisham, al-Sira al-Nabawiyya"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "THE PAIR IS THE UNIT. Satih and Shiqq are consulted together and give the same prophecy, and authoring one alone would have turned a pair into a singleton — the fault this programme keeps finding, avoided here for the third time in three lanes."
+ }
+]
+```
+
+================================================================================
+WHAT WAS NOT INGESTED, AND WHY
+================================================================================
+
+**BLOCKED (7)** — the blocker recorded exactly:
+
+  al-Kutba, Shay al-Qawm   real Nabataean deities. THE BLOCKER IS THE KEY, NOT
+                           THE EVIDENCE: the corpus holds a Nabataean tradition
+                           with five records, and ingesting these under `Arabian`
+                           would put them under the wrong one. They should be
+                           ingested — in a Nabataean lane.
+  Ta'lab, Anbay, Nakrah,   real South Arabian deities, blocked for the same
+  Dhat-Badan               reason: the Sabaean key is theirs.
+  al-Uqaysir               THE EVIDENCE DESCRIBES A PLACE, NOT A FIGURE: "a place
+                           to which tribes were wont to go on pilgrimage and at
+                           the shrine of which they used to shave their heads."
+                           Ibn al-Kalbi lists it among idols; the description
+                           found supports a sanctuary and no personality, so it is
+                           not authored as a figure on that basis alone.
+  Kahl                     a deity of Qaryat al-Faw. The search returned the
+                           article TITLE and no content whatever — not one
+                           sentence about his sphere, cult or attestation.
+  'Awd, Suwayr, Bajar,     names that appear in lists of the Book of Idols'
+  al-Jalsad, Ya'bub,       contents but for which this pass returned no
+  Muharriq                 description at all — not a tribe, not a place, not a
+                           form. A name in a table of contents is not a figure.
+  Rabi'a ibn Nasr          the South Arabian chieftain who consults Satih and
+                           Shiqq. He is named and dated in the sources, but this
+                           pass found only his role as their questioner; whether
+                           he belongs to this key or to a Lakhmid one is
+                           unresolved.
+
+**REJECT (4)** — out of scope by standing rule:
+
+  the jinn                 a class of being, not a figure. This registry does not
+                           ingest generic creature classes — the rule that
+                           rejected the nanchon, the Gede, the nagas, the tsen and
+                           the zaedtae.
+  the ghul / si'lat        classes of desert spirit.
+  "the 360 idols of the    a COUNT, not a set of figures. The number is evidence
+  Ka'ba"                   about the sanctuary and is carried inside the source
+                           text of the pre-Islamic Allah record.
+  Dhat Anwat               the tree on which weapons were hung. A cult object, not
+                           a person.
+
+**No image was ingested in this batch**, so the image-licensing rule is not
+engaged.
+
+================================================================================
+VERIFICATION NOTES
+================================================================================
+
+  * **No figure in this batch authors any parentIds**, so tier-classification
+    drift is impossible by construction. The twenty gods are `deity` and the five
+    people are `mortal`, matching the existing split in this key exactly.
+  * All twenty-five carry the registered era `pantheon-era`. The key's other era,
+    `mu-allaqat-poetic`, is specifically the poetic tradition and is NOT stretched
+    to cover a cult-founder, a seeress or a soothsayer.
+  * **Arabic script is supplied only where the name stands in a text this pass
+    actually cites** — the five of Qur'an 71:23 — **or where the romanisation maps
+    to a single unambiguous Arabic spelling.** Where a romanisation could map to
+    more than one plausible consonantal skeleton (Umyanis, Ri'am, Dhu'l-Ka'bat,
+    Atarsamain, Nuhm, Dhu al-Kaffayn, Ruda, Nuha, Satih, Shiqq) the field is left
+    EMPTY rather than reconstructed. Fifteen of twenty-five records carry an
+    Arabic form and ten do not.
+  * Every unresolved etymology says "not resolved in the sources consulted".
+  * Two records deliberately carry an imprecise `sex`: Ruda as `varies` and
+    Atarsamain as `unknown`, in both cases because the evidence is what is
+    imprecise.
+  * Symmetric and paired relations inside the batch are reciprocated (Isaf/Na'ila,
+    Satih/Shiqq, and the three-way North Arabian trinity). Every link to a
+    PRE-EXISTING record — `arabian_hubal` and `sabaean_wadd` — uses a
+    NON-SYMMETRIC kind written from this end only, so no pre-existing record is
+    mutated.
+  * The reliability caveat on the Kitab al-Asnam is carried in the source text
+    attached to every record that rests on it.
