@@ -1,0 +1,659 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Haitian Vodou
+Eras (registered, exact): Haitian Vodou traditional religion; continuing
+Author pass: Lane 28 found three figures hiding inside other figures' alias
+lists and could not create them. The owner has now ruled that a lane may edit an
+alias list on a pre-existing record. This adds 4 and edits 3.
+
+================================================================================
+THE FIRST LANE IN THIS PROGRAMME THAT DELIBERATELY MUTATES PRE-EXISTING RECORDS
+================================================================================
+
+Eight consecutive lanes have reported **zero pre-existing records mutated**, and
+that was not a boast — it was a constraint, and lane 28 found the exact case
+where the constraint was doing damage.
+
+`vodou_bawon_samdi` carried **"Baron La Croix"** and **"Baron Cimetière"** in its
+alias list. The sources give those as two *other* aspects of Bawon with two other
+stations: Bawon Samdi rules the **graveyard**, Baron La Croix guards the
+**gravestone**, Baron Cimetière guards the **grave**. Three stations, one record.
+
+`vodou_ogou`, primary "Ogou Feray", carried **"Ogou Badagri"** — a distinct lwa
+of the Nago nation whom the same source calls **a general in the armies of
+Ogou**. A relation between two figures, stored as two names for one.
+
+`vodou_gede_nibo` carried the bare **"Gede"** and **"Ghede"** — the name of the
+**largest family of lwa in the religion**, resolving onto a single member of it.
+
+**Lane 27 established that a false absence invites a lane to ship a duplicate.
+This is the mirror image and it is worse: an alias that is really a separate
+figure makes a real absence invisible.** No sweep would ever report Baron La
+Croix missing. No lane would ever be prompted to add him. A lane that tried would
+be told he was already there.
+
+**So this lane reports `mutated pre-existing: 3`, and that is the point of it,
+not a defect in it.** The count is stated plainly in the audit and the PR rather
+than folded into a total.
+
+================================================================================
+WHAT WAS EDITED, EXACTLY
+================================================================================
+
+Four deletions, all in `data-sources/transcripts/haitian-vodou.txt`, which is the
+source the records generate from — **nothing is hand-edited in `app/data.js`**:
+
+    vodou_ogou        alt: removed "Ogou Badagri"
+    vodou_bawon_samdi alt: removed "Baron La Croix", "Baron Cimetière"
+    vodou_bawon_samdi epithets: removed "Baron Cimetière / Baron of the Cemetery"
+    vodou_gede_nibo   alt: removed "Gede", "Ghede"
+
+**No other field of any pre-existing record is touched** — not a name, not a
+domain, not a relation, not a source, not a note.
+
+**One of those four is a judgement call and is flagged rather than slipped
+through.** The owner authorised editing *alias lists*; the fourth deletion is an
+**epithet**. It read "Baron Cimetière", which is a name for a figure this batch
+establishes is somebody else, so it is a name-bearing field doing an alias's job
+and the same reasoning applies. It is recorded in the census as its own row so
+the owner can reverse that one deletion without touching the other three.
+
+**`vodou_bawon_samdi`'s own notes are left exactly as they were**, including the
+sentence "He is often paired or conflated with Baron Lacroix and Baron
+Cimetière." That sentence is *true* — the conflation is real and the sources
+report it — and the edit removes the corpus's participation in it, not the
+record of it.
+
+================================================================================
+NO RECORD IS CREATED FOR THE GEDE
+================================================================================
+
+The bare "Gede" and "Ghede" are removed from Gede Nibo and **nothing is created
+in their place**. The Gede are a **family**, and a family is a class of spirit,
+which this programme does not ingest — the rejection applied to the nāgas, the
+tsen, the gyalpo and the mamo in lane 27 and to the nanchon in lane 28.
+
+The effect is that a sweep for "Gede" now returns **nothing**, where before it
+returned Gede Nibo. **That is an improvement and not a regression**: the corpus
+holds no figure simply called Gede, and it should say so rather than answer with
+one member of the family.
+
+================================================================================
+TWO RECORDS THIS PROGRAMME WROTE ARE CORRECTED
+================================================================================
+
+Lane 28 wrote two notes that this lane makes false, and both are rewritten:
+
+- **`vodou_ogou_balendjo`** said "NO RECORD IS CREATED FOR OGOU BADAGRIS … the
+  census carries him as EXISTING with the reason." He now has one.
+- **`vodou_kalfou`** said no edge was drawn to Bawon "because which Baron the
+  source means is exactly what the alias list has made unanswerable." It is now
+  answerable, and the edge is drawn from the Bawon record.
+
+Both are records this programme authored one lane ago, so correcting them is not
+the mutation the header is about. **Leaving a corpus that contradicts itself
+would have been the worse outcome.**
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No new research was possible — this session's web-search budget was exhausted
+during lane 28 — and **none was needed**. Every claim in this batch comes from
+treatments already retrieved and already cited in lane 28's transcript: the Gede
+and Bawon material, and the Ogou material. The citations name those treatments.
+
+================================================================================
+AUTHORED FIGURES — THE THREE BARONS AND THE GENERAL
+================================================================================
+
+```json
+[
+ {
+  "id": "vodou_bawon",
+  "name": {
+   "primary": "Bawon",
+   "alt": [
+    "Baron",
+    "Papa Bawon",
+    "the Bawon"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Bawon",
+    "etymology": "From the French baron; the title the three graveyard aspects share."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "The lwa with whom the Gede are closely associated, whose aspects are Bawon Samdi, ruler of the graveyard; Baron La Croix, guardian of the gravestone; and Baron Cimetière, guardian of the grave.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-graveyard",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-gede",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "has-aspect",
+    "personId": "vodou_bawon_samdi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "NON-SYMMETRIC. Bawon Samdi is a pre-existing record and nothing is written onto it; THIS BATCH DID EDIT HIS ALIAS LIST, which is stated in the header and in the census rather than buried here."
+   },
+   {
+    "kind": "has-aspect",
+    "personId": "vodou_bawon_lakwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "has-aspect",
+    "personId": "vodou_bawon_simitye",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "of-the-master-magicians-with",
+    "personId": "vodou_kalfou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of Gran Bwa: Grand Bois, 'great wood', also Grans Bwa, Bran Bwa and Ganga-Bois, is an elemental, nature-oriented lwa closely associated with trees, plants and herbs in Haitian Vodou; he is master of the forest, especially the wilderness and the mysteries it holds, governs the leaves and roots used for both healing and harming, and is revered as a powerful healer and magician; he plays an important role in the kanzo initiatory cycle of asson-lineage Vodou, and along with Kalfou and Baron is often counted among the master magicians of the lwa, because of their role in the Haitian secret societies."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, to a record lane 28 created. THE EDGE LANE 28 COULD NOT DRAW: its source counts Gran Bwa, Kalfou and Baron together among the master magicians of the lwa, and Kalfou's record says outright that no edge was drawn 'because which Baron the source means is exactly what the alias list has made unanswerable'. With Bawon a record, it is answerable, and the edge is drawn."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "The lwa with whom the Gede are closely associated, whose aspects are Bawon Samdi, ruler of the graveyard; Baron La Croix, guardian of the gravestone; and Baron Cimetière, guardian of the grave.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE IS THE FIGURE THE ALIAS LIST WAS STANDING IN FOR. The sources name Bawon as a lwa with three aspects, and the corpus held one of those aspects with the other two folded into its alt list - so the shared figure had no record and two of the three aspects had no existence. Authored as a distinct record rather than merged into Bawon Samdi, because the source's own construction is one lwa with three named stations."
+ },
+ {
+  "id": "vodou_bawon_lakwa",
+  "name": {
+   "primary": "Baron La Croix",
+   "alt": [
+    "Bawon Lakwa",
+    "Baron Lacroix",
+    "Bawon Lakroua",
+    "Baron of the Cross"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Bawon Lakwa",
+    "etymology": "'Baron of the Cross', from the cross that stands over a grave."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "An aspect of Bawon: the Baron of the Cross, guardian of the gravestone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-graveyard",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "guardianship-of-the-gravestone",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "of-the-aspects-of",
+    "personId": "vodou_bawon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "of-the-gede-nation-with",
+    "personId": "vodou_gede_nibo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, to a pre-existing record. The Bawon aspects belong to the Gede nation, of which Gede Nibo leads the spirits of the dead."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An aspect of Bawon: the Baron of the Cross, guardian of the gravestone.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE WAS IN THE CORPUS AS FOUR WORDS IN SOMEBODY ELSE'S ALT LIST. A sweep for his name resolved onto vodou_bawon_samdi and reported him present; no sweep would ever have reported him missing. His station is precise and distinct - the GRAVESTONE, where Bawon Simitye guards the GRAVE and Bawon Samdi rules the GRAVEYARD - and collapsing three stations into one record lost two of them."
+ },
+ {
+  "id": "vodou_bawon_simitye",
+  "name": {
+   "primary": "Baron Cimetière",
+   "alt": [
+    "Bawon Simitye",
+    "Bawon Simitiè",
+    "Baron of the Cemetery"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Bawon Simitye",
+    "etymology": "'Baron of the Cemetery'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "An aspect of Bawon: the Baron of the Cemetery, guardian of the grave, and part of the Gede nation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-graveyard",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   },
+   {
+    "sphereId": "guardianship-of-the-grave",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "original": "Bawon Simitye",
+    "translation": "Baron of the Cemetery",
+    "language": "Haitian Creole",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "of-the-aspects-of",
+    "personId": "vodou_bawon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "In-batch and reciprocated."
+   },
+   {
+    "kind": "of-the-gede-nation-with",
+    "personId": "vodou_gede_nibo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, to a pre-existing record. The source places him in the Gede nation explicitly."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "An aspect of Bawon: the Baron of the Cemetery, guardian of the grave, and part of the Gede nation.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Gede: the Gede are the family of lwa associated with ancestor veneration in Haitian Vodou, representing the powers of death and fertility, and they are the largest family of lwa in the religion; they are closely associated with the lwa Bawon, whose aspects are Bawon Samdi, Baron Saturday, ruler of the graveyard; Baron La Croix, Baron of the Cross, guardian of the gravestone; and Baron Cimetière, Bawon Simitye, Baron of the Cemetery, guardian of the grave and part of the Gede nation; Gede Nibo is the lwa who leads the spirits of the dead, and among the Gede some are respected, old, wise and rare, such as Brav Gede Nibo."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "HE WAS HIDDEN TWICE OVER: as an alias on vodou_bawon_samdi AND as an EPITHET on that same record, reading 'Baron Cimetière / Baron of the Cemetery'. Both are removed by this batch and the epithet is restored here, where it belongs. AN EPITHET IS A NAME-BEARING FIELD DOING AN ALIAS'S JOB, so it falls under the same decision; it is called out in the census so the owner can reverse it if they meant aliases only. LANE 28'S SWEEP REPORTED 'Bawon Simitye' ABSENT AND 'Baron Cimetière' PRESENT - the false absence and the hidden figure in one row, which is what made this whole class of defect visible."
+ },
+ {
+  "id": "vodou_ogou_badagri",
+  "name": {
+   "primary": "Ogou Badagri",
+   "alt": [
+    "Ogou Badagris",
+    "Ogoun Badagri",
+    "Badagri"
+   ],
+   "transliterations": {
+    "Haitian Creole": "Ogou Badagri",
+    "etymology": "Badagri, after the West African port town of Badagry."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Haitian Vodou",
+  "primaryTradition": "Haitian Vodou",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Haitian Vodou traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Haitian Vodou traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "A powerful lwa of the Nago nation and a general in the armies of Ogou.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "warfare",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   },
+   {
+    "sphereId": "generalship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   },
+   {
+    "sphereId": "nago-nation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "epithets": [],
+  "relations": [
+   {
+    "kind": "general-in-the-armies-of",
+    "personId": "vodou_ogou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, to a pre-existing record whose alias list this batch edited. The source makes him a general IN Ogou's armies, which is a relation between two figures and not two names for one."
+   },
+   {
+    "kind": "of-the-ogou-with",
+    "personId": "vodou_ogou_balendjo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ],
+    "notes": "NON-SYMMETRIC, to a record lane 28 created. Most of the Ogou use the name as a family name."
+   }
+  ],
+  "cultRecords": [],
+  "sources": [
+   {
+    "claim": "A powerful lwa of the Nago nation and a general in the armies of Ogou.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Reference treatment of the Ogou: Ogou Badagris is a powerful lwa of the Nago nation and a general in the armies of Ogou; Ogou Balendjo is a Haitian Vodou lwa of healing, strength and spiritual medicine; the Nago nation, which originates from Yorubaland, includes many of the Ogou lwa, most of whom use Ogou as a kind of family name."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "THE SHARPEST CASE OF THE WHOLE DEFECT. The source describes him as a distinct lwa of the Nago nation AND AS A GENERAL IN OGOU'S ARMIES - a relation between two figures - and the corpus carried his name as an alias of the very figure he serves under. Lane 28's census recorded him as EXISTING for exactly this reason and named the decision that would free him; this batch has it."
+ }
+]
+```
