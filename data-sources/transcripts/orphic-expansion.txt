@@ -1,0 +1,328 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Orphic
+Era (registered, exact): "Orphic traditional religion; continuing"
+Author pass: Lane 1 — Orphic held 11 records and was UNCLAIMED. This adds the
+             9 figures that are distinctively Orphic: the first principles of
+             the theogonies, the deities named on the gold leaves, and the
+             obscure goddesses known from the Hymns and from Anatolian stone.
+
+================================================================================
+SCOPE — WHY ONLY NINE
+================================================================================
+
+The existing 11 records already carry the Orphic core: Phanes (with Protogonos,
+Erikepaios, Metis and Eros as aliases), Chronos, Ananke, Nyx, Zagreus, the
+Orphic Zeus, Persephone, Dionysos, Mnemosyne, Melinoe and Orpheus.
+
+This registry's practice is to keep an Orphic record beside the Greek one where
+the Orphic material treats the figure distinctively — `orphic_nyx` stands
+apart from `greek_hesiod_nyx`, `orphic_persephone` from
+`greek_hesiod_persephone`. That practice could be used to justify an Orphic
+record for every deity addressed in the 87 Orphic Hymns, which would mean
+dozens of near-duplicates of Greek gods differing only in which hymn addresses
+them.
+
+That is deliberately NOT done here. The bar applied is: **the figure's
+existence or character comes from the Orphic material itself**, not from a
+Greek god happening to receive an Orphic hymn. Nine candidates clear it:
+
+- **First principles** the Orphic theogonies name and Hesiod does not —
+  Hydros, Thesis, Aither, Physis.
+- **Gold-leaf deities** — Eukles and Brimo, named on the inscribed tablets
+  buried with initiates.
+- **Anatolian hymn-goddesses** — Hipta and Mise. These are the exact peers of
+  Melinoe, already in this registry: all three were known ONLY from the Hymns
+  until inscriptions from western Asia Minor confirmed their cult. Admitting
+  Melinoe and excluding the other two would be inconsistent.
+- **Musaeus**, the addressee of the proem that heads the Hymns.
+
+Deliberately excluded: an Orphic Chaos, Gaia, Ouranos, Kronos, Rhea or Eros.
+Each already exists in the Greek tradition, and the Orphic material gives them
+a place in a different theogony rather than a different character. Adding them
+would inflate the corpus without adding knowledge.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+No direct outbound web access in this session; research went through
+server-side web search. Citations name the ancient source, the class of object,
+or the reference work. The Orphic theogonies survive mostly at second hand —
+Damascius outlines the Hieronyman theogony, Proclus quotes the Rhapsodies — and
+the records say so rather than presenting the theogonies as continuous texts.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+  {
+    "id": "orphic_hydros",
+    "name": { "primary": "Hydros", "alt": ["Hydrus", "the Primordial Waters", "Ὕδρος"],
+      "transliterations": { "Greek": "Ὕδρος", "etymology": "hydor is water; the figure is the primordial water itself, first of the things that were." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Emerged at the dawn of creation with Thesis and Mud, the first entities of the Orphic theogonies; with Gaia, into whom the Mud solidified, he produced Chronos and Ananke.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Orphic Theogonies: Hydros (Water), Thesis (Creation) and Mud were the first entities to emerge at creation; Mud solidified into Gaia, who with Hydros produced Khronos and Ananke." } ] } ],
+    "domains": [
+      { "sphereId": "primordial-waters", "contextTag": "lifelong", "term": { "value": "Ὕδρος", "script": "Greek", "rom": "Hydros" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hydros as the Greek primordial god of fresh water in the Orphic theogonies." } ] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hydros among the first entities of the Orphic cosmogony." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_thesis",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hydros, Thesis and Mud were the first entities to emerge at the dawn of creation." } ],
+        "notes": "Emerged together with Thesis at the dawn of creation, the two of them with Mud being the first things that were." },
+      { "kind": "father-of", "personId": "orphic_chronos",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gaia together with Hydros produced Khronos and Ananke." } ],
+        "notes": "Father of Chronos by Gaia, into whom the primordial Mud had solidified." },
+      { "kind": "father-of", "personId": "orphic_ananke",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Gaia together with Hydros produced Khronos and Ananke." } ],
+        "notes": "Father of Ananke by Gaia." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Hydros, the primordial water, is one of the first entities of the Orphic theogonies, emerging with Thesis and Mud, and father by Gaia of Chronos and Ananke.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Hydros and of the Orphic cosmogony in which he, Thesis and Mud come first." },
+                     { "kind": "secondary", "reference": "Damascius's outline of the Hieronyman theogony, as reported in the reference literature." } ], "weight": "medium" } ],
+    "variants": [ { "id": "orphic_hydros_rhapsodic_variant",
+      "claim": "The Rhapsodies rearrange the generation that follows him.",
+      "description": "The Orphic Rhapsodies, developed out of the older theogonies, drop Chronos and Ananke from this position and have Phanes born directly of Hydros and Gaia. The record keeps the older sequence as the primary one and notes the variant rather than harmonising them.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Rhapsodic revision in which Phanes is born directly of Hydros and Gaia." } ] } ],
+    "notes": "Hydros is where the Orphic world begins: water, with Thesis and Mud, before anything had shape. The Mud settles into Gaia, and Gaia with Hydros brings forth Chronos and Ananke, Time and Necessity, who wind their serpent coils round the cosmic egg and crack it to let Phanes out. The later Rhapsodies tidy this up, dropping Chronos and Ananke from the sequence so that Phanes comes straight from Hydros and Gaia. He has no cult, no temple and no myth of his own — he is a first principle, and the theogonies want him only for where he stands."
+  },
+  {
+    "id": "orphic_thesis",
+    "name": { "primary": "Thesis", "alt": ["Creation", "Θέσις"],
+      "transliterations": { "Greek": "Θέσις", "etymology": "thesis is a placing or setting-down, hence establishment or creation; the goddess is the act of institution itself." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "The first being to emerge at creation alongside Hydros and Mud in the Orphic theogonies.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Thesis as the primordial goddess of creation, occurring in the Orphic Theogonies as the first being to emerge at creation alongside Hydros and Mud, and related to Physis." } ] } ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Θέσις", "script": "Greek", "rom": "Thesis" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Thesis as the primordial goddess of creation." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_hydros",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment: Hydros, Thesis and Mud were the first entities to emerge at the dawn of creation." } ],
+        "notes": "Emerged together with Hydros at the dawn of creation." },
+      { "kind": "ally", "personId": "orphic_physis",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment describing Thesis as a divinity related to Physis, Mother Nature." } ],
+        "notes": "Closely related to Physis: setting-down and nature, the instituting of things and their standing order." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Thesis is the Orphic primordial goddess of creation, one of the first beings to emerge alongside Hydros and Mud, closely related to Physis.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Thesis, her place among the first Orphic entities and her relation to Physis." } ], "weight": "medium" } ],
+    "notes": "Thesis is the act of setting-down — the instituting of things, as against the stuff they are made of. She stands at the very beginning of the Orphic cosmogony with Hydros and Mud, and the reference literature reads her as a near-double of Physis, Nature: what is established, and the standing order it establishes. Like the other first principles she has no cult and no story; she is a position in a sequence, and the Orphic poets needed her to be there."
+  },
+  {
+    "id": "orphic_aither",
+    "name": { "primary": "Aither", "alt": ["Aether", "Ether", "Αἰθήρ"],
+      "transliterations": { "Greek": "Αἰθήρ", "etymology": "aither is the bright upper air, the clear fire above the atmosphere — not the ordinary air men breathe, which is aer." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "male", "vitalStatus": "immortal",
+    "parentIds": ["orphic_chronos"], "parentRoles": ["father"],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Produced by Chronos with Chaos; in the Orphic Rhapsodies the philosophers set Chronos as the single principle of all things and Aither and Chaos as the two principles that follow from him.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the Orphic Rhapsodies: philosophers place Chronus as the one principle of all things, and Ether and Chaos as the two principles." } ] } ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Αἰθήρ", "script": "Greek", "rom": "Aither" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aither as the bright upper air among the Orphic principles." } ] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Aither as one of the two principles of the Orphic Rhapsodies." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [], "relations": [],
+    "cultRecords": [],
+    "sources": [ { "claim": "Aither is one of the two principles of the Orphic Rhapsodic theogony, produced with Chaos by Chronos, who is the single principle of all things.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of the Orphic Rhapsodies, placing Chronus as the one principle and Ether and Chaos as the two." } ], "weight": "medium" } ],
+    "notes": "Aither is the bright upper air — the clear burning stuff above the sky, not the air men breathe. In the Rhapsodic theogony he is one of the two things Chronos brings forth, the other being Chaos, and between them they frame the space in which everything else happens. The Greek tradition has its own Aither, son of Erebos and Nyx in Hesiod; the Orphic one is recorded here because his place in the sequence, and his derivation from Time, belong to the Orphic scheme rather than the Hesiodic one."
+  },
+  {
+    "id": "orphic_physis",
+    "name": { "primary": "Physis", "alt": ["Nature", "Mother Nature", "Φύσις"],
+      "transliterations": { "Greek": "Φύσις", "etymology": "physis is growth, and then the nature of a thing — what it grows into and what it is by its own tendency." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Addressed in her own Orphic hymn as Nature, mother of all, and treated in the theogonic material as a divinity closely related to Thesis.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of Physis as Mother Nature, a divinity to which Thesis is related; the Orphic Hymns include a hymn to Physis." } ] } ],
+    "domains": [
+      { "sphereId": "nature", "contextTag": "lifelong", "term": { "value": "Φύσις", "script": "Greek", "rom": "Physis" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Physis as Mother Nature in the Orphic material." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_thesis",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment describing Thesis as a divinity related to Physis." } ],
+        "notes": "Closely related to Thesis: the standing order of things and the setting-down that establishes it." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Physis is Nature personified in the Orphic material, addressed in her own Orphic hymn and closely related to the primordial Thesis.",
+      "citations": [ { "kind": "secondary", "reference": "Reference treatment of Physis as Mother Nature and of her relation to Thesis." },
+                     { "kind": "primary", "reference": "Orphic Hymns, the hymn to Physis." } ], "weight": "medium" } ],
+    "notes": "Physis is the way things grow and therefore what they are. The Orphic Hymns address her directly, and the theogonic material sets her beside Thesis — creation as an act, and nature as the settled result of it. She is one of the clearest cases of the Orphic habit of giving cult-language to what a philosopher would call a principle: the hymn asks Nature herself to come, in the same form of words used for Demeter or Apollo."
+  },
+  {
+    "id": "orphic_eukles",
+    "name": { "primary": "Eukles", "alt": ["Euklês", "Eucles", "Εὐκλῆς"],
+      "transliterations": { "Greek": "Εὐκλῆς", "etymology": "eu-kles is 'of good repute', 'the glorious one'. The name is generally read as a cult-title of the lord of the dead rather than as an independent theonym — a way of naming him well, since naming him plainly was avoided." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "male", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Named with Eubouleus on the inscribed gold leaves buried with initiates, among the powers the dead soul addresses on arriving below.",
+      "sources": [ { "kind": "epigraphic", "reference": "The Orphic gold leaves (c. 400 BCE to the 3rd c. CE), on which Euklês and Eubouleus are named together." } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Εὐκλῆς", "script": "Greek", "rom": "Eukles, the glorious one" },
+        "sources": [ { "kind": "epigraphic", "reference": "The Orphic gold leaves naming Euklês among the divinities of the world below." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_brimo",
+        "sources": [ { "kind": "secondary", "reference": "Scholarly treatment of the divinities of the Orphic gold leaves — Euklês, Eubouleus, Brimo, Kybele, Kore and Persephone — and the relationships among them." } ],
+        "notes": "Named among the same small group of divinities on the gold leaves as Brimo." } ],
+    "cultRecords": [
+      { "tradition": "Orphic", "placeName": "graves of initiates across the Greek world", "kind": "funerary inscription", "period": "c. 400 BCE - 3rd c. CE",
+        "attestation": "the inscribed gold leaves", "source": "The Orphic gold leaves; scholarly treatment of their divinities.",
+        "note": "The leaves are small sheets of gold buried with the dead, carrying instructions and passwords for the journey below." } ],
+    "sources": [ { "claim": "Eukles, 'the glorious one', is a divinity named with Eubouleus on the Orphic gold leaves, generally understood as a cult-title of the lord of the dead.",
+      "citations": [ { "kind": "epigraphic", "reference": "The Orphic gold leaves." },
+                     { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves: Euklês, Eubouleus, Brimo, Kybele, Kore and Persephone." } ], "weight": "medium" } ],
+    "variants": [ { "id": "orphic_eukles_title_or_person",
+      "claim": "Whether Eukles names a distinct god or titles a known one is debated.",
+      "description": "The name means 'of good repute', and the usual reading makes it a respectful way of naming the lord of the dead — the same avoidance that produces Plouton, 'the wealthy one', instead of Hades. On that reading Eukles is a title rather than a separate being. The record keeps him as his own entry because the leaves name him as a distinct addressee alongside Eubouleus, and states the alternative rather than deciding it.",
+      "sources": [ { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves." } ] } ],
+    "notes": "Eukles is a name on a gold sheet folded into a grave. The leaves buried with Orphic initiates carry instructions for the soul arriving below, and among the powers they name are Eukles and Eubouleus — the glorious one and the good counsellor, both of them titles as much as names. The usual reading takes Eukles for the lord of the dead addressed obliquely, on the same instinct that produced Plouton, 'the rich one', rather than saying Hades outright. He is recorded as his own entry because the leaves address him as one, with that alternative stated. Eubouleus is already carried in this registry as an alias of the Orphic Dionysos."
+  },
+  {
+    "id": "orphic_brimo",
+    "name": { "primary": "Brimo", "alt": ["Βριμώ", "the Terrible One"],
+      "transliterations": { "Greek": "Βριμώ", "etymology": "Connected with brimaomai, to snort or rage; the name is a title of dread rather than a personal name — 'the terrible', 'the raging one'." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Named on the Orphic gold leaves among the divinities the initiate meets below; identified in the sources now with Demeter, now with Hekate.",
+      "sources": [ { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves, on Brimo, a figure often identified with Demeter or Hekate." } ] } ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Βριμώ", "script": "Greek", "rom": "Brimo" },
+        "sources": [ { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves." } ] },
+      { "sphereId": "terror", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of the name Brimo as a title of dread." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_eukles",
+        "sources": [ { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves — Euklês, Eubouleus, Brimo, Kybele, Kore and Persephone." } ],
+        "notes": "Named among the same small group of divinities on the gold leaves as Eukles." } ],
+    "cultRecords": [
+      { "tradition": "Orphic", "placeName": "graves of initiates across the Greek world", "kind": "funerary inscription", "period": "c. 400 BCE - 3rd c. CE",
+        "attestation": "the inscribed gold leaves", "source": "The Orphic gold leaves; scholarly treatment of their divinities." } ],
+    "sources": [ { "claim": "Brimo, 'the terrible one', is a divinity named on the Orphic gold leaves, identified in the sources sometimes with Demeter and sometimes with Hekate.",
+      "citations": [ { "kind": "epigraphic", "reference": "The Orphic gold leaves." },
+                     { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves, on Brimo's identifications." } ], "weight": "medium" } ],
+    "variants": [ { "id": "orphic_brimo_identification_unsettled",
+      "claim": "Brimo is identified with more than one goddess.",
+      "description": "She is read as Demeter by some and as Hekate by others, and the mystery context she belongs to — where saying a name outright was avoided — is exactly what makes the question hard. No Demeter or Hekate record is merged with this one; the identifications are recorded as identifications.",
+      "sources": [ { "kind": "secondary", "reference": "Scholarly study of the divinities in the Orphic gold leaves, noting Brimo's identification with Demeter or Hekate." } ] } ],
+    "notes": "Brimo is a name for something frightening met in the dark. It belongs with a verb for snorting or raging, and like Eukles it works as a title rather than a personal name — which is the point, in a mystery cult where the real name was not said. The gold leaves name her among the powers the initiate encounters below. Whether she is Demeter in her terrible aspect, or Hekate, or something older than either, the sources do not agree, and the record does not settle it for them."
+  },
+  {
+    "id": "orphic_hipta",
+    "name": { "primary": "Hipta", "alt": ["Ipta", "Hipta of Tmolus", "Ἵπτα"],
+      "transliterations": { "Greek": "Ἵπτα", "etymology": "An Anatolian name, generally connected with the Hittite-Luwian goddess Hepat; it is not Greek in origin." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Received the newborn Dionysus when he emerged from the thigh of Sabazios-Zeus, and reared him on Mount Tmolus; Proclus reports a work attributed to Orpheus titled On Hipta, and a story in which she carries the young god in a winnowing-basket.",
+      "sources": [ { "kind": "primary", "reference": "Orphic Hymns 49, to Hipta." },
+                   { "kind": "secondary", "reference": "Reference treatment of Hipta: in the hymn to Sabazios, Dionysus is sewn into the thigh of Sabazios-Zeus and on emerging is given to Hipta, who rears him on Mount Tmolus; Proclus attributes to Orpheus a work On Hipta and relates that she carries the young Dionysus in a liknon." } ] } ],
+    "domains": [
+      { "sphereId": "nursing-and-fosterage", "contextTag": "lifelong", "term": { "value": "Ἵπτα", "script": "Greek", "rom": "Hipta" },
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hipta as the nurse who rears the young Dionysus on Mount Tmolus." } ] } ],
+    "faculties": [], "materialCulture": [
+      { "id": "orphic_hipta_liknon", "name": "the liknon of Hipta", "kind": "ritual-object",
+        "role": "The winnowing-basket in which Hipta carries the infant Dionysus — an object of the mysteries, in which the god is cradled as grain is cradled for winnowing.",
+        "sources": [ { "kind": "secondary", "reference": "Proclus, as reported in the reference literature, on Hipta carrying the young Dionysus in a liknon." } ] } ],
+    "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_mise",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting that Mise, Hipta and Melinoe were known only from the Orphic Hymns until inscriptions from western Asia Minor revealed their cult." } ],
+        "notes": "One of the three goddesses — with Mise and Melinoe — known only from the Hymns until Anatolian inscriptions confirmed them." },
+      { "kind": "nurse-of", "personId": "orphic_dionysos",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment of Hipta receiving the newborn Dionysus and rearing him on Mount Tmolus." } ],
+        "notes": "Received the newborn Dionysus from the thigh of Sabazios-Zeus and reared him on Mount Tmolus." },
+      { "kind": "subordinate-to", "personId": "phrygian_sabazios",
+        "sources": [ { "kind": "primary", "reference": "Orphic Hymns, the hymn to Sabazios, in which the god hands the newborn Dionysus to Hipta." } ],
+        "notes": "Receives the child from Sabazios-Zeus in the hymn to Sabazios; her role in the Orphic material is defined by that handing-over." } ],
+    "cultRecords": [
+      { "tradition": "Orphic", "placeName": "Mount Tmolus and western Asia Minor", "kind": "cult", "period": "2nd-3rd c. CE (Hymns); inscriptions",
+        "attestation": "Orphic Hymn 49; inscriptions from western Anatolia", "source": "Orphic Hymns 49; reference treatment of the Anatolian inscriptions.",
+        "note": "The inscriptions are what lifted her out of being a name in a poem: the cult is real and local to western Asia Minor." } ],
+    "sources": [ { "claim": "Hipta is an Anatolian goddess addressed in Orphic Hymn 49 who receives the newborn Dionysus from the thigh of Sabazios-Zeus and rears him on Mount Tmolus; Proclus knew an Orphic work On Hipta, and her cult is confirmed by inscriptions from western Asia Minor.",
+      "citations": [ { "kind": "primary", "reference": "Orphic Hymns 49, to Hipta." },
+                     { "kind": "secondary", "reference": "Reference treatment of Hipta, the Tmolus fosterage, the liknon, Proclus's On Hipta, and the Anatolian inscriptions." } ], "weight": "high" } ],
+    "notes": "Hipta is the nurse. In the Orphic telling Dionysus is sewn into the thigh of Sabazios-Zeus and, when he comes out, is handed to her; she rears him on Mount Tmolus in Lydia and carries him in a liknon, the winnowing-basket that is itself an object of the mysteries. Proclus knew a poem attributed to Orpheus called On Hipta, now lost. Her name is not Greek — it is generally connected with the Anatolian Hepat — and for a long time she existed only inside the Hymns, until inscriptions turned up in western Asia Minor showing she had a real cult there. That is precisely the history of Melinoe, already in this registry, and of Mise."
+  },
+  {
+    "id": "orphic_mise",
+    "name": { "primary": "Mise", "alt": ["Misa", "Μίση"],
+      "transliterations": { "Greek": "Μίση", "etymology": "No agreed derivation; the name is not securely Greek, and the goddess belongs with the Anatolian layer of the Orphic Hymns." } },
+    "type": "deity", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "female", "vitalStatus": "immortal", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "deity", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Addressed in Orphic Hymn 42, which calls her to come from any of her cult places — Eleusis, Phrygia, Cyprus or Egypt.",
+      "sources": [ { "kind": "primary", "reference": "Orphic Hymns 42, to Mise." },
+                   { "kind": "secondary", "reference": "Reference treatment of Mise: she is portrayed as a traveller, found at Eleusis, in Phrygia, on Cyprus and in Egypt, a catalogue of cult centres typical of the genre." } ] } ],
+    "domains": [
+      { "sphereId": "mystery-initiation", "contextTag": "lifelong", "term": { "value": "Μίση", "script": "Greek", "rom": "Mise" },
+        "sources": [ { "kind": "primary", "reference": "Orphic Hymns 42, to Mise." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "orphic_hipta",
+        "sources": [ { "kind": "secondary", "reference": "Reference treatment noting that Mise, Hipta and Melinoe were known only from the Orphic Hymns until inscriptions from western Asia Minor revealed their cult." } ],
+        "notes": "One of the three goddesses — with Hipta and Melinoe — known only from the Hymns until Anatolian inscriptions confirmed them." } ],
+    "cultRecords": [
+      { "tradition": "Orphic", "placeName": "Eleusis, Phrygia, Cyprus and Egypt (as the hymn names them)", "kind": "cult", "period": "2nd-3rd c. CE (Hymns); inscriptions",
+        "attestation": "Orphic Hymn 42; inscriptions from western Anatolia", "source": "Orphic Hymns 42; reference treatment of the Anatolian inscriptions.",
+        "note": "The hymn's list of places is a convention of the form — the god is summoned from wherever they might be — and is not a survey of attested sanctuaries." } ],
+    "sources": [ { "claim": "Mise is a goddess addressed in Orphic Hymn 42, summoned from Eleusis, Phrygia, Cyprus or Egypt, known only from the Hymns until inscriptions from western Asia Minor confirmed her cult.",
+      "citations": [ { "kind": "primary", "reference": "Orphic Hymns 42, to Mise." },
+                     { "kind": "secondary", "reference": "Reference treatment of Mise and of the Anatolian inscriptional evidence for her, Hipta and Melinoe." } ], "weight": "medium" } ],
+    "notes": "Mise is summoned in the forty-second Orphic hymn from wherever she happens to be — Eleusis, Phrygia, Cyprus, Egypt — which is a convention of the form rather than a list of her sanctuaries. She belongs to the mystery vocabulary, and her name is not securely Greek. Like Hipta and Melinoe she was for a long time a goddess who existed only inside a book of hymns; inscriptions from western Asia Minor then showed that she had been worshipped there. Melinoe is already in this registry, and admitting her while leaving out the other two would have been inconsistent."
+  },
+  {
+    "id": "orphic_musaeus",
+    "name": { "primary": "Musaeus", "alt": ["Mousaios", "Musaeus of Athens", "Μουσαῖος"],
+      "transliterations": { "Greek": "Μουσαῖος", "etymology": "Formed on Mousa, a Muse: 'the man of the Muses'. The name is a description of the office, which is part of why the figure is hard to pin to a person." } },
+    "type": "mortal", "origin": "canon", "tradition": "Orphic", "primaryTradition": "Orphic",
+    "sex": "male", "vitalStatus": "deceased", "parentIds": [], "parentRoles": [],
+    "temporal": { "era": "Orphic traditional religion; continuing" },
+    "lifecycle": [ { "typeStatus": "mortal", "era": "Orphic traditional religion; continuing", "eraOrdering": 0,
+      "startEvent": "Addressed in the proem that heads the collection of Orphic Hymns, where Orpheus speaks to him as the pupil who is to receive the rites.",
+      "sources": [ { "kind": "primary", "reference": "Orphic Hymns, the proem 'To Musaeus' that opens the collection." } ] } ],
+    "domains": [
+      { "sphereId": "poetry", "contextTag": "lifelong", "term": { "value": "Μουσαῖος", "script": "Greek", "rom": "Musaeus" },
+        "sources": [ { "kind": "primary", "reference": "Orphic Hymns, the proem to Musaeus." } ] },
+      { "sphereId": "mystery-initiation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "Orphic Hymns, the proem, in which the hymns are transmitted to Musaeus." } ] } ],
+    "faculties": [], "materialCulture": [], "epithets": [],
+    "relations": [
+      { "kind": "student-of", "personId": "orphic_orpheus",
+        "sources": [ { "kind": "primary", "reference": "Orphic Hymns, the proem, in which Orpheus addresses Musaeus and hands on the rites." } ],
+        "notes": "Pupil of Orpheus in the Orphic tradition, and the addressee of the proem that opens the Hymns; elsewhere he is called his son." } ],
+    "cultRecords": [],
+    "sources": [ { "claim": "Musaeus is the legendary poet and pupil of Orpheus to whom the proem of the Orphic Hymns is addressed, and under whose name Orphic poems circulated.",
+      "citations": [ { "kind": "primary", "reference": "Orphic Hymns, the proem 'To Musaeus'." },
+                     { "kind": "secondary", "reference": "Reference treatment of Musaeus among the legendary poets of the Orphic tradition." } ], "weight": "medium" } ],
+    "variants": [ { "id": "orphic_musaeus_relation_to_orpheus",
+      "claim": "Musaeus is called the pupil of Orpheus and also his son.",
+      "description": "The tradition makes him now the disciple who receives the rites, now the son who inherits them; his name simply means 'of the Muses', which is a description of what he does rather than a personal name. The record authors the pupil relation, which the proem supports directly, and notes the filiation without asserting it.",
+      "sources": [ { "kind": "secondary", "reference": "Reference treatment of the varying accounts of Musaeus's relation to Orpheus." } ] } ],
+    "notes": "Musaeus is the man the Orphic Hymns are addressed to. The proem has Orpheus speaking to him — learn these rites, sacrifice like this — which frames the whole collection as instruction passed from master to pupil. Poems circulated under his name as they did under Orpheus's, and the tradition cannot decide whether he was Orpheus's disciple or his son. His name means 'of the Muses', which is a job description, and that is part of why he stays out of focus: he is the figure the tradition needs in order to have someone to hand itself to."
+  }
+]
+```
