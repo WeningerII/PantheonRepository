@@ -1,0 +1,2351 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Etruscan
+Eras (registered, exact): villanovan | orientalizing | archaic | classical | hellenistic | roman-period
+Author pass: Lane 1 expansion — the Etruscan tradition held only 17 records for
+             one of the best-documented pre-Roman pantheons in Italy. This pass
+             adds 33 further attested individuated figures.
+
+================================================================================
+SOURCING NOTE
+================================================================================
+
+This session has no direct outbound web access; the environment's egress policy
+refuses en.wikipedia.org, britishmuseum.org, perseus.tufts.edu, britannica.com
+and the rest. Research was done through server-side web search, which returns
+the substance of those pages without fetching them. Citations therefore name
+the reference work or the attesting object, and no printed monograph is cited
+as though it had been read cover to cover.
+
+Principal evidence classes used:
+  - The Liver of Piacenza (bronze haruspical model, 2nd-1st c. BCE), whose
+    outer rim carries sixteen abbreviated theonyms. The abbreviations are
+    disputed for most regions; only names with independent corroboration are
+    ingested from it, and the disputed-reading problem is stated on each record
+    that rests on it.
+  - Etruscan engraved bronze mirrors, which carry roughly 300 inscriptions
+    naming the figures they depict — the main source for Alpanu, Achvizr,
+    Thanr, Thalna, Mean, Ethausva and the Lasa-type attendants.
+  - Tomb painting, above all the François Tomb at Vulci (Cacu, the Vibenna
+    brothers, Macstrna) and the Tomb of Orcus (Tuchulcha).
+  - Graeco-Roman report: Varro on Voltumna as deus Etruriae princeps, Livy on
+    the Fanum Voltumnae and the nail-rite of Nortia, Tertullian Apol. 24.8 on
+    Nortia of Volsinii, the land-surveyors' corpus for the prophecy of Vegoia.
+
+Identity discipline follows the precedent already in this corpus: Etruscan
+counterparts of Greek and Roman gods are kept as their own records (Tinia is
+not merged into Zeus or Jupiter; `oscan_hercle` is already separate from
+`greek_apollod_heracles`). Where a scholarly position would collapse two of
+these records into one — Aplu as an epithet of Śuri — both are kept and the
+position is recorded on each, with an explicit equated-with edge rather than a
+silent merge.
+
+================================================================================
+AUTHORED FIGURES — I. CELESTIAL AND COSMIC POWERS
+================================================================================
+
+```json
+[
+  {
+    "id": "etruscan_usil",
+    "name": {
+      "primary": "Usil",
+      "alt": ["Usils", "Usil the Sun"],
+      "transliterations": {
+        "Etruscan": "usil",
+        "etymology": "usil is the Etruscan word for the sun as well as the god's name; the genitive usils marks one of the two halves into which the sixteen regions of the sky are divided on the Liver of Piacenza."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Named on the Liver of Piacenza beside Tiur, the moon, the two theonyms dividing the sixteen regions of the sky into the half 'of the sun' and the half 'of the moon'.",
+        "sources": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (bronze haruspical model, 2nd-1st c. BCE), Museo Civico, Piacenza — usils and tivs divide the sixteen regions." }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "usil", "script": "Etruscan (transliterated)", "rom": "the sun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Usil': in Etruscan religion Usil is the god of the sun; the name is also the Etruscan word for the sun." } ]
+      },
+      {
+        "sphereId": "divination",
+        "contextTag": "lifelong",
+        "term": { "value": "usils", "script": "Etruscan (transliterated)", "rom": "of the sun (genitive)" },
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza — the solar half of the sixteen-region division read by the haruspex." } ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_drive_the_solar_course",
+        "name": "to run the course of the day, rising winged from the sea",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "On mirrors and bronze chariot fittings Usil is shown with a halo and often with wings, rising or driving; the deity is usually male but is also depicted as female.",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Usil', on the halo, the wings, and the mirrors and bronze chariot fittings that carry the iconography." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "etruscan_tiur",
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza — usils and tivs name the two halves of the sixteen-region sky." } ],
+        "notes": "Paired with Tiur, the moon: their two names divide the sixteen regions of the Etruscan sky between them."
+      },
+      {
+        "kind": "ally",
+        "personId": "etruscan_thesan",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Usil': Usil is associated with the dawn goddess Thesan, the pair frequently pictured together and sometimes in a chariot." } ],
+        "notes": "Pictured together with Thesan, the dawn, the two of them sometimes sharing a chariot."
+      },
+      {
+        "kind": "ally",
+        "personId": "etruscan_catha",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha': Catha is called Solis Filia, 'daughter of the Sun', and 'Eye of the Sun', though whether she is solar or lunar is disputed." } ],
+        "notes": "Associated with Catha, who is named daughter and eye of the sun; whether her own character is solar or lunar remains disputed, so the link is recorded as a cult association rather than descent."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Usil is the Etruscan sun god, named on the Liver of Piacenza beside the moon Tiur, the pair dividing the sixteen regions of the sky; he is depicted haloed and often winged on mirrors and bronze chariot fittings, and is frequently shown with the dawn goddess Thesan.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza." },
+          { "kind": "secondary", "reference": "Reference article 'Usil', on the theonym, the sun/moon division of the sky, the iconography and the association with Thesan." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Usil is the sun of the Etruscans, and his name is simply their word for the sun. On the Liver of Piacenza his genitive, usils, labels one half of the sixteen regions of the sky, against tivs, 'of the moon' — so the sun and moon between them frame the whole field a haruspex read. In art he is haloed, often winged, rising or in a chariot, and he keeps company with Thesan, the dawn. The deity is usually male, but female depictions exist and the corpus of images does not resolve into a single fixed figure."
+  },
+  {
+    "id": "etruscan_tiur",
+    "name": {
+      "primary": "Tiur",
+      "alt": ["Tiv", "Tivr", "Tiu", "Tiurs"],
+      "transliterations": {
+        "Etruscan": "tiur",
+        "etymology": "tiur is the Etruscan word both for the moon and for the month; the genitive tivs labels the lunar half of the sixteen regions on the Liver of Piacenza."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Named on the Liver of Piacenza beside Usil, the two theonyms dividing the sixteen regions of the sky between the sun and the moon.",
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE) — usils and tivs." } ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "tiur", "script": "Etruscan (transliterated)", "rom": "the moon; the month" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Usil': Tiur was likely a moon goddess, her name also serving as the Etruscan word for 'month'." } ]
+      },
+      {
+        "sphereId": "divination",
+        "contextTag": "lifelong",
+        "term": { "value": "tivs", "script": "Etruscan (transliterated)", "rom": "of the moon (genitive)" },
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza — the lunar half of the sixteen-region division." } ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_measure_the_month",
+        "name": "to measure out the month, the name of the moon serving also as the name of the month",
+        "term": { "value": "tiur", "script": "Etruscan (transliterated)", "rom": "moon / month" },
+        "inheritability": "none",
+        "notes": "The identity of the two senses is the strongest single piece of evidence for the goddess's calendrical function.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Usil', on tiur as both moon and month." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "etruscan_usil",
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza — usils and tivs name the two halves of the sixteen-region sky." } ],
+        "notes": "Paired with Usil, the sun: their two names divide the sixteen regions of the Etruscan sky between them."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Tiur is the Etruscan moon, named on the Liver of Piacenza beside the sun Usil; the word means both moon and month, and the genitive tivs labels the lunar half of the sixteen regions of the sky.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza." },
+          { "kind": "secondary", "reference": "Reference article 'Usil', on Tiur as moon goddess and on tiur as the word for 'month'." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tiur is the moon, and the Etruscan word tiur means the moon and the month alike — the clearest sign that the goddess was thought of as the measure of time as much as a light in the sky. Her genitive, tivs, labels half the sixteen regions of the Etruscan heaven on the Liver of Piacenza, the other half being usils, 'of the sun'. Beyond that pairing the evidence is thin: no myth, no genealogy and no securely identified image, and the record is kept to what the theonym and the liver actually support. A Nigerian deity of the Tiv also appears in this registry; the resemblance of the names is coincidence, and the two are unrelated figures."
+  },
+  {
+    "id": "etruscan_catha",
+    "name": {
+      "primary": "Catha",
+      "alt": ["Cavatha", "Cavtha", "Cath", "Catha Solis Filia"],
+      "transliterations": {
+        "Etruscan": "caθa",
+        "etymology": "The theonym is written caθa or cavaθa. A Latin gloss renders her Solis Filia, 'daughter of the Sun'; whether the goddess herself is solar, lunar, or neither is unsettled."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Named in region 8 of the Liver of Piacenza and in sanctuary dedications, worshipped as Solis Filia, the daughter of the Sun, with a standing connection to the underworld.",
+        "sources": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE) — Catha in the eighth of the sixteen outer regions." },
+          { "kind": "secondary", "reference": "Reference article 'Catha', on the epithets Solis Filia and 'Eye of the Sun' and on the underworld connection." }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-light",
+        "contextTag": "lifelong",
+        "term": { "value": "caθa", "script": "Etruscan (transliterated)", "rom": "Catha" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha': a female lunar or solar deity, called Solis Filia and 'Eye of the Sun'." } ]
+      },
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha', on her connection to the underworld and possibly to childbirth." } ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [
+      { "original": "Solis Filia", "sources": [ { "kind": "secondary", "reference": "Latin gloss rendering Catha 'daughter of the Sun', reported in the reference article 'Catha'." } ] },
+      { "original": "Eye of the Sun", "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha', on the epithet 'Eye of the Sun'." } ] }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "etruscan_usil",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha': the epithets Solis Filia and 'Eye of the Sun' attach her to the sun, though her own solar or lunar character is disputed." } ],
+        "notes": "Attached to the sun by her epithets; because the sources do not settle whether she is solar or lunar, the tie is recorded as cult association rather than as descent from Usil."
+      }
+    ],
+    "cultRecords": [
+      {
+        "tradition": "Etruscan",
+        "placeName": "Etruscan sanctuaries (region 8 of the Liver of Piacenza)",
+        "kind": "sanctuary cult",
+        "period": "archaic to hellenistic",
+        "attestation": "Liver of Piacenza, region 8; sanctuary dedications naming Catha/Cavatha",
+        "source": "Liver of Piacenza; reference article 'Catha'.",
+        "note": "Her place on the liver puts her among the sixteen powers whose region a haruspex had to be able to name."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Catha (also Cavatha) is an Etruscan goddess named in the eighth region of the Liver of Piacenza and in sanctuary dedications, glossed in Latin as Solis Filia, 'daughter of the Sun', and 'Eye of the Sun', with a connection to the underworld and possibly to childbirth; whether she is solar or lunar is disputed.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza." },
+          { "kind": "secondary", "reference": "Reference article 'Catha (mythology)', on the epithets, the underworld link and the solar/lunar dispute." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_catha_solar_or_lunar",
+        "claim": "Catha's solar or lunar character is unresolved.",
+        "description": "She is called daughter and eye of the Sun, which points solar; other readings make her lunar, and she also carries an underworld association and a possible link to childbirth. The record keeps all of these as reported and does not choose between them, because the evidence does not.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Catha (mythology)', presenting her as a lunar or solar deity with an underworld connection." } ]
+      }
+    ],
+    "notes": "Catha, also written Cavatha, holds the eighth of the sixteen regions on the Liver of Piacenza and is named in sanctuary dedications, so she was a goddess a haruspex and a worshipper both had to know. A Latin gloss calls her Solis Filia, daughter of the Sun, and she is also called the Eye of the Sun; yet she carries an underworld association as well, and modern treatments describe her as lunar about as often as solar. The record keeps the epithets, keeps the underworld link, and leaves the question open rather than resolving it by preference."
+  },
+  {
+    "id": "etruscan_cel",
+    "name": {
+      "primary": "Cel",
+      "alt": ["Ati Cel", "Cel Ati", "Celsc"],
+      "transliterations": {
+        "Etruscan": "cel",
+        "etymology": "cel is the Etruscan word for earth or ground; ati means 'mother', so Ati Cel is 'Mother Earth'. The patronymic celsclan, 'son of Cel', is attested for a giant on a mirror."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped as Ati Cel, Mother Earth, and named in region 13 of the Liver of Piacenza; the month Celi is named for her.",
+        "sources": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), region 13 (celsc)." },
+          { "kind": "secondary", "reference": "Reference article 'Cel (goddess)', on Ati Cel as the Etruscan earth mother." }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": { "value": "ati cel", "script": "Etruscan (transliterated)", "rom": "Mother Earth" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Cel (goddess)': the Etruscan goddess of the earth, called Ati Cel, 'Mother Cel'." } ]
+      },
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "ati", "script": "Etruscan (transliterated)", "rom": "mother" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Cel (goddess)', on the title ati, 'mother'." } ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [
+      { "original": "Ati", "sources": [ { "kind": "secondary", "reference": "Reference article 'Cel (goddess)', on Ati Cel." } ] }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Etruscan",
+        "placeName": "region 13 of the Liver of Piacenza",
+        "kind": "haruspical region",
+        "period": "hellenistic",
+        "attestation": "Liver of Piacenza, celsc",
+        "source": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza.",
+        "note": "Her presence among the sixteen powers of the sky-map is the firmest evidence that she was a goddess of the first rank and not only a word for the ground."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cel, called Ati Cel or 'Mother Cel', is the Etruscan earth goddess, named on the Liver of Piacenza; a giant on a mirror bears the patronymic celsclan, 'son of Cel'.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), region 13." },
+          { "kind": "secondary", "reference": "Reference article 'Cel (goddess)', on the earth-mother role, the Gaia and Terra counterparts and the iconography of a body vegetal below the waist." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_cel_counterparts",
+        "claim": "Cel is compared with Gaia and Terra.",
+        "description": "Reference treatments give her Gaia as a Greek counterpart and Terra as a Roman one. The comparison is recorded, not encoded: no Gaia or Terra record is merged with this one, following the practice that keeps Tinia, Zeus and Jupiter apart.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Cel (goddess)', giving Gaia and Terra as counterparts." } ]
+      }
+    ],
+    "notes": "Cel is the earth itself — cel is the Etruscan word for ground — and she is addressed as Ati Cel, Mother Cel. She holds a region on the Liver of Piacenza, which places her among the sixteen powers whose quarter of the sky a haruspex had to be able to name, and a month of the Etruscan year appears to carry her name. In art she is shown with a woman's body above the waist and vegetation below. A giant on one mirror is labelled celsclan, 'son of Cel', which is the one genealogical trace she has: the son is identified only by that patronymic, and is not an individually named figure in this registry."
+  },
+  {
+    "id": "etruscan_satre",
+    "name": {
+      "primary": "Satre",
+      "alt": ["Satres", "Satr"],
+      "transliterations": {
+        "Etruscan": "satres",
+        "etymology": "The theonym satres stands behind, or beside, the name of Roman Saturn; which way the borrowing ran is not settled."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "hellenistic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "Named on the Liver of Piacenza in the dark north-western quarter, the region of the sky from which the most dangerous lightning was held to come.",
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE) — Satre in the north-west region." } ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "satres", "script": "Etruscan (transliterated)", "rom": "Satre" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Satre (Etruscan god)': a frightening and dangerous god who hurls his lightning from his abode deep in the earth." } ]
+      },
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Satre (Etruscan god)', on his abode deep in the earth and his place in the dark and negative north-western quarter of the liver." } ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_hurl_lightning_from_below",
+        "name": "to hurl lightning upward from a dwelling deep in the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "In the Etruscan doctrine of lightning the quarter a bolt came from determined how it was read; a bolt from Satre's north-western region was among the worst omens.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Satre (Etruscan god)', on the lightning hurled from beneath the earth and the negative character of his region." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Etruscan",
+        "placeName": "the north-western quarter of the Liver of Piacenza",
+        "kind": "haruspical region",
+        "period": "hellenistic",
+        "attestation": "Liver of Piacenza",
+        "source": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza.",
+        "note": "The north-west is the dark and unfavourable quarter of the Etruscan sky-map; lightning from it carried the heaviest warnings."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Satre is an Etruscan god named on the Liver of Piacenza, occupying the dark and negative north-western region, a frightening and dangerous god who hurls his lightning from an abode deep in the earth; he is usually identified with Roman Saturn.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza." },
+          { "kind": "secondary", "reference": "Reference article 'Satre (Etruscan god)', on the region, the character and the Saturn identification." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_satre_saturn_identification",
+        "claim": "Satre is usually identified with Roman Saturn.",
+        "description": "The identification is standard in the literature, but the direction of influence between satres and Saturnus is not settled, and the Etruscan god's character — chthonic and lightning-hurling — is not simply that of the Roman agricultural Saturn. The comparison is recorded here and no Saturn record is merged with this one.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Satre (Etruscan god)', on the Saturn identification." } ]
+      }
+    ],
+    "notes": "Satre belongs to the dangerous part of the Etruscan sky. On the Liver of Piacenza he sits in the north-west, the dark and unfavourable quarter, and he is described as a frightening god who throws his lightning upward from a dwelling deep in the earth — a chthonic power rather than a sky-father. Since the Etruscan doctrine of lightning read a bolt by the region it came from, a bolt of Satre's was among the heaviest omens a haruspex could be asked to interpret. He is conventionally identified with Roman Saturn, though which name lies behind which is disputed and the two gods' characters do not match closely."
+  },
+  {
+    "id": "etruscan_voltumna",
+    "name": {
+      "primary": "Voltumna",
+      "alt": ["Veltha", "Veltune", "Velthune", "Voltumnus", "Vertumnus"],
+      "transliterations": {
+        "Etruscan": "velθa",
+        "etymology": "The Etruscan theonym velθa / velθune stands behind Latin Voltumna and Vertumnus. Varro calls the god deus Etruriae princeps, the chief god of Etruria."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Honoured at the Fanum Voltumnae near Volsinii, the federal sanctuary at which the bond of the twelve Etruscan peoples was renewed each year.",
+        "sources": [ { "kind": "primary", "reference": "Livy, on the annual meeting of the twelve Etruscan peoples at the Fanum Voltumnae." } ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "supreme-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "velθa", "script": "Etruscan (transliterated)", "rom": "Veltha / Voltumna" },
+        "sources": [ { "kind": "primary", "reference": "Varro, naming Voltumna deus Etruriae princeps, the chief god of Etruria." } ]
+      },
+      {
+        "sphereId": "vegetation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Voltumna': a chthonic deity of uncertain sex, shown variously as a maleficent monster, a chthonic vegetation god, or a mighty war god." } ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_hold_the_federal_bond",
+        "name": "to hold the yearly bond of the twelve peoples of Etruria at his own sanctuary",
+        "term": { "value": "Fanum Voltumnae", "script": "Latin", "rom": "the sanctuary of Voltumna" },
+        "inheritability": "none",
+        "notes": "The league's political business — its common council and its games — was transacted in the god's precinct, which is why the sanctuary matters as much as the god.",
+        "sources": [ { "kind": "primary", "reference": "Livy, on the yearly renewal of the league at the Fanum Voltumnae." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [
+      { "original": "deus Etruriae princeps", "sources": [ { "kind": "primary", "reference": "Varro, quoted in the reference literature as calling Voltumna the chief god of Etruria." } ] }
+    ],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Etruscan",
+        "placeName": "Fanum Voltumnae, Campo della Fiera below Orvieto (Etruscan Velzna, Roman Volsinii)",
+        "kind": "federal sanctuary",
+        "period": "archaic to Roman period",
+        "attestation": "Livy; excavations at Campo della Fiera from 2000 onward",
+        "source": "Livy on the league meetings; archaeological reports of the Campo della Fiera sanctuary complex, which current scholarship largely identifies with the Fanum Voltumnae.",
+        "note": "The twelve Etruscan peoples renewed their bond here annually; the identification of the excavated complex with the Fanum is the majority view rather than a certainty."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Voltumna (Etruscan Veltha/Velthune) is the god at whose sanctuary near Volsinii the twelve peoples of Etruria renewed their bond each year, called by Varro deus Etruriae princeps; his character is variously reported as chthonic vegetation god, war god, or monster, and his sex is uncertain.",
+        "citations": [
+          { "kind": "primary", "reference": "Livy, on the annual assembly of the twelve peoples at the Fanum Voltumnae." },
+          { "kind": "primary", "reference": "Varro, on Voltumna as deus Etruriae princeps." },
+          { "kind": "secondary", "reference": "Reference article 'Voltumna' and reports of the Campo della Fiera excavations identified with the Fanum Voltumnae." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_voltumna_character_unresolved",
+        "claim": "Voltumna's character and sex are reported inconsistently.",
+        "description": "The god appears in the sources as a maleficent monster, as a chthonic vegetation deity of uncertain sex, and as a mighty war god. The record carries the uncertainty rather than choosing; `sex` is recorded as unknown for the same reason.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Voltumna', on the contrasting characterisations." } ]
+      }
+    ],
+    "notes": "Voltumna is the nearest thing the Etruscans had to a national god: Varro calls the deity deus Etruriae princeps, first god of Etruria, and it was at the Fanum Voltumnae, near Volsinii, that the twelve peoples of the Etruscan league met each year to renew their bond, hold their council and run their games. The sanctuary has very probably been found at Campo della Fiera, on the plain below Orvieto. The god's own character is much less clear than the institution: the sources give a chthonic vegetation power, a war god, and a maleficent monster, and even the deity's sex is uncertain. The Latin Vertumnus, god of change and of the turning year, grew out of the same name."
+  },
+  {
+    "id": "etruscan_nortia",
+    "name": {
+      "primary": "Nortia",
+      "alt": ["Nurtia", "Nortia of Volsinii"],
+      "transliterations": {
+        "Latin": "Nortia",
+        "etymology": "The goddess is known chiefly under her Latinised name. Her Etruscan form is not securely recovered, and none is asserted here."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped at Volsinii, where a nail was driven into the wall of her temple each year to count the years; Tertullian names her among the deities held by municipal consecration.",
+        "sources": [
+          { "kind": "primary", "reference": "Livy, on the nails fixed in the temple of Nortia at Volsinii as indices of the number of years." },
+          { "kind": "primary", "reference": "Tertullian, Apologeticum 24.8 — Nortia of Volsinii in the list of municipally consecrated deities." }
+        ]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fate",
+        "contextTag": "lifelong",
+        "term": { "value": "Nortia", "script": "Latin", "rom": "Nortia" },
+        "sources": [ { "kind": "primary", "reference": "Livy, on the annual nail-rite in her temple; the rite is read as the fixing of the year and of destiny." } ]
+      },
+      {
+        "sphereId": "time",
+        "contextTag": "lifelong",
+        "term": { "value": "clavus annalis", "script": "Latin", "rom": "the nail of the year" },
+        "sources": [ { "kind": "primary", "reference": "Livy, on the nails as indices of the number of years." } ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_fix_the_year_with_a_nail",
+        "name": "to have the year fixed and counted by a nail driven into her temple wall",
+        "term": { "value": "clavus", "script": "Latin", "rom": "nail" },
+        "inheritability": "none",
+        "notes": "Livy makes the goddess the custodian of the rite; the nails standing in her wall were how the years at Volsinii were reckoned.",
+        "sources": [ { "kind": "primary", "reference": "Livy, on the nails in the temple of Nortia." } ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "etruscan_nortia_annual_nail",
+        "name": "the annual nail of Nortia",
+        "kind": "ritual-object",
+        "role": "A nail driven each year into the wall of the goddess's temple at Volsinii, so that the accumulated nails counted the years — the rite Livy reports and that the Roman clavus annalis echoes.",
+        "sources": [ { "kind": "primary", "reference": "Livy, on the nails fixed in the temple of Nortia as indices of the number of years." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      {
+        "tradition": "Etruscan",
+        "placeName": "Volsinii (Etruscan Velzna; Orvieto / Bolsena)",
+        "kind": "temple",
+        "period": "archaic to Roman period",
+        "attestation": "Livy on the nail-rite; Tertullian, Apologeticum 24.8",
+        "source": "Livy; Tertullian, Apologeticum 24.8.",
+        "note": "Volsinii is also the city of the Fanum Voltumnae, so the federal sanctuary and Nortia's temple belong to the same centre."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nortia is the goddess of Volsinii in whose temple a nail was driven annually to count the years, a rite Livy reports and whose custodian she is; Tertullian lists her among the Italian deities held by municipal consecration.",
+        "citations": [
+          { "kind": "primary", "reference": "Livy, on the nails fixed in the temple of Nortia at Volsinii." },
+          { "kind": "primary", "reference": "Tertullian, Apologeticum 24.8, naming Nortia of Volsinii." },
+          { "kind": "secondary", "reference": "Reference discussion of Nortia among the Etruscan deities of indigenous origin." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Nortia is the goddess of Volsinii, and what is remembered of her is a rite rather than a myth: each year a nail was driven into the wall of her temple, and the nails standing there counted the years. Livy reports the custom and makes her its custodian; the Roman clavus annalis, the year-nail of the Capitoline temple, is its counterpart. Because the nail fixes what cannot then be moved, she is generally understood as a goddess of fate and of fixed time. Tertullian, writing in 197 from a lost work of Varro, lists her with Valentia of Ocriculum and Visidianus of Narnia among the gods Italian towns had taken for their own — the same passage that gave this registry those two Umbrian figures. Her Etruscan name-form is not securely recovered, and none is invented here."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — II. GATE, UNDERWORLD, AND THE NAMED MIRROR DIVINITIES
+================================================================================
+
+```json
+[
+  {
+    "id": "etruscan_culsans",
+    "name": {
+      "primary": "Culsans",
+      "alt": ["Culśanś", "Culsans the Doorkeeper", "Cul alp"],
+      "transliterations": {
+        "Etruscan": "culśanś",
+        "etymology": "The theonym is generally connected with Etruscan cul-, the vocabulary of the door or gate; the abbreviation cul alp on the Liver of Piacenza is usually referred to him."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped as a two-faced guardian of gateways; at least two inscribed bronze statuettes of him were found in close association with city gates.",
+        "sources": [ { "kind": "archaeological", "reference": "Bronze statuettes of Culśanś found in close association with city gates, reported in the reference article 'Culsans' and in the British Museum's term record for the deity." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "boundary", "contextTag": "lifelong", "term": { "value": "culśanś", "script": "Etruscan (transliterated)", "rom": "Culsans" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Culsans': a two-faced god whose divine realm includes the protection of doorways and gates." } ] },
+      { "sphereId": "tutelary-protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "archaeological", "reference": "The gate-associated findspots of the Culśanś statuettes." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_watch_the_gate_with_two_faces",
+        "name": "to watch the gate with two pairs of eyes, inward and outward at once",
+        "term": { "value": "bifrons", "script": "Latin", "rom": "two-faced" },
+        "inheritability": "none",
+        "notes": "The two faces are the whole of his iconography and the reason the findspots at city gates are taken as decisive for his function.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Culsans', on the bifrons rendering and the inference from the gate findspots." } ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "etruscan_culsans_gate_statuette",
+        "name": "the bronze statuettes of Culsans from the city gates",
+        "kind": "cult-image",
+        "role": "Inscribed bronze figures of the two-faced god recovered close to city gates — the find context that ties him to the guarding of entrances.",
+        "sources": [ { "kind": "archaeological", "reference": "Bronze statuettes of Culśanś associated with city gates, reported in the reference article 'Culsans' and the British Museum term record." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "etruscan_culsu",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Culsu as the female counterpart of Culsans, both concerned with the guarding of a threshold." } ],
+        "notes": "Counterpart of Culsu, who keeps the gate of the underworld as he keeps the gate of the city; the pairing is one of function and name, and neither source makes them kin."
+      }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Etruscan city gates (statuette findspots)", "kind": "gate cult", "period": "archaic to hellenistic",
+        "attestation": "inscribed bronze statuettes recovered at or near gates", "source": "Reference article 'Culsans'; British Museum term record for Culsans.",
+        "note": "The Liver of Piacenza abbreviation cul alp is usually assigned to him, though liver abbreviations are disputed as a class." }
+    ],
+    "sources": [
+      {
+        "claim": "Culsans is a purely Etruscan two-faced god of doorways and gates, known from inscribed bronze statuettes found in close association with city gates and usually identified with the abbreviation cul alp on the Liver of Piacenza.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Bronze statuettes of Culśanś from gate contexts; British Museum term record for Culsans." },
+          { "kind": "secondary", "reference": "Reference article 'Culsans', on the bifrons iconography, the gate function and the Janus comparison." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_culsans_janus_comparison",
+        "claim": "Culsans is compared with Roman Janus.",
+        "description": "He is routinely called 'the Etruscan Janus' because both are two-faced keepers of the gate. The reference literature nonetheless describes Culsans as a purely Etruscan divinity, and the registry keeps him separate from any Janus record; the comparison is stated, not encoded.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Culsans', calling him the Etruscan Janus, keeper of the gate, while treating him as a purely Etruscan divinity." } ]
+      }
+    ],
+    "notes": "Culsans looks two ways at once. He is rendered as a bifrons, a god with a face front and back, and at least two inscribed bronze statuettes of him have come to light close by city gates — which is why his sphere is taken to be the doorway, watched with two pairs of eyes so that nothing passes unseen in either direction. He is habitually called the Etruscan Janus, and the comparison is fair, but the reference literature treats him as a native Etruscan figure rather than a borrowing, and the registry keeps him as his own record. The abbreviation cul alp on the Liver of Piacenza is generally read as his, with the caution that liver abbreviations are disputed almost across the board."
+  },
+  {
+    "id": "etruscan_culsu",
+    "name": {
+      "primary": "Culsu",
+      "alt": ["Culśu"],
+      "transliterations": {
+        "Etruscan": "culśu",
+        "etymology": "Formed on the same cul- element as Culsans, the vocabulary of the door or gate — here the gate of the underworld."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "hellenistic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "Depicted with shears in hand at the gate of the underworld, dressed in the manner of Vanth, on the sarcophagus of Hasti Afunei from Chiusi.",
+        "sources": [ { "kind": "archaeological", "reference": "Sarcophagus of Hasti Afunei, Chiusi — Culsu named and depicted in the manner of Vanth." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "culśu", "script": "Etruscan (transliterated)", "rom": "Culsu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion: Culsu is a female demon who guards the entrance to the underworld." } ] },
+      { "sphereId": "boundary", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "archaeological", "reference": "Sarcophagus of Hasti Afunei, Chiusi, where she stands at the threshold with shears." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_keep_the_gate_of_the_dead",
+        "name": "to keep the entrance of the underworld, shears in hand",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The shears are her constant attribute; they are commonly read as the severing of the tie to the living world, though no text states as much.",
+        "sources": [ { "kind": "archaeological", "reference": "Sarcophagus of Hasti Afunei, Chiusi; reference discussion of Culsu's shears and gatekeeping role." } ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "etruscan_culsu_shears",
+        "name": "the shears of Culsu",
+        "kind": "implement",
+        "role": "The pair of shears Culsu carries at the gate of the underworld, her identifying attribute in the Chiusine reliefs.",
+        "sources": [ { "kind": "archaeological", "reference": "Sarcophagus of Hasti Afunei, Chiusi." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "etruscan_culsans",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Culsu as the female counterpart of Culsans." } ],
+        "notes": "Counterpart of Culsans: he keeps the gate of the city, she the gate of the dead. The pairing is one of function and name, and no source makes them kin."
+      }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Chiusi", "kind": "funerary iconography", "period": "hellenistic",
+        "attestation": "sarcophagus of Hasti Afunei", "source": "Sarcophagus of Hasti Afunei, Chiusi.",
+        "note": "She is dressed in the manner of Vanth, the winged death-figure already in this registry, and belongs to the same funerary repertoire." }
+    ],
+    "sources": [
+      {
+        "claim": "Culsu is an Etruscan female underworld demon who guards the entrance of the dead with shears in hand, named and depicted on the sarcophagus of Hasti Afunei from Chiusi and dressed in the manner of Vanth.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Sarcophagus of Hasti Afunei, Chiusi." },
+          { "kind": "secondary", "reference": "Reference discussion of Culsu as gatekeeper of the underworld and female counterpart of Culsans." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Culsu stands at the door of the dead. She is a named figure, not an anonymous demon: the sarcophagus of Hasti Afunei from Chiusi labels her, and shows her dressed much as Vanth is, with shears in her hand. Her name is built on the same element as that of Culsans, the two-faced keeper of city gates, so that between them the pair hold the thresholds of the living world and the dead one. The shears are usually read as cutting the tie to life, which is plausible and unattested in so many words; the record says what the image shows and marks the rest as interpretation."
+  },
+  {
+    "id": "etruscan_tuchulcha",
+    "name": {
+      "primary": "Tuchulcha",
+      "alt": ["Tuchulca", "Tuχulχa"],
+      "transliterations": {
+        "Etruscan": "tuχulχa",
+        "etymology": "The name has no accepted etymology, and none is proposed here."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Painted in the Tomb of Orcus at Tarquinia as a chthonic daemon with pointed ears, snakes for hair and a beak, menacing the heroes held in the underworld.",
+        "sources": [ { "kind": "archaeological", "reference": "Tomb of Orcus, Tarquinia — the named figure of Tuchulcha in the underworld scene." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "tuχulχa", "script": "Etruscan (transliterated)", "rom": "Tuchulcha" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tuchulcha': a chthonic daemon with pointed ears, hair made of snakes, and a beak." } ] },
+      { "sphereId": "terror", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "archaeological", "reference": "Tomb of Orcus, Tarquinia, where the daemon's function in the painting is to threaten." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_menace_the_captive_dead",
+        "name": "to stand over the captive dead and threaten them with serpents",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The daemon is shown looming over seated heroes in the painted underworld, snakes in hand or in its hair.",
+        "sources": [ { "kind": "archaeological", "reference": "Tomb of Orcus, Tarquinia." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Tomb of Orcus, Tarquinia", "kind": "funerary painting", "period": "classical",
+        "attestation": "the painted and named figure of Tuchulcha", "source": "Tomb of Orcus, Tarquinia.",
+        "note": "The painting is the figure's principal attestation; the daemon is individually named there rather than being one of an anonymous class." }
+    ],
+    "sources": [
+      {
+        "claim": "Tuchulcha is a named Etruscan chthonic daemon of the underworld, painted in the Tomb of Orcus at Tarquinia with pointed ears — perhaps a donkey's — hair of snakes, and a beak, perhaps a vulture's.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Tomb of Orcus, Tarquinia." },
+          { "kind": "secondary", "reference": "Reference article 'Tuchulcha', on the pointed ears, snake hair and beak." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Tuchulcha is the most alarming figure the Etruscan underworld has left us: pointed ears, perhaps a donkey's; hair that is a mass of snakes; a beak that may be a vulture's. The daemon is painted and named in the Tomb of Orcus at Tarquinia, looming over the dead held below. The name is recorded here because it is an individual name given to an individual figure in the painting, not a label for a class of demons; the sex is not determinable from the images and is left unknown. No etymology for the name is accepted, and none is guessed at."
+  },
+  {
+    "id": "etruscan_mantus",
+    "name": {
+      "primary": "Mantus",
+      "alt": ["Manth", "Mantus of the dead"],
+      "transliterations": {
+        "Etruscan": "manθ",
+        "etymology": "The name is connected in the ancient sources with Mantua, said to have been named for the god; the Etruscan form manθ underlies the Latin Mantus."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Reported as ruler of the Etruscan underworld together with Mania, represented as an old man crowned and winged at the shoulders.",
+        "sources": [ { "kind": "secondary", "reference": "Antiquarian and reference accounts of Mantus and Mania as king and queen of the Etruscan realm of the dead, with Mantus as a crowned old man with wings at the shoulders." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "manθ", "script": "Etruscan (transliterated)", "rom": "Mantus" },
+        "sources": [ { "kind": "secondary", "reference": "Reference accounts of Mantus as ruler of the Etruscan underworld." } ] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference accounts of Mantus and Mania ruling over the dark realm of the dead." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "etruscan_mania",
+        "sources": [ { "kind": "secondary", "reference": "Reference accounts naming Mantus and Mania as king and queen of the Etruscan underworld." } ],
+        "notes": "Paired with Mania as king and queen of the realm of the dead. The pairing comes from Graeco-Roman and antiquarian report rather than from an Etruscan inscription, and is recorded on that footing."
+      }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Mantua", "kind": "eponymous association", "period": "classical to Roman period",
+        "attestation": "ancient tradition deriving the city's name from the god", "source": "Ancient tradition reported in the reference literature connecting Mantua with Mantus.",
+        "note": "An etymological tradition rather than an excavated cult; it is recorded as a report." }
+    ],
+    "sources": [
+      {
+        "claim": "Mantus (Etruscan Manth) is reported as the god ruling the Etruscan underworld together with Mania, figured as an old man wearing a crown and winged at the shoulders, and connected by ancient tradition with the name of Mantua.",
+        "citations": [ { "kind": "secondary", "reference": "Reference and antiquarian accounts of Mantus and Mania as rulers of the Etruscan realm of the dead." } ],
+        "weight": "low"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_mantus_evidence_caveat",
+        "claim": "The Mantus–Mania pairing rests on later report, not Etruscan text.",
+        "description": "The picture of Mantus and Mania as king and queen of the Etruscan dead comes from Graeco-Roman authors and from the antiquarian tradition built on them, and it is described in older handbooks more confidently than the evidence warrants. Aita and Persipnei, both already in this registry, are the underworld rulers named in Etruscan sources themselves. The record is kept deliberately sparse and its weight marked low.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Mania and Mantus, noting their derivation from Roman-era report." } ]
+      }
+    ],
+    "notes": "Mantus is the Etruscan lord of the dead as the Graeco-Roman tradition described him — an old man with a crown and wings at his shoulders, ruling the dark realm beside Mania. It is worth being plain that this portrait comes from later report rather than from Etruscan texts: the underworld rulers the Etruscans themselves name are Aita and Persipnei, who already stand in this registry. Ancient tradition also derived the name of Mantua from him. The record is kept thin, and its source weight low, precisely because the figure is better attested in what Romans wrote about Etruscans than in what Etruscans wrote."
+  },
+  {
+    "id": "etruscan_mania",
+    "name": {
+      "primary": "Mania",
+      "alt": ["Mania of the dead"],
+      "transliterations": {
+        "Latin": "Mania",
+        "etymology": "Known under the Latin form; her Etruscan name is not securely recovered, and none is asserted."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Reported as ruling the realm of the dead together with Mantus.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Mania (deity)': Mania, along with Mantus, ruled the underworld." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Mania", "script": "Latin", "rom": "Mania" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Mania (deity)', on her rule of the underworld with Mantus." } ] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference accounts of Mantus and Mania as king and queen of the dark realm." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "etruscan_mantus",
+        "sources": [ { "kind": "secondary", "reference": "Reference accounts naming Mantus and Mania as king and queen of the Etruscan underworld." } ],
+        "notes": "Paired with Mantus as queen of the realm of the dead. The pairing comes from Graeco-Roman and antiquarian report rather than from an Etruscan inscription, and is recorded on that footing."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Mania is reported as the goddess ruling the Etruscan underworld together with Mantus.",
+        "citations": [ { "kind": "secondary", "reference": "Reference article 'Mania (deity)', on her rule of the underworld alongside Mantus." } ],
+        "weight": "low"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_mania_evidence_caveat",
+        "claim": "Mania's Etruscan profile rests on later report.",
+        "description": "As with Mantus, the picture of Mania as queen of the Etruscan dead is drawn from Graeco-Roman authors and the antiquarian tradition. A Roman Mania connected with the Compitalia and with the Lares is also attested, and the relationship between the two is not clear. The record stays sparse and its weight low.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Mania (deity)', which treats both the underworld goddess and the Roman figure of the same name." } ]
+      }
+    ],
+    "notes": "Mania rules the Etruscan dead beside Mantus in the accounts that reach us — queen to his king in a picture drawn by Graeco-Roman writers rather than by Etruscan inscriptions. A Roman Mania associated with the Lares and the Compitalia is also attested, and how far the two are one figure is unclear. Because the evidence is report at second hand, the record is deliberately thin and its weight is marked low; the underworld rulers the Etruscans themselves name, Aita and Persipnei, are separate records already in this registry."
+  },
+  {
+    "id": "etruscan_vetis",
+    "name": {
+      "primary": "Vetis",
+      "alt": ["Veive", "Vedius", "Vetisl"],
+      "transliterations": {
+        "Etruscan": "vetis",
+        "etymology": "The theonym vetis stands behind the rare Latin forms Veive and Vedius and behind the name of the Roman Vejovis."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "hellenistic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "Named on the Liver of Piacenza (vetisl), and understood as the god of vendetta whose name lies behind the Roman Vejovis.",
+        "sources": [ { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE) — vetisl among the sixteen outer theonyms." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "vengeance", "contextTag": "lifelong", "term": { "value": "vetis", "script": "Etruscan (transliterated)", "rom": "Vetis" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Vejovis': the Roman god was possibly based on the Etruscan god of vendetta, Vetis, whose name appears on the Liver of Piacenza." } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Vejovis', on the chthonic character of the god behind the Roman Vejovis." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "the Liver of Piacenza", "kind": "haruspical region", "period": "hellenistic",
+        "attestation": "vetisl among the sixteen outer theonyms", "source": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza.",
+        "note": "The liver's theonyms are abbreviated and most readings are contested; vetisl is among the better-agreed ones because the Latin Vejovis corroborates it." }
+    ],
+    "sources": [
+      {
+        "claim": "Vetis is an Etruscan god named on the Liver of Piacenza, understood as a god of vendetta and chthonic in character, and taken as the source of the Roman Vejovis (rare forms Veive, Vedius).",
+        "citations": [
+          { "kind": "archaeological", "reference": "Liver of Piacenza (2nd-1st c. BCE), Museo Civico, Piacenza." },
+          { "kind": "secondary", "reference": "Reference article 'Vejovis', on the Etruscan origin of the god and on Vetis on the liver." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_vetis_liver_reading",
+        "claim": "The liver theonyms are abbreviated and mostly disputed.",
+        "description": "The sixteen names on the outer rim of the Piacenza liver are abbreviated and worn, and consensus on individual readings exists only in a minority of cases. Vetisl is one of the better-supported readings because the Latin Vejovis gives it independent corroboration. The record is ingested on that basis and would not have been on the liver alone.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of the Liver of Piacenza noting that the theonyms are abbreviated and the readings disputed." } ]
+      }
+    ],
+    "notes": "Vetis is known from the Etruscan sky-map and from what the Romans made of him. His name stands on the outer rim of the Liver of Piacenza, and it is the name behind Roman Vejovis, whose rare forms Veive and Vedius preserve it almost unchanged. He is generally described as a god of vendetta, chthonic rather than celestial. He is ingested here partly because the Roman god corroborates the liver reading: most of the sixteen abbreviated theonyms on that object are contested, and a name resting on the liver alone would not meet this registry's bar."
+  },
+  {
+    "id": "etruscan_leinth",
+    "name": {
+      "primary": "Leinth",
+      "alt": ["Leinθ"],
+      "transliterations": {
+        "Etruscan": "leinθ",
+        "etymology": "The name has been connected with the Etruscan verb lein-, 'to die', which would make Leinth something like 'the one who causes death'; the derivation is a proposal."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on Etruscan bronze mirrors, appearing in underworld company and rendered sometimes as female and sometimes as male.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors carrying the inscribed name leinθ." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "leinθ", "script": "Etruscan (transliterated)", "rom": "Leinth" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Leinth', on the deity's association with death." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Etruscan mirror workshops (findspots various)", "kind": "iconographic attestation", "period": "classical to hellenistic",
+        "attestation": "inscribed bronze mirrors naming leinθ", "source": "Etruscan engraved bronze mirrors; reference article 'Leinth'.",
+        "note": "The mirrors are the whole of the dossier; there is no temple, festival or text." }
+    ],
+    "sources": [
+      {
+        "claim": "Leinth is an Etruscan deity named on engraved bronze mirrors, associated with death, and depicted with no fixed sex — sometimes female, sometimes male.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors carrying the name leinθ." },
+          { "kind": "secondary", "reference": "Reference article 'Leinth', on the death association and the indeterminate gender." }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Leinth is a name on mirrors and very little else. The deity belongs to the company of death, and the name has been linked to an Etruscan verb meaning 'to die', though that remains a proposal rather than a result. What the images do settle is that Leinth has no fixed sex: the figure is rendered female in some scenes and male in others, and the record leaves the sex unknown rather than picking one. There is no temple, no festival and no narrative — a genuinely sparse figure, kept sparse."
+  },
+  {
+    "id": "etruscan_alpanu",
+    "name": {
+      "primary": "Alpanu",
+      "alt": ["Alpan", "Alpnu"],
+      "transliterations": {
+        "Etruscan": "alpanu",
+        "etymology": "The name is connected with the Etruscan alpan, an offering made willingly, so that the goddess's name carries the sense of a gift freely given."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on engraved bronze mirrors, shown holding leaves and flowers and standing in the company of Turan, and in embrace with Thanr and Achvizr.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming alpanu; reference article 'Alpanu' on the leaves and flowers and the company she keeps." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "alpanu", "script": "Etruscan (transliterated)", "rom": "Alpanu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Alpanu': an Etruscan goddess of love, friendship and springtime, possibly also of the underworld." } ] },
+      { "sphereId": "spring", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "iconographic", "reference": "Mirror images showing Alpanu holding leaves and flowers." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "etruscan_achvizr",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Alpanu': she is shown in embrace with the deities Thanr and Achvizr." } ],
+        "notes": "Shown in embrace with Achvizr on the mirrors, the two belonging to the same circle of attendant divinities." },
+      { "kind": "companion", "personId": "etruscan_thanr",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Alpanu': she is shown in embrace with the deities Thanr and Achvizr." } ],
+        "notes": "Shown in embrace with Thanr on the mirrors, the two belonging to the same circle of attendant divinities." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Alpanu is an Etruscan goddess named on engraved bronze mirrors, of love, friendship and springtime and possibly of the underworld, frequently shown holding leaves and flowers, often beside Turan, and in embrace with Thanr and Achvizr.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming alpanu." },
+          { "kind": "secondary", "reference": "Reference article 'Alpanu', on her spheres, attributes and companions." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Alpanu is one of the named attendant goddesses who crowd the engraved backs of Etruscan mirrors — winged, wreathed, and usually somewhere near Turan, the goddess of love. She holds leaves and flowers, which is why she is read as a goddess of springtime as well as of love and friendship, and she is shown embracing Thanr and Achvizr, two more of the same circle. Her name is connected with alpan, a willing offering, so that it carries the sense of something freely given. A possible underworld aspect is also reported. She is recorded under the form Alpanu because a Caucasian deity named Alpan already stands in this registry; the two are unrelated."
+  },
+  {
+    "id": "etruscan_achvizr",
+    "name": {
+      "primary": "Achvizr",
+      "alt": ["Achavisr", "Achuvizr", "Aχvizr"],
+      "transliterations": {
+        "Etruscan": "aχvizr",
+        "etymology": "No accepted etymology; the name is known only from its appearance on mirrors."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on engraved bronze mirrors among the attendant divinities of Turan's circle, shown in embrace with Alpanu.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming aχvizr; reference article 'Alpanu' on the embrace with Achvizr." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "aχvizr", "script": "Etruscan (transliterated)", "rom": "Achvizr" },
+        "sources": [ { "kind": "iconographic", "reference": "Mirror scenes placing Achvizr in the circle of Turan and Alpanu." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "etruscan_alpanu",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Alpanu': Alpanu is shown in embrace with Thanr and Achvizr." } ],
+        "notes": "Shown in embrace with Alpanu on the mirrors, the two belonging to the same circle of attendant divinities." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Achvizr is an Etruscan divinity named on engraved bronze mirrors, belonging to the attendant circle around Turan and shown in embrace with Alpanu.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors carrying the name aχvizr." },
+          { "kind": "secondary", "reference": "Reference article 'Alpanu', naming Achvizr among the deities she embraces." }
+        ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Achvizr is known from mirrors, where the name is inscribed beside one of the attendant figures in the circle that surrounds Turan. She embraces Alpanu in at least one scene, which is the firmest thing that can be said about her relations. There is no etymology for the name, no cult site, no text, and no myth; the record exists because the Etruscans wrote the name beside a figure they drew, and it goes no further than that."
+  },
+  {
+    "id": "etruscan_thanr",
+    "name": {
+      "primary": "Thanr",
+      "alt": ["Θanr", "Thanur"],
+      "transliterations": {
+        "Etruscan": "θanr",
+        "etymology": "No accepted etymology; the name is known from mirror inscriptions."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on engraved bronze mirrors in scenes of birth, and shown in embrace with Alpanu.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming θanr in birth scenes; reference discussion of Thanr and Thalna as goddesses of birth." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "θanr", "script": "Etruscan (transliterated)", "rom": "Thanr" },
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion: Thanr and Thalna are both goddesses attributed to birth and appear in several scenes on Etruscan bronze mirrors." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_attend_the_divine_birth",
+        "name": "to stand by at a birth among the gods, as the mirrors show her doing",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The mirror scenes are birth scenes; the goddess's function is read from where she is placed in them.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan bronze mirrors showing Thanr in birth scenes." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "etruscan_alpanu",
+        "sources": [ { "kind": "iconographic", "reference": "Reference article 'Alpanu': Alpanu is shown in embrace with Thanr and Achvizr." } ],
+        "notes": "Shown in embrace with Alpanu on the mirrors, the two belonging to the same circle of attendant divinities." },
+      { "kind": "ally", "personId": "etruscan_thalna",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion: Thanr and Thalna are both goddesses attributed to birth and appear together in several mirror scenes." } ],
+        "notes": "Paired with Thalna in the mirror repertoire of birth scenes; the two are attendants at the same kind of event rather than kin."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Thanr is an Etruscan goddess named on engraved bronze mirrors, attributed to birth and appearing in several mirror birth scenes, and shown in embrace with Alpanu.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming θanr." },
+          { "kind": "secondary", "reference": "Reference discussion of Thanr and Thalna as goddesses of birth in the mirror repertoire." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thanr belongs to the group of named goddesses who attend the great events on the backs of Etruscan mirrors, and the events she attends are births. She appears with Thalna in several such scenes, and embraces Alpanu in another. Beyond that the dossier is empty: no temple, no festival, no story. The mirrors give the Etruscans' own labels for these figures, which is why they are individually recordable at all, and the record confines itself to what those labels and scenes support."
+  },
+  {
+    "id": "etruscan_thalna",
+    "name": {
+      "primary": "Thalna",
+      "alt": ["Θalna", "Thalana"],
+      "transliterations": {
+        "Etruscan": "θalna",
+        "etymology": "No accepted etymology; the name is known from mirror inscriptions."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on engraved bronze mirrors in birth scenes, frequently in the company of Tinia.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming θalna in birth scenes; reference discussion of Thanr and Thalna as birth goddesses." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "θalna", "script": "Etruscan (transliterated)", "rom": "Thalna" },
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion: Thanr and Thalna are both goddesses attributed to birth and appear in several scenes on Etruscan bronze mirrors." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "etruscan_thanr",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Thanr and Thalna appearing together in mirror birth scenes." } ],
+        "notes": "Paired with Thanr in the mirror repertoire of birth scenes; the two are attendants at the same kind of event rather than kin."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Thalna is an Etruscan goddess named on engraved bronze mirrors, attributed to birth and appearing in several mirror birth scenes, often in the company of Tinia.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming θalna." },
+          { "kind": "secondary", "reference": "Reference discussion of Thanr and Thalna as birth goddesses in the mirror repertoire." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_thalna_function_disputed",
+        "claim": "Thalna's sphere is given differently in different handbooks.",
+        "description": "The mirror evidence places her at births and beside Tinia, and she is usually read as a goddess of birth or of fate. Some popular reference lists instead make her a god of trade; that reading has no support in the mirror scenes and is not followed here.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Thanr and Thalna as birth goddesses, against popular lists assigning Thalna to trade." } ]
+      }
+    ],
+    "notes": "Thalna stands at births on the backs of Etruscan mirrors, often beside Tinia, and she is paired in that repertoire with Thanr. That is the substance of what is known about her, and it is enough to place her among the birth-and-fate goddesses rather than anywhere else — some popular god-lists call her a deity of trade, a claim the images do not support and this record does not repeat. As with the other named mirror divinities, there is no temple, no festival and no narrative behind the name."
+  },
+  {
+    "id": "etruscan_ethausva",
+    "name": {
+      "primary": "Ethausva",
+      "alt": ["Eθausva", "Ethausua"],
+      "transliterations": {
+        "Etruscan": "eθausva",
+        "etymology": "No accepted etymology; the name is known from a small number of inscriptions."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named in a few Etruscan inscriptions and depicted as a winged woman richly robed, wearing a jewelled crown.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Ethausva': an Etruscan divine figure appearing in a few inscriptions, depicted as a winged female richly robed and wearing a jewelled crown." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "eθausva", "script": "Etruscan (transliterated)", "rom": "Ethausva" },
+        "sources": [ { "kind": "iconographic", "reference": "Mirror scenes placing Ethausva among the attendants at divine births." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      {
+        "id": "etruscan_ethausva_jewelled_crown",
+        "name": "the jewelled crown of Ethausva",
+        "kind": "regalia",
+        "role": "The jewelled crown worn by the goddess in her depictions, with rich robes and wings — the attributes by which she is recognised.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Ethausva', on the winged, richly robed figure wearing a jewelled crown." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Ethausva is an Etruscan divine figure appearing in a small number of inscriptions, depicted as a winged woman richly robed and wearing a jewelled crown.",
+        "citations": [ { "kind": "secondary", "reference": "Reference article 'Ethausva', on the inscriptions and the iconography." } ],
+        "weight": "low"
+      }
+    ],
+    "notes": "Ethausva is a name attached to a figure: winged, richly dressed, wearing a jewelled crown, and appearing in only a handful of Etruscan inscriptions. She belongs to the company of attendant goddesses who stand at the great scenes on mirrors, and she is usually associated with birth. That is the extent of it. The record is thin because the evidence is thin, and no sphere, kin or cult has been supplied to make it look fuller than it is."
+  },
+  {
+    "id": "etruscan_mean",
+    "name": {
+      "primary": "Mean",
+      "alt": ["Meanpe", "Mean the crowning goddess"],
+      "transliterations": {
+        "Etruscan": "mean",
+        "etymology": "No accepted etymology; the name is known from mirror inscriptions."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Named on engraved bronze mirrors as the goddess who sets the wreath on the victor, crowning Hercle among others.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming mean in crowning scenes; reference discussion of Mean as the Etruscan goddess of victory." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "victory", "contextTag": "lifelong", "term": { "value": "mean", "script": "Etruscan (transliterated)", "rom": "Mean" },
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Mean, the Etruscan goddess of victory." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_set_the_wreath_on_the_victor",
+        "name": "to set the wreath on the head of the victor",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The crowning gesture is what identifies her in the mirror scenes.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors showing Mean crowning a victorious figure." } ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "etruscan_mean_victory_wreath",
+        "name": "the wreath of Mean",
+        "kind": "regalia",
+        "role": "The victor's wreath the goddess holds out or sets in place in the mirror scenes, including those in which Hercle is crowned.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors showing Mean with the wreath." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "etruscan_hercle",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Mean crowns Hercle." } ],
+        "notes": "Crowns Hercle in the mirror scenes of his triumph and reception among the gods."
+      }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Mean is the Etruscan goddess of victory, named on engraved bronze mirrors in the act of crowning the victor, Hercle among them.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming mean in crowning scenes." },
+          { "kind": "secondary", "reference": "Reference discussion of Mean as the Etruscan goddess of victory." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Mean is the goddess who crowns. On the backs of Etruscan mirrors she is the winged figure holding out or settling a wreath on a victor's head, and Hercle is among those she crowns as he is received into the company of the gods. Her name is inscribed beside her in those scenes, which is why she can be recorded as an individual figure rather than an anonymous Victory. There is no cult site, no festival and no story attached to her: she is known by what she does in pictures."
+  }
+]
+```
+
+================================================================================
+AUTHORED FIGURES — III. THE GREAT GODS OF MIRROR AND SANCTUARY, AND THE
+                        LEGENDARY FOUNDERS AND SEERS
+================================================================================
+
+```json
+[
+  {
+    "id": "etruscan_hercle",
+    "name": {
+      "primary": "Hercle",
+      "alt": ["Herecele", "Hercele", "Herkle", "Hrcle", "Hercl"],
+      "transliterations": {
+        "Etruscan": "hercle",
+        "etymology": "The Etruscan form of the name of Greek Heracles, taken over early and thoroughly naturalised; the Latin Hercules is generally held to have come to Rome through this Etruscan form."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["etruscan_tinia"],
+    "parentRoles": ["father"],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Born to Tinia and the mortal Alchumena, and received into the company of the gods — the scene Etruscan engravers returned to more than any other.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors showing the reception of Hercle among the gods; reference discussion naming him son of Tinia and the mortal woman Alchumena." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "hercle", "script": "Etruscan (transliterated)", "rom": "Hercle" },
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors and votive bronzes showing Hercle with club and lionskin." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of Hercle as a favourite Etruscan figure, adopted into native sanctuaries as a protective hero." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "ally", "personId": "etruscan_mean",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Mean crowns Hercle." } ],
+        "notes": "Crowned by Mean, the goddess of victory, in the mirror scenes of his triumph and reception among the gods." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Hercle is the Etruscan form of Heracles, son of Tinia by the mortal Alchumena, a favourite of Etruscan engravers who repeatedly show his reception into the company of the gods.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors depicting Hercle, including his reception among the gods and his crowning by Mean." },
+          { "kind": "secondary", "reference": "Reference discussion of Hercle as son of Tinia and Alchumena and as an adopted Etruscan favourite." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_hercle_separate_from_heracles",
+        "claim": "Hercle is kept as a record distinct from Greek Heracles.",
+        "description": "This registry already keeps `oscan_hercle` separate from `greek_apollod_heracles`, and keeps Tinia, Zeus and Jupiter apart, so the Etruscan Hercle is recorded in his own right rather than folded into the Greek figure. The Greek record carries 'Hercle' among its alternate names as the Italic form of the name; that is noted here so the relation between the entries is legible rather than hidden. The Etruscan figure has his own parentage formula (Tinia and Alchumena), his own apotheosis iconography and his own sanctuaries.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of the Etruscan reception of Heracles as Hercle, with native parentage and cult." } ]
+      }
+    ],
+    "notes": "Hercle is the Etruscans' Heracles, and no borrowed figure was taken up more enthusiastically: engravers returned again and again to the moment he is received into the company of the gods, and Mean sets the victor's wreath on his head. He is the son of Tinia by a mortal woman, Alchumena, which is the Etruscan form of the Greek formula. The Latin Hercules is generally held to have reached Rome through this Etruscan form rather than directly from Greek. He is recorded here as his own figure because that is this registry's practice for Etruscan counterparts — Tinia is not merged into Zeus, and an Oscan Hercle already stands separately as well."
+  },
+  {
+    "id": "etruscan_letun",
+    "name": {
+      "primary": "Letun",
+      "alt": ["Letun the mother of the twins", "Latva"],
+      "transliterations": {
+        "Etruscan": "letun",
+        "etymology": "The Etruscan form of the name of Leto, mother of the divine twins."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Named on Etruscan mirrors as the mother, by Tinia, of the divine twins Aplu and Artume.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming letun with the twins; reference article 'Artume', making Artume a daughter of Tinia and Letun and twin of Aplu." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "letun", "script": "Etruscan (transliterated)", "rom": "Letun" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume', naming Letun as the mother of the twins." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "etruscan_aplu",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume': Artume is a daughter of Tinia and Letun, with a twin brother Aplu." } ],
+        "notes": "Mother of Aplu by Tinia." },
+      { "kind": "mother-of", "personId": "etruscan_artume",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume': Artume is a daughter of Tinia and Letun." } ],
+        "notes": "Mother of Artume by Tinia." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Letun is the Etruscan form of Leto, named on mirrors as mother by Tinia of the twin divinities Aplu and Artume.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming letun." },
+          { "kind": "secondary", "reference": "Reference article 'Artume', on the parentage of the twins." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Letun is the Etruscan Leto, and she is in the record for the same reason Leto is: she is the mother of the twins. Etruscan mirrors name her with Aplu and Artume, whose father is Tinia. Beyond that role the Etruscan evidence gives her very little of her own — no sanctuary, no festival, no independent narrative — and the entry is confined to the parentage the mirrors support."
+  },
+  {
+    "id": "etruscan_aplu",
+    "name": {
+      "primary": "Aplu",
+      "alt": ["Apulu", "Aplus", "Apollo of Veii"],
+      "transliterations": {
+        "Etruscan": "aplu",
+        "etymology": "Apulu, syncopated Aplu, is the Etruscan form of the name of Apollo. One line of scholarship treats it not as an independent theonym but as an epithet of the fire god Śuri in his character as chthonic sky god."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["etruscan_tinia", "etruscan_letun"],
+    "parentRoles": ["father", "mother"],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped at native Etruscan sanctuaries, above all the great temple at Veii from which the celebrated terracotta Apollo comes, as son of Tinia and Letun and twin of Artume.",
+        "sources": [
+          { "kind": "archaeological", "reference": "The Portonaccio sanctuary at Veii and its terracotta Apollo (late 6th c. BCE), Museo Nazionale Etrusco di Villa Giulia." },
+          { "kind": "secondary", "reference": "Reference discussion of Aplu and Artume as the Etruscan forms of the divine archer twins, worshipped at native sanctuaries such as the great temple at Veii." }
+        ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "aplu", "script": "Etruscan (transliterated)", "rom": "Aplu" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu', on the Etruscan god roughly equivalent to Greco-Roman Apollo." } ] },
+      { "sphereId": "sun-and-light", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu': Apulu is an epithet of the fire god Śuri as chthonic sky god." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "etruscan_artume",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume': Artume had a twin brother named Aplu." } ],
+        "notes": "Twin of Artume, the two forming the Etruscan pair of divine archers." },
+      { "kind": "equated-with", "personId": "etruscan_suri",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu': Apulu, syncopated Aplu, is an epithet of the Etruscan fire god Śuri as chthonic sky god." } ],
+        "notes": "One scholarly position treats Aplu not as a separate god but as an epithet of Śuri. Both records are kept, with this edge marking the identification rather than silently collapsing them." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Portonaccio sanctuary, Veii", "kind": "temple", "period": "archaic",
+        "attestation": "the sanctuary and its acroterial terracotta Apollo", "source": "Portonaccio sanctuary at Veii; the Apollo of Veii, Museo Nazionale Etrusco di Villa Giulia.",
+        "note": "The Apollo of Veii is the best-known single image of the god from Etruria and belongs to a native sanctuary, not a Greek one." }
+    ],
+    "sources": [
+      {
+        "claim": "Aplu (Apulu) is the Etruscan Apollo, son of Tinia and Letun and twin of Artume, worshipped at native sanctuaries including the great temple at Veii; one line of scholarship holds Apulu to be an epithet of the fire god Śuri rather than an independent theonym.",
+        "citations": [
+          { "kind": "archaeological", "reference": "Portonaccio sanctuary, Veii, and its terracotta Apollo." },
+          { "kind": "secondary", "reference": "Reference article 'Apulu', on the name, the Śuri epithet position and the Apollo equivalence." },
+          { "kind": "secondary", "reference": "Reference article 'Artume', on the twin relationship and the parentage." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_aplu_suri_identity_question",
+        "claim": "Whether Aplu is a god in his own right or an epithet of Śuri is disputed.",
+        "description": "One position, reflected in current reference treatment, makes Apulu/Aplu an epithet of Śuri in his character as chthonic sky god. Another treats Aplu straightforwardly as the Etruscan reception of Apollo, with his own major cult at Veii and elsewhere. Both records are kept in this registry and joined by an explicit equated-with edge, because collapsing them would decide a live scholarly question by data-modelling fiat; keeping them unlinked would hide it.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu', treating Apulu as an epithet of Śuri as chthonic sky god." } ]
+      }
+    ],
+    "notes": "Aplu is the Etruscan Apollo — son of Tinia and Letun, twin of Artume, and the god of the great archaic sanctuary at Veii whose acroterial terracotta Apollo is the most famous Etruscan statue to survive. His position in the pantheon is complicated by a live scholarly question: one strand of current work treats Apulu not as an independent theonym at all but as an epithet of Śuri, the fire god, in his chthonic sky-god character. This registry keeps both records and links them explicitly rather than choosing, since the cult at Veii is substantial on any reading and the identification is an argument rather than a settled fact."
+  },
+  {
+    "id": "etruscan_artume",
+    "name": {
+      "primary": "Artume",
+      "alt": ["Artumes", "Aritimi", "Artimi"],
+      "transliterations": {
+        "Etruscan": "artumes",
+        "etymology": "The Etruscan form of the name of Artemis, appearing as artumes and aritimi."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["etruscan_tinia", "etruscan_letun"],
+    "parentRoles": ["father", "mother"],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Named on Etruscan mirrors as daughter of Tinia and Letun and twin sister of Aplu, goddess of the wild and of the night.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume', on the parentage and the twin relationship with Aplu." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "hunt", "contextTag": "lifelong", "term": { "value": "artumes", "script": "Etruscan (transliterated)", "rom": "Artume" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume', on the Etruscan goddess corresponding to Artemis, of the hunt and the wild." } ] },
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume', on her nocturnal character." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "etruscan_aplu",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Artume': she had a twin brother named Aplu." } ],
+        "notes": "Twin of Aplu, the two forming the Etruscan pair of divine archers." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Artume (also Aritimi) is the Etruscan Artemis, daughter of Tinia and Letun and twin sister of Aplu, a goddess of the wild and of the night named on Etruscan mirrors.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming artumes / aritimi." },
+          { "kind": "secondary", "reference": "Reference article 'Artume', on the name-forms, the parentage and the twin relationship." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Artume is the Etruscan Artemis, named on mirrors as artumes and aritimi. She is the daughter of Tinia and Letun and the twin of Aplu, so the Etruscans took over the whole family formula along with the name, and she keeps the Greek goddess's character as mistress of the wild and of the night. Like Aplu she is kept as her own record rather than folded into the Greek figure, following this registry's practice for Etruscan counterparts."
+  },
+  {
+    "id": "etruscan_suri",
+    "name": {
+      "primary": "Śuri",
+      "alt": ["Suri", "Śuris", "Soranus Pater"],
+      "transliterations": {
+        "Etruscan": "śuri",
+        "etymology": "The theonym śuri is generally connected with the Latin Soranus of Mount Soracte, whose cult of fire-walking priests the Romans knew as that of Apollo Soranus."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "startEvent": "Worshipped as a god of fire and of the chthonic realm, notably in the sanctuary at Pyrgi, the port of Caere.",
+        "sources": [ { "kind": "archaeological", "reference": "The sanctuary at Pyrgi, port of Caere (Cerveteri), where a cult of Śuri is attested." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "śuri", "script": "Etruscan (transliterated)", "rom": "Śuri" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu', describing Śuri as the Etruscan fire god." } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu', on Śuri's chthonic character." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [
+      { "original": "Apulu", "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu': Apulu, syncopated Aplu, is an epithet of Śuri as chthonic sky god." } ] }
+    ],
+    "relations": [
+      { "kind": "equated-with", "personId": "etruscan_aplu",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Apulu': Apulu is an epithet of the Etruscan fire god Śuri as chthonic sky god." } ],
+        "notes": "One scholarly position makes Apulu/Aplu an epithet of this god rather than an independent theonym. Both records are kept, with this edge marking the identification rather than silently collapsing them." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Pyrgi, the port of Caere (Santa Severa)", "kind": "sanctuary", "period": "archaic",
+        "attestation": "the Pyrgi sanctuary complex and its cults", "source": "The sanctuary at Pyrgi, port of Caere.",
+        "note": "Pyrgi is the sanctuary best known for the gold Pyrgi Tablets in Etruscan and Phoenician; the cult of Śuri is among those attached to the site." }
+    ],
+    "sources": [
+      {
+        "claim": "Śuri is an Etruscan fire god of chthonic character, worshipped at Pyrgi among other places, whose name is connected with the Latin Soranus of Mount Soracte; current reference treatment makes Apulu/Aplu an epithet of him.",
+        "citations": [
+          { "kind": "archaeological", "reference": "The sanctuary at Pyrgi, port of Caere." },
+          { "kind": "secondary", "reference": "Reference article 'Apulu', on Śuri as fire god and on Apulu as his epithet as chthonic sky god." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Śuri is a fire god, and a dark one: his character is chthonic rather than celestial, and his name is tied to Soranus, the god of Mount Soracte whose priests the Romans said walked on coals. He was worshipped at Pyrgi, the port sanctuary of Caere best known for its gold tablets in Etruscan and Phoenician. His importance to the shape of the Etruscan pantheon is that current reference treatment makes Apulu — Aplu, the Etruscan Apollo — an epithet of him rather than a god in his own right. This registry keeps both records and links them explicitly, since the question is live and a silent merge would settle it by fiat."
+  },
+  {
+    "id": "etruscan_maris",
+    "name": {
+      "primary": "Maris",
+      "alt": ["Mariś", "Mariś Halna", "Mariś Husrnana", "Mariś Isminthians"],
+      "transliterations": {
+        "Etruscan": "mariś",
+        "etymology": "The theonym mariś is often compared with the name of Roman Mars, but the Etruscan figure is a child-god rather than a war god and the comparison is contested."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Depicted on Etruscan mirrors as an infant or child, under a series of epithets — Mariś Halna, Mariś Husrnana, Mariś Isminthians — which appear to distinguish several Marises rather than name one.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', on the child iconography and the epithets." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "childhood", "contextTag": "lifelong", "term": { "value": "mariś", "script": "Etruscan (transliterated)", "rom": "Maris" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)': often depicted as an infant or child and given many epithets." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [
+      { "original": "Halna", "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', listing Mariś Halna among the epithets." } ] },
+      { "original": "Husrnana", "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', glossing Mariś Husrnana as 'Maris the Child'." } ] },
+      { "original": "Isminthians", "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', listing Mariś Isminthians among the epithets." } ] }
+    ],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Maris is an Etruscan god shown on mirrors as an infant or child and carrying a series of epithets — Halna, Husrnana ('Maris the Child'), Isminthians — which appear to distinguish several figures of the name.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan engraved bronze mirrors naming mariś with epithets." },
+          { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', on the child iconography, the epithets and the reported filiation." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_maris_parentage_and_plurality",
+        "claim": "Maris's parentage is reported inconsistently, and there may be more than one Maris.",
+        "description": "One reference account makes him a son of Hercle; mirror scenes also place a Maris with Menrva and with Turan. The epithets Halna, Husrnana and Isminthians may distinguish separate Marises rather than qualify one. Because no filiation is secure, the record carries no parents, and the reported descent from Hercle is kept here as a report.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Maris (mythology)', reporting him as son of Hercle and listing the several epithets." } ]
+      }
+    ],
+    "notes": "Maris appears on Etruscan mirrors as a baby or a small child, which is unusual enough to be his defining feature, and he comes with a string of epithets — Halna, Husrnana, which is glossed 'Maris the Child', Isminthians — that may well distinguish several gods of the name rather than describe one. His name invites comparison with Roman Mars, but a child-god and a war god make an awkward match and the equation is contested. One account makes him a son of Hercle, and mirror scenes also set a Maris beside Menrva and Turan; since none of this settles into a single secure filiation, the record carries no parents and reports the claims instead."
+  },
+  {
+    "id": "etruscan_vegoia",
+    "name": {
+      "primary": "Vegoia",
+      "alt": ["Vecu", "Vecui", "Begoe", "Lasa Vecuvia"],
+      "transliterations": {
+        "Etruscan": "vecu",
+        "etymology": "The Latin Vegoia (also Begoe) renders an Etruscan vecu; the figure is also met as Lasa Vecuvia on a mirror."
+      }
+    },
+    "type": "numen",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "hellenistic" },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "Delivered the prophecy on the fixing of land boundaries preserved in the Latin corpus of the land surveyors, and was credited with parts of the sacred books on the founding of cities and shrines and on the reading of lightning.",
+        "sources": [ { "kind": "primary", "reference": "The prophecy of Vegoia, preserved among the writings of the Roman land surveyors (corpus agrimensorum)." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "vecu", "script": "Etruscan (transliterated)", "rom": "Vegoia" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Vegoia': a sibyl, prophet or nymph credited with parts of the sacred books of the Etrusca disciplina." } ] },
+      { "sphereId": "boundary", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "The prophecy of Vegoia, on the religiously correct fixing and preservation of land boundaries and the punishment for moving them." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_lay_down_the_law_of_boundaries",
+        "name": "to lay down the religiously correct method of founding cities and shrines and of fixing boundaries",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The surviving prophecy warns of the consequences of shifting a boundary stone, which is the core of her authority as it reached Rome.",
+        "sources": [ { "kind": "primary", "reference": "The prophecy of Vegoia in the corpus of the Roman land surveyors." } ]
+      }
+    ],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Vegoia is an Etruscan prophetic figure — sibyl, prophetess or nymph — credited with parts of the sacred books of the Etrusca disciplina concerning the founding of cities and shrines, the reading of lightning, and above all the fixing and preservation of land boundaries; her prophecy survives in the Roman land surveyors' corpus.",
+        "citations": [
+          { "kind": "primary", "reference": "The prophecy of Vegoia, preserved in the corpus agrimensorum of the Roman land surveyors." },
+          { "kind": "secondary", "reference": "Reference article 'Vegoia', on her role in the Etrusca disciplina; scholarly discussion dating the prophecy to the period of the Social War." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_vegoia_prophecy_date",
+        "claim": "The surviving prophecy is dated to the late Republic.",
+        "description": "Scholarly discussion places the text of Vegoia's prophecy in the period of the Social War, around 91 BCE, rather than in any older Etruscan stratum. That bears on the text, not on the antiquity of the figure herself, and the record's era reflects the date of the attestation.",
+        "sources": [ { "kind": "secondary", "reference": "Scholarly article on the date of Vegoia's prophecy, placing it in the Social War period." } ]
+      }
+    ],
+    "notes": "Vegoia is the voice behind part of the Etrusca disciplina, the body of revealed lore that told the Etruscans how to found a city, site a shrine, read lightning and — the part that survives best — set and keep a boundary. Her prophecy was copied into the Roman land surveyors' handbooks, where it warns in vivid terms what befalls the man who moves a boundary stone. She is variously called a sibyl, a prophetess and a nymph, and she appears on a mirror as Lasa Vecuvia. The surviving text is dated by scholarship to about the time of the Social War, which dates the document rather than the figure."
+  },
+  {
+    "id": "etruscan_tarchon",
+    "name": {
+      "primary": "Tarchon",
+      "alt": ["Tarchun", "Tarchnas", "Tarchon of Tarquinia"],
+      "transliterations": {
+        "Etruscan": "tarchunies",
+        "etymology": "The name belongs with the Etruscan gentilicial stem tarchna- and with the city name Tarquinia; the same stem stands behind the Roman family name Tarquinius."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "villanovan" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "villanovan",
+        "eraOrdering": 0,
+        "startEvent": "Founded the Etruscan dodecapolis, the league of twelve cities, together with his brother Tyrrhenus, and received the art of the haruspex.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon': a culture hero who co-founded the Etruscan dodecapolis with his brother Tyrrhenus, and a haruspex who learned his art from Tyrrhenus." } ]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "villanovan",
+        "eraOrdering": 1,
+        "startEvent": "Appears in Virgil's Aeneid as king of the Tyrrhenians, leading the Etruscans in alliance with Aeneas against Turnus and the Latins.",
+        "sources": [ { "kind": "primary", "reference": "Virgil, Aeneid — Tarchon as king of the Tyrrhenians and ally of Aeneas." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "city-founding", "contextTag": "lifelong", "term": { "value": "tarchunies", "script": "Etruscan (transliterated)", "rom": "Tarchon" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon', on the founding of the twelve-city league." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon', on Tarchon as a haruspex." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "etruscan_tyrrhenus",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon': he co-founded the Etruscan dodecapolis along with his brother Tyrrhenus." } ],
+        "notes": "Brother of Tyrrhenus, with whom he founded the twelve cities; one account also makes Tyrrhenus the source of his haruspical art." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "Tarquinia", "kind": "eponymous foundation", "period": "legendary",
+        "attestation": "the tradition making Tarchon founder of the city that bears his name", "source": "Reference article 'Tarchon'; Virgil, Aeneid.",
+        "note": "Tarquinia is also where the Tages revelation was placed, which ties the founder and the origin of haruspicy to one city." }
+    ],
+    "sources": [
+      {
+        "claim": "Tarchon is an Etruscan culture hero who founded the twelve-city league with his brother Tyrrhenus, is remembered as a haruspex, and appears in Virgil's Aeneid as king of the Tyrrhenians allied with Aeneas against Turnus.",
+        "citations": [
+          { "kind": "primary", "reference": "Virgil, Aeneid, on Tarchon as king of the Tyrrhenians." },
+          { "kind": "secondary", "reference": "Reference article 'Tarchon', on the founding of the dodecapolis, the brotherhood with Tyrrhenus and the haruspical art." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Tarchon is the founder-hero of Etruria: with his brother Tyrrhenus he is said to have laid out the dodecapolis, the league of twelve cities, and his name is that of Tarquinia and of the Roman Tarquins. He is also remembered as a haruspex, in one account taught the art by Tyrrhenus — which places him beside Tages, the child-seer of Tarquinia already in this registry, at the origin of Etruscan divination. Virgil brings him into the Aeneid as king of the Tyrrhenians, leading the Etruscan contingent in alliance with Aeneas. He is recorded as a mortal culture hero, which is how the tradition presents him; no divine parentage is attested and none is supplied."
+  },
+  {
+    "id": "etruscan_tyrrhenus",
+    "name": {
+      "primary": "Tyrrhenus",
+      "alt": ["Tyrsenos", "Tyrrhenos", "Tyrrhenus the eponym"],
+      "transliterations": {
+        "Latin": "Tyrrhenus",
+        "etymology": "The eponym of the Tyrrhenians, the Greek name for the Etruscans, and so of the Tyrrhenian Sea."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "villanovan" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "villanovan",
+        "eraOrdering": 0,
+        "startEvent": "Co-founded the Etruscan league of twelve cities with his brother Tarchon, and in one account taught him the art of the haruspex.",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon': Tarchon co-founded the dodecapolis with his brother Tyrrhenus, and according to some sources learned haruspicy from him." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "city-founding", "contextTag": "lifelong", "term": { "value": "Tyrrhenus", "script": "Latin", "rom": "Tyrrhenus" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon', on the joint founding of the twelve cities." } ] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon', on Tyrrhenus as the source of Tarchon's haruspical art in some accounts." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "etruscan_tarchon",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Tarchon': he co-founded the Etruscan dodecapolis along with his brother Tyrrhenus." } ],
+        "notes": "Brother of Tarchon, with whom he founded the twelve cities." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Tyrrhenus is the eponymous founder of the Tyrrhenians, brother of Tarchon and co-founder with him of the Etruscan league of twelve cities; some accounts make him the source of Tarchon's haruspical art.",
+        "citations": [ { "kind": "secondary", "reference": "Reference article 'Tarchon', on Tyrrhenus as brother, co-founder and teacher of haruspicy." } ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_tyrrhenus_lydian_origin_story",
+        "claim": "Greek tradition makes Tyrrhenus a Lydian migrant.",
+        "description": "A well-known Greek account makes Tyrrhenus a prince of Lydia who led colonists to Italy and gave the Tyrrhenians their name, which sits awkwardly beside the Etruscan tradition of the twelve-city foundation with Tarchon. The record keeps the eponymous and founding roles, which both traditions share, and does not adopt a genealogy from either.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion of the Tyrrhenian origin traditions and of Tyrrhenus as eponym." } ]
+      }
+    ],
+    "notes": "Tyrrhenus gave the Etruscans the name the Greeks used for them, Tyrrhenians, and the sea off their coast still carries it. In the Etruscan-facing tradition he is Tarchon's brother and the two together found the league of twelve cities; some accounts go further and make him the one who taught Tarchon to read a liver. A separate Greek story makes him a Lydian prince who led colonists west, which does not fit comfortably with the first, and the record keeps to the founding and eponymous roles the traditions agree on rather than adopting either genealogy."
+  },
+  {
+    "id": "etruscan_cacu",
+    "name": {
+      "primary": "Cacu",
+      "alt": ["Cacus (Etruscan)", "Cacu the seer"],
+      "transliterations": {
+        "Etruscan": "cacu",
+        "etymology": "The Etruscan cacu lies behind the Latin Cacus, though the Etruscan figure — a young seer with a lyre — has nothing of the fire-breathing monster the Roman story made of the name."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Shown on Etruscan bronze mirrors seated with a lyre, prophesying, while the boy Artile reads from an open writing-tablet beside him and the brothers Aule and Caile Vipinas advance on either side.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan bronze mirrors depicting the seer Cacu with the boy Artile and the advancing Vibenna brothers." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "cacu", "script": "Etruscan (transliterated)", "rom": "Cacu" },
+        "sources": [ { "kind": "iconographic", "reference": "Mirror scenes showing Cacu prophesying with the lyre and the gesture of explanation." } ] },
+      { "sphereId": "music", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "iconographic", "reference": "Mirror scenes showing Cacu seated and playing the lyre." } ] }
+    ],
+    "faculties": [
+      {
+        "id": "etruscan_prophesy_to_the_lyre",
+        "name": "to prophesy to the lyre, expounding what the boy reads from the tablet",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The seer holds the lyre and makes a gesture of explanation with his right hand while Artile reads from an open writing-tablet.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan bronze mirrors depicting Cacu, Artile and the Vibenna brothers." } ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "etruscan_cacu_lyre",
+        "name": "the lyre of Cacu",
+        "kind": "instrument",
+        "role": "The lyre the seer holds while prophesying in the mirror scenes, his constant attribute.",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan bronze mirrors depicting Cacu seated and playing the lyre." } ]
+      }
+    ],
+    "epithets": [],
+    "relations": [
+      { "kind": "enemy", "personId": "etruscan_avile_vipinas",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Aule and Caile Vipinas advance on the seated Cacu from either side, either to eavesdrop on him or to seize him." } ],
+        "notes": "Approached by Aule Vipinas in the mirror scene; readings differ over whether the brothers come to overhear the prophecy or to capture the seer, and the record keeps both." },
+      { "kind": "enemy", "personId": "etruscan_caile_vipinas",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Aule and Caile Vipinas advance on the seated Cacu from either side." } ],
+        "notes": "Approached by Caile Vipinas in the same scene, with the same ambiguity between eavesdropping and capture." }
+    ],
+    "cultRecords": [],
+    "sources": [
+      {
+        "claim": "Cacu is an Etruscan seer depicted on bronze mirrors seated with a lyre and prophesying, attended by the boy Artile with a writing-tablet, while Aule and Caile Vipinas advance on him from either side; the Etruscan figure is a prophet, unlike the monstrous Roman Cacus.",
+        "citations": [
+          { "kind": "iconographic", "reference": "Etruscan bronze mirrors depicting Cacu, Artile and the Vibenna brothers." },
+          { "kind": "secondary", "reference": "Reference discussion of the Cacu scene and of the contrast with the Roman Cacus." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_cacu_not_the_roman_monster",
+        "claim": "The Etruscan Cacu is not the Roman monster Cacus.",
+        "description": "Roman legend made Cacus a fire-breathing cattle-thief killed by Hercules at the site of Rome. The Etruscan Cacu of the mirrors is a young seer with a lyre, connected with divination; the two share a name and very little else, and this record follows the Etruscan evidence only.",
+        "sources": [ { "kind": "secondary", "reference": "Reference discussion noting that in Etruscan tradition Cacu appears as a prophet with divinatory connections, unlike the monstrous Roman Cacus." } ]
+      }
+    ],
+    "notes": "The Etruscan Cacu is a young man with a lyre. On a group of bronze mirrors he sits prophesying, one hand raised in explanation, while a boy named Artile reads from an open writing-tablet at his side and the brothers Aule and Caile Vipinas close in from left and right. Whether they mean to overhear the prophecy or to seize the prophet is read both ways, and the record keeps the ambiguity rather than picking a story. What is clear is that this Cacu has nothing to do with the Roman Cacus, the fire-breathing cattle thief Hercules kills at the future site of Rome: the name is shared, the figure is not."
+  },
+  {
+    "id": "etruscan_avile_vipinas",
+    "name": {
+      "primary": "Avile Vipinas",
+      "alt": ["Aule Vipinas", "Aulus Vibenna", "Avle Vipinas"],
+      "transliterations": {
+        "Etruscan": "avile vipinas",
+        "etymology": "The Etruscan praenomen avile corresponds to Latin Aulus, and the gentilicium vipinas to Vibenna."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Fought in the night attack painted in the François Tomb at Vulci, in which he and his companions cut down champions of Volsinii, Sovana and Rome while Macstrna frees his bound brother.",
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci — the battle frieze naming Avle Vipinas among the attackers." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "avile vipinas", "script": "Etruscan (transliterated)", "rom": "Aulus Vibenna" },
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "etruscan_caile_vipinas",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Caelius Vibenna': Caelius Vibenna (Etruscan Caile Vipina) was the brother of Aulus Vibenna (Etruscan Avile Vipina)." } ],
+        "notes": "Brother of Caile Vipinas, with whom he is named throughout the Vulcian tradition." },
+      { "kind": "enemy", "personId": "etruscan_cacu",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Aule and Caile Vipinas advance on the seated seer Cacu." } ],
+        "notes": "Advances on the seer Cacu in the mirror scene; readings differ over whether the brothers come to overhear the prophecy or to seize him." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "François Tomb, Vulci", "kind": "funerary painting", "period": "classical",
+        "attestation": "the named figure in the battle frieze", "source": "François Tomb, Vulci.",
+        "note": "The tomb's frieze commemorates a night attack by Vulcian heroes on champions of allied cities including Rome." }
+    ],
+    "sources": [
+      {
+        "claim": "Avile Vipinas (Aulus Vibenna) is an Etruscan warrior-hero of Vulci, brother of Caile Vipinas, named in the battle frieze of the François Tomb and on mirrors advancing with his brother on the seer Cacu.",
+        "citations": [
+          { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." },
+          { "kind": "iconographic", "reference": "Etruscan mirrors depicting the Vibenna brothers and Cacu." },
+          { "kind": "secondary", "reference": "Reference articles 'Aulus Vibenna' and 'Caelius Vibenna', on the brothers and their tradition." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Avile Vipinas — Aulus Vibenna to the Romans — is one of the two warrior brothers of Vulci whose deeds the Etruscans remembered in paint and on bronze. In the great frieze of the François Tomb he and his companions fall on champions of Volsinii, Sovana and Rome in a night attack, while Macstrna cuts his bound brother free. On mirrors he appears with that brother, closing in on the seer Cacu. Whether the Vibennas were historical condottieri or purely legendary is not settled; what is certain is that the Etruscans treated them as named individuals with a story of their own, which is why they are recorded here as mortals rather than as figures of cult."
+  },
+  {
+    "id": "etruscan_caile_vipinas",
+    "name": {
+      "primary": "Caile Vipinas",
+      "alt": ["Caile Vipina", "Caelius Vibenna", "Caeles Vibenna"],
+      "transliterations": {
+        "Etruscan": "caile vipinas",
+        "etymology": "The Etruscan praenomen caile corresponds to Latin Caelius/Caeles, and the gentilicium vipinas to Vibenna; Roman tradition derived the name of the Caelian Hill from him."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Shown in the François Tomb at Vulci with his hands bound, being cut free by Macstrna while his brother and their companions cut down the opposing champions.",
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci — Macstrna in the act of freeing Caile Vipinas, whose hands are tied." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "caile vipinas", "script": "Etruscan (transliterated)", "rom": "Caelius Vibenna" },
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "sibling", "personId": "etruscan_avile_vipinas",
+        "sources": [ { "kind": "secondary", "reference": "Reference article 'Caelius Vibenna': he was the brother of Aulus Vibenna." } ],
+        "notes": "Brother of Avile Vipinas, with whom he is named throughout the Vulcian tradition." },
+      { "kind": "companion", "personId": "etruscan_macstrna",
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci — Macstrna frees the bound Caile Vipinas." },
+                     { "kind": "primary", "reference": "The emperor Claudius, in his speech on the admission of Gallic notables to the Senate, on the adventures of Caelius Vibenna and his companion Mastarna." } ],
+        "notes": "Freed from his bonds by Macstrna in the tomb frieze; Claudius calls Mastarna his companion." },
+      { "kind": "enemy", "personId": "etruscan_cacu",
+        "sources": [ { "kind": "iconographic", "reference": "Etruscan mirrors in which Aule and Caile Vipinas advance on the seated seer Cacu." } ],
+        "notes": "Advances on the seer Cacu in the mirror scene, with the same ambiguity between eavesdropping and capture." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "François Tomb, Vulci", "kind": "funerary painting", "period": "classical",
+        "attestation": "the bound figure freed by Macstrna in the battle frieze", "source": "François Tomb, Vulci." },
+      { "tradition": "Roman", "placeName": "the Caelian Hill, Rome", "kind": "eponymous association", "period": "Roman period",
+        "attestation": "Roman tradition deriving the hill's name from Caeles Vibenna", "source": "Roman antiquarian tradition reported in the reference literature.",
+        "note": "The Vulcian brothers had a firm place in Rome's own account of its Etruscan century." }
+    ],
+    "sources": [
+      {
+        "claim": "Caile Vipinas (Caelius Vibenna) is an Etruscan warrior-hero of Vulci, brother of Avile Vipinas, painted in the François Tomb bound and being freed by Macstrna, and named by the emperor Claudius as the companion of Mastarna.",
+        "citations": [
+          { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." },
+          { "kind": "primary", "reference": "The emperor Claudius, on the adventures of Caelius Vibenna and his companion Mastarna." },
+          { "kind": "secondary", "reference": "Reference article 'Caelius Vibenna'." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Caile Vipinas is the brother who is taken. In the François Tomb at Vulci he stands with his hands tied while Macstrna cuts him loose and the rest of the band cuts down champions from Volsinii, Sovana and Rome. The emperor Claudius, arguing in the Senate for the admission of Gauls, cited the adventures of this same Caelius Vibenna and his companion Mastarna — evidence that the Vulcian story was known at Rome and taken seriously there. Roman tradition also derived the name of the Caelian Hill from him."
+  },
+  {
+    "id": "etruscan_macstrna",
+    "name": {
+      "primary": "Macstrna",
+      "alt": ["Mastarna", "Macstrna the liberator"],
+      "transliterations": {
+        "Etruscan": "macstrna",
+        "etymology": "The name is widely taken to render the Latin magister, an office-title turned personal name; the emperor Claudius equated its bearer with Servius Tullius."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "classical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "classical",
+        "eraOrdering": 0,
+        "startEvent": "Painted in the François Tomb at Vulci in the act of cutting free the bound Caile Vipinas during the night attack.",
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci — Macstrna freeing Caile Vipinas." } ]
+      }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "macstrna", "script": "Etruscan (transliterated)", "rom": "Mastarna" },
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." } ] },
+      { "sphereId": "kingship-and-sovereignty", "contextTag": "later", "term": { "value": "", "script": "", "rom": "" },
+        "sources": [ { "kind": "primary", "reference": "The emperor Claudius, equating Mastarna with the Roman king Servius Tullius." } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "epithets": [],
+    "relations": [
+      { "kind": "companion", "personId": "etruscan_caile_vipinas",
+        "sources": [ { "kind": "archaeological", "reference": "François Tomb, Vulci — Macstrna frees the bound Caile Vipinas." },
+                     { "kind": "primary", "reference": "The emperor Claudius, on Caelius Vibenna and his companion Mastarna." } ],
+        "notes": "Companion of Caile Vipinas, whom he frees in the tomb frieze and with whom Claudius pairs him." }
+    ],
+    "cultRecords": [
+      { "tradition": "Etruscan", "placeName": "François Tomb, Vulci", "kind": "funerary painting", "period": "classical",
+        "attestation": "the named figure freeing Caile Vipinas", "source": "François Tomb, Vulci." }
+    ],
+    "sources": [
+      {
+        "claim": "Macstrna is an Etruscan figure painted in the François Tomb at Vulci cutting free the bound Caile Vipinas; the emperor Claudius names him the companion of Caelius Vibenna and identifies him with the Roman king Servius Tullius.",
+        "citations": [
+          { "kind": "archaeological", "reference": "François Tomb, Vulci, battle frieze." },
+          { "kind": "primary", "reference": "The emperor Claudius, on the adventures of Caelius Vibenna and his companion Mastarna, whom he equates with Servius Tullius." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "variants": [
+      {
+        "id": "etruscan_macstrna_servius_tullius_equation",
+        "claim": "Claudius identified Macstrna with Servius Tullius.",
+        "description": "In his speech on admitting Gallic notables to the Senate, the emperor Claudius — himself a student of Etruscan antiquities — states that the Mastarna of the Vulcian tradition was the man the Romans called Servius Tullius. The identification is an ancient claim by a well-informed author, not a modern conjecture, but it is a claim: the registry records it here and does not merge this figure with any Roman king record.",
+        "sources": [ { "kind": "primary", "reference": "The emperor Claudius, equating Mastarna with Servius Tullius." } ]
+      }
+    ],
+    "notes": "Macstrna is the man with the knife. In the François Tomb at Vulci he is painted cutting the bonds from Caile Vipinas while the rest of the Vulcian band falls on champions from Volsinii, Sovana and Rome — the decisive act of the whole frieze. What makes him more than a figure in a painting is the emperor Claudius, who knew Etruscan antiquities well and told the Senate that this Mastarna, companion of Caelius Vibenna, was the man Rome remembered as its sixth king, Servius Tullius. The equation is ancient and considered, and it is recorded here as Claudius's claim rather than acted on by merging the records."
+  }
+]
+```
