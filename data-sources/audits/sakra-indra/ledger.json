@@ -35,7 +35,11 @@
   "chinese_baoyueguang",
   "buddhist_eravana",
   "buddhist_vissakamma",
-  "buddhist_sunetta_teacher"
+  "buddhist_sunetta_teacher",
+  "buddhist_rohini_sakra",
+  "hindu_raji",
+  "hindu_dhuti_aditya",
+  "hindu_savitri_aditya"
  ],
  "relationshipPattern": "adaptation|comparative|regional|equat|interpret|syncret|counterpart|identified|^(father|mother|parent|son|daughter|child|spouse|consort|lover|sibling|brother|sister|former-spouse|ancestor|descendant)(-| |$)",
  "meaning": "Presence and registered-target are structural observations, not source review. Added does not mean an entire category is complete.",
@@ -1081,6 +1085,184 @@
       }
      ],
      "weight": "supporting"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_aniruddha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Aniruddha",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Anuruddha",
+     "tradition": "Buddhist",
+     "form": "name-or-alias",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ]
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Anuradha",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "Sanskrit",
+     "value": "Aniruddha",
+     "form": "transliteration"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "etymology",
+     "value": "'Unrestrained'.",
+     "form": "transliteration"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 5
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "corrected",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/relationships/sakra-indra-network.json#buddhist_aniruddha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 2
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_aniruddha",
+     "kind": "ordained-alongside",
+     "personId": "buddhist_ananda",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+      }
+     ],
+     "notes": "Non-symmetric, because the Ānanda record is already written in this batch's first block and 'companion' is a symmetric kind; the source says only that they became disciples at the same time.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_aniruddha",
+     "kind": "disciple-of",
+     "personId": "buddhist_shakyamuni",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+      }
+     ],
+     "notes": "In-batch.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_aniruddha",
+     "personId": "buddhist_rohini_sakra",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "A cousin of Śākyamuni, who became a disciple at the same time as Ānanda; one of the ten great disciples.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment of the Buddha and his disciples: Sariputta and Moggallana are the two Chief Disciples, Sariputta foremost among disciples of great wisdom and Maha Moggallana foremost among those of great supernatural powers; the ten great disciples are Sariputra, Moggallana, Mahakasyapa, Subhuti, Purna, Katyayana, Anuradha, Upali, Rahula and Ananda; Ananda was called the Treasurer of the Dhamma for his retentiveness of memory; Upali worked as a barber before he joined the Buddha, was foremost in observing the precepts, and became a disciple while cutting the Buddha's hair; Anuruddha was a cousin of Shakyamuni who became a disciple at the same time as Ananda."
+      }
+     ],
+     "weight": "high"
+    },
+    {
+     "claim": "Buddhist monk called Anuruddha in the Pāli account of his sister Rohinī, whose construction of a hall he supervises.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "weight": "secondary"
     }
    ],
    "variants": [],
@@ -2513,6 +2695,137 @@
    "parentageAccounts": []
   },
   {
+   "id": "buddhist_rohini_sakra",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Rohinī, sister of Anuruddha",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_rohini_sakra",
+     "personId": "buddhist_aniruddha",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_rohini_sakra",
+     "personId": "buddhist_sakra",
+     "kind": "favoured-by",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "notes": "After heavenly rebirth.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Sister of Anuruddha who builds a hall for the monks. After death she is reborn in Tāvatimsa and becomes a favourite of Sakka.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "buddhist_saddha",
    "tradition": "Buddhist",
    "names": [
@@ -3041,6 +3354,20 @@
       }
      ],
      "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_sakra",
+     "personId": "buddhist_rohini_sakra",
+     "kind": "favours",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Rohinī 2, DhA iii.295ff",
+       "url": "https://www.palikanon.com/english/pali_names/r/rohini.htm"
+      }
+     ],
+     "notes": "The relationship follows her heavenly rebirth.",
      "status": "registered-target"
     },
     {
@@ -13946,6 +14273,187 @@
    "parentageAccounts": []
   },
   {
+   "id": "hindu_dhuti_aditya",
+   "tradition": "Hindu",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Dhuti",
+     "tradition": "Hindu",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+    }
+   },
+   "relations": [
+    {
+     "subject": "hindu_dhuti_aditya",
+     "personId": "hindu_indra",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Within the twelve-Aditya account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_dhuti_aditya",
+     "personId": "hindu_aditi",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "accountId": "vp-aditya-parentage",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_dhuti_aditya",
+     "personId": "hindu_kashyapa",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "accountId": "vp-aditya-parentage",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "One of the twelve Ādityas named in Wilson’s translation of Viṣṇu Purāṇa 1.15, born to Aditi and Kaśyapa.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "vp-aditya-parentage",
+     "label": "Viṣṇu Purāṇa 1.15: Aditi and Kaśyapa",
+     "parents": [
+      {
+       "personId": "hindu_aditi",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+         "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_kashyapa",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+         "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "hindu_diti",
    "tradition": "Hindu",
    "names": [
@@ -16906,7 +17414,7 @@
     },
     "siblings": {
      "status": "awaiting-research",
-     "present": 0
+     "present": 11
     },
     "descendants": {
      "status": "added",
@@ -17069,6 +17577,174 @@
       }
      ],
      "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_raji",
+     "kind": "acknowledged-father",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic, chapter VII, pp. 61–62",
+       "url": "https://sacred-texts.com/book/hindu-mythology-vedic-and-puranic/read/chapter-vii-the-storm-deities"
+      }
+     ],
+     "notes": "Acknowledgement following aid in war; not biological parentage.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_vishnu",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_aryaman",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_dhuti_aditya",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_tvashtr",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_pushan",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_surya",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_savitri_aditya",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_mitra",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_varuna",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_amsha",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "personId": "hindu_bhaga",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred.",
      "status": "registered-target"
     },
     {
@@ -19938,6 +20614,20 @@
      ],
      "notes": "Viṣṇu Purāṇa account; no mother supplied.",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_marici",
+     "personId": "hindu_brahma",
+     "kind": "spiritual-son-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Mahābhārata, Ādi Parva LXVI, Ganguli translation, six spiritual sons of Brahman",
+       "url": "https://sacred-texts.com/hin/m01/m01067.htm"
+      }
+     ],
+     "notes": "Mind/spiritual origin in this account; kept outside biological defaults.",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -22338,6 +23028,234 @@
    "parentageAccounts": []
   },
   {
+   "id": "hindu_pushan",
+   "tradition": "Hindu",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Pushan",
+     "tradition": "Hindu",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Pusan",
+     "tradition": "Hindu",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "Sanskrit",
+     "value": "पूषन्",
+     "form": "transliteration"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "etymology",
+     "value": "From push-, 'to nourish, make thrive' — the nourisher.",
+     "form": "transliteration"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 4
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [],
+   "sources": [
+    {
+     "claim": "Pushan is the Vedic pastoral god and guardian of cattle, one of the twelve Adityas, who nourishes the sacrificer and the earth.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment of Pushan among the Adityas."
+      }
+     ],
+     "weight": "high"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "hindu_raji",
+   "tradition": "Hindu",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Rāji",
+     "tradition": "Hindu",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+    }
+   },
+   "relations": [
+    {
+     "subject": "hindu_raji",
+     "personId": "hindu_indra",
+     "kind": "acknowledged-son",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic, chapter VII, pp. 61–62",
+       "url": "https://sacred-texts.com/book/hindu-mythology-vedic-and-puranic/read/chapter-vii-the-storm-deities"
+      }
+     ],
+     "notes": "Acknowledgement concerning sovereignty; not birth genealogy.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Royal ally whom Indra acknowledges as father after his aid in war. His sons subsequently contest Indra’s sovereignty in the narrative.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic, chapter VII, pp. 61–62",
+       "url": "https://sacred-texts.com/book/hindu-mythology-vedic-and-puranic/read/chapter-vii-the-storm-deities"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "hindu_rishabha_indra",
    "tradition": "Hindu",
    "names": [
@@ -24120,6 +25038,187 @@
    ],
    "variants": [],
    "parentageAccounts": []
+  },
+  {
+   "id": "hindu_savitri_aditya",
+   "tradition": "Hindu",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Savitri, the Āditya",
+     "tradition": "Hindu",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+    }
+   },
+   "relations": [
+    {
+     "subject": "hindu_savitri_aditya",
+     "personId": "hindu_indra",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "notes": "Within the twelve-Aditya account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_savitri_aditya",
+     "personId": "hindu_aditi",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "accountId": "vp-aditya-parentage",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_savitri_aditya",
+     "personId": "hindu_kashyapa",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "accountId": "vp-aditya-parentage",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "One of the twelve Ādityas named in Wilson’s translation of Viṣṇu Purāṇa 1.15, born to Aditi and Kaśyapa.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "vp-aditya-parentage",
+     "label": "Viṣṇu Purāṇa 1.15: Aditi and Kaśyapa",
+     "parents": [
+      {
+       "personId": "hindu_aditi",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+         "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_kashyapa",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+         "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
+       "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "hindu_shakuni",
@@ -40040,8 +41139,12 @@
     "Dhuti",
     "Savitri"
    ],
-   "status": "awaiting-research",
-   "disposition": "Named in VP 1.15 Aditya list; validate exact corpus identities before adding sibling edges."
+   "status": "added",
+   "disposition": "Qualified exact records added from the reviewed Wilson genealogy; no unsupported name equivalence.",
+   "recordIds": [
+    "hindu_dhuti_aditya",
+    "hindu_savitri_aditya"
+   ]
   },
   {
    "names": [
@@ -40116,6 +41219,32 @@
    ],
    "status": "added",
    "disposition": "Direct dictionary entries read; office/bearer and previous animal birth distinguished. No counterpart-family transfer."
+  },
+  {
+   "names": [
+    "Rohinī",
+    "Rāji",
+    "Anuruddha"
+   ],
+   "recordIds": [
+    "buddhist_rohini_sakra",
+    "hindu_raji",
+    "buddhist_aniruddha"
+   ],
+   "status": "added",
+   "disposition": "Accessible follow-up passages implemented; heavenly rebirth and acknowledged fatherhood kept distinct from biological parentage."
+  },
+  {
+   "names": [
+    "Brahman",
+    "Marīci"
+   ],
+   "recordIds": [
+    "hindu_brahma",
+    "hindu_marici"
+   ],
+   "status": "cross-lane-dependency",
+   "disposition": "Marici spiritual-son endpoint authored; Brahma reciprocal belongs to the shared ancestor owner. No biological defaults added."
   }
  ],
  "sourceBlockers": [
