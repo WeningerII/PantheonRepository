@@ -1,0 +1,50 @@
+name: Materialize verified counterpart artifacts
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-sakra-indra.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/sakra-indra-network'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Reproduce locally verified source and build hashes
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          node scripts/gen-new-figures.cjs
+          node scripts/gen-enrich.cjs
+          node scripts/gen-powers-terms.cjs
+          node scripts/gen-powers-items.cjs
+          python3 build.py
+          node scripts/audit-sakra-indra.cjs
+          node scripts/audit-shiva-counterparts.cjs
+          test "$(git hash-object app/data.js)" = "0285cc8c164d13b0281b8d6c5cc76207d19e3884"
+          test "$(git hash-object dist/pantheon-registry.html)" = "7d5f5fca84fa9eb1e2d4a17630cdb21553f33ffa"
+          test "$(git hash-object data-sources/audits/sakra-indra/ledger.json)" = "6ae77eb6109a99b12390c2e2a1aa6ac29486814a"
+          test "$(git hash-object data-sources/audits/shiva-counterparts/ledger.json)" = "7fb659e8698ed071b7eb99db4308d433917fb794"
+          git add -- app/data.js dist/pantheon-registry.html data-sources/audits/sakra-indra/ledger.json data-sources/audits/shiva-counterparts/ledger.json
+          test "$(git diff --cached --name-only | wc -l)" -eq 4
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize verified counterpart corpus and standalone artifact"
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/feat/sakra-indra-network | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/feat/sakra-indra-network

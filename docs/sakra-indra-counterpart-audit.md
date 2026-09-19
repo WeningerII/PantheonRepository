@@ -15,7 +15,7 @@ Rigvedic Daksha account.
 
 ## Authored results
 
-The transcript supplies 48 records. These include Śacī and her three sons,
+The transcript supplies 56 records. These include Śacī and her three sons,
 Ekāṣṭakā and the explicitly qualified Prajāpati of her hymn, Marīci, Buddhist
 family and previous-life figures, three titled Korean officers, and the royal
 parents in the Jade Emperor scripture. A title is not automatically a unique
@@ -53,8 +53,7 @@ Presence does not mean reviewed. Added/corrected claims do not complete a catego
 Unreviewed categories remain awaiting-research; not-applicable and not-attested
 are not used as substitutes for missing work.
 
-Source-access blockers: Witzel's Kalash PDF (HTTP and HTTPS, plus the Heidelberg
-repository route), attempted Temple Archive scans/full text, and the exact
+Source-access blockers: attempted Temple Archive scans/full text and the exact
 Maspero identification passage. Searches repeatedly returned unrelated results;
 this is not evidence of absent traditions. Direct primary-text alternatives
 worked for the Korean and Chinese narratives. Heissig's Archive full text worked,
@@ -138,3 +137,41 @@ revision against the shared Cross-tradition classifier. The real-browser gate
 found that an ad hoc regional label was invisible in that filter; all four
 Burmese endpoints now use the existing Buddhist-adaptation category without
 changing their cited qualifications or weakening the browser assertion.
+
+## Reconciled remaining name discoveries
+
+The Vīdēvdād10.9 expulsion formula and Malandra’s Iranica article resolve the
+Iranian Indra lead as a historical name comparison, not an interchangeable
+biography. Three Dēnkard origin accounts, explicitly reported through Malandra,
+retain Akoman’s “seed” language as progenitor context without biological defaults.
+Waran is distinct from Āz. Public editorial commentary on the daeva is replaced
+with a factual cited description.
+
+Kee’s study of Korean divine-name translation supplies the modern terminology
+context but does not establish Hwanin’s identity with those usages. Hanullim and
+Sangje therefore remain visible as unresolved names, rather than unqualified
+aliases. Earlier discovery entries already resolved by implemented data have
+been reconciled. Purāṇic narrative figures use mythic, not inferred historical
+Vedic, era labels. Both later Archive full-text routes for the precise Geser
+family alignment failed; that uncertainty remains explicit.
+
+Padma1.6 now supplies separate Daksha/Vīriṇī accounts for Aditi, Diti and Danu.
+The existing maternal record is linked explicitly; owner-side reciprocals are
+tracked separately. Conflicting collateral Padma/Viṣṇu genealogies remain
+disputed identifications, not a flattened tree. Raffles vol.I pp.420–421
+distinguishes the Javanese Kanda Indra and Sákra, now separately registered.
+Their miraculous appearance is not biological birth; Nārada belongs to the
+Shiva owner and its integration remains a concrete dependency.
+
+The Witzel access blocker is resolved by the German National Library PDF.
+Kalash Dezau/Dezalik and Indr/Munjem are separated; the southern Nuristani
+Indra family is independent. The Disani/Nirmali legacy merger remains qualified.
+
+## Integration scope at user-requested freeze
+
+The user requested merging the implemented work soon. Further research and
+new owner handoffs are therefore tracked as follow-ups, not prerequisites for
+claims already implemented. No unresolved target is authored as a registered
+relationship. The Nārada creator endpoints and Devasena parental endpoint remain
+open until the Shiva owner supplies those records; neither is claimed complete.
+The shared browser gate remains mandatory for this merge.

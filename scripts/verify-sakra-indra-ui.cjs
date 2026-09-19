@@ -110,7 +110,7 @@ const srv = http.createServer((rq, rs) => {
       graphChecks++;
     }
     const corrections=JSON.parse(fs.readFileSync(path.join(ROOT,'data-sources/corrections/sakra-indra-network.json'),'utf8'));
-    const qualified=Object.entries(corrections).flatMap(([id,cs])=>cs.filter(c=>c.path[0]==='relations'&&c.op==='replace').map(c=>({id,target:c.value.personId})));
+    const qualified=Object.entries(corrections).flatMap(([id,cs])=>cs.filter(c=>c.path[0]==='relations'&&c.op==='replace').flatMap(c=>(Array.isArray(c.value)?c.value.filter(r=>!c.expected.some(old=>old.personId===r.personId&&old.kind===r.kind)):[c.value]).map(r=>({id,target:r.personId}))));
     for(const {id,target} of qualified){
       await pg.goto(`${base}#/graph/${encodeURIComponent(id)}`);
       const cross=pg.locator('.graph-modes').getByRole('button',{name:'Cross-tradition',exact:true});

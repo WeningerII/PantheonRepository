@@ -47,6 +47,6 @@ test('authored counterpart revisions remain in the shared comparison graph categ
  vm.runInContext(babel.transform(fs.readFileSync(path.join(root,'app/state.jsx'),'utf8'),{presets:['react']}).code,scope);
  const corrections=read('data-sources/corrections/sakra-indra-network.json');
  for(const list of Object.values(corrections))for(const c of list){
-  if(c.path[0]==='relations')assert.equal(scope.relationFamily(c.value.kind),'Cross-tradition',c.id);
+  if(c.path[0]==='relations')for(const r of Array.isArray(c.value)?c.value.filter(r=>!c.expected.some(old=>old.personId===r.personId&&old.kind===r.kind)):[c.value])assert.equal(scope.relationFamily(r.kind),'Cross-tradition',c.id);
  }
 });

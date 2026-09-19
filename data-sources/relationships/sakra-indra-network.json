@@ -308,6 +308,18 @@
           }
         ],
         "notes": ""
+      },
+      {
+        "personId": "zoroastrian_indra_daeva",
+        "kind": "name-comparison",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Shared name; historical development is disputed."
       }
     ],
     "parentageAccounts": [
@@ -398,6 +410,20 @@
           }
         ],
         "personId": "buddhist_sakra"
+      },
+      {
+        "value": "Indra (Iranian daeva)",
+        "tradition": "Zoroastrian",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "personId": "zoroastrian_indra_daeva",
+        "note": "Historical name comparison; biographies remain distinct."
       }
     ]
   },
@@ -536,6 +562,19 @@
           }
         ]
       }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_budha",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
+      }
     ]
   },
   "hindu_kashyapa": {
@@ -651,6 +690,41 @@
             "kind": "primary",
             "reference": "Ṛgveda 10.72.4–5, Griffith translation",
             "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
+          }
+        ]
+      },
+      {
+        "id": "padma-daksha-virini",
+        "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+        "parents": [
+          {
+            "personId": "hindu_daksha",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_virini",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
           }
         ]
       }
@@ -1564,6 +1638,32 @@
         ],
         "personId": "buddhist_sakra",
         "note": "Explicit identification in the Samguk yusa gloss, not a claim that all family narratives coincide."
+      },
+      {
+        "value": "Sangje",
+        "tradition": "Korean",
+        "status": "unresolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+            "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
+          }
+        ],
+        "note": "A divine title used in several religious contexts; the reviewed article does not establish this identification."
+      },
+      {
+        "value": "Hanullim",
+        "tradition": "Korean",
+        "status": "unresolved",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "note": "Legacy alias; the medieval passage does not establish this modern religious identification."
       }
     ],
     "descriptions": [
@@ -2648,6 +2748,43 @@
         ],
         "notes": ""
       }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "padma-daksha-virini",
+        "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+        "parents": [
+          {
+            "personId": "hindu_daksha",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_virini",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ]
+      }
     ]
   },
   "hindu_puloman": {
@@ -2987,6 +3124,813 @@
           }
         ],
         "notes": ""
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "padma-daksha-virini",
+        "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+        "parents": [
+          {
+            "personId": "hindu_daksha",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_virini",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ]
+      }
+    ]
+  },
+  "zoroastrian_indra_daeva": {
+    "nameLinks": [
+      {
+        "value": "Indar",
+        "tradition": "Zoroastrian",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ]
+      },
+      {
+        "value": "Indra (Vedic)",
+        "tradition": "Hindu",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "personId": "hindu_indra",
+        "note": "Historical name comparison; biographies remain distinct."
+      }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_indra",
+        "kind": "name-comparison",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Shared name; historical development is disputed."
+      },
+      {
+        "personId": "zoroastrian_asha_vahishta",
+        "kind": "opposes",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "iranian-indra-history",
+        "claim": "Historical interpretation",
+        "description": "Malandra does not substantiate deliberate demonization through conflict with Indo-Aryans.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ]
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "denkard-akoman-origin",
+        "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+        "parents": [
+          {
+            "personId": "zoroastrian_aka_manah",
+            "kind": "parent",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+                "url": "https://www.iranicaonline.org/articles/indra/"
+              }
+            ],
+            "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ]
+      }
+    ]
+  },
+  "zoroastrian_aka_manah": {
+    "relations": [
+      {
+        "personId": "zoroastrian_indra_daeva",
+        "kind": "mythic-origin-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Textual origin; no biological default."
+      },
+      {
+        "personId": "zoroastrian_waran",
+        "kind": "mythic-origin-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Textual origin; no biological default."
+      },
+      {
+        "personId": "zoroastrian_az",
+        "kind": "mythic-origin-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Textual origin; no biological default."
+      }
+    ]
+  },
+  "zoroastrian_waran": {
+    "parentageAccounts": [
+      {
+        "id": "denkard-akoman-origin",
+        "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+        "parents": [
+          {
+            "personId": "zoroastrian_aka_manah",
+            "kind": "parent",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+                "url": "https://www.iranicaonline.org/articles/indra/"
+              }
+            ],
+            "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "zoroastrian_aka_manah",
+        "kind": "mythic-origin-from",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ],
+        "notes": "Dēnkard seed account."
+      }
+    ]
+  },
+  "zoroastrian_az": {
+    "parentageAccounts": [
+      {
+        "id": "denkard-akoman-origin",
+        "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+        "parents": [
+          {
+            "personId": "zoroastrian_aka_manah",
+            "kind": "parent",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+                "url": "https://www.iranicaonline.org/articles/indra/"
+              }
+            ],
+            "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+            "url": "https://www.iranicaonline.org/articles/indra/"
+          }
+        ]
+      }
+    ]
+  },
+  "javanese_indra_kanda": {
+    "nameLinks": [
+      {
+        "value": "Indra",
+        "tradition": "Javanese",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ]
+      },
+      {
+        "value": "Indra (Vedic)",
+        "tradition": "Hindu",
+        "status": "unresolved",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "note": "The borrowed name does not establish shared parentage."
+      }
+    ],
+    "variants": [
+      {
+        "id": "kanda-origin",
+        "claim": "Origin account",
+        "description": "Appears after Nārada’s purifications; the passage does not describe biological birth.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "javanese_sakra_kanda",
+        "kind": "distinct-from",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "notes": "Separately enumerated figures in this narrative; not an assertion about every regional use of the names."
+      }
+    ]
+  },
+  "javanese_sakra_kanda": {
+    "nameLinks": [
+      {
+        "value": "Sákra",
+        "tradition": "Javanese",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ]
+      },
+      {
+        "value": "Śakra (Buddhist)",
+        "tradition": "Buddhist",
+        "status": "unresolved",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "note": "The Kanda narrative distinguishes this figure from its Indra; no Buddhist family is transferred."
+      }
+    ],
+    "variants": [
+      {
+        "id": "kanda-origin",
+        "claim": "Origin account",
+        "description": "Appears after Nārada’s purifications; the passage does not describe biological birth.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "javanese_indra_kanda",
+        "kind": "distinct-from",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.420–421, Kanda narrative",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "notes": "Separately enumerated figures in this narrative; not an assertion about every regional use of the names."
+      }
+    ]
+  },
+  "nuristani_disani": {
+    "parentageAccounts": [
+      {
+        "id": "southern-indra-parentage",
+        "label": "Southern Nuristani account: Indra",
+        "parents": [
+          {
+            "personId": "nuristani_indra_southern",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+                "url": "https://d-nb.info/1220734829/34"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ]
+      }
+    ]
+  },
+  "nuristani_pano": {
+    "parents": [
+      {
+        "personId": "nuristani_indra_southern",
+        "kind": "father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ]
+      }
+    ]
+  },
+  "nuristani_indra_southern": {
+    "relations": [
+      {
+        "personId": "nuristani_pano",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "nuristani_disani",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "nuristani_gish",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "nuristani_bagisht",
+        "kind": "uncle-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "nuristani_gish": {
+    "relations": [
+      {
+        "personId": "nuristani_indra_southern",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "nuristani_bagisht": {
+    "relations": [
+      {
+        "personId": "nuristani_indra_southern",
+        "kind": "nephew-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "kalash_dezalik": {
+    "relations": [
+      {
+        "personId": "kalash_dezau",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "nuristani_disani",
+        "kind": "disputed-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Nirmali comparison; legacy record identity remains uncertain."
+      }
+    ]
+  },
+  "kalash_dezau": {
+    "relations": [
+      {
+        "personId": "kalash_dezalik",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "nameLinks": [
+      {
+        "value": "Dezalik",
+        "tradition": "Kalash",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "personId": "kalash_dezalik"
+      }
+    ]
+  },
+  "kalash_balumain": {
+    "relations": [
+      {
+        "personId": "kalash_indr",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "In the reported Indrunkot account."
+      }
+    ]
+  },
+  "kalash_indr": {
+    "relations": [
+      {
+        "personId": "kalash_balumain",
+        "kind": "sibling",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "In the reported Indrunkot account."
+      },
+      {
+        "personId": "kalash_jestan",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Adversarial counterpart, not identity."
+      },
+      {
+        "personId": "kalash_sajigor",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ],
+    "nameLinks": [
+      {
+        "value": "Munjem Malik",
+        "tradition": "Kalash",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "personId": "kalash_munjem_malik",
+        "note": "Separately described regional figure."
+      },
+      {
+        "value": "Indra",
+        "tradition": "Hindu",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "personId": "hindu_indra",
+        "note": "Historical comparison; no shared genealogy implied."
+      },
+      {
+        "value": "Indra (southern Nuristani)",
+        "tradition": "Nuristani",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "personId": "nuristani_indra_southern"
+      }
+    ]
+  },
+  "kalash_jestan": {
+    "relations": [
+      {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Adversarial counterpart, not identity."
+      }
+    ]
+  },
+  "kalash_sajigor": {
+    "relations": [
+      {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "kalash_mahandeo": {
+    "relations": []
+  },
+  "nuristani_moni": {
+    "relations": []
+  },
+  "kalash_munjem_malik": {
+    "variants": [
+      {
+        "id": "unnamed-father",
+        "claim": "Parent identity",
+        "description": "The reviewed account names no father.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison."
+      }
+    ]
+  },
+  "hindu_tara": {
+    "relations": [
+      {
+        "personId": "hindu_brihaspati",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
+      },
+      {
+        "personId": "hindu_budha",
+        "kind": "mother-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
+      }
+    ]
+  },
+  "hindu_brihaspati": {
+    "relations": [
+      {
+        "personId": "hindu_tara",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
+      }
+    ]
+  },
+  "hindu_budha": {
+    "parentageAccounts": [
+      {
+        "id": "bhagavata-tara-soma",
+        "label": "Bhāgavata9.14: Tārā’s testimony",
+        "parents": [
+          {
+            "personId": "hindu_tara",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+                "url": "https://vedabase.io/en/library/sb/9/14/"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_soma",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+                "url": "https://vedabase.io/en/library/sb/9/14/"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": "bhagavata-paternity-dispute",
+        "claim": "Resolved paternity dispute",
+        "description": "Bṛhaspati and Soma both claim the child; Tārā names Soma when Brahmā asks her privately.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+            "url": "https://vedabase.io/en/library/sb/9/14/"
+          }
+        ]
       }
     ]
   }

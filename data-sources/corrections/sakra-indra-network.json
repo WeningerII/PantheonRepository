@@ -469,6 +469,45 @@
           "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
         }
       ]
+    },
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        4
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_indr",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+          }
+        ],
+        "notes": "Reciprocal of kalash_indr.equated-with — A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "value": {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
     }
   ],
   "korean_hwanin": [
@@ -512,6 +551,40 @@
           "kind": "primary",
           "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
           "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "contextual-divine-titles",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Hwanin",
+        "alt": [
+          "Hanullim",
+          "Sangje"
+        ],
+        "transliterations": {
+          "korean": "환인",
+          "hanja": "桓因"
+        }
+      },
+      "value": {
+        "primary": "Hwanin",
+        "alt": [],
+        "transliterations": {
+          "korean": "환인",
+          "hanja": "桓因"
+        }
+      },
+      "reason": "Retain unverified identifications as explicitly unresolved name entries instead of unqualified aliases.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+          "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
         }
       ]
     }
@@ -927,6 +1000,372 @@
           "kind": "secondary",
           "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
           "url": "https://www.wisdomlib.org/definition/jayanti"
+        }
+      ]
+    }
+  ],
+  "zoroastrian_indra_daeva": [
+    {
+      "id": "factual-iranian-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "The id is `zoroastrian_indra_daeva` and not `zoroastrian_indra`, and the primary name carries the qualifier, because the corpus already holds `hindu_indra` and a bare match would be read as the same figure. IT IS NOT THE SAME FIGURE, and the census records the sweep hit as a FALSE one. What is true, and is worth having in a registry that indexes traditions side by side, is that this name is a god on one side of the Indo-Iranian religious split and a demon on the other — together with Saurva and Nanghaithya, which makes three of the six arch-daevas Vedic gods in origin. That inversion is a fact about the two traditions, not a relation between two individuals, so it is stated here and no cross-tradition edge is drawn.",
+      "value": "Daeva expelled in Vīdēvdād 10.9. Middle Persian accounts portray Indar as diverting people from proper worship.",
+      "reason": "Replace editorial ingestion commentary with passage-specific claims.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+          "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+      ]
+    }
+  ],
+  "kalash_dezau": [
+    {
+      "id": "separate-birth-goddess",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Creator Sky-God",
+        "alt": [
+          "Dezau",
+          "Dezalik",
+          "Khodai"
+        ],
+        "transliterations": {
+          "kalasha-rom": "ḍezáw"
+        }
+      },
+      "value": {
+        "primary": "Dezau",
+        "alt": [
+          "Dezau",
+          "Khodai"
+        ],
+        "transliterations": {
+          "kalasha-rom": "ḍezáw"
+        }
+      },
+      "reason": "Separate the sister from the creator’s aliases.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "remove-misdirected-equation",
+      "path": [
+        "relations"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "kind": "equated-with",
+          "personId": "nuristani_disani",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+            }
+          ],
+          "notes": "Reciprocal of nuristani_disani.equated-with — Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+        },
+        {
+          "personId": "kalash_dezalik",
+          "kind": "sibling",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+              "url": "https://d-nb.info/1220734829/34"
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "value": [
+        {
+          "personId": "kalash_dezalik",
+          "kind": "sibling",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+              "url": "https://d-nb.info/1220734829/34"
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "reason": "The old target was justified through a different figure’s alias.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "factual-creator-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra.",
+      "value": "Kalash creator deity; Dezalik is his sister.",
+      "reason": "Replace the conflated description.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "kalash_indr": [
+    {
+      "id": "separate-middle-earth-bearer",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Indr the Storm-Lord",
+        "alt": [
+          "Indr",
+          "Warin",
+          "Warén",
+          "Munjem Malik"
+        ],
+        "transliterations": {
+          "kalasha-rom": "índr / warín"
+        }
+      },
+      "value": {
+        "primary": "Indr",
+        "alt": [
+          "Indr",
+          "Warin",
+          "Warén"
+        ],
+        "transliterations": {
+          "kalasha-rom": "índr / warín"
+        }
+      },
+      "reason": "Keep the separately described figure as an explicit target.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "factual-regional-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect.",
+      "value": "Kalash deity compared with Vedic Indra; associated with thunder and the rainbow.",
+      "reason": "Replace an unqualified historical assertion.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "qualified-vedic-comparison",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+          }
+        ],
+        "notes": "A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "value": {
+        "personId": "hindu_indra",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Comparative interpretation across changing regional traditions."
+      },
+      "reason": "Do not turn comparative reconstruction into literal identity.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "nuristani_disani": [
+    {
+      "id": "redirect-qualified-birth-goddess-comparison",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_dezau",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+          }
+        ],
+        "notes": "Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "kalash_dezalik",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "The comparison concerns Nirmali, a legacy alias whose merger needs separate verification."
+      },
+      "reason": "Dezau himself is not the childbirth goddess.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "kalash_mahandeo": [
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "nuristani_moni",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+          }
+        ],
+        "notes": "Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "value": {
+        "personId": "nuristani_moni",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
+    }
+  ],
+  "nuristani_moni": [
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_mahandeo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+          }
+        ],
+        "notes": "Reciprocal of kalash_mahandeo.equated-with — Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "value": {
+        "personId": "kalash_mahandeo",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
+    }
+  ],
+  "hindu_tara": [
+    {
+      "id": "factual-tara-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife.",
+      "value": "Wife of Bṛhaspati and mother of Budha. In the Bhāgavata Purāṇa, Soma abducts her; she later identifies him as Budha’s father.",
+      "reason": "Replace editorial ingestion prose with a cited narrative.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+          "url": "https://vedabase.io/en/library/sb/9/14/"
         }
       ]
     }
