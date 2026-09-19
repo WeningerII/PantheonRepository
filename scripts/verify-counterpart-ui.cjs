@@ -13,6 +13,23 @@ async function verifyCounterpartUI(page, base, people) {
   await a.focus();await a.press('Enter');
   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   assert.ok(page.url().endsWith(encodeURIComponent(n.personId)));
+  // Exercise the two other native-anchor surfaces for the same explicit pair.
+  const outgoing=(p.relations||[]).some(r=>r.personId===n.personId);
+  const incoming=(people[n.personId].relations||[]).some(r=>r.personId===p.id);
+  const targetHref=`#/browse/${encodeURIComponent(n.personId)}`;
+  if(outgoing){
+   await open(p);
+   const anchor=page.locator(`.relations-list a[href="${targetHref}"]`).first();
+   await anchor.focus();await anchor.press('Enter');
+   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
+  }
+  if(outgoing||incoming){
+   await open(p);await page.getByRole('button',{name:'Show in graph',exact:true}).click();
+   await page.locator('.graph-modes').getByRole('button',{name:'All',exact:true}).click();
+   const neighbor=page.locator(`a.graph-focus-neighbor[href="${targetHref}"]`).first();
+   await neighbor.focus();await neighbor.press('Enter');
+   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
+  }
  }
  let accountCount=0;
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
