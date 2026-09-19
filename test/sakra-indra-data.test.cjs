@@ -41,3 +41,12 @@ test('cited corrections survive the final derivation pass with previous evidence
   assert.deepEqual(JSON.parse(JSON.stringify(h.decision.sources)),c.sources);
  }
 });
+test('authored counterpart revisions remain in the shared comparison graph category',()=>{
+ const vm=require('node:vm');const babel=require('@babel/standalone');
+ const scope={React:require('react'),window:{},console};vm.createContext(scope);
+ vm.runInContext(babel.transform(fs.readFileSync(path.join(root,'app/state.jsx'),'utf8'),{presets:['react']}).code,scope);
+ const corrections=read('data-sources/corrections/sakra-indra-network.json');
+ for(const list of Object.values(corrections))for(const c of list){
+  if(c.path[0]==='relations')assert.equal(scope.relationFamily(c.value.kind),'Cross-tradition',c.id);
+ }
+});
