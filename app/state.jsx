@@ -465,7 +465,8 @@ function transliterations(entry) {
 const RELATION_FAMILIES = [
   {
     name: 'Lineage',
-    kinds: ['parent', 'parent of', 'father of', 'mother of', 'maternal grandfather', 'maternal family',
+    kinds: ['parent', 'father', 'mother', 'parent-of', 'mother-of', 'father-of', 'foster-parent',
+            'parent of', 'father of', 'mother of', 'maternal grandfather', 'maternal family',
             'ancestor of', 'descendant of', 'descendant mantis', 'uncle of',
             'foster parent', 'foster child', 'foster mother of', 'foster sibling',
             'social father', 'social grandfather', 'stepfather',
@@ -499,7 +500,7 @@ const RELATION_FAMILIES = [
   },
   {
     name: 'Cross-tradition',
-    kinds: ['interpretatio', 'syncretism', 'equated with', 'equated-with',
+    kinds: ['interpretatio', 'syncretism', 'counterpart-of', 'equated with', 'equated-with',
             'foundational precursor to', 'post death continuation',
             'sex exchange with', 'primary', 'secondary'],
   },
