@@ -1,0 +1,47 @@
+name: Materialize verified claim correction artifacts
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-claims.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/shared-claim-corrections'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Reproduce verified hashes and publish only artifacts
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          if test "$(git hash-object app/data.js)" = "5ef6e3df06f4a84182cd1609fbf8589a0637bce4"; then exit 0; fi
+          node scripts/gen-new-figures.cjs
+          node scripts/gen-enrich.cjs
+          node scripts/gen-powers-terms.cjs
+          node scripts/gen-powers-items.cjs
+          python3 build.py
+          test "$(git hash-object app/data.js)" = "5ef6e3df06f4a84182cd1609fbf8589a0637bce4"
+          test "$(git hash-object dist/pantheon-registry.html)" = "2b01aad3e53b755544b6b5bc1c8c2dd8b6cf8f54"
+          git add -- app/data.js dist/pantheon-registry.html
+          test "$(git diff --cached --name-only | wc -l)" -eq 1
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize verified claim correction pipeline"
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/codex/shared-claim-corrections | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/codex/shared-claim-corrections

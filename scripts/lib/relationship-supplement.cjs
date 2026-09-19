@@ -5,6 +5,36 @@ function applyRelationshipSupplement(peopleMap, patches) {
   // Validate the entire batch before changing any record.
   for (const [id, patch] of Object.entries(patches)) {
     if (!peopleMap[id]) throw new Error(`Unknown relationship subject: ${id}`);
+    if ((patch.parentageCorrections || []).length > 1) throw new Error(`Duplicate parentage correction: ${id}`);
+    for (const correction of patch.parentageCorrections || []) {
+      if (!correction.id || !correction.reason || !Array.isArray(correction.expected) ||
+          !Array.isArray(correction.parents) || !cited(correction)) throw new Error(`Invalid parentage correction: ${id}`);
+      const old = (peopleMap[id].parentageCorrections || []).find(c => c.id === correction.id);
+      if (old ? JSON.stringify(old.decision) !== JSON.stringify(correction) :
+          JSON.stringify([...(peopleMap[id].parentIds || [])].sort()) !== JSON.stringify([...correction.expected].sort()))
+        throw new Error(`Parentage correction baseline changed: ${id}`);
+      const targets = new Set();
+      for (const p of correction.parents) {
+        if (!peopleMap[p.personId] || p.personId === id || targets.has(p.personId) ||
+            !['father','mother','parent'].includes(p.kind) || !cited(p)) throw new Error(`Invalid corrected parent: ${id}`);
+        targets.add(p.personId);
+      }
+      if (targets.size > 2 || (patch.parents || []).length) throw new Error(`Conflicting corrected parents: ${id}`);
+    }
+    const revisions = new Set();
+    for (const revision of patch.relationRevisions || []) {
+      const key = JSON.stringify([revision.personId, revision.fromKind]);
+      if (revisions.has(key) || !peopleMap[revision.personId] || revision.personId === id ||
+          !revision.fromKind || !revision.kind || !revision.notes || !cited(revision) ||
+          ['father', 'mother', 'parent'].includes(revision.fromKind) ||
+          ['father', 'mother', 'parent'].includes(revision.kind))
+        throw new Error(`Invalid relationship revision: ${id}`);
+      revisions.add(key);
+      const matches = (peopleMap[id].relations || []).filter(r => r.personId === revision.personId &&
+        (r.kind === revision.fromKind || (r.kind === revision.kind &&
+          (r.revisions || []).some(h => JSON.stringify(h.decision) === JSON.stringify(revision)))));
+      if (matches.length !== 1) throw new Error(`Relationship revision baseline changed: ${id}`);
+    }
     const parents = new Set(peopleMap[id].parentIds || []);
     for (const claim of [...(patch.parents || []), ...(patch.relations || [])]) {
       if (!peopleMap[claim.personId] || claim.personId === id || !claim.kind || !cited(claim))
@@ -73,6 +103,30 @@ function applyRelationshipSupplement(peopleMap, patches) {
   };
   for (const [id, patch] of Object.entries(patches)) {
     const p = peopleMap[id];
+    for (const correction of patch.parentageCorrections || []) {
+      p.parentageCorrections ||= [];
+      if (p.parentageCorrections.some(c => c.id === correction.id)) continue;
+      p.parentageCorrections.push({id:correction.id,previous:{parentIds:[...(p.parentIds || [])],parentRoles:{...p.parentRoles},
+        relations:JSON.parse(JSON.stringify((p.relations || []).filter(r => ['father','mother','parent'].includes(r.kind))))},decision:JSON.parse(JSON.stringify(correction))});
+      p.parentIds = correction.parents.map(r => r.personId);
+      p.parentRoles = Object.fromEntries(correction.parents.map(r => [r.personId,r.kind]));
+      p.relations = (p.relations || []).filter(r => !['father','mother','parent'].includes(r.kind));
+      for (const parent of correction.parents) addRelation(p,parent);
+      p.variants ||= [];
+      p.variants.push({id:correction.id,claim:'parentage correction',description:correction.reason,sources:JSON.parse(JSON.stringify(correction.sources))});
+    }
+    for (const revision of patch.relationRevisions || []) {
+      const r = (p.relations || []).find(r => r.personId === revision.personId && r.kind === revision.fromKind);
+      if (!r || (r.revisions || []).some(h => JSON.stringify(h.decision) === JSON.stringify(revision))) continue;
+      const previous = JSON.parse(JSON.stringify(r));
+      delete previous.revisions;
+      r.revisions = [...(r.revisions || []), { previous, decision: JSON.parse(JSON.stringify(revision)) }];
+      r.kind = revision.kind;
+      r.notes = revision.notes;
+      r.sources = [...(r.sources || [])];
+      for (const source of revision.sources) if (!r.sources.some(s => JSON.stringify(s) === JSON.stringify(source)))
+        r.sources.push(JSON.parse(JSON.stringify(source)));
+    }
     for (const claim of patch.parents || []) {
       p.parentIds = p.parentIds || [];
       if (!p.parentIds.includes(claim.personId)) p.parentIds.push(claim.personId);
