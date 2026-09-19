@@ -43,7 +43,7 @@ Ordinary aliases remain on their figure; explicit name links connect records.
 ## Remaining work and access
 
 Accessible research remains, including the named Hawaiian genealogical sequences,
-additional Samoan and Tongan contexts, Atiu eclipse figures, and primary checks
+additional Samoan and Tongan contexts, Mangaian eclipse figures, and primary checks
 for Tahitian, Marquesan, Rapa Nui and Rarotongan claims. These are unfinished work.
 Gill, Tregear and Gifford were recovered through public Internet Archive texts;
 none is an access blocker. Initial JPS/ANU access failures do not block claims
@@ -71,7 +71,7 @@ identity status. The lane-only ledger overlay validates that each reviewed form
 exists; it does not infer identity from spelling. A neutral synthetic test checks
 citation preservation, target-status preservation and identifier-renaming behavior.
 
-Shared PR #147 is an OPEN integration dependency for its additional actual-browser
+Shared PR #147 is incorporated from main 4910adc, including its additional actual-browser
 relationship-list and graph-neighbor checks and visibly qualified disputed name
 links. Its implementation was inspected; this lane does not duplicate that work.
 The published head 36edafb passed full CI, including Chromium names/account checks,

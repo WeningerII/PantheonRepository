@@ -59,7 +59,8 @@ function applyRelationshipSupplement(peopleMap, patches) {
       nameKeys.add(nameKey);
       if (!link.value || !link.tradition || !cited(link) ||
           !['resolved', 'same-record', 'unresolved', 'disputed'].includes(link.status) ||
-          (link.status === 'resolved' ? (!peopleMap[link.personId] || link.personId === id) : !!link.personId))
+          (link.status === 'resolved' ? !link.personId : !['disputed'].includes(link.status) && !!link.personId) ||
+          (link.personId && (!peopleMap[link.personId] || link.personId === id)))
         throw new Error(`Invalid name target: ${id}`);
       const old = (peopleMap[id].nameLinks || []).find(n => n.value === link.value && n.tradition === link.tradition);
       if (old && JSON.stringify(old) !== JSON.stringify(link)) throw new Error(`Name target already differs: ${id}`);
