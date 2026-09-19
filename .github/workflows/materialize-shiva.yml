@@ -36,7 +36,7 @@ jobs:
           python3 build.py
           node scripts/audit-shiva-counterparts.cjs
           test "$(git hash-object app/data.js)" = "9496514b2f2a3186f8e7ce5655cd508704cfbc64"
-          test "$(git hash-object dist/pantheon-registry.html)" = "e262257eb8850e4ef6844a45f13b23045688cabd"
+          test "$(git hash-object dist/pantheon-registry.html)" = "34021479f1ffaf3a9eed87093d52cd9083b0f6f9"
           test "$(git hash-object data-sources/audits/shiva-counterparts/ledger.json)" = "342fce8aa35800f6fec886cbdfa02e6244aede42"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/shiva-counterparts/ledger.json
           if git diff --cached --quiet; then exit 0; fi

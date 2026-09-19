@@ -501,7 +501,7 @@ const RELATION_FAMILIES = [
   {
     name: 'Cross-tradition',
     kinds: ['interpretatio', 'syncretism', 'counterpart-of', 'equated with', 'equated-with',
-            'buddhist-adaptation', 'identified-in-text', 'disputed-identification',
+            'buddhist-adaptation', 'identified-in-text', 'identified-in-account', 'disputed-identification',
             'comparative-identification', 'indirect-syncretic-association',
             'comparison-under-review', 'iconographic-comparison', 'scholarly-comparison', 'textual-identification',
             'localized-cult-assimilation', 'regional-cult-form',
