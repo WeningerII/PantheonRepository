@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 const babel=require('@babel/standalone');
-const kinds=['buddhist-adaptation','identified-in-text','disputed-identification','comparative-identification','indirect-syncretic-association','localized-cult-assimilation','regional-cult-form','identification-awaiting-verification','historical-association'];
+const kinds=['buddhist-adaptation','identified-in-text', 'identified-in-account','disputed-identification','comparative-identification','indirect-syncretic-association','localized-cult-assimilation','regional-cult-form','identification-awaiting-verification','historical-association','comparison-under-review', 'iconographic-comparison', 'scholarly-comparison', 'textual-identification'];
 function scope(){
  const s={React:require('react'),window:{},console};vm.createContext(s);
  for(const name of ['state.jsx','Graph.jsx'])vm.runInContext(babel.transform(fs.readFileSync(path.join(__dirname,'../app',name),'utf8'),{presets:['react']}).code,s);
