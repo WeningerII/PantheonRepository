@@ -1,0 +1,48 @@
+name: Materialize verified artifacts
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-shiva.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/shiva-network'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Reproduce and verify exact artifacts
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          node scripts/gen-new-figures.cjs
+          node scripts/gen-enrich.cjs
+          node scripts/gen-powers-terms.cjs
+          node scripts/gen-powers-items.cjs
+          python3 build.py
+          node scripts/audit-shiva-counterparts.cjs
+          test "$(git hash-object app/data.js)" = "9496514b2f2a3186f8e7ce5655cd508704cfbc64"
+          test "$(git hash-object dist/pantheon-registry.html)" = "494675ff21450295a8c63fbb91f82b57f90bd92d"
+          test "$(git hash-object data-sources/audits/shiva-counterparts/ledger.json)" = "342fce8aa35800f6fec886cbdfa02e6244aede42"
+          git add -- app/data.js dist/pantheon-registry.html data-sources/audits/shiva-counterparts/ledger.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize hash-verified artifacts"
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/codex/shiva-network | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/codex/shiva-network
