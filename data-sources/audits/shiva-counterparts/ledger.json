@@ -22046,6 +22046,34 @@
      ],
      "accountId": "rigveda-reciprocal-origin",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_aditi",
+     "personId": "hindu_daksha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_aditi",
+     "personId": "hindu_virini",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -22120,6 +22148,41 @@
        "kind": "primary",
        "reference": "Ṛgveda 10.72.4–5, Griffith translation",
        "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
+      }
+     ]
+    },
+    {
+     "id": "padma-daksha-virini",
+     "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+     "parents": [
+      {
+       "personId": "hindu_daksha",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_virini",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
       }
      ]
     }
@@ -29389,6 +29452,11 @@
       {
        "kind": "secondary",
        "reference": "Reference treatment of Tara being returned to her husband Brihaspati."
+      },
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
       }
      ],
      "notes": "Reciprocated in-batch.",
@@ -29805,6 +29873,34 @@
      "kind": "parent",
      "personId": "hindu_tara",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_budha",
+     "personId": "hindu_tara",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ],
+     "accountId": "bhagavata-tara-soma",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_budha",
+     "personId": "hindu_soma",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ],
+     "accountId": "bhagavata-tara-soma",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -29819,8 +29915,57 @@
      "weight": "high"
     }
    ],
-   "variants": [],
-   "parentageAccounts": [],
+   "variants": [
+    {
+     "id": "bhagavata-paternity-dispute",
+     "claim": "Resolved paternity dispute",
+     "description": "Bṛhaspati and Soma both claim the child; Tārā names Soma when Brahmā asks her privately.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ]
+    }
+   ],
+   "parentageAccounts": [
+    {
+     "id": "bhagavata-tara-soma",
+     "label": "Bhāgavata9.14: Tārā’s testimony",
+     "parents": [
+      {
+       "personId": "hindu_tara",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+         "url": "https://vedabase.io/en/library/sb/9/14/"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_soma",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+         "url": "https://vedabase.io/en/library/sb/9/14/"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ]
+    }
+   ],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
     "notes": "He is also the father of Pururavas and so the head of the lunar dynasty that lane 16 recovered from Nahusha downward — which would join this batch to that one at the top. The treatment consulted does not state it, so no edge is drawn, and Pururavas remains a BLOCKED census row. That join is the single cheapest improvement a third Hindu pass could make.",
@@ -31041,6 +31186,34 @@
      ],
      "notes": "",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_danu",
+     "personId": "hindu_daksha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_danu",
+     "personId": "hindu_virini",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -31057,7 +31230,43 @@
     }
    ],
    "variants": [],
-   "parentageAccounts": [],
+   "parentageAccounts": [
+    {
+     "id": "padma-daksha-virini",
+     "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+     "parents": [
+      {
+       "personId": "hindu_daksha",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_virini",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ]
+    }
+   ],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
     "notes": "Wife of Kaśyapa and mother of the Dānava offspring in the Padma Purāṇa. Her sons include Puloman.",
@@ -33837,6 +34046,34 @@
      ],
      "notes": "",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_diti",
+     "personId": "hindu_daksha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_diti",
+     "personId": "hindu_virini",
+     "kind": "mother",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ],
+     "accountId": "padma-daksha-virini",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -33852,7 +34089,43 @@
     }
    ],
    "variants": [],
-   "parentageAccounts": [],
+   "parentageAccounts": [
+    {
+     "id": "padma-daksha-virini",
+     "label": "Padma Purāṇa 1.6: Dakṣa and Vīriṇī",
+     "parents": [
+      {
+       "personId": "hindu_daksha",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      },
+      {
+       "personId": "hindu_virini",
+       "kind": "mother",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+         "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.12–16 and 28–34, Deshpande translation",
+       "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+      }
+     ]
+    }
+   ],
    "owner": "Sakra lane; do not edit here",
    "claims": {
     "notes": "Aditi and Diti are a pair — the gods descend from one and the asuras from the other, by the same father — and a corpus holding Kashyapa and Aditi without Diti holds a genealogy with one branch cut. That is the most precise statement of this lane's whole finding: the registry's Hindu holdings were a family tree with the losing side pruned.",
@@ -39817,12 +40090,26 @@
       }
      ],
      "personId": "buddhist_sakra"
+    },
+    {
+     "status": "resolved",
+     "value": "Indra (Iranian daeva)",
+     "tradition": "Zoroastrian",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "personId": "zoroastrian_indra_daeva",
+     "note": "Historical name comparison; biographies remain distinct."
     }
    ],
    "categories": {
     "names": {
      "status": "awaiting-research",
-     "present": 9
+     "present": 10
     },
     "scripts": {
      "status": "awaiting-research",
@@ -39943,15 +40230,16 @@
     },
     {
      "subject": "hindu_indra",
-     "kind": "equated-with",
      "personId": "kalash_indr",
+     "kind": "comparative-identification",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "Reciprocal of kalash_indr.equated-with — A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord.",
+     "notes": "Regional comparison; biographies remain distinct.",
      "status": "registered-target"
     },
     {
@@ -40208,8 +40496,28 @@
     },
     {
      "subject": "hindu_indra",
+     "personId": "zoroastrian_indra_daeva",
+     "kind": "name-comparison",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Shared name; historical development is disputed.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
      "kind": "counterpart-name",
      "personId": "buddhist_sakra",
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_indra",
+     "kind": "counterpart-name",
+     "personId": "zoroastrian_indra_daeva",
      "status": "registered-target"
     },
     {
@@ -40301,6 +40609,18 @@
        "kind": "secondary",
        "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
        "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+      }
+     ]
+    },
+    {
+     "id": "correction:qualified-hindukush-comparison",
+     "claim": "source review correction",
+     "description": "Qualify the existing equation using the reviewed regional comparison.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ]
     }
@@ -40983,6 +41303,59 @@
          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
         }
        ]
+      }
+     },
+     {
+      "id": "qualified-hindukush-comparison",
+      "previous": {
+       "kind": "equated-with",
+       "personId": "kalash_indr",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+        }
+       ],
+       "notes": "Reciprocal of kalash_indr.equated-with — A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "decision": {
+       "id": "qualified-hindukush-comparison",
+       "path": [
+        "relations",
+        4
+       ],
+       "op": "replace",
+       "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_indr",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+         }
+        ],
+        "notes": "Reciprocal of kalash_indr.equated-with — A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+       },
+       "value": {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+       },
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ],
+       "reason": "Qualify the existing equation using the reviewed regional comparison."
       }
      }
     ]
@@ -65273,6 +65646,19 @@
    "relations": [
     {
      "subject": "hindu_soma",
+     "personId": "hindu_budha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "hindu_soma",
      "personId": "hindu_ekastaka",
      "kind": "mother",
      "sources": [
@@ -68135,6 +68521,11 @@
       {
        "kind": "secondary",
        "reference": "Reference treatment of Tara as Brihaspati's wife."
+      },
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
       }
      ],
      "notes": "Reciprocated in-batch.",
@@ -68152,6 +68543,19 @@
      ],
      "notes": "Non-symmetric, so nothing is written onto the pre-existing Soma record. The kind is deliberately the neutral one the treatment supports: the sources do not agree on whether she went willingly, and the record does not decide it.",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_tara",
+     "personId": "hindu_budha",
+     "kind": "mother-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ],
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -68166,11 +68570,24 @@
      "weight": "high"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "correction:factual-tara-description",
+     "claim": "source review correction",
+     "description": "Replace editorial ingestion prose with a cited narrative.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+       "url": "https://vedabase.io/en/library/sb/9/14/"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
-    "notes": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife.",
+    "notes": "Wife of Bṛhaspati and mother of Budha. In the Bhāgavata Purāṇa, Soma abducts her; she later identifies him as Budha’s father.",
     "domains": [],
     "faculties": [],
     "materialCulture": [],
@@ -68188,7 +68605,30 @@
       ]
      }
     ],
-    "epithets": []
+    "epithets": [],
+    "corrections": [
+     {
+      "id": "factual-tara-description",
+      "previous": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife.",
+      "decision": {
+       "id": "factual-tara-description",
+       "path": [
+        "notes"
+       ],
+       "op": "replace",
+       "expected": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife.",
+       "value": "Wife of Bṛhaspati and mother of Budha. In the Bhāgavata Purāṇa, Soma abducts her; she later identifies him as Budha’s father.",
+       "reason": "Replace editorial ingestion prose with a cited narrative.",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+         "url": "https://vedabase.io/en/library/sb/9/14/"
+        }
+       ]
+      }
+     }
+    ]
    }
   },
   {
@@ -98156,37 +98596,37 @@
    }
   },
   {
-   "id": "kalash_dezau",
+   "id": "kalash_balumain",
    "tradition": "Kalash",
    "names": [
     {
      "status": "awaiting-research",
-     "value": "Creator Sky-God",
+     "value": "Balumain the Festival-Bringer",
      "tradition": "Kalash",
      "form": "name-or-alias"
     },
     {
      "status": "awaiting-research",
-     "value": "Dezau",
+     "value": "Balumain",
      "tradition": "Kalash",
      "form": "name-or-alias"
     },
     {
      "status": "awaiting-research",
-     "value": "Dezalik",
+     "value": "Balimain",
      "tradition": "Kalash",
      "form": "name-or-alias"
     },
     {
      "status": "awaiting-research",
-     "value": "Khodai",
+     "value": "Balomain",
      "tradition": "Kalash",
      "form": "name-or-alias"
     },
     {
      "status": "awaiting-research",
      "script": "kalasha-rom",
-     "value": "ḍezáw",
+     "value": "balimaín",
      "form": "transliteration"
     }
    ],
@@ -98217,7 +98657,402 @@
     },
     "siblings": {
      "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
      "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "kalash_balumain",
+     "personId": "kalash_indr",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "In the reported Indrunkot account.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Balumain (Balimain) is the Kalash culture-hero/demigod who taught the people the Chaumos winter-solstice festival; cheated by Mahandeo at the Shawalo meadow he retired to the homeland Tsiyam and returns yearly on horseback, a pattern Witzel likens to the reborn Vedic Indra.",
+     "citations": [
+      {
+       "kind": "scholarship",
+       "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten."
+      },
+      {
+       "kind": "scholarship",
+       "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1: The Religion of the Kafirs. Aris & Phillips."
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Sakra lane; do not edit here",
+   "claims": {
+    "notes": "Foregrounded demigod culture-hero. Chaumos is the great Kalash midwinter festival; Tsiyam (tsíam) the ancestral homeland. The 'budulak' shepherd-boy figure of Chaumos is connected to his cult.",
+    "domains": [
+     {
+      "sphereId": "festival-and-rite",
+      "contextTag": "lifelong",
+      "term": {
+       "value": "Chaumos",
+       "script": "",
+       "rom": "caumós"
+      },
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Witzel, M. (2004). Kalash Religion."
+       }
+      ]
+     },
+     {
+      "sphereId": "fertility-and-fortune",
+      "contextTag": "lifelong",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1."
+       }
+      ]
+     }
+    ],
+    "faculties": [
+     {
+      "id": "teach_chaumos",
+      "name": "teaches the people how to keep the Chaumos festival",
+      "term": {
+       "value": "caumós",
+       "script": "",
+       "rom": "caumós"
+      },
+      "inheritability": "unique",
+      "notes": "Culture-hero who instituted the rites of Chaumos (winter solstice); rides into the valleys from the west (the Kati/Bashgal direction) before solstice and leaves the next day.",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Witzel, M. (2004). Kalash Religion."
+       }
+      ],
+      "scopeTags": [
+       "wisdom"
+      ]
+     },
+     {
+      "id": "return_from_tsiyam",
+      "name": "returns each year from the homeland Tsiyam like Indra reborn",
+      "term": {
+       "value": "Tsiyam",
+       "script": "",
+       "rom": "tsíam"
+      },
+      "inheritability": "unique",
+      "notes": "Cheated of supremacy by Mahandeo when the gods slept at the Shawalo meadow, he withdrew to Tsiyam and returns each winter, which Witzel compares to the reborn Vedic Indra (Rigveda 10.86).",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Witzel, M. (2004). Kalash Religion."
+       }
+      ]
+     }
+    ],
+    "materialCulture": [
+     {
+      "id": "kalash_balumain_horse",
+      "kind": "mount",
+      "name": "Balumain's horse",
+      "role": "He arrives riding a horse from the west at the winter solstice to bless the valleys during Chaumos.",
+      "notes": "Equestrian arrival is the signature image of the Chaumos visitation.",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Witzel, M. (2004). Kalash Religion."
+       }
+      ]
+     }
+    ],
+    "epithets": [
+     {
+      "epithetId": "Balumain",
+      "original": "Balumain",
+      "language": "Kalasha",
+      "transliteration": "Balimain",
+      "contextTag": "cult",
+      "notes": "the Chaumos visitor-hero, a form of Indra",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "A. Witzel, 'The Religions of the Hindukush'"
+       }
+      ]
+     }
+    ],
+    "cult": {
+     "festivals": [
+      {
+       "name": "Chaumos midwinter festival",
+       "term": {
+        "value": "Chaumos",
+        "script": "Latin",
+        "rom": "caumos"
+       },
+       "type": "festival",
+       "cadence": "annual at winter solstice",
+       "notes": "Two-week solstice festival (c. 7-22 Dec.) marking the year's end; Balumain is held to arrive on horseback from Tsiyam to teach and bless the rites, which involve goat sacrifice, juniper purification, dance and song.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "A. Witzel, 'The Religions of the Hindukush'; Chaumos festival ethnography"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "kalash_dezalik",
+   "tradition": "Kalash",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Dezalik",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "kalash_dezalik",
+     "personId": "kalash_dezau",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_dezalik",
+     "personId": "nuristani_disani",
+     "kind": "disputed-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "Nirmali comparison; legacy record identity remains uncertain.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Childbirth goddess and Dezau’s sister.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Childbirth goddess and Dezau’s sister.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
+   }
+  },
+  {
+   "id": "kalash_dezau",
+   "tradition": "Kalash",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Dezau",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Dezau",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Khodai",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "kalasha-rom",
+     "value": "ḍezáw",
+     "form": "transliteration"
+    },
+    {
+     "status": "resolved",
+     "value": "Dezalik",
+     "tradition": "Kalash",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "personId": "kalash_dezalik"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 5
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
     },
     "descendants": {
      "status": "awaiting-research",
@@ -98259,15 +99094,22 @@
    "relations": [
     {
      "subject": "kalash_dezau",
-     "kind": "equated-with",
-     "personId": "nuristani_disani",
+     "personId": "kalash_dezalik",
+     "kind": "sibling",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "Reciprocal of nuristani_disani.equated-with — Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik.",
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_dezau",
+     "kind": "counterpart-name",
+     "personId": "kalash_dezalik",
      "status": "registered-target"
     }
    ],
@@ -98287,11 +99129,48 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "correction:separate-birth-goddess",
+     "claim": "source review correction",
+     "description": "Separate the sister from the creator’s aliases.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    },
+    {
+     "id": "correction:remove-misdirected-equation",
+     "claim": "source review correction",
+     "description": "The old target was justified through a different figure’s alias.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    },
+    {
+     "id": "correction:factual-creator-description",
+     "claim": "source review correction",
+     "description": "Replace the conflated description.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [],
    "owner": "Sakra lane; do not edit here",
    "claims": {
-    "notes": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra.",
+    "notes": "Kalash creator deity; Dezalik is his sister.",
     "domains": [
      {
       "sphereId": "creation",
@@ -98351,7 +99230,162 @@
        "reference": "R. L. Turner, A Comparative Dictionary of the Indo-Aryan Languages (London: Oxford University Press, 1962-66), entry 14621 (PIE *dheiǵh- 'to form'), as cited by Witzel for ḍezáw."
       }
      ]
-    }
+    },
+    "corrections": [
+     {
+      "id": "separate-birth-goddess",
+      "previous": {
+       "primary": "Creator Sky-God",
+       "alt": [
+        "Dezau",
+        "Dezalik",
+        "Khodai"
+       ],
+       "transliterations": {
+        "kalasha-rom": "ḍezáw"
+       }
+      },
+      "decision": {
+       "id": "separate-birth-goddess",
+       "path": [
+        "name"
+       ],
+       "op": "replace",
+       "expected": {
+        "primary": "Creator Sky-God",
+        "alt": [
+         "Dezau",
+         "Dezalik",
+         "Khodai"
+        ],
+        "transliterations": {
+         "kalasha-rom": "ḍezáw"
+        }
+       },
+       "value": {
+        "primary": "Dezau",
+        "alt": [
+         "Dezau",
+         "Khodai"
+        ],
+        "transliterations": {
+         "kalasha-rom": "ḍezáw"
+        }
+       },
+       "reason": "Separate the sister from the creator’s aliases.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     },
+     {
+      "id": "remove-misdirected-equation",
+      "previous": [
+       {
+        "kind": "equated-with",
+        "personId": "nuristani_disani",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+         }
+        ],
+        "notes": "Reciprocal of nuristani_disani.equated-with — Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+       },
+       {
+        "personId": "kalash_dezalik",
+        "kind": "sibling",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": ""
+       }
+      ],
+      "decision": {
+       "id": "remove-misdirected-equation",
+       "path": [
+        "relations"
+       ],
+       "op": "replace",
+       "expected": [
+        {
+         "kind": "equated-with",
+         "personId": "nuristani_disani",
+         "sources": [
+          {
+           "kind": "secondary",
+           "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+          }
+         ],
+         "notes": "Reciprocal of nuristani_disani.equated-with — Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+        },
+        {
+         "personId": "kalash_dezalik",
+         "kind": "sibling",
+         "sources": [
+          {
+           "kind": "secondary",
+           "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+           "url": "https://d-nb.info/1220734829/34"
+          }
+         ],
+         "notes": ""
+        }
+       ],
+       "value": [
+        {
+         "personId": "kalash_dezalik",
+         "kind": "sibling",
+         "sources": [
+          {
+           "kind": "secondary",
+           "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+           "url": "https://d-nb.info/1220734829/34"
+          }
+         ],
+         "notes": ""
+        }
+       ],
+       "reason": "The old target was justified through a different figure’s alias.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     },
+     {
+      "id": "factual-creator-description",
+      "previous": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra.",
+      "decision": {
+       "id": "factual-creator-description",
+       "path": [
+        "notes"
+       ],
+       "op": "replace",
+       "expected": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra.",
+       "value": "Kalash creator deity; Dezalik is his sister.",
+       "reason": "Replace the conflated description.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     }
+    ]
    }
   },
   {
@@ -98360,7 +99394,7 @@
    "names": [
     {
      "status": "awaiting-research",
-     "value": "Indr the Storm-Lord",
+     "value": "Indr",
      "tradition": "Kalash",
      "form": "name-or-alias"
     },
@@ -98384,21 +99418,56 @@
     },
     {
      "status": "awaiting-research",
-     "value": "Munjem Malik",
-     "tradition": "Kalash",
-     "form": "name-or-alias"
-    },
-    {
-     "status": "awaiting-research",
      "script": "kalasha-rom",
      "value": "índr / warín",
      "form": "transliteration"
+    },
+    {
+     "status": "resolved",
+     "value": "Munjem Malik",
+     "tradition": "Kalash",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "personId": "kalash_munjem_malik",
+     "note": "Separately described regional figure."
+    },
+    {
+     "status": "resolved",
+     "value": "Indra",
+     "tradition": "Hindu",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "personId": "hindu_indra",
+     "note": "Historical comparison; no shared genealogy implied."
+    },
+    {
+     "status": "resolved",
+     "value": "Indra (southern Nuristani)",
+     "tradition": "Nuristani",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "personId": "nuristani_indra_southern"
     }
    ],
    "categories": {
     "names": {
      "status": "awaiting-research",
-     "present": 6
+     "present": 8
     },
     "scripts": {
      "status": "awaiting-research",
@@ -98422,7 +99491,7 @@
     },
     "siblings": {
      "status": "awaiting-research",
-     "present": 0
+     "present": 1
     },
     "descendants": {
      "status": "awaiting-research",
@@ -98464,15 +99533,76 @@
    "relations": [
     {
      "subject": "kalash_indr",
-     "kind": "equated-with",
      "personId": "hindu_indra",
+     "kind": "comparative-identification",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord.",
+     "notes": "Comparative interpretation across changing regional traditions.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "personId": "kalash_balumain",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "In the reported Indrunkot account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "personId": "kalash_jestan",
+     "kind": "comparative-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "Adversarial counterpart, not identity.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "personId": "kalash_sajigor",
+     "kind": "comparative-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "kind": "counterpart-name",
+     "personId": "kalash_munjem_malik",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "kind": "counterpart-name",
+     "personId": "hindu_indra",
+     "status": "registered-target"
+    },
+    {
+     "subject": "kalash_indr",
+     "kind": "counterpart-name",
+     "personId": "nuristani_indra_southern",
      "status": "registered-target"
     }
    ],
@@ -98492,11 +99622,48 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "correction:separate-middle-earth-bearer",
+     "claim": "source review correction",
+     "description": "Keep the separately described figure as an explicit target.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    },
+    {
+     "id": "correction:factual-regional-description",
+     "claim": "source review correction",
+     "description": "Replace an unqualified historical assertion.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    },
+    {
+     "id": "correction:qualified-vedic-comparison",
+     "claim": "source review correction",
+     "description": "Do not turn comparative reconstruction into literal identity.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
-    "notes": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect.",
+    "notes": "Kalash deity compared with Vedic Indra; associated with thunder and the rainbow.",
     "domains": [
      {
       "sphereId": "storm-and-thunder",
@@ -98618,7 +99785,252 @@
        "reference": "Jettmar, Karl. The Religions of the Hindukush, vol. 1: The Religion of the Kafirs. Warminster: Aris & Phillips, 1986 (on Indr/Indra continuity in the Hindu Kush)."
       }
      ]
+    },
+    "corrections": [
+     {
+      "id": "separate-middle-earth-bearer",
+      "previous": {
+       "primary": "Indr the Storm-Lord",
+       "alt": [
+        "Indr",
+        "Warin",
+        "Warén",
+        "Munjem Malik"
+       ],
+       "transliterations": {
+        "kalasha-rom": "índr / warín"
+       }
+      },
+      "decision": {
+       "id": "separate-middle-earth-bearer",
+       "path": [
+        "name"
+       ],
+       "op": "replace",
+       "expected": {
+        "primary": "Indr the Storm-Lord",
+        "alt": [
+         "Indr",
+         "Warin",
+         "Warén",
+         "Munjem Malik"
+        ],
+        "transliterations": {
+         "kalasha-rom": "índr / warín"
+        }
+       },
+       "value": {
+        "primary": "Indr",
+        "alt": [
+         "Indr",
+         "Warin",
+         "Warén"
+        ],
+        "transliterations": {
+         "kalasha-rom": "índr / warín"
+        }
+       },
+       "reason": "Keep the separately described figure as an explicit target.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     },
+     {
+      "id": "factual-regional-description",
+      "previous": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect.",
+      "decision": {
+       "id": "factual-regional-description",
+       "path": [
+        "notes"
+       ],
+       "op": "replace",
+       "expected": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect.",
+       "value": "Kalash deity compared with Vedic Indra; associated with thunder and the rainbow.",
+       "reason": "Replace an unqualified historical assertion.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     },
+     {
+      "id": "qualified-vedic-comparison",
+      "previous": {
+       "kind": "equated-with",
+       "personId": "hindu_indra",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+        }
+       ],
+       "notes": "A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "decision": {
+       "id": "qualified-vedic-comparison",
+       "path": [
+        "relations",
+        0
+       ],
+       "op": "replace",
+       "expected": {
+        "kind": "equated-with",
+        "personId": "hindu_indra",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+         }
+        ],
+        "notes": "A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+       },
+       "value": {
+        "personId": "hindu_indra",
+        "kind": "comparative-identification",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": "Comparative interpretation across changing regional traditions."
+       },
+       "reason": "Do not turn comparative reconstruction into literal identity.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "kalash_jestan",
+   "tradition": "Kalash",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Jeṣṭan",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
     }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "kalash_jestan",
+     "personId": "kalash_indr",
+     "kind": "comparative-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "Adversarial counterpart, not identity.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Demon-like counterpart of Indr, appearing as a dog.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Demon-like counterpart of Indr, appearing as a dog.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
    }
   },
   {
@@ -98743,15 +100155,16 @@
    "relations": [
     {
      "subject": "kalash_mahandeo",
-     "kind": "equated-with",
      "personId": "nuristani_moni",
+     "kind": "comparative-identification",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage.",
+     "notes": "Regional comparison; biographies remain distinct.",
      "status": "registered-target"
     },
     {
@@ -98784,7 +100197,20 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "correction:qualified-hindukush-comparison",
+     "claim": "source review correction",
+     "description": "Qualify the existing equation using the reviewed regional comparison.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [],
    "owner": "Sakra lane; do not edit here",
    "claims": {
@@ -98908,6 +100334,424 @@
       {
        "kind": "peer-reviewed-article",
        "reference": "Cacopardo, Augusto S. 'Temple of Imra, Temple of Mahandeu: a Kafir sanctuary in Kalasha cosmology.' Bulletin of the School of Oriental and African Studies 79(1), 2016: 95-116."
+      }
+     ]
+    },
+    "corrections": [
+     {
+      "id": "qualified-hindukush-comparison",
+      "previous": {
+       "kind": "equated-with",
+       "personId": "nuristani_moni",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+        }
+       ],
+       "notes": "Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "decision": {
+       "id": "qualified-hindukush-comparison",
+       "path": [
+        "relations",
+        0
+       ],
+       "op": "replace",
+       "expected": {
+        "kind": "equated-with",
+        "personId": "nuristani_moni",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+         }
+        ],
+        "notes": "Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+       },
+       "value": {
+        "personId": "nuristani_moni",
+        "kind": "comparative-identification",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+       },
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ],
+       "reason": "Qualify the existing equation using the reviewed regional comparison."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "kalash_munjem_malik",
+   "tradition": "Kalash",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Munjem Malik",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "kalash_munjem_malik",
+     "personId": "kalash_indr",
+     "kind": "comparative-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "Regional comparison.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Middle-earth deity who kills his unnamed demon father.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [
+    {
+     "id": "unnamed-father",
+     "claim": "Parent identity",
+     "description": "The reviewed account names no father.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Middle-earth deity who kills his unnamed demon father.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
+   }
+  },
+  {
+   "id": "kalash_sajigor",
+   "tradition": "Kalash",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Sajigor the Unrivalled",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Sajigor",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Sajjigor",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Shura Verin",
+     "tradition": "Kalash",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "kalasha-rom",
+     "value": "sajigór",
+     "form": "transliteration"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 5
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "kalash_sajigor",
+     "personId": "kalash_indr",
+     "kind": "comparative-identification",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Sajigor (Sajjigor) is among the mightiest 'pure' male gods of the Kalash, protector of herds and a form of Indra (titled Shura Verin, 'the unrivalled hero-Indra'); his open horse-head altars are barred to women.",
+     "citations": [
+      {
+       "kind": "scholarship",
+       "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan: History, Religion and Society in the Hindu Kush. Rome: IsIAO."
+      },
+      {
+       "kind": "scholarship",
+       "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten."
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Sakra lane; do not edit here",
+   "claims": {
+    "notes": "The prompt's 'Sajigor/Sajjgor'. An Indra-aspect onjesta ('pure') deity whose cult excludes the impure (pragata) sphere associated with women.",
+    "domains": [
+     {
+      "sphereId": "cattle-and-herds",
+      "contextTag": "lifelong",
+      "term": {
+       "value": "sajigór",
+       "script": "sajigór",
+       "rom": "sajigór"
+      },
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan."
+       }
+      ]
+     },
+     {
+      "sphereId": "war",
+      "contextTag": "lifelong",
+      "term": {
+       "value": "Shura Verin",
+       "script": "",
+       "rom": "šúra verín"
+      },
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Witzel, M. (2004). Kalash Religion."
+       }
+      ]
+     }
+    ],
+    "faculties": [
+     {
+      "id": "guard_herds",
+      "name": "guards the goats and herds of the valley",
+      "inheritability": "unique",
+      "notes": "Protector of livestock - central to the pastoral Kalash economy; one of the most powerful 'pure' (onjesta) male gods.",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan."
+       }
+      ],
+      "scopeTags": [
+       "protection"
+      ]
+     }
+    ],
+    "materialCulture": [
+     {
+      "id": "kalash_sajigor_altar",
+      "kind": "altar",
+      "name": "open horse-head altar of Sajigor",
+      "role": "Stone-plinth altar in the open, crowned with rough wooden horse-heads, where juniper is burned and goats sacrificed; forbidden to women.",
+      "notes": "His chief shrine stands where, in myth, a god 'landed' in the valley.",
+      "sources": [
+       {
+        "kind": "scholarship",
+        "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan."
+       }
+      ]
+     }
+    ],
+    "cult": {
+     "festivals": [
+      {
+       "name": "Sacrifice at the open stone altar under junipers",
+       "type": "sacrifice",
+       "cadence": "seasonal",
+       "notes": "An onjesta ('pure') Indra-aspect god of herds whose stone altar in Rumbur stands beneath old juniper, oak and cedar; goat sacrifice and the pure (onjesta) sphere exclude the impure, women included.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "A. Witzel, 'The Religions of the Hindukush'; Kalash religion ethnography"
+        }
+       ]
+      }
+     ]
+    },
+    "linguistic": {
+     "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+     "etymology": "Kalasha Sajigor (Sajigōr), a major and dangerous god whose shrine stands in the Rumbur valley, is treated by Witzel as one of the local manifestations of Indra. Witzel identifies Sajigōr with the epithet Shura Verin (Šúra Werín), which he derives from *śūra *aparendra 'the hero, the unrivalled Indra' (*śūra 'hero' + *aparendra 'Indra-without-equal'). NOTE: the etymological reconstruction attaches to the epithet Šúra Werín; the surface form 'Sajigor/Saj' itself is not given a separate native etymology by Witzel, and the worklist hint 'cf. *yajña?' is a query, not an attested derivation, so it is deliberately not asserted here.",
+     "sources": [
+      {
+       "kind": "scholarly-monograph",
+       "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In The Vedas: Texts, Language and Ritual, Groningen: Egbert Forsten, 2004 (worklist: Witzel 2004, 'Kalash Religion'): Sajigōr 'also called Šúra Werín (< *śūra *aparendra, the hero, the unrivalled Indra)'."
+      },
+      {
+       "kind": "scholarly-monograph",
+       "reference": "Cacopardo, Alberto M. & Augusto S. Cacopardo. Gates of Peristan: History, Religion and Society in the Hindu Kush. Rome: IsIAO, 2001 (on Sajigōr as a principal Kalasha deity)."
       }
      ]
     }
@@ -99943,18 +101787,6 @@
     },
     {
      "status": "awaiting-research",
-     "value": "Hanullim",
-     "tradition": "Korean",
-     "form": "name-or-alias"
-    },
-    {
-     "status": "awaiting-research",
-     "value": "Sangje",
-     "tradition": "Korean",
-     "form": "name-or-alias"
-    },
-    {
-     "status": "awaiting-research",
      "script": "korean",
      "value": "환인",
      "form": "transliteration"
@@ -99978,6 +101810,32 @@
      ],
      "personId": "buddhist_sakra",
      "note": "Explicit identification in the Samguk yusa gloss, not a claim that all family narratives coincide."
+    },
+    {
+     "status": "unresolved",
+     "value": "Sangje",
+     "tradition": "Korean",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+       "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
+      }
+     ],
+     "note": "A divine title used in several religious contexts; the reviewed article does not establish this identification."
+    },
+    {
+     "status": "unresolved",
+     "value": "Hanullim",
+     "tradition": "Korean",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+       "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+      }
+     ],
+     "note": "Legacy alias; the medieval passage does not establish this modern religious identification."
     }
    ],
    "categories": {
@@ -100114,6 +101972,18 @@
        "kind": "primary",
        "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
        "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+      }
+     ]
+    },
+    {
+     "id": "correction:contextual-divine-titles",
+     "claim": "source review correction",
+     "description": "Retain unverified identifications as explicitly unresolved name entries instead of unqualified aliases.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+       "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
       }
      ]
     }
@@ -100378,6 +102248,54 @@
          "kind": "primary",
          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+       ]
+      }
+     },
+     {
+      "id": "contextual-divine-titles",
+      "previous": {
+       "primary": "Hwanin",
+       "alt": [
+        "Hanullim",
+        "Sangje"
+       ],
+       "transliterations": {
+        "korean": "환인",
+        "hanja": "桓因"
+       }
+      },
+      "decision": {
+       "id": "contextual-divine-titles",
+       "path": [
+        "name"
+       ],
+       "op": "replace",
+       "expected": {
+        "primary": "Hwanin",
+        "alt": [
+         "Hanullim",
+         "Sangje"
+        ],
+        "transliterations": {
+         "korean": "환인",
+         "hanja": "桓因"
+        }
+       },
+       "value": {
+        "primary": "Hwanin",
+        "alt": [],
+        "transliterations": {
+         "korean": "환인",
+         "hanja": "桓因"
+        }
+       },
+       "reason": "Retain unverified identifications as explicitly unresolved name entries instead of unqualified aliases.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+         "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
         }
        ]
       }
@@ -103386,6 +105304,20 @@
      "kind": "parent",
      "personId": "nuristani_disani",
      "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_bagisht",
+     "personId": "nuristani_indra_southern",
+     "kind": "nephew-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -103646,15 +105578,30 @@
     },
     {
      "subject": "nuristani_disani",
-     "kind": "equated-with",
-     "personId": "kalash_dezau",
+     "kind": "disputed-identification",
+     "personId": "kalash_dezalik",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik.",
+     "notes": "The comparison concerns Nirmali, a legacy alias whose merger needs separate verification.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_disani",
+     "personId": "nuristani_indra_southern",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "accountId": "southern-indra-parentage",
      "status": "registered-target"
     }
    ],
@@ -103674,8 +105621,46 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
-   "parentageAccounts": [],
+   "variants": [
+    {
+     "id": "correction:redirect-qualified-birth-goddess-comparison",
+     "claim": "source review correction",
+     "description": "Dezau himself is not the childbirth goddess.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
+   "parentageAccounts": [
+    {
+     "id": "southern-indra-parentage",
+     "label": "Southern Nuristani account: Indra",
+     "parents": [
+      {
+       "personId": "nuristani_indra_southern",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
     "notes": "The prompt's 'Disani the fertility goddess'. Kamviri Disâni, Prasun Dízane; cognate with Kalash Dizane/Dezalik. Parentage varies; parentId links to Imra per the dominant account.",
@@ -103822,7 +105807,62 @@
        "reference": "R. F. Strand, Nuristani Etymological Lexicon / NurED, s.v. Disani [dialect forms; rejection of the di+saňi folk etymology]"
       }
      ]
-    }
+    },
+    "corrections": [
+     {
+      "id": "redirect-qualified-birth-goddess-comparison",
+      "previous": {
+       "kind": "equated-with",
+       "personId": "kalash_dezau",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+        }
+       ],
+       "notes": "Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+      },
+      "decision": {
+       "id": "redirect-qualified-birth-goddess-comparison",
+       "path": [
+        "relations",
+        2
+       ],
+       "op": "replace",
+       "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_dezau",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+         }
+        ],
+        "notes": "Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+       },
+       "value": {
+        "kind": "disputed-identification",
+        "personId": "kalash_dezalik",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": "The comparison concerns Nirmali, a legacy alias whose merger needs separate verification."
+       },
+       "reason": "Dezau himself is not the childbirth goddess.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ]
+      }
+     }
+    ]
    }
   },
   {
@@ -103899,7 +105939,7 @@
     },
     "siblings": {
      "status": "awaiting-research",
-     "present": 2
+     "present": 3
     },
     "descendants": {
      "status": "awaiting-research",
@@ -103957,6 +105997,20 @@
      "kind": "sibling",
      "personId": "nuristani_moni",
      "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_gish",
+     "personId": "nuristani_indra_southern",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
      "status": "registered-target"
     }
    ],
@@ -104456,6 +106510,164 @@
    }
   },
   {
+   "id": "nuristani_indra_southern",
+   "tradition": "Nuristani",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Indra in southern Nuristani accounts",
+     "tradition": "Nuristani",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "nuristani_indra_southern",
+     "personId": "nuristani_pano",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_indra_southern",
+     "personId": "nuristani_disani",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_indra_southern",
+     "personId": "nuristani_gish",
+     "kind": "sibling",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_indra_southern",
+     "personId": "nuristani_bagisht",
+     "kind": "uncle-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Divine patriarch distinguished from Kalash Indr.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Divine patriarch distinguished from Kalash Indr.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
+   }
+  },
+  {
    "id": "nuristani_moni",
    "tradition": "Nuristani",
    "names": [
@@ -104585,15 +106797,16 @@
     },
     {
      "subject": "nuristani_moni",
-     "kind": "equated-with",
      "personId": "kalash_mahandeo",
+     "kind": "comparative-identification",
      "sources": [
       {
        "kind": "secondary",
-       "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
       }
      ],
-     "notes": "Reciprocal of kalash_mahandeo.equated-with — Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage.",
+     "notes": "Regional comparison; biographies remain distinct.",
      "status": "registered-target"
     }
    ],
@@ -104613,7 +106826,20 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "correction:qualified-hindukush-comparison",
+     "claim": "source review correction",
+     "description": "Qualify the existing equation using the reviewed regional comparison.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [],
    "owner": "Shiva discovery frontier; research unfinished",
    "claims": {
@@ -104699,7 +106925,183 @@
        "reference": "J. Halfmann, 'Nuristani Theonyms in Light of Historical Phonology' (2022) [Moni/Mandi < Skt. Mahādeva]"
       }
      ]
+    },
+    "corrections": [
+     {
+      "id": "qualified-hindukush-comparison",
+      "previous": {
+       "kind": "equated-with",
+       "personId": "kalash_mahandeo",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+        }
+       ],
+       "notes": "Reciprocal of kalash_mahandeo.equated-with — Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "decision": {
+       "id": "qualified-hindukush-comparison",
+       "path": [
+        "relations",
+        2
+       ],
+       "op": "replace",
+       "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_mahandeo",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+         }
+        ],
+        "notes": "Reciprocal of kalash_mahandeo.equated-with — Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+       },
+       "value": {
+        "personId": "kalash_mahandeo",
+        "kind": "comparative-identification",
+        "sources": [
+         {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+         }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+       },
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+         "url": "https://d-nb.info/1220734829/34"
+        }
+       ],
+       "reason": "Qualify the existing equation using the reviewed regional comparison."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "nuristani_pano",
+   "tradition": "Nuristani",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Pano",
+     "tradition": "Nuristani",
+     "form": "name-or-alias"
     }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "nuristani_pano",
+     "kind": "parent",
+     "personId": "nuristani_indra_southern",
+     "status": "registered-target"
+    },
+    {
+     "subject": "nuristani_pano",
+     "personId": "nuristani_indra_southern",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Son of Indra in southern Nuristani accounts.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+       "url": "https://d-nb.info/1220734829/34"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Son of Indra in southern Nuristani accounts.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
    }
   },
   {
@@ -110247,6 +112649,901 @@
       }
      ]
     }
+   }
+  },
+  {
+   "id": "zoroastrian_aka_manah",
+   "tradition": "Zoroastrian",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Aka Manah",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Akoman",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Akem Manah",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Akvan",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "Avestan",
+     "value": "Akəm Manah",
+     "form": "transliteration"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "etymology",
+     "value": "'Evil thought' — the exact negative of Vohu Manah, 'good thought'. The pair is one phrase with one word changed.",
+     "form": "transliteration"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 6
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 3
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "zoroastrian_aka_manah",
+     "kind": "opposes",
+     "personId": "zoroastrian_vohu_manah",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment: Akoman of 'evil thought' opposes Wahman of 'good thought'."
+      }
+     ],
+     "notes": "Non-symmetric by construction, so nothing is written onto the pre-existing Amesha Spenta record. The corpus held Vohu Manah with eight relations and not the one being he is defined against.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_aka_manah",
+     "personId": "zoroastrian_indra_daeva",
+     "kind": "mythic-origin-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Textual origin; no biological default.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_aka_manah",
+     "personId": "zoroastrian_waran",
+     "kind": "mythic-origin-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Textual origin; no biological default.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_aka_manah",
+     "personId": "zoroastrian_az",
+     "kind": "mythic-origin-of",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Textual origin; no biological default.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Aka Manah is the arch-daeva of evil thought, the Vendidad's opposite of the Amesha Spenta Vohu Manah.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatments of the daevas in Zoroastrian scripture and of the Vendidad's arch-daeva lists."
+      }
+     ],
+     "weight": "high"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Some enumerations of the six substitute Nasu for this figure. The variation is recorded here and on the Nasu record rather than being resolved, because the texts do not resolve it.",
+    "domains": [
+     {
+      "sphereId": "evil-thought",
+      "contextTag": "lifelong",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment of Akoman as the daeva of evil thought."
+       }
+      ]
+     }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "lifecycle": [
+     {
+      "typeStatus": "deity",
+      "era": "primordial",
+      "eraOrdering": 0,
+      "startEvent": "The arch-daeva of evil thought, set against Vohu Manah of good thought. The six arch-daevas of Vendidad 10.9 and 19.43 are the opposites of the six Amesha Spentas, each moral principle opposed by its immoral counterpart.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment: the arch-daevas mentioned in Vendidad 10.9 and 19.43 are identified as the opposites of the Amesha Spentas, with the moral principles represented by each Amesha Spenta opposed by immoral principles; Akoman of 'evil thought' opposes Wahman or Bahman of 'good thought'."
+       }
+      ]
+     }
+    ],
+    "epithets": []
+   }
+  },
+  {
+   "id": "zoroastrian_az",
+   "tradition": "Zoroastrian",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Az",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Az",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Azi",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Ahz",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "Avestan",
+     "value": "Āzi",
+     "form": "transliteration"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "etymology",
+     "value": "'Greed, avarice, concupiscence'. Not to be confused with aži, 'serpent', the first element of Azhi Dahaka.",
+     "form": "transliteration"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 6
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "zoroastrian_az",
+     "kind": "devourer-of",
+     "personId": "zoroastrian_aeshma",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment of Az devouring Aeshma at the end."
+      }
+     ],
+     "notes": "Reciprocal of the edge on the Aeshma record.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_az",
+     "personId": "zoroastrian_aka_manah",
+     "kind": "parent",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy.",
+     "accountId": "denkard-akoman-origin",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Az is the Zoroastrian daeva of greed and avarice, who devours the demon of wrath at the end.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatments of Az and of the daevas in Zoroastrian scripture."
+      }
+     ],
+     "weight": "medium"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "denkard-akoman-origin",
+     "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+     "parents": [
+      {
+       "personId": "zoroastrian_aka_manah",
+       "kind": "parent",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+         "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+       ],
+       "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    }
+   ],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Sex is recorded as female because the Middle Persian tradition treats Az as feminine; the Avestan noun's gender is the ground for it and the treatment consulted does not state it either way, which is why the weight on this record is medium rather than high. The figure grows enormously in Manichaean use, where Az becomes a principal power — a transmission worth noting in a corpus that already holds seven Manichaean records and did not hold this one.",
+    "domains": [
+     {
+      "sphereId": "greed-and-avarice",
+      "contextTag": "lifelong",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment of Az as the daeva of avarice and greed."
+       }
+      ]
+     }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "lifecycle": [
+     {
+      "typeStatus": "deity",
+      "era": "primordial",
+      "eraOrdering": 0,
+      "startEvent": "The daeva of avarice and greed, who in the larger theological narrative devours Aeshma himself at the end — the destructive power of wrath overcome by a greater, self-consuming evil.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment: Aeshma is uniquely positioned to be, in the end, devoured by the daeva Az (avarice, greed), an expression of the destructive power of wrath being overcome by a greater, self-consuming evil."
+       }
+      ]
+     }
+    ],
+    "epithets": []
+   }
+  },
+  {
+   "id": "zoroastrian_indra_daeva",
+   "tradition": "Zoroastrian",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Indra (the daeva)",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Indar",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Andar",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "Avestan",
+     "value": "Iṇdra",
+     "form": "transliteration"
+    },
+    {
+     "status": "awaiting-research",
+     "script": "etymology",
+     "value": "The same name as the Vedic god, which is the point of it: several of the arch-daevas carry names that are gods on the Indian side of the Indo-Iranian split.",
+     "form": "transliteration"
+    },
+    {
+     "status": "resolved",
+     "value": "Indra (Vedic)",
+     "tradition": "Hindu",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "personId": "hindu_indra",
+     "note": "Historical name comparison; biographies remain distinct."
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 6
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "zoroastrian_indra_daeva",
+     "kind": "opposes",
+     "personId": "zoroastrian_asha_vahishta",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatment: Indar opposes Ardawahisht of 'best truth'."
+      },
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Non-symmetric.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_indra_daeva",
+     "personId": "hindu_indra",
+     "kind": "name-comparison",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Shared name; historical development is disputed.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_indra_daeva",
+     "kind": "counterpart-name",
+     "personId": "hindu_indra",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_indra_daeva",
+     "personId": "zoroastrian_aka_manah",
+     "kind": "parent",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy.",
+     "accountId": "denkard-akoman-origin",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Indra is one of the six arch-daevas of the Vendidad, who freezes the minds of the righteous and is set against Asha Vahishta, and one of the three whose names have Vedic equivalents.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Reference treatments of the daevas in Zoroastrian scripture and of their Vedic correspondences."
+      }
+     ],
+     "weight": "high"
+    }
+   ],
+   "variants": [
+    {
+     "id": "iranian-indra-history",
+     "claim": "Historical interpretation",
+     "description": "Malandra does not substantiate deliberate demonization through conflict with Indo-Aryans.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    },
+    {
+     "id": "correction:factual-iranian-description",
+     "claim": "source review correction",
+     "description": "Replace editorial ingestion commentary with passage-specific claims.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    }
+   ],
+   "parentageAccounts": [
+    {
+     "id": "denkard-akoman-origin",
+     "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+     "parents": [
+      {
+       "personId": "zoroastrian_aka_manah",
+       "kind": "parent",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+         "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+       ],
+       "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    }
+   ],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Daeva expelled in Vīdēvdād 10.9. Middle Persian accounts portray Indar as diverting people from proper worship.",
+    "domains": [
+     {
+      "sphereId": "apostasy-and-frozen-thought",
+      "contextTag": "lifelong",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment of Indar as the daeva who freezes the minds of the righteous."
+       }
+      ]
+     }
+    ],
+    "faculties": [
+     {
+      "id": "divert-proper-worship",
+      "name": "Divert people from proper worship",
+      "inheritability": "none",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+        "url": "https://www.iranicaonline.org/articles/indra/"
+       }
+      ],
+      "scopeTags": [
+       "ritual"
+      ]
+     }
+    ],
+    "materialCulture": [],
+    "lifecycle": [
+     {
+      "typeStatus": "deity",
+      "era": "primordial",
+      "eraOrdering": 0,
+      "startEvent": "The arch-daeva who freezes the minds of the righteous, set against Asha Vahishta of best truth.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Reference treatment: Indar, that freezes the minds of the righteous, opposes Ardawahisht of 'best truth'; and of the six daevas opposing the Amesha Spentas, three have Vedic equivalents — Indra, Sarva and Nanghaithya."
+       }
+      ]
+     }
+    ],
+    "epithets": [],
+    "corrections": [
+     {
+      "id": "factual-iranian-description",
+      "previous": "The id is `zoroastrian_indra_daeva` and not `zoroastrian_indra`, and the primary name carries the qualifier, because the corpus already holds `hindu_indra` and a bare match would be read as the same figure. IT IS NOT THE SAME FIGURE, and the census records the sweep hit as a FALSE one. What is true, and is worth having in a registry that indexes traditions side by side, is that this name is a god on one side of the Indo-Iranian religious split and a demon on the other — together with Saurva and Nanghaithya, which makes three of the six arch-daevas Vedic gods in origin. That inversion is a fact about the two traditions, not a relation between two individuals, so it is stated here and no cross-tradition edge is drawn.",
+      "decision": {
+       "id": "factual-iranian-description",
+       "path": [
+        "notes"
+       ],
+       "op": "replace",
+       "expected": "The id is `zoroastrian_indra_daeva` and not `zoroastrian_indra`, and the primary name carries the qualifier, because the corpus already holds `hindu_indra` and a bare match would be read as the same figure. IT IS NOT THE SAME FIGURE, and the census records the sweep hit as a FALSE one. What is true, and is worth having in a registry that indexes traditions side by side, is that this name is a god on one side of the Indo-Iranian religious split and a demon on the other — together with Saurva and Nanghaithya, which makes three of the six arch-daevas Vedic gods in origin. That inversion is a fact about the two traditions, not a relation between two individuals, so it is stated here and no cross-tradition edge is drawn.",
+       "value": "Daeva expelled in Vīdēvdād 10.9. Middle Persian accounts portray Indar as diverting people from proper worship.",
+       "reason": "Replace editorial ingestion commentary with passage-specific claims.",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+         "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "zoroastrian_waran",
+   "tradition": "Zoroastrian",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Waran",
+     "tradition": "Zoroastrian",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "zoroastrian_waran",
+     "personId": "zoroastrian_aka_manah",
+     "kind": "mythic-origin-from",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Dēnkard seed account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "zoroastrian_waran",
+     "personId": "zoroastrian_aka_manah",
+     "kind": "parent",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy.",
+     "accountId": "denkard-akoman-origin",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Personification of concupiscence, listed among Akoman’s seed in the Dēnkard account reported by Malandra.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "denkard-akoman-origin",
+     "label": "Dēnkard (reported by Malandra): Akoman’s seed",
+     "parents": [
+      {
+       "personId": "zoroastrian_aka_manah",
+       "kind": "parent",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+         "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+       ],
+       "notes": "Mythic origin described as Akoman’s seed, not a biological default or Vedic genealogy."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+       "url": "https://www.iranicaonline.org/articles/indra/"
+      }
+     ]
+    }
+   ],
+   "owner": "Shiva discovery frontier; research unfinished",
+   "claims": {
+    "notes": "Personification of concupiscence, listed among Akoman’s seed in the Dēnkard account reported by Malandra.",
+    "domains": [],
+    "faculties": [],
+    "materialCulture": []
    }
   }
  ],
