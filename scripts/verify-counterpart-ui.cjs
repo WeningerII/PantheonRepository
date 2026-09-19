@@ -36,17 +36,28 @@ async function verifyCounterpartUI(page, base, people) {
   await open(p);
   const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
   await select.waitFor({state:'visible'});
-  const accountPanel=page.locator('.lineage-account').filter({has:select});
-  assert.equal(await accountPanel.count(),1,`exact account control must identify one panel for ${p.id}`);
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
-   const canvas=page.locator('.lineage-canvas');
-   for(const r of a.parents)assert.ok((await canvas.innerText()).includes(people[r.personId].name.primary));
-   const accountText=await accountPanel.innerText();
-   for(const source of a.sources)assert.ok(accountText.includes(source.reference));
+   // A selection schedules React state/layout work. Observe the selected value,
+   // its enclosing evidence panel and the tree in one committed DOM snapshot.
+   // Do not compose a document-scoped role locator inside a scoped `has` filter.
+   await page.waitForFunction(accountSelectionReady, {
+    label:`Parentage account for ${p.name.primary}`, accountId:a.id,
+    parents:a.parents.map(r=>people[r.personId].name.primary),
+    sources:a.sources.map(s=>s.reference),
+   });
    accountCount++;
   }
  }
  console.log(`counterpart UI: ${targets.length} keyboard navigations and ${accountCount} account selections passed`);
 }
-module.exports={verifyCounterpartUI};
+function accountSelectionReady(expected, doc = document) {
+ const controls=Array.from(doc.querySelectorAll('select')).filter(s=>s.getAttribute('aria-label')===expected.label);
+ if(controls.length!==1 || controls[0].value!==expected.accountId)return false;
+ const panel=controls[0].closest('.lineage-account');
+ const canvas=doc.querySelector('.lineage-canvas');
+ if(!panel || !canvas)return false;
+ const cards=Array.from(canvas.querySelectorAll('.lineage-card-name')).map(n=>n.textContent);
+ return expected.parents.every(name=>cards.includes(name)) && expected.sources.every(reference=>panel.textContent.includes(reference));
+}
+module.exports={verifyCounterpartUI,accountSelectionReady};
