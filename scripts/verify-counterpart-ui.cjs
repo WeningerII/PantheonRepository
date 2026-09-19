@@ -1,12 +1,16 @@
 // Browser regression checks over authored targets, without figure-specific selectors.
 const assert = require('node:assert/strict');
 async function verifyCounterpartUI(page, base, people) {
- const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
+ const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`, {waitUntil:'domcontentloaded'}); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
  const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
  let targetCount=0;
  console.log(`counterpart UI: starting ${targets.length} authored name targets`);
  for(const {p,n} of targets){
+  // Each authored pair is an independent browser case; preserve all three
+  // in-case navigation paths without accumulating prior Browse/graph state.
+  await page.goto('about:blank');
+  console.log(`counterpart UI: target ${targetCount+1}/${targets.length} ${p.id} -> ${n.personId}`);
   await open(p);
   const a=page.locator('.section-names a.name-rec-value').filter({hasText:n.value});
   assert.equal(await a.count(),1);
@@ -26,7 +30,7 @@ async function verifyCounterpartUI(page, base, people) {
    await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   }
   if(outgoing||incoming){
-   await open(p);await page.getByRole('button',{name:'Show in graph',exact:true}).click();
+   await open(p);await page.locator('.detail-bar').getByRole('button',{name:'Show in graph',exact:true}).click();
    await page.locator('.graph-modes').getByRole('button',{name:'All',exact:true}).click();
    const neighbor=page.locator(`a.graph-focus-neighbor[href="${targetHref}"]`).first();
    await neighbor.focus();await neighbor.press('Enter');
@@ -38,8 +42,10 @@ async function verifyCounterpartUI(page, base, people) {
  let accountCount=0;
  console.log('counterpart UI: starting all authored parentage accounts');
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
+  await page.goto('about:blank');
+  console.log(`counterpart UI: accounts for ${p.id}`);
   await open(p);
-  const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
+  const select=page.locator('.lineage-account').getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
   await select.waitFor({state:'visible'});
   const accountPanel=page.locator('.lineage-account').filter({has:select});
   assert.equal(await accountPanel.count(),1,`exact account control must identify one panel for ${p.id}`);
