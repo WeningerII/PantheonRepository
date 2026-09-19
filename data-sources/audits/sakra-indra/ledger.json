@@ -39,7 +39,14 @@
   "buddhist_rohini_sakra",
   "hindu_raji",
   "hindu_dhuti_aditya",
-  "hindu_savitri_aditya"
+  "hindu_savitri_aditya",
+  "buddhist_canda_sudha",
+  "buddhist_suriya_sudha",
+  "buddhist_treasurer_sudha",
+  "buddhist_canda_human_sudha",
+  "buddhist_suriya_human_sudha",
+  "buddhist_matali_human_sudha",
+  "buddhist_pancasikha_human_sudha"
  ],
  "relationshipPattern": "adaptation|comparative|regional|equat|interpret|syncret|counterpart|identified|^(father|mother|parent|son|daughter|child|spouse|consort|lover|sibling|brother|sister|former-spouse|ancestor|descendant)(-| |$)",
  "meaning": "Presence and registered-target are structural observations, not source review. Added does not mean an entire category is complete.",
@@ -1279,12 +1286,25 @@
      "value": "Āsā",
      "tradition": "Buddhist",
      "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Hope",
+     "tradition": "Buddhist",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "note": "English rendering in Francis’s translation; an alias on this record."
     }
    ],
    "categories": {
     "names": {
      "status": "added",
-     "present": 1,
+     "present": 2,
      "reviewComplete": false,
      "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_asa",
      "note": "Reviewed cited passage for the authored claim; not a complete category review."
@@ -1393,6 +1413,273 @@
       }
      ],
      "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_canda_human_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Human ancestor reborn as Canda (Jātaka 535)",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_human_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_human_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_human_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_human_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_canda_human_sudha",
+     "kind": "parent",
+     "personId": "buddhist_treasurer_sudha",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_canda_human_sudha",
+     "personId": "buddhist_treasurer_sudha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_canda_human_sudha",
+     "personId": "buddhist_canda_sudha",
+     "kind": "reborn-as",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "Earlier human birth in this story, not parentage of the heavenly figure.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_canda_human_sudha",
+     "personId": "buddhist_suriya_human_sudha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Human forebear in Kosiya’s family. His charitable conduct leads to a deva rebirth in the Sudhābhojana narrative; his personal human name is not supplied.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_canda_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Canda of the Sudhābhojana Jātaka",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_canda_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_canda_sudha",
+     "personId": "buddhist_sakra",
+     "kind": "accompanies",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Deva who joins Sakka’s intervention to turn the miser Kosiya toward generosity. The story gives him an earlier human birth in Kosiya’s ancestral line.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
     }
    ],
    "variants": [],
@@ -1649,12 +1936,25 @@
      "value": "Hirī",
      "tradition": "Buddhist",
      "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Honour",
+     "tradition": "Buddhist",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "note": "English rendering in Francis’s translation; an alias on this record."
     }
    ],
    "categories": {
     "names": {
      "status": "added",
-     "present": 1,
+     "present": 2,
      "reviewComplete": false,
      "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_hiri",
      "note": "Reviewed cited passage for the authored claim; not a complete category review."
@@ -1833,7 +2133,7 @@
     },
     "partners": {
      "status": "added",
-     "present": 1,
+     "present": 2,
      "reviewComplete": false,
      "evidence": "data-sources/relationships/sakra-indra-network.json#buddhist_kosiya_sudha/relations"
     },
@@ -1884,6 +2184,23 @@
    "relations": [
     {
      "subject": "buddhist_kosiya_sudha",
+     "kind": "spouse",
+     "externalRef": {
+      "name": "Unnamed wife in Kosiya’s human life",
+      "tradition": "Buddhist"
+     },
+     "notes": "The opening mentions a human wife and children without personal names; this wife is not Hirī.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "status": "unresolved-reference"
+    },
+    {
+     "subject": "buddhist_kosiya_sudha",
      "personId": "buddhist_hiri",
      "kind": "spouse",
      "sources": [
@@ -1894,6 +2211,20 @@
       }
      ],
      "notes": "Marriage follows Kosiya’s heavenly rebirth.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_kosiya_sudha",
+     "personId": "buddhist_pancasikha_human_sudha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "accountId": "j535-human-family",
      "status": "registered-target"
     }
    ],
@@ -1911,7 +2242,32 @@
     }
    ],
    "variants": [],
-   "parentageAccounts": []
+   "parentageAccounts": [
+    {
+     "id": "j535-human-family",
+     "label": "Jātaka 535: human family before heavenly rebirth",
+     "parents": [
+      {
+       "personId": "buddhist_pancasikha_human_sudha",
+       "kind": "father",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+         "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "buddhist_magha",
@@ -2256,6 +2612,156 @@
    "parentageAccounts": []
   },
   {
+   "id": "buddhist_matali_human_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Human ancestor reborn as Mātali (Jātaka 535)",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_matali_human_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_matali_human_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_matali_human_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_matali_human_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_matali_human_sudha",
+     "kind": "parent",
+     "personId": "buddhist_suriya_human_sudha",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_matali_human_sudha",
+     "personId": "buddhist_suriya_human_sudha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_matali_human_sudha",
+     "personId": "buddhist_matali",
+     "kind": "reborn-as",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "Earlier human birth in this story, not parentage of the heavenly figure.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_matali_human_sudha",
+     "personId": "buddhist_pancasikha_human_sudha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Human forebear in Kosiya’s family. His charitable conduct leads to a deva rebirth in the Sudhābhojana narrative; his personal human name is not supplied.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "buddhist_nanda_magha",
    "tradition": "Buddhist",
    "names": [
@@ -2510,6 +3016,156 @@
       }
      ],
      "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_pancasikha_human_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Human ancestor reborn as Pañcasikha (Jātaka 535)",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_pancasikha_human_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_pancasikha_human_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_pancasikha_human_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_pancasikha_human_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_pancasikha_human_sudha",
+     "kind": "parent",
+     "personId": "buddhist_matali_human_sudha",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_pancasikha_human_sudha",
+     "personId": "buddhist_matali_human_sudha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_pancasikha_human_sudha",
+     "personId": "buddhist_pancasikha",
+     "kind": "reborn-as",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "Earlier human birth in this story, not parentage of the heavenly figure.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_pancasikha_human_sudha",
+     "personId": "buddhist_kosiya_sudha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "The human family account only.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Human forebear in Kosiya’s family. His charitable conduct leads to a deva rebirth in the Sudhābhojana narrative; his personal human name is not supplied.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
     }
    ],
    "variants": [],
@@ -2838,12 +3494,25 @@
      "value": "Saddhā",
      "tradition": "Buddhist",
      "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Faith",
+     "tradition": "Buddhist",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "note": "English rendering in Francis’s translation; an alias on this record."
     }
    ],
    "categories": {
     "names": {
      "status": "added",
-     "present": 1,
+     "present": 2,
      "reviewComplete": false,
      "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_saddha",
      "note": "Reviewed cited passage for the authored claim; not a complete category review."
@@ -3675,12 +4344,25 @@
      "value": "Sirī, daughter of Sakka",
      "tradition": "Buddhist",
      "form": "name-or-alias"
+    },
+    {
+     "status": "same-record",
+     "value": "Glory",
+     "tradition": "Buddhist",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "note": "English rendering in Francis’s translation; an alias on this record."
     }
    ],
    "categories": {
     "names": {
      "status": "added",
-     "present": 1,
+     "present": 2,
      "reviewComplete": false,
      "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_siri_sakra",
      "note": "Reviewed cited passage for the authored claim; not a complete category review."
@@ -4420,6 +5102,273 @@
    "parentageAccounts": []
   },
   {
+   "id": "buddhist_suriya_human_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Human ancestor reborn as Suriya (Jātaka 535)",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_human_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_human_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_human_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_human_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_suriya_human_sudha",
+     "kind": "parent",
+     "personId": "buddhist_canda_human_sudha",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_suriya_human_sudha",
+     "personId": "buddhist_canda_human_sudha",
+     "kind": "father",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_suriya_human_sudha",
+     "personId": "buddhist_suriya_sudha",
+     "kind": "reborn-as",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "Earlier human birth in this story, not parentage of the heavenly figure.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_suriya_human_sudha",
+     "personId": "buddhist_matali_human_sudha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Human forebear in Kosiya’s family. His charitable conduct leads to a deva rebirth in the Sudhābhojana narrative; his personal human name is not supplied.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_suriya_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Suriya of the Sudhābhojana Jātaka",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_suriya_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_suriya_sudha",
+     "personId": "buddhist_sakra",
+     "kind": "accompanies",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Deva who joins Sakka’s intervention to turn the miser Kosiya toward generosity. The story gives him an earlier human birth in Kosiya’s ancestral line.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "buddhist_suriyavaccasa",
    "tradition": "Buddhist",
    "names": [
@@ -4821,6 +5770,137 @@
       }
      ],
      "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
+   "id": "buddhist_treasurer_sudha",
+   "tradition": "Buddhist",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Charitable treasurer of the Sudhābhojana Jātaka",
+     "tradition": "Buddhist",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_treasurer_sudha"
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_treasurer_sudha"
+    },
+    "description": {
+     "status": "added",
+     "present": true,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_treasurer_sudha"
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "added",
+     "present": 1,
+     "reviewComplete": false,
+     "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_treasurer_sudha"
+    }
+   },
+   "relations": [
+    {
+     "subject": "buddhist_treasurer_sudha",
+     "personId": "buddhist_sakra",
+     "kind": "reborn-as",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "Earlier human birth in this story, not parentage of the heavenly figure.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "buddhist_treasurer_sudha",
+     "personId": "buddhist_canda_human_sudha",
+     "kind": "father-of",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "notes": "",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Human forebear in Kosiya’s family. His charitable conduct leads to a deva rebirth in the Sudhābhojana narrative; his personal human name is not supplied.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Sudhābhojana Jātaka 535, H. T. Francis translation, pp. 203–204 and 210–211",
+       "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+      }
+     ],
+     "weight": "primary"
     }
    ],
    "variants": [],
@@ -41266,14 +42346,14 @@
   {
    "names": [
     "Suvīra",
-    "Erāvana",
-    "Vissakamma",
-    "Sunetta",
-    "Rohiṇī",
     "Kodhabhakkha"
    ],
-   "status": "awaiting-research",
-   "disposition": "Sakka dictionary cross-references; no unsupported family edge or identity transfer."
+   "status": "reviewed-and-adequate",
+   "disposition": "SN11.1 and SN11.22 read through SuttaCentral’s official text repository after website/alternate URLs failed. Suvira is a godling commanded by Sakka; biological fatherhood is not established by this translation. The anger-eating spirit is a narrative adversary, not a family member. Retained as narrative discoveries; no invented parentage or native personal-name assertion.",
+   "evidence": [
+    "sn11-1",
+    "sn11-22"
+   ]
   },
   {
    "names": [
@@ -41283,8 +42363,8 @@
     "Pañcasikha",
     "Kosiya"
    ],
-   "status": "awaiting-research",
-   "disposition": "Jātaka 535 human ancestry is distinct from deva identities; requires account-specific prior-life modelling and fuller primary reading."
+   "status": "added",
+   "disposition": "Primary Jataka535 opening read; five human forebears and two deva endpoints added. Fatherhood stays on human records; rebirth links connect heavenly bearers."
   },
   {
    "names": [
@@ -41404,6 +42484,22 @@
    ],
    "status": "cross-lane-dependency",
    "disposition": "Marici spiritual-son endpoint authored; Brahma reciprocal belongs to the shared ancestor owner. No biological defaults added."
+  },
+  {
+   "names": [
+    "Unnamed human wife and children of Kosiya"
+   ],
+   "status": "not-attested-in-reviewed-sources",
+   "disposition": "Human wife and children are attested, but their personal names are not. Wife retained as unresolved external reference. Narada is an arbitrating ascetic, not a genealogical intermediary; no identity with the Hindu namesake inferred.",
+   "evidence": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+  },
+  {
+   "names": [
+    "Nārada in Jātaka 535"
+   ],
+   "status": "reviewed-and-adequate",
+   "disposition": "Named ascetic arbitrating the contest; not a genealogical intermediary. No identity with the Hindu namesake inferred. Retained as a narrative-only discovery.",
+   "evidence": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
   }
  ],
  "sourceBlockers": [
@@ -41424,7 +42520,9 @@
    "attempts": [
     "Archive book identifier thirtysevennatsa00temp and fulltext",
     "Archive fulltext thirtysevennats00temp",
-    "Title/author search"
+    "Title/author search",
+    "https://archive.org/advancedsearch.php?q=title%3A%22thirty-seven%20nats%22&output=json",
+    "https://openlibrary.org/search.json?title=The%20Thirty-Seven%20Nats&author=Temple&limit=3"
    ],
    "blockedClaims": [
     "Burmese primary name, iconography, nat membership and family"
