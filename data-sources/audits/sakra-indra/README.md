@@ -30,3 +30,12 @@ This dependency remains open until the implementation is incorporated and tested
 Every generated inventory category starts as awaiting-research. Only an explicit
 review decision changes it. Read passages, not existing citation labels, establish
 review. Rebirth is not parentage. No default parent is inferred from an identity.
+
+## Implementation update
+
+Shared PR 145 has been inspected and incorporated locally at e80f3e9. The lane
+now authors exact-precondition corrections in
+`data-sources/corrections/sakra-indra-network.json`. The dependency is not merely
+documented: final-pass values and retained prior evidence have dedicated tests.
+Merge/deployment verification remains a separate gate. The complete current
+review limitations are in `docs/sakra-indra-counterpart-audit.md`.

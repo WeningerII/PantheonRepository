@@ -1,0 +1,692 @@
+{
+  "buddhist_sakra": [
+    {
+      "id": "weapon-evidence",
+      "path": [
+        "faculties",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "wield-vajra-thunderbolt",
+        "name": "Hurl the thunderbolt against the asuras",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "inheritability": "none",
+        "notes": "Leads the devas in war on the asuras.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Dhajagga-sutta (SN 11.3)"
+          }
+        ],
+        "scopeTags": [
+          "weather"
+        ]
+      },
+      "value": {
+        "id": "wield-vajra-thunderbolt",
+        "name": "Bear a thunderbolt weapon",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "inheritability": "none",
+        "notes": "The dictionary names vajirāvudha as his weapon. This does not establish weather control.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "scopeTags": []
+      },
+      "reason": "SN 11.3 concerns standards; replace the misattributed assertion with the dictionary’s weapon notice.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "office-bearer",
+      "path": [
+        "faculties",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "rule-tavatimsa",
+        "name": "Rule the Heaven of the Thirty-Three gods",
+        "term": {
+          "value": "त्रायस्त्रिंश",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "trāyastriṃśa"
+        },
+        "inheritability": "none",
+        "notes": "Sakka succeeds another deity who becomes the new Sakka.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Sakka-saṃyutta (SN 11)"
+          }
+        ],
+        "scopeTags": [
+          "kingship"
+        ]
+      },
+      "value": {
+        "id": "rule-tavatimsa",
+        "name": "Rule the Heaven of the Thirty-Three gods",
+        "term": {
+          "value": "त्रायस्त्रिंश",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "trāyastriṃśa"
+        },
+        "inheritability": "none",
+        "notes": "Sakka rules Tāvatimsa; the office is occupied across different births.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "scopeTags": [
+          "kingship"
+        ]
+      },
+      "reason": "An office held across births should not be expressed as one uninterrupted biography.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "protector-context",
+      "path": [
+        "faculties",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "protect-the-dharma",
+        "name": "Guard the Buddha and protect the Dharma",
+        "term": {
+          "value": "धर्मपाल",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "dharmapāla"
+        },
+        "inheritability": "none",
+        "notes": "Aids the Buddha; venerated as a Bodhisattva.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Sakka-saṃyutta (SN 11)"
+          }
+        ],
+        "scopeTags": [
+          "protection"
+        ]
+      },
+      "value": {
+        "id": "protect-the-dharma",
+        "name": "Guard the Buddha and protect the Dharma",
+        "term": {
+          "value": "धर्मपाल",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "dharmapāla"
+        },
+        "inheritability": "none",
+        "notes": "Taishakuten is portrayed as a protector of Buddhism.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "JAANUS, s.v. Taishakuten, iconography at Tōji",
+            "url": "https://www.aisf.or.jp/~jaanus/deta/t/taishakuten.htm"
+          }
+        ],
+        "scopeTags": [
+          "protection"
+        ]
+      },
+      "reason": "Japanese Buddhist protector iconography does not establish that the Pali Sakka is a Bodhisattva.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "JAANUS, s.v. Taishakuten, iconography at Tōji",
+          "url": "https://www.aisf.or.jp/~jaanus/deta/t/taishakuten.htm"
+        }
+      ]
+    },
+    {
+      "id": "weapon-no-identity",
+      "path": [
+        "materialCulture",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "sakra-vajra",
+        "name": "Vajra (thunderbolt)",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "notes": "Sakka's thunderbolt weapon, basis of his identification with Vajrapāṇi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buddhaghosa commentarial tradition"
+          }
+        ]
+      },
+      "value": {
+        "id": "sakra-vajra",
+        "name": "Vajra (thunderbolt)",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "notes": "The dictionary lists a thunderbolt weapon; no identity with Vajrapāṇi is asserted here.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ]
+      },
+      "reason": "Possession of a weapon does not establish identity with another figure.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "context-hindu_indra",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sakkapañha Sutta, Dīgha Nikāya 21; Saṃyutta Nikāya 11 (Sakkasaṃyutta)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sakka' (1937)"
+          }
+        ],
+        "notes": "Canon keeps the name Śakra/Sakka and the deva-kingship on Sumeru but moralizes him: the soma-drinking storm-killer becomes a virtuous, mortal stream-enterer who reveres the Buddha."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "notes": "Related divine conceptions with shared epithets; independent Buddhist and Hindu narratives."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "context-korean_hwanin",
+      "path": [
+        "relations",
+        5
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "korean_hwanin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk Yusa I (1281), Tangun myth: Hwanin glossed 謂帝釋也 ('that is, Śakra/Jeseok')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James H. Grayson, Korea: A Religious History (2002)"
+          }
+        ],
+        "notes": "Reciprocal of korean_hwanin.equated-with — The monk Iryeon explicitly glosses the heavenly ruler Hwanin as Jeseok (Śakra), Buddhicizing the foundation myth; the native figure keeps supreme-sky sovereignty that exceeds Śakra's limited deva-kingship."
+      },
+      "value": {
+        "kind": "identified-in-text",
+        "personId": "korean_hwanin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The Samguk yusa explicitly glosses Hwanin as Śakra."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "context-chinese_jade_emperor",
+      "path": [
+        "relations",
+        4
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "chinese_jade_emperor",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henri Maspero, Taoism and Chinese Religion (trans. Kierman, 1981), 'The Mythology of Modern China' — Buddhists identify the Jade Emperor with Indra/Dìshì (帝釋)"
+          }
+        ],
+        "notes": "Reciprocal of chinese_jade_emperor.equated-with — Chinese Buddhists read the folk-Daoist supreme Yuhuang as Śakra (Dìshì) ruling Trāyastriṃśa, fitting him under the Buddhas; Daoist theology rejects the demotion — the equation lives in popular religion only."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "chinese_jade_emperor",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+            "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+          }
+        ],
+        "notes": "Legacy identification awaits verification of its cited Maspero passage. The reviewed Jade Emperor scripture supplies an independent manifestation account."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+          "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+        }
+      ]
+    }
+  ],
+  "hindu_indra": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sakkapañha Sutta, Dīgha Nikāya 21; Saṃyutta Nikāya 11 (Sakkasaṃyutta)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sakka' (1937)"
+          }
+        ],
+        "notes": "Reciprocal of buddhist_sakra.equated-with — Canon keeps the name Śakra/Sakka and the deva-kingship on Sumeru but moralizes him: the soma-drinking storm-killer becomes a virtuous, mortal stream-enterer who reveres the Buddha."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "notes": "Related divine conceptions; the Buddhist family is not the Hindu genealogy."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    }
+  ],
+  "korean_hwanin": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk Yusa I (1281), Tangun myth: Hwanin glossed 謂帝釋也 ('that is, Śakra/Jeseok')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James H. Grayson, Korea: A Religious History (2002)"
+          }
+        ],
+        "notes": "The monk Iryeon explicitly glosses the heavenly ruler Hwanin as Jeseok (Śakra), Buddhicizing the foundation myth; the native figure keeps supreme-sky sovereignty that exceeds Śakra's limited deva-kingship."
+      },
+      "value": {
+        "kind": "identified-in-text",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Identification in Iryeon’s gloss; the foundation genealogy remains its own narrative."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "chinese_jade_emperor": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henri Maspero, Taoism and Chinese Religion (trans. Kierman, 1981), 'The Mythology of Modern China' — Buddhists identify the Jade Emperor with Indra/Dìshì (帝釋)"
+          }
+        ],
+        "notes": "Chinese Buddhists read the folk-Daoist supreme Yuhuang as Śakra (Dìshì) ruling Trāyastriṃśa, fitting him under the Buddhas; Daoist theology rejects the demotion — the equation lives in popular religion only."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+            "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+          }
+        ],
+        "notes": "The legacy equation is not established by the reviewed scripture; its Maspero passage remains unverified."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+          "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+        }
+      ]
+    }
+  ],
+  "mongol_qormusta": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "syncretism",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walther Heissig, The Religions of Mongolia (1980): Qormusta renders Indra/Śakra in Mongolian Buddhist translation literature"
+          }
+        ],
+        "notes": "Mongolian Buddhist translators used Qormusta Tengri for Śakra, king of the gods on Sumeru, fusing the Iranian-derived sky-chief with the deva-king; his headship of the 99 tngri exceeds Śakra's station."
+      },
+      "value": {
+        "kind": "comparative-identification",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walther Heissig, The Religions of Mongolia (1980), pp. 49–50",
+            "url": "https://archive.org/stream/bub_gb_OzDMbpw7EecC/bub_gb_OzDMbpw7EecC_djvu.txt"
+          }
+        ],
+        "notes": "Heissig discusses possible Indra influence alongside Iranian derivation and an Esrua/Brahma equation."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Walther Heissig, The Religions of Mongolia (1980), pp. 49–50",
+          "url": "https://archive.org/stream/bub_gb_OzDMbpw7EecC/bub_gb_OzDMbpw7EecC_djvu.txt"
+        }
+      ]
+    }
+  ],
+  "korean_hwanung": [
+    {
+      "id": "unnamed-seals",
+      "path": [
+        "lifecycle",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "deity",
+        "startEvent": "descent-to-Mt-Taebaek-with-three-heavenly-seals",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Asked his father Hwanin permission to descend to earth and live among humans; granted permission with three heavenly seals (bell, mirror, sword) and 3,000 followers. Descended to Mt. Taebaek (or Mt. Baekdu) and established the sinsi (\"divine city\") at the sandalwood tree (Sindansu)."
+      },
+      "value": {
+        "typeStatus": "deity",
+        "startEvent": "descent-to-Mt-Taebaek-with-three-heavenly-seals",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Hwanung descends with three thousand followers and three heavenly seals to the sacred tree on Mount Taebaek."
+      },
+      "reason": "The chronicle does not identify the three seals as bell, mirror and sword.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-seals-image",
+      "path": [
+        "iconography",
+        "attributes",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "three-heavenly-seals",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Bell (jong), mirror (geong), and sword (geom) — granted by Hwanin as the regalia of divine kingship. Compare Japanese imperial regalia (mirror-sword-jewel): a shared East Asian sacral-kingship motif."
+      },
+      "value": {
+        "id": "three-heavenly-seals",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Three heavenly seals granted by Hwanin; their individual forms are not specified in the chronicle."
+      },
+      "reason": "Remove the unsupported list and comparison with Japanese regalia.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "korean_ungnyeo": [
+    {
+      "id": "transformation-duration",
+      "path": [
+        "lifecycle",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "mortal",
+        "startEvent": "transformation-from-bear-into-woman",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Originally a bear (one of two — bear and tiger — that came to Hwanung praying to be made human). Endured 100 days in a cave avoiding sunlight, eating only mugwort and garlic; the tiger gave up; the bear succeeded and was transformed into a beautiful woman, named Ungnyeo (\"Bear-Woman\")."
+      },
+      "value": {
+        "typeStatus": "mortal",
+        "startEvent": "transformation-from-bear-into-woman",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The bear becomes a woman after twenty-one days; the prescribed period without sunlight had been one hundred days."
+      },
+      "reason": "The fulfilled transformation and prescribed trial have different durations in the primary text.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "korean_tangun": [
+    {
+      "id": "reign-and-age",
+      "path": [
+        "lifecycle",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "demigod",
+        "startEvent": "long-reign-of-1908-years-traditional",
+        "era": "gojoseon",
+        "eraOrdering": 2,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1 (1,908-year reign per the literary tradition; the Methuselah-syndrome literary inflation of foundational mythological figures)"
+          }
+        ],
+        "notes": "Reign of 1,908 years per the Samguk Yusa — the literary inflation of foundational mythological figures (Methuselah-syndrome trope). The actual historical Gojoseon polity is dated archaeologically to a much later period (c. 7th-4th c. BCE for the bronze daggers of the Liaodong-Korean-peninsula bronze culture)."
+      },
+      "value": {
+        "typeStatus": "demigod",
+        "startEvent": "reign-of-fifteen-hundred-years",
+        "era": "gojoseon",
+        "eraOrdering": 2,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The narrative gives a reign of fifteen hundred years and separately an age of 1,908 when Tangun becomes the mountain god of Asadal."
+      },
+      "reason": "The legacy statement conflates the reign and age and adds an unsupported interpretive trope.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ]
+}

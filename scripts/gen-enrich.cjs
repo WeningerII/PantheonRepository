@@ -20,6 +20,8 @@ const EDIR = path.join(__dirname, '..', 'data-sources', 'enrichments');
 const DATA = path.join(__dirname, '..', 'app', 'data.js');
 const { applyRelationshipSupplement } = require('./lib/relationship-supplement.cjs');
 
+const { applyClaimCorrections } = require('./lib/claim-corrections.cjs');
+
 const maps = { FACULTY_SWEEP: {}, MATERIAL_SWEEP: {}, DOMAIN_SWEEP: {}, EPITHET_SWEEP: {}, CULT_SWEEP: {}, ICONO_SWEEP: {} };
 // patch field -> [map name, dedup key]
 const LIST = {
@@ -66,13 +68,24 @@ if (fs.existsSync(relationshipDir)) for (const file of fs.readdirSync(relationsh
   for (const [id, patch] of Object.entries(batch)) {
     const target = relationshipPatches[id] ||= {};
     for (const [key, values] of Object.entries(patch)) {
-      if (!['parents', 'relations', 'variants', 'resolve', 'nameLinks', 'parentageAccounts', 'descriptions'].includes(key) || !Array.isArray(values))
+      if (!['parents', 'relations', 'relationRevisions', 'parentageCorrections', 'variants', 'resolve', 'nameLinks', 'parentageAccounts', 'descriptions'].includes(key) || !Array.isArray(values))
         throw new Error(`Invalid relationship patch field: ${file} ${id} ${key}`);
       (target[key] ||= []).push(...values);
     }
   }
 }
+const correctionDir = path.join(__dirname, '..', 'data-sources', 'corrections');
+const claimCorrections = {};
+if (fs.existsSync(correctionDir)) for (const file of fs.readdirSync(correctionDir).filter(f => f.endsWith('.json')).sort()) {
+  const batch = JSON.parse(fs.readFileSync(path.join(correctionDir,file),'utf8'));
+  for (const [id, entries] of Object.entries(batch)) {
+    if (!Array.isArray(entries)) throw new Error(`Invalid correction list: ${file} ${id}`);
+    (claimCorrections[id] ||= []).push(...entries);
+  }
+}
 let block = '/* ENRICH_SWEEP_START */\n';
+block += `const CLAIM_CORRECTIONS = ${JSON.stringify(claimCorrections,null,1)};\n`;
+block += applyClaimCorrections.toString() + '\n';
 block += `const RELATIONSHIP_SWEEP = ${JSON.stringify(relationshipPatches, null, 1)};\n`;
 block += applyRelationshipSupplement.toString() + '\n';
 for (const [name, obj] of Object.entries(maps)) block += `const ${name} = ${JSON.stringify(obj, null, 1)};\n`;
@@ -84,6 +97,12 @@ if (!/\/\* ENRICH_SWEEP_START \*\/[\s\S]*?\/\* ENRICH_SWEEP_END \*\//.test(src))
   process.exit(1);
 }
 src = src.replace(/\/\* ENRICH_SWEEP_START \*\/[\s\S]*?\/\* ENRICH_SWEEP_END \*\//, block);
+// Keep final-pass wiring reproducible when introducing the generated correction block.
+if (!src.includes('(m) => applyClaimCorrections(m, CLAIM_CORRECTIONS)')) {
+  const anchor = /^  applyPowerScopes,.*$/m;
+  if (!anchor.test(src)) throw new Error('Final correction pipeline anchor missing');
+  src = src.replace(anchor, line => line + '\n  (m) => applyClaimCorrections(m, CLAIM_CORRECTIONS), // final cited corrections; no later pass restores withdrawn claims');
+}
 fs.writeFileSync(DATA, src);
 
 const counts = Object.fromEntries(Object.entries(maps).map(([k, v]) => {
