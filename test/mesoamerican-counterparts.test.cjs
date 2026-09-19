@@ -13,8 +13,8 @@ test('authored targets, source accounts and aliases survive generation independe
   for(const link of patch.nameLinks||[]){
    const actual=people[id].nameLinks.find(n=>n.value===link.value&&n.tradition===link.tradition);
    assert.deepEqual(actual,link);
-   if(link.status==='resolved')assert.ok(people[link.personId]);
-   else assert.equal(link.personId,undefined);
+   if(link.personId){assert.ok(['resolved','disputed'].includes(link.status));assert.ok(people[link.personId]);assert.notEqual(link.personId,id);}
+   else assert.notEqual(link.status,'resolved');
   }
   for(const account of patch.parentageAccounts||[]){
    assert.deepEqual(people[id].parentageAccounts.find(a=>a.id===account.id),account);

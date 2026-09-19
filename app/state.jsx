@@ -506,6 +506,8 @@ const RELATION_FAMILIES = [
             'comparison-under-review', 'iconographic-comparison', 'scholarly-comparison', 'textual-identification',
             'localized-cult-assimilation', 'regional-cult-form',
             'identification-awaiting-verification', 'historical-association',
+            'same-portrayal', 'distinct-narrative-context',
+            'distinct-from', 'name-comparison',
             'foundational precursor to', 'post death continuation',
             'sex exchange with', 'primary', 'secondary'],
   },
