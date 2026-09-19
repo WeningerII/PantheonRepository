@@ -101,6 +101,8 @@ const srv = http.createServer((rq, rs) => {
     for(const id of subjects){
       const {target}=pairs.find(p=>p.id===id);
       await pg.goto(`${base}#/graph/${encodeURIComponent(id)}`);
+      const all=pg.locator('.graph-modes').getByRole('button',{name:'All',exact:true});
+      await all.focus();await all.press('Enter');
       await pg.waitForFunction(name=>document.querySelector('.graph-focus-name')?.textContent===name,people[id].name.primary);
       const a=pg.locator(`.graph-focus-neighbor[href="#/browse/${encodeURIComponent(target)}"]`).first();
       await a.waitFor();await a.focus();await a.press('Enter');

@@ -33,7 +33,11 @@
     "chinese_baoyueguang",
     "buddhist_eravana",
     "buddhist_vissakamma",
-    "buddhist_sunetta_teacher"
+    "buddhist_sunetta_teacher",
+    "buddhist_rohini_sakra",
+    "hindu_raji",
+    "hindu_dhuti_aditya",
+    "hindu_savitri_aditya"
   ],
   "relationshipPattern": "adaptation|comparative|regional|equat|interpret|syncret|counterpart|identified|^(father|mother|parent|son|daughter|child|spouse|consort|lover|sibling|brother|sister|former-spouse|ancestor|descendant)(-| |$)",
   "reviews": {
@@ -1242,6 +1246,101 @@
         "reviewComplete": false,
         "evidence": "data-sources/transcripts/sakra-indra-network.txt"
       }
+    },
+    "buddhist_rohini_sakra": {
+      "names": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+      },
+      "tradition": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+      },
+      "description": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+      },
+      "sources": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#buddhist_rohini_sakra"
+      }
+    },
+    "hindu_raji": {
+      "names": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+      },
+      "tradition": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+      },
+      "description": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+      },
+      "sources": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_raji"
+      }
+    },
+    "hindu_dhuti_aditya": {
+      "names": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+      },
+      "tradition": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+      },
+      "description": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+      },
+      "sources": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_dhuti_aditya"
+      }
+    },
+    "hindu_savitri_aditya": {
+      "names": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+      },
+      "tradition": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+      },
+      "description": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+      },
+      "sources": {
+        "status": "added",
+        "reviewComplete": false,
+        "evidence": "data-sources/transcripts/sakra-indra-network.txt#hindu_savitri_aditya"
+      }
+    },
+    "buddhist_aniruddha": {
+      "description": {
+        "status": "corrected",
+        "reviewComplete": false,
+        "evidence": "data-sources/relationships/sakra-indra-network.json#buddhist_aniruddha"
+      }
     }
   },
   "discoveries": [
@@ -1326,8 +1425,12 @@
         "Dhuti",
         "Savitri"
       ],
-      "status": "awaiting-research",
-      "disposition": "Named in VP 1.15 Aditya list; validate exact corpus identities before adding sibling edges."
+      "status": "added",
+      "disposition": "Qualified exact records added from the reviewed Wilson genealogy; no unsupported name equivalence.",
+      "recordIds": [
+        "hindu_dhuti_aditya",
+        "hindu_savitri_aditya"
+      ]
     },
     {
       "names": [
@@ -1402,6 +1505,32 @@
       ],
       "status": "added",
       "disposition": "Direct dictionary entries read; office/bearer and previous animal birth distinguished. No counterpart-family transfer."
+    },
+    {
+      "names": [
+        "Rohinī",
+        "Rāji",
+        "Anuruddha"
+      ],
+      "recordIds": [
+        "buddhist_rohini_sakra",
+        "hindu_raji",
+        "buddhist_aniruddha"
+      ],
+      "status": "added",
+      "disposition": "Accessible follow-up passages implemented; heavenly rebirth and acknowledged fatherhood kept distinct from biological parentage."
+    },
+    {
+      "names": [
+        "Brahman",
+        "Marīci"
+      ],
+      "recordIds": [
+        "hindu_brahma",
+        "hindu_marici"
+      ],
+      "status": "cross-lane-dependency",
+      "disposition": "Marici spiritual-son endpoint authored; Brahma reciprocal belongs to the shared ancestor owner. No biological defaults added."
     }
   ],
   "sourceBlockers": [

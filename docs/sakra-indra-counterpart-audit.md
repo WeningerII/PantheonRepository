@@ -15,7 +15,7 @@ work is counted as implemented.
 
 ## Authored results
 
-The transcript supplies 31 records. These include Śacī and her three sons,
+The transcript supplies 35 records. These include Śacī and her three sons,
 Ekāṣṭakā and the explicitly qualified Prajāpati of her hymn, Marīci, Buddhist
 family and previous-life figures, three titled Korean officers, and the royal
 parents in the Jade Emperor scripture. A title is not automatically a unique
@@ -60,7 +60,7 @@ worked for the Korean and Chinese narratives. Heissig's Archive full text worked
 but does not validate every Buryat/Kalmyk assertion in the legacy records.
 
 Other research is unfinished rather than access-blocked: epic collateral family
-branches, Saci's Puloman parentage, Dhuti/Savitri target resolution, several Sakka
+branches, Saci's Puloman parentage, several Sakka
 cross-references, the Jātaka 535 human ancestral chain, the Mongol Geser versus
 White Brahma conflation, Roy mo's correct narrative endpoint, Chinese household
 relationships, and modern Hwanin aliases. Arjuna's Indra/Kunti parentage was
@@ -83,7 +83,20 @@ Keep PR 142 draft while evidence and cross-lane integration remain unfinished.
 No deployment or completion claim follows from a passing structural test.
 
 The lane also carries `follow-up-evidence.json`: the successful Rohinī dictionary
-entry and Wilkins's Rāji narrative are new, explicitly unfinished discoveries.
-They are not access-blocked and are not counted among implemented records.
+entry and Wilkins's Rāji narrative are implemented follow-up discoveries: Rohinī links to the registered Anuruddha,
+and Rāji receives an acknowledged-father relation without biological defaults.
 The permanent lane browser gate exercises authored relationship-list links and
 a data-selected graph-neighbor link for each endpoint, using keyboard activation.
+
+## Open shared navigation dependency
+
+Actual browser verification exposed that the graph starts in Cross-tradition
+mode. The lane test selects All before testing within-tradition neighbors; this
+is ordinary UI filter behavior, not a missing link. Separately, `relationFamily`
+in `app/state.jsx` uses an exact shared kind list. The new evidence-qualified
+kinds `buddhist-adaptation`, `identified-in-text`, `disputed-identification` and
+`comparative-identification` currently fall under Other. The Shiva owner must
+add their generic classification to Cross-tradition with neutral coverage before
+these can appear in the default cross-tradition graph. No figure-specific rule
+is requested. All-mode navigation is independently testable; this dependency is
+not counted as implemented and prevents final integration.
