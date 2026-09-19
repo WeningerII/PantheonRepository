@@ -17,7 +17,7 @@ judgments; `ledger.json` combines them with generated records. Reproduce with
 Reviewed passages include Pinturas chapters 1, 2, 6–8; Anales excerpts 43–49 and
 62–68; Landa VI and XL (Xul); Popol Vuh opening, p.215, pp.240–243, and the
 Cumarcah dynastic narrative with notes 733/775; Annals of the Cakchiquels 38,
-43, 46–60; García V.iv as excerpted in Phillips note17; and Pohl/Powell’s
+43, 46–60; García V.iv as excerpted in Phillips note17; Nicholson’s 1979 essay (2020 reprint), pp.213–220; and Pohl/Powell’s
 manuscript discussions. `sources.json` records edition, passage and URL.
 Precolonial pictorial evidence, colonial narratives, old translations and modern
 scholarly commentary are not interchangeable witnesses.
@@ -54,7 +54,9 @@ returned unrelated pages. Powell remained readable through the web text despite
 a direct-download 465. FAMSI access was intermittent. Pohl, Landa, Christenson,
 Jordan and Gutenberg provided useful independent alternatives.
 
-Direct codex commentaries, modern linguistic verification, the stronger
+An exact-title search later recovered Nicholson’s discussion of codex annotations,
+partially resolving scholarly access. It preserves both distinction and fusion in
+colonial witnesses and qualifies early imagery. Direct codex commentaries, modern linguistic verification, the stronger
 Mixtec/Yucatec historical equations, and the outer Nahua/Purépecha family and
 cult claims remain unfinished. Chimalcan, named Mixtec ritual participants,
 and ambiguous Kaqchikel collective parentage remain explicitly inventoried.

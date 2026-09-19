@@ -35,9 +35,9 @@ jobs:
           node scripts/gen-powers-items.cjs
           python3 build.py
           node scripts/audit-mesoamerican-counterparts.cjs
-          test "$(git hash-object app/data.js)" = "3a72bb39e8784cd35294bbf9ffb3d42c521db468"
-          test "$(git hash-object dist/pantheon-registry.html)" = "ddbd62f8622da8f3d09ccf5708e70e037701d299"
-          test "$(git hash-object data-sources/audits/mesoamerican-counterparts/ledger.json)" = "30d18b4d226a7b8cffd1720624ca97c9a2f76233"
+          test "$(git hash-object app/data.js)" = "d25993dbc86c92b1eb3f172f26518a49ebe42568"
+          test "$(git hash-object dist/pantheon-registry.html)" = "c6a06a29d2d801ec3c7ec79b42c8c62e294e9af6"
+          test "$(git hash-object data-sources/audits/mesoamerican-counterparts/ledger.json)" = "371f20e38baf033c7de991cc1b96add811c248a2"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/mesoamerican-counterparts/ledger.json
           if git diff --cached --quiet; then exit 0; fi
           git diff --cached --name-only | while read -r p; do

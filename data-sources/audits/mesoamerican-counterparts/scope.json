@@ -753,14 +753,28 @@
     "evidenceRef": "e1"
    },
    "iconography": {
-    "status": "awaiting-research",
+    "status": "disputed",
     "reviewComplete": false,
-    "evidenceRef": "e1"
+    "evidence": "Nicholson213–215 reviewed for early imagery; exact corrections remove automatic naming. Other legacy claims remain unreviewed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. B. Nicholson, Ehecatl Quetzalcoatl vs. Topiltzin Quetzalcoatl of Tollan (1979; reprint Estudios de Cultura Nahuatl 59, 2020), pp. 213–220: imagery, ruler identification and Telleriano-Remensis fols. 8r, 10r–v",
+      "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/77902/68955/228836"
+     }
+    ]
    },
    "cult": {
-    "status": "awaiting-research",
+    "status": "disputed",
     "reviewComplete": false,
-    "evidenceRef": "e1"
+    "evidence": "Nicholson213–215 reviewed for early imagery; exact corrections remove automatic naming. Other legacy claims remain unreviewed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. B. Nicholson, Ehecatl Quetzalcoatl vs. Topiltzin Quetzalcoatl of Tollan (1979; reprint Estudios de Cultura Nahuatl 59, 2020), pp. 213–220: imagery, ruler identification and Telleriano-Remensis fols. 8r, 10r–v",
+      "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/77902/68955/228836"
+     }
+    ]
    },
    "sources": {
     "status": "awaiting-research",
@@ -7485,7 +7499,8 @@
    "attempts": [
     "Landa VI and XL read in Gates translation",
     "Dumbarton Oaks book page returned HTTP 403; download route inaccessible",
-    "Two web searches returned unrelated results rather than the requested Taube/Mesoamerican works"
+    "Two web searches returned unrelated results rather than the requested Taube/Mesoamerican works",
+    "Nicholson216–218 supplies qualified discussion of ruler/title and 9 Wind comparison; it does not resolve historical identity."
    ],
    "status": "blocked-scholarly-source-access",
    "consequence": "Landa-specific founder/festival claims implemented; unsupported equation and equinox power not certified."
@@ -7501,7 +7516,8 @@
    "attempts": [
     "Pinturas chapters 1,2,6,7,8 and Anales excerpts read",
     "Brinton chapter III reports Mendieta and codex commentary; direct witnesses not obtained",
-    "Online scholarly discovery repeatedly returned unrelated results"
+    "Online scholarly discovery repeatedly returned unrelated results",
+    "Exact-title search later recovered Nicholson1979/2020, pp.213–220, discussing codex annotations. Original codex witnesses still not directly verified."
    ],
    "status": "blocked-direct-witness-verification",
    "consequence": "Reports remain explicitly secondary and selectable; no legacy assertion marked reviewed merely because cited."
@@ -7609,6 +7625,11 @@
    "name": "Tecpancaltzin, Xochitl and Meconetzin",
    "status": "disputed-comparative-excursus",
    "evidence": "Brinton compares Ixtlilxochitl narrative to Quetzalcoatl; this speculative equation is not treated as supported parentage of Topiltzin. Direct witness verification remains blocked."
+  },
+  {
+   "name": "Palenque GI / 9 Ik; Nacxitl; Nahui Ehecatl; Yacatecuhtli",
+   "status": "disputed-comparative-identifications",
+   "evidence": "Nicholson218–222 reviews speculative equivalences and a mercantile brother-name. No automatic equation to the Popol Vuh Nacxit or imported family branch; direct witnesses needed."
   }
  ],
  "integration": {
