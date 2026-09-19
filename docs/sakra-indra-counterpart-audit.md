@@ -175,3 +175,8 @@ claims already implemented. No unresolved target is authored as a registered
 relationship. The Nārada creator endpoints and Devasena parental endpoint remain
 open until the Shiva owner supplies those records; neither is claimed complete.
 The shared browser gate remains mandatory for this merge.
+
+Frozen-source local validation: 345 tests passed, including 34 focused corpus
+and lane checks. All generators reproduce the committed corpus and standalone
+artifact byte-for-byte. Final published-head browser/CI evidence is recorded in
+the PR; local results alone do not satisfy merge acceptance.
