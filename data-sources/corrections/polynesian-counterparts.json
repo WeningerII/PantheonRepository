@@ -2904,5 +2904,491 @@
    ],
    "reason": "Correct the child’s alternate name and remove internal record-state assertions."
   }
+ ],
+ "polynesian_tangaroa": [
+  {
+   "id": "root-review-name",
+   "path": [
+    "name"
+   ],
+   "op": "replace",
+   "expected": {
+    "primary": "Tangaroa",
+    "alt": [
+     "Takaroa",
+     "Tangaloa"
+    ],
+    "transliterations": {
+     "maori": "Tangaroa",
+     "slavic": "",
+     "finnish": ""
+    }
+   },
+   "value": {
+    "primary": "Tangaroa",
+    "alt": [
+     "Takaroa"
+    ],
+    "transliterations": {
+     "maori": "Tangaroa"
+    }
+   },
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+     "url": "https://archive.org/details/cu31924026916480"
+    }
+   ],
+   "reason": "Retain the Māori Takaroa variant. Tangaloa belongs to separately identified island portrayals and is presented through explicit counterpart links, not as an unqualified Māori alias."
+  },
+  {
+   "id": "root-review-epithets",
+   "path": [
+    "epithets"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "epithetId": "Tangaroa-whakamau-tai",
+     "original": "Tangaroa-whakamau-tai",
+     "language": "maori",
+     "transliteration": null,
+     "contextTag": "cult",
+     "notes": "Tangaroa who fixes/controls the tides",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tangaroa; Elsdon Best, Fishing Methods and Devices of the Maori (1929)"
+      }
+     ]
+    }
+   ],
+   "value": [
+    {
+     "epithetId": "tangaroa-ara-rau",
+     "original": "Tangaroa ara rau",
+     "language": "Māori",
+     "notes": "The proverb calls Tangaroa “of many paths”.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+       "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+     "url": "https://archive.org/details/cu31924026916480"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+     "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+    }
+   ],
+   "reason": "Replace the unverified Tangaroa-whakamau-tai attribution with the phrase printed in the reviewed Te Ara passage. The previous claim remains in correction history pending its cited Best passage."
+  },
+  {
+   "id": "root-review-iconography",
+   "path": [
+    "iconography"
+   ],
+   "op": "replace",
+   "expected": {
+    "sacredAnimals": [
+     {
+      "id": "polynesian_tangaroa-whale",
+      "name": "Whale (and shark, stingray, eel)",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Te Ara: The Encyclopedia of New Zealand, 'Tangaroa – the sea'"
+       }
+      ]
+     },
+     {
+      "id": "polynesian_tangaroa-fish",
+      "name": "Fish (his progeny)",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Te Ara: The Encyclopedia of New Zealand, 'Tangaroa – the sea'"
+       }
+      ]
+     }
+    ]
+   },
+   "value": {
+    "attributes": [
+     {
+      "id": "contemporary-swimming-depiction",
+      "name": "Swimming sea deity",
+      "notes": "The Te Ara caption describes a contemporary depiction by Adam Williams and Joshua Wātene. It does not establish a traditional animal-form catalogue.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Te Ara, Tangaroa artwork caption, work by Adam Williams and Joshua Wātene",
+        "url": "https://teara.govt.nz/en/artwork/6798/tangaroa"
+       }
+      ]
+     }
+    ]
+   },
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+     "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Te Ara, Tangaroa artwork caption, work by Adam Williams and Joshua Wātene",
+     "url": "https://teara.govt.nz/en/artwork/6798/tangaroa"
+    }
+   ],
+   "reason": "The cited Te Ara genealogy does not support the former catalogue of whale, shark, stingray and eel manifestations. Retain those superseded assertions for review and replace them with a specific credited depiction."
+  },
+  {
+   "id": "root-review-domains",
+   "path": [
+    "domains"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "sphereId": "sea",
+     "contextTag": "lifelong",
+     "term": {
+      "value": "moana",
+      "script": "Māori",
+      "rom": "moana"
+     },
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Grey, Polynesian Mythology (1855)"
+      }
+     ]
+    },
+    {
+     "sphereId": "fish",
+     "contextTag": "lifelong",
+     "term": {
+      "value": "ika",
+      "script": "Māori",
+      "rom": "ika"
+     },
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Te Ara Encyclopedia; Tangaroa (Wikipedia)"
+      }
+     ]
+    }
+   ],
+   "value": [
+    {
+     "sphereId": "sea",
+     "contextTag": "tradition",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+       "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+      }
+     ]
+    },
+    {
+     "sphereId": "fish",
+     "contextTag": "tradition",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+       "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+     "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+    }
+   ],
+   "reason": "Attach the reviewed passage to each domain and omit native lexical terms that were not verified in that passage."
+  },
+  {
+   "id": "root-review-faculties",
+   "path": [
+    "faculties"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "id": "command-tides",
+     "name": "Govern the sea, tides and its creatures",
+     "term": {
+      "value": "tai",
+      "script": "Māori",
+      "rom": "tai"
+     },
+     "inheritability": "full",
+     "notes": "Father of fish and reptiles; rules ocean swells.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Te Ara Encyclopedia, 'Tangaroa – the sea'"
+      }
+     ],
+     "scopeTags": [
+      "water",
+      "authority"
+     ]
+    },
+    {
+     "id": "polynesian_tangaroa-progenitor-fish-reptiles",
+     "name": "Beget the fish and the reptiles",
+     "term": {
+      "value": "Tangaroa",
+      "script": "Latn",
+      "rom": "Tangaroa"
+     },
+     "notes": "Through his son Punga, Tangaroa is grandfather of Ikatere (ancestor of fish, who went to the sea) and Tū-te-wehiwehi/Tū-te-wanawana (ancestor of reptiles, who fled inland), so that the war between Tangaroa and his brother Tūmatauenga continues as humans fishing his offspring.",
+     "inheritability": "partial",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Te Ara: The Encyclopedia of New Zealand, 'Tangaroa – the sea'"
+      }
+     ],
+     "ability": true,
+     "scopeTags": [
+      "foundational"
+     ]
+    },
+    {
+     "id": "polynesian_tangaroa-take-sea-forms",
+     "name": "Take the form of whale, shark and other sea creatures",
+     "notes": "As the grand atua of the ocean Tangaroa is manifested in and as the great sea-creatures — whale, shark, stingray and eel.",
+     "inheritability": "none",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Te Ara: The Encyclopedia of New Zealand, 'Tangaroa – the sea'"
+      }
+     ],
+     "ability": true,
+     "scopeTags": [
+      "water"
+     ]
+    }
+   ],
+   "value": [
+    {
+     "id": "tangaroa-transforms-manuruhi",
+     "name": "Transforms Manuruhi into a carved figure",
+     "inheritability": "none",
+     "notes": "In the East Coast carving narrative, Tangaroa changes Manuruhi into a tekoteko.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Brett Graham, Whakairo – Māori carving (2017), Legendary origins of carving, East Coast account",
+       "url": "https://teara.govt.nz/en/whakairo-maori-carving/page-1"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Tangaroa, god of the sea, opening genealogy and proverb",
+     "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Brett Graham, Whakairo – Māori carving (2017), Legendary origins of carving, East Coast account",
+     "url": "https://teara.govt.nz/en/whakairo-maori-carving/page-1"
+    }
+   ],
+   "reason": "Record the explicitly narrated transformation. Fish ancestry belongs to genealogy; the reviewed pages do not support automatic inheritance of powers or the former animal-transformation catalogue."
+  },
+  {
+   "id": "root-review-materialCulture",
+   "path": [
+    "materialCulture"
+   ],
+   "op": "replace",
+   "expected": [],
+   "value": [
+    {
+     "id": "tangaroa-spear",
+     "name": "Tangaroa’s spear",
+     "kind": "weapon",
+     "role": "wielder",
+     "notes": "In the Te-more-tu parentage account, Tangaroa wounds Rangi in both thighs with a spear. No proper name is given for the weapon.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+       "url": "https://archive.org/details/cu31924026916480"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+     "url": "https://archive.org/details/cu31924026916480"
+    }
+   ],
+   "reason": "Record the weapon attested in the specific alternative account without inventing a native object name."
+  },
+  {
+   "id": "root-review-linguistic",
+   "path": [
+    "linguistic"
+   ],
+   "op": "replace",
+   "expected": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Māori Tangaroa, god of the sea, reflects Proto-Polynesian *Tangaloa, the name of a great sky/sea deity across Polynesia; cognates include Samoan/Tongan Tangaloa, Hawaiian Kanaloa, Tuamotuan Takaroa. The internal structure is debated (often connected to tanga 'heap, company' or treated as unanalyzable), but the proto-form and cognate set are securely reconstructed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Tangaroa"
+     },
+     {
+      "kind": "secondary",
+      "reference": "POLLEX (Polynesian Lexicon Project Online), *Tangaloa"
+     }
+    ]
+   },
+   "value": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Tregear places Māori Tangaroa and Takaroa beside island-specific forms including Samoan Tagaloa and Hawaiian Kanaloa. This comparison does not establish identical roles or genealogy. The internal etymology and reconstructed form require a separately verified linguistic source.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+     "url": "https://archive.org/details/cu31924026916480"
+    }
+   ],
+   "reason": "The earlier claim of a securely verified reconstructed form and internal derivation exceeded the passages reviewed. Preserve its POLLEX attribution in history while distinguishing comparative forms from established etymology."
+  },
+  {
+   "id": "root-review-cult",
+   "path": [
+    "cult"
+   ],
+   "op": "replace",
+   "expected": {
+    "festivals": [
+     {
+      "name": "Fishing karakia",
+      "type": "rite",
+      "notes": "Incantations ask Tangaroa and other gods for fish; the article records a Ngāti Porou example.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     },
+     {
+      "name": "First fish",
+      "type": "offering",
+      "notes": "Fishers return the first catch to the sea or leave fish at shore offering places.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     },
+     {
+      "name": "Te Naenae near Mōkau",
+      "type": "site",
+      "notes": "The article identifies this place as a site of fish offerings to Tangaroa.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     }
+    ]
+   },
+   "value": {
+    "festivals": [
+     {
+      "name": "Fishing karakia",
+      "type": "rite",
+      "notes": "Incantations ask Tangaroa and other gods for fish; the article records a Ngāti Porou example.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     }
+    ],
+    "offerings": [
+     {
+      "offering": "First fish",
+      "type": "offering",
+      "notes": "Fishers return the first catch to the sea or leave fish at shore offering places.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     }
+    ],
+    "cultCenters": [
+     {
+      "placeName": "Te Naenae near Mōkau",
+      "type": "offering-site",
+      "notes": "The article identifies this place as a site of fish offerings to Tangaroa.",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+        "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+       }
+      ]
+     }
+    ]
+   },
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Paul Meredith, Te hī ika – Māori fishing (2012), Traditional practices, Religious rites, First fish and Talismans",
+     "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-3"
+    }
+   ],
+   "reason": "Classify the reviewed rite, offering and named offering place separately; no annual festival or divine ownership of the nearby anchor stone is inferred."
+  }
  ]
 }

@@ -57,7 +57,7 @@ No claim of completed research, final verification, merge, or deployment is made
 
 ## Current research extension
 
-The lane now authors 327 new source-specific records. The repeated inventory
+The lane now authors 595 new source-specific records. The repeated inventory
 also includes explicitly seeded Kumulipo spouse-pair branches: the source gives
 those spouses, but a sequence of rows alone does not prove immediate parentage.
 Fornander's separate child-column tables supply further evidence and are
@@ -77,3 +77,26 @@ links. Its implementation was inspected; this lane does not duplicate that work.
 The published head 36edafb passed full CI, including Chromium names/account checks,
 cold-load stability, MCP smoke and exact regeneration. Subsequent research changes
 require fresh verification; that passing checkpoint is not a final-head result.
+
+## Further passage review
+
+The current local inventory contains 718 records. It includes 172 authored
+Fornander table rows, with separate generational names and qualified grouped
+paternity. Thirty-two uncertain cross-text spellings retain distinct records
+and targeted-disputed navigation; no comparison transfers a family. The complete
+Kaulu narrative supplies another named family branch, objects and lifecycle
+accounts. Māori carving accounts and additional Tangaroa family variants remain
+distinct where their kinship descriptions differ.
+
+The Māori root review adds cited fishing rites, first-fish offerings, Te Naenae,
+a printed proverb, and the unnamed spear in the Te-more-tu account. Unsupported
+legacy animal transformations, epithet and linguistic claims remain in correction
+history rather than being presented as verified. Direct Best/POLLEX verification
+and the newly discovered regional Maui and earlier Hawaiian lines remain open.
+
+Main 917d8ac is incorporated, including the merged shared navigation vocabulary.
+The prior combined local suite passed 353 tests; the newer data passes 44 focused
+checks, including explicit table targets and ambiguous grouped accounts. These
+are intermediate results, not a final research-completeness or deployment claim.
+
+The full-suite alias-collision gate caught a temporary authoring-array error before publication. Alias lists were rebuilt from their own source entries; the unchanged collision gate and the new per-alias cited-review check pass. A fresh complete run is required.

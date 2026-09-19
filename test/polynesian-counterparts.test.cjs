@@ -9,6 +9,15 @@ const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const people=loadCorpus({quiet:true}).seedPeople;
 const authored=JSON.parse(read('data-sources/transcripts/polynesian-counterparts.txt').match(/```json\n([\s\S]*?)\n```/)[1]);
 const patches=JSON.parse(read('data-sources/relationships/polynesian-counterparts.json'));
+test('every authored alias has its own cited review decision',()=>{
+ const scope=JSON.parse(read('data-sources/audits/polynesian-counterparts/scope.json'));
+ for(const record of authored)for(const alias of record.name.alt||[]){
+  const decision=(scope.nameReviews[record.id]||[]).find(d=>d.value===alias);
+  assert.ok(decision,`${record.id}: ${alias}`);
+  assert.ok(decision.sources.length&&decision.review);
+  assert.equal(decision.identityStatus,'same-record');
+ }
+});
 test('lane-authored claims retain their exact cited descriptions and validated targets',()=>{
  for(const record of authored){
   assert.ok(people[record.id],record.id);
@@ -65,5 +74,23 @@ test('explicit name reviews preserve target status and survive identifier renami
   assert.deepEqual(names.find(n=>n.value==='Alpha').reviewSources,[cite]);
   assert.equal(JSON.stringify(people),before);
   assert.throws(()=>report(people,{...config(a),nameReviews:{[a]:[{value:'Missing',sources:[cite],review:'Absent name'}]}}));
+ }
+});
+test('authored tabular accounts retain explicit targets, citations and ambiguous groups',()=>{
+ const tables=JSON.parse(read('data-sources/audits/polynesian-counterparts/source-tables.json'));
+ for(const table of tables)for(const row of table.resolvedRows||[]){
+  const targets=[row.fatherId,row.motherId,...row.husbandGroupIds||[],...row.childIds].filter(Boolean);
+  for(const id of targets)assert.ok(people[id],id);
+  for(const id of row.childIds){
+   const account=people[id].parentageAccounts.find(a=>a.id===row.accountId);
+   assert.ok(account,`${id}: ${row.accountId}`);
+   assert.deepEqual(JSON.parse(JSON.stringify(account.sources)),row.sources);
+   assert.deepEqual(Array.from(account.parents,p=>p.personId).sort(),[row.fatherId,row.motherId].filter(Boolean).sort());
+   if(row.husbandGroupIds){
+    assert.equal(account.parents.length,1);
+    assert.ok(account.notes);
+    for(const parent of row.husbandGroupIds)assert.ok(people[id].relations.some(r=>r.kind==='genealogical-group-context'&&r.personId===parent&&r.sources.length));
+   }
+  }
  }
 });
