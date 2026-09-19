@@ -1,12 +1,14 @@
 # Shiva counterpart network: source review and remaining evidence questions
 
-This lane adds 73 records and authors 96 endpoints, with 20 selectable parentage
-accounts, 36 explicit name decisions, eight relationship revisions, two default
-parentage corrections, and five exact-precondition name corrections. These are
-source-bounded repairs, **not a declaration of exhaustive historical coverage**.
-The repeated incoming/outgoing inventory currently reaches 330 records. Every
-record has all sixteen review categories; existing citations and populated fields
-do not count as completed review. `awaiting-research` remains unfinished.
+The merged baseline (PR147) added 73 records. The regional completion follow-up
+adds another 144 records, 403 cited relationships across 166 subjects, 88 selectable
+parentage accounts, 53 explicit name decisions and five relationship revisions.
+The current repeated incoming/outgoing inventory covers 479 records. These are
+source-bounded additions, not a declaration of exhaustive historical coverage.
+Every discovered record retains sixteen review categories; unreviewed categories
+remain marked `awaiting-research`. The user requested freezing research and
+merging the implemented work soon, so further discoveries are recorded as
+follow-ups rather than hidden or claimed complete.
 
 ## Baseline and ownership
 
@@ -94,35 +96,45 @@ collectives, contextual discoveries, ownership and access attempts. The generate
 `ledger.json` inventories all claims, aliases, external references and relationships
 in the closure. `passages.json` distinguishes what was read from bibliography.
 
-Concrete access failures remain: Harvard and Heidelberg Kalasha Religion PDF
-routes (including an Anubis denial); Cambridge EBHR/Schlemmer routes; unavailable
-Gaenszle/Chemjong passages; Bernet Kempers p.83 beyond a quoted encyclopedia
-passage; Bugis/Batak/Malay primary family material; the British Museum Oesho/Ommo
-coin page. Repeated alternative searches did not recover those passages. Iranica
-*Nūrestān* was read for regional distinctions, not treated as proof of Mahandeo's
-identity. No family or native script was invented to fill these gaps.
+The regional follow-up read and implemented Skeat 1900 pp.85–96 (Malay),
+Dixon 1916 pp.160–163 and 173 (distinct Toba, Dairi and Karo accounts),
+Abidin 1983 pp.456, 460–461 and 465 (Bugis epic genealogies), Raffles 1830
+vol.I pp.418–429 and vol.II appendix H (separate Javanese Kanda and Manek Maya
+accounts), Gaenszle 2016 section2 (Kirati identification and Dumi sisters),
+Shiva Purana 3.13–18 and 3.24–25 (named incarnation families), Wilkins 1900
+pp.335–341 (distinct Skanda birth and marriage traditions), the Kanda retelling
+(Valli birth and prior-life accounts), and Himalayan Art Resources' specific
+Mahakala traditions. `completion-passages.json` records the passage decisions.
 
-Other work remains expressly unfinished rather than mislabeled inaccessible:
-further named Śaiva forms and regional spouses; broader local Guru traditions;
-Japanese contextual entities and later cult histories; native-script validation;
-and inherited powers, objects and rituals across the wider discovery frontier.
-The implemented repairs are independently supported. They do not make the entire
-network meet a historical-completeness claim.
+Javanese Guru and his source-specific family are registered independently of
+Balinese Guru. Manikmaya/Girinata names now navigate to the explicit Javanese
+record. Material creation, adoption, incarnation, office and biological parentage
+remain distinct; mutually incompatible pedigrees are selectable accounts.
+Tibetan Mahakala's alleged 75 forms is corrected to the 75-member retinue,
+and wealth and Avalokiteshvara emanation claims are scoped to named traditions.
+Oesho remains disputed; museum iconography does not establish a consort.
 
-## Reproduction and verification
+Remaining source-access questions are specific: Angerler's Toba article full
+text (ScholarHub 403 and unavailable older routes), the Balinese monograph
+passage, British Museum Oesho/Ommo coin documentation, and the inherited Bai
+Mahakala/Baijie family citation. Witzel access was resolved by the Sakra owner;
+Gaenszle, Malay, Javanese and the implemented Bugis passages are no longer
+reported as wholesale access blockers. The ledger preserves the exact remaining
+claims, access attempts and alternatives.
 
-Authored files are lane-specific under transcripts, relationships, enrichments,
-corrections and audits. Rebuild using the four existing generators and `build.py`,
-then run `node scripts/audit-counterparts.cjs` and
-`node scripts/audit-shiva-counterparts.cjs`. The latter recomputes closure until
-stable and never turns presence into research completion.
+Other unfinished work includes native-script validation, inherited powers,
+objects and cult claims across the broader frontier, unsourced Bugis family
+leads, and unnamed relatives that cannot be assigned invented identities.
+Cross-lane Narada, Devasena, Rudra/Maruts and Suyasa reciprocal follow-ups are
+explicit in scope.json. No unresolved dependency is described as implemented.
 
-Lane tests verify every authored endpoint/citation, correction history, exact
-parentage decisions, ownership boundaries and byte-exact ledger reconciliation.
-The shared neutral tests cover atomic corrections, ambiguous same-name targets,
-alias separation, conflicting accounts, citation retention and identifier renaming.
-Existing full-suite, real-browser keyboard/account/navigation, demand-loading,
-bounded rendering, MCP and regeneration gates remain unchanged. Chromium cannot
-launch in this local sandbox (`socket(): Operation not permitted`); the required
-CI browser probe is the verification authority. Final-head CI and deployment
-status are reported in the PR after publication, not presumed here.
+## Shared verification
+
+The follow-up fixes generic exact-correction validation so an unrelated claim
+edit preserves unspecified ancestry rather than requiring an invented empty
+parent list. Neutral tests retain rejection of malformed, duplicate, self and
+missing parent targets. The separate shared browser PR149 observes the selected
+account, local citations and exact parent cards in one committed DOM snapshot.
+All authored IDs, source preservation, independent accounts, ownership and
+repeated inventory reconciliation are checked by data-driven tests. Final-head
+CI and deployment evidence are recorded in the PR conversation.

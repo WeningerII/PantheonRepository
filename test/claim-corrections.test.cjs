@@ -17,6 +17,14 @@ test('nested field replacement requires exact previous value',()=>{
  const m=nodes();m.N0.iconography={attributes:[{id:'A0',notes:'Old',sources:[source]}]};
  apply(m,{N0:[{...correction(),op:'replace',path:['iconography','attributes',0,'notes'],expected:'Old',value:'Qualified'}]});assert.equal(m.N0.iconography.attributes[0].notes,'Qualified');assert.deepEqual(m.N0.iconography.attributes[0].sources,[source]);
 });
+test('unrelated correction preserves unspecified ancestry without asserting absent parents',()=>{
+ const m=nodes();delete m.N0.parentIds;apply(m,{N0:[correction()]});
+ assert.equal(Object.hasOwn(m.N0,'parentIds'),false);
+ for(const value of [null,{},'unknown',['N0'],['N1','N1'],['missing']]){
+  const n=nodes();n.N0.parentIds=value;const before=structuredClone(n);
+  assert.throws(()=>apply(n,{N0:[correction()]}));assert.deepEqual(n,before);
+ }
+});
 test('authored corrections survive final generation without restored withdrawn claims',()=>{
  const fs=require('node:fs'),path=require('node:path');
  const root=path.join(__dirname,'../data-sources/corrections');

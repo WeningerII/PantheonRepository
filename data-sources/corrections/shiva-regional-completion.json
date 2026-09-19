@@ -1,0 +1,271 @@
+{
+  "malay_batara_guru": [
+    {
+      "id": "regional-review-faculties",
+      "path": [
+        "faculties"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "id": "preside-over-heavens",
+          "name": "preside over the heavens",
+          "term": {
+            "value": "مڠواساءي کايڠن",
+            "script": "Jawi",
+            "rom": "menguasai kayangan"
+          },
+          "inheritability": "unique",
+          "notes": "Rules the upperworld at the apex of the Malay spirit hierarchy.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "R.O. Winstedt, The Malay Magician: Being Shaman, Saiva and Sufi (1951)."
+            }
+          ],
+          "scopeTags": [
+            "celestial",
+            "authority"
+          ]
+        },
+        {
+          "id": "grant-magical-knowledge",
+          "name": "grant magical knowledge",
+          "term": {
+            "value": "مڠورنياکن علمو",
+            "script": "Jawi",
+            "rom": "mengurniakan ilmu"
+          },
+          "inheritability": "partial",
+          "notes": "Invoked as the source of the bomoh's and pawang's craft.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "K.M. Endicott, An Analysis of Malay Magic (Oxford: Clarendon Press, 1970), pp. 40-49."
+            }
+          ],
+          "scopeTags": [
+            "magic",
+            "wisdom"
+          ]
+        }
+      ],
+      "value": [
+        {
+          "id": "preside-over-heavens",
+          "name": "preside over the heavens",
+          "term": {
+            "value": "مڠواساءي کايڠن",
+            "script": "Jawi",
+            "rom": "menguasai kayangan"
+          },
+          "inheritability": "unique",
+          "notes": "Rules the upperworld at the apex of the Malay spirit hierarchy.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "R.O. Winstedt, The Malay Magician: Being Shaman, Saiva and Sufi (1951)."
+            }
+          ],
+          "scopeTags": [
+            "celestial",
+            "authority"
+          ]
+        },
+        {
+          "id": "grant-magical-knowledge",
+          "name": "grant magical knowledge",
+          "term": {
+            "value": "مڠورنياکن علمو",
+            "script": "Jawi",
+            "rom": "mengurniakan ilmu"
+          },
+          "inheritability": "partial",
+          "notes": "Invoked as the source of the bomoh's and pawang's craft.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "K.M. Endicott, An Analysis of Malay Magic (Oxford: Clarendon Press, 1970), pp. 40-49."
+            }
+          ],
+          "scopeTags": [
+            "magic",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "restore-life-in-romance",
+          "name": "Restore life in the Hikayat Sang Samba",
+          "inheritability": "none",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+              "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+            }
+          ]
+        }
+      ],
+      "reason": "Add the object and ability specifically attested in the cited romance discussion.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+          "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+        }
+      ]
+    }
+  ],
+  "tibetan_buddhist_mahakala": [
+    {
+      "id": "regional-review-lifecycle",
+      "path": [
+        "lifecycle"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "typeStatus": "deity",
+          "era": "mythic",
+          "eraOrdering": 0,
+          "startEvent": "The principal dharma protector of Tibetan Buddhism, regarded in many Tibetan traditions as a wrathful manifestation of Avalokiteśvara, known in more than seventy-five forms and generally called simply mGon po, the Lord.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Reference treatment of Mahakala, Nagpo Chenpo, 'the Great Black One', regarded in many Tibetan traditions as a wrathful manifestation of Avalokitesvara, the bodhisattva of compassion: more than seventy-five forms are known in Tibet, where he is generally called mGon po, 'Master', 'Lord' or 'Protector'; the six-armed White Mahakala (Gonpo Karpo Chagdrugpa, Shadbhuja Sita Mahakala) is the most popular of these variations and is a wealth deity across all the traditions; his multiple arms are read as his capacity to carry out numerous tasks simultaneously."
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "typeStatus": "deity",
+          "era": "mythic",
+          "eraOrdering": 0,
+          "startEvent": "Different tantric traditions transmit distinct Mahākāla manifestations.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Jeff Watt, Himalayan Art Resources, Mahakala introduction: identity, functions and source traditions",
+              "url": "https://www.himalayanart.org/search/set.cfm?setID=173"
+            }
+          ]
+        }
+      ],
+      "reason": "Replace the universal seventy-five-forms and universal-origin claim with distinct attested traditions.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Jeff Watt, Himalayan Art Resources, 75 Forms of Mahakala (Erroneous Belief), 2020",
+          "url": "https://www.himalayanart.org/search/set.cfm?setID=6357"
+        }
+      ]
+    },
+    {
+      "id": "regional-review-faculties",
+      "path": [
+        "faculties"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "id": "carry_out_many_tasks_at_once",
+          "name": "to carry out numerous tasks simultaneously",
+          "inheritability": "none",
+          "notes": "The reading the sources give of his multiple arms.",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Reference treatment of Mahakala, Nagpo Chenpo, 'the Great Black One', regarded in many Tibetan traditions as a wrathful manifestation of Avalokitesvara, the bodhisattva of compassion: more than seventy-five forms are known in Tibet, where he is generally called mGon po, 'Master', 'Lord' or 'Protector'; the six-armed White Mahakala (Gonpo Karpo Chagdrugpa, Shadbhuja Sita Mahakala) is the most popular of these variations and is a wealth deity across all the traditions; his multiple arms are read as his capacity to carry out numerous tasks simultaneously."
+            }
+          ],
+          "scopeTags": [
+            "protection"
+          ]
+        }
+      ],
+      "value": [
+        {
+          "id": "protect-teaching",
+          "name": "Protect the Buddhist teaching and remove obstacles",
+          "inheritability": "none",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Jeff Watt, Himalayan Art Resources, Mahakala introduction: identity, functions and source traditions",
+              "url": "https://www.himalayanart.org/search/set.cfm?setID=173"
+            }
+          ]
+        }
+      ],
+      "reason": "Replace an uncited interpretation of multiple arms with the documented protector function.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Jeff Watt, Himalayan Art Resources, Mahakala introduction: identity, functions and source traditions",
+          "url": "https://www.himalayanart.org/search/set.cfm?setID=173"
+        }
+      ]
+    },
+    {
+      "id": "regional-review-domains",
+      "path": [
+        "domains"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "sphereId": "dharma-protection",
+          "contextTag": "lifelong",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Reference treatment of Mahakala, Nagpo Chenpo, 'the Great Black One', regarded in many Tibetan traditions as a wrathful manifestation of Avalokitesvara, the bodhisattva of compassion: more than seventy-five forms are known in Tibet, where he is generally called mGon po, 'Master', 'Lord' or 'Protector'; the six-armed White Mahakala (Gonpo Karpo Chagdrugpa, Shadbhuja Sita Mahakala) is the most popular of these variations and is a wealth deity across all the traditions; his multiple arms are read as his capacity to carry out numerous tasks simultaneously."
+            }
+          ]
+        },
+        {
+          "sphereId": "wrathful-compassion",
+          "contextTag": "lifelong",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Reference treatment of Mahakala, Nagpo Chenpo, 'the Great Black One', regarded in many Tibetan traditions as a wrathful manifestation of Avalokitesvara, the bodhisattva of compassion: more than seventy-five forms are known in Tibet, where he is generally called mGon po, 'Master', 'Lord' or 'Protector'; the six-armed White Mahakala (Gonpo Karpo Chagdrugpa, Shadbhuja Sita Mahakala) is the most popular of these variations and is a wealth deity across all the traditions; his multiple arms are read as his capacity to carry out numerous tasks simultaneously."
+            }
+          ]
+        },
+        {
+          "sphereId": "wealth",
+          "contextTag": "lifelong",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Reference treatment of Mahakala, Nagpo Chenpo, 'the Great Black One', regarded in many Tibetan traditions as a wrathful manifestation of Avalokitesvara, the bodhisattva of compassion: more than seventy-five forms are known in Tibet, where he is generally called mGon po, 'Master', 'Lord' or 'Protector'; the six-armed White Mahakala (Gonpo Karpo Chagdrugpa, Shadbhuja Sita Mahakala) is the most popular of these variations and is a wealth deity across all the traditions; his multiple arms are read as his capacity to carry out numerous tasks simultaneously."
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "sphereId": "dharma-protection",
+          "contextTag": "tradition-specific",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Jeff Watt, Himalayan Art Resources, Mahakala introduction: identity, functions and source traditions",
+              "url": "https://www.himalayanart.org/search/set.cfm?setID=173"
+            }
+          ]
+        }
+      ],
+      "reason": "Wealth is specifically represented on the White Mahākāla form; it is not a universal domain of every form.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Jeff Watt, Himalayan Art Resources, Mahakala introduction: identity, functions and source traditions",
+          "url": "https://www.himalayanart.org/search/set.cfm?setID=173"
+        }
+      ]
+    }
+  ]
+}

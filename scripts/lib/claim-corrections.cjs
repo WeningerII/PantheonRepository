@@ -41,7 +41,7 @@ function applyClaimCorrections(peopleMap, batches) {
       p.variants.push({id:`correction:${c.id}`,claim:'source review correction',description:c.reason,sources:clone(c.sources)});
     }
     // Validate graph-bearing fields after the complete authored sequence.
-    if (!Array.isArray(p.parentIds) || new Set(p.parentIds).size !== p.parentIds.length || p.parentIds.some(i => !peopleMap[i] || i === id))
+    if (p.parentIds !== undefined && (!Array.isArray(p.parentIds) || new Set(p.parentIds).size !== p.parentIds.length || p.parentIds.some(i => !peopleMap[i] || i === id)))
       throw new Error(`Invalid corrected parentage: ${id}`);
     if (!p.name || typeof p.name.primary !== 'string' || !p.name.primary.trim()) throw new Error(`Invalid corrected name: ${id}`);
     for (const r of p.relations || []) if (r.personId && (!peopleMap[r.personId] || r.personId === id)) throw new Error(`Invalid corrected relation: ${id}`);
