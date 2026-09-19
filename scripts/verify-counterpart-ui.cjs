@@ -4,6 +4,8 @@ async function verifyCounterpartUI(page, base, people) {
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
  const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
+ let targetCount=0;
+ console.log(`counterpart UI: starting ${targets.length} authored name targets`);
  for(const {p,n} of targets){
   await open(p);
   const a=page.locator('.section-names a.name-rec-value').filter({hasText:n.value});
@@ -30,8 +32,11 @@ async function verifyCounterpartUI(page, base, people) {
    await neighbor.focus();await neighbor.press('Enter');
    await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   }
+  targetCount++;
+  if(targetCount%25===0)console.log(`counterpart UI: ${targetCount}/${targets.length} name targets passed`);
  }
  let accountCount=0;
+ console.log('counterpart UI: starting all authored parentage accounts');
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
   await open(p);
   const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
@@ -45,6 +50,7 @@ async function verifyCounterpartUI(page, base, people) {
    const accountText=await accountPanel.innerText();
    for(const source of a.sources)assert.ok(accountText.includes(source.reference));
    accountCount++;
+   if(accountCount%25===0)console.log(`counterpart UI: ${accountCount} account selections passed`);
   }
  }
  console.log(`counterpart UI: ${targets.length} keyboard navigations and ${accountCount} account selections passed`);

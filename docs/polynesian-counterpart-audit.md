@@ -99,4 +99,12 @@ The prior combined local suite passed 353 tests; the newer data passes 44 focuse
 checks, including explicit table targets and ambiguous grouped accounts. These
 are intermediate results, not a final research-completeness or deployment claim.
 
-The full-suite alias-collision gate caught a temporary authoring-array error before publication. Alias lists were rebuilt from their own source entries; the unchanged collision gate and the new per-alias cited-review check pass. A fresh complete run is required.
+The full-suite alias-collision gate caught a temporary authoring-array error before publication. Alias lists were rebuilt from their own source entries; the unchanged collision gate and the new per-alias cited-review check pass. The corrected corpus subsequently passed 355/355 local tests and byte-exact regeneration. Final published-head CI remains required.
+
+## Merge checkpoint
+
+At the user’s request, research expansion is paused for integration of the current work.
+The late-source inventory and all remaining limitations are recorded in
+`data-sources/audits/polynesian-counterparts/handoff.md`. This checkpoint does not
+claim exhaustive research. The browser harness now starts a fresh document after
+the full-scroll verdict, preserving all authored-target and account assertions.

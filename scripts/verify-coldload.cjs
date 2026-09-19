@@ -174,6 +174,10 @@ const sample = () => {
   else if (end.total && end.n < end.total) fail(`scrolling stalled at ${end.n} of ${end.total} rows — the corpus is not fully reachable`);
   else console.log(`scroll reached the full corpus: ${end.n} rows ✓`);
 
+  // The scroll probe intentionally mounts the entire corpus. Start a fresh
+  // document for the independent navigation probe: hash navigation otherwise
+  // retains that expanded Browse state for every keyboard/account assertion.
+  await pg.goto('about:blank');
   await require('./verify-counterpart-ui.cjs').verifyCounterpartUI(pg,
     `http://127.0.0.1:${PORT}/index.html`, require('./build-tiers.cjs').loadCorpus({ quiet: true }).seedPeople);
   await b.close(); srv.close();
