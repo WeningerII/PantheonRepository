@@ -176,6 +176,26 @@
      }
     ]
    }
+  ],
+  "relationRevisions": [
+   {
+    "personId": "polynesian_kanaloa",
+    "fromKind": "equated-with",
+    "kind": "comparative-identification",
+    "notes": "Tregear compares the island traditions under Tangaroa. This is a comparative counterpart identification, not an assertion that Māori Tangaroa and Hawaiian Kanaloa share one biography or family. Beckwith separately questions Christianized portrayals of Kanaloa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. V, pp. 60–66",
+      "url": "https://sacred-texts.com/pac/hm/hm07.htm"
+     }
+    ]
+   }
   ]
  },
  "polynesian_ikatere": {
@@ -1090,6 +1110,26 @@
       "kind": "primary",
       "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
       "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relationRevisions": [
+   {
+    "personId": "polynesian_tangaroa",
+    "fromKind": "equated-with",
+    "kind": "comparative-identification",
+    "notes": "Tregear compares the island traditions under Tangaroa. This is a comparative counterpart identification, not an assertion that Māori Tangaroa and Hawaiian Kanaloa share one biography or family. Beckwith separately questions Christianized portrayals of Kanaloa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. V, pp. 60–66",
+      "url": "https://sacred-texts.com/pac/hm/hm07.htm"
      }
     ]
    }
@@ -6645,6 +6685,39 @@
      }
     ],
     "notes": "Haumea’s human manifestation in this account."
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "hawaiian_kukalauiehu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "hawaiian_kahakauakoko",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
    }
   ],
   "nameLinks": [
@@ -6661,6 +6734,43 @@
      }
     ]
    }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "kamahualele-chant",
+    "label": "Kamahualele chant",
+    "parents": [
+     {
+      "personId": "hawaiian_kukalauiehu",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_kahakauakoko",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
   ]
  },
  "hawaiian_wakea": {
@@ -6673,6 +6783,98 @@
       "kind": "primary",
       "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
       "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinakaweoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_kahiko_fourteenth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_kupulauakehau",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kaulawahine",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hina_island_account",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "kumulipo-fourteenth-era",
+    "label": "Kumulipo fourteenth era",
+    "parents": [
+     {
+      "personId": "hawaiian_kahiko_fourteenth",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_kupulauakehau",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
      }
     ]
    }
@@ -6935,6 +7137,19 @@
       "kind": "primary",
       "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20,25–28",
       "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "value": "Tagaloa (Tregear’s fishing account)",
+    "tradition": "Tongan",
+    "status": "resolved",
+    "personId": "tongan_tagaloa_fishing_account",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
      }
     ]
    }
@@ -9397,7 +9612,7 @@
   "nameLinks": [
    {
     "value": "Tangaroa",
-    "tradition": "Polynesian",
+    "tradition": "Māori",
     "status": "resolved",
     "personId": "polynesian_tangaroa",
     "sources": [
@@ -10196,6 +10411,2949 @@
       "kind": "primary",
       "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
       "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kahiko_fourteenth": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kupulauakehau",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Kahiko (Fifteenth Era)",
+    "tradition": "Hawaiian",
+    "status": "unresolved",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     },
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ],
+    "notes": "The two passages assign different partner contexts; identity is not resolved solely by the shared name."
+   }
+  ]
+ },
+ "hawaiian_kupulauakehau": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kahiko_fourteenth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinakaweoa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70–73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_tuanui_ka_rere": {
+  "relations": [
+   {
+    "kind": "functional-comparison",
+    "personId": "rarotongan_tangaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 47–48",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ],
+    "notes": "Gill contrasts Mangaian eclipse demons with the Rarotongan account attributing eclipses to Tangaroa. This is a functional comparison, not an identification."
+   }
+  ]
+ },
+ "mangaian_tangiia_ka_rere": {
+  "relations": [
+   {
+    "kind": "functional-comparison",
+    "personId": "rarotongan_tangaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 47–48",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ],
+    "notes": "Gill contrasts Mangaian eclipse demons with the Rarotongan account attributing eclipses to Tangaroa. This is a functional comparison, not an identification."
+   }
+  ]
+ },
+ "samoan_fee": {
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. I §§6,8",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "samoan_ariari",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. I §§6,8",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "same-name-context",
+    "personId": "samoan_lefee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. IV §8, O le Fe’e",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ],
+    "notes": "Turner reports multiple cuttlefish-god contexts. This contextual navigation does not transfer the cosmical parentage to each local cult form."
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "turner-eighth-account",
+    "label": "Turner eighth account",
+    "parents": [
+     {
+      "personId": "samoan_ariari",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. I §§6,8",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. I §§6,8",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Le Feʻe (war and village cult accounts)",
+    "tradition": "Samoan",
+    "status": "resolved",
+    "personId": "samoan_lefee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. IV §8, O le Fe’e",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_ariari": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "samoan_fee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. I §§6,8",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tubo": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fishing-account",
+    "label": "Tregear fishing account",
+    "parents": [
+     {
+      "personId": "tongan_tagaloa_fishing_account",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tongan_tagaloa_fishing_account",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_vaka_akau_uli": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fishing-account",
+    "label": "Tregear fishing account",
+    "parents": [
+     {
+      "personId": "tongan_tagaloa_fishing_account",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tongan_tagaloa_fishing_account",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tagaloa_fishing_account": {
+  "relations": [
+   {
+    "kind": "same-name-context",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 464, Tonga subsection of Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_tapuaau": {
+  "relations": [
+   {
+    "kind": "cult-bringer-of",
+    "personId": "samoan_lefee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. IV §8, O le Fe’e",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_lefee": {
+  "nameLinks": [
+   {
+    "value": "Fe‘e (cosmical cuttlefish)",
+    "tradition": "Samoan",
+    "status": "resolved",
+    "personId": "samoan_fee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. IV §8, O le Fe’e",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "same-name-context",
+    "personId": "samoan_fee",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. IV §8, O le Fe’e",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ],
+    "notes": "Turner reports multiple cuttlefish-god contexts. This contextual navigation does not transfer the cosmical parentage to each local cult form."
+   }
+  ]
+ },
+ "hawaiian_kuluwaiea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinanuiakalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "reported-partner",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ],
+    "notes": "The collected commentary says “it would seem”; this is its tentative interpretation."
+   }
+  ]
+ },
+ "hawaiian_hinanuiakalana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kuluwaiea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keaukanai": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_walinuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_walinuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keaukanai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_ahukinialaa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_laamealaakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_laamealaakona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_ahukinialaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_laakapu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_laakapu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_laamealaakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_wanalia": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hanalaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hanalaa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wanalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kaulawahine": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hina_island_account": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_hawaii": {
+  "parentageAccounts": [
+   {
+    "id": "wakea-papa-introduction",
+    "label": "Wakea papa introduction",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_maui": {
+  "parentageAccounts": [
+   {
+    "id": "wakea-papa-introduction",
+    "label": "Wakea papa introduction",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "kane-walinuu",
+    "label": "Kane walinuu",
+    "parents": [
+     {
+      "personId": "polynesian_kane",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_walinuu",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "polynesian_kane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_walinuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_molokai": {
+  "parentageAccounts": [
+   {
+    "id": "kahakuikamoana",
+    "label": "Kahakuikamoana",
+    "parents": [
+     {
+      "personId": "hawaiian_kuluwaiea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hinanuiakalana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "wakea-island-account",
+    "label": "Wakea island account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hina_island_account",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_kuluwaiea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hinanuiakalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hina_island_account",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_lanai": {
+  "parentageAccounts": [
+   {
+    "id": "wakea-island-account",
+    "label": "Wakea island account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_kaulawahine",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_kaulawahine",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_kahoolawe": {
+  "parentageAccounts": [
+   {
+    "id": "kahakuikamoana",
+    "label": "Kahakuikamoana",
+    "parents": [
+     {
+      "personId": "hawaiian_keaukanai",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_walinuu",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "haumea-tradition-introduction",
+    "label": "Haumea tradition introduction",
+    "parents": [
+     {
+      "personId": "hawaiian_hina_island_account",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_keaukanai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_walinuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hina_island_account",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. I",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_oahu": {
+  "parentageAccounts": [
+   {
+    "id": "kahakuikamoana",
+    "label": "Kahakuikamoana",
+    "parents": [
+     {
+      "personId": "hawaiian_ahukinialaa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_laamealaakona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "papa-lua",
+    "label": "Papa lua",
+    "parents": [
+     {
+      "personId": "hawaiian_lua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_ahukinialaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_laamealaakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_lua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_kauai": {
+  "parentageAccounts": [
+   {
+    "id": "kahakuikamoana",
+    "label": "Kahakuikamoana",
+    "parents": [
+     {
+      "personId": "hawaiian_laakapu",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_laamealaakona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "reconciliation-account",
+    "label": "Reconciliation account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_laakapu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_laamealaakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_niihau": {
+  "parentageAccounts": [
+   {
+    "id": "island-triplets",
+    "label": "Island triplets",
+    "parents": [
+     {
+      "personId": "hawaiian_wanalia",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hanalaa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "reconciliation-account",
+    "label": "Reconciliation account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wanalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hanalaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_kaula": {
+  "parentageAccounts": [
+   {
+    "id": "island-triplets",
+    "label": "Island triplets",
+    "parents": [
+     {
+      "personId": "hawaiian_wanalia",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hanalaa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "id": "reconciliation-account",
+    "label": "Reconciliation account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wanalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hanalaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_nihoa": {
+  "parentageAccounts": [
+   {
+    "id": "island-triplets",
+    "label": "Island triplets",
+    "parents": [
+     {
+      "personId": "hawaiian_wanalia",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hanalaa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wanalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hanalaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_lehua": {
+  "parentageAccounts": [
+   {
+    "id": "reconciliation-account",
+    "label": "Reconciliation account",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kukalauiehu": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kahakauakoko": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_uluhina": {
+  "relations": [
+   {
+    "kind": "midwife-of",
+    "personId": "hawaiian_island_kahoolawe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_island_molokini": {
+  "relations": [
+   {
+    "kind": "arises-from",
+    "personId": "hawaiian_island_kahoolawe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "formed-through",
+    "personId": "hawaiian_uluhina",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. II",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_liaikuhonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keakahulihonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keakahulihonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_liaikuhonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_laka": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kapapaialaka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kapapaialaka": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_laka",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamooalewa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lapuukahonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lapuukahonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamooalewa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_maluapo": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_laweakeao",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_laweakeao": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_maluapo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kinilauemano": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_upalu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_upalu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kinilauemano",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_halo": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kinilauewalu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kinilauewalu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_halo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamanookalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kalanianoho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kalanianoho": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamanookalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamakaokalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kahuaokalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kahuaokalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamakaokalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keohookalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamaookalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamaookalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keohookalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kaleiokalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kapuohiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kapuohiki": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kaleiokalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kalalii": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keaomele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keaomele": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kalalii",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_malakupua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keaoaoalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keaoaoalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_malakupua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_haule": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_loaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_loaa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haule",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_namea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_walea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_walea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_namea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nananuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lalohana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lalohana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nananuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lalokona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lalohooaniani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lalohooaniani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lalokona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_honuapoiluna": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_honuailalo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_honuailalo": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_honuapoiluna",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_pokinikini": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_polelehu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_polelehu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_pokinikini",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_pomanomano": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_pohakoikoi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_pohakoikoi": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_pomanomano",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kupukupuanuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kupukupualani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kupukupualani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kupukupuanuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamoleokahonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_keaaokahonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_keaaokahonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamoleokahonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_paiaalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kanikekoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kanikekoa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_paiaalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamoku": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_panainai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_panainai": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamoku",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_mokulu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hiona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hiona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_mokulu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_milipomea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hanahanaiau",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hanahanaiau": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_milipomea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hookumukapo": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hoao",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hoao": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hookumukapo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_lukahakona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_niaulani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_niaulani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_lukahakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 69–70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_pupue": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kamahele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kamahele": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_pupue",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_manaku": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hikohoale",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hikohoale": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_manaku",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kahiko_fifteenth": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kaea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Kahiko (Fourteenth Era)",
+    "tradition": "Hawaiian",
+    "status": "unresolved",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fourteenth Era, pp. 70",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fourteenth-era"
+     },
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ],
+    "notes": "The two passages assign different partner contexts; identity is not resolved solely by the shared name."
+   }
+  ]
+ },
+ "hawaiian_kaea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kahiko_fifteenth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_luakahakona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_koulamaikalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_koulamaikalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_luakahakona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_luanuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kawaomaaukele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kawaomaaukele": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_luanuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kii": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinakoula",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinakoula": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kii",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_ulu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_punuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_punuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_ulu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kapulani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kapulani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nanaie": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kahaumokuleia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kahaumokuleia": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nanaie",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nanaielani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinakinau",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinakinau": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nanaielani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_waikalani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kekauilani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kekauilani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_waikalani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kuheleimoana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_mapuuaiaaala",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_mapuuaiaaala": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kuheleimoana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_konohiki": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hakaululena",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hakaululena": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_konohiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_waolena": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_mahuie",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_mahuie": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_waolena",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nanaulu": {
+  "relations": [
+   {
+    "kind": "genealogical-sequence-context",
+    "personId": "hawaiian_ulu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74–75",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
      }
     ]
    }

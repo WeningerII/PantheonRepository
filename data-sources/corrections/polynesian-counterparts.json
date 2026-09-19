@@ -2592,5 +2592,317 @@
     }
    ]
   }
+ ],
+ "samoan_tagaloa": [
+  {
+   "id": "source-context-notes",
+   "path": [
+    "notes"
+   ],
+   "op": "replace",
+   "expected": "Tagaloa (Tagaloalagi, Tagaloa-faʻatutupu-nuʻu), the supreme self-existent creator of Samoan religion — the Polynesian *Taŋaloa in his Samoan form — who stood alone in the primordial Expanse (Pō / Ilu) and made the heavens, the islands, the sea, fresh water, and humankind, and is reckoned the chief and progenitor of the gods. Kinless by attestation (self-existent) — see SOLITARY flag. Documented in the Samoan creation chant (Fraser's translation), Turner, Stair and Krämer.",
+   "value": "Turner records several accounts of Tangaloa. His cosmical genealogy gives Tangaloa of the heavens named parents and a son, Pili; another creation account leaves his origin unknown. In the Upolu narrative he marries Sinaleana and fathers Pili. These accounts differ from a blanket claim of kinlessness.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Turner, Samoa (1884), ch. I §§2,6–8 and ch. XXI",
+     "url": "https://www.gutenberg.org/ebooks/14224"
+    }
+   ],
+   "reason": "The former description declared Tagaloa kinless despite explicitly attested family accounts; Turner distinguishes unknown origin from demonstrated absence of parents."
+  },
+  {
+   "id": "source-context-lifecycle",
+   "path": [
+    "lifecycle"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "typeStatus": "deity",
+     "era": "primordial",
+     "eraOrdering": 0,
+     "startEvent": "Exists self-existent and alone, moving to and fro in the limitless Expanse (the Pō / Ilu) before there was any sky, sea, or land; a rock grows up at the place where he stands, from which he begins the work of creation",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Samoan creation chant in J. Fraser, 'The Samoan Story of Creation,' Journal of the Polynesian Society 1 (1892): 'Tagaloa dwelt in the Expanse; he made all things; he alone was there.'"
+      },
+      {
+       "kind": "secondary",
+       "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), ch. on the creation; Tagaloa-lagi as maker of heavens, lands, sea and people"
+      }
+     ],
+     "notes": "Tagaloa is not born; he is the self-existent creative principle ('le atua Tagaloa'). In the cosmogonic chant he stands in the Expanse and successively brings forth the rock, the sea, the sky, fresh water, and humankind."
+    }
+   ],
+   "value": [
+    {
+     "typeStatus": "deity",
+     "era": "primordial",
+     "eraOrdering": 0,
+     "startEvent": "creation-in-turner-account",
+     "notes": "In Turner’s sixth creation account, Tangaloa’s origin is unknown. He makes heaven and earth, forms Savaii and Upolu with stones, and makes the cuttlefish; fishing up the islands is separately reported as a variant.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "George Turner, Samoa (1884), ch. I §§2,6–8 and ch. XXI",
+       "url": "https://www.gutenberg.org/ebooks/14224"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "George Turner, Samoa (1884), ch. I §§2,6–8 and ch. XXI",
+     "url": "https://www.gutenberg.org/ebooks/14224"
+    }
+   ],
+   "reason": "Replace an unqualified composite self-existence claim with the reviewed Turner passage; superseded Fraser attribution remains in correction history for separate primary review."
+  }
+ ],
+ "tuamotuan_takaroa": [
+  {
+   "id": "source-context-notes",
+   "path": [
+    "notes"
+   ],
+   "op": "replace",
+   "expected": "Entered deity / male / immortal / primordial. Takaroa is the standard Tuamotuan dialect form of Tangaroa. Wired as spouse of Faumea; the sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are recorded in parentRoles/notes (thin, not authored).",
+   "value": "In the Vahitahi account reported by Beckwith, Tagaroa marries Faumea and fathers Tu-nui-ka-rere and Turi-a-faumea. He rescues Turi’s wife Hina-a-rauriki from Rogo-tumu-here.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Replace internal scaffolding and outdated claims that the named children lack records with the source-specific narrative."
+  },
+  {
+   "id": "source-context-parentRoles",
+   "path": [
+    "parentRoles"
+   ],
+   "op": "replace",
+   "expected": [
+    "One of the great gods of the Tuamotuan pantheon; his placement in the creation-charts varies and his forebears are recorded in notes rather than authored."
+   ],
+   "value": [
+    "The reviewed Vahitahi narrative does not name this figure’s parents."
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Do not present unreviewed creation-chart ancestry or internal record-state notes as parentage."
+  },
+  {
+   "id": "source-context-lifecycle",
+   "path": [
+    "lifecycle"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "typeStatus": "deity",
+     "era": "primordial",
+     "eraOrdering": 0,
+     "startEvent": "Takaroa, the sea-creator god, is reckoned among the great gods of the Tuamotuan cosmogony.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tangaroa/Takaroa among the great gods of the Tuamotus"
+      }
+     ],
+     "notes": "In the Tuamotus, as across the Austral, Society and Gambier groups, Takaroa is the god of the sea."
+    },
+    {
+     "typeStatus": "deity",
+     "era": "mythic",
+     "eraOrdering": 1,
+     "startEvent": "Takaroa sailed to the island of the eel-woman Faumea, who had man-eating eels within her body; she taught him to lure the eels out, and he took her to wife, begetting Tu-nui-ka-rere and Turi-a-Faumea.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Tangaroa and the eel-woman Faumea and their sons Tu-nui-ka-rere and Turi-a-Faumea"
+      }
+     ],
+     "notes": "The Faumea episode is the firmly-attested Tuamotuan Takaroa narrative; the sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are recorded in parentRoles/notes rather than authored as padding."
+    }
+   ],
+   "value": [
+    {
+     "typeStatus": "deity",
+     "era": "primordial",
+     "eraOrdering": 0,
+     "startEvent": "Takaroa, the sea-creator god, is reckoned among the great gods of the Tuamotuan cosmogony.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tangaroa/Takaroa among the great gods of the Tuamotus"
+      }
+     ],
+     "notes": "In the Tuamotus, as across the Austral, Society and Gambier groups, Takaroa is the god of the sea."
+    },
+    {
+     "typeStatus": "deity",
+     "era": "mythic",
+     "eraOrdering": 1,
+     "startEvent": "Takaroa sailed to the island of the eel-woman Faumea, who had man-eating eels within her body; she taught him to lure the eels out, and he took her to wife, begetting Tu-nui-ka-rere and Turi-a-Faumea.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Tangaroa and the eel-woman Faumea and their sons Tu-nui-ka-rere and Turi-a-Faumea"
+      },
+      {
+       "kind": "secondary",
+       "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+       "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+      }
+     ],
+     "notes": "Tu-nui-ka-rere (Ratu-nui) and Turi-a-faumea are sons of Tagaroa and Faumea in the Vahitahi account."
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Correct the child’s alternate name and remove internal record-state assertions."
+  }
+ ],
+ "tuamotuan_faumea": [
+  {
+   "id": "source-context-notes",
+   "path": [
+    "notes"
+   ],
+   "op": "replace",
+   "expected": "Entered deity / female / immortal / mythic. Firmly attested as a Tuamotuan figure (the eel-woman of the Tuamotus). Wired as spouse of Takaroa; her sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are named but thin (not authored). Her own parentage is not given, but she carries a real in-batch edge, so not flagged SOLITARY.",
+   "value": "Faumea is Tagaroa’s wife and mother of Tu-nui-ka-rere and Turi-a-faumea in the Vahitahi narrative reported by Beckwith. She releases the wind during the rescue of Hina-a-rauriki.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Replace internal scaffolding with the cited Vahitahi portrayal."
+  },
+  {
+   "id": "source-context-parentRoles",
+   "path": [
+    "parentRoles"
+   ],
+   "op": "replace",
+   "expected": [
+    "Her own parentage is not given in the Tuamotuan sources; she is the eel-woman of her own island whom Takaroa comes to. Her sons by Takaroa (Tu-nui-ka-rere and Turi-a-Faumea) are named but not authored figures."
+   ],
+   "value": [
+    "The reviewed Vahitahi narrative does not name this figure’s parents."
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Do not present unreviewed creation-chart ancestry or internal record-state notes as parentage."
+  }
+ ],
+ "tuamotuan_tunuikarere": [
+  {
+   "id": "source-context-name",
+   "path": [
+    "name"
+   ],
+   "op": "replace",
+   "expected": {
+    "primary": "Tu-nui-ka-rere",
+    "alt": [
+     "Tunuikarere",
+     "Rata-nui"
+    ],
+    "transliterations": {
+     "tuamotuan": "Tu-nui-ka-rere"
+    }
+   },
+   "value": {
+    "primary": "Tu-nui-ka-rere",
+    "alt": [
+     "Tunuikarere",
+     "Ratu-nui"
+    ],
+    "transliterations": {
+     "tuamotuan": "Tu-nui-ka-rere"
+    }
+   },
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Beckwith prints Ratu-nui, not the Rata-nui spelling in the legacy record."
+  },
+  {
+   "id": "source-context-lifecycle",
+   "path": [
+    "lifecycle"
+   ],
+   "op": "replace",
+   "expected": [
+    {
+     "typeStatus": "deity",
+     "era": "mythic",
+     "eraOrdering": 0,
+     "startEvent": "Tu-nui-ka-rere, one of the two sons of the sea-god Takaroa and the eel-woman Faumea, is born after Takaroa lures the man-eating eels from Faumea body and takes her to wife.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Takaroa, the eel-woman Faumea, and their sons Tu-nui-ka-rere and Turi-a-Faumea"
+      }
+     ],
+     "notes": "Recorded as a son of Takaroa and Faumea; also called Rata-nui."
+    }
+   ],
+   "value": [
+    {
+     "typeStatus": "deity",
+     "era": "mythic",
+     "eraOrdering": 0,
+     "startEvent": "Tu-nui-ka-rere, one of the two sons of the sea-god Takaroa and the eel-woman Faumea, is born after Takaroa lures the man-eating eels from Faumea body and takes her to wife.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Takaroa, the eel-woman Faumea, and their sons Tu-nui-ka-rere and Turi-a-Faumea"
+      },
+      {
+       "kind": "secondary",
+       "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+       "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+      }
+     ],
+     "notes": "Tu-nui-ka-rere (Ratu-nui) and Turi-a-faumea are sons of Tagaroa and Faumea in the Vahitahi account."
+    }
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, p. 289, Vahitahi account",
+     "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+    }
+   ],
+   "reason": "Correct the child’s alternate name and remove internal record-state assertions."
+  }
  ]
 }

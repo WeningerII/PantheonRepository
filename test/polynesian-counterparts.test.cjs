@@ -52,3 +52,18 @@ test('cited revisions preserve superseded evidence and expose their final field 
   assert.ok(people[id].variants.some(v=>v.id===`correction:${c.id}`&&v.sources.length));
  }
 });
+test('explicit name reviews preserve target status and survive identifier renaming',()=>{
+ const cite={reference:'Text A, section 1',url:'https://example.org/a'};
+ const make=(a,b)=>({[a]:{id:a,name:{primary:'Alpha',alt:[]},tradition:'T',sources:[],parentIds:[],nameLinks:[{value:'Beta',tradition:'T',status:'resolved',personId:b,sources:[cite]}]},[b]:{id:b,name:{primary:'Beta',alt:[]},tradition:'T',sources:[],parentIds:[]}});
+ const config=(a)=>({seeds:[a],relationshipPattern:'counterpart',nameReviews:{[a]:[{value:'Alpha',status:'reviewed-adequate',identityStatus:'same-record',sources:[cite],review:'Checked explicit source form.'},{value:'Beta',status:'reviewed-adequate',sources:[cite],review:'Checked explicit target form.'}]}});
+ for(const [a,b] of [['N1','N2'],['R7','R3']]){
+  const people=make(a,b),before=JSON.stringify(people),result=report(people,config(a));
+  const names=result.records.find(r=>r.id===a).names;
+  assert.equal(names.find(n=>n.value==='Alpha').status,'same-record');
+  assert.equal(names.find(n=>n.value==='Beta').status,'resolved');
+  assert.equal(names.find(n=>n.value==='Beta').personId,b);
+  assert.deepEqual(names.find(n=>n.value==='Alpha').reviewSources,[cite]);
+  assert.equal(JSON.stringify(people),before);
+  assert.throws(()=>report(people,{...config(a),nameReviews:{[a]:[{value:'Missing',sources:[cite],review:'Absent name'}]}}));
+ }
+});
