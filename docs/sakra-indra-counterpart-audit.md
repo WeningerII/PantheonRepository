@@ -1,7 +1,7 @@
 # Śakra / Indra counterpart research
 
-Research acceptance remains open. This is a source-bounded implementation and a
-reproducible inventory, not a declaration of historical completeness.
+This implementation records passage-bounded research and a reproducible inventory.
+Historical completeness is not certified; evidence questions below remain explicit.
 
 ## Baseline and ownership
 
@@ -9,13 +9,13 @@ PRs 139–141 are the technical baseline, at main 44b249a. PR 145 supplies the
 shared cited correction facility. This lane does not implement shared generator,
 loader or UI behavior. It owns the Śakra/Indra endpoint records and their family
 additions. Inventory closure also reaches Shiva-specific records; inclusion in
-that inventory does not transfer ownership. Daksha is reference-only here; the
-reciprocal Aditi account remains for the Shiva owner. No cross-lane reciprocal
-work is counted as implemented.
+that inventory does not transfer ownership. The Shiva owner supplied the Daksha/Aditi and Brahma/Marici reciprocals in
+commit a8994af. Those sources are incorporated here; PR147 supplies the separate
+Rigvedic Daksha account.
 
 ## Authored results
 
-The transcript supplies 42 records. These include Śacī and her three sons,
+The transcript supplies 48 records. These include Śacī and her three sons,
 Ekāṣṭakā and the explicitly qualified Prajāpati of her hymn, Marīci, Buddhist
 family and previous-life figures, three titled Korean officers, and the royal
 parents in the Jade Emperor scripture. A title is not automatically a unique
@@ -27,13 +27,14 @@ Jade Emperor's princely manifestation. Magha's rebirth and Sujā's intervening
 births do not create biological parent edges. No Hindu genealogy is transferred
 to Buddhist or regional counterparts.
 
-Sakka, Dìshì and Taishakuten are same-record names; registered counterparts use
+Sakka, Dìshì, Dìshìtiān and Taishakuten are same-record names; registered counterparts use
 explicit validated IDs. Hwanin's identification is tied to the Samguk yusa gloss.
 The Jade Emperor equation is disputed pending the precise Maspero passage.
 Heissig's discussion of Qormusta is presented as competing historical
 identifications, not a secure single transmission or universal divine identity.
-Burmese “King of the Nats” resolves to `burmese_thagyamin`; its native-name and
-cult claims remain pending a reviewed Temple/Spiro passage. No duplicate is made.
+Burmese “King of the Nats” resolves to `burmese_thagyamin`; its primary name is now Thagyamin, with the office retained as an alias.
+The NIU Pagan-period study supports its Shwezigon shrine and wooden image.
+Temple/Spiro ritual and family claims remain unverified. No duplicate is made.
 
 The final-pass corrections preserve old evidence. They correct the thunderbolt's
 misattribution to SN 11.3, remove an unsupported Vajrapāṇi identity implication,
@@ -60,7 +61,7 @@ worked for the Korean and Chinese narratives. Heissig's Archive full text worked
 but does not validate every Buryat/Kalmyk assertion in the legacy records.
 
 Other research is unfinished rather than access-blocked: epic collateral family
-branches, Saci's Puloman parentage, several Sakka
+branches, several Sakka
 cross-references, the Mongol Geser versus
 White Brahma conflation, Roy mo's correct narrative endpoint, Chinese household
 relationships, and modern Hwanin aliases. Arjuna's Indra/Kunti parentage was
@@ -79,8 +80,9 @@ reproducibility. Shared neutral tests cover ID renaming, independent accounts an
 correction rejection. Local Chromium installation succeeded, but launch fails on
 denied socket creation. CI must supply the real-browser result.
 
-Keep PR 142 draft while evidence and cross-lane integration remain unfinished.
-No deployment or completion claim follows from a passing structural test.
+Merge acceptance requires final-head browser, corpus and regeneration gates,
+with cross-lane endpoints incorporated. Scholarly uncertainty is preserved in
+the data rather than represented as an established identity.
 
 The lane also carries `follow-up-evidence.json`: the successful Rohinī dictionary
 entry and Wilkins's Rāji narrative are implemented follow-up discoveries: Rohinī links to the registered Anuruddha,
@@ -101,7 +103,31 @@ chain. Five human forebears and two deva endpoints keep fatherhood distinct from
 rebirth; the final human father is selectable for Kosiya. The unnamed human wife
 and children are not identified with the later heavenly marriage to Hirī.
 
-PR #147 was inspected at 9fb5166. Its Daksha account represents Rigveda 10.72,
+PR #147 was inspected and incorporated at main merge 4910adc. Its Daksha account represents Rigveda 10.72,
 not the VP1.15 genealogy. The reviewed hymn’s Aditi endpoint is now a separate
-selectable account in this lane. The shared endpoint remains an integration
-dependency until #147 is incorporated; no default biological cycle is created.
+selectable account in this lane. Both endpoints are integrated; no default biological cycle is created.
+
+## Final research extension
+
+Padma Purāṇa 1.6 supports Danu and Kaśyapa → Puloman → Śacī as separately
+cited selectable accounts. Female Pulomā and unrelated Danu namesakes are not
+merged. The Purāṇa Index supports Indra → Jayantī and Jayantī/Śukra → Devayānī;
+Śacī is not silently assigned as Jayantī’s mother. Jayantī wife of Ṛṣabha is
+a distinct namesake. The Sirī dictionary entry supports a separate daughter of
+Dhataraṭṭha, without combining her with Sakka’s daughter.
+
+Ding Fubao’s 帝釋 and 帝釋天 entries support Chinese names on the existing
+Śakra record. NIU independently resolves the Burmese primary-name and shrine
+evidence gap. Its nat images of Min Mahagiri and Shwemyethna are contextual
+figures, not additional children of the Buddhist heaven-king.
+
+Ownership: Jayantī and her maternal endpoint belong to this lane. Śukra’s
+Shiva-specific portrayal remains untouched; its reciprocal spouse endpoint was
+requested from the owner in PR147 comment 5745935299.
+
+The Maruts collective now has independent Rigvedic Rudra/Pṛśni and Purāṇic
+Diti/Kaśyapa origin accounts. The collective is not merged with Vāyu’s alias.
+Shiva OWNERSHIP.md explicitly assigns this overlap to the Indra lane. Śukra’s
+Indra-family spouse endpoint is included under that same ownership boundary;
+no Shiva-specific portrayal is edited. The Suyaśā and Rudra reciprocal endpoints
+remain requested from their owner (PR147 comment5745970751).

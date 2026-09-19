@@ -342,6 +342,49 @@
           "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
         }
       ]
+    },
+    {
+      "id": "burmese-regional-counterpart",
+      "path": [
+        "relations",
+        3
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Hmannan Yazawin (Glass Palace Chronicle, 1829), where Thagyamin/Sakka intervenes in royal history"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967)"
+          }
+        ],
+        "notes": "Reciprocal of burmese_thagyamin.equated-with — Thagyamin is Sakka (name < Śakra) set by Burmese kings at the head of the 37 nats — a Buddhist deva domesticating the indigenous spirit pantheon; he keeps Sakka's moral oversight and New Year descent."
+      },
+      "value": {
+        "kind": "regional-adaptation",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "Burmese Indra–Sakka–Thagyamin in the Shwezigon account; regional adaptation does not transfer family or attributes."
+      },
+      "reason": "Qualify both endpoints consistently with the reviewed Burmese evidence.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
     }
   ],
   "hindu_indra": [
@@ -385,6 +428,45 @@
           "kind": "secondary",
           "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
           "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "burmese-regional-counterpart",
+      "path": [
+        "relations",
+        3
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "interpretatio",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967); H.L. Shorto, 'The 32 Myos in the Medieval Mon Kingdom', BSOAS 26 (1963) on Indra in Mon-Burmese kingship"
+          }
+        ],
+        "notes": "Reciprocal of burmese_thagyamin.interpretatio — Via Sakka the figure descends from Indra, and court Brahmans kept Indra's consecration symbolism; but the Burmese king of the nats has none of Indra's vajra-wielding storm function — sovereignty without weather."
+      },
+      "value": {
+        "kind": "regional-adaptation",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "Burmese Indra–Sakka–Thagyamin in the Shwezigon account; regional adaptation does not transfer family or attributes."
+      },
+      "reason": "Qualify both endpoints consistently with the reviewed Burmese evidence.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
         }
       ]
     }
@@ -685,6 +767,166 @@
           "kind": "primary",
           "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
           "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "burmese_thagyamin": [
+    {
+      "id": "sourced-primary-name",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "King of the Nats",
+        "alt": [
+          "Thagyamin",
+          "Sakka",
+          "Indra"
+        ],
+        "transliterations": {
+          "burmese": "သိကြားမင်း",
+          "rom": "Thagya Min"
+        }
+      },
+      "value": {
+        "primary": "Thagyamin",
+        "alt": [
+          "King of the Nats",
+          "Thagya Min",
+          "Sakka",
+          "Indra"
+        ],
+        "transliterations": {
+          "burmese": "သိကြားမင်း",
+          "rom": "Thagya Min"
+        }
+      },
+      "reason": "Use the attested personal designation, retaining the English office as an alias.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "factual-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Deity (the indigenised heaven-king who heads the indigenous nat pantheon). English title leads; native Thagyamin (သိကြားမင်း) in alt/transliterations. Though derived from Indra, he is included here as the apex of the indigenous Thirty-Seven Nats layer.",
+      "value": "Burmese Buddhist heaven-king appointed head of the thirty-seven selected nats. A wooden image from the Pagan period occupies an eastern chamber of the nat shrine at Shwezigon.",
+      "reason": "Replace editorial ingestion commentary with a sourced description.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "regional-identification-0",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Hmannan Yazawin (Glass Palace Chronicle, 1829), where Thagyamin/Sakka intervenes in royal history"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967)"
+          }
+        ],
+        "notes": "Thagyamin is Sakka (name < Śakra) set by Burmese kings at the head of the 37 nats — a Buddhist deva domesticating the indigenous spirit pantheon; he keeps Sakka's moral oversight and New Year descent."
+      },
+      "value": {
+        "kind": "regional-adaptation",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "NIU names the deity Indra–Sakka–Thagyamin in its account of the Burmese nat pantheon. This identification does not transfer another tradition’s genealogy."
+      },
+      "reason": "Qualify the regional adaptation and remove unsupported claims about weather powers.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "regional-identification-1",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "interpretatio",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967); H.L. Shorto, 'The 32 Myos in the Medieval Mon Kingdom', BSOAS 26 (1963) on Indra in Mon-Burmese kingship"
+          }
+        ],
+        "notes": "Via Sakka the figure descends from Indra, and court Brahmans kept Indra's consecration symbolism; but the Burmese king of the nats has none of Indra's vajra-wielding storm function — sovereignty without weather."
+      },
+      "value": {
+        "kind": "regional-adaptation",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "NIU names the deity Indra–Sakka–Thagyamin in its account of the Burmese nat pantheon. This identification does not transfer another tradition’s genealogy."
+      },
+      "reason": "Qualify the regional adaptation and remove unsupported claims about weather powers.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    }
+  ],
+  "hindu_devayani": [
+    {
+      "id": "factual-parentage-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "The relationship between Devayani and Sharmishtha — the brahmin's daughter and the princess who becomes her servant — is one of the sharpest treatments of caste and humiliation in the epic literature, and this record does not narrate it, because the treatment consulted gives the marriage, the complaint and the son. No edge is drawn between the two women: the sources consulted make them co-wives and the earlier part of their story is not in hand, and 'rival' would be an interpretation rather than a citation.",
+      "value": "Daughter of Śukra and Jayantī in the Purāṇa Index account.",
+      "reason": "Replace editorial commentary with the cited family account.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+          "url": "https://www.wisdomlib.org/definition/jayanti"
         }
       ]
     }

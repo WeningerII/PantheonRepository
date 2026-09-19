@@ -65,7 +65,11 @@ research or a completed outer network is made.
 
 ## Integration and verification
 
-Shared correction PR #145 is merged and incorporated. All source changes are
+Shared correction PR #145 is merged and incorporated. Integration follow-up #148
+uses the targeted-disputed name interface from #147 and the graph vocabulary
+from #146/#147. Both disputed Kukulkan–Topiltzin links retain explicit IDs and
+citations; navigation does not resolve their historical identification. Four
+remaining comparison/context labels extend the existing generic vocabulary. All source changes are
 lane-owned; no Shiva, Tangaroa or Śakra record is edited. Generated corpus and
 standalone artifacts must be regenerated from combined main before merge.
 

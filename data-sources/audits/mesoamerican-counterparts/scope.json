@@ -6706,7 +6706,7 @@
    {
     "value": "Topiltzin (identification disputed)",
     "form": "explicit-link",
-    "status": "resolved-target",
+    "status": "disputed-target",
     "target": "topiltzin",
     "evidenceRef": "e44"
    }
@@ -7324,7 +7324,7 @@
    {
     "value": "Cuculcan (identification disputed)",
     "form": "explicit-link",
-    "status": "resolved-target",
+    "status": "disputed-target",
     "target": "maya_kukulkan",
     "evidenceRef": "e44"
    },
@@ -7525,7 +7525,8 @@
    "attempts": [
     "Inspected existing records and cited Relación de Michoacán references",
     "Cervantes Virtual Relación de Michoacán route inaccessible",
-    "Targeted source search returned unrelated results"
+    "Targeted source search returned unrelated results",
+    "Final alternative: Colegio de Michoacán Relación index (completoCategorias.asp?id=207, sacerdotes de Cuerauaperi) surfaced in search, but page open was inaccessible and direct retrieval returned HTTP 502. Search snippet alone was not used as claim evidence."
    ],
    "status": "blocked-primary-source-access",
    "consequence": "All eight connected records remain in the ledger with unfinished review; no new equivalence or family transfer asserted."
@@ -7630,7 +7631,20 @@
   "sharedCorrectionPR": 145,
   "status": "merged-main-52d0810-and-locally-incorporated",
   "otherLaneEndpoints": [],
-  "note": "No Shiva, Tangaroa or Śakra record edited. No cross-lane reciprocal implementation claimed."
+  "note": "No Shiva, Tangaroa or Śakra record edited. No cross-lane reciprocal implementation claimed.",
+  "disputedNameInterface": {
+   "pr": 147,
+   "status": "incorporated-68f8a67",
+   "note": "Two ruler-identification links retain validated explicit target IDs while marking the historical identification disputed. No genealogy transfers."
+  },
+  "qualifiedGraphVocabulary": {
+   "prs": [
+    146,
+    147,
+    148
+   ],
+   "status": "implemented-and-covered-by-neutral-graph-tests"
+  }
  },
  "reviewEvidence": {
   "e1": "Existing content inventoried; no category-wide historical certification. See source blockers and claim-level review decisions.",

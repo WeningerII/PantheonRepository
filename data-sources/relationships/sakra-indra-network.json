@@ -63,6 +63,32 @@
           }
         ]
       }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "padma-puloman-parentage",
+        "label": "Padma Purāṇa 1.6: Puloman (mother not named)",
+        "parents": [
+          {
+            "personId": "hindu_puloman",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ]
+      }
     ]
   },
   "hindu_indra": {
@@ -258,6 +284,30 @@
           }
         ],
         "notes": "Viṣṇu Purāṇa 1.15 Āditya birth account; no universal genealogy inferred."
+      },
+      {
+        "personId": "hindu_jayanti_indra",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_maruts",
+        "kind": "companion",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+          }
+        ],
+        "notes": ""
       }
     ],
     "parentageAccounts": [
@@ -513,6 +563,44 @@
             "url": "https://sacred-texts.com/hin/vp/vp050.htm"
           }
         ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_danu",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_puloman",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_maruts",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+          }
+        ],
+        "notes": ""
       }
     ]
   },
@@ -988,6 +1076,47 @@
         ],
         "personId": "mongol_qormusta",
         "note": "Comparative link: Heissig discusses possible Indra influence, alongside other identifications. Family accounts remain separate."
+      },
+      {
+        "value": "Thagyamin",
+        "tradition": "Burmese",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "personId": "burmese_thagyamin"
+      },
+      {
+        "value": "Dìshìtiān",
+        "tradition": "Chinese Buddhist",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ding Fubao, Dictionary of Buddhist Studies (1922), 帝釋天",
+            "url": "https://zh.wikisource.org/wiki/佛學大辭典/帝釋天"
+          }
+        ],
+        "original": "帝釋天",
+        "script": "Chinese"
+      },
+      {
+        "value": "釋提桓因",
+        "tradition": "Chinese Buddhist",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Ding Fubao, Dictionary of Buddhist Studies (1922), 帝釋 and quoted Mahāvairocana commentary",
+            "url": "https://zh.wikisource.org/wiki/佛學大辭典/帝釋"
+          }
+        ],
+        "original": "釋提桓因",
+        "script": "Chinese"
       }
     ],
     "variants": [
@@ -1130,6 +1259,20 @@
           }
         ],
         "note": "English rendering in Francis’s translation; an alias on this record."
+      }
+    ],
+    "relations": [
+      {
+        "personId": "buddhist_siri_dhatarattha",
+        "kind": "distinct-from",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sirī 1–2",
+            "url": "https://www.palikanon.com/english/pali_names/s/sirii.htm"
+          }
+        ],
+        "notes": ""
       }
     ]
   },
@@ -2434,6 +2577,416 @@
             "url": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
           }
         ]
+      }
+    ]
+  },
+  "burmese_thagyamin": {
+    "nameLinks": [
+      {
+        "value": "Thagyamin",
+        "tradition": "Burmese",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ]
+      },
+      {
+        "value": "Sakka",
+        "tradition": "Buddhist",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "personId": "buddhist_sakra"
+      },
+      {
+        "value": "Indra",
+        "tradition": "Hindu",
+        "status": "resolved",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "personId": "hindu_indra"
+      }
+    ]
+  },
+  "hindu_danu": {
+    "relations": [
+      {
+        "personId": "hindu_kashyapa",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_puloman",
+        "kind": "mother-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "hindu_puloman": {
+    "parentageAccounts": [
+      {
+        "id": "padma-danava-parentage",
+        "label": "Padma Purāṇa 1.6: Danu and Kaśyapa",
+        "parents": [
+          {
+            "personId": "hindu_danu",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_kashyapa",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_saci",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Padma Purāṇa, Sṛṣṭikhaṇḍa 1.6.28–34 and 48–53, Deshpande translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc364126.html"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "hindu_jayanti_indra": {
+    "parents": [
+      {
+        "personId": "hindu_indra",
+        "kind": "father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_shukra",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_devayani",
+        "kind": "mother-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "hindu_devayani": {
+    "parentageAccounts": [
+      {
+        "id": "purana-jayanti-parentage",
+        "label": "Purāṇa Index: Śukra and Jayantī",
+        "parents": [
+          {
+            "personId": "hindu_shukra",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+                "url": "https://www.wisdomlib.org/definition/jayanti"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_jayanti_indra",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+                "url": "https://www.wisdomlib.org/definition/jayanti"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ]
+      }
+    ]
+  },
+  "buddhist_siri_dhatarattha": {
+    "parents": [
+      {
+        "personId": "buddhist_dhrtarastra",
+        "kind": "father",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sirī 1–2",
+            "url": "https://www.palikanon.com/english/pali_names/s/sirii.htm"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "buddhist_siri_sakra",
+        "kind": "distinct-from",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sirī 1–2",
+            "url": "https://www.palikanon.com/english/pali_names/s/sirii.htm"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "buddhist_dhrtarastra": {
+    "relations": [
+      {
+        "personId": "buddhist_siri_dhatarattha",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sirī 1–2",
+            "url": "https://www.palikanon.com/english/pali_names/s/sirii.htm"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "hindu_shukra": {
+    "relations": [
+      {
+        "personId": "hindu_jayanti_indra",
+        "kind": "spouse",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+            "url": "https://www.wisdomlib.org/definition/jayanti"
+          }
+        ],
+        "notes": "Indra-family marriage account; no alteration of Shiva-specific portrayals."
+      }
+    ]
+  },
+  "hindu_maruts": {
+    "parentageAccounts": [
+      {
+        "id": "rv-rudra-prsni",
+        "label": "Ṛgveda 6.66: Rudra and Pṛśni",
+        "parents": [
+          {
+            "personId": "hindu_rudra_rigvedic",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Ṛgveda 6.66.1–3 and 11, Griffith translation",
+                "url": "https://sacred-texts.com/hin/rigveda/rv06066.htm"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_prsni_rigvedic",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Ṛgveda 6.66.1–3 and 11, Griffith translation",
+                "url": "https://sacred-texts.com/hin/rigveda/rv06066.htm"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ṛgveda 6.66.1–3 and 11, Griffith translation",
+            "url": "https://sacred-texts.com/hin/rigveda/rv06066.htm"
+          }
+        ]
+      },
+      {
+        "id": "vp-diti-kashyapa",
+        "label": "Viṣṇu Purāṇa 1.21: Diti and Kaśyapa",
+        "parents": [
+          {
+            "personId": "hindu_diti",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+              }
+            ]
+          },
+          {
+            "personId": "hindu_kashyapa",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+                "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "personId": "hindu_indra",
+        "kind": "companion",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "personId": "hindu_suyasa",
+        "kind": "parent-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Śiva Purāṇa 3.7.41 and 57, Shastri translation",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226403.html"
+          }
+        ],
+        "notes": "Collective parentage: the passage does not select one Marut as an individual father."
+      }
+    ],
+    "variants": [
+      {
+        "id": "collective-not-single-bearer",
+        "claim": "Collective identity",
+        "description": "The Maruts are a host, not an individual bearer of Vāyu’s Marut alias. Their two cited origin accounts remain separately selectable.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ṛgveda 6.66.1–3 and 11, Griffith translation",
+            "url": "https://sacred-texts.com/hin/rigveda/rv06066.htm"
+          }
+        ]
+      }
+    ]
+  },
+  "hindu_prsni_rigvedic": {
+    "relations": [
+      {
+        "personId": "hindu_maruts",
+        "kind": "mother-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ṛgveda 6.66.1–3 and 11, Griffith translation",
+            "url": "https://sacred-texts.com/hin/rigveda/rv06066.htm"
+          }
+        ],
+        "notes": ""
+      }
+    ]
+  },
+  "hindu_diti": {
+    "relations": [
+      {
+        "personId": "hindu_maruts",
+        "kind": "mother-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Viṣṇu Purāṇa 1.21.30–41, McComas Taylor translation (2021)",
+            "url": "https://www.wisdomlib.org/hinduism/book/the-vishnu-purana-taylor/d/doc1461104.html"
+          }
+        ],
+        "notes": ""
       }
     ]
   }

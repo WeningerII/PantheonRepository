@@ -258,7 +258,7 @@ function NameRecords({ entry, byId = new Map(), onOpen }) {
           <div className="name-rec" key={i}>
             <div className="name-rec-main">
               {n.original && <span className="name-rec-original">{n.original}</span>}
-              {n.status === 'resolved' && n.personId !== entry.id && byId.has(n.personId)
+              {['resolved', 'disputed'].includes(n.status) && n.personId !== entry.id && byId.has(n.personId)
                 ? <a className="name-rec-value" href={'#/browse/' + encodeURIComponent(n.personId)}
                     onClick={e => { if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && onOpen) { e.preventDefault(); onOpen(n.personId); } }}>{n.value}</a>
                 : <span className="name-rec-value">{n.value}</span>}

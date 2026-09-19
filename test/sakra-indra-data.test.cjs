@@ -5,7 +5,7 @@ const path=require('node:path');
 const {inventory}=require('../scripts/lib/counterpart-audit.cjs');
 const root=path.join(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
-const patches=read('data-sources/relationships/sakra-indra-network.json');
+const patches={...read('data-sources/relationships/sakra-indra-network.json'),...read('data-sources/relationships/shiva-shared-reciprocals.json')};
 const {seedPeople:people}=require('../scripts/build-tiers.cjs').loadCorpus({quiet:true});
 test('authored family claims retain targets, citations, and independent accounts',()=>{
  for(const [id,p] of Object.entries(patches)){
