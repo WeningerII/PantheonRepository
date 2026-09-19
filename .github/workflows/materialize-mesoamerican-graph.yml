@@ -1,0 +1,42 @@
+name: Materialize verified graph vocabulary artifact
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-mesoamerican-graph.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'enrichment/mesoamerican-graph-labels'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Verify and commit exact artifact
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          python3 build.py
+          test "$(git hash-object dist/pantheon-registry.html)" = "4f4ec72dcedd2a6c2ad91e9e1185d8c902e304b0"
+          git add -- dist/pantheon-registry.html
+          if git diff --cached --quiet; then exit 0; fi
+          test "$(git diff --cached --name-only)" = "dist/pantheon-registry.html"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Materialize verified graph vocabulary artifact'
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/enrichment/mesoamerican-graph-labels | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/enrichment/mesoamerican-graph-labels
