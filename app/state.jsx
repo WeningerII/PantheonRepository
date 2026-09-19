@@ -503,6 +503,7 @@ const RELATION_FAMILIES = [
     kinds: ['interpretatio', 'syncretism', 'counterpart-of', 'equated with', 'equated-with',
             'buddhist-adaptation', 'identified-in-text', 'disputed-identification',
             'comparative-identification', 'indirect-syncretic-association',
+            'comparison-under-review', 'iconographic-comparison', 'scholarly-comparison', 'textual-identification',
             'localized-cult-assimilation', 'regional-cult-form',
             'identification-awaiting-verification', 'historical-association',
             'foundational precursor to', 'post death continuation',
