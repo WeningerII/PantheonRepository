@@ -85,7 +85,7 @@ const srv = http.createServer((rq, rs) => {
   const {seedPeople:people}=require('./build-tiers.cjs').loadCorpus({quiet:true});
   const patches=JSON.parse(fs.readFileSync(path.join(ROOT,'data-sources/relationships/sakra-indra-network.json'),'utf8'));
   const pairs=Object.entries(patches).flatMap(([id,p])=>[...new Set((p.relations||[]).map(r=>r.personId))].map(target=>({id,target})));
-  let relationChecks=0,graphChecks=0;
+  let relationChecks=0,graphChecks=0,qualifiedChecks=0;
   try{
     for(const {id,target} of pairs){
       await pg.goto(`${base}#/browse/${encodeURIComponent(id)}`);
@@ -109,7 +109,20 @@ const srv = http.createServer((rq, rs) => {
       await pg.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[target].name.primary);
       graphChecks++;
     }
-    assert.ok(relationChecks&&graphChecks);
-    console.log(`Verified ${relationChecks} relationship-list and ${graphChecks} graph-neighbor keyboard navigations.`);
+    const corrections=JSON.parse(fs.readFileSync(path.join(ROOT,'data-sources/corrections/sakra-indra-network.json'),'utf8'));
+    const qualified=Object.entries(corrections).flatMap(([id,cs])=>cs.filter(c=>c.path[0]==='relations'&&c.op==='replace').map(c=>({id,target:c.value.personId})));
+    for(const {id,target} of qualified){
+      await pg.goto(`${base}#/graph/${encodeURIComponent(id)}`);
+      const cross=pg.locator('.graph-modes').getByRole('button',{name:'Cross-tradition',exact:true});
+      await cross.focus();await cross.press('Enter');
+      await pg.waitForFunction(name=>document.querySelector('.graph-focus-name')?.textContent===name,people[id].name.primary);
+      const a=pg.locator(`.graph-focus-neighbor[href="#/browse/${encodeURIComponent(target)}"]`).first();
+      await a.waitFor();await a.focus();await a.press('Enter');
+      await pg.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[target].name.primary);
+      qualifiedChecks++;
+    }
+    assert.ok(relationChecks&&graphChecks&&qualifiedChecks);
+
+    console.log(`Verified ${relationChecks} relationship-list and ${graphChecks} graph-neighbor keyboard navigations; ${qualifiedChecks} qualified Cross-tradition links.`);
   }finally{await b.close();srv.close();}
 })().catch(e=>{console.error(e);srv.close();process.exitCode=1;});

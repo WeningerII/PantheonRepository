@@ -15,7 +15,7 @@ work is counted as implemented.
 
 ## Authored results
 
-The transcript supplies 35 records. These include Śacī and her three sons,
+The transcript supplies 42 records. These include Śacī and her three sons,
 Ekāṣṭakā and the explicitly qualified Prajāpati of her hymn, Marīci, Buddhist
 family and previous-life figures, three titled Korean officers, and the royal
 parents in the Jade Emperor scripture. A title is not automatically a unique
@@ -61,7 +61,7 @@ but does not validate every Buryat/Kalmyk assertion in the legacy records.
 
 Other research is unfinished rather than access-blocked: epic collateral family
 branches, Saci's Puloman parentage, several Sakka
-cross-references, the Jātaka 535 human ancestral chain, the Mongol Geser versus
+cross-references, the Mongol Geser versus
 White Brahma conflation, Roy mo's correct narrative endpoint, Chinese household
 relationships, and modern Hwanin aliases. Arjuna's Indra/Kunti parentage was
 checked against the Ganguli Adi Parva CXXIII birth passage and is already adequate;
@@ -88,15 +88,15 @@ and Rāji receives an acknowledged-father relation without biological defaults.
 The permanent lane browser gate exercises authored relationship-list links and
 a data-selected graph-neighbor link for each endpoint, using keyboard activation.
 
-## Open shared navigation dependency
+## Shared navigation integration
 
-Actual browser verification exposed that the graph starts in Cross-tradition
-mode. The lane test selects All before testing within-tradition neighbors; this
-is ordinary UI filter behavior, not a missing link. Separately, `relationFamily`
-in `app/state.jsx` uses an exact shared kind list. The new evidence-qualified
-kinds `buddhist-adaptation`, `identified-in-text`, `disputed-identification` and
-`comparative-identification` currently fall under Other. The Shiva owner must
-add their generic classification to Cross-tradition with neutral coverage before
-these can appear in the default cross-tradition graph. No figure-specific rule
-is requested. All-mode navigation is independently testable; this dependency is
-not counted as implemented and prevents final integration.
+PR #146 (main merge 9b82608) supplies the generic Cross-tradition classification
+for qualified adaptations and identifications. This lane incorporates that
+change without duplicating the shared implementation. The lane browser gate
+also exercises every corrected counterpart endpoint in Cross-tradition mode;
+within-tradition family neighbors use the All filter.
+
+The primary Jātaka 535 opening resolves its previously pending human ancestral
+chain. Five human forebears and two deva endpoints keep fatherhood distinct from
+rebirth; the final human father is selectable for Kosiya. The unnamed human wife
+and children are not identified with the later heavenly marriage to Hirī.
