@@ -1121,6 +1121,76 @@
             "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
           }
         ]
+      },
+      {
+        "id": "divine-breath-as-reported",
+        "label": "Divine breath account as reported by Brinton",
+        "parents": [
+          {
+            "personId": "aztec_tonacatecuhtli",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+                "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+              }
+            ]
+          },
+          {
+            "personId": "chimalman",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+                "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
+      },
+      {
+        "id": "ancestral-father-as-reported",
+        "label": "Ancestral father account as reported by Brinton",
+        "parents": [
+          {
+            "personId": "nahua_iztac_mixcoatl",
+            "kind": "father",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+                "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+              }
+            ]
+          },
+          {
+            "personId": "chimalman",
+            "kind": "mother",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+                "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
       }
     ],
     "relationRevisions": [
@@ -1336,6 +1406,32 @@
         "id": "reported-conception-accounts",
         "claim": "reported-conception-accounts",
         "description": "Brinton reports different colonial narratives: conception by divine breath, by swallowing jade, and through Camaxtli. These witnesses should not be collapsed into a single biological event; the original codex commentaries still require direct verification.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
+      },
+      {
+        "id": "reported-apotheosis",
+        "claim": "Reported apotheosis",
+        "description": "Brinton reports death in childbirth and a heavenly name Chalchihuitzli in a codex-commentary account. This is a secondary report, not a directly verified glyph reading or a separate named person.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "nahua_iztac_mixcoatl",
+        "notes": "Alternative ancestral marriage account as reported by Brinton; not merged with the Camaxtli account.",
         "sources": [
           {
             "kind": "secondary",
@@ -1854,6 +1950,50 @@
             "kind": "primary",
             "reference": "Popol Vuh, The Sons Receive Authority to Rule, Christenson 2007 electronic edition, pp. 240–243 and note 688",
             "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "nahua_iztac_mixcoatl": {
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "nahua_ilancueitl_ancestral",
+        "notes": "Alternative ancestral marriage account as reported by Brinton; not merged with the Camaxtli account.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
+      },
+      {
+        "kind": "spouse",
+        "personId": "chimalman",
+        "notes": "Alternative ancestral marriage account as reported by Brinton; not merged with the Camaxtli account.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
+          }
+        ]
+      }
+    ]
+  },
+  "nahua_ilancueitl_ancestral": {
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "nahua_iztac_mixcoatl",
+        "notes": "Alternative ancestral marriage account as reported by Brinton; not merged with the Camaxtli account.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Daniel G. Brinton, American Hero-Myths (1882), chapter III, section 1: Chimalman parentage narratives and their cited witnesses",
+            "url": "https://www.gutenberg.org/cache/epub/11029/pg11029.txt"
           }
         ]
       }

@@ -6,8 +6,8 @@ unresolved discoveries visible. An existing citation is not a completed review.
 
 ## Scope and evidence
 
-The repeated bidirectional counterpart/kinship inventory contains 58 records,
-including 22 additions. Its 16 categories cover names, scripts, local tradition,
+The repeated bidirectional counterpart/kinship inventory contains 60 records,
+including 24 additions. Its 16 categories cover names, scripts, local tradition,
 description, parents, partners, siblings, descendants, lifecycle, domains,
 powers, objects, epithets, iconography, cult and sources. Every inventoried name
 and outgoing relationship is retained. `scope.json` contains authored review
