@@ -29,16 +29,16 @@ jobs:
           EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
-          if test "$(git hash-object app/data.js)" = "2fcf3284062e82e3ffac378a8804f7115c29a642" && test "$(git hash-object dist/pantheon-registry.html)" = "efa55cdbbaff61c80488ad605061c34be90acda3"; then exit 0; fi
+          if test "$(git hash-object app/data.js)" = "fe7f8e619ced5f899f350f43a839edf30542ce19" && test "$(git hash-object dist/pantheon-registry.html)" = "d93fce8e1af01e527f62fcfef5ac533d266a9373"; then exit 0; fi
           node scripts/gen-new-figures.cjs
           node scripts/gen-enrich.cjs
           node scripts/gen-powers-terms.cjs
           node scripts/gen-powers-items.cjs
           python3 build.py
           node scripts/audit-sakra-indra.cjs
-          test "$(git hash-object app/data.js)" = "2fcf3284062e82e3ffac378a8804f7115c29a642"
-          test "$(git hash-object dist/pantheon-registry.html)" = "efa55cdbbaff61c80488ad605061c34be90acda3"
-          test "$(git hash-object data-sources/audits/sakra-indra/ledger.json)" = "ad8a18f3bba3b3303b56af668372ce716fe8ac47"
+          test "$(git hash-object app/data.js)" = "fe7f8e619ced5f899f350f43a839edf30542ce19"
+          test "$(git hash-object dist/pantheon-registry.html)" = "d93fce8e1af01e527f62fcfef5ac533d266a9373"
+          test "$(git hash-object data-sources/audits/sakra-indra/ledger.json)" = "6bcd94b6b353c45de36a00e48790cfe30fff826a"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/sakra-indra/ledger.json
           test "$(git diff --cached --name-only | wc -l)" -eq 3
           git config user.name "github-actions[bot]"

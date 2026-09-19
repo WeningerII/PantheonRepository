@@ -39,3 +39,10 @@ now authors exact-precondition corrections in
 documented: final-pass values and retained prior evidence have dedicated tests.
 Merge/deployment verification remains a separate gate. The complete current
 review limitations are in `docs/sakra-indra-counterpart-audit.md`.
+
+Ownership decision before reciprocal edits: the Hindu Āditya sibling assertions
+are Indra-family claims and belong to this lane under the explicit Indra-family
+assignment. The reciprocal endpoints are Vishnu, Aryaman, Tvashtr, Pushan, Surya,
+Mitra, Varuna, Amsha and Bhaga. Only this cited sibling assertion is authored on
+those records; this does not claim ownership of Shiva-specific portrayals.
+Daksha and Brahma remain reference-only shared ancestors with open reciprocals.
