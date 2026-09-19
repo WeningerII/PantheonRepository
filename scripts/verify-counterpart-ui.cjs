@@ -17,11 +17,14 @@ async function verifyCounterpartUI(page, base, people) {
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
   await open(p);
   const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
+  const accountPanel=page.locator('.lineage-account').filter({has:select});
+  assert.equal(await accountPanel.count(),1,'exact account control must identify one panel');
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
    const canvas=page.locator('.lineage-canvas');
    for(const r of a.parents)assert.ok((await canvas.innerText()).includes(people[r.personId].name.primary));
-   assert.ok((await page.locator('.lineage-account').filter({hasText:p.name.primary}).innerText()).includes(a.sources[0].reference));
+   const accountText=await accountPanel.innerText();
+   for(const source of a.sources)assert.ok(accountText.includes(source.reference));
    accountCount++;
   }
  }
