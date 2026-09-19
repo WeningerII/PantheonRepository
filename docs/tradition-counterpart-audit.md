@@ -23,7 +23,7 @@ The earlier Orphic audit excluded several deities as near-duplicates of Greek en
 
 `counterpart-of` links connect independently recorded portrayals. They do not assert identical genealogies, transmit descendants, or create implied family links. Resolving existing Hermes placeholders uses the exact authored external name AND tradition; ambiguous names are never auto-resolved. Original relationship citations are retained.
 
-Variant accounts now appear in Detail, and Sources includes relationship citations. ParentIds still represents one selected account: alternative accounts remain cited descriptions and qualified relationship rows, not alternative selectable lineage trees. That limitation remains explicit.
+Historical status at PR #140 (superseded by the selectable-account implementation documented in `connected-counterpart-audit.md`): variant accounts appear in Detail, and Sources includes relationship citations. ParentIds still represents one selected account: alternative accounts remain cited descriptions and qualified relationship rows, not alternative selectable lineage trees. That limitation remains explicit.
 
 Two ambiguous aliases are qualified: Aphrodite Urania is distinguished from the Muse Urania; Phanes’s Eros identification is distinguished from the separately addressed Eros hymn. Nothing is removed from the name search conceptually.
 

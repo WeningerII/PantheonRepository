@@ -2353,8 +2353,63 @@ Tradition-specific records retain independent parentage. No name-specific progra
     "tradition": "Roman",
     "parentIds": [],
     "domains": [],
-    "faculties": [],
-    "materialCulture": [],
+    "faculties": [
+      {
+        "id": "physical-strength-extreme",
+        "scopeTags": [
+          "wrestling"
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ],
+        "notes": "Overpowers the shape-changing Achelous."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "roman-hercules-club",
+        "name": "Club",
+        "classId": "club",
+        "kind": "weapon",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ]
+      },
+      {
+        "id": "roman-hercules-bow",
+        "name": "Bow",
+        "classId": "bow",
+        "kind": "weapon",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ]
+      },
+      {
+        "id": "roman-hercules-lion-skin",
+        "name": "Lion skin",
+        "classId": "lion-skin",
+        "kind": "garment",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ]
+      }
+    ],
     "sources": [
       {
         "claim": "existence and tradition-specific description",
@@ -2366,12 +2421,49 @@ Tradition-specific records retain independent parentage. No name-specific progra
           }
         ],
         "weight": "primary"
+      },
+      {
+        "claim": "Ovid describes his weapons, victory over Achelous, and transformation after the pyre.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ],
+        "weight": "primary"
       }
     ],
     "notes": "Divine hero worshipped at the great altar in the Roman account of his victory over Cacus.",
     "temporal": {
       "era": "pre-urban"
-    }
+    },
+    "lifecycle": [
+      {
+        "startEvent": "death-on-pyre",
+        "vitalStatus": "transformed",
+        "era": "heroic-age",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ]
+      },
+      {
+        "startEvent": "ascent-among-stars",
+        "typeStatus": "deity",
+        "era": "heroic-age",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 9.1–88, 211–272",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph9.php"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "roman_aesculapius",

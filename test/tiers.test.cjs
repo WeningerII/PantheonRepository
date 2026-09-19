@@ -345,3 +345,15 @@ test('capability flags in the index match the detailed record', () => {
     assert.strictEqual(r.f, expect, `${r.i}: index flags ${r.f} != record-derived ${expect}`);
   }
 });
+
+test('cited account assertions round-trip through lazy edges without adding defaults', () => {
+  for (const [id, p] of Object.entries(PR.seedPeople)) {
+    if (!p.parentageAccounts?.length) continue;
+    assert.deepStrictEqual(edges[id].pa, roundTrip(p.parentageAccounts));
+    assert.deepStrictEqual(edges[id].p || [], roundTrip(p.parentIds || []));
+    for (const a of edges[id].pa) for (const parent of a.parents) {
+      assert.ok(idSet.has(parent.personId));
+      assert.ok(parent.sources.length);
+    }
+  }
+});

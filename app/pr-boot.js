@@ -397,6 +397,7 @@ const installEdgesTier = (edges) => {
     const e = edges[id];
     rec.parentIds = (e && e.p) ? e.p : [];
     if (e && e.pr) rec.parentRoles = e.pr;
+    if (e && e.pa) rec.parentageAccounts = e.pa;
     rec.relations = (e && e.r) ? e.r.map((x) => ({ kind: x.k, personId: x.id })) : [];
   }
   PR.tierReady.edges = true;

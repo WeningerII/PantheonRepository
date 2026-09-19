@@ -43,9 +43,9 @@ function RelationItem({ rel, byId, onOpen }) {
   return (
     <div className="relation">
       <div className="kind">{String(rel.kind || '').replace(/[_-]+/g, ' ')}</div>
-      <div className={'target ' + (target ? 'link' : '')} {...window.pressable(target ? () => onOpen(target.id) : null, 'link')}>
-        {target
-          ? window.displayName(target)
+      <div className="target">
+        {target ? <a className="link" href={'#/browse/' + encodeURIComponent(target.id)}
+          onClick={e => { if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && onOpen) { e.preventDefault(); onOpen(target.id); } }}>{window.displayName(target)}</a>
           : <span className="ext">{renderExternal()}</span>}
         {rel.notes && <span className="relation-notes">{rel.notes}</span>}
       </div>
@@ -58,7 +58,7 @@ function Parentage({ entry, byId, onOpen }) {
   if (!ids.length) return null;
   return (
     <div className="section">
-      <h2>Parentage <span className="count">{ids.length}</span></h2>
+      <h2>{entry.parentageAccounts?.length ? "Default parentage" : "Parentage"} <span className="count">{ids.length}</span></h2>
       <div className="parentage">
         {ids.map((pid) => {
           const role = entry.parentRoles?.[pid];
@@ -247,9 +247,9 @@ function Powers({ entry, byId, onOpen }) {
 // Names — surfaces the v3 multi-tradition name records (original-script glyphs +
 // tradition + period + source) for entries that carry them, so native names
 // show in their own scripts rather than a single transliteration.
-function NameRecords({ entry }) {
+function NameRecords({ entry, byId = new Map(), onOpen }) {
   const names = window.nameRecords ? window.nameRecords(entry) : [];
-  if (names.length < 2) return null;
+  if (!names.length) return null;
   return (
     <div className="section section-names">
       <h2>Names <span className="count">{names.length}</span></h2>
@@ -258,7 +258,11 @@ function NameRecords({ entry }) {
           <div className="name-rec" key={i}>
             <div className="name-rec-main">
               {n.original && <span className="name-rec-original">{n.original}</span>}
-              <span className="name-rec-value">{n.value}</span>
+              {n.status === 'resolved' && n.personId !== entry.id && byId.has(n.personId)
+                ? <a className="name-rec-value" href={'#/browse/' + encodeURIComponent(n.personId)}
+                    onClick={e => { if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && onOpen) { e.preventDefault(); onOpen(n.personId); } }}>{n.value}</a>
+                : <span className="name-rec-value">{n.value}</span>}
+              {['unresolved', 'disputed'].includes(n.status) && <span className="name-rec-status"> · {n.status}</span>}
             </div>
             <div className="name-rec-meta">
               {n.tradition && <span className="name-rec-trad">{n.tradition}</span>}
@@ -266,6 +270,7 @@ function NameRecords({ entry }) {
               {n.period && <span className="name-rec-period">{String(n.period).replace(/[-_]+/g, ' ')}</span>}
             </div>
             {n.note && <div className="name-rec-note">{n.note}</div>}
+            {(n.sources || (n.source ? [n.source] : [])).length > 0 && <div className="name-rec-note">{(n.sources || [n.source]).map(renderCitationRef).join('; ')}</div>}
           </div>
         ))}
       </div>
@@ -882,7 +887,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
 
           {entry.notes && <div className="detail-notes">{entry.notes}</div>}
 
-          <NameRecords entry={entry} />
+          <NameRecords entry={entry} byId={byId} onOpen={onOpen} />
           <Parentage entry={entry} byId={byId} onOpen={onOpen} />
           {restMounted && <>
           {window.Lineage && childrenOf && (

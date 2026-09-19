@@ -463,10 +463,11 @@ function FocusCard({ entry, links, byId, onClear, onOpenDetail, onFocusNeighbor 
                   const target = byId.get(n.id);
                   if (!target) return null;
                   return (
-                    <div
+                    <a
                       key={i}
                       className="graph-focus-neighbor"
-                      onClick={() => onFocusNeighbor && onFocusNeighbor(n.id)}
+                      href={'#/browse/' + encodeURIComponent(n.id)}
+                      onClick={e => { if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && onOpenDetail) { e.preventDefault(); onOpenDetail(n.id); } }}
                     >
                       <window.TierIcon type={target.type} size={11} />
                       <span className="graph-focus-neighbor-name">{window.displayName(target)}</span>
@@ -474,7 +475,7 @@ function FocusCard({ entry, links, byId, onClear, onOpenDetail, onFocusNeighbor 
                         <span className="graph-focus-neighbor-arrow">{n.direction === 'out' ? '→' : '←'}</span>
                         {n.kind}
                       </span>
-                    </div>
+                    </a>
                   );
                 })}
               </div>
