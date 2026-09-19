@@ -35,8 +35,9 @@ async function verifyCounterpartUI(page, base, people) {
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
   await open(p);
   const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
+  await select.waitFor({state:'visible'});
   const accountPanel=page.locator('.lineage-account').filter({has:select});
-  assert.equal(await accountPanel.count(),1,'exact account control must identify one panel');
+  assert.equal(await accountPanel.count(),1,`exact account control must identify one panel for ${p.id}`);
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
    const canvas=page.locator('.lineage-canvas');
