@@ -35,8 +35,8 @@ jobs:
           node scripts/gen-powers-items.cjs
           python3 build.py
           node scripts/audit-polynesian-counterparts.cjs
-          test "$(git hash-object app/data.js)" = "996fcf136fcc5b76676fea129b39eaa2c9b168cb"
-          test "$(git hash-object dist/pantheon-registry.html)" = "cac3664e64412d37d66621a63e90a224620a5990"
+          test "$(git hash-object app/data.js)" = "9ad872afd55a1b3e8251b91f68ff3224eca32aad"
+          test "$(git hash-object dist/pantheon-registry.html)" = "dfb1fc0b6bd7c77646ecb5c8e8ea6a4537c3c3f1"
           test "$(git hash-object data-sources/audits/polynesian-counterparts/ledger.json)" = "ef5b6173ef2f36014939de09762771394b517db1"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/polynesian-counterparts/ledger.json
           test "$(git diff --cached --name-only | wc -l)" -eq 3
