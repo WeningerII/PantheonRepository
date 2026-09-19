@@ -1,0 +1,964 @@
+Source-specific Mesoamerican additions; descriptive anonymous labels are not indigenous personal names.
+
+```json
+[
+  {
+    "id": "nahua_pinturas_solar_son",
+    "name": {
+      "primary": "Solar son of Quetzalcoatl (Pinturas)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Aztec/Mexica",
+    "primaryTradition": "Aztec/Mexica",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "aztec_quetzalcoatl"
+    ],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "after-transformation",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Historia de los Mexicanos por sus pinturas, chapter 7; Phillips 1883, p. 622",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section08.htm"
+          }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Unnamed son of Quetzalcoatl in Historia de los Mexicanos, chapter 7. The text explicitly says he has no mother and becomes the sun through fire. This descriptive label is not an indigenous personal name; the passage does not call him Nanahuatzin.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Historia de los Mexicanos por sus pinturas, chapter 7; Phillips 1883, p. 622",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section08.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Unnamed son of Quetzalcoatl in Historia de los Mexicanos, chapter 7. The text explicitly says he has no mother and becomes the sun through fire. This descriptive label is not an indigenous personal name; the passage does not call him Nanahuatzin.",
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic",
+        "eraOrdering": 0,
+        "notes": "Quetzalcoatl puts his son into the fire; he emerges as the sun.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Historia de los Mexicanos por sus pinturas, chapter 7; Phillips 1883, p. 622",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section08.htm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nahua_quetzalpetlatl",
+    "name": {
+      "primary": "Quetzalpetlatl",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Aztec/Mexica",
+    "primaryTradition": "Aztec/Mexica",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "chichimec-migration"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Woman called Quetzalcoatl’s elder sister in the Anales narrative. She is summoned from penance at Nonohualcatepec and drinks with him; both neglect their ritual duties. The passage supplies no named parents, husband or children.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Anales de Cuauhtitlan, Quetzalcoatl narrative, excerpts 43–49 and 62–68; Nahuatl text and translation edited by David K. Jordan",
+            "url": "https://pages.ucsd.edu/~dkjordan/nahuatl/ReadingQuetzalcoatl.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Woman called Quetzalcoatl’s elder sister in the Anales narrative. She is summoned from penance at Nonohualcatepec and drinks with him; both neglect their ritual duties. The passage supplies no named parents, husband or children."
+  },
+  {
+    "id": "kiche_cucumatz_ruler",
+    "name": {
+      "primary": "Cucumatz (K’iche’ ruler)",
+      "alt": [
+        "Gucumatz (ruler)"
+      ],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "royal-transformation",
+        "name": "Royal transformations",
+        "inheritability": "none",
+        "notes": "Serpent, eagle, jaguar and pooled blood; journeys to sky and Xibalba.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Popol Vuh, The Glory of the Lords of Cumarcah, Christenson 2007, pp. 256–257; creator/ruler distinction: p. 250 note 733",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "K’iche’ ruler in the Popol Vuh’s Cumarcah narrative, distinct from creator Qucumatz. His transformations legitimate royal power.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Popol Vuh, The Glory of the Lords of Cumarcah, Christenson 2007, pp. 256–257; creator/ruler distinction: p. 250 note 733",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "K’iche’ ruler in the Popol Vuh’s Cumarcah narrative, distinct from creator Qucumatz. His transformations legitimate royal power.",
+    "traditionContext": "K’iche’ Maya; colonial Popol Vuh narrative and separately identified modern historical commentary."
+  },
+  {
+    "id": "kiche_co_tuha_early",
+    "name": {
+      "primary": "Co Tuha (earlier K’iche’ lord)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Earlier K’iche’ lord discussed as the probable father of Cucumatz in Christenson’s historical commentary. Other bearers of Co Tuha in the dynastic list are not automatically this man.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christenson, Popol Vuh (2007 electronic edition), pp. 250 note 733 and 258 note 775; historical commentary citing Carmack and Recinos",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Earlier K’iche’ lord discussed as the probable father of Cucumatz in Christenson’s historical commentary. Other bearers of Co Tuha in the dynastic list are not automatically this man.",
+    "traditionContext": "K’iche’ Maya; colonial Popol Vuh narrative and separately identified modern historical commentary."
+  },
+  {
+    "id": "kiche_quicab",
+    "name": {
+      "primary": "Quicab",
+      "alt": [
+        "K’iq’ab’"
+      ],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "kiche_cucumatz_ruler"
+    ],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "K’iche’ ruler identified as Cucumatz’s son in Christenson’s historical commentary.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christenson, Popol Vuh (2007 electronic edition), pp. 250 note 733 and 258 note 775; historical commentary citing Carmack and Recinos",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "K’iche’ ruler identified as Cucumatz’s son in Christenson’s historical commentary.",
+    "traditionContext": "K’iche’ Maya; colonial Popol Vuh narrative and separately identified modern historical commentary."
+  },
+  {
+    "id": "rabinal_one_toh",
+    "name": {
+      "primary": "One Toh (Rabinal)",
+      "alt": [
+        "Hun Toh"
+      ],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Rabinal divine name compared with Tohil by the Popol Vuh’s K’iche’ narrators. This records that textual comparison, not a universal equation of local cults.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Popol Vuh, Christenson 2007 electronic edition, p. 215 and note 606: Tohil, Yolcuat Quitzalcuat and One Toh",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Rabinal divine name compared with Tohil by the Popol Vuh’s K’iche’ narrators. This records that textual comparison, not a universal equation of local cults.",
+    "traditionContext": "Rabinal as represented by the K’iche’ narrators of the colonial Popol Vuh."
+  },
+  {
+    "id": "nahua_pinturas_ce_acatl_mother",
+    "name": {
+      "primary": "Unnamed mother of Ce Acatl (Pinturas)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Aztec/Mexica",
+    "primaryTradition": "Aztec/Mexica",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "chichimec-migration"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Unnamed female relative of Tezcatlipoca and mother of Ce Acatl by Camaxtli in Historia de los Mexicanos, chapter 8. The account gives a descent from earlier women created by Tezcatlipoca but no personal name or intermediate genealogy.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Historia de los Mexicanos por sus pinturas, chapter 8; Phillips 1883, pp. 622–624",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section09.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Unnamed female relative of Tezcatlipoca and mother of Ce Acatl by Camaxtli in Historia de los Mexicanos, chapter 8. The account gives a descent from earlier women created by Tezcatlipoca but no personal name or intermediate genealogy."
+  },
+  {
+    "id": "kiche_nacxit_lord",
+    "name": {
+      "primary": "Nacxit (lord in the Popol Vuh)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [
+      {
+        "id": "nacxit-insignia-of-office",
+        "name": "Insignia of lordship",
+        "kind": "regalia",
+        "role": "giver",
+        "notes": "Canopy, throne and other insignia conferred on the visiting lords.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Popol Vuh, The Sons Receive Authority to Rule, Christenson 2007 electronic edition, pp. 240–243 and note 688",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lord who grants insignia of office to the founders’ sons in the Popol Vuh. The name also occurs as a feathered-serpent title, but identifying this ruler with Topiltzin is not established by the narrative.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Popol Vuh, The Sons Receive Authority to Rule, Christenson 2007 electronic edition, pp. 240–243 and note 688",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lord who grants insignia of office to the founders’ sons in the Popol Vuh. The name also occurs as a feathered-serpent title, but identifying this ruler with Topiltzin is not established by the narrative."
+  },
+  {
+    "id": "mixtec_garcia_nine_serpents",
+    "name": {
+      "primary": "Wind of Nine Serpents (García account)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mixtec",
+    "primaryTradition": "Mixtec",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "mixtec_garcia_creator_father",
+      "mixtec_garcia_creator_mother"
+    ],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "mixtec_garcia_nine_serpents-transformation",
+        "name": "Eagle transformation",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Son of the Apoala creator couple in García’s colonial creation account, transmitted in Phillips note 17. Described as assuming eagle form. Identification with 9 Wind in Vindobonensis is not established here.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One son of the Apoala creator couple in García’s colonial creation account, transmitted in Phillips note 17. Described as assuming eagle form. Identification with 9 Wind in Vindobonensis is not established here."
+  },
+  {
+    "id": "mixtec_garcia_nine_caverns",
+    "name": {
+      "primary": "Wind of Nine Caverns (García account)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mixtec",
+    "primaryTradition": "Mixtec",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "mixtec_garcia_creator_father",
+      "mixtec_garcia_creator_mother"
+    ],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "mixtec_garcia_nine_caverns-transformation",
+        "name": "Winged-serpent transformation and invisibility",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Second son of the Apoala creator couple in García’s colonial creation account, transmitted in Phillips note 17. Described as a small winged serpent able to pass through rock and become invisible.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Another son of the Apoala creator couple in García’s colonial creation account, transmitted in Phillips note 17. Described as a small winged serpent able to pass through rock and become invisible."
+  },
+  {
+    "id": "kiche_cucumatz_daughter",
+    "name": {
+      "primary": "Unnamed daughter of Cucumatz",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "kiche_cucumatz_ruler"
+    ],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Daughter of the K’iche’ ruler Cucumatz and wife of Tecum Sicom in the historical account summarized by Christenson, note 775. No personal name is supplied.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christenson, Popol Vuh (2007 electronic edition), pp. 250 note 733 and 258 note 775; historical commentary citing Carmack and Recinos",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Daughter of the K’iche’ ruler Cucumatz and wife of Tecum Sicom in the historical account summarized by Christenson, note 775. No personal name is supplied."
+  },
+  {
+    "id": "kiche_tecum_sicom",
+    "name": {
+      "primary": "Tecum Sicom",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lord at Coha and son-in-law of Cucumatz in the historical account summarized by Christenson, note 775. The identification of Coha’s location is disputed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Christenson, Popol Vuh (2007 electronic edition), pp. 250 note 733 and 258 note 775; historical commentary citing Carmack and Recinos",
+            "url": "https://www.mesoweb.com/publications/Christenson/PopolVuh.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Lord at Coha and son-in-law of Cucumatz in the historical account summarized by Christenson, note 775. The identification of Coha’s location is disputed."
+  },
+  {
+    "id": "kaqchikel_gagavitz",
+    "name": {
+      "primary": "Gagavitz",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "lake-transformation",
+        "name": "Transformation in the lake",
+        "inheritability": "none",
+        "notes": "Zutzucumatz in Brinton’s rendering of section 38.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Kaqchikel founding ancestor in the Annals. Section 38 describes his transformation into Zutzucumatz in the lake; this does not identify him with the K’iche’ creator Qucumatz. Sections 43 and 46 name his wife and sons.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Kaqchikel founding ancestor in the Annals. Section 38 describes his transformation into Zutzucumatz in the lake; this does not identify him with the K’iche’ creator Qucumatz. Sections 43 and 46 name his wife and sons.",
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "notes": "Death and burial at Paraxone, section 47.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kaqchikel_chetehauh",
+    "name": {
+      "primary": "Chetehauh",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Sister of Gagavitz who accompanies him at the lake in Annals section 38.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sister of Gagavitz who accompanies him at the lake in Annals section 38."
+  },
+  {
+    "id": "kaqchikel_gomakaa",
+    "name": {
+      "primary": "Gomakaa",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tukuche woman named as Gagavitz’s wife and the Xahila ancestress in Annals section 43.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Tukuche woman named as Gagavitz’s wife and the Xahila ancestress in Annals section 43."
+  },
+  {
+    "id": "kaqchikel_caynoh",
+    "name": {
+      "primary": "Caynoh",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "kaqchikel_gagavitz"
+    ],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "tribute-magic",
+        "name": "Magic during tribute collection",
+        "inheritability": "none",
+        "notes": "Section 52 attributes fire-like radiance and trembling to the two brothers.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Son of Gagavitz in Annals sections 46–51. Service to Tepeuh brings political sonship in section 52; it is not a second biological father. Sections 53 and 57 describe marriages and descendants collectively without a secure individual mapping.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Gagavitz in Annals sections 46–51. Service to Tepeuh brings political sonship in section 52; it is not a second biological father. Sections 53 and 57 describe marriages and descendants collectively without a secure individual mapping."
+  },
+  {
+    "id": "kaqchikel_caybatz",
+    "name": {
+      "primary": "Caybatz",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [
+      "kaqchikel_gagavitz"
+    ],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [
+      {
+        "id": "tribute-magic",
+        "name": "Magic during tribute collection",
+        "inheritability": "none",
+        "notes": "Section 52 attributes fire-like radiance and trembling to the two brothers.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Son of Gagavitz in Annals sections 46–51. Service to Tepeuh brings political sonship in section 52; it is not a second biological father. Sections 53 and 57 describe marriages and descendants collectively without a secure individual mapping.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Gagavitz in Annals sections 46–51. Service to Tepeuh brings political sonship in section 52; it is not a second biological father. Sections 53 and 57 describe marriages and descendants collectively without a secure individual mapping."
+  },
+  {
+    "id": "kaqchikel_tepeuh_cauke",
+    "name": {
+      "primary": "Tepeuh (lord of Cauke)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lord of Cauke in Annals sections 49–54. Political protector of Caynoh and Caybatz; distinct from a creator title or name Tepeu in the Popol Vuh.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lord of Cauke in Annals sections 49–54. Political protector of Caynoh and Caybatz; distinct from a creator title or name Tepeu in the Popol Vuh."
+  },
+  {
+    "id": "kaqchikel_bubatzo",
+    "name": {
+      "primary": "Bubatzo",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "One of the wives named together for Caynoh and Caybatz in Annals section 53. The passage’s collective wording does not establish which husband or which named chief was her father.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the wives named together for Caynoh and Caybatz in Annals section 53. The passage’s collective wording does not establish which husband or which named chief was her father."
+  },
+  {
+    "id": "kaqchikel_icxiuh",
+    "name": {
+      "primary": "Icxiuh",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "postclassic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "One of the wives named together for Caynoh and Caybatz in Annals section 53. The passage’s collective wording does not establish which husband or which named chief was her father.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Annals of the Cakchiquels, Brinton 1885 translation, sections 38, 43, 46–59",
+            "url": "https://www.gutenberg.org/cache/epub/20775/pg20775.txt"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the wives named together for Caynoh and Caybatz in Annals section 53. The passage’s collective wording does not establish which husband or which named chief was her father."
+  },
+  {
+    "id": "mixtec_garcia_creator_father",
+    "name": {
+      "primary": "Male Deer (García account)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mixtec",
+    "primaryTradition": "Mixtec",
+    "sex": "male",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The male member of the Apoala creator pair called Deer in García’s colonial account (Phillips note 17). The translation does not supply the calendar number 1; correspondence to the codex’s 1 Deer pair is not assumed.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The male member of the Apoala creator pair called Deer in García’s colonial account (Phillips note 17). The translation does not supply the calendar number 1; correspondence to the codex’s 1 Deer pair is not assumed."
+  },
+  {
+    "id": "mixtec_garcia_creator_mother",
+    "name": {
+      "primary": "Female Deer (García account)",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mixtec",
+    "primaryTradition": "Mixtec",
+    "sex": "female",
+    "vitalStatus": "unknown",
+    "parentIds": [],
+    "temporal": {
+      "era": "cosmogonic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "The female member of the Apoala creator pair called Deer in García’s colonial account (Phillips note 17). The translation does not supply the calendar number 1; correspondence to the codex’s 1 Deer pair is not assumed.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Gregorio Garcia, Origen de los indios, V.iv, account of the Apoala creator pair and their two sons, excerpted in Phillips 1883 note 17",
+            "url": "https://www.famsi.org/research/christensen/pinturas/section26.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The female member of the Apoala creator pair called Deer in García’s colonial account (Phillips note 17). The translation does not supply the calendar number 1; correspondence to the codex’s 1 Deer pair is not assumed."
+  }
+]
+```

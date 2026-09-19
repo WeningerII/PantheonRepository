@@ -1,18 +1,76 @@
-# Mesoamerican counterpart review
+# Mesoamerican counterpart source review
 
-Status: research and implementation in progress; not complete.
+PR #143 is a source-specific repair and expansion, **not a certification of
+historical completeness**. The machine ledger keeps unfinished categories and
+unresolved discoveries visible. An existing citation is not a completed review.
 
-Baseline: 44b249a, including PRs #139–141. Owned records are Mesoamerican only.
+## Scope and evidence
 
-## Shared requirement for the Shiva lane
+The repeated bidirectional counterpart/kinship inventory contains 58 records,
+including 22 additions. Its 16 categories cover names, scripts, local tradition,
+description, parents, partners, siblings, descendants, lifecycle, domains,
+powers, objects, epithets, iconography, cult and sources. Every inventoried name
+and outgoing relationship is retained. `scope.json` contains authored review
+judgments; `ledger.json` combines them with generated records. Reproduce with
+`node scripts/audit-mesoamerican-counterparts.cjs` after corpus generation.
 
-The existing supplement is additive. Source review exposes incorrect legacy claims in the hand-authored core, so additive citations alone cannot repair the data without hand-editing app/data.js. Please provide a generic, cited, exact-precondition correction mechanism in lane-owned authored files, applied after legacy/enrichment passes. It must support replacing or removing selected field values/array entries (names, parentIds, relations, faculties, materialCulture, iconography, cult, linguistic and lifecycle) with exact expected-old validation, atomic rejection on drift, citation retention, identifier-independent tests, and no proper-name branches. This lane will author its own corrections against that interface. Required integration remains OPEN until incorporated and verified.
+Reviewed passages include Pinturas chapters 1, 2, 6–8; Anales excerpts 43–49 and
+62–68; Landa VI and XL (Xul); Popol Vuh opening, p.215, pp.240–243, and the
+Cumarcah dynastic narrative with notes 733/775; Annals of the Cakchiquels 38,
+43, 46–60; García V.iv as excerpted in Phillips note17; and Pohl/Powell’s
+manuscript discussions. `sources.json` records edition, passage and URL.
+Precolonial pictorial evidence, colonial narratives, old translations and modern
+scholarly commentary are not interchangeable witnesses.
 
-Concrete cases: Topiltzin incorrectly receives the deity's wind/bone-creation powers; the Gucumatz creator receives the similarly named ruler's transformations; Lord 9 Wind's claimed parent pair conflicts with the flint-birth reading of Vindobonensis 49; blanket Teotihuacan feathered-serpent identifications require qualification.
+## Implemented decisions
 
-## Evidence read
+- Separate creator Qucumatz from ruler Cucumatz, and Gagavitz’s transformation
+  from either identity. Add the ruler’s supported daughter, son-in-law and
+  source-specific father/son accounts without turning succession into paternity.
+- Keep Topiltzin separate from the deity. Add Quetzalpetlatl and the unnamed
+  Pinturas mother; offer conflicting cited parentage accounts. Distinguish
+  self-immolation from death by illness. Remove transferred Mictlan/wind deeds
+  and correct the mask to the turquoise specified in the reviewed Anales text.
+- Add Pinturas’ unnamed solar son without inventing a Nanahuatzin identity.
+- Retain the Popol Vuh’s explicit Tohil–Yolcuat Quitzalcuat identification with
+  its textual scope; add Rabinal One Toh. Identification transfers no genealogy.
+- Cross-link duplicate Yucatec portrayals, qualify the Topiltzin equation,
+  record Landa’s Maní Xul festival and reported apotheosis, and remove a
+  Landa-attributed equinox power unsupported by those passages.
+- Separate 9 Wind’s flint birth from the later tree-born ancestors. Remove
+  unsupported parent projection and unverified spellings while preserving
+  their evidence in correction history. García’s Deer couple has separate
+  records: the translation does not supply the calendar number 1.
+- Add Kaqchikel family records with political sonship distinguished from
+  biological descent. Collective marriage/offspring wording is not turned into
+  individual spouse or mother assignments.
 
-- Popol Vuh, Christenson electronic edition (2007), pp. 56–59, 215 note 606, 249 note 733: creator/ruler distinction and the text's specific Tohil–Yolcuat Quitzalcuat identification.
-- Christopher Powell, The Creation and Ordering of the Mixtec World, pp. 2–3, discussing Vindobonensis 49–37: flint birth and the separate tree-birth episode.
+## Open evidence questions
 
-A full lane ledger, authored data and verification results will follow. Existing presence is not completed historical review.
+The ledger documents the exact attempted sources and effects of access failures.
+Dumbarton Oaks returned 403; its download route and the Cervantes Virtual
+Michoacán route were inaccessible. Targeted discovery searches repeatedly
+returned unrelated pages. Powell remained readable through the web text despite
+a direct-download 465. FAMSI access was intermittent. Pohl, Landa, Christenson,
+Jordan and Gutenberg provided useful independent alternatives.
+
+Direct codex commentaries, modern linguistic verification, the stronger
+Mixtec/Yucatec historical equations, and the outer Nahua/Purépecha family and
+cult claims remain unfinished. Chimalcan, named Mixtec ritual participants,
+and ambiguous Kaqchikel collective parentage remain explicitly inventoried.
+No unreviewed legacy category is marked adequate, and no claim of exhaustive
+research or a completed outer network is made.
+
+## Integration and verification
+
+Shared correction PR #145 is merged and incorporated. All source changes are
+lane-owned; no Shiva, Tangaroa or Śakra record is edited. Generated corpus and
+standalone artifacts must be regenerated from combined main before merge.
+
+Data-driven tests check authored targets, same-record aliases, separate cited
+accounts, revised relationships, retained correction evidence, final-pass
+behavior and exact ledger reproduction. Shared neutral fixtures cover account
+projection, identifier renaming and atomic validation. Existing CI additionally
+checks actual keyboard navigation/account selection, bounded rendering, lazy
+loading, MCP smoke and byte-exact regeneration. Local Chromium launch fails
+with `socket() ... Operation not permitted`; CI browser success is required.
