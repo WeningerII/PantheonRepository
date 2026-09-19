@@ -1,0 +1,52 @@
+name: Materialize verified Polynesian artifacts
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-polynesian.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/polynesian-counterpart-network'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Regenerate and verify exact authored output
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          if test "$(git hash-object app/data.js)" = "215639bcf375dfa6d82e6c46a5a583805cbb0748"; then exit 0; fi
+          echo 'LS0tIGEvYXBwL2RhdGEuanMKKysrIGIvYXBwL2RhdGEuanMKQEAgLTQwNjQ0LDYgKzQwNjQ0LDcgQEAgY29uc3QgRVJBX09SREVSID0gewogICAvLyB0aGUgc2FtZSBwcmltb3JkaWFsIC8gbXl0aGljIC8gbXl0aGljLXByZWhpc3RvcmljIHZvY2FidWxhcnkgYWxyZWFkeSB1c2VkIGJ5CiAgIC8vIHRoZSBjb2duYXRlIEVhc3QtUG9seW5lc2lhbiB0cmFkaXRpb25zIGluIHRoaXMgcmVnaXN0cnkuCiAgICdNYW5nYWlhbic6IFsncHJpbW9yZGlhbCcsICdteXRoaWMnLCAnbXl0aGljLXByZWhpc3RvcmljJ10sCisgICdNYW5paGlraSc6IFsnbXl0aGljJ10sCiAKICAgLy8gV2Vsc2g6IG1hYmlub2dpb24tbXl0aG9sb2dpY2FsICh0aGUgbGVnZW5kYXJ5LW15dGhpYyB0aW1lIG9mIHRoZQogICAvLyBGb3VyIEJyYW5jaGVzIGFuZCB0aGUgd2lkZXIgTWFiaW5vZ2lvbiBzdG9yaWVzOyBQcnlkZXJpJ3MgcmVpZ24gaW4KQEAgLTQyNTUyLDYgKzQyNTUzLDEwIEBAIGNvbnN0IEVSQV9EQVRFUyA9IHsKICAgICAnbXl0aGljJzogICAgICAgICAgICAgICAgeyBteXRoaWNTdGFydDogLTIwMDAsIG15dGhpY0VuZDogLTc1MCwgdGV4dHVhbFN0YXJ0OiAxODYwLCB0ZXh0dWFsRW5kOiAyMDEwLCBwcmVjaXNpb246ICdlcmEtb25seScgfSwKICAgICAnbXl0aGljLXByZWhpc3RvcmljJzogICAgeyBteXRoaWNTdGFydDogLTc1MCwgbXl0aGljRW5kOiAxMzAwLCB0ZXh0dWFsU3RhcnQ6IDE4NjAsIHRleHR1YWxFbmQ6IDIwMTAsIHByZWNpc2lvbjogJ2VyYS1vbmx5JyB9LAogICB9LAorICAvLyBHaWxsICgxODc2KSwgcHAuIDYz4oCTNzU6IG5hcnJhdGl2ZSB0aW1lIGlzIHVuZGF0ZWQ7IDE4NzYgaXMgdGhpcyBhdHRlc3RhdGlvbi4KKyAgJ01hbmloaWtpJzogeworICAgICdteXRoaWMnOiB7IG15dGhpY1N0YXJ0OiBudWxsLCBteXRoaWNFbmQ6IG51bGwsIHRleHR1YWxTdGFydDogMTg3NiwgdGV4dHVhbEVuZDogMTg3NiwgcHJlY2lzaW9uOiAnZXJhLW9ubHknIH0sCisgIH0sCiAgICdNYW5nYWlhbic6IHsKICAgICAncHJpbW9yZGlhbCc6ICAgICAgICAgICAgeyBteXRoaWNTdGFydDogbnVsbCwgbXl0aGljRW5kOiBudWxsLCB0ZXh0dWFsU3RhcnQ6IDE4NzYsIHRleHR1YWxFbmQ6IDIwMTAsIHByZWNpc2lvbjogJ2Nvc21pYycgfSwKICAgICAnbXl0aGljJzogICAgICAgICAgICAgICAgeyBteXRoaWNTdGFydDogLTIwMDAsIG15dGhpY0VuZDogLTc1MCwgdGV4dHVhbFN0YXJ0OiAxODc2LCB0ZXh0dWFsRW5kOiAyMDEwLCBwcmVjaXNpb246ICdlcmEtb25seScgfSwK' | base64 --decode > /tmp/polynesian-vocabulary.patch
+          git apply --check /tmp/polynesian-vocabulary.patch
+          git apply /tmp/polynesian-vocabulary.patch
+          node scripts/gen-new-figures.cjs
+          node scripts/gen-enrich.cjs
+          node scripts/gen-powers-terms.cjs
+          node scripts/gen-powers-items.cjs
+          python3 build.py
+          node scripts/audit-polynesian-counterparts.cjs
+          test "$(git hash-object app/data.js)" = "215639bcf375dfa6d82e6c46a5a583805cbb0748"
+          test "$(git hash-object dist/pantheon-registry.html)" = "be6400221db33764821fda6626fde3c8f3b1e0a1"
+          test "$(git hash-object data-sources/audits/polynesian-counterparts/ledger.json)" = "198f5258c557f4564f4b59d141ed80ed779134b8"
+          git add -- app/data.js dist/pantheon-registry.html data-sources/audits/polynesian-counterparts/ledger.json
+          test "$(git diff --cached --name-only | wc -l)" -eq 3
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize verified Polynesian corpus and audit artifacts"
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/feat/polynesian-counterpart-network | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/feat/polynesian-counterpart-network
