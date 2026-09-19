@@ -37,8 +37,11 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
     frontier = next;
   }
 
+  const hasMoreUp = frontier.some(id => (byId.get(id)?.parentIds || [])
+    .some(pid => byId.has(pid) && !seen.has(pid)));
+
   // Descendants (top→down). Skip anything already placed as an ancestor —
-  // with incestuous genealogies (Gaia–Uranus) one figure can qualify for
+  // with overlapping genealogies one figure can qualify for
   // several roles, and a duplicate placement means duplicate React keys and
   // a last-wins node map that silently drops connectors.
   let downFrontier = [focusId];
@@ -60,8 +63,10 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
   }
 
   // Siblings (share at least one parent with focus, not the focus itself).
-  // A sibling already placed as an ancestor (Uranus beside Cronus: brother
-  // via Gaia AND father) or as a descendant keeps that placement — the rows
+  const hasMoreDown = downFrontier.some(id => (childrenOf.get(id) || [])
+    .some(cid => byId.has(cid) && !seenDown.has(cid) && !seen.has(cid)));
+
+  // A sibling already placed as an ancestor or descendant keeps that placement — the rows
   // above/below are where its parent connectors actually render.
   const focusParents = new Set(entry.parentIds || []);
   const sibSet = new Set();
@@ -83,6 +88,8 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
     ancestorRowCount: ancestorRows.length,
     descRowCount: descRows.length,
     siblings,
+    hasMoreUp,
+    hasMoreDown,
   };
 }
 
@@ -118,7 +125,7 @@ function layoutTree(tree, expandedRows) {
     // Frame width: the capped cards plus the chip slot when this row overflows.
     let cappedW = cappedCount * CARD_W + Math.max(0, cappedCount - 1) * GAP_X;
     if (overflow > 0) cappedW += GAP_X + CARD_W * 0.5;
-    return { idx, overflow, expanded, visible, cappedW };
+    return { idx, overflow, expanded, visible, hiddenIds: row.filter(id => !visible.includes(id)), cappedW };
   });
 
   const maxW = Math.max(...rows.map(r => r.cappedW), CARD_W);
@@ -128,7 +135,7 @@ function layoutTree(tree, expandedRows) {
   const nodes = [];
   let focusY = 0;
   let canvasW = maxW;
-  rows.forEach(({ idx, overflow, expanded, visible, cappedW }) => {
+  rows.forEach(({ idx, overflow, expanded, visible, hiddenIds, cappedW }) => {
     const startX = (maxW - cappedW) / 2;
     const y = idx * (CARD_H + GAP_Y);
     visible.forEach((id, i) => {
@@ -147,7 +154,7 @@ function layoutTree(tree, expandedRows) {
       // moves to the row's end as a "−" collapse toggle.
       const x = startX + visible.length * (CARD_W + GAP_X);
       canvasW = Math.max(canvasW, x + CARD_W * 0.5);
-      nodes.push({ kind: expanded ? 'collapse' : 'overflow', count: overflow, row: idx, x, y });
+      nodes.push({ kind: expanded ? 'collapse' : 'overflow', hiddenIds, count: overflow, row: idx, x, y });
     }
   });
 
@@ -161,19 +168,26 @@ function layoutTree(tree, expandedRows) {
 
 function computeEdges(layoutNodes, byId) {
   const byNodeId = new Map();
-  layoutNodes.forEach(n => { if (n.id) byNodeId.set(n.id, n); });
+  layoutNodes.forEach(n => {
+    if (n.id) byNodeId.set(n.id, n);
+    for (const id of n.hiddenIds || []) byNodeId.set(id, n);
+  });
   const edges = [];
-  for (const n of layoutNodes) {
-    if (!n.id) continue;
-    const p = byId.get(n.id);
+  const emitted = new Set();
+  for (const [id, n] of byNodeId) {
+    const p = byId.get(id);
     if (!p) continue;
-    for (const pid of (p.parentIds || [])) {
+    for (const pid of new Set(p.parentIds || [])) {
       const parent = byNodeId.get(pid);
-      if (parent) {
+      if (parent && parent !== n) {
+        const key = `${parent.row}:${parent.x}:${n.row}:${n.x}`;
+        if (emitted.has(key)) continue;
+        emitted.add(key);
         edges.push({
-          x1: parent.x + CARD_W / 2,
+          aggregated: !parent.id || !n.id,
+          x1: parent.x + CARD_W / (parent.id ? 2 : 4),
           y1: parent.y + CARD_H,
-          x2: n.x + CARD_W / 2,
+          x2: n.x + CARD_W / (n.id ? 2 : 4),
           y2: n.y,
         });
       }
@@ -194,6 +208,13 @@ function LineageCard({ node, byId, onPick }) {
       className={'lineage-card ' + node.kind + (isFocus ? ' focus' : '')}
       style={{ left: node.x, top: node.y, width: CARD_W, height: CARD_H }}
       onClick={() => !isFocus && onPick(node.id)}
+      role={isFocus ? undefined : 'button'}
+      tabIndex={isFocus ? undefined : 0}
+      onKeyDown={(e) => {
+        if (!isFocus && (e.key === 'Enter' || e.key === ' ')) {
+          e.preventDefault(); onPick(node.id);
+        }
+      }}
       title={window.displayName(target) + ' · ' + (tier?.label || target.type) + ' · ' + target.tradition}
     >
       <div className="lineage-card-name">{window.displayName(target)}</div>
@@ -262,8 +283,6 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
     tree.descRowCount > 0 ||
     tree.siblings.length > 0;
 
-  if (!hasAny) return null;
-
   return (
     <div className="section">
       <h2>
@@ -274,6 +293,10 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
           {tree.descRowCount > 0 && `${tree.descRowCount}↓`}
         </span>
       </h2>
+
+      {!hasAny && <p className="lineage-status">{upDepth === 0 && downDepth === 0
+        ? 'Generations are hidden. Increase the depth to explore recorded parentage.'
+        : 'No connected parentage records available.'}</p>}
 
       <div className="lineage-wrap" ref={wrapRef}>
         <div
@@ -295,6 +318,7 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
                   fill="none"
                   stroke="rgba(11,11,11,0.30)"
                   strokeWidth={1}
+                  strokeDasharray={e.aggregated ? '4 3' : undefined}
                 />
               );
             })}
@@ -330,17 +354,17 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
       <div className="lineage-controls">
         <span>Generations</span>
         <div className="lineage-step">
-          <button onClick={() => setUpDepth(Math.max(0, upDepth - 1))} disabled={upDepth === 0}>−</button>
+          <button aria-label="Fewer ancestor generations" onClick={() => setUpDepth(Math.max(0, upDepth - 1))} disabled={upDepth === 0}>−</button>
           <span>{upDepth}↑</span>
-          <button onClick={() => setUpDepth(Math.min(4, upDepth + 1))} disabled={upDepth === 4}>+</button>
+          <button aria-label="More ancestor generations" onClick={() => setUpDepth(upDepth + 1)} disabled={!tree.hasMoreUp}>+</button>
         </div>
         <div className="lineage-step">
-          <button onClick={() => setDownDepth(Math.max(0, downDepth - 1))} disabled={downDepth === 0}>−</button>
+          <button aria-label="Fewer descendant generations" onClick={() => setDownDepth(Math.max(0, downDepth - 1))} disabled={downDepth === 0}>−</button>
           <span>{downDepth}↓</span>
-          <button onClick={() => setDownDepth(Math.min(4, downDepth + 1))} disabled={downDepth === 4}>+</button>
+          <button aria-label="More descendant generations" onClick={() => setDownDepth(downDepth + 1)} disabled={!tree.hasMoreDown}>+</button>
         </div>
         <span className="lineage-controls-hint">
-          Click any card to jump
+          {edges.some(e => e.aggregated) ? 'Dashed lines connect collapsed groups. ' : ''}Click any card to jump
         </span>
       </div>
     </div>
