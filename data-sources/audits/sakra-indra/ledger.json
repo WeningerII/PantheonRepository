@@ -10000,6 +10000,20 @@
      ],
      "accountId": "vp-daksha-parentage",
      "status": "registered-target"
+    },
+    {
+     "subject": "hindu_aditi",
+     "personId": "hindu_daksha",
+     "kind": "parent",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Ṛgveda 10.72.4–5, Griffith translation",
+       "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
+      }
+     ],
+     "accountId": "rigveda-reciprocal-origin",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -10014,7 +10028,20 @@
      "weight": "primary"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "id": "rigvedic-reciprocal-origin",
+     "claim": "parentage",
+     "description": "Ṛgveda 10.72 presents Daksha as born of Aditi and Aditi as Daksha’s daughter. This reciprocal cosmogony is distinct from the later Purāṇic genealogy.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Ṛgveda 10.72.4–5, Griffith translation",
+       "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
+      }
+     ]
+    }
+   ],
    "parentageAccounts": [
     {
      "id": "vp-daksha-parentage",
@@ -10037,6 +10064,30 @@
        "kind": "primary",
        "reference": "Viṣṇu Purāṇa 1.15, Wilson translation, Āditya genealogy",
        "url": "https://sacred-texts.com/hin/vp/vp050.htm"
+      }
+     ]
+    },
+    {
+     "id": "rigveda-reciprocal-origin",
+     "label": "Ṛgveda 10.72.4–5: reciprocal origin",
+     "parents": [
+      {
+       "personId": "hindu_daksha",
+       "kind": "parent",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Ṛgveda 10.72.4–5, Griffith translation",
+         "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Ṛgveda 10.72.4–5, Griffith translation",
+       "url": "https://sacred-texts.com/hin/rigveda/rv10072.htm"
       }
      ]
     }
@@ -14356,7 +14407,7 @@
     },
     "descendants": {
      "status": "awaiting-research",
-     "present": 1
+     "present": 2
     },
     "lifecycle": {
      "status": "awaiting-research",
@@ -42500,6 +42551,26 @@
    "status": "reviewed-and-adequate",
    "disposition": "Named ascetic arbitrating the contest; not a genealogical intermediary. No identity with the Hindu namesake inferred. Retained as a narrative-only discovery.",
    "evidence": "https://sacred-texts.com/book/the-jataka-volume-v/read/no-535-sudhabhojana-jataka"
+  },
+  {
+   "names": [
+    "Aditi and Daksha reciprocal origin"
+   ],
+   "recordIds": [
+    "hindu_aditi",
+    "hindu_daksha"
+   ],
+   "status": "cross-lane-dependency",
+   "disposition": "RV10.72.4–5 read. Aditi’s selectable account authored here; Daksha’s counterpart account inspected in PR147 at 9fb5166, not yet integrated. No default cyclic parentage. VP1.15 father-of and Brahma spiritual-parent reciprocals remain separate requests.",
+   "evidence": "rv1072"
+  },
+  {
+   "names": [
+    "Martanda and Aditi’s seven other sons in RV10.72"
+   ],
+   "status": "awaiting-research",
+   "disposition": "Verses8–9 read; no automatic equation of the unnamed seven with every member of the later twelve-Aditya list. Existing solar identities require separate review.",
+   "evidence": "rv1072"
   }
  ],
  "sourceBlockers": [
