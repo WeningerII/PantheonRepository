@@ -29,19 +29,15 @@ jobs:
           EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
-          if test "$(git hash-object app/data.js)" = "215639bcf375dfa6d82e6c46a5a583805cbb0748"; then exit 0; fi
-          echo 'LS0tIGEvYXBwL2RhdGEuanMKKysrIGIvYXBwL2RhdGEuanMKQEAgLTQwNjQ0LDYgKzQwNjQ0LDcgQEAgY29uc3QgRVJBX09SREVSID0gewogICAvLyB0aGUgc2FtZSBwcmltb3JkaWFsIC8gbXl0aGljIC8gbXl0aGljLXByZWhpc3RvcmljIHZvY2FidWxhcnkgYWxyZWFkeSB1c2VkIGJ5CiAgIC8vIHRoZSBjb2duYXRlIEVhc3QtUG9seW5lc2lhbiB0cmFkaXRpb25zIGluIHRoaXMgcmVnaXN0cnkuCiAgICdNYW5nYWlhbic6IFsncHJpbW9yZGlhbCcsICdteXRoaWMnLCAnbXl0aGljLXByZWhpc3RvcmljJ10sCisgICdNYW5paGlraSc6IFsnbXl0aGljJ10sCiAKICAgLy8gV2Vsc2g6IG1hYmlub2dpb24tbXl0aG9sb2dpY2FsICh0aGUgbGVnZW5kYXJ5LW15dGhpYyB0aW1lIG9mIHRoZQogICAvLyBGb3VyIEJyYW5jaGVzIGFuZCB0aGUgd2lkZXIgTWFiaW5vZ2lvbiBzdG9yaWVzOyBQcnlkZXJpJ3MgcmVpZ24gaW4KQEAgLTQyNTUyLDYgKzQyNTUzLDEwIEBAIGNvbnN0IEVSQV9EQVRFUyA9IHsKICAgICAnbXl0aGljJzogICAgICAgICAgICAgICAgeyBteXRoaWNTdGFydDogLTIwMDAsIG15dGhpY0VuZDogLTc1MCwgdGV4dHVhbFN0YXJ0OiAxODYwLCB0ZXh0dWFsRW5kOiAyMDEwLCBwcmVjaXNpb246ICdlcmEtb25seScgfSwKICAgICAnbXl0aGljLXByZWhpc3RvcmljJzogICAgeyBteXRoaWNTdGFydDogLTc1MCwgbXl0aGljRW5kOiAxMzAwLCB0ZXh0dWFsU3RhcnQ6IDE4NjAsIHRleHR1YWxFbmQ6IDIwMTAsIHByZWNpc2lvbjogJ2VyYS1vbmx5JyB9LAogICB9LAorICAvLyBHaWxsICgxODc2KSwgcHAuIDYz4oCTNzU6IG5hcnJhdGl2ZSB0aW1lIGlzIHVuZGF0ZWQ7IDE4NzYgaXMgdGhpcyBhdHRlc3RhdGlvbi4KKyAgJ01hbmloaWtpJzogeworICAgICdteXRoaWMnOiB7IG15dGhpY1N0YXJ0OiBudWxsLCBteXRoaWNFbmQ6IG51bGwsIHRleHR1YWxTdGFydDogMTg3NiwgdGV4dHVhbEVuZDogMTg3NiwgcHJlY2lzaW9uOiAnZXJhLW9ubHknIH0sCisgIH0sCiAgICdNYW5nYWlhbic6IHsKICAgICAncHJpbW9yZGlhbCc6ICAgICAgICAgICAgeyBteXRoaWNTdGFydDogbnVsbCwgbXl0aGljRW5kOiBudWxsLCB0ZXh0dWFsU3RhcnQ6IDE4NzYsIHRleHR1YWxFbmQ6IDIwMTAsIHByZWNpc2lvbjogJ2Nvc21pYycgfSwKICAgICAnbXl0aGljJzogICAgICAgICAgICAgICAgeyBteXRoaWNTdGFydDogLTIwMDAsIG15dGhpY0VuZDogLTc1MCwgdGV4dHVhbFN0YXJ0OiAxODc2LCB0ZXh0dWFsRW5kOiAyMDEwLCBwcmVjaXNpb246ICdlcmEtb25seScgfSwK' | base64 --decode > /tmp/polynesian-vocabulary.patch
-          git apply --check /tmp/polynesian-vocabulary.patch
-          git apply /tmp/polynesian-vocabulary.patch
           node scripts/gen-new-figures.cjs
           node scripts/gen-enrich.cjs
           node scripts/gen-powers-terms.cjs
           node scripts/gen-powers-items.cjs
           python3 build.py
           node scripts/audit-polynesian-counterparts.cjs
-          test "$(git hash-object app/data.js)" = "215639bcf375dfa6d82e6c46a5a583805cbb0748"
-          test "$(git hash-object dist/pantheon-registry.html)" = "be6400221db33764821fda6626fde3c8f3b1e0a1"
-          test "$(git hash-object data-sources/audits/polynesian-counterparts/ledger.json)" = "198f5258c557f4564f4b59d141ed80ed779134b8"
+          test "$(git hash-object app/data.js)" = "996fcf136fcc5b76676fea129b39eaa2c9b168cb"
+          test "$(git hash-object dist/pantheon-registry.html)" = "cac3664e64412d37d66621a63e90a224620a5990"
+          test "$(git hash-object data-sources/audits/polynesian-counterparts/ledger.json)" = "ef5b6173ef2f36014939de09762771394b517db1"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/polynesian-counterparts/ledger.json
           test "$(git diff --cached --name-only | wc -l)" -eq 3
           git config user.name "github-actions[bot]"

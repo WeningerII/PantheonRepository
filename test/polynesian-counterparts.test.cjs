@@ -41,3 +41,14 @@ test('lane ledger is reproducible and accounts for every authored and discovered
  assert.equal(actual.complete,false,'Open research must never be represented as complete');
  for(const r of actual.records)assert.equal(Object.keys(r.categories).length,16);
 });
+test('cited revisions preserve superseded evidence and expose their final field values',()=>{
+ const batches=JSON.parse(read('data-sources/corrections/polynesian-counterparts.json'));
+ for(const [id,corrections] of Object.entries(batches))for(const c of corrections){
+  const history=people[id].corrections.find(h=>h.id===c.id);
+  assert.deepEqual(JSON.parse(JSON.stringify(history.previous)),c.expected,`${id} ${c.id}`);
+  assert.deepEqual(JSON.parse(JSON.stringify(history.decision)),c);
+  let current=people[id];for(const key of c.path)current=current[key];
+  if(c.op==='replace')assert.deepEqual(JSON.parse(JSON.stringify(current)),c.value);
+  assert.ok(people[id].variants.some(v=>v.id===`correction:${c.id}`&&v.sources.length));
+ }
+});

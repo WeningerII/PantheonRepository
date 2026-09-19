@@ -40,6 +40,39 @@
      }
     ],
     "notes": "Punga is a son in the sea-progeny account; his default lineage follows a different account."
+   },
+   {
+    "kind": "parent",
+    "personId": "polynesian_te_more_tu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "counterpart-of",
+    "personId": "tokelauan_tui_tokelau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "polynesian_te_anu_matao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
    }
   ],
   "parentageAccounts": [
@@ -75,6 +108,30 @@
       "kind": "secondary",
       "reference": "Paul Meredith, Te hī ika – Māori fishing, Tangaroa, god of the sea (2012), opening genealogy",
       "url": "https://teara.govt.nz/en/te-hi-ika-maori-fishing/page-1"
+     }
+    ]
+   },
+   {
+    "id": "te-more-tu-account",
+    "label": "Te more tu account",
+    "parents": [
+     {
+      "personId": "polynesian_te_more_tu",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
      }
     ]
    }
@@ -227,6 +284,20 @@
      {
       "kind": "primary",
       "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 8",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "sun-moon-parentage",
+    "claim": "Local sun and moon account",
+    "description": "Gill records a Mangaian tribal account in which Tonga-iti is Papa’s husband rather than her son. Vatea and Tonga-iti dispute the paternity of an unnamed infant; its two halves become sun and moon. Gill says rival tribes rejected this genealogy.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 44–45",
       "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
      }
     ]
@@ -672,6 +743,17 @@
       "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
      }
     ]
+   },
+   {
+    "kind": "companion",
+    "personId": "mangaian_akaotu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 52–57",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
    }
   ]
  },
@@ -832,6 +914,17 @@
       "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
      }
     ]
+   },
+   {
+    "kind": "rival",
+    "personId": "manihiki_iku",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 71–74",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
    }
   ]
  },
@@ -924,6 +1017,29 @@
       "url": "https://sacred-texts.com/pac/hm/hm07.htm"
      }
     ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Kamakau account."
    }
   ],
   "nameLinks": [
@@ -940,6 +1056,43 @@
      }
     ]
    }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "fornander-island-genealogy",
+    "label": "Fornander: island genealogy",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
   ]
  },
  "polynesian_kane": {
@@ -952,6 +1105,55 @@
       "kind": "secondary",
       "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. V, pp. 60–66",
       "url": "https://sacred-texts.com/pac/hm/hm07.htm"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Kamakau account."
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "fornander-island-genealogy",
+    "label": "Fornander: island genealogy",
+    "parents": [
+     {
+      "personId": "hawaiian_wakea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_papa",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+        "url": "https://www.gutenberg.org/ebooks/72686"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
      }
     ]
    }
@@ -1068,6 +1270,17 @@
      {
       "kind": "primary",
       "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 93–94",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "mangaian_ngana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 88–90",
       "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
      }
     ]
@@ -1259,6 +1472,43 @@
      {
       "kind": "primary",
       "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 95",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "value": "Ina-moe-aitu",
+    "tradition": "Mangaian",
+    "status": "resolved",
+    "personId": "mangaian_ina_moe_aitu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 45,77,95",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mangaian_marama",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 45",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_ina_moe_aitu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 45,77,95",
       "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
      }
     ]
@@ -2617,6 +2867,17 @@
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "samoan_sinaleana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ],
   "nameLinks": [
@@ -2697,6 +2958,41 @@
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
+   },
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_tagaloa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     },
+     {
+      "personId": "samoan_sinaleana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ],
   "relations": [
@@ -2731,6 +3027,39 @@
      {
       "kind": "primary",
       "reference": "George Turner, Samoa, a Hundred Years Ago and Long Before (1884), ch. I, §2",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_sinaleana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
@@ -2853,6 +3182,41 @@
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
+   },
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_pili",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     },
+     {
+      "personId": "samoan_sina_tavaetele",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ],
   "relations": [
@@ -2887,6 +3251,28 @@
      {
       "kind": "primary",
       "reference": "George Turner, Samoa, a Hundred Years Ago and Long Before (1884), ch. I, §2",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "samoan_pili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
@@ -2929,6 +3315,41 @@
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
+   },
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_pili",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     },
+     {
+      "personId": "samoan_sina_tavaetele",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ],
   "relations": [
@@ -2955,6 +3376,28 @@
      }
     ],
     "notes": "Parent in the cited account."
+   },
+   {
+    "kind": "father",
+    "personId": "samoan_pili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ]
  },
@@ -2994,6 +3437,41 @@
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
+   },
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_pili",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     },
+     {
+      "personId": "samoan_sina_tavaetele",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ],
   "relations": [
@@ -3020,6 +3498,28 @@
      }
     ],
     "notes": "Parent in the cited account."
+   },
+   {
+    "kind": "father",
+    "personId": "samoan_pili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
    }
   ]
  },
@@ -5124,6 +5624,21 @@
      }
     ]
    }
+  ],
+  "nameLinks": [
+   {
+    "value": "Tonga-iti",
+    "tradition": "Mangaian",
+    "status": "resolved",
+    "personId": "mangaian_tonga_iti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 10–11,25–28",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
   ]
  },
  "mangaian_ruanuku": {
@@ -5290,6 +5805,4396 @@
      {
       "kind": "primary",
       "reference": "George Turner, Samoa (1884), ch. I, §2, row 9",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_ina_moe_aitu": {
+  "parents": [
+   {
+    "personId": "mangaian_kui",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 77",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "mangaian_tuna",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 77",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 45,77,95",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_marama": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 45",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_tonga_iti": {
+  "nameLinks": [
+   {
+    "value": "Motoro",
+    "tradition": "Mangaian",
+    "status": "resolved",
+    "personId": "mangaian_motoro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 10–11,25–28",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "sun-moon-parentage",
+    "claim": "Local sun and moon account",
+    "description": "Gill records a Mangaian tribal account in which Tonga-iti is Papa’s husband rather than her son. Vatea and Tonga-iti dispute the paternity of an unnamed infant; its two halves become sun and moon. Gill says rival tribes rejected this genealogy.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 44–45",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "manihiki_iku": {
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "manihiki_tapairu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "rival",
+    "personId": "manihiki_maui_third",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 71–74",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "manihiki_tapairu": {
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "manihiki_iku",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "manihiki_toa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "manihiki_toa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manihiki_tapairu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "manihiki_mahuta": {
+  "relations": [
+   {
+    "kind": "ancestor",
+    "personId": "manihiki_toa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "ancestor",
+    "personId": "manihiki_tapairu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 74–75",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_manufili": {
+  "relations": [
+   {
+    "kind": "helper",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. II, §4",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_tuna": {
+  "descriptions": [
+   {
+    "text": "Tuna is the god and protector of freshwater eels in Gill’s coconut narrative. He visits Ina-moe-aitu in eel form and changes into a young man to declare his love.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), pp. 77",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_haumea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_kane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Kamakau account."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Kamakau account."
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_makea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kaukahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kauahulihonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_waia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinanalo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nauakahili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wailoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "identified-in-account",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Papa’s divine manifestation in this account."
+   }
+  ],
+  "variants": [
+   {
+    "id": "independent-family-accounts",
+    "claim": "Different family accounts",
+    "description": "Paliku calls Haumea Kanaloa’s wife; Kamakau calls her his sister. These accounts are retained separately.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Papa",
+    "tradition": "Hawaiian",
+    "status": "resolved",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 276–280",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_makea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 73",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kaukahi": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kuaimehani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "kumulipo",
+    "label": "Fifteenth Era",
+    "parents": [
+     {
+      "personId": "hawaiian_haumea",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kuaimehani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kaukahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kauahulihonua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hulihoma",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hulihoma": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_kauahulihonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_haloa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinamanoulu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinamanoulu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_waia": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_huhune",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_huhune": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_waia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinanalo": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haunuu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_haunuu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinanalo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_nauakahili": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haulani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_haulani": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_nauakahili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_wailoa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hikopuanaiea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "grandmother",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hikopuanaiea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wailoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kio": {
+  "relations": [
+   {
+    "kind": "ancestor",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_uaia": {
+  "relations": [
+   {
+    "kind": "encounter",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 74",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_papa": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_wakea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   },
+   {
+    "kind": "identified-in-account",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ],
+    "notes": "Haumea’s human manifestation in this account."
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Haumea",
+    "tradition": "Hawaiian",
+    "status": "resolved",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 276–280",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_wakea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fornander Collection of Hawaiian Antiquities and Folk-lore, first series (1916), Story of the Formation of These Islands and Origin of This Race, ch. IV",
+      "url": "https://www.gutenberg.org/ebooks/72686"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_mapunaia_aala": {
+  "parentageAccounts": [
+   {
+    "id": "kamakau",
+    "label": "Kamakau account",
+    "parents": [
+     {
+      "personId": "hawaiian_ku_hele_i_po",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+        "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_haumea",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+        "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "hawaiian_ku_hele_i_po",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   },
+   {
+    "personId": "hawaiian_haumea",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_ku_hele_i_po": {
+  "relations": [
+   {
+    "kind": "partner",
+    "personId": "hawaiian_haumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 278–279",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "tuamotuan_hina_a_rauriki": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_turiafaumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 289",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   },
+   {
+    "kind": "rescuer",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 289",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "tuamotuan_turiafaumea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_hina_a_rauriki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 289",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "tuamotuan_rogo_tumu_here": {
+  "relations": [
+   {
+    "kind": "abducted",
+    "personId": "tuamotuan_hina_a_rauriki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Martha Beckwith, Hawaiian Mythology (1940), ch. XIX, pp. 289",
+      "url": "https://sacred-texts.com/pac/hm/hm21.htm"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tangaloa_eiki": {
+  "relations": [
+   {
+    "kind": "commissioned-by",
+    "personId": "tongan_tamapoulialamafoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "kind": "commissioned",
+    "personId": "tongan_laufakanaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16–17",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_tangaloa_tufunga": {
+  "relations": [
+   {
+    "kind": "commissioned-by",
+    "personId": "tongan_tamapoulialamafoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "kind": "commissioned",
+    "personId": "tongan_laufakanaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16–17",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_laufakanaa": {
+  "relations": [
+   {
+    "kind": "commissioned-by",
+    "personId": "tongan_tamapoulialamafoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_tangaloa_eitumatupua": {
+  "nameLinks": [
+   {
+    "value": "Tangaloa Eiki",
+    "tradition": "Tongan",
+    "status": "resolved",
+    "personId": "tongan_tangaloa_eiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16,25–28",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "value": "Tangaloa Tufunga",
+    "tradition": "Tongan",
+    "status": "resolved",
+    "personId": "tongan_tangaloa_tufunga",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16,25–28",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "value": "Tangaloa Atulongolongo",
+    "tradition": "Tongan",
+    "status": "resolved",
+    "personId": "tongan_tangaloa_atulongolongo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16,25–28",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "value": "Tangaloa (Lomu’s account)",
+    "tradition": "Tongan",
+    "status": "resolved",
+    "personId": "tongan_tangaloa_lomu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20,25–28",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Tangaloa Eitumatupua descends by a casuarina tree and fathers Ahoeitu with Ilaheva. After Ahoeitu’s heavenly brothers kill him, Eitumatupua directs his restoration and appoints him to rule Tonga. Gifford’s collected accounts distinguish this figure from other named Tangaloa.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16,19–20,25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tangaloa_atulongolongo": {
+  "relations": [
+   {
+    "kind": "commissioned",
+    "personId": "tongan_laufakanaa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16–17",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_kele": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_limu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_limu": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_kele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_toiukamea": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_maimoaalongona",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "personId": "tongan_kele",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_limu",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_kele",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_limu",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maimoaalongona": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_toiukamea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "personId": "tongan_kele",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_limu",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_kele",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_limu",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_taufulifonua": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_toiukamea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_maimoaalongona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "id": "maatu",
+    "label": "Maatu",
+    "parents": [
+     {
+      "personId": "tongan_piki",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_kele",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_toiukamea",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_maimoaalongona",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "tongan_piki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "tongan_kele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_fonuuta": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_toiukamea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_maimoaalongona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_toiukamea",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_maimoaalongona",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "tongan_fonutahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_fonutahi": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_toiukamea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_maimoaalongona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_toiukamea",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_maimoaalongona",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "tongan_fonuuta",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_velesii": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_toiukamea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_maimoaalongona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_toiukamea",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_maimoaalongona",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "tongan_velelahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_velelahi": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_toiukamea",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_maimoaalongona",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_toiukamea",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_maimoaalongona",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "tongan_velesii",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_hikuleo": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_taufulifonua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_taufulifonua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tangaloa_takataka": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_velesii",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_velelahi",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_velesii",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_velelahi",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "same-name-group",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19,25",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": "No automatic identification of the group with a particular member."
+   }
+  ]
+ },
+ "tongan_maui_takataka": {
+  "parentageAccounts": [
+   {
+    "id": "takataka",
+    "label": "Takataka (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_fonuuta",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_fonutahi",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_fonuuta",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_fonutahi",
+    "kind": "parent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_faingaa": {
+  "relations": [
+   {
+    "kind": "ancestor",
+    "personId": "tongan_maui_motua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_loau_takataka": {
+  "relations": [
+   {
+    "kind": "ancestor",
+    "personId": "tongan_hikuleo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_heimoana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_malekulaulua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_malekulaulua": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_heimoana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ],
+    "notes": ""
+   }
+  ]
+ },
+ "tongan_maui_motua": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_malekulaulua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_heimoana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "id": "collocott-reported-by-gifford",
+    "label": "Collocott reported by gifford",
+    "parents": [
+     {
+      "personId": "tongan_piki",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_malekulaulua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_heimoana",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "tongan_piki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maui_atalanga": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_malekulaulua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_heimoana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "id": "maatu",
+    "label": "Maatu",
+    "parents": [
+     {
+      "personId": "tongan_taufulifonua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "id": "collocott-reported-by-gifford",
+    "label": "Collocott reported by gifford",
+    "parents": [
+     {
+      "personId": "tongan_piki",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_malekulaulua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_heimoana",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "tongan_taufulifonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "tongan_piki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maui_kisikisi": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_malekulaulua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_heimoana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_malekulaulua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_heimoana",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_hina": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_malekulaulua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_heimoana",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_malekulaulua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_heimoana",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tangaloa_lomu": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_maui_kisikisi",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_hina",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_maui_kisikisi",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_hina",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_io_lomu": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_maui_kisikisi",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_hina",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_maui_kisikisi",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_hina",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_kohai_lomu": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_maui_kisikisi",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_hina",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_maui_kisikisi",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_hina",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_afulunga": {
+  "parentageAccounts": [
+   {
+    "id": "mesake-lomu",
+    "label": "Mesake lomu (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_maui_kisikisi",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_hina",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_maui_kisikisi",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_hina",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 19–20",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_ahoeitu": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_ilaheva",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "personId": "tongan_ilaheva",
+    "kind": "mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Ahoeitu, son of Ilaheva and Tangaloa Eitumatupua, climbs to the sky and is killed by his jealous brothers. His father directs the recovery of his remains and his return to life. He returns to earth as the first Tu‘i Tonga of divine descent, displacing an earlier worm-descended line.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_talafale": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Talafale is a heavenly son of Tangaloa Eitumatupua and one of the brothers who kill Ahoeitu. After Ahoeitu’s restoration the brothers accompany him to earth. Talafale receives the title Tui Faleua; his descendants are identified as Tui Pelehake.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 27–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_matakehe": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Matakehe is a heavenly son of Tangaloa Eitumatupua and one of the brothers who kill Ahoeitu. After Ahoeitu’s restoration the brothers accompany him to earth. Matakehe and Maliepo are assigned to guard Ahoeitu. The narrator says Matakehe’s descendants have become extinct.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 27–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maliepo": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Maliepo is a heavenly son of Tangaloa Eitumatupua and one of the brothers who kill Ahoeitu. After Ahoeitu’s restoration the brothers accompany him to earth. Maliepo and Matakehe guard Ahoeitu. Maliepo’s descendants are called Lauaki.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 27–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tuiloloko": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Tui Loloko is a heavenly son of Tangaloa Eitumatupua and one of the brothers who kill Ahoeitu. After Ahoeitu’s restoration the brothers accompany him to earth. Tui Loloko and Tui Folaha govern and take charge of royal funerals. The narrative calls his descendants Tui Loloko.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 27–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tuifolaha": {
+  "parentageAccounts": [
+   {
+    "id": "reiter-baker",
+    "label": "Reiter baker (Gifford)",
+    "parents": [
+     {
+      "personId": "tongan_tangaloa_eitumatupua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "personId": "tongan_tangaloa_eitumatupua",
+    "kind": "father",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 25–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "descriptions": [
+   {
+    "text": "Tui Folaha is a heavenly son of Tangaloa Eitumatupua and one of the brothers who kill Ahoeitu. After Ahoeitu’s restoration the brothers accompany him to earth. Tui Folaha and Tui Loloko govern and take charge of royal funerals.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 27–29",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_ilaheva": {
+  "descriptions": [
+   {
+    "text": "Ilaheva, also called Vaepopua, meets Tangaloa Eitumatupua while fishing. She raises their son Ahoeitu at Popua and later shows him the casuarina route to his father in the sky. The Reiter–Baker passage does not name her parents.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), Reiter–Baker account, pp. 25–27",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_havea_lolofonua": {
+  "parentageAccounts": [
+   {
+    "id": "maatu",
+    "label": "Maatu",
+    "parents": [
+     {
+      "personId": "tongan_piki",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     },
+     {
+      "personId": "tongan_kele",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "tongan_piki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "parent",
+    "personId": "tongan_kele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maui_loa": {
+  "parentageAccounts": [
+   {
+    "id": "maatu",
+    "label": "Maatu",
+    "parents": [
+     {
+      "personId": "tongan_taufulifonua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tongan_taufulifonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_maui_puku": {
+  "parentageAccounts": [
+   {
+    "id": "maatu",
+    "label": "Maatu",
+    "parents": [
+     {
+      "personId": "tongan_taufulifonua",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "id": "collocott-reported-by-gifford",
+    "label": "Collocott reported by gifford",
+    "parents": [
+     {
+      "personId": "tongan_piki",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+        "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tongan_taufulifonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "father",
+    "personId": "tongan_piki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_te_aka_ia_roe": {
+  "relations": [
+   {
+    "kind": "cosmic-foundation-for",
+    "personId": "mangaian_vari_ma_te_takere",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 1–3",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_te_tangaengae": {
+  "relations": [
+   {
+    "kind": "cosmic-foundation-for",
+    "personId": "mangaian_vari_ma_te_takere",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 1–3",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_te_manava_roa_foundation": {
+  "relations": [
+   {
+    "kind": "cosmic-foundation-for",
+    "personId": "mangaian_vari_ma_te_takere",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 1–3",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   },
+   {
+    "kind": "distinct-same-name",
+    "personId": "mangaian_te_manava_roa_giant",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 128–129",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Te-manava-roa (buried giant)",
+    "tradition": "Mangaian",
+    "status": "resolved",
+    "personId": "mangaian_te_manava_roa_giant",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 128–129",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_te_manava_roa_giant": {
+  "relations": [
+   {
+    "kind": "distinct-same-name",
+    "personId": "mangaian_te_manava_roa_foundation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 128–129",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Te-manava-roa (cosmic foundation)",
+    "tradition": "Mangaian",
+    "status": "resolved",
+    "personId": "mangaian_te_manava_roa_foundation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 128–129",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_mauike": {
+  "relations": [
+   {
+    "kind": "defeated-by",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 51–57",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_te_anu_matao": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_te_whata_uira_a_tangawa": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fish-class",
+    "label": "Tregear fish class",
+    "parents": [
+     {
+      "personId": "polynesian_tangaroa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     },
+     {
+      "personId": "polynesian_te_anu_matao",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "polynesian_te_anu_matao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_te_whatu_kura": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fish-class",
+    "label": "Tregear fish class",
+    "parents": [
+     {
+      "personId": "polynesian_tangaroa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     },
+     {
+      "personId": "polynesian_te_anu_matao",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "polynesian_te_anu_matao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_poutini": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fish-class",
+    "label": "Tregear fish class",
+    "parents": [
+     {
+      "personId": "polynesian_tangaroa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     },
+     {
+      "personId": "polynesian_te_anu_matao",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "polynesian_te_anu_matao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_te_pounamu": {
+  "parentageAccounts": [
+   {
+    "id": "tregear-fish-class",
+    "label": "Tregear fish class",
+    "parents": [
+     {
+      "personId": "polynesian_tangaroa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     },
+     {
+      "personId": "polynesian_te_anu_matao",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "polynesian_te_anu_matao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_tinirau": {
+  "parentageAccounts": [
+   {
+    "id": "tregear",
+    "label": "Tregear",
+    "parents": [
+     {
+      "personId": "polynesian_tangaroa",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "secondary",
+        "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+        "url": "https://archive.org/details/cu31924026916480"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "tokelauan_tui_tokelau": {
+  "relations": [
+   {
+    "kind": "counterpart-of",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ],
+  "nameLinks": [
+   {
+    "value": "Tangaroa",
+    "tradition": "Polynesian",
+    "status": "resolved",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_ra": {
+  "relations": [
+   {
+    "kind": "defeated-by",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 61–63",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_tekea": {
+  "relations": [
+   {
+    "kind": "rescuer-of",
+    "personId": "mangaian_ina_voyager",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 92–93",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_ngana": {
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "mangaian_ina_voyager",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 88–90",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "mangaian_akaotu": {
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "W. W. Gill, Myths and Songs from the South Pacific (1876), pp. 52–57",
+      "url": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_akalana": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinaakeahi": {
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hawaiian_akalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_kialoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_kiaakapoko",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_maui_first": {
+  "parentageAccounts": [
+   {
+    "id": "kumulipo-fifteenth-era",
+    "label": "Kumulipo fifteenth era",
+    "parents": [
+     {
+      "personId": "hawaiian_akalana",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hinaakeahi",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_akalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_maui_central": {
+  "parentageAccounts": [
+   {
+    "id": "kumulipo-fifteenth-era",
+    "label": "Kumulipo fifteenth era",
+    "parents": [
+     {
+      "personId": "hawaiian_akalana",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hinaakeahi",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_akalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_maui_crouching": {
+  "parentageAccounts": [
+   {
+    "id": "kumulipo-fifteenth-era",
+    "label": "Kumulipo fifteenth era",
+    "parents": [
+     {
+      "personId": "hawaiian_akalana",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hinaakeahi",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_akalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_maui_malo": {
+  "parentageAccounts": [
+   {
+    "id": "kumulipo-fifteenth-era",
+    "label": "Kumulipo fifteenth era",
+    "parents": [
+     {
+      "personId": "hawaiian_akalana",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     },
+     {
+      "personId": "hawaiian_hinaakeahi",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+        "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hawaiian_akalana",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "associated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "hawaiian_moemoe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kialoa": {
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_kiaakapoko": {
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hawaiian_hinaakeahi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_pimoe": {
+  "relations": [
+   {
+    "kind": "defeated-by",
+    "personId": "hawaiian_maui_malo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_mahanauluehu": {
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "hawaiian_pimoe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_hinakeka": {
+  "relations": [
+   {
+    "kind": "abducted-by",
+    "personId": "hawaiian_peapea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_peapea": {
+  "relations": [
+   {
+    "kind": "defeated-by",
+    "personId": "hawaiian_maui_malo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "hawaiian_moemoe": {
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "hawaiian_maui_malo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_maui": {
+  "nameLinks": [
+   {
+    "value": "Maui of the malo",
+    "tradition": "Hawaiian",
+    "status": "resolved",
+    "personId": "hawaiian_maui_malo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liliuokalani, The Kumulipo (1897), Fifteenth Era, pp. 75–76",
+      "url": "https://sacred-texts.com/book/the-kumulipo/shell/the-fifteenth-era"
+     }
+    ]
+   }
+  ]
+ },
+ "polynesian_te_more_tu": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Edward Tregear, Maori-Polynesian Comparative Dictionary (1891), pp. 463–464, Tangaroa entry",
+      "url": "https://archive.org/details/cu31924026916480"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_piki": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tongan_taufulifonua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 14–15",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "tongan_tamapoulialamafoa": {
+  "relations": [
+   {
+    "kind": "commissioned",
+    "personId": "tongan_tangaloa_eiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. W. Gifford, Tongan Myths and Tales (1924), pp. 16–17",
+      "url": "https://archive.org/stream/tonganmythstales0000giff/tonganmythstales0000giff_djvu.txt"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_sina_manua": {
+  "parentageAccounts": [
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_manga",
+      "kind": "parent",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent",
+    "personId": "samoan_manga",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_manga": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "samoan_sina_manua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_sinaleana": {
+  "parentageAccounts": [
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_sina_manua",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "samoan_sina_manua",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_sina_tavaetele": {
+  "parentageAccounts": [
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_tavaetele",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "samoan_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "samoan_pili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_tavaetele": {
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ]
+ },
+ "samoan_tuamasanga": {
+  "parentageAccounts": [
+   {
+    "id": "turner-upolu",
+    "label": "Turner upolu",
+    "parents": [
+     {
+      "personId": "samoan_pili",
+      "kind": "father",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     },
+     {
+      "personId": "samoan_sina_tavaetele",
+      "kind": "mother",
+      "sources": [
+       {
+        "kind": "primary",
+        "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+        "url": "https://www.gutenberg.org/ebooks/14224"
+       }
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "samoan_pili",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
+      "url": "https://www.gutenberg.org/ebooks/14224"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_sina_tavaetele",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "George Turner, Samoa (1884), ch. XXI, opening Pili narrative",
       "url": "https://www.gutenberg.org/ebooks/14224"
      }
     ]
