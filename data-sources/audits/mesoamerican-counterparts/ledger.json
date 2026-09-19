@@ -1982,12 +1982,30 @@
        "url": "https://sacred-texts.com/book/yucatan-before-and-after-the-conquest/read/vi-cuculcan-foundation-of-mayapan"
       }
      ]
+    },
+    {
+     "status": "resolved",
+     "value": "Ce Acatl Topiltzin (ruler narrative)",
+     "tradition": "Aztec/Mexica",
+     "personId": "topiltzin",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 1 (sixteenth-century account); Phillips 1883, pp. 616–617",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section02.htm"
+      },
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 8; Phillips 1883, pp. 622–624",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section09.htm"
+      }
+     ]
     }
    ],
    "categories": {
     "names": {
      "status": "awaiting-research",
-     "present": 9,
+     "present": 10,
      "reviewComplete": false,
      "evidenceRef": "e1"
     },
@@ -2390,6 +2408,25 @@
     },
     {
      "subject": "aztec_quetzalcoatl",
+     "personId": "topiltzin",
+     "kind": "distinct-narrative-context",
+     "notes": "Navigate between the creator deity in Pinturas1 and the Tollan ruler in Pinturas8; neither this link nor the shared name transfers parentage, powers or objects.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 1 (sixteenth-century account); Phillips 1883, pp. 616–617",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section02.htm"
+      },
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 8; Phillips 1883, pp. 622–624",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section09.htm"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "aztec_quetzalcoatl",
      "kind": "counterpart-name",
      "personId": "maya_tohil",
      "status": "registered-target"
@@ -2410,6 +2447,12 @@
      "subject": "aztec_quetzalcoatl",
      "kind": "counterpart-name",
      "personId": "maya_kukulkan",
+     "status": "registered-target"
+    },
+    {
+     "subject": "aztec_quetzalcoatl",
+     "kind": "counterpart-name",
+     "personId": "topiltzin",
      "status": "registered-target"
     },
     {
@@ -2584,6 +2627,13 @@
      "status": "resolved-target",
      "target": "maya_kukulkan",
      "evidenceRef": "e44"
+    },
+    {
+     "value": "Ce Acatl Topiltzin (ruler narrative)",
+     "form": "explicit-link",
+     "status": "resolved-target",
+     "target": "topiltzin",
+     "evidence": "Pinturas1 versus8: distinct narrative contexts, no identity or genealogy transfer."
     }
    ],
    "corrections": [],
@@ -15176,12 +15226,30 @@
        "url": "https://sacred-texts.com/book/yucatan-before-and-after-the-conquest/read/vi-cuculcan-foundation-of-mayapan"
       }
      ]
+    },
+    {
+     "status": "resolved",
+     "value": "Quetzalcoatl (deity narrative)",
+     "tradition": "Aztec/Mexica",
+     "personId": "aztec_quetzalcoatl",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 1 (sixteenth-century account); Phillips 1883, pp. 616–617",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section02.htm"
+      },
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 8; Phillips 1883, pp. 622–624",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section09.htm"
+      }
+     ]
     }
    ],
    "categories": {
     "names": {
      "status": "awaiting-research",
-     "present": 8,
+     "present": 9,
      "reviewComplete": false,
      "evidenceRef": "e1"
     },
@@ -15376,6 +15444,25 @@
     },
     {
      "subject": "topiltzin",
+     "personId": "aztec_quetzalcoatl",
+     "kind": "distinct-narrative-context",
+     "notes": "Navigate between the creator deity in Pinturas1 and the Tollan ruler in Pinturas8; neither this link nor the shared name transfers parentage, powers or objects.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 1 (sixteenth-century account); Phillips 1883, pp. 616–617",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section02.htm"
+      },
+      {
+       "kind": "primary",
+       "reference": "Historia de los Mexicanos por sus pinturas, chapter 8; Phillips 1883, pp. 622–624",
+       "url": "https://www.famsi.org/research/christensen/pinturas/section09.htm"
+      }
+     ],
+     "status": "registered-target"
+    },
+    {
+     "subject": "topiltzin",
      "kind": "counterpart-name",
      "personId": "nahua_quetzalpetlatl",
      "status": "registered-target"
@@ -15390,6 +15477,12 @@
      "subject": "topiltzin",
      "kind": "counterpart-name",
      "personId": "maya_kukulkan",
+     "status": "registered-target"
+    },
+    {
+     "subject": "topiltzin",
+     "kind": "counterpart-name",
+     "personId": "aztec_quetzalcoatl",
      "status": "registered-target"
     },
     {
@@ -15895,6 +15988,13 @@
      "status": "resolved-target",
      "target": "maya_kukulkan",
      "evidenceRef": "e44"
+    },
+    {
+     "value": "Quetzalcoatl (deity narrative)",
+     "form": "explicit-link",
+     "status": "resolved-target",
+     "target": "aztec_quetzalcoatl",
+     "evidence": "Pinturas1 versus8: distinct narrative contexts, no identity or genealogy transfer."
     }
    ],
    "corrections": [
