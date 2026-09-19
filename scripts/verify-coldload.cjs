@@ -174,6 +174,8 @@ const sample = () => {
   else if (end.total && end.n < end.total) fail(`scrolling stalled at ${end.n} of ${end.total} rows — the corpus is not fully reachable`);
   else console.log(`scroll reached the full corpus: ${end.n} rows ✓`);
 
+  await require('./verify-counterpart-ui.cjs').verifyCounterpartUI(pg,
+    `http://127.0.0.1:${PORT}/index.html`, require('./build-tiers.cjs').loadCorpus({ quiet: true }).seedPeople);
   await b.close(); srv.close();
   if (process.exitCode) console.error('\nverify-coldload: FAILED');
   else console.log('\nverify-coldload: PASSED');

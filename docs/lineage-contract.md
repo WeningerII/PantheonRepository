@@ -46,22 +46,37 @@ means no connected records are available, not that no historical parentage exist
 These checks certify projection behavior only. They do not certify corpus
 completeness or historical claims.
 
-## Remaining acceptance requirements for a complete shared template
+## Explicit names and selectable accounts
 
-The current parentIds representation flattens parentage into pairs. It does not
-encode a source-specific assertion, alternative account, or an audited absence.
-Do not call the entire template complete until the following are implemented
-through the transcript/generator pipeline, lazy projections, and interface:
+Relationship supplements can author `nameLinks` with `value`, `tradition`,
+`status`, `sources`, and a `personId` for resolved cross-record targets.
+Only a resolved, existing, nonself identifier becomes a link. `same-record`
+keeps ordinary aliases attached to the figure; `unresolved` and `disputed`
+remain text. The generator validates targets; the interface never guesses an
+identity from a name. Native anchors in Names, relationships and graph neighbor
+lists preserve keyboard and modified-click navigation.
 
-1. Individual relationship assertions retain source references, account context,
-   relation type and uncertainty. Multiple assertions may support one pair.
-2. Alternative accounts can be inspected separately without treating their union
-   as a single consistent genealogy or using that union for descent arithmetic.
-3. Identity, cult form, syncretic combination and comparison are distinguished
-   without transferring parentage implicitly.
-4. Unresolved targets, unaudited records and source-supported absence are distinct
-   states, backed by explicit audit evidence rather than inferred from degree.
-5. Source-to-record and source-to-edge coverage can be reconciled against a
-   documented inclusion boundary. Record count and graph density are insufficient.
+`parentageAccounts` contains stable account IDs, labels, cited parent assertions,
+and account citations. Each selected account replaces that subject's parents in
+a temporary lineage projection and rebuilds reverse child edges. Accounts are
+not unioned. An explicitly cited empty parents array can assert uncreated
+parentage; ordinary missing data cannot. Account citations survive both the
+full detail shard and lazy edge tier, so a visible ancestor can be selected
+without downloading the full corpus. Controls follow rendered cards and selected
+accounts, retaining bounded initial rendering.
 
-No figure-specific implementation or fixture is needed for any requirement.
+Selections are local to the current focus. Default `parentIds`, descent
+arithmetic, inherited powers and existing consumers are preserved. A supported
+full account may therefore differ from a legacy arithmetic baseline; the tree
+labels that distinction. A displayed account is not a universal reconciliation
+of all traditions, and parentage selection does not claim to switch every
+other biographical assertion to the same source.
+
+## Remaining completeness requirements
+
+Selectable accounts are supported but not exhaustively authored for the corpus.
+The connected audit ledger explicitly distinguishes structural presence from
+source review. Individual claims, uncertain identity, source-supported absence,
+and tradition boundaries still require research. No figure-specific branch or
+fixture is needed for that work. See `docs/connected-counterpart-audit.md` for
+coverage and unfinished evidence questions.

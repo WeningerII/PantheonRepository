@@ -795,9 +795,19 @@ function inheritedPowers(entry) {
   try { return (entry && window.__PR?.inheritedPowers?.[entry.id]) || []; } catch (_) { return []; }
 }
 // v3 multi-tradition name records (value + script + original glyphs + source),
-// when an entry carries them. Empty for the v1/v2 single-name majority.
+// combined with ordinary aliases and explicitly authored cross-record targets.
 function nameRecords(entry) {
-  return (entry && Array.isArray(entry.names)) ? entry.names : [];
+  if (!entry) return [];
+  const names = (entry.names || []).map(n => ({ ...n }));
+  for (const value of [entry.name?.primary, ...(entry.name?.alt || [])].filter(Boolean)) {
+    if (!names.some(n => n.value === value)) names.push({ value, tradition: entry.tradition });
+  }
+  for (const link of entry.nameLinks || []) {
+    const existing = names.find(n => n.value === link.value && n.tradition === link.tradition);
+    if (existing) Object.assign(existing, link);
+    else names.push({ ...link });
+  }
+  return names;
 }
 
 // ── Item registry accessors ────────────────────────────────────────────────

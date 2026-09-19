@@ -22,6 +22,37 @@ function applyRelationshipSupplement(peopleMap, patches) {
       const old = (peopleMap[id].variants || []).find(v => v.id === variant.id);
       if (old && JSON.stringify(old) !== JSON.stringify(variant)) throw new Error(`Variant already differs: ${id}`);
     }
+    const nameKeys = new Set();
+    for (const link of patch.nameLinks || []) {
+      const nameKey = JSON.stringify([link.value, link.tradition]);
+      if (nameKeys.has(nameKey)) throw new Error(`Duplicate name target: ${id}`);
+      nameKeys.add(nameKey);
+      if (!link.value || !link.tradition || !cited(link) ||
+          !['resolved', 'same-record', 'unresolved', 'disputed'].includes(link.status) ||
+          (link.status === 'resolved' ? (!peopleMap[link.personId] || link.personId === id) : !!link.personId))
+        throw new Error(`Invalid name target: ${id}`);
+      const old = (peopleMap[id].nameLinks || []).find(n => n.value === link.value && n.tradition === link.tradition);
+      if (old && JSON.stringify(old) !== JSON.stringify(link)) throw new Error(`Name target already differs: ${id}`);
+    }
+    for (const d of patch.descriptions || []) {
+      if (!d.text || !cited(d)) throw new Error(`Uncited description: ${id}`);
+    }
+    if ((patch.descriptions || []).length > 1) throw new Error(`Conflicting descriptions: ${id}`);
+    const accountIds = new Set();
+    for (const account of patch.parentageAccounts || []) {
+      if (!account.id || accountIds.has(account.id) || !account.label || !cited(account) || !Array.isArray(account.parents))
+        throw new Error(`Invalid parentage account: ${id}`);
+      accountIds.add(account.id);
+      const parentIds = new Set();
+      for (const parent of account.parents) {
+        if (!peopleMap[parent.personId] || parent.personId === id || parentIds.has(parent.personId) ||
+            !['father', 'mother', 'parent'].includes(parent.kind) || !cited(parent))
+          throw new Error(`Invalid account parent: ${id}`);
+        parentIds.add(parent.personId);
+      }
+      const old = (peopleMap[id].parentageAccounts || []).find(a => a.id === account.id);
+      if (old && JSON.stringify(old) !== JSON.stringify(account)) throw new Error(`Parentage account already differs: ${id}`);
+    }
     for (const resolution of patch.resolve || []) {
       if (!peopleMap[resolution.personId] || resolution.personId === id || !resolution.externalName || !resolution.tradition || !cited(resolution))
         throw new Error(`Invalid external reference resolution: ${id}`);
@@ -52,6 +83,17 @@ function applyRelationshipSupplement(peopleMap, patches) {
     for (const variant of patch.variants || []) {
       p.variants = p.variants || [];
       if (!p.variants.some(v => v.id === variant.id)) p.variants.push(JSON.parse(JSON.stringify(variant)));
+    }
+    for (const d of patch.descriptions || []) {
+      p.notes = d.text;
+      p.sources = p.sources || [];
+      if (!p.sources.some(s => s.claim === d.text)) p.sources.push({ claim: d.text, citations: JSON.parse(JSON.stringify(d.sources)), weight: d.sources.every(s => s.kind === 'primary') ? 'primary' : 'secondary' });
+    }
+    for (const key of ['nameLinks', 'parentageAccounts']) for (const value of patch[key] || []) {
+      p[key] = p[key] || [];
+      const exists = p[key].some(old => key === 'nameLinks'
+        ? old.value === value.value && old.tradition === value.tradition : old.id === value.id);
+      if (!exists) p[key].push(JSON.parse(JSON.stringify(value)));
     }
     for (const resolution of patch.resolve || []) {
       for (const r of p.relations || []) {

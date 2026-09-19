@@ -292,7 +292,8 @@ function main() {
     if ((p.parentIds || []).length) { e.p = p.parentIds; if (p.parentRoles) e.pr = p.parentRoles; }
     const r = (p.relations || []).filter((x) => x && x.personId).map((x) => ({ k: x.kind, id: x.personId }));
     if (r.length) e.r = r;
-    if (e.p || e.r) edges[id] = e;
+    if (p.parentageAccounts?.length) e.pa = p.parentageAccounts;
+    if (e.p || e.r || e.pa) edges[id] = e;
   }
   const edgesBody = JSON.stringify(sortedObj(edges));
 

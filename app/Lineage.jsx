@@ -93,6 +93,25 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
   };
 }
 
+// Project explicit alternatives without mutating the default corpus or derived descent.
+// Unselected records retain their authored default. Accounts are never unioned.
+function projectLineageAccounts(byId, selections) {
+  const projected = new Map(byId);
+  for (const [id, accountId] of Object.entries(selections)) {
+    const p = byId.get(id);
+    const account = p?.parentageAccounts?.find(a => a.id === accountId);
+    if (!account) continue;
+    projected.set(id, { ...p, parentIds: account.parents.map(r => r.personId),
+      parentRoles: Object.fromEntries(account.parents.map(r => [r.personId, r.kind])) });
+  }
+  const childrenOf = new Map();
+  for (const p of projected.values()) for (const pid of p.parentIds || []) {
+    if (!childrenOf.has(pid)) childrenOf.set(pid, []);
+    childrenOf.get(pid).push(p.id);
+  }
+  return { byId: projected, childrenOf };
+}
+
 // ── Layout ───────────────────────────────────────────────────────────────
 
 function layoutTree(tree, expandedRows) {
@@ -226,7 +245,14 @@ function LineageCard({ node, byId, onPick }) {
   );
 }
 
-function Lineage({ entry, byId, childrenOf, onPick }) {
+function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPick }) {
+  const [accountState, setAccountState] = __lState({ focusId: entry.id, choices: {} });
+  const choices = accountState.focusId === entry.id ? accountState.choices : {};
+  const projection = __lMemo(() => Object.keys(choices).length
+    ? projectLineageAccounts(defaultById, choices)
+    : { byId: defaultById, childrenOf: defaultChildrenOf }, [defaultById, defaultChildrenOf, accountState, entry.id]);
+  const { byId, childrenOf } = projection;
+  const projectedEntry = byId.get(entry.id) || entry;
   const [upDepth, setUpDepth] = __lState(2);
   const [downDepth, setDownDepth] = __lState(2);
   // Which rows the user has expanded (by row index). Row indices shift when the
@@ -253,7 +279,7 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
   const prevTreeFocusIdRef = __lRef(null);
 
   const tree = __lMemo(
-    () => buildLineageTree(entry, byId, childrenOf, upDepth, downDepth),
+    () => buildLineageTree(projectedEntry, byId, childrenOf, upDepth, downDepth),
     [entry, byId, childrenOf, upDepth, downDepth],
   );
   const layout = __lMemo(() => layoutTree(tree, expandedRows), [tree, expandedRows]);
@@ -293,6 +319,26 @@ function Lineage({ entry, byId, childrenOf, onPick }) {
           {tree.descRowCount > 0 && `${tree.descRowCount}↓`}
         </span>
       </h2>
+
+      {[...new Set([entry.id, ...layout.nodes.filter(n => n.id).map(n => n.id), ...Object.keys(choices)])].filter(id => defaultById.get(id)?.parentageAccounts?.length).map(id => {
+        const subject = defaultById.get(id);
+        const chosen = subject.parentageAccounts.find(a => a.id === choices[id]);
+        return <div className="lineage-account" key={id}>
+          <label>{window.displayName(subject)} — parentage account{' '}
+            <select aria-label={'Parentage account for ' + window.displayName(subject)} value={choices[id] || ''}
+              onChange={e => { const value = e.target.value; setAccountState({ focusId: entry.id, choices: { ...choices, [id]: value } }); setExpandState({ rows: new Set() }); }}>
+              <option value="">Recorded default</option>
+              {subject.parentageAccounts.map(a => <option key={a.id} value={a.id}>{a.label}</option>)}
+            </select>
+          </label>
+          {chosen && <p className="lineage-status">{chosen.description || chosen.label}{' '}
+            {(chosen.sources || []).map((c, i) => c.url
+              ? <a key={i} href={c.url} target="_blank" rel="noreferrer">{c.reference}{' '}</a>
+              : <span key={i}>{c.reference}{' '}</span>)}
+          </p>}
+        </div>;
+      })}
+      {Object.values(choices).some(Boolean) && <p className="lineage-status">Selected accounts change this tree. Descent calculations below use the recorded default.</p>}
 
       {!hasAny && <p className="lineage-status">{upDepth === 0 && downDepth === 0
         ? 'Generations are hidden. Increase the depth to explore recorded parentage.'
