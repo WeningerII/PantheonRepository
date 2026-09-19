@@ -1,0 +1,27 @@
+name: Counterpart lane navigation
+on:
+  pull_request:
+    paths:
+      - 'data-sources/**/sakra-indra*'
+      - 'data-sources/audits/sakra-indra/**'
+      - 'scripts/verify-sakra-indra-ui.cjs'
+      - '.github/workflows/sakra-indra-ui.yml'
+permissions:
+  contents: read
+jobs:
+  keyboard-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright@1.49.1 install --with-deps chromium
+      - run: python3 build.py --pages
+      - run: node scripts/verify-sakra-indra-ui.cjs

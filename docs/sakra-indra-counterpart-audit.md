@@ -81,3 +81,9 @@ denied socket creation. CI must supply the real-browser result.
 
 Keep PR 142 draft while evidence and cross-lane integration remain unfinished.
 No deployment or completion claim follows from a passing structural test.
+
+The lane also carries `follow-up-evidence.json`: the successful Rohinī dictionary
+entry and Wilkins's Rāji narrative are new, explicitly unfinished discoveries.
+They are not access-blocked and are not counted among implemented records.
+The permanent lane browser gate exercises authored relationship-list links and
+a data-selected graph-neighbor link for each endpoint, using keyboard activation.
