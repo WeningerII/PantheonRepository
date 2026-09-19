@@ -12,7 +12,7 @@ Daksha connect both lanes: this lane may reference their existing identifiers bu
 will not change their records without a recorded ownership decision. Names of
 other traditions are not enough to assert an identity or transfer a genealogy.
 
-## Concrete shared requirement for the Shiva owner
+## Shared correction requirement and resolution
 
 The current relationship supplement only adds relations. It cannot withdraw or
 qualify an existing `equated-with` assertion or correct existing unsourced
@@ -23,7 +23,7 @@ needs an evidence-qualified claim rather than unconditional equivalence.
 A generic, validated, cited correction/retraction facility is needed. Preserve
 superseded evidence and distinguish disputed identifications from resolved
 counterpart navigation. This lane will not duplicate shared implementation.
-This dependency remains open until the implementation is incorporated and tested.
+This original requirement was resolved by PR #145 and verified by final-pass correction tests.
 
 ## Evidence discipline
 
@@ -33,7 +33,7 @@ review. Rebirth is not parentage. No default parent is inferred from an identity
 
 ## Implementation update
 
-Shared PR 145 has been inspected and incorporated locally at e80f3e9. The lane
+Shared PR #145 is incorporated from main merge 52d0810; PR #146 is incorporated from main merge 9b82608. The lane
 now authors exact-precondition corrections in
 `data-sources/corrections/sakra-indra-network.json`. The dependency is not merely
 documented: final-pass values and retained prior evidence have dedicated tests.
