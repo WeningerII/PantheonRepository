@@ -78,3 +78,13 @@ test('committed audit ledger exactly reconciles with the generated corpus',()=>{
  const {seedPeople}=require('../scripts/build-tiers.cjs').loadCorpus({quiet:true});
  assert.deepEqual(actual,JSON.parse(JSON.stringify(inventory(seedPeople,config))));
 });
+
+test('disputed name targets navigate with visible qualification and reject invalid IDs atomically',()=>{
+ const m=nodes();apply(m,{N0:{nameLinks:[link('disputed','N1')]}});
+ const s=scope('Detail.jsx');const html=renderToStaticMarkup(React.createElement(s.NameRecords,{entry:m.N0,byId:new Map(Object.entries(m))}));
+ assert.match(html,/href="#\/browse\/N1"/);assert.match(html,/disputed/);
+ for(const id of ['missing','N0']){const copy=nodes(),before=structuredClone(copy);assert.throws(()=>apply(copy,{N0:{nameLinks:[link('disputed',id)]}}));assert.deepEqual(copy,before);}
+ const rename=x=>JSON.parse(JSON.stringify(x).replace(/N(\d)/g,'R$1'));
+ const renamed=rename(m);const rh=renderToStaticMarkup(React.createElement(s.NameRecords,{entry:renamed.R0,byId:new Map(Object.entries(renamed))}));
+ assert.match(rh,/href="#\/browse\/R1"/);assert.match(rh,/disputed/);
+});

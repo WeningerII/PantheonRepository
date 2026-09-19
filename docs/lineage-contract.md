@@ -50,9 +50,11 @@ completeness or historical claims.
 
 Relationship supplements can author `nameLinks` with `value`, `tradition`,
 `status`, `sources`, and a `personId` for resolved cross-record targets.
-Only a resolved, existing, nonself identifier becomes a link. `same-record`
-keeps ordinary aliases attached to the figure; `unresolved` and `disputed`
-remain text. The generator validates targets; the interface never guesses an
+A disputed identification may also carry an explicit existing, nonself target;
+it is navigable while retaining its visible disputed label. Navigation does not
+certify theological identity. A disputed name without a target remains text.
+`same-record` keeps ordinary aliases attached to the figure; `unresolved` remains
+text. Both prohibit cross-record targets. The generator validates targets; the interface never guesses an
 identity from a name. Native anchors in Names, relationships and graph neighbor
 lists preserve keyboard and modified-click navigation.
 

@@ -2,23 +2,42 @@
 const assert = require('node:assert/strict');
 async function verifyCounterpartUI(page, base, people) {
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
- const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>n.status==='resolved').map(n=>({p,n})));
+ const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
  for(const {p,n} of targets){
   await open(p);
   const a=page.locator('.section-names a.name-rec-value').filter({hasText:n.value});
   assert.equal(await a.count(),1);
+  if(n.status==='disputed')assert.ok((await a.locator('..').innerText()).includes('disputed'));
   assert.equal(await a.getAttribute('href'),`#/browse/${encodeURIComponent(n.personId)}`);
   await a.focus();await a.press('Enter');
   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   assert.ok(page.url().endsWith(encodeURIComponent(n.personId)));
+  // Exercise the two other native-anchor surfaces for the same explicit pair.
+  const outgoing=(p.relations||[]).some(r=>r.personId===n.personId);
+  const incoming=(people[n.personId].relations||[]).some(r=>r.personId===p.id);
+  const targetHref=`#/browse/${encodeURIComponent(n.personId)}`;
+  if(outgoing){
+   await open(p);
+   const anchor=page.locator(`.relations-list a[href="${targetHref}"]`).first();
+   await anchor.focus();await anchor.press('Enter');
+   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
+  }
+  if(outgoing||incoming){
+   await open(p);await page.getByRole('button',{name:'Show in graph',exact:true}).click();
+   await page.locator('.graph-modes').getByRole('button',{name:'All',exact:true}).click();
+   const neighbor=page.locator(`a.graph-focus-neighbor[href="${targetHref}"]`).first();
+   await neighbor.focus();await neighbor.press('Enter');
+   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
+  }
  }
  let accountCount=0;
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
   await open(p);
   const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
+  await select.waitFor({state:'visible'});
   const accountPanel=page.locator('.lineage-account').filter({has:select});
-  assert.equal(await accountPanel.count(),1,'exact account control must identify one panel');
+  assert.equal(await accountPanel.count(),1,`exact account control must identify one panel for ${p.id}`);
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
    const canvas=page.locator('.lineage-canvas');

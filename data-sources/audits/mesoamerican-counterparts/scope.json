@@ -6706,7 +6706,7 @@
    {
     "value": "Topiltzin (identification disputed)",
     "form": "explicit-link",
-    "status": "resolved-target",
+    "status": "disputed-target",
     "target": "topiltzin",
     "evidenceRef": "e44"
    }
@@ -7324,7 +7324,7 @@
    {
     "value": "Cuculcan (identification disputed)",
     "form": "explicit-link",
-    "status": "resolved-target",
+    "status": "disputed-target",
     "target": "maya_kukulkan",
     "evidenceRef": "e44"
    },
@@ -7630,7 +7630,12 @@
   "sharedCorrectionPR": 145,
   "status": "merged-main-52d0810-and-locally-incorporated",
   "otherLaneEndpoints": [],
-  "note": "No Shiva, Tangaroa or Śakra record edited. No cross-lane reciprocal implementation claimed."
+  "note": "No Shiva, Tangaroa or Śakra record edited. No cross-lane reciprocal implementation claimed.",
+  "disputedNameInterface": {
+   "pr": 147,
+   "status": "required-pending-integration",
+   "note": "Two ruler-identification links retain validated explicit target IDs while marking the historical identification disputed. No genealogy transfers."
+  }
  },
  "reviewEvidence": {
   "e1": "Existing content inventoried; no category-wide historical certification. See source blockers and claim-level review decisions.",

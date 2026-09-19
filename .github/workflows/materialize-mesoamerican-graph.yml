@@ -29,11 +29,18 @@ jobs:
           EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
+          node scripts/gen-new-figures.cjs > /dev/null
+          node scripts/gen-enrich.cjs > /dev/null
+          node scripts/gen-powers-terms.cjs > /dev/null
+          node scripts/gen-powers-items.cjs > /dev/null
           python3 build.py
-          test "$(git hash-object dist/pantheon-registry.html)" = "4f4ec72dcedd2a6c2ad91e9e1185d8c902e304b0"
-          git add -- dist/pantheon-registry.html
+          node scripts/audit-mesoamerican-counterparts.cjs
+          test "$(git hash-object dist/pantheon-registry.html)" = "80b524256400dc29ce59dc69c32f1ac54af5d100"
+          test "$(git hash-object app/data.js)" = "444bfc1f14333e089ec2cb4caa8a10a7f9236edf"
+          test "$(git hash-object data-sources/audits/mesoamerican-counterparts/ledger.json)" = "63045b7556b25c2b34d19d41712270c5c45e2b65"
+          git add -- app/data.js dist/pantheon-registry.html data-sources/audits/mesoamerican-counterparts/ledger.json
           if git diff --cached --quiet; then exit 0; fi
-          test "$(git diff --cached --name-only)" = "dist/pantheon-registry.html"
+          git diff --cached --name-only | python3 -c 'import sys; actual=set(sys.stdin.read().splitlines()); allowed={"app/data.js","dist/pantheon-registry.html","data-sources/audits/mesoamerican-counterparts/ledger.json"}; assert actual <= allowed' 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Materialize verified graph vocabulary artifact'
