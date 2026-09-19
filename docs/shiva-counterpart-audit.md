@@ -53,6 +53,8 @@ not certify the bibliographies inherited elsewhere in the registry.
   Vayu; Met object 2000.42.4 supplies Shiva-like Bactrian iconography. Neither
   licenses importing Shiva's parents or consort. Both prior equations retain
   their old evidence in revision history and become disputed identifications.
+  Names retain a visible disputed label while linking to the explicit registered
+  endpoint; this generic behavior does not imply identity or transfer family.
 - **Rigvedic and Śaiva portrayals:** Rigveda 2.33 supplies the distinct hymn
   portrayal of Rudra; Shiva Purana 2.1.15 describes unborn manifestation through
   Brahma. Menā, Vīriṇī/Asiknī and the maternal prediction in 2.3.2 supply missing

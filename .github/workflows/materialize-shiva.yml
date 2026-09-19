@@ -35,9 +35,9 @@ jobs:
           node scripts/gen-powers-items.cjs
           python3 build.py
           node scripts/audit-shiva-counterparts.cjs
-          test "$(git hash-object app/data.js)" = "839ea829ef2a7233f5760c2a3d422941fa9d41b7"
-          test "$(git hash-object dist/pantheon-registry.html)" = "ed1165534c6368c5689fc7a223db0f39a72444df"
-          test "$(git hash-object data-sources/audits/shiva-counterparts/ledger.json)" = "27a3814bf0738c4e3e866fa0d6f5aff4ca57123c"
+          test "$(git hash-object app/data.js)" = "de35e4f71518708d9ee893e03d6ddbb73ec925ad"
+          test "$(git hash-object dist/pantheon-registry.html)" = "eb7dae9218483b0a8167b7e0943a2bbca3c80272"
+          test "$(git hash-object data-sources/audits/shiva-counterparts/ledger.json)" = "cd67856cd87024afdf168af827dcaf9600a51eb8"
           git add -- app/data.js dist/pantheon-registry.html data-sources/audits/shiva-counterparts/ledger.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"

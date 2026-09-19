@@ -2,12 +2,13 @@
 const assert = require('node:assert/strict');
 async function verifyCounterpartUI(page, base, people) {
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
- const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>n.status==='resolved').map(n=>({p,n})));
+ const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
  for(const {p,n} of targets){
   await open(p);
   const a=page.locator('.section-names a.name-rec-value').filter({hasText:n.value});
   assert.equal(await a.count(),1);
+  if(n.status==='disputed')assert.ok((await a.locator('..').innerText()).includes('disputed'));
   assert.equal(await a.getAttribute('href'),`#/browse/${encodeURIComponent(n.personId)}`);
   await a.focus();await a.press('Enter');
   await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
