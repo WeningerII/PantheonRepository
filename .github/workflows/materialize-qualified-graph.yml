@@ -1,0 +1,45 @@
+name: Materialize verified artifacts
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: ['.github/workflows/materialize-qualified-graph.yml']
+permissions:
+  contents: read
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/qualified-counterpart-graph'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Reproduce and verify exact artifacts
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          node scripts/gen-new-figures.cjs
+          node scripts/gen-enrich.cjs
+          node scripts/gen-powers-terms.cjs
+          node scripts/gen-powers-items.cjs
+          python3 build.py
+          test "$(git hash-object dist/pantheon-registry.html)" = "15852d3908e932b3ab0b31c6886517d2fc2fd72b"
+          git add -- dist/pantheon-registry.html
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize hash-verified artifacts"
+          bash scripts/verify-regen.sh
+          test "$(git ls-remote origin refs/heads/codex/qualified-counterpart-graph | cut -f1)" = "$EXPECTED_HEAD"
+          git push origin HEAD:refs/heads/codex/qualified-counterpart-graph
