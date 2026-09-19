@@ -10,13 +10,15 @@
  * supplements use (applyFacultySupplement, mergeMaterialCulture, applyEpithets,
  * applyCult, applyIconography, applyDomainSupplement) — so enrichment flows into
  * detail pages, the powers/items registries, and the tests automatically, and
- * dedups against anything already present. Additive only; no figure is created
- * and no tier/era/relation is touched. Idempotent. Run: node scripts/gen-enrich.cjs
+ * dedups against anything already present. Relationship patches are separately
+ * authored in data-sources/relationships/*.json with claim-level citations.
+ * No figure or tier is created here. Idempotent. Run: node scripts/gen-enrich.cjs
  */
 const fs = require('fs');
 const path = require('path');
 const EDIR = path.join(__dirname, '..', 'data-sources', 'enrichments');
 const DATA = path.join(__dirname, '..', 'app', 'data.js');
+const { applyRelationshipSupplement } = require('./lib/relationship-supplement.cjs');
 
 const maps = { FACULTY_SWEEP: {}, MATERIAL_SWEEP: {}, DOMAIN_SWEEP: {}, EPITHET_SWEEP: {}, CULT_SWEEP: {}, ICONO_SWEEP: {} };
 // patch field -> [map name, dedup key]
@@ -57,7 +59,22 @@ for (const f of files) {
   }
 }
 
+const relationshipDir = path.join(__dirname, '..', 'data-sources', 'relationships');
+const relationshipPatches = {};
+if (fs.existsSync(relationshipDir)) for (const file of fs.readdirSync(relationshipDir).filter(f => f.endsWith('.json')).sort()) {
+  const batch = JSON.parse(fs.readFileSync(path.join(relationshipDir, file), 'utf8'));
+  for (const [id, patch] of Object.entries(batch)) {
+    const target = relationshipPatches[id] ||= {};
+    for (const [key, values] of Object.entries(patch)) {
+      if (!['parents', 'relations', 'variants', 'resolve'].includes(key) || !Array.isArray(values))
+        throw new Error(`Invalid relationship patch field: ${file} ${id} ${key}`);
+      (target[key] ||= []).push(...values);
+    }
+  }
+}
 let block = '/* ENRICH_SWEEP_START */\n';
+block += `const RELATIONSHIP_SWEEP = ${JSON.stringify(relationshipPatches, null, 1)};\n`;
+block += applyRelationshipSupplement.toString() + '\n';
 for (const [name, obj] of Object.entries(maps)) block += `const ${name} = ${JSON.stringify(obj, null, 1)};\n`;
 block += '/* ENRICH_SWEEP_END */';
 

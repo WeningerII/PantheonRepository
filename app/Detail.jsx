@@ -376,8 +376,27 @@ function renderCitationRef(c) {
   return String(c);
 }
 
-function Sources({ entry }) {
-  const src = entry.sources || [];
+function VariantAccounts({ entry }) {
+  const variants = entry.variants || [];
+  if (!variants.length) return null;
+  return <div className="section">
+    <h2>Variant accounts <span className="count">{variants.length}</span></h2>
+    {variants.map((v, i) => <div className="rich-row" key={v.id || i}>
+      <div className="rich-row-name">{v.claim}</div>
+      {v.description && <div className="rich-row-notes">{v.description}</div>}
+      <div className="rich-row-notes">{(v.sources || []).map(renderCitationRef).join('; ')}</div>
+    </div>)}
+  </div>;
+}
+
+function Sources({ entry, byId }) {
+  const src = [...(entry.sources || [])];
+  for (const r of entry.relations || []) {
+    if (!r.sources?.length) continue;
+    const target = byId?.get(r.personId);
+    src.push({ claim: `${String(r.kind || 'relationship').replace(/[-_]+/g, ' ')}${target ? ': ' + window.displayName(target) : ''}`,
+      citations: r.sources, weight: r.sources.every(s => s?.kind === 'primary') ? 'primary' : 'other' });
+  }
   if (!src.length) return null;
 
   // Group claims by aggregate weight.
@@ -430,7 +449,8 @@ function Sources({ entry }) {
                           // Only flag the per-citation kind when it differs
                           // from the claim's aggregate weight.
                           const flag = kind && kind.toLowerCase() !== w ? kind : null;
-                          const url = window.PRCite && window.PRCite.citeUrl(ref);
+                          const url = typeof c?.url === 'string' && /^https?:\/\//i.test(c.url)
+                            ? c.url : window.PRCite && window.PRCite.citeUrl(ref);
                           return (
                             <div className="source-cite" key={j}>
                               {flag && <span className="source-cite-kind">{flag}</span>}
@@ -945,7 +965,8 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
             </div>
           )}
 
-          <Sources entry={entry} />
+          <VariantAccounts entry={entry} />
+          <Sources entry={entry} byId={byId} />
           </>}
         </div>
       </div>

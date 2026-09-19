@@ -1,0 +1,2437 @@
+Source-reviewed counterpart and genealogy additions. 2026-09-19.
+Orphic hymn numbers use Thomas Taylor; modern editions count the opening Hecate hymn separately.
+Tradition-specific records retain independent parentage. No name-specific program logic.
+
+```json
+[
+  {
+    "id": "greek_maia",
+    "name": {
+      "primary": "Maia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 938–939; Apollodorus, Library 3.10.1–2",
+            "url": "https://www.theoi.com/Text/Apollodorus3.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Pleiad daughter of Atlas and Pleione, and mother of Hermes by Zeus.",
+    "temporal": {
+      "era": "titanomachy"
+    }
+  },
+  {
+    "id": "greek_pleione",
+    "name": {
+      "primary": "Pleione",
+      "alt": []
+    },
+    "type": "numen",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Apollodorus, Library 3.10.1",
+            "url": "https://www.theoi.com/Text/Apollodorus3.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Oceanid who bears the seven Pleiades to Atlas in the Library.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_latona",
+    "name": {
+      "primary": "Latona",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface: children of Jove and Latona",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Apollo and Diana by Jupiter in Latin mythography.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_maia",
+    "name": {
+      "primary": "Maia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface: children of Atlas and Pleione; Mercury",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Mercury by Jupiter in Latin mythography.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_dione",
+    "name": {
+      "primary": "Dione",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface: Venus",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Venus by Jupiter in the genealogy transmitted under Hyginus; this is one account of Venus’s birth.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_ouranos",
+    "name": {
+      "primary": "Ouranos",
+      "alt": [
+        "Uranus"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 3 (Thomas Taylor numbering; modern hymn 4)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#3"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Heaven invoked as a cosmic deity and progenitor of Kronos.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_helios",
+    "name": {
+      "primary": "Helios",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 7 (Thomas Taylor numbering; modern hymn 8)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#7"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sun invoked as the all-seeing source of light.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_selene",
+    "name": {
+      "primary": "Selene",
+      "alt": [
+        "Mene"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 8 (Thomas Taylor numbering; modern hymn 9)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#8"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Moon invoked as the torch-bearing queen of night.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_pan",
+    "name": {
+      "primary": "Pan",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 10 (Thomas Taylor numbering; modern hymn 11)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#10"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Pan invoked as a cosmic power whose domain embraces the world.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_herakles",
+    "name": {
+      "primary": "Herakles",
+      "alt": [
+        "Heracles"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 11 (Thomas Taylor numbering; modern hymn 12)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#11"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Herakles invoked as a self-born cosmic power and divine helper; the hymn does not give him the ordinary heroic genealogy.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_kronos",
+    "name": {
+      "primary": "Kronos",
+      "alt": [
+        "Cronus"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 12 (Thomas Taylor numbering; modern hymn 13)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#12"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Titan invoked as Rhea’s husband and offspring of earth and heaven.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_rhea",
+    "name": {
+      "primary": "Rhea",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 13 (Thomas Taylor numbering; modern hymn 14)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#13"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lion-carried mother of Zeus and consort of Kronos, called daughter of Protogonos in this hymn.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hera",
+    "name": {
+      "primary": "Hera",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 15 (Thomas Taylor numbering; modern hymn 16)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#15"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Hera invoked as Zeus’s queen and an aerial life-sustaining goddess.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_poseidon",
+    "name": {
+      "primary": "Poseidon",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 16 (Thomas Taylor numbering; modern hymn 17)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#16"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Trident-bearing ruler of the sea invoked for safe sailing and peace.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_plouton",
+    "name": {
+      "primary": "Plouton",
+      "alt": [
+        "Hades"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 17 (Thomas Taylor numbering; modern hymn 18)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#17"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Underworld ruler addressed as chthonic Zeus and husband of Persephone.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_tethys",
+    "name": {
+      "primary": "Tethys",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 21 (Thomas Taylor numbering; modern hymn 22)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#21"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea goddess addressed as the queen of Ocean and invoked for safe voyages.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_nereus",
+    "name": {
+      "primary": "Nereus",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 22 (Thomas Taylor numbering; modern hymn 23)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#22"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea deity invoked with fifty attendant nymphs.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_proteus",
+    "name": {
+      "primary": "Proteus",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 24 (Thomas Taylor numbering; modern hymn 25)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#24"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Prophetic sea deity praised for changing forms.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_gaia",
+    "name": {
+      "primary": "Gaia",
+      "alt": [
+        "Ge"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 25 (Thomas Taylor numbering; modern hymn 26)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#25"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Earth invoked for fertility, crops and the nourishment of living beings.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hermes",
+    "name": {
+      "primary": "Hermes",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 27 (Thomas Taylor numbering; modern hymn 28)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#27"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Messenger and interpreter, named as Maia’s son in the hymn.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_athena",
+    "name": {
+      "primary": "Athena",
+      "alt": [
+        "Athene",
+        "Pallas"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 31 (Thomas Taylor numbering; modern hymn 32)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#31"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Armed goddess of skill and wisdom, born from Zeus’s head.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_nike",
+    "name": {
+      "primary": "Nike",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 32 (Thomas Taylor numbering; modern hymn 33)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#32"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Victory invoked for success in contest and battle.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_apollo",
+    "name": {
+      "primary": "Apollo",
+      "alt": [
+        "Apollon"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 33 (Thomas Taylor numbering; modern hymn 34)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#33"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "God of prophecy, healing and the lyre, invoked in the mysteries.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_leto",
+    "name": {
+      "primary": "Leto",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 34 (Thomas Taylor numbering; modern hymn 35)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#34"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Apollo and Artemis, invoked as the twin-bearing goddess.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_artemis",
+    "name": {
+      "primary": "Artemis",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 35 (Thomas Taylor numbering; modern hymn 36)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#35"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Daughter of Zeus, huntress and helper in childbirth.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_korybas",
+    "name": {
+      "primary": "Korybas",
+      "alt": [
+        "Corybas"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 38 (Thomas Taylor numbering; modern hymn 39)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#38"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Individual Korybas addressed as a divine Curete in the mysteries.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_demeter",
+    "name": {
+      "primary": "Demeter",
+      "alt": [
+        "Deo",
+        "Demeter Eleusinia",
+        "Meter Antaia"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns, 39 (Thomas Taylor numbering; modern hymn 40)",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#39"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Eleusinian giver of grain and mother of Persephone, also addressed as Mother Antaia.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_maia",
+    "name": {
+      "primary": "Maia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 27 (Taylor; modern 28), to Hermes",
+            "url": "https://www.theoi.com/Text/OrphicHymns1.html#27"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Maia is named as Hermes’s mother in the hymn addressed to him.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_proteus",
+    "name": {
+      "primary": "Proteus",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Homer, Odyssey 4.351–570",
+            "url": "https://classics.mit.edu/Homer/odyssey.4.iv.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Prophetic sea god who changes form when held by Menelaus.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_calliope",
+    "name": {
+      "primary": "Calliope",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_clio",
+    "name": {
+      "primary": "Clio",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_euterpe",
+    "name": {
+      "primary": "Euterpe",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_euterpe",
+    "name": {
+      "primary": "Euterpe",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_thalia",
+    "name": {
+      "primary": "Thalia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_thalia",
+    "name": {
+      "primary": "Thalia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_melpomene",
+    "name": {
+      "primary": "Melpomene",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_melpomene",
+    "name": {
+      "primary": "Melpomene",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_terpsichore",
+    "name": {
+      "primary": "Terpsichore",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_terpsichore",
+    "name": {
+      "primary": "Terpsichore",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_erato",
+    "name": {
+      "primary": "Erato",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_erato",
+    "name": {
+      "primary": "Erato",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_polyhymnia",
+    "name": {
+      "primary": "Polyhymnia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_polyhymnia",
+    "name": {
+      "primary": "Polyhymnia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "greek_hesiod_urania",
+    "name": {
+      "primary": "Urania",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hesiod, Theogony 53–79",
+            "url": "https://www.theoi.com/Text/HesiodTheogony.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses named by Hesiod, born to Zeus and Mnemosyne.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "orphic_urania",
+    "name": {
+      "primary": "Urania",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 75 (Taylor; modern 76)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxv-to-the-muses"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the nine Muses invoked in the Orphic ritual collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_semele",
+    "name": {
+      "primary": "Semele",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 43 (Taylor; modern 44)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/xliii-to-semele"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Deified mother of Dionysos, invoked in the triennial rites.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_aphrodite",
+    "name": {
+      "primary": "Aphrodite",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 54 (Taylor; modern 55)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/liv-to-venus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea-born goddess of marriage and desire invoked in the mysteries.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_eros",
+    "name": {
+      "primary": "Eros",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 57 (Taylor; modern 58)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lvii-to-cupid-or-love"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Winged power of desire invoked for lawful love.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_nemesis",
+    "name": {
+      "primary": "Nemesis",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 60 (Taylor; modern 61)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lx-to-nemesis"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "All-seeing goddess invoked to restrain unjust thoughts and deeds.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_ares",
+    "name": {
+      "primary": "Ares",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 64 (Taylor; modern 65)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxiv-to-mars"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "War god invoked to cease conflict and turn toward peaceful work.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hephaistos",
+    "name": {
+      "primary": "Hephaistos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 65 (Taylor; modern 66)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxv-to-vulcan"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Divine craftsman and fiery power invoked to preserve life.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_asklepios",
+    "name": {
+      "primary": "Asklepios",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 66 (Taylor; modern 67)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxvi-to-esculapius"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Healing god addressed as Apollo’s offspring and husband of Health.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hygieia",
+    "name": {
+      "primary": "Hygieia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 67 (Taylor; modern 68)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxvii-to-health"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Health invoked as a life-preserving goddess; hymn 66 calls her Asklepios’s wife.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_tyche",
+    "name": {
+      "primary": "Tyche",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 71 (Taylor; modern 72)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxi-to-fortune"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Fortune invoked for abundance; the hymn also addresses her as chthonic Artemis.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_leukothea",
+    "name": {
+      "primary": "Leukothea",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 73 (Taylor; modern 74)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxiii-to-leucothea"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Daughter of Kadmos and nurse of Dionysos invoked to protect sailors.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_eos",
+    "name": {
+      "primary": "Eos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 77 (Taylor; modern 78)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxvii-to-aurora"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Dawn invoked as the bringer of daylight and the time for work.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_themis",
+    "name": {
+      "primary": "Themis",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 78 (Taylor; modern 79)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxviii-to-themis"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Goddess credited with the beginnings of oracles and divine rites.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_boreas",
+    "name": {
+      "primary": "Boreas",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 79 (Taylor; modern 80)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxix-to-the-north-wind"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "North wind addressed in the Orphic hymn collection.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_okeanos",
+    "name": {
+      "primary": "Okeanos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 82 (Taylor; modern 83)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxxii-to-ocean"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Encircling water invoked as the source of rivers and springs.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hestia",
+    "name": {
+      "primary": "Hestia",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 83 (Taylor; modern 84)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxxiii-to-vesta"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Daughter of Kronos invoked as the enduring divine hearth.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hypnos",
+    "name": {
+      "primary": "Hypnos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 84 (Taylor; modern 85)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxxiv-to-sleep"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sleep invoked for relief from care, and called brother of Death.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_thanatos",
+    "name": {
+      "primary": "Thanatos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 86 (Taylor; modern 87)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxxvi-to-death"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Death invoked to spare the worshippers until old age.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_hermes_chthonios",
+    "name": {
+      "primary": "Hermes Chthonios",
+      "alt": [
+        "Bacchic Hermes"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 56 (Taylor; modern 57)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lvi-to-the-terrestrial-hermes"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Underworld guide of souls, born to Dionysos and Aphrodite in this hymn; distinct parentage from the Maia-born messenger.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "roman_aether",
+    "name": {
+      "primary": "Aether",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Latin mythographic upper air.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_dies",
+    "name": {
+      "primary": "Dies",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Personified Day in the Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_hyperion",
+    "name": {
+      "primary": "Hyperion",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Titan father of the luminaries in Latin mythography.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_aethra",
+    "name": {
+      "primary": "Aethra",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Sol, Luna and Aurora in the cited Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_aurora",
+    "name": {
+      "primary": "Aurora",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Dawn in Latin mythography.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_polus",
+    "name": {
+      "primary": "Polus",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Titan named as Latona’s father in the transmitted Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_phoebe",
+    "name": {
+      "primary": "Phoebe",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Latona in the Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_atlas",
+    "name": {
+      "primary": "Atlas",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Father of Maia in the Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "roman_pleione",
+    "name": {
+      "primary": "Pleione",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Hyginus, Fabulae, Preface",
+            "url": "https://www.theoi.com/Text/HyginusFabulae1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Maia in the Latin genealogy.",
+    "temporal": {
+      "era": "primordial"
+    }
+  },
+  {
+    "id": "greek_cadmus",
+    "name": {
+      "primary": "Cadmus",
+      "alt": [
+        "Kadmos"
+      ]
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Apollodorus, Library 3.4.1–2",
+            "url": "https://www.theoi.com/Text/Apollodorus3.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Founder of Thebes, husband of Harmonia and father of Ino and Semele.",
+    "temporal": {
+      "era": "heroic-age"
+    }
+  },
+  {
+    "id": "greek_melicertes",
+    "name": {
+      "primary": "Melicertes",
+      "alt": [
+        "Palaemon"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Greek",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Apollodorus, Library 3.4.3",
+            "url": "https://www.theoi.com/Text/Apollodorus3.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Ino and Athamas, called Palaemon after becoming a sea deity.",
+    "temporal": {
+      "era": "heroic-age"
+    }
+  },
+  {
+    "id": "orphic_palaimon",
+    "name": {
+      "primary": "Palaimon",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 74 (Taylor; modern 75)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lxxiv-to-pal-mon"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea god invoked for safe voyages, described as reared with Dionysos.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_silenos",
+    "name": {
+      "primary": "Silenos",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 53 (Taylor; modern 54)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/liii-to-silenus-satyrus-and-the-priestesses-of-bacchus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Nurse of Dionysos and leader of his ritual companions.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "orphic_adonis",
+    "name": {
+      "primary": "Adonis",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Orphic",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Orphic Hymns 55 (Taylor; modern 56)",
+            "url": "https://sacred-texts.com/book/the-hymns-of-orpheus/shell/lv-to-adonis"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Divinity associated with Aphrodite and the underworld in the hymn.",
+    "temporal": {
+      "era": "Orphic traditional religion; continuing"
+    }
+  },
+  {
+    "id": "roman_hercules",
+    "name": {
+      "primary": "Hercules",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Virgil, Aeneid 8.184–305",
+            "url": "https://classics.mit.edu/Virgil/aeneid.8.viii.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Divine hero worshipped at the great altar in the Roman account of his victory over Cacus.",
+    "temporal": {
+      "era": "pre-urban"
+    }
+  },
+  {
+    "id": "roman_aesculapius",
+    "name": {
+      "primary": "Aesculapius",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 15.622–745",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Healing god brought from Epidaurus to Rome in the account of the plague; son of Apollo and Coronis.",
+    "temporal": {
+      "era": "middle-republic"
+    }
+  },
+  {
+    "id": "roman_coronis",
+    "name": {
+      "primary": "Coronis",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence and tradition-specific description",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Ovid, Metamorphoses 15.622–625",
+            "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mother of Aesculapius in Ovid’s account of his arrival at Rome.",
+    "temporal": {
+      "era": "primordial"
+    }
+  }
+]
+```
