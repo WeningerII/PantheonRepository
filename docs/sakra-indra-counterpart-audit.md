@@ -122,8 +122,9 @@ evidence gap. Its nat images of Min Mahagiri and Shwemyethna are contextual
 figures, not additional children of the Buddhist heaven-king.
 
 Ownership: Jayantī and her maternal endpoint belong to this lane. Śukra’s
-Shiva-specific portrayal remains untouched; its reciprocal spouse endpoint was
-requested from the owner in PR147 comment 5745935299.
+Shiva-specific portrayal remains untouched. Its Indra-family spouse endpoint
+follows the explicit Indra-family assignment in Shiva OWNERSHIP.md; the
+ambiguity was recorded before editing (PR147 comments 5745935299 and 5745970751).
 
 The Maruts collective now has independent Rigvedic Rudra/Pṛśni and Purāṇic
 Diti/Kaśyapa origin accounts. The collective is not merged with Vāyu’s alias.
@@ -131,3 +132,9 @@ Shiva OWNERSHIP.md explicitly assigns this overlap to the Indra lane. Śukra’s
 Indra-family spouse endpoint is included under that same ownership boundary;
 no Shiva-specific portrayal is edited. The Suyaśā and Rudra reciprocal endpoints
 remain requested from their owner (PR147 comment5745970751).
+
+The lane’s data-driven category guard checks every authored counterpart
+revision against the shared Cross-tradition classifier. The real-browser gate
+found that an ad hoc regional label was invisible in that filter; all four
+Burmese endpoints now use the existing Buddhist-adaptation category without
+changing their cited qualifications or weakening the browser assertion.
