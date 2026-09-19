@@ -1,12 +1,13 @@
 // Browser regression checks over authored targets, without figure-specific selectors.
 const assert = require('node:assert/strict');
 async function verifyCounterpartUI(page, base, people) {
+ await verifyNameProbeFixture(page);
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
  const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
  for(const {p,n} of targets){
   await open(p);
-  const a=page.locator('.section-names a.name-rec-value').filter({hasText:n.value});
+  const a=nameLinkLocator(page,n.value);
   assert.equal(await a.count(),1);
   if(n.status==='disputed')assert.ok((await a.locator('..').innerText()).includes('disputed'));
   assert.equal(await a.getAttribute('href'),`#/browse/${encodeURIComponent(n.personId)}`);
@@ -50,6 +51,21 @@ async function verifyCounterpartUI(page, base, people) {
   }
  }
  console.log(`counterpart UI: ${targets.length} keyboard navigations and ${accountCount} account selections passed`);
+}
+function nameLinkLocator(page,value){
+ return page.locator('.section-names').getByRole('link',{name:value,exact:true});
+}
+async function verifyNameProbeFixture(page){
+ const fixture=await page.context().newPage();
+ try{
+  await fixture.setContent('<section class="section-names"><a class="name-rec-value" href="#N1">Shared label</a><a class="name-rec-value" href="#N2">Shared label (regional)</a><span class="name-rec-value">Ordinary alias</span></section>');
+  for(const [label,target] of [['Shared label','#N1'],['Shared label (regional)','#N2']]){
+   const a=nameLinkLocator(fixture,label);assert.equal(await a.count(),1);
+   assert.equal(await a.getAttribute('href'),target);await a.focus();await a.press('Enter');
+   assert.ok(fixture.url().endsWith(target));
+  }
+  assert.equal(await nameLinkLocator(fixture,'Ordinary alias').count(),0);
+ }finally{await fixture.close();}
 }
 function accountSelectionReady(expected, doc = document) {
  const controls=Array.from(doc.querySelectorAll('select')).filter(s=>s.getAttribute('aria-label')===expected.label);
