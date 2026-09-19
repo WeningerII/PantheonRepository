@@ -100,3 +100,8 @@ The primary Jātaka 535 opening resolves its previously pending human ancestral
 chain. Five human forebears and two deva endpoints keep fatherhood distinct from
 rebirth; the final human father is selectable for Kosiya. The unnamed human wife
 and children are not identified with the later heavenly marriage to Hirī.
+
+PR #147 was inspected at 9fb5166. Its Daksha account represents Rigveda 10.72,
+not the VP1.15 genealogy. The reviewed hymn’s Aditi endpoint is now a separate
+selectable account in this lane. The shared endpoint remains an integration
+dependency until #147 is incorporated; no default biological cycle is created.
