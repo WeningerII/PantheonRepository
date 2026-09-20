@@ -1,0 +1,4392 @@
+Regional source contexts and completion of named branches.
+
+```json
+[
+  {
+    "id": "malay_si_raya",
+    "name": {
+      "primary": "Si Raya",
+      "alt": [
+        "Madu-Raya",
+        "Great One"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sea spirit identified by some of Skeat’s Malay informants with Batara Guru. His named wife is Madu-ruti and his children Wa’ Ranai and Si Kĕkas. Fishermen seek his favour with offerings and charms.",
+    "sources": [
+      {
+        "claim": "Sea spirit identified by some of Skeat’s Malay informants with Batara Guru. His named wife is Madu-ruti and his children Wa’ Ranai and Si Kĕkas. Fishermen seek his favour with offerings and charms.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_madu_ruti",
+    "name": {
+      "primary": "Madu-ruti",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wife of Si Raya in the sea-spirit family reported by Skeat.",
+    "sources": [
+      {
+        "claim": "Wife of Si Raya in the sea-spirit family reported by Skeat.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_wa_ranai",
+    "name": {
+      "primary": "Wa’ Ranai",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Child of Si Raya in Skeat’s account; no individual sphere of influence is specified in the family passage.",
+    "sources": [
+      {
+        "claim": "Child of Si Raya in Skeat’s account; no individual sphere of influence is specified in the family passage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_si_kekas",
+    "name": {
+      "primary": "Si Kĕkas",
+      "alt": [
+        "The Scratcher"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Child of Si Raya in Skeat’s sea-spirit account.",
+    "sources": [
+      {
+        "claim": "Child of Si Raya in Skeat’s sea-spirit account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_kala",
+    "name": {
+      "primary": "Kala (Malay charms)",
+      "alt": [
+        "Batara Kala"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Destructive manifestation associated with Batara Guru in Malay charms. Skeat associates Kala with dangerous boundaries between settled land and forest, and between sea and shore.",
+    "sources": [
+      {
+        "claim": "Destructive manifestation associated with Batara Guru in Malay charms. Skeat associates Kala with dangerous boundaries between settled land and forest, and between sea and shore.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_toh_panjang_kuku",
+    "name": {
+      "primary": "Toh Panjang Kuku",
+      "alt": [
+        "Grandsire Long-Claws"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "A named divinity distinguished from Batara Guru and Kala in Skeat’s discussion of their spheres. His possible identification with a tiger manifestation is Skeat’s conjecture.",
+    "sources": [
+      {
+        "claim": "A named divinity distinguished from Batara Guru and Kala in Skeat’s discussion of their spheres. His possible identification with a tiger manifestation is Skeat’s conjecture.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_hantu_pemburu",
+    "name": {
+      "primary": "Spectre Huntsman",
+      "alt": [
+        "Hantu Pemburu"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Hunting spirit identified as Batara Guru by informants who supplied Skeat with charms. The account ascribes dangerous land-borne illness to him.",
+    "sources": [
+      {
+        "claim": "Hunting spirit identified as Batara Guru by informants who supplied Skeat with charms. The account ascribes dangerous land-borne illness to him.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_mambang_tali_harus",
+    "name": {
+      "primary": "Mambang Tali Harus",
+      "alt": [
+        "God of Mid-currents"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Spirit of currents, sometimes identified with the sea Batara Guru; Skeat explicitly questions that equation.",
+    "sources": [
+      {
+        "claim": "Spirit of currents, sometimes identified with the sea Batara Guru; Skeat explicitly questions that equation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_toh_rimpun_alam",
+    "name": {
+      "primary": "Toh Rimpun Alam",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Spirit associated with the ocean’s central whirlpool in Skeat’s discussion; his identification with Si Raya is conditional.",
+    "sources": [
+      {
+        "claim": "Spirit associated with the ocean’s central whirlpool in Skeat’s discussion; his identification with Si Raya is conditional.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_sang_gala_raja",
+    "name": {
+      "primary": "Sang Gala Raja",
+      "alt": [
+        "Sa-Raja Jin",
+        "Black King of the Genii",
+        "Jin Hitam"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Black Genie dwelling in the earth’s heart, with bride Sang Gadin and seven unnamed children in Skeat’s account. His identification with Kala or Batara Guru is an interpretation, distinct from biological kinship.",
+    "sources": [
+      {
+        "claim": "Black Genie dwelling in the earth’s heart, with bride Sang Gadin and seven unnamed children in Skeat’s account. His identification with Kala or Batara Guru is an interpretation, distinct from biological kinship.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_sang_gadin",
+    "name": {
+      "primary": "Sang Gadin",
+      "alt": [
+        "Sang Gading"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Bride of the Black King of the Genii and mother of seven unnamed Black Genii in the account reported by Skeat.",
+    "sources": [
+      {
+        "claim": "Bride of the Black King of the Genii and mother of seven unnamed Black Genii in the account reported by Skeat.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_jin_puteh",
+    "name": {
+      "primary": "White Genie",
+      "alt": [
+        "Jin Puteh",
+        "Maharaja Dewa",
+        "Mahadewa"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Protective White Genie, called brother of the Black Genie in Skeat’s account. Alternative narratives derive him from blood falling from Habil and Kabil or from Sakatimuna’s eyes.",
+    "sources": [
+      {
+        "claim": "Protective White Genie, called brother of the Black Genie in Skeat’s account. Alternative narratives derive him from blood falling from Habil and Kabil or from Sakatimuna’s eyes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_tanjak_malim_kaya",
+    "name": {
+      "primary": "Tanjak Malim Kaya",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of the White Genie’s three named children in Skeat’s account; their mother is unnamed.",
+    "sources": [
+      {
+        "claim": "One of the White Genie’s three named children in Skeat’s account; their mother is unnamed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_pari_lang",
+    "name": {
+      "primary": "Pari Lang",
+      "alt": [
+        "Winged Skate"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of the White Genie’s three named children in Skeat’s account.",
+    "sources": [
+      {
+        "claim": "One of the White Genie’s three named children in Skeat’s account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_bintang_sutan",
+    "name": {
+      "primary": "Bintang Sutan",
+      "alt": [
+        "Star of Sutan"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of the White Genie’s three named children in Skeat’s account.",
+    "sources": [
+      {
+        "claim": "One of the White Genie’s three named children in Skeat’s account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "malay_sakatimuna",
+    "name": {
+      "primary": "Sakatimuna",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Malay",
+    "parentIds": [],
+    "temporal": {
+      "era": "Malay traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Great snake whose bodily substances produce genii in some Malay origin accounts reported by Skeat. One account derives the White Genie from the irises of its eyes.",
+    "sources": [
+      {
+        "claim": "Great snake whose bodily substances produce genii in some Malay origin accounts reported by Skeat. One account derives the White Genie from the irises of its eyes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Walter W. Skeat, Malay Magic (1900), pp.85–96: greater gods, sea-spirit family and black/white genii",
+            "url": "https://www.gutenberg.org/files/47873/47873-h/47873-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "batak_batara_guru_dairi",
+    "name": {
+      "primary": "Batara Guru (Dairi)",
+      "alt": [
+        "Batara Guru"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Batak",
+    "parentIds": [],
+    "temporal": {
+      "era": "primordial age of the gods"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "In the Dairi account summarized by Dixon, Batara Guru builds a raft with seven pieces of wood, makes the earth upon it, and assigns a goat to support it. He later fashions a human pair from heavenly earth and gives them breath and speech through formulas. His pregnant wife and his children are not named in the passage.",
+    "sources": [
+      {
+        "claim": "In the Dairi account summarized by Dixon, Batara Guru builds a raft with seven pieces of wood, makes the earth upon it, and assigns a goat to support it. He later fashions a human pair from heavenly earth and gives them breath and speech through formulas. His pregnant wife and his children are not named in the passage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp.160–163, 173: Toba, Dairi and Karo accounts",
+            "url": "https://sacred-texts.com/book/oceanic-mythology/read/chapter-i-myths-of-origins-and-the-deluge-3"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "batak_batara_guru_karo",
+    "name": {
+      "primary": "Batara Guru (Karo)",
+      "alt": [
+        "Batara Guru"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Batak",
+    "parentIds": [],
+    "temporal": {
+      "era": "primordial age of the gods"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "In Dixon’s Karo account, Batara Guru and his unnamed wife, daughter of an underworld deity, obtain three sons and three daughters after receiving a wish-granting ring. A son makes the world; an underworld son shakes it. Batara Guru stabilizes it with an iron pillar and cross-beams.",
+    "sources": [
+      {
+        "claim": "In Dixon’s Karo account, Batara Guru and his unnamed wife, daughter of an underworld deity, obtain three sons and three daughters after receiving a wish-granting ring. A son makes the world; an underworld son shakes it. Batara Guru stabilizes it with an iron pillar and cross-beams.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp.160–163, 173: Toba, Dairi and Karo accounts",
+            "url": "https://sacred-texts.com/book/oceanic-mythology/read/chapter-i-myths-of-origins-and-the-deluge-3"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_we_datu_sengngeng",
+    "name": {
+      "primary": "We Datu Sengngeng",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of La Urempessi; wife of Batara Lattuq.",
+    "sources": [
+      {
+        "claim": "Daughter of La Urempessi; wife of Batara Lattuq.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_la_urempessi",
+    "name": {
+      "primary": "La Urempessi",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Batara Tikka; ruler of Tompo’tikka.",
+    "sources": [
+      {
+        "claim": "Son of Batara Tikka; ruler of Tompo’tikka.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_batara_tikka",
+    "name": {
+      "primary": "Batara Tikka",
+      "alt": [
+        "La O’danriu’ Sangkamalewa"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Father of La Urempessi.",
+    "sources": [
+      {
+        "claim": "Father of La Urempessi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_we_padauleng",
+    "name": {
+      "primary": "We Padauleng",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of La Balaunynnyi; selected consort of La Urempessi.",
+    "sources": [
+      {
+        "claim": "Daughter of La Balaunynnyi; selected consort of La Urempessi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_la_balaunynnyi",
+    "name": {
+      "primary": "La Balaunynnyi",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Ruler of Ute Empong; father of We Padauleng.",
+    "sources": [
+      {
+        "claim": "Ruler of Ute Empong; father of We Padauleng.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_remmang_ri_langi",
+    "name": {
+      "primary": "Remmang ri Langi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Consort of We Tenriabeng; ruler of heaven in this account.",
+    "sources": [
+      {
+        "claim": "Consort of We Tenriabeng; ruler of heaven in this account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_la_tenritatta_epic",
+    "name": {
+      "primary": "La Tenritatta (La Galigo)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Grandson of Sawerigading; last ruler of Luwu in this epic epoch.",
+    "sources": [
+      {
+        "claim": "Grandson of Sawerigading; last ruler of Luwu in this epic epoch.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_batara_guru",
+    "name": {
+      "primary": "Batara Guru (Javanese)",
+      "alt": [
+        "Pramesti Guru",
+        "Sang Hyang Samba",
+        "Sri Nila Kanta"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Heaven’s ruler in Raffles’s Kanda synopsis, succeeding his father Tunggal. He produces deities through purification and creates Uma from a leaf; these acts are distinct from biological generation.",
+    "sources": [
+      {
+        "claim": "Heaven’s ruler in Raffles’s Kanda synopsis, succeeding his father Tunggal. He produces deities through purification and creates Uma from a leaf; these acts are distinct from biological generation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sang_hyang_wenang",
+    "name": {
+      "primary": "Sang Hyang Wenang",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Father of Tunggal; described as sixth in descent from Purwaning Jan. The five intervening names are not supplied in this passage.",
+    "sources": [
+      {
+        "claim": "Father of Tunggal; described as sixth in descent from Purwaning Jan. The five intervening names are not supplied in this passage.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sang_hyang_tunggal",
+    "name": {
+      "primary": "Sang Hyang Tunggal",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Wenang. A woman formed from a kastuba leaf bears him Pugu, Punggung, Samba and Pangat. He transfers heaven’s rule to Samba, later called Guru.",
+    "sources": [
+      {
+        "claim": "Son of Wenang. A woman formed from a kastuba leaf bears him Pugu, Punggung, Samba and Pangat. He transfers heaven’s rule to Samba, later called Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_pugu",
+    "name": {
+      "primary": "Pugu",
+      "alt": [
+        "Secha Tunggara"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Tunggal’s son, transformed and cast to the opposite coast after quarrelling with Punggung.",
+    "sources": [
+      {
+        "claim": "Tunggal’s son, transformed and cast to the opposite coast after quarrelling with Punggung.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_narada",
+    "name": {
+      "primary": "Resi Narada (Javanese Kanda)",
+      "alt": [
+        "Pangat",
+        "Kanika Putra"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Tunggal’s son and Guru’s remaining brother in the Kanda synopsis. He advises Guru and produces deities through purification.",
+    "sources": [
+      {
+        "claim": "Tunggal’s son and Guru’s remaining brother in the Kanda synopsis. He advises Guru and produces deities through purification.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_uma",
+    "name": {
+      "primary": "Uma (Javanese Kanda)",
+      "alt": [
+        "Kali Durga",
+        "Yama Dipati"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Created from a kastuba leaf by Guru. After resisting him she is transformed and named Kali Durga, later appointed ruler of Naraka as Yama Dipati.",
+    "sources": [
+      {
+        "claim": "Created from a kastuba leaf by Guru. After resisting him she is transformed and named Kali Durga, later appointed ruler of Naraka as Yama Dipati.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_batara_kala",
+    "name": {
+      "primary": "Batara Kala (Javanese Kanda)",
+      "alt": [
+        "Kama Sala"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Born during Guru’s pursuit of Uma. Guru denies that he is his child while acknowledging bodily origin. He guards the bridge between earth and heaven.",
+    "sources": [
+      {
+        "claim": "Born during Guru’s pursuit of Uma. Guru denies that he is his child while acknowledging bodily origin. He guards the bridge between earth and heaven.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_maha_pralaya",
+    "name": {
+      "primary": "Maha Pralaya",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Co-originating with Kama Sala in the Guru–Uma narrative, he judges which souls may approach the bridge and which enter Naraka.",
+    "sources": [
+      {
+        "claim": "Co-originating with Kama Sala in the Guru–Uma narrative, he judges which souls may approach the bridge and which enter Naraka.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sambu",
+    "name": {
+      "primary": "Sambu (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "First deity appearing after Guru’s purification in the Kanda synopsis.",
+    "sources": [
+      {
+        "claim": "First deity appearing after Guru’s purification in the Kanda synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_brama",
+    "name": {
+      "primary": "Brama (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Produced through Guru’s purification; later produces Brama Tama, Brama Sudarga and Bramani Wati through purification.",
+    "sources": [
+      {
+        "claim": "Produced through Guru’s purification; later produces Brama Tama, Brama Sudarga and Bramani Wati through purification.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_mahadewa",
+    "name": {
+      "primary": "Mahadewa (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "A powerful, wrathful figure produced through Guru’s purification; this passage distinguishes him from Guru.",
+    "sources": [
+      {
+        "claim": "A powerful, wrathful figure produced through Guru’s purification; this passage distinguishes him from Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_basuki",
+    "name": {
+      "primary": "Basuki (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Bright, white deity produced by Guru. Father of Baswarat and later manifested in Lakasamana in the Kanda synopsis.",
+    "sources": [
+      {
+        "claim": "Bright, white deity produced by Guru. Father of Baswarat and later manifested in Lakasamana in the Kanda synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_wisnu",
+    "name": {
+      "primary": "Wisnu (Javanese Kanda)",
+      "alt": [
+        "Wisnu"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Dark-coloured deity produced by Guru, lover and husband of Sri. He descends as Arjuna Wijaya and Rama in Raffles’s synopsis.",
+    "sources": [
+      {
+        "claim": "Dark-coloured deity produced by Guru, lover and husband of Sri. He descends as Arjuna Wijaya and Rama in Raffles’s synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_warsiki",
+    "name": {
+      "primary": "Warsiki",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Yellow-coloured goddess produced through Guru’s purification. Other gods oppose Guru’s desire for her.",
+    "sources": [
+      {
+        "claim": "Yellow-coloured goddess produced through Guru’s purification. Other gods oppose Guru’s desire for her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_suria",
+    "name": {
+      "primary": "Suria (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Brilliant deity produced through Narada’s purification and named by Guru.",
+    "sources": [
+      {
+        "claim": "Brilliant deity produced through Narada’s purification and named by Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bayu",
+    "name": {
+      "primary": "Bayu (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Blue-coloured deity produced through Narada’s purification and named by Guru.",
+    "sources": [
+      {
+        "claim": "Blue-coloured deity produced through Narada’s purification and named by Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_chandra",
+    "name": {
+      "primary": "Chandra (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Beautiful, sorrowful deity produced through Narada’s purification and named by Guru.",
+    "sources": [
+      {
+        "claim": "Beautiful, sorrowful deity produced through Narada’s purification and named by Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sri",
+    "name": {
+      "primary": "Sri (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Earth-born maiden found by Narada at Madang. She becomes Wisnu’s partner and mother of Sri Gati in the narrated sequence.",
+    "sources": [
+      {
+        "claim": "Earth-born maiden found by Narada at Madang. She becomes Wisnu’s partner and mother of Sri Gati in the narrated sequence.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sri_gati",
+    "name": {
+      "primary": "Sri Gati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Wisnu who helps him defeat Watu Gunung; later slain during Mangliawan’s attack on heaven.",
+    "sources": [
+      {
+        "claim": "Son of Wisnu who helps him defeat Watu Gunung; later slain during Mangliawan’s attack on heaven.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_brama_tama",
+    "name": {
+      "primary": "Brama Tama",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Produced by Brama’s purification; husband of Srati Dewi and father of Brama Raja.",
+    "sources": [
+      {
+        "claim": "Produced by Brama’s purification; husband of Srati Dewi and father of Brama Raja.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_brama_sudarga",
+    "name": {
+      "primary": "Brama Sudarga",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Produced by Brama’s purification. With an unnamed earthly wife he becomes an ancestor of Sumali and Mangliawan, with intervening generations unspecified.",
+    "sources": [
+      {
+        "claim": "Produced by Brama’s purification. With an unnamed earthly wife he becomes an ancestor of Sumali and Mangliawan, with intervening generations unspecified.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bramani_wati",
+    "name": {
+      "primary": "Bramani Wati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Goddess produced through Brama’s purification and partner of Baswarat.",
+    "sources": [
+      {
+        "claim": "Goddess produced through Brama’s purification and partner of Baswarat.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_srati_dewi",
+    "name": {
+      "primary": "Srati Dewi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Princess of Champa; wife of Brama Tama and mother of Brama Raja.",
+    "sources": [
+      {
+        "claim": "Princess of Champa; wife of Brama Tama and mother of Brama Raja.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_brama_raja",
+    "name": {
+      "primary": "Brama Raja",
+      "alt": [
+        "Resi Tama"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Brama Tama and Srati Dewi; king of Indrapuri and father of Chitra Bahar. He retires as an ascetic named Resi Tama.",
+    "sources": [
+      {
+        "claim": "Son of Brama Tama and Srati Dewi; king of Indrapuri and father of Chitra Bahar. He retires as an ascetic named Resi Tama.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_chitra_bahar",
+    "name": {
+      "primary": "Chitra Bahar",
+      "alt": [
+        "Angsarwa",
+        "Chator Boja"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son and successor of Brama Raja; father of Misra Warna and Bisa Warna, and of Sukesi Dewi’s four children in the Kanda synopsis.",
+    "sources": [
+      {
+        "claim": "Son and successor of Brama Raja; father of Misra Warna and Bisa Warna, and of Sukesi Dewi’s four children in the Kanda synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sumali",
+    "name": {
+      "primary": "Sumali (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Descendant of Brama Sudarga, brother of Mangliawan and father of Sukesi Dewi.",
+    "sources": [
+      {
+        "claim": "Descendant of Brama Sudarga, brother of Mangliawan and father of Sukesi Dewi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_mangliawan",
+    "name": {
+      "primary": "Mangliawan",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sumali’s brother and descendant of Brama Sudarga; attacks heaven and is killed by Wisnu.",
+    "sources": [
+      {
+        "claim": "Sumali’s brother and descendant of Brama Sudarga; attacks heaven and is killed by Wisnu.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sukesi_dewi",
+    "name": {
+      "primary": "Sukesi Dewi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of Sumali. Entrusted to Chitra Bahar’s protection, she bears him Dasamuka, Amba Karna, Sarpa Kanaka and Bibisana.",
+    "sources": [
+      {
+        "claim": "Daughter of Sumali. Entrusted to Chitra Bahar’s protection, she bears him Dasamuka, Amba Karna, Sarpa Kanaka and Bibisana.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_misra_warna",
+    "name": {
+      "primary": "Misra Warna",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Chitra Bahar; ruler entrusted with his father’s kingdom, killed by Dasamuka.",
+    "sources": [
+      {
+        "claim": "Son of Chitra Bahar; ruler entrusted with his father’s kingdom, killed by Dasamuka.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bisa_warna",
+    "name": {
+      "primary": "Bisa Warna",
+      "alt": [
+        "Batara Asmara",
+        "Kamajaya"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Chitra Bahar. Following the departure of Wisnu he becomes the god of love, named Asmara or Kamajaya, and receives Kama Rati as consort.",
+    "sources": [
+      {
+        "claim": "Son of Chitra Bahar. Following the departure of Wisnu he becomes the god of love, named Asmara or Kamajaya, and receives Kama Rati as consort.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_rahwana",
+    "name": {
+      "primary": "Rahwana (Javanese Kanda)",
+      "alt": [
+        "Dasamuka"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Chitra Bahar and Sukesi Dewi; receives the name Rahwana and is separately adopted by Guru. His bodily ancestry and adoption are distinct accounts.",
+    "sources": [
+      {
+        "claim": "Son of Chitra Bahar and Sukesi Dewi; receives the name Rahwana and is separately adopted by Guru. His bodily ancestry and adoption are distinct accounts.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_amba_karna",
+    "name": {
+      "primary": "Amba Karna",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Chitra Bahar and Sukesi Dewi, described with large ear lobes.",
+    "sources": [
+      {
+        "claim": "Son of Chitra Bahar and Sukesi Dewi, described with large ear lobes.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sarpa_kanaka",
+    "name": {
+      "primary": "Sarpa Kanaka",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of Chitra Bahar and Sukesi Dewi, described with dangerous claws.",
+    "sources": [
+      {
+        "claim": "Daughter of Chitra Bahar and Sukesi Dewi, described with dangerous claws.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bibisana",
+    "name": {
+      "primary": "Bibisana",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Youngest of the four named children of Chitra Bahar and Sukesi Dewi in the synopsis.",
+    "sources": [
+      {
+        "claim": "Youngest of the four named children of Chitra Bahar and Sukesi Dewi in the synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_kama_rati",
+    "name": {
+      "primary": "Kama Rati",
+      "alt": [
+        "Batari Rati"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Consort given to the deified Bisa Warna, also called Asmara or Kamajaya.",
+    "sources": [
+      {
+        "claim": "Consort given to the deified Bisa Warna, also called Asmara or Kamajaya.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_baswarat",
+    "name": {
+      "primary": "Baswarat",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Basuki and partner of Bramani Wati.",
+    "sources": [
+      {
+        "claim": "Son of Basuki and partner of Bramani Wati.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_la_sattumpugi",
+    "name": {
+      "primary": "La Sattumpugi",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Founder of Cina in the reported genealogy; son of Batara Ile and husband of We Tenriabang.",
+    "sources": [
+      {
+        "claim": "Founder of Cina in the reported genealogy; son of Batara Ile and husband of We Tenriabang.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_batara_ile",
+    "name": {
+      "primary": "Batara Ile",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Named Aji Risompa La Tenriangke; father of La Sattumpugi.",
+    "sources": [
+      {
+        "claim": "Named Aji Risompa La Tenriangke; father of La Sattumpugi.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "bugis_we_tenriabang_cina",
+    "name": {
+      "primary": "We Tenriabang (Cina genealogy)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Bugis",
+    "parentIds": [],
+    "temporal": {
+      "era": "Bugis traditional religion; continuing"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sister of We Datu Sengngeng and wife of La Sattumpugi; distinct from We Tenriabeng, Sawerigading’s twin.",
+    "sources": [
+      {
+        "claim": "Sister of We Datu Sengngeng and wife of La Sattumpugi; distinct from We Tenriabeng, Sawerigading’s twin.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Andi’ Zainal Abidin, The Emergence of Early Kingdoms in South Sulawesi (1983), pp.456, 460–461 and 465, sections IV.2 and V.2",
+            "url": "https://kyoto-seas.org/pdf/20/4/200401.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "kirati_tayama",
+    "name": {
+      "primary": "Tayama",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Kirati",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sister of the culture hero in Gaenszle’s Dumi Rai discussion of the Weaving Stone pilgrimage project.",
+    "sources": [
+      {
+        "claim": "Sister of the culture hero in Gaenszle’s Dumi Rai discussion of the Weaving Stone pilgrimage project.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Redefining Kiranti Religion in Contemporary Nepal (2016), author preprint pp.7–8, section 2",
+            "url": "https://www.academia.edu/31622733/Redefining_Kiranti_Religion_in_Contemporary_Nepal"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "kirati_khiyama",
+    "name": {
+      "primary": "Khiyama",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Kirati",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sister of the culture hero in Gaenszle’s Dumi Rai discussion of the Weaving Stone pilgrimage project.",
+    "sources": [
+      {
+        "claim": "Sister of the culture hero in Gaenszle’s Dumi Rai discussion of the Weaving Stone pilgrimage project.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Martin Gaenszle, Redefining Kiranti Religion in Contemporary Nepal (2016), author preprint pp.7–8, section 2",
+            "url": "https://www.academia.edu/31622733/Redefining_Kiranti_Religion_in_Contemporary_Nepal"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sang_hyang_wisesa",
+    "name": {
+      "primary": "Sang Hyang Wisesa",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Precedes the cosmic ball from which Manek Maya appears; transfers earthly authority to him.",
+    "sources": [
+      {
+        "claim": "Precedes the cosmic ball from which Manek Maya appears; transfers earthly authority to him.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_mahadewi",
+    "name": {
+      "primary": "Mahadewi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of Guru’s motherless daughters; wife of Mahadewa in the eastern quarter.",
+    "sources": [
+      {
+        "claim": "One of Guru’s motherless daughters; wife of Mahadewa in the eastern quarter.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sangyana",
+    "name": {
+      "primary": "Sangyana",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of Guru’s motherless daughters; wife of Sambu in the southern quarter.",
+    "sources": [
+      {
+        "claim": "One of Guru’s motherless daughters; wife of Sambu in the southern quarter.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_dewi_sumi",
+    "name": {
+      "primary": "Dewi Sumi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of Guru’s motherless daughters; wife of Bayu at the centre.",
+    "sources": [
+      {
+        "claim": "One of Guru’s motherless daughters; wife of Bayu at the centre.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_pretanjala",
+    "name": {
+      "primary": "Pretanjala",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Guru’s son assigned the northeast quarter.",
+    "sources": [
+      {
+        "claim": "Guru’s son assigned the northeast quarter.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_kwera",
+    "name": {
+      "primary": "Kwera",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Guru’s son assigned the southeast quarter.",
+    "sources": [
+      {
+        "claim": "Guru’s son assigned the southeast quarter.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_mahayakti",
+    "name": {
+      "primary": "Mahayakti",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Guru’s son assigned the southwest quarter.",
+    "sources": [
+      {
+        "claim": "Guru’s son assigned the southwest quarter.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sewa",
+    "name": {
+      "primary": "Sewa (Manek Maya)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Guru’s son assigned the northwest quarter; separately named from Guru.",
+    "sources": [
+      {
+        "claim": "Guru’s son assigned the northwest quarter; separately named from Guru.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_dewi_pratiwi",
+    "name": {
+      "primary": "Dewi Pratiwi (Manek Maya)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the first region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the first region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_kusika",
+    "name": {
+      "primary": "Kusika (Manek Maya)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the second region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the second region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_gangga",
+    "name": {
+      "primary": "Gangga (Manek Maya)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the third region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the third region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sindula",
+    "name": {
+      "primary": "Sindula",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the fourth region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the fourth region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_dasampalan",
+    "name": {
+      "primary": "Dasampalan",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the fifth region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the fifth region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_manihara",
+    "name": {
+      "primary": "Manihara",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Appointed by Guru to the sixth region beneath the earth.",
+    "sources": [
+      {
+        "claim": "Appointed by Guru to the sixth region beneath the earth.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_anta_boga",
+    "name": {
+      "primary": "Anta Boga (Manek Maya)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Head of the subterranean rulers, assigned the seventh region.",
+    "sources": [
+      {
+        "claim": "Head of the subterranean rulers, assigned the seventh region.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_ramadi",
+    "name": {
+      "primary": "Ramadi",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Smith created by Wisesa at Guru’s request; his breath kindles volcanic mountains.",
+    "sources": [
+      {
+        "claim": "Smith created by Wisesa at Guru’s request; his breath kindles volcanic mountains.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_brama_kadali",
+    "name": {
+      "primary": "Brama Kadali",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son granted to Ramadi by Wisesa; shares his father’s powers.",
+    "sources": [
+      {
+        "claim": "Son granted to Ramadi by Wisesa; shares his father’s powers.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_derma_jaka",
+    "name": {
+      "primary": "Derma Jaka",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Created by Wisesa; father of Chatur Kanaka.",
+    "sources": [
+      {
+        "claim": "Created by Wisesa; father of Chatur Kanaka.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_chatur_kanaka",
+    "name": {
+      "primary": "Chatur Kanaka",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son granted to Derma Jaka; father of Kanekaputra.",
+    "sources": [
+      {
+        "claim": "Son granted to Derma Jaka; father of Kanekaputra.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_rembu_chulung",
+    "name": {
+      "primary": "Rembu Chulung",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "His immortalized head causes eclipses after Wisnu severs it; father of forty children.",
+    "sources": [
+      {
+        "claim": "His immortalized head causes eclipses after Wisnu severs it; father of forty children.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_putut_jantaka",
+    "name": {
+      "primary": "Putut Jantaka",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Only named survivor among Rembu Chulung’s forty children, spared because of his penance.",
+    "sources": [
+      {
+        "claim": "Only named survivor among Rembu Chulung’s forty children, spared because of his penance.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_tamban",
+    "name": {
+      "primary": "Tamban",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Messenger sent by Guru to investigate the underwater hermit.",
+    "sources": [
+      {
+        "claim": "Messenger sent by Guru to investigate the underwater hermit.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.II Appendix H, chapters I–III, pp.cxii–cxix: Manek Maya",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sinta_calendar",
+    "name": {
+      "primary": "Sinta (calendar narrative)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Mother and subsequently unrecognized wife of Watu Gunung; sister of Landap.",
+    "sources": [
+      {
+        "claim": "Mother and subsequently unrecognized wife of Watu Gunung; sister of Landap.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_landap",
+    "name": {
+      "primary": "Landap",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sinta’s younger sister and Watu Gunung’s wife in the calendar narrative.",
+    "sources": [
+      {
+        "claim": "Sinta’s younger sister and Watu Gunung’s wife in the calendar narrative.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_watu_gunung",
+    "name": {
+      "primary": "Watu Gunung",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Sinta following her dream of Resi Gana; later husband of Sinta and Landap and father of twenty-seven sons.",
+    "sources": [
+      {
+        "claim": "Son of Sinta following her dream of Resi Gana; later husband of Sinta and Landap and father of twenty-seven sons.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_resi_gana",
+    "name": {
+      "primary": "Resi Gana",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Figure appearing in Sinta’s conception dream; not silently classified as an ordinary biological father.",
+    "sources": [
+      {
+        "claim": "Figure appearing in Sinta’s conception dream; not silently classified as an ordinary biological father.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_surabhi_shatarudra",
+    "name": {
+      "primary": "Surabhi (Śatarudra account)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Mother of the eleven Rudra incarnations in this account.",
+    "sources": [
+      {
+        "claim": "Mother of the eleven Rudra incarnations in this account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_kapalin_shatarudra",
+    "name": {
+      "primary": "Kapālin (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_pingala_shatarudra",
+    "name": {
+      "primary": "Piṅgala (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_bhima_shatarudra",
+    "name": {
+      "primary": "Bhīma (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_virupaksha_shatarudra",
+    "name": {
+      "primary": "Virūpākṣa (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_vilohita_shatarudra",
+    "name": {
+      "primary": "Vilohita (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_shastr_shatarudra",
+    "name": {
+      "primary": "Śāstṛ (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_ajapad_shatarudra",
+    "name": {
+      "primary": "Ajapād (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_ahirbudhnya_shatarudra",
+    "name": {
+      "primary": "Ahirbudhnya (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_shiva_shatarudra",
+    "name": {
+      "primary": "Śiva (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_chanda_shatarudra",
+    "name": {
+      "primary": "Caṇḍa (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_rudra_bhava_shatarudra",
+    "name": {
+      "primary": "Bhava (eleven Rudras)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+    "sources": [
+      {
+        "claim": "One of eleven incarnations protecting the gods in the Śatarudra account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.18.24–31, eleven Rudras born to Surabhi and Kashyapa",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226414.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_grihapati",
+    "name": {
+      "primary": "Gṛhapati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Śiva’s incarnation born to Viśvānara and Śuciṣmatī.",
+    "sources": [
+      {
+        "claim": "Śiva’s incarnation born to Viśvānara and Śuciṣmatī.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.13.1–8, Vishvanara and Shucishmati; 3.14 birth narrative",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226409.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_visvanara",
+    "name": {
+      "primary": "Viśvānara",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Śāṇḍilya-lineage sage, husband of Śuciṣmatī and father of Gṛhapati.",
+    "sources": [
+      {
+        "claim": "Śāṇḍilya-lineage sage, husband of Śuciṣmatī and father of Gṛhapati.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.13.1–8, Vishvanara and Shucishmati; 3.14 birth narrative",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226409.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_sucismati",
+    "name": {
+      "primary": "Śuciṣmatī",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wife of Viśvānara; Kāla’s daughter and Gṛhapati’s mother.",
+    "sources": [
+      {
+        "claim": "Wife of Viśvānara; Kāla’s daughter and Gṛhapati’s mother.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.13.1–8, Vishvanara and Shucishmati; 3.14 birth narrative",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226409.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_kala_sucismati_father",
+    "name": {
+      "primary": "Kāla (Śuciṣmatī’s father)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Named father of Śuciṣmatī; identity beyond this passage is unspecified.",
+    "sources": [
+      {
+        "claim": "Named father of Śuciṣmatī; identity beyond this passage is unspecified.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.13.1–8, Vishvanara and Shucishmati; 3.14 birth narrative",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226409.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_pippalada_shatarudra",
+    "name": {
+      "primary": "Pippalāda (Śatarudra account)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Śiva’s incarnation born to Dadhīci and Suvarcā; associated with the holy fig tree.",
+    "sources": [
+      {
+        "claim": "Śiva’s incarnation born to Dadhīci and Suvarcā; associated with the holy fig tree.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.24.1–5, 41–63, Pippalada’s family and manifestation",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226420.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_dadhici_shatarudra",
+    "name": {
+      "primary": "Dadhīci (Śatarudra account)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Cyavana in this account; husband of Suvarcā and father of Pippalāda.",
+    "sources": [
+      {
+        "claim": "Son of Cyavana in this account; husband of Suvarcā and father of Pippalāda.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.24.1–5, 41–63, Pippalada’s family and manifestation",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226420.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_suvarca",
+    "name": {
+      "primary": "Suvarcā",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wife of Dadhīci and mother of Pippalāda; rejoins her deceased husband through meditation.",
+    "sources": [
+      {
+        "claim": "Wife of Dadhīci and mother of Pippalāda; rejoins her deceased husband through meditation.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.24.1–5, 41–63, Pippalada’s family and manifestation",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226420.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_cyavana_shatarudra",
+    "name": {
+      "primary": "Cyavana (Śatarudra account)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Named father of Dadhīci in this Bhṛgu-family account.",
+    "sources": [
+      {
+        "claim": "Named father of Dadhīci in this Bhṛgu-family account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.24.1–5, 41–63, Pippalada’s family and manifestation",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226420.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_padma_pippalada",
+    "name": {
+      "primary": "Padmā (Pippalāda’s wife)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of Anaraṇya, identified as part of Śivā; marries Pippalāda.",
+    "sources": [
+      {
+        "claim": "Daughter of Anaraṇya, identified as part of Śivā; marries Pippalāda.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.25.2–21, Pippalada, Padma and their children",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226421.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_anaranya_padma_father",
+    "name": {
+      "primary": "Anaraṇya (Padmā’s father)",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "King who gives Padmā in marriage after Pippalāda threatens him.",
+    "sources": [
+      {
+        "claim": "King who gives Padmā in marriage after Pippalāda threatens him.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.25.2–21, Pippalada, Padma and their children",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226421.html"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "tibetan_buddhist_mahakala_shangpa",
+    "name": {
+      "primary": "Six-armed Mahākāla (Shangpa)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Tibetan Buddhist",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "One-faced, six-armed protector transmitted in Shangpa Kagyu and subsequently adopted in other Tibetan schools.",
+    "sources": [
+      {
+        "claim": "One-faced, six-armed protector transmitted in Shangpa Kagyu and subsequently adopted in other Tibetan schools.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jeff Watt, Himalayan Art Resources, Six-armed Mahakala: traditions and iconographic differences",
+            "url": "https://www.himalayanart.org/search/set.cfm?setID=4486"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "tibetan_buddhist_white_mahakala_shangpa",
+    "name": {
+      "primary": "White Mahākāla (Shangpa)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Tibetan Buddhist",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Six-armed wealth deity of the Shangpa tradition, understood as Avalokiteśvara’s emanation.",
+    "sources": [
+      {
+        "claim": "Six-armed wealth deity of the Shangpa tradition, understood as Avalokiteśvara’s emanation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jeff Watt, Himalayan Art Resources, White six-armed Mahakala: Shangpa tradition",
+            "url": "https://www.himalayanart.org/search/set.cfm?setID=420"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "tibetan_buddhist_lha_chenpo",
+    "name": {
+      "primary": "Lha Chenpo",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Tibetan Buddhist",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Buddhist Shiva/Mahadeva portrayal associated with Avalokiteśvara and Nyingma treasure teachings, especially Mindrolling.",
+    "sources": [
+      {
+        "claim": "Buddhist Shiva/Mahadeva portrayal associated with Avalokiteśvara and Nyingma treasure teachings, especially Mindrolling.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Jeff Watt, Himalayan Art Resources, Lha Chenpo: Nyingma and Mindrolling contexts",
+            "url": "https://www.himalayanart.org/search/set.cfm?setID=559"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_svaha",
+    "name": {
+      "primary": "Svāhā",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Dakṣa’s daughter; mother of Skanda by Agni in the epic account summarized by Wilkins.",
+    "sources": [
+      {
+        "claim": "Dakṣa’s daughter; mother of Skanda by Agni in the epic account summarized by Wilkins.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic (1900), pp.335–341, Karttikeya: separate birth traditions",
+            "url": "https://murugan.org/scriptures/karttikeya/"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_devasena_epic",
+    "name": {
+      "primary": "Devasenā (epic account)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Skanda’s wife and Daityasenā’s sister; their father is called Prajāpati in this account.",
+    "sources": [
+      {
+        "claim": "Skanda’s wife and Daityasenā’s sister; their father is called Prajāpati in this account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic (1900), pp.335–341, Karttikeya: separate birth traditions",
+            "url": "https://murugan.org/scriptures/karttikeya/"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "hindu_daityasena_epic",
+    "name": {
+      "primary": "Daityasenā (epic account)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Hindu",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sister of Devasenā; their father is called Prajāpati in this account.",
+    "sources": [
+      {
+        "claim": "Sister of Devasenā; their father is called Prajāpati in this account.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "W. J. Wilkins, Hindu Mythology, Vedic and Puranic (1900), pp.335–341, Karttikeya: separate birth traditions",
+            "url": "https://murugan.org/scriptures/karttikeya/"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "tamil_siva_muni",
+    "name": {
+      "primary": "Siva Muni",
+      "alt": []
+    },
+    "type": "mortal",
+    "tradition": "Tamil",
+    "parentIds": [],
+    "temporal": {
+      "era": "mythic"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Named father of Valli in this Kanda Puranam retelling; a hunter chieftain subsequently adopts her.",
+    "sources": [
+      {
+        "claim": "Named father of Valli in this Kanda Puranam retelling; a hunter chieftain subsequently adopts her.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "A Short Illustrated Kanda Puranam, Murugan Bhakti, prior lives and concluding marriage paragraphs",
+            "url": "https://murugan.org/scriptures/a-short-illustrated-kanda-puranam-2/"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_arjuna_wijaya",
+    "name": {
+      "primary": "Arjuna Wijaya",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wisnu’s earthly incarnation, ruler of Mauspati and husband of Chitra Wati.",
+    "sources": [
+      {
+        "claim": "Wisnu’s earthly incarnation, ruler of Mauspati and husband of Chitra Wati.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_chitra_wati",
+    "name": {
+      "primary": "Chitra Wati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sri’s incarnation and daughter of the unnamed king of Tanjungpura; wife of Arjuna Wijaya.",
+    "sources": [
+      {
+        "claim": "Sri’s incarnation and daughter of the unnamed king of Tanjungpura; wife of Arjuna Wijaya.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_rama",
+    "name": {
+      "primary": "Rama (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wisnu incarnates in Dewi Ragu’s child, son of Dasa Rata.",
+    "sources": [
+      {
+        "claim": "Wisnu incarnates in Dewi Ragu’s child, son of Dasa Rata.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_dasa_rata",
+    "name": {
+      "primary": "Dasa Rata",
+      "alt": [
+        "Murdaka",
+        "Basa Rata"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Father of Rama and Lakasamana in the Kanda synopsis.",
+    "sources": [
+      {
+        "claim": "Father of Rama and Lakasamana in the Kanda synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_dewi_ragu",
+    "name": {
+      "primary": "Dewi Ragu",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wife of Dasa Rata and mother of Rama.",
+    "sources": [
+      {
+        "claim": "Wife of Dasa Rata and mother of Rama.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_manwadari",
+    "name": {
+      "primary": "Manwadari",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Wife of Dasa Rata and mother of Lakasamana.",
+    "sources": [
+      {
+        "claim": "Wife of Dasa Rata and mother of Lakasamana.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_lakasamana",
+    "name": {
+      "primary": "Lakasamana",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Basuki incarnates in Manwadari’s child, son of Dasa Rata.",
+    "sources": [
+      {
+        "claim": "Basuki incarnates in Manwadari’s child, son of Dasa Rata.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bali",
+    "name": {
+      "primary": "Bali (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Gotama, mentioned in the synopsis’s transition to Rama’s story.",
+    "sources": [
+      {
+        "claim": "Son of Gotama, mentioned in the synopsis’s transition to Rama’s story.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_gotama",
+    "name": {
+      "primary": "Gotama (Javanese Kanda)",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Founder of Astino and father of Bali in the synopsis.",
+    "sources": [
+      {
+        "claim": "Founder of Astino and father of Bali in the synopsis.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_manu_manara",
+    "name": {
+      "primary": "Manu Manara",
+      "alt": [
+        "Manu Manasa"
+      ]
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Baswarat and Bramani Wati; ancestor of the Pendawa in the following pedigree.",
+    "sources": [
+      {
+        "claim": "Son of Baswarat and Bramani Wati; ancestor of the Pendawa in the following pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_manu_madewa",
+    "name": {
+      "primary": "Manu Madewa",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Son of Baswarat and Bramani Wati; father of Sirati.",
+    "sources": [
+      {
+        "claim": "Son of Baswarat and Bramani Wati; father of Sirati.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sirati",
+    "name": {
+      "primary": "Sirati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Daughter of Manu Madewa and wife of Bramana Raja; mother of Rahwana in this separately reported genealogy.",
+    "sources": [
+      {
+        "claim": "Daughter of Manu Madewa and wife of Bramana Raja; mother of Rahwana in this separately reported genealogy.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_bramana_raja",
+    "name": {
+      "primary": "Bramana Raja",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Husband of Sirati and father of Rahwana in the pedigree passage; not automatically equated with the earlier Brama Raja.",
+    "sources": [
+      {
+        "claim": "Husband of Sirati and father of Rahwana in the pedigree passage; not automatically equated with the earlier Brama Raja.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_tritrushta",
+    "name": {
+      "primary": "Tritrushta",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Second member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Second member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_parikena",
+    "name": {
+      "primary": "Parikena",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Third member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Third member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sutapa",
+    "name": {
+      "primary": "Sutapa",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Fourth member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Fourth member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_saputram",
+    "name": {
+      "primary": "Sa-putram",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Fifth member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Fifth member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_sakri",
+    "name": {
+      "primary": "Sakri",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Sixth member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Sixth member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_pulasara",
+    "name": {
+      "primary": "Pulasara",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Seventh member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Seventh member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_abiasa",
+    "name": {
+      "primary": "Abiasa",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Eighth member of the successive Pendawa pedigree.",
+    "sources": [
+      {
+        "claim": "Eighth member of the successive Pendawa pedigree.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_pandu_dewa_nata",
+    "name": {
+      "primary": "Pandu-dewa Nata",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Ninth member of the successive pedigree preceding the Pendawa Lima.",
+    "sources": [
+      {
+        "claim": "Ninth member of the successive pedigree preceding the Pendawa Lima.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java (1830), vol.I pp.428–429: incarnations and pedigree",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_rekatawati",
+    "name": {
+      "primary": "Dewi Rekatawati",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Tunggal’s partner and mother of the egg from which Antaga, Ismaya and Manikmaya emerge in the reported wayang account.",
+    "sources": [
+      {
+        "claim": "Tunggal’s partner and mother of the egg from which Antaga, Ismaya and Manikmaya emerge in the reported wayang account.",
+        "citations": [
+          {
+            "kind": "encyclopedia",
+            "reference": "Batara Guru, Javanese portrayal and names",
+            "url": "https://en.wikipedia.org/wiki/Batara_Guru"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  },
+  {
+    "id": "javanese_antaga",
+    "name": {
+      "primary": "Sang Hyang Antaga",
+      "alt": []
+    },
+    "type": "deity",
+    "tradition": "Javanese",
+    "parentIds": [],
+    "temporal": {
+      "era": "perennial in wayang"
+    },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "notes": "Togog in the wayang account, born from the eggshell; brother of Ismaya and Manikmaya.",
+    "sources": [
+      {
+        "claim": "Togog in the wayang account, born from the eggshell; brother of Ismaya and Manikmaya.",
+        "citations": [
+          {
+            "kind": "encyclopedia",
+            "reference": "Batara Guru, Javanese portrayal and names",
+            "url": "https://en.wikipedia.org/wiki/Batara_Guru"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ]
+  }
+]
+```
