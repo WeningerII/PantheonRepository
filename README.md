@@ -18,8 +18,8 @@ show you where they overlapped on the ground.
 | Figures | 7,654 |
 | Traditions | 561 |
 | Domains | 5,717 |
-| Powers | 7,939 |
-| Items | 3,226 |
+| Powers | 7,940 |
+| Items | 3,227 |
 | Mapped territories | 241 |
 
 Each figure carries parentage and children, domains, powers, epithets in their
