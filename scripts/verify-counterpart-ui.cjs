@@ -2,10 +2,16 @@
 const assert = require('node:assert/strict');
 async function verifyCounterpartUI(page, base, people) {
  await verifyNameProbeFixture(page);
- const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
+ const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`, {waitUntil:'domcontentloaded'}); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
  const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
  assert.ok(targets.length,'authored name targets must be exercised');
+ let targetCount=0;
+ console.log(`counterpart UI: starting ${targets.length} authored name targets`);
  for(const {p,n} of targets){
+  // Independent cases start in a fresh document; each case still exercises
+  // sequential Names, relationship-list and graph-neighbor keyboard navigation.
+  await page.goto('about:blank');
+  console.log(`counterpart UI: target ${++targetCount}/${targets.length} ${p.id} -> ${n.personId}`);
   await open(p);
   const a=nameLinkLocator(page,n.value);
   assert.equal(await a.count(),1);
@@ -25,7 +31,7 @@ async function verifyCounterpartUI(page, base, people) {
    await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   }
   if(outgoing||incoming){
-   await open(p);await page.getByRole('button',{name:'Show in graph',exact:true}).click();
+   await open(p);await page.locator('.detail-bar').getByRole('button',{name:'Show in graph',exact:true}).click();
    await page.locator('.graph-modes').getByRole('button',{name:'All',exact:true}).click();
    const neighbor=page.locator(`a.graph-focus-neighbor[href="${targetHref}"]`).first();
    await neighbor.focus();await neighbor.press('Enter');
@@ -34,8 +40,10 @@ async function verifyCounterpartUI(page, base, people) {
  }
  let accountCount=0;
  for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
+  await page.goto('about:blank');
+  console.log(`counterpart UI: accounts for ${p.id}`);
   await open(p);
-  const select=page.getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
+  const select=page.locator('.lineage-account').getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
   await select.waitFor({state:'visible'});
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
@@ -56,7 +64,8 @@ function nameLinkLocator(page,value){
  return page.locator('.section-names').getByRole('link',{name:value,exact:true});
 }
 async function verifyNameProbeFixture(page){
- const fixture=await page.context().newPage();
+ const context=await page.context().browser().newContext();
+ const fixture=await context.newPage();
  try{
   await fixture.setContent('<section class="section-names"><a class="name-rec-value" href="#N1">Shared label</a><a class="name-rec-value" href="#N2">Shared label (regional)</a><span class="name-rec-value">Ordinary alias</span></section>');
   for(const [label,target] of [['Shared label','#N1'],['Shared label (regional)','#N2']]){
@@ -65,7 +74,7 @@ async function verifyNameProbeFixture(page){
    assert.ok(fixture.url().endsWith(target));
   }
   assert.equal(await nameLinkLocator(fixture,'Ordinary alias').count(),0);
- }finally{await fixture.close();}
+ }finally{await context.close();}
 }
 function accountSelectionReady(expected, doc = document) {
  const controls=Array.from(doc.querySelectorAll('select')).filter(s=>s.getAttribute('aria-label')===expected.label);
