@@ -10,17 +10,18 @@ function partitionCases(people, count) {
  return parts;
 }
 async function verifyCounterpartUI(page, base, people, cases=partitionCases(people,1)[0]) {
+ await verifyNameProbeFixture(page);
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`, {waitUntil:'domcontentloaded'}); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
  const {targets,accountPeople}=cases;
  let targetCount=0;
  console.log(`counterpart UI: starting ${targets.length} authored name targets`);
  for(const {p,n} of targets){
-  // Each authored pair is an independent browser case; preserve all three
-  // in-case navigation paths without accumulating prior Browse/graph state.
+  // Independent cases start in a fresh document; each case still exercises
+  // sequential Names, relationship-list and graph-neighbor keyboard navigation.
   await page.goto('about:blank');
-  console.log(`counterpart UI: target ${targetCount+1}/${targets.length} ${p.id} -> ${n.personId}`);
+  console.log(`counterpart UI: target ${++targetCount}/${targets.length} ${p.id} -> ${n.personId}`);
   await open(p);
-  const a=page.locator(`.section-names a.name-rec-value[href="#/browse/${encodeURIComponent(n.personId)}"]`).filter({hasText:new RegExp('^'+n.value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'$')});
+  const a=nameLinkLocator(page,n.value);
   assert.equal(await a.count(),1);
   if(n.status==='disputed')assert.ok((await a.locator('..').innerText()).includes('disputed'));
   assert.equal(await a.getAttribute('href'),`#/browse/${encodeURIComponent(n.personId)}`);
@@ -44,30 +45,53 @@ async function verifyCounterpartUI(page, base, people, cases=partitionCases(peop
    await neighbor.focus();await neighbor.press('Enter');
    await page.waitForFunction(name=>document.querySelector('.detail h1, .detail-panel h1')?.textContent===name,people[n.personId].name.primary);
   }
-  targetCount++;
-  if(targetCount%25===0)console.log(`counterpart UI: ${targetCount}/${targets.length} name targets passed`);
  }
  let accountCount=0;
- console.log('counterpart UI: starting all authored parentage accounts');
  for(const p of accountPeople){
   await page.goto('about:blank');
   console.log(`counterpart UI: accounts for ${p.id}`);
   await open(p);
   const select=page.locator('.lineage-account').getByRole('combobox',{name:`Parentage account for ${p.name.primary}`,exact:true});
   await select.waitFor({state:'visible'});
-  const accountPanel=page.locator('.lineage-account').filter({has:select});
-  assert.equal(await accountPanel.count(),1,`exact account control must identify one panel for ${p.id}`);
   for(const a of p.parentageAccounts){
    await select.selectOption(a.id);
-   const canvas=page.locator('.lineage-canvas');
-   for(const r of a.parents)assert.ok((await canvas.innerText()).includes(people[r.personId].name.primary));
-   const accountText=await accountPanel.innerText();
-   for(const source of a.sources)assert.ok(accountText.includes(source.reference));
+   // A selection schedules React state/layout work. Observe the selected value,
+   // its enclosing evidence panel and the tree in one committed DOM snapshot.
+   // Do not compose a document-scoped role locator inside a scoped `has` filter.
+   await page.waitForFunction(accountSelectionReady, {
+    label:`Parentage account for ${p.name.primary}`, accountId:a.id,
+    parents:a.parents.map(r=>people[r.personId].name.primary),
+    sources:a.sources.map(s=>s.reference),
+   });
    accountCount++;
-   if(accountCount%25===0)console.log(`counterpart UI: ${accountCount} account selections passed`);
   }
  }
  console.log(`counterpart UI: ${targets.length} keyboard navigations and ${accountCount} account selections passed`);
  return {targetCount,accountCount};
 }
-module.exports={verifyCounterpartUI,partitionCases};
+function nameLinkLocator(page,value){
+ return page.locator('.section-names').getByRole('link',{name:value,exact:true});
+}
+async function verifyNameProbeFixture(page){
+ const context=await page.context().browser().newContext();
+ const fixture=await context.newPage();
+ try{
+  await fixture.setContent('<section class="section-names"><a class="name-rec-value" href="#N1">Shared label</a><a class="name-rec-value" href="#N2">Shared label (regional)</a><span class="name-rec-value">Ordinary alias</span></section>');
+  for(const [label,target] of [['Shared label','#N1'],['Shared label (regional)','#N2']]){
+   const a=nameLinkLocator(fixture,label);assert.equal(await a.count(),1);
+   assert.equal(await a.getAttribute('href'),target);await a.focus();await a.press('Enter');
+   assert.ok(fixture.url().endsWith(target));
+  }
+  assert.equal(await nameLinkLocator(fixture,'Ordinary alias').count(),0);
+ }finally{await context.close();}
+}
+function accountSelectionReady(expected, doc = document) {
+ const controls=Array.from(doc.querySelectorAll('select')).filter(s=>s.getAttribute('aria-label')===expected.label);
+ if(controls.length!==1 || controls[0].value!==expected.accountId)return false;
+ const panel=controls[0].closest('.lineage-account');
+ const canvas=doc.querySelector('.lineage-canvas');
+ if(!panel || !canvas)return false;
+ const cards=Array.from(canvas.querySelectorAll('.lineage-card-name')).map(n=>n.textContent);
+ return expected.parents.every(name=>cards.includes(name)) && expected.sources.every(reference=>panel.textContent.includes(reference));
+}
+module.exports={verifyCounterpartUI,accountSelectionReady,partitionCases};
