@@ -240,7 +240,7 @@ function figureView(id, view = 'standard') {
   if (view === 'standard') return standard;
 
   if (view === 'full') {
-    return clean({
+    return { ...clean({
       ...standard,
       names: p.names,
       lifecycle: (p.lifecycle || []).map((s) => clean({ phase: s.typeStatus || s.vitalStatus, event: s.startEvent, era: s.era, order: s.eraOrdering, note: s.notes })),
@@ -260,7 +260,12 @@ function figureView(id, view = 'standard') {
       variants: (p.variants || []).map((v) => clean({ claim: v.claim, description: v.description, weight: v.weight })),
       traditionMix: PR.traditionMix && PR.traditionMix[id],
       sources_by_claim: sourcesByClaim(p),
-    });
+    }),
+      // The compact projections above are retained for compatibility. Full
+      // evidence must bypass clean(): [] can explicitly assert no parents,
+      // while a missing field means that no assertion was supplied.
+      source_record: structuredClone(p),
+    };
   }
 
   if (view === 'dossier') {

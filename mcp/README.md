@@ -17,7 +17,7 @@ paginated output, and canonical matching across relation-kind variants
 | Tool | What it answers |
 |------|-----------------|
 | `search_figures` | names, epithets (original + translation), full-text notes; filters: tradition/type/era/domain/power/icon/place/item class/relation kind/year |
-| `get_figure` | one or many ids; views `card` → `standard` → `dossier` (one-call context) → `full` (iconography, cult attestations, variants, per-claim citations) |
+| `get_figure` | one or many ids; views `card` → `standard` → `dossier` (one-call context) → `full` (iconography, cult attestations, variants, per-claim citations and an exact `source_record`, including cited parentage accounts and explicit name targets) |
 | `relate` | shortest path between two figures, every step typed; optional kind restriction |
 | `neighbors` | a figure's direct connections grouped by relation kind, with kind counts |
 | `trace_lineage` | ancestors/descendants with divinity tiers + the root's divinity math |
