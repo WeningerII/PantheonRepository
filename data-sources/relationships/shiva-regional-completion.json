@@ -2970,6 +2970,30 @@
           }
         ],
         "notes": ""
+      },
+      {
+        "personId": "javanese_indra_kanda",
+        "kind": "creator-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "notes": "Separate appearances after Narada’s purification in Raffles vol.I p.421; not biological generation or synonyms."
+      },
+      {
+        "personId": "javanese_sakra_kanda",
+        "kind": "creator-of",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Thomas Stamford Raffles, The History of Java, second edition (1830), vol.I pp.418–428: synopsis of the Kanda",
+            "url": "https://www.gutenberg.org/files/49843/49843-h/49843-h.htm"
+          }
+        ],
+        "notes": "Separate appearances after Narada’s purification in Raffles vol.I p.421; not biological generation or synonyms."
       }
     ],
     "variants": [
@@ -9444,6 +9468,65 @@
           }
         ],
         "notes": ""
+      }
+    ]
+  },
+  "hindu_rudra_rigvedic": {
+    "relations": [
+      {
+        "personId": "hindu_maruts",
+        "kind": "father-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Rigveda 2.33.1–15, Griffith translation",
+            "url": "https://sacred-texts.com/hin/rigveda/rv02033.htm"
+          }
+        ],
+        "notes": "Rigveda 2.33.1 calls Rudra father of the Maruts; this does not replace their separately narrated Purāṇic parents."
+      }
+    ]
+  },
+  "hindu_suyasa": {
+    "relations": [
+      {
+        "personId": "hindu_maruts",
+        "kind": "child-of",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.7.10–22, 31–57, coronation and marriage",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226403.html"
+          }
+        ],
+        "notes": "The Maruts are the named parental collective; no individual father is inferred."
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "shiva-purana-maruts",
+        "label": "Śiva Purāṇa: daughter of the Maruts",
+        "parents": [
+          {
+            "personId": "hindu_maruts",
+            "kind": "parent",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Shiva Purana 3.7.10–22, 31–57, coronation and marriage",
+                "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226403.html"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Shiva Purana 3.7.10–22, 31–57, coronation and marriage",
+            "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226403.html"
+          }
+        ],
+        "description": "The account names a parental collective without identifying an individual father."
       }
     ]
   }

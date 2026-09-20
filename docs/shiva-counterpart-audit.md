@@ -1,9 +1,9 @@
 # Shiva counterpart network: source review and remaining evidence questions
 
 The merged baseline (PR147) added 73 records. The regional completion follow-up
-adds another 144 records, 403 cited relationships across 166 subjects, 88 selectable
+adds another 144 records, 407 cited relationships across 166 subjects, 89 selectable
 parentage accounts, 53 explicit name decisions and five relationship revisions.
-The current repeated incoming/outgoing inventory covers 479 records. These are
+The current repeated incoming/outgoing inventory covers 529 records. These are
 source-bounded additions, not a declaration of exhaustive historical coverage.
 Every discovered record retains sixteen review categories; unreviewed categories
 remain marked `awaiting-research`. The user requested freezing research and
@@ -125,8 +125,9 @@ claims, access attempts and alternatives.
 Other unfinished work includes native-script validation, inherited powers,
 objects and cult claims across the broader frontier, unsourced Bugis family
 leads, and unnamed relatives that cannot be assigned invented identities.
-Cross-lane Narada, Devasena, Rudra/Maruts and Suyasa reciprocal follow-ups are
-explicit in scope.json. No unresolved dependency is described as implemented.
+After PR142, owned Narada, Rudra/Maruts and Suyasa endpoints are implemented.
+The Devasena Tamil context and the other owner’s reciprocal endpoints remain
+explicit follow-ups in scope.json. No unresolved dependency is described as implemented.
 
 ## Shared verification
 
