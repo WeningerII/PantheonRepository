@@ -104,16 +104,17 @@ const sample = () => {
 
   await new Promise(r => srv.listen(PORT, r));
   const b = await chromium.launch({ executablePath: exe, args: ['--no-sandbox'] });
-  const pg = await b.newPage({ viewport: { width: 1400, height: 900 } });
-  await pg.route('**/fonts.g**', r => r.fulfill({ status: 404, body: '' }));
-  await pg.route('**/world-atlas**', r => r.fulfill({
+  const context = await b.newContext({ viewport: { width: 1400, height: 900 } });
+  const pg = await context.newPage();
+  await context.route('**/fonts.g**', r => r.fulfill({ status: 404, body: '' }));
+  await context.route('**/world-atlas**', r => r.fulfill({
     body: fs.readFileSync(path.join(ROOT, 'test', 'fixtures', 'countries-110m.json')),
     contentType: 'application/json',
   }));
   // cdnjs is unreachable in CI sandboxes; serve the pinned node_modules copies.
   // NOTE: this substitutes bytes for the cdnjs URL, so neither the URL nor its
   // SRI hash is validated here — see docs/load-performance-findings.md §4.2.
-  await pg.route('**/cdnjs.cloudflare.com/**', r => {
+  await context.route('**/cdnjs.cloudflare.com/**', r => {
     const u = r.request().url();
     const pick =
       u.includes('react-dom') ? 'react-dom/umd/react-dom.production.min.js' :
@@ -174,8 +175,23 @@ const sample = () => {
   else if (end.total && end.n < end.total) fail(`scrolling stalled at ${end.n} of ${end.total} rows — the corpus is not fully reachable`);
   else console.log(`scroll reached the full corpus: ${end.n} rows ✓`);
 
-  await require('./verify-counterpart-ui.cjs').verifyCounterpartUI(pg,
-    `http://127.0.0.1:${PORT}/index.html`, require('./build-tiers.cjs').loadCorpus({ quiet: true }).seedPeople);
+  // The scroll probe intentionally mounts the entire corpus. Start a fresh
+  // document for the independent navigation probe: hash navigation otherwise
+  // retains that expanded Browse state for every keyboard/account assertion.
+  await pg.goto('about:blank');
+  const {verifyCounterpartUI,partitionCases}=require('./verify-counterpart-ui.cjs');
+  const people=require('./build-tiers.cjs').loadCorpus({quiet:true}).seedPeople;
+  const all=partitionCases(people,1)[0];
+  const pages=[pg,await context.newPage(),await context.newPage()];
+  const parts=partitionCases(people,pages.length);
+  const results=await Promise.all(pages.map((page,i)=>verifyCounterpartUI(page,
+    `http://127.0.0.1:${PORT}/index.html`,people,parts[i])));
+  const assert=require('node:assert/strict');
+  assert.ok(all.targets.length,'authored name targets must be exercised');
+  assert.equal(results.reduce((sum,r)=>sum+r.targetCount,0),all.targets.length);
+  assert.equal(results.reduce((sum,r)=>sum+r.accountCount,0),
+    all.accountPeople.reduce((sum,p)=>sum+p.parentageAccounts.length,0));
+  console.log(`counterpart UI: all ${all.targets.length} targets and ${results.reduce((sum,r)=>sum+r.accountCount,0)} accounts passed across ${pages.length} pages`);
   await b.close(); srv.close();
   if (process.exitCode) console.error('\nverify-coldload: FAILED');
   else console.log('\nverify-coldload: PASSED');

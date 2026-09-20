@@ -1,10 +1,18 @@
 // Browser regression checks over authored targets, without figure-specific selectors.
 const assert = require('node:assert/strict');
-async function verifyCounterpartUI(page, base, people) {
+function partitionCases(people, count) {
+ assert.ok(Number.isInteger(count) && count > 0);
+ const parts=Array.from({length:count},()=>({targets:[],accountPeople:[]}));
+ const targets=Object.values(people).flatMap(p=>(p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
+ const accountPeople=Object.values(people).filter(p=>p.parentageAccounts?.length);
+ targets.forEach((value,i)=>parts[i%count].targets.push(value));
+ accountPeople.forEach((value,i)=>parts[i%count].accountPeople.push(value));
+ return parts;
+}
+async function verifyCounterpartUI(page, base, people, cases=partitionCases(people,1)[0]) {
  await verifyNameProbeFixture(page);
  const open = async p => { await page.goto(`${base}#/browse/${encodeURIComponent(p.id)}`, {waitUntil:'domcontentloaded'}); await page.waitForFunction(name => document.querySelector('.detail h1, .detail-panel h1')?.textContent === name, p.name.primary); };
- const targets = Object.values(people).flatMap(p => (p.nameLinks||[]).filter(n=>['resolved','disputed'].includes(n.status)&&n.personId).map(n=>({p,n})));
- assert.ok(targets.length,'authored name targets must be exercised');
+ const {targets,accountPeople}=cases;
  let targetCount=0;
  console.log(`counterpart UI: starting ${targets.length} authored name targets`);
  for(const {p,n} of targets){
@@ -39,7 +47,7 @@ async function verifyCounterpartUI(page, base, people) {
   }
  }
  let accountCount=0;
- for(const p of Object.values(people).filter(p=>p.parentageAccounts?.length)){
+ for(const p of accountPeople){
   await page.goto('about:blank');
   console.log(`counterpart UI: accounts for ${p.id}`);
   await open(p);
@@ -59,6 +67,7 @@ async function verifyCounterpartUI(page, base, people) {
   }
  }
  console.log(`counterpart UI: ${targets.length} keyboard navigations and ${accountCount} account selections passed`);
+ return {targetCount,accountCount};
 }
 function nameLinkLocator(page,value){
  return page.locator('.section-names').getByRole('link',{name:value,exact:true});
@@ -85,4 +94,4 @@ function accountSelectionReady(expected, doc = document) {
  const cards=Array.from(canvas.querySelectorAll('.lineage-card-name')).map(n=>n.textContent);
  return expected.parents.every(name=>cards.includes(name)) && expected.sources.every(reference=>panel.textContent.includes(reference));
 }
-module.exports={verifyCounterpartUI,accountSelectionReady};
+module.exports={verifyCounterpartUI,accountSelectionReady,partitionCases};
