@@ -46,7 +46,7 @@ Workflow that works: (1) unsure of exact vocabulary? call vocab (relation kinds,
     async (a) => txt(corpus.searchFigures(a.q || '', a)));
 
   server.registerTool('get_figure',
-    { description: 'Retrieve figures by id — pass one id or up to 20 (batch beats repeated calls). view controls depth: "card" (one line), "standard" (genealogy, divinity math, domains with native terms, powers, items held, epithets with translations, typed relations, citations), "dossier" (standard + inherited powers, cross-tradition equivalents, lifecycle, cult places, death — the one-call answer for "tell me about X"), "full" (everything: iconography, cult records with attestations, multi-script names, variants/competing claims, associations, per-claim citations). Unknown ids return closest-match suggestions.',
+    { description: 'Retrieve figures by id — pass one id or up to 20 (batch beats repeated calls). view controls depth: "card" (one line), "standard" (genealogy, divinity math, domains with native terms, powers, items held, epithets with translations, typed relations, citations), "dossier" (standard + inherited powers, cross-tradition equivalents, lifecycle, cult places, death — the one-call answer for "tell me about X"), "full" (everything: iconography, cult records with attestations, multi-script names, variants/competing claims, associations, per-claim citations, and source_record with unabridged cited accounts and explicit name targets). Unknown ids return closest-match suggestions.',
       inputSchema: { id: z.union([z.string(), z.array(z.string()).max(20)]), view: z.enum(['card', 'standard', 'dossier', 'full']).optional() } },
     async ({ id, view }) => txt(corpus.getFigure(id, { view: view || 'standard' })));
 
