@@ -1,0 +1,1373 @@
+{
+  "buddhist_sakra": [
+    {
+      "id": "weapon-evidence",
+      "path": [
+        "faculties",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "wield-vajra-thunderbolt",
+        "name": "Hurl the thunderbolt against the asuras",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "inheritability": "none",
+        "notes": "Leads the devas in war on the asuras.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Dhajagga-sutta (SN 11.3)"
+          }
+        ],
+        "scopeTags": [
+          "weather"
+        ]
+      },
+      "value": {
+        "id": "wield-vajra-thunderbolt",
+        "name": "Bear a thunderbolt weapon",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "inheritability": "none",
+        "notes": "The dictionary names vajirāvudha as his weapon. This does not establish weather control.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "scopeTags": []
+      },
+      "reason": "SN 11.3 concerns standards; replace the misattributed assertion with the dictionary’s weapon notice.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "office-bearer",
+      "path": [
+        "faculties",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "rule-tavatimsa",
+        "name": "Rule the Heaven of the Thirty-Three gods",
+        "term": {
+          "value": "त्रायस्त्रिंश",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "trāyastriṃśa"
+        },
+        "inheritability": "none",
+        "notes": "Sakka succeeds another deity who becomes the new Sakka.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Sakka-saṃyutta (SN 11)"
+          }
+        ],
+        "scopeTags": [
+          "kingship"
+        ]
+      },
+      "value": {
+        "id": "rule-tavatimsa",
+        "name": "Rule the Heaven of the Thirty-Three gods",
+        "term": {
+          "value": "त्रायस्त्रिंश",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "trāyastriṃśa"
+        },
+        "inheritability": "none",
+        "notes": "Sakka rules Tāvatimsa; the office is occupied across different births.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "scopeTags": [
+          "kingship"
+        ]
+      },
+      "reason": "An office held across births should not be expressed as one uninterrupted biography.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "protector-context",
+      "path": [
+        "faculties",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "protect-the-dharma",
+        "name": "Guard the Buddha and protect the Dharma",
+        "term": {
+          "value": "धर्मपाल",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "dharmapāla"
+        },
+        "inheritability": "none",
+        "notes": "Aids the Buddha; venerated as a Bodhisattva.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Pali Canon, Sakka-saṃyutta (SN 11)"
+          }
+        ],
+        "scopeTags": [
+          "protection"
+        ]
+      },
+      "value": {
+        "id": "protect-the-dharma",
+        "name": "Guard the Buddha and protect the Dharma",
+        "term": {
+          "value": "धर्मपाल",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "dharmapāla"
+        },
+        "inheritability": "none",
+        "notes": "Taishakuten is portrayed as a protector of Buddhism.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "JAANUS, s.v. Taishakuten, iconography at Tōji",
+            "url": "https://www.aisf.or.jp/~jaanus/deta/t/taishakuten.htm"
+          }
+        ],
+        "scopeTags": [
+          "protection"
+        ]
+      },
+      "reason": "Japanese Buddhist protector iconography does not establish that the Pali Sakka is a Bodhisattva.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "JAANUS, s.v. Taishakuten, iconography at Tōji",
+          "url": "https://www.aisf.or.jp/~jaanus/deta/t/taishakuten.htm"
+        }
+      ]
+    },
+    {
+      "id": "weapon-no-identity",
+      "path": [
+        "materialCulture",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "sakra-vajra",
+        "name": "Vajra (thunderbolt)",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "notes": "Sakka's thunderbolt weapon, basis of his identification with Vajrapāṇi.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Buddhaghosa commentarial tradition"
+          }
+        ]
+      },
+      "value": {
+        "id": "sakra-vajra",
+        "name": "Vajra (thunderbolt)",
+        "term": {
+          "value": "वज्र",
+          "script": "Sanskrit (Devanāgarī)",
+          "rom": "vajra"
+        },
+        "notes": "The dictionary lists a thunderbolt weapon; no identity with Vajrapāṇi is asserted here.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ]
+      },
+      "reason": "Possession of a weapon does not establish identity with another figure.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "context-hindu_indra",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sakkapañha Sutta, Dīgha Nikāya 21; Saṃyutta Nikāya 11 (Sakkasaṃyutta)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sakka' (1937)"
+          }
+        ],
+        "notes": "Canon keeps the name Śakra/Sakka and the deva-kingship on Sumeru but moralizes him: the soma-drinking storm-killer becomes a virtuous, mortal stream-enterer who reveres the Buddha."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "notes": "Related divine conceptions with shared epithets; independent Buddhist and Hindu narratives."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "context-korean_hwanin",
+      "path": [
+        "relations",
+        5
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "korean_hwanin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk Yusa I (1281), Tangun myth: Hwanin glossed 謂帝釋也 ('that is, Śakra/Jeseok')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James H. Grayson, Korea: A Religious History (2002)"
+          }
+        ],
+        "notes": "Reciprocal of korean_hwanin.equated-with — The monk Iryeon explicitly glosses the heavenly ruler Hwanin as Jeseok (Śakra), Buddhicizing the foundation myth; the native figure keeps supreme-sky sovereignty that exceeds Śakra's limited deva-kingship."
+      },
+      "value": {
+        "kind": "identified-in-text",
+        "personId": "korean_hwanin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The Samguk yusa explicitly glosses Hwanin as Śakra."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "context-chinese_jade_emperor",
+      "path": [
+        "relations",
+        4
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "chinese_jade_emperor",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henri Maspero, Taoism and Chinese Religion (trans. Kierman, 1981), 'The Mythology of Modern China' — Buddhists identify the Jade Emperor with Indra/Dìshì (帝釋)"
+          }
+        ],
+        "notes": "Reciprocal of chinese_jade_emperor.equated-with — Chinese Buddhists read the folk-Daoist supreme Yuhuang as Śakra (Dìshì) ruling Trāyastriṃśa, fitting him under the Buddhas; Daoist theology rejects the demotion — the equation lives in popular religion only."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "chinese_jade_emperor",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+            "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+          }
+        ],
+        "notes": "Legacy identification awaits verification of its cited Maspero passage. The reviewed Jade Emperor scripture supplies an independent manifestation account."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+          "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+        }
+      ]
+    },
+    {
+      "id": "burmese-regional-counterpart",
+      "path": [
+        "relations",
+        3
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Hmannan Yazawin (Glass Palace Chronicle, 1829), where Thagyamin/Sakka intervenes in royal history"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967)"
+          }
+        ],
+        "notes": "Reciprocal of burmese_thagyamin.equated-with — Thagyamin is Sakka (name < Śakra) set by Burmese kings at the head of the 37 nats — a Buddhist deva domesticating the indigenous spirit pantheon; he keeps Sakka's moral oversight and New Year descent."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "Burmese Indra–Sakka–Thagyamin in the Shwezigon account; regional adaptation does not transfer family or attributes."
+      },
+      "reason": "Qualify both endpoints consistently with the reviewed Burmese evidence.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    }
+  ],
+  "hindu_indra": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Sakkapañha Sutta, Dīgha Nikāya 21; Saṃyutta Nikāya 11 (Sakkasaṃyutta)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sakka' (1937)"
+          }
+        ],
+        "notes": "Reciprocal of buddhist_sakra.equated-with — Canon keeps the name Śakra/Sakka and the deva-kingship on Sumeru but moralizes him: the soma-drinking storm-killer becomes a virtuous, mortal stream-enterer who reveres the Buddha."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+            "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+          }
+        ],
+        "notes": "Related divine conceptions; the Buddhist family is not the Hindu genealogy."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "G. P. Malalasekera, Dictionary of Pāli Proper Names, s.v. Sakka, sections on family, epithets, office and Indra",
+          "url": "https://www.palikanon.com/english/pali_names/sa/sakka.htm"
+        }
+      ]
+    },
+    {
+      "id": "burmese-regional-counterpart",
+      "path": [
+        "relations",
+        3
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "interpretatio",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967); H.L. Shorto, 'The 32 Myos in the Medieval Mon Kingdom', BSOAS 26 (1963) on Indra in Mon-Burmese kingship"
+          }
+        ],
+        "notes": "Reciprocal of burmese_thagyamin.interpretatio — Via Sakka the figure descends from Indra, and court Brahmans kept Indra's consecration symbolism; but the Burmese king of the nats has none of Indra's vajra-wielding storm function — sovereignty without weather."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "burmese_thagyamin",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "Burmese Indra–Sakka–Thagyamin in the Shwezigon account; regional adaptation does not transfer family or attributes."
+      },
+      "reason": "Qualify both endpoints consistently with the reviewed Burmese evidence.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        4
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_indr",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+          }
+        ],
+        "notes": "Reciprocal of kalash_indr.equated-with — A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "value": {
+        "personId": "kalash_indr",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
+    }
+  ],
+  "korean_hwanin": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk Yusa I (1281), Tangun myth: Hwanin glossed 謂帝釋也 ('that is, Śakra/Jeseok')"
+          },
+          {
+            "kind": "secondary",
+            "reference": "James H. Grayson, Korea: A Religious History (2002)"
+          }
+        ],
+        "notes": "The monk Iryeon explicitly glosses the heavenly ruler Hwanin as Jeseok (Śakra), Buddhicizing the foundation myth; the native figure keeps supreme-sky sovereignty that exceeds Śakra's limited deva-kingship."
+      },
+      "value": {
+        "kind": "identified-in-text",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Identification in Iryeon’s gloss; the foundation genealogy remains its own narrative."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "contextual-divine-titles",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Hwanin",
+        "alt": [
+          "Hanullim",
+          "Sangje"
+        ],
+        "transliterations": {
+          "korean": "환인",
+          "hanja": "桓因"
+        }
+      },
+      "value": {
+        "primary": "Hwanin",
+        "alt": [],
+        "transliterations": {
+          "korean": "환인",
+          "hanja": "桓因"
+        }
+      },
+      "reason": "Retain unverified identifications as explicitly unresolved name entries instead of unqualified aliases.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Min Suc Kee, “Ha-na-nim: A Korean Divine Name Taken Over for the Israelite God,” The Bible Translator64/3 (2013), pp333–336",
+          "url": "https://translation.bible/wp-content/uploads/2024/07/kee-2013-ha-na-nim-a-korean-divine-name-taken-over-for-the-israelite-god.pdf"
+        }
+      ]
+    }
+  ],
+  "chinese_jade_emperor": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Henri Maspero, Taoism and Chinese Religion (trans. Kierman, 1981), 'The Mythology of Modern China' — Buddhists identify the Jade Emperor with Indra/Dìshì (帝釋)"
+          }
+        ],
+        "notes": "Chinese Buddhists read the folk-Daoist supreme Yuhuang as Śakra (Dìshì) ruling Trāyastriṃśa, fitting him under the Buddhas; Daoist theology rejects the demotion — the equation lives in popular religion only."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+            "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+          }
+        ],
+        "notes": "The legacy equation is not established by the reviewed scripture; its Maspero passage remains unverified."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Gaoshang Yuhuang benxing jijing, upper scroll, Qingwei tiangong shentong pin 1, Jingde and Baoyueguang narrative",
+          "url": "https://zh.wikisource.org/wiki/高上玉皇本行集經"
+        }
+      ]
+    }
+  ],
+  "mongol_qormusta": [
+    {
+      "id": "context-buddhist_sakra",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "syncretism",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walther Heissig, The Religions of Mongolia (1980): Qormusta renders Indra/Śakra in Mongolian Buddhist translation literature"
+          }
+        ],
+        "notes": "Mongolian Buddhist translators used Qormusta Tengri for Śakra, king of the gods on Sumeru, fusing the Iranian-derived sky-chief with the deva-king; his headship of the 99 tngri exceeds Śakra's station."
+      },
+      "value": {
+        "kind": "comparative-identification",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Walther Heissig, The Religions of Mongolia (1980), pp. 49–50",
+            "url": "https://archive.org/stream/bub_gb_OzDMbpw7EecC/bub_gb_OzDMbpw7EecC_djvu.txt"
+          }
+        ],
+        "notes": "Heissig discusses possible Indra influence alongside Iranian derivation and an Esrua/Brahma equation."
+      },
+      "reason": "Replace unconditional equivalence with the source-bounded relationship status.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Walther Heissig, The Religions of Mongolia (1980), pp. 49–50",
+          "url": "https://archive.org/stream/bub_gb_OzDMbpw7EecC/bub_gb_OzDMbpw7EecC_djvu.txt"
+        }
+      ]
+    }
+  ],
+  "korean_hwanung": [
+    {
+      "id": "unnamed-seals",
+      "path": [
+        "lifecycle",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "deity",
+        "startEvent": "descent-to-Mt-Taebaek-with-three-heavenly-seals",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Asked his father Hwanin permission to descend to earth and live among humans; granted permission with three heavenly seals (bell, mirror, sword) and 3,000 followers. Descended to Mt. Taebaek (or Mt. Baekdu) and established the sinsi (\"divine city\") at the sandalwood tree (Sindansu)."
+      },
+      "value": {
+        "typeStatus": "deity",
+        "startEvent": "descent-to-Mt-Taebaek-with-three-heavenly-seals",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Hwanung descends with three thousand followers and three heavenly seals to the sacred tree on Mount Taebaek."
+      },
+      "reason": "The chronicle does not identify the three seals as bell, mirror and sword.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-seals-image",
+      "path": [
+        "iconography",
+        "attributes",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "id": "three-heavenly-seals",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Bell (jong), mirror (geong), and sword (geom) — granted by Hwanin as the regalia of divine kingship. Compare Japanese imperial regalia (mirror-sword-jewel): a shared East Asian sacral-kingship motif."
+      },
+      "value": {
+        "id": "three-heavenly-seals",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "Three heavenly seals granted by Hwanin; their individual forms are not specified in the chronicle."
+      },
+      "reason": "Remove the unsupported list and comparison with Japanese regalia.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "korean_ungnyeo": [
+    {
+      "id": "transformation-duration",
+      "path": [
+        "lifecycle",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "mortal",
+        "startEvent": "transformation-from-bear-into-woman",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1"
+          }
+        ],
+        "notes": "Originally a bear (one of two — bear and tiger — that came to Hwanung praying to be made human). Endured 100 days in a cave avoiding sunlight, eating only mugwort and garlic; the tiger gave up; the bear succeeded and was transformed into a beautiful woman, named Ungnyeo (\"Bear-Woman\")."
+      },
+      "value": {
+        "typeStatus": "mortal",
+        "startEvent": "transformation-from-bear-into-woman",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The bear becomes a woman after twenty-one days; the prescribed period without sunlight had been one hundred days."
+      },
+      "reason": "The fulfilled transformation and prescribed trial have different durations in the primary text.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "korean_tangun": [
+    {
+      "id": "reign-and-age",
+      "path": [
+        "lifecycle",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "typeStatus": "demigod",
+        "startEvent": "long-reign-of-1908-years-traditional",
+        "era": "gojoseon",
+        "eraOrdering": 2,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Samguk Yusa Book 1 (1,908-year reign per the literary tradition; the Methuselah-syndrome literary inflation of foundational mythological figures)"
+          }
+        ],
+        "notes": "Reign of 1,908 years per the Samguk Yusa — the literary inflation of foundational mythological figures (Methuselah-syndrome trope). The actual historical Gojoseon polity is dated archaeologically to a much later period (c. 7th-4th c. BCE for the bronze daggers of the Liaodong-Korean-peninsula bronze culture)."
+      },
+      "value": {
+        "typeStatus": "demigod",
+        "startEvent": "reign-of-fifteen-hundred-years",
+        "era": "gojoseon",
+        "eraOrdering": 2,
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+            "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+          }
+        ],
+        "notes": "The narrative gives a reign of fifteen hundred years and separately an age of 1,908 when Tangun becomes the mountain god of Asadal."
+      },
+      "reason": "The legacy statement conflates the reign and age and adds an unsupported interpretive trope.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Iryeon, Samguk yusa, book 1, Gojoseon entry",
+          "url": "https://zh.wikisource.org/wiki/三國遺事/卷第一"
+        }
+      ]
+    }
+  ],
+  "burmese_thagyamin": [
+    {
+      "id": "sourced-primary-name",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "King of the Nats",
+        "alt": [
+          "Thagyamin",
+          "Sakka",
+          "Indra"
+        ],
+        "transliterations": {
+          "burmese": "သိကြားမင်း",
+          "rom": "Thagya Min"
+        }
+      },
+      "value": {
+        "primary": "Thagyamin",
+        "alt": [
+          "King of the Nats",
+          "Thagya Min",
+          "Sakka",
+          "Indra"
+        ],
+        "transliterations": {
+          "burmese": "သိကြားမင်း",
+          "rom": "Thagya Min"
+        }
+      },
+      "reason": "Use the attested personal designation, retaining the English office as an alias.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "factual-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Deity (the indigenised heaven-king who heads the indigenous nat pantheon). English title leads; native Thagyamin (သိကြားမင်း) in alt/transliterations. Though derived from Indra, he is included here as the apex of the indigenous Thirty-Seven Nats layer.",
+      "value": "Burmese Buddhist heaven-king appointed head of the thirty-seven selected nats. A wooden image from the Pagan period occupies an eastern chamber of the nat shrine at Shwezigon.",
+      "reason": "Replace editorial ingestion commentary with a sourced description.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "regional-identification-0",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Hmannan Yazawin (Glass Palace Chronicle, 1829), where Thagyamin/Sakka intervenes in royal history"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967)"
+          }
+        ],
+        "notes": "Thagyamin is Sakka (name < Śakra) set by Burmese kings at the head of the 37 nats — a Buddhist deva domesticating the indigenous spirit pantheon; he keeps Sakka's moral oversight and New Year descent."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "buddhist_sakra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "NIU names the deity Indra–Sakka–Thagyamin in its account of the Burmese nat pantheon. This identification does not transfer another tradition’s genealogy."
+      },
+      "reason": "Qualify the regional adaptation and remove unsupported claims about weather powers.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    },
+    {
+      "id": "regional-identification-1",
+      "path": [
+        "relations",
+        1
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "interpretatio",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Melford Spiro, Burmese Supernaturalism (1967); H.L. Shorto, 'The 32 Myos in the Medieval Mon Kingdom', BSOAS 26 (1963) on Indra in Mon-Burmese kingship"
+          }
+        ],
+        "notes": "Via Sakka the figure descends from Indra, and court Brahmans kept Indra's consecration symbolism; but the Burmese king of the nats has none of Indra's vajra-wielding storm function — sovereignty without weather."
+      },
+      "value": {
+        "kind": "buddhist-adaptation",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+            "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+          }
+        ],
+        "notes": "NIU names the deity Indra–Sakka–Thagyamin in its account of the Burmese nat pantheon. This identification does not transfer another tradition’s genealogy."
+      },
+      "reason": "Qualify the regional adaptation and remove unsupported claims about weather powers.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Northern Illinois University, The Pagan Period, Shwezigon stupa and nat shrine",
+          "url": "https://seasite.niu.edu/burmese/Cooler/Chapter_3/Part2/pagan_period_2.htm"
+        }
+      ]
+    }
+  ],
+  "hindu_devayani": [
+    {
+      "id": "factual-parentage-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "The relationship between Devayani and Sharmishtha — the brahmin's daughter and the princess who becomes her servant — is one of the sharpest treatments of caste and humiliation in the epic literature, and this record does not narrate it, because the treatment consulted gives the marriage, the complaint and the son. No edge is drawn between the two women: the sources consulted make them co-wives and the earlier part of their story is not in hand, and 'rival' would be an interpretation rather than a citation.",
+      "value": "Daughter of Śukra and Jayantī in the Purāṇa Index account.",
+      "reason": "Replace editorial commentary with the cited family account.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Purāṇa Index, Jayantī 1c, citing Brahmāṇḍa III.72.150,156; III.73.3 and Matsya 47.114–188",
+          "url": "https://www.wisdomlib.org/definition/jayanti"
+        }
+      ]
+    }
+  ],
+  "zoroastrian_indra_daeva": [
+    {
+      "id": "factual-iranian-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "The id is `zoroastrian_indra_daeva` and not `zoroastrian_indra`, and the primary name carries the qualifier, because the corpus already holds `hindu_indra` and a bare match would be read as the same figure. IT IS NOT THE SAME FIGURE, and the census records the sweep hit as a FALSE one. What is true, and is worth having in a registry that indexes traditions side by side, is that this name is a god on one side of the Indo-Iranian religious split and a demon on the other — together with Saurva and Nanghaithya, which makes three of the six arch-daevas Vedic gods in origin. That inversion is a fact about the two traditions, not a relation between two individuals, so it is stated here and no cross-tradition edge is drawn.",
+      "value": "Daeva expelled in Vīdēvdād 10.9. Middle Persian accounts portray Indar as diverting people from proper worship.",
+      "reason": "Replace editorial ingestion commentary with passage-specific claims.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "William W. Malandra, “Indra,” Encyclopaedia Iranica XIII/1 (2004), pp.103–105, Iranian tradition and concluding paragraphs",
+          "url": "https://www.iranicaonline.org/articles/indra/"
+        }
+      ]
+    }
+  ],
+  "kalash_dezau": [
+    {
+      "id": "separate-birth-goddess",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Creator Sky-God",
+        "alt": [
+          "Dezau",
+          "Dezalik",
+          "Khodai"
+        ],
+        "transliterations": {
+          "kalasha-rom": "ḍezáw"
+        }
+      },
+      "value": {
+        "primary": "Dezau",
+        "alt": [
+          "Dezau",
+          "Khodai"
+        ],
+        "transliterations": {
+          "kalasha-rom": "ḍezáw"
+        }
+      },
+      "reason": "Separate the sister from the creator’s aliases.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "remove-misdirected-equation",
+      "path": [
+        "relations"
+      ],
+      "op": "replace",
+      "expected": [
+        {
+          "kind": "equated-with",
+          "personId": "nuristani_disani",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+            }
+          ],
+          "notes": "Reciprocal of nuristani_disani.equated-with — Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+        },
+        {
+          "personId": "kalash_dezalik",
+          "kind": "sibling",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+              "url": "https://d-nb.info/1220734829/34"
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "value": [
+        {
+          "personId": "kalash_dezalik",
+          "kind": "sibling",
+          "sources": [
+            {
+              "kind": "secondary",
+              "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+              "url": "https://d-nb.info/1220734829/34"
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "reason": "The old target was justified through a different figure’s alias.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "factual-creator-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra.",
+      "value": "Kalash creator deity; Dezalik is his sister.",
+      "reason": "Replace the conflated description.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "kalash_indr": [
+    {
+      "id": "separate-middle-earth-bearer",
+      "path": [
+        "name"
+      ],
+      "op": "replace",
+      "expected": {
+        "primary": "Indr the Storm-Lord",
+        "alt": [
+          "Indr",
+          "Warin",
+          "Warén",
+          "Munjem Malik"
+        ],
+        "transliterations": {
+          "kalasha-rom": "índr / warín"
+        }
+      },
+      "value": {
+        "primary": "Indr",
+        "alt": [
+          "Indr",
+          "Warin",
+          "Warén"
+        ],
+        "transliterations": {
+          "kalasha-rom": "índr / warín"
+        }
+      },
+      "reason": "Keep the separately described figure as an explicit target.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "factual-regional-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect.",
+      "value": "Kalash deity compared with Vedic Indra; associated with thunder and the rainbow.",
+      "reason": "Replace an unqualified historical assertion.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    },
+    {
+      "id": "qualified-vedic-comparison",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "hindu_indra",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents' (2004); Karl Jettmar, Die Religionen des Hindukusch (1975)"
+          }
+        ],
+        "notes": "A cognate survival, not a borrowing: Kalasha Índr/Warín continues the Indo-Aryan storm-and-rain god (rainbow = 'Indra's bow'). The soma cult and deva-kingship are gone; he persists as weather-lord."
+      },
+      "value": {
+        "personId": "hindu_indra",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Comparative interpretation across changing regional traditions."
+      },
+      "reason": "Do not turn comparative reconstruction into literal identity.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "nuristani_disani": [
+    {
+      "id": "redirect-qualified-birth-goddess-comparison",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_dezau",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Georg Morgenstierne on Prasun Dízane and Kalasha Dezalik"
+          }
+        ],
+        "notes": "Nuristani Disani/Dizane is cognate with Kalasha Dezalik (filed under the Dezau entry's alts): the birth/fertility goddess of both valleys. Dezau proper is the male creator; the match runs through Dezalik."
+      },
+      "value": {
+        "kind": "disputed-identification",
+        "personId": "kalash_dezalik",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "The comparison concerns Nirmali, a legacy alias whose merger needs separate verification."
+      },
+      "reason": "Dezau himself is not the childbirth goddess.",
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ]
+    }
+  ],
+  "kalash_mahandeo": [
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        0
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "nuristani_moni",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+          }
+        ],
+        "notes": "Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "value": {
+        "personId": "nuristani_moni",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
+    }
+  ],
+  "nuristani_moni": [
+    {
+      "id": "qualified-hindukush-comparison",
+      "path": [
+        "relations",
+        2
+      ],
+      "op": "replace",
+      "expected": {
+        "kind": "equated-with",
+        "personId": "kalash_mahandeo",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Karl Jettmar, Die Religionen des Hindukusch (1975); Peter Parkes, 'Temple of Imra, Temple of Mahandeu', BSOAS 54 (1991)"
+          }
+        ],
+        "notes": "Reciprocal of kalash_mahandeo.equated-with — Standard identification in Hindu Kush scholarship: Kalasha Mahandeo corresponds to Nuristani Mon/Mandi, the prophet-hero and mediator between gods and men; the Kalash side adds crop and war patronage."
+      },
+      "value": {
+        "personId": "kalash_mahandeo",
+        "kind": "comparative-identification",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+            "url": "https://d-nb.info/1220734829/34"
+          }
+        ],
+        "notes": "Regional comparison; biographies remain distinct."
+      },
+      "sources": [
+        {
+          "kind": "secondary",
+          "reference": "Michael Witzel, Kalash Religion, extract from The Ṛgvedic Religious System (2004), §§1.5.1–1.5.3, pp.3–8 and n.4",
+          "url": "https://d-nb.info/1220734829/34"
+        }
+      ],
+      "reason": "Qualify the existing equation using the reviewed regional comparison."
+    }
+  ],
+  "hindu_tara": [
+    {
+      "id": "factual-tara-description",
+      "path": [
+        "notes"
+      ],
+      "op": "replace",
+      "expected": "Her abduction causes the Tarakamaya war, in which the gods and the asuras take opposite sides over a marriage — the one Hindu war that is neither a dynastic quarrel nor a demon-slaying. The record does not narrate it, because the treatment consulted gives the abduction, the return, the birth and the paternity dispute and not the war. She is also the figure lane 16 named as the type case: the corpus held the god and not the household, and Soma stood in it with no wife.",
+      "value": "Wife of Bṛhaspati and mother of Budha. In the Bhāgavata Purāṇa, Soma abducts her; she later identifies him as Budha’s father.",
+      "reason": "Replace editorial ingestion prose with a cited narrative.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Bhāgavata Purāṇa 9.14.4,11,13, Sanskrit and translation",
+          "url": "https://vedabase.io/en/library/sb/9/14/"
+        }
+      ]
+    }
+  ]
+}
