@@ -263,11 +263,16 @@ function LifecycleTimeline({ lc, tradition }) {
   // fallback (no container div) must still attach the observer when a later
   // scaled-mode entry mounts the container — Detail doesn't remount per entry.
   __lcEff(() => {
-    if (!containerRef.current) return;
-    const update = () => setWidth(containerRef.current.getBoundingClientRect().width);
+    const container = containerRef.current;
+    if (!container) return;
+    const update = () => {
+      // A queued delivery can outlive this container during navigation.
+      if (containerRef.current !== container) return;
+      setWidth(container.getBoundingClientRect().width);
+    };
     update();
     const ro = new ResizeObserver(update);
-    ro.observe(containerRef.current);
+    ro.observe(container);
     return () => ro.disconnect();
   }, [plot.mode]);
 
