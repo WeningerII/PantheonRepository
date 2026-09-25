@@ -1,0 +1,326 @@
+Ptolemaic founding family pilot, 2026-09-25. Five source-reviewed records.
+Historical context relatives are mortal; divine honors and royal ancestry claims are separately cited.
+Relationships and selectable accounts are authored in the matching relationship supplement.
+This pilot does not claim full coverage of the dynasty, its unions, or its descendants.
+
+```json
+[
+  {
+    "id": "greek_lagus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Lagus",
+      "alt": [
+        "Lagos",
+        "Lagus, father of Ptolemy I"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Conventional paternity of Ptolemy I and marriage to Arsinoe.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 1.1.1",
+            "url": "https://www.theoi.com/Text/Pausanias1A.html"
+          },
+          {
+            "kind": "primary",
+            "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+            "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+          },
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 1.6.2",
+            "url": "https://www.theoi.com/Text/Pausanias1A.html"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Menelaus is attested as son of Lagus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Macedonian husband of Arsinoe and conventional father of Ptolemy I. The alternative Philip II paternity report concerns Ptolemy, not Menelaus, who is attested as a son of Lagus."
+  },
+  {
+    "id": "greek_arsinoe_mother_ptolemy",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Arsinoe, mother of Ptolemy I",
+      "alt": [
+        "Arsinoe of Macedon",
+        "Arsinoe, wife of Lagus"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Arsinoe is mother of Ptolemy Soter and daughter of Meleager in the transmitted dynastic pedigree.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+            "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Maternity of Menelaus is inferred from the known marriage, not directly attested.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Mother of Ptolemy I and wife of Lagus. Satyrus names Meleager as her father in a dynastic pedigree; this claimed ancestry is kept distinct from independently established historical parentage. Her proposed maternity of Menelaus is an inference."
+  },
+  {
+    "id": "greek_meleager_father_arsinoe",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Meleager, father of Arsinoe",
+      "alt": [
+        "Meleagros, father of Arsinoe"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Named father of Arsinoe in the dynastic pedigree.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+            "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Named as the father of Arsinoe in the dynastic genealogy attributed to Satyrus and preserved by Theophilus. This genealogy is a royal ancestry claim; it does not independently establish each historical generation. Distinct from the Calydonian hero and the later Macedonian king of the same name."
+  },
+  {
+    "id": "greek_menelaus_son_lagus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Menelaus, son of Lagus",
+      "alt": [
+        "Menelaos, son of Lagus",
+        "Menelaus of Salamis"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Brother of Ptolemy and commander defeated in Cyprus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Plutarch, Demetrius 15.2 and 16.1-4",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html#15"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Lagus is the father; Arsinoe as mother is a modern inference.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Brother of Ptolemy I and commander in Cyprus, defeated at Salamis in 306 BCE. Lagus is his attested father. Arsinoe is a proposed mother, not an explicitly named mother in the surviving evidence."
+  },
+  {
+    "id": "greek_ptolemy_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Ptolemy I Soter",
+      "alt": [
+        "Ptolemaios I Soter",
+        "Ptolemy son of Lagus",
+        "Ptolemy Lagides"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "apotheosed",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Royal career, chronology and disputed paternity.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Pausanias, Description of Greece 1.6.2",
+            "url": "https://www.theoi.com/Text/Pausanias1A.html"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 1-4 and 7-11",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "Named parents in the transmitted dynastic pedigree.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+            "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Posthumous divine honor and claimed Heraclean descent.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Theocritus, Idyll 17.13-33",
+            "url": "https://www.theoi.com/Text/TheocritusIdylls3.html#17"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Egyptian throne name invokes Re and Amun.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Founder of the Ptolemaic kingdom in Egypt. Conventionally the son of Lagus and Arsinoe; Pausanias also reports a claim that Philip II was his father. Greek poetry presents his deification and Heraclean descent. His Egyptian titulary invokes Re and Amun as royal patrons, not as his biological parents.",
+    "epithets": [
+      {
+        "original": "stp-n-Ra mrj-Jmn",
+        "language": "Egyptian",
+        "translation": "Chosen by Re, beloved of Amun",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+          }
+        ],
+        "notes": "Egyptian royal throne name; it expresses divine favor rather than biological parentage."
+      }
+    ],
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "kingship-in-egypt",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 1-4 and 7-11",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+          }
+        ],
+        "notes": "Assumed kingship in 305/304 BCE; the precise chronology is debated."
+      },
+      {
+        "typeStatus": "deity",
+        "vitalStatus": "apotheosed",
+        "era": "hellenistic",
+        "eraOrdering": 1,
+        "startEvent": "posthumous-divine-honors",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Theocritus, Idyll 17.13-33",
+            "url": "https://www.theoi.com/Text/TheocritusIdylls3.html#17"
+          }
+        ],
+        "notes": "Theocritus places the deceased ruler among the immortals. This is a cult and poetic status, distinct from his recorded human parents."
+      }
+    ]
+  }
+]
+```
