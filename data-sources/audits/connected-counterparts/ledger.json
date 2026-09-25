@@ -8164,6 +8164,20 @@
       }
      ],
      "status": "registered-target"
+    },
+    {
+     "subject": "egyptian_amun",
+     "kind": "royal-patron-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "notes": "The Egyptian throne name calls the ruler beloved of Amun. This is royal favor, not a father-child relationship.",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -18670,6 +18684,20 @@
       }
      ],
      "notes": "Reciprocal of greek_hesiod_helios.interpretatio — Greeks named Ra's city Heliopolis, reading the supreme solar creator as Helios. Preserves the all-seeing solar journey (Ra's barque ~ Helios's chariot); breaks on Ra's creator-kingship, far above Helios's rank.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "egyptian_ra",
+     "kind": "royal-patron-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "notes": "The Egyptian throne name calls the ruler chosen by Re. This is royal election, not biological descent.",
      "status": "registered-target"
     }
    ],
@@ -38840,6 +38868,20 @@
     },
     {
      "subject": "greek_apollod_heracles",
+     "kind": "ancestor-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Theocritus, Idyll 17.13-33",
+       "url": "https://www.theoi.com/Text/TheocritusIdylls3.html#17"
+      }
+     ],
+     "notes": "Theocritus presents Heracles as an ancestor of Ptolemy. This is a distant descent claim, not direct parenthood.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_apollod_heracles",
      "kind": "counterpart-name",
      "personId": "etruscan_hercle",
      "status": "registered-target"
@@ -55299,6 +55341,225 @@
    "parentageAccounts": []
   },
   {
+   "id": "greek_arsinoe_mother_ptolemy",
+   "tradition": "Greek",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Arsinoe, mother of Ptolemy I",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Arsinoe of Macedon",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Arsinoe, wife of Lagus",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 3
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 2
+    }
+   },
+   "relations": [
+    {
+     "subject": "greek_arsinoe_mother_ptolemy",
+     "kind": "spouse",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "notes": "Marriage of Lagus and Arsinoe.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_arsinoe_mother_ptolemy",
+     "kind": "mother-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Mother of Ptolemy Soter.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_arsinoe_mother_ptolemy",
+     "kind": "father (dynastic pedigree)",
+     "personId": "greek_meleager_father_arsinoe",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Satyrus names Meleager as her father in a royal ancestry claim; select that account to display this genealogy.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_arsinoe_mother_ptolemy",
+     "kind": "proposed-son",
+     "personId": "greek_menelaus_son_lagus",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "notes": "The maternity is a modern reconstruction, not an explicit ancient statement.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_arsinoe_mother_ptolemy",
+     "kind": "father",
+     "personId": "greek_meleager_father_arsinoe",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "accountId": "satyrus-dynastic-pedigree",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Arsinoe is mother of Ptolemy Soter and daughter of Meleager in the transmitted dynastic pedigree.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "weight": "primary"
+    },
+    {
+     "claim": "Maternity of Menelaus is inferred from the known marriage, not directly attested.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "satyrus-dynastic-pedigree",
+     "label": "Meleager — Satyrus dynastic pedigree",
+     "parents": [
+      {
+       "kind": "father",
+       "personId": "greek_meleager_father_arsinoe",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+         "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "description": "A claimed royal pedigree preserved by Theophilus. The source transmission contains problems elsewhere; this account records the named immediate relationship without reconstructing missing generations."
+    }
+   ]
+  },
+  {
    "id": "greek_asclepius",
    "tradition": "Greek",
    "names": [
@@ -71681,6 +71942,20 @@
      ],
      "notes": "Hesychius glosses Dusares as the Nabataeans' Dionysus; wine-god reading fits Nabataean viticulture. Breaks on Dushara's aniconic betyl cult and supreme dynastic role, which Greeks elsewhere read as Zeus.",
      "status": "registered-target"
+    },
+    {
+     "subject": "greek_hesiod_dionysus",
+     "kind": "ancestor-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "The Satyrus pedigree traces the dynasty to Dionysus. The intermediate chain is not reconstructed as historical parentage here.",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -86136,6 +86411,186 @@
    "parentageAccounts": []
   },
   {
+   "id": "greek_lagus",
+   "tradition": "Greek",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Lagus",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Lagos",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Lagus, father of Ptolemy I",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 3
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 2
+    }
+   },
+   "relations": [
+    {
+     "subject": "greek_lagus",
+     "kind": "spouse",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "notes": "Marriage of Lagus and Arsinoe.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_lagus",
+     "kind": "father-of",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.1.1",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Conventional Lagid parentage.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_lagus",
+     "kind": "father-of",
+     "personId": "greek_menelaus_son_lagus",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "notes": "Attested patronymic.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Conventional paternity of Ptolemy I and marriage to Arsinoe.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.1.1",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "weight": "primary"
+    },
+    {
+     "claim": "Menelaus is attested as son of Lagus.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "greek_laodamia_lycian",
    "tradition": "Greek",
    "names": [
@@ -87913,6 +88368,121 @@
    "parentageAccounts": []
   },
   {
+   "id": "greek_meleager_father_arsinoe",
+   "tradition": "Greek",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Meleager, father of Arsinoe",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Meleagros, father of Arsinoe",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 1
+    }
+   },
+   "relations": [
+    {
+     "subject": "greek_meleager_father_arsinoe",
+     "kind": "daughter (dynastic pedigree)",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Satyrus names Arsinoe as his daughter in the claimed pedigree.",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Named father of Arsinoe in the dynastic pedigree.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "weight": "primary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": []
+  },
+  {
    "id": "greek_melicertes",
    "tradition": "Greek",
    "names": [
@@ -88473,6 +89043,276 @@
    ],
    "variants": [],
    "parentageAccounts": []
+  },
+  {
+   "id": "greek_menelaus_son_lagus",
+   "tradition": "Greek",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Menelaus, son of Lagus",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Menelaos, son of Lagus",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Menelaus of Salamis",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 3
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 2
+    }
+   },
+   "relations": [
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "parent",
+     "personId": "greek_lagus",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "father",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "notes": "Attested patronymic; the proposed mother is kept in a separate account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "proposed-mother",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "notes": "Arsinoe is inferred as his mother because she is the known wife of Lagus; her maternity is not directly attested.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "sibling",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Plutarch, Demetrius 15.2 and 16.1-4",
+       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html#15"
+      }
+     ],
+     "notes": "The source calls Menelaus Ptolemy's brother without establishing their shared maternity.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "father",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "accountId": "attested-patronymic",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "father",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "accountId": "inferred-arsinoe-maternity",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_menelaus_son_lagus",
+     "kind": "mother",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "accountId": "inferred-arsinoe-maternity",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Brother of Ptolemy and commander defeated in Cyprus.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Plutarch, Demetrius 15.2 and 16.1-4",
+       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html#15"
+      }
+     ],
+     "weight": "primary"
+    },
+    {
+     "claim": "Lagus is the father; Arsinoe as mother is a modern inference.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "attested-patronymic",
+     "label": "Lagus — mother unnamed",
+     "parents": [
+      {
+       "kind": "father",
+       "personId": "greek_lagus",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+         "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "description": "The father is attested; the mother is not named in the surviving evidence reviewed here."
+    },
+    {
+     "id": "inferred-arsinoe-maternity",
+     "label": "Lagus and Arsinoe — inferred maternity",
+     "parents": [
+      {
+       "kind": "father",
+       "personId": "greek_lagus",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+         "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+        }
+       ]
+      },
+      {
+       "kind": "mother",
+       "personId": "greek_arsinoe_mother_ptolemy",
+       "sources": [
+        {
+         "kind": "secondary",
+         "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+         "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Menelaus, notes 1-3 (including P.Hib. I 84a and P.Eleph. 2)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/menelaus.htm"
+      }
+     ],
+     "description": "Bennett treats Arsinoe as probable because she is the only known wife of Lagus. This inference is not part of the default parentage."
+    }
+   ]
   },
   {
    "id": "greek_merope_messenia",
@@ -95432,6 +96272,20 @@
      ],
      "notes": "Heraclid descent through the Argead line — basis of the lion-headdress iconography on Argead coinage that Alexander continued.",
      "status": "registered-target"
+    },
+    {
+     "subject": "greek_philip_ii",
+     "kind": "reported-son",
+     "personId": "greek_ptolemy_i",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "notes": "Pausanias reports that some Macedonians considered Ptolemy a son of Philip; this is not the conventional Lagid account.",
+     "status": "registered-target"
     }
    ],
    "sources": [
@@ -98201,6 +99055,445 @@
    ],
    "variants": [],
    "parentageAccounts": []
+  },
+  {
+   "id": "greek_ptolemy_i",
+   "tradition": "Greek",
+   "names": [
+    {
+     "status": "awaiting-research",
+     "value": "Ptolemy I Soter",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Ptolemaios I Soter",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Ptolemy son of Lagus",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    },
+    {
+     "status": "awaiting-research",
+     "value": "Ptolemy Lagides",
+     "tradition": "Greek",
+     "form": "name-or-alias"
+    }
+   ],
+   "categories": {
+    "names": {
+     "status": "awaiting-research",
+     "present": 4
+    },
+    "scripts": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "tradition": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "description": {
+     "status": "awaiting-research",
+     "present": true
+    },
+    "parentage": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "partners": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "siblings": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "descendants": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "lifecycle": {
+     "status": "awaiting-research",
+     "present": 2
+    },
+    "domains": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "powers": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "objects": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "epithets": {
+     "status": "awaiting-research",
+     "present": 1
+    },
+    "iconography": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "cult": {
+     "status": "awaiting-research",
+     "present": 0
+    },
+    "sources": {
+     "status": "awaiting-research",
+     "present": 4
+    }
+   },
+   "relations": [
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "parent",
+     "personId": "greek_lagus",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "parent",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "father",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.1.1",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Conventional Lagid parentage; the Philip II report is a separate account.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "mother",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "Arsinoe is named as the mother of Ptolemy Soter.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "sibling",
+     "personId": "greek_menelaus_son_lagus",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Plutarch, Demetrius 15.2 and 16.1-4",
+       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html#15"
+      }
+     ],
+     "notes": "The source calls Menelaus Ptolemy's brother without establishing their shared maternity.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "reported-father",
+     "personId": "greek_philip_ii",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "notes": "Alternative paternity reported by Pausanias; excluded from the conventional parentage.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "descendant-of",
+     "personId": "greek_apollod_heracles",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Theocritus, Idyll 17.13-33",
+       "url": "https://www.theoi.com/Text/TheocritusIdylls3.html#17"
+      }
+     ],
+     "notes": "Theocritus presents Heracles as an ancestor of Ptolemy. This is a distant descent claim, not direct parenthood.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "descendant-of",
+     "personId": "greek_hesiod_dionysus",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "notes": "The Satyrus pedigree traces the dynasty to Dionysus. The intermediate chain is not reconstructed as historical parentage here.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "beloved-of",
+     "personId": "egyptian_amun",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "notes": "The Egyptian throne name calls the ruler beloved of Amun. This is royal favor, not a father-child relationship.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "chosen-by",
+     "personId": "egyptian_ra",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "notes": "The Egyptian throne name calls the ruler chosen by Re. This is royal election, not biological descent.",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "father",
+     "personId": "greek_lagus",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.1.1",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "accountId": "lagid-parentage",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "mother",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "accountId": "lagid-parentage",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "father",
+     "personId": "greek_philip_ii",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "accountId": "philip-paternity-report",
+     "status": "registered-target"
+    },
+    {
+     "subject": "greek_ptolemy_i",
+     "kind": "mother",
+     "personId": "greek_arsinoe_mother_ptolemy",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      }
+     ],
+     "accountId": "philip-paternity-report",
+     "status": "registered-target"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Royal career, chronology and disputed paternity.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 1-4 and 7-11",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "weight": "secondary"
+    },
+    {
+     "claim": "Named parents in the transmitted dynastic pedigree.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "weight": "primary"
+    },
+    {
+     "claim": "Posthumous divine honor and claimed Heraclean descent.",
+     "citations": [
+      {
+       "kind": "primary",
+       "reference": "Theocritus, Idyll 17.13-33",
+       "url": "https://www.theoi.com/Text/TheocritusIdylls3.html#17"
+      }
+     ],
+     "weight": "primary"
+    },
+    {
+     "claim": "Egyptian throne name invokes Re and Amun.",
+     "citations": [
+      {
+       "kind": "secondary",
+       "reference": "Chris Bennett, Egyptian Royal Genealogy, Ptolemy I, notes 12 and 15: Stele Vienna 153; Gauthier, Livre des Rois IV, p. 216 (V)",
+       "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_i.htm"
+      }
+     ],
+     "weight": "secondary"
+    }
+   ],
+   "variants": [],
+   "parentageAccounts": [
+    {
+     "id": "lagid-parentage",
+     "label": "Lagus and Arsinoe — conventional parentage",
+     "parents": [
+      {
+       "kind": "father",
+       "personId": "greek_lagus",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Pausanias, Description of Greece 1.1.1",
+         "url": "https://www.theoi.com/Text/Pausanias1A.html"
+        },
+        {
+         "kind": "primary",
+         "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+         "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+        }
+       ]
+      },
+      {
+       "kind": "mother",
+       "personId": "greek_arsinoe_mother_ptolemy",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+         "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.1.1",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "description": "The conventional named parents. This does not resolve the competing paternity report preserved by Pausanias."
+    },
+    {
+     "id": "philip-paternity-report",
+     "label": "Philip II and Arsinoe — reported alternative",
+     "parents": [
+      {
+       "kind": "father",
+       "personId": "greek_philip_ii",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Pausanias, Description of Greece 1.6.2",
+         "url": "https://www.theoi.com/Text/Pausanias1A.html"
+        }
+       ]
+      },
+      {
+       "kind": "mother",
+       "personId": "greek_arsinoe_mother_ptolemy",
+       "sources": [
+        {
+         "kind": "primary",
+         "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+         "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+        },
+        {
+         "kind": "primary",
+         "reference": "Pausanias, Description of Greece 1.6.2",
+         "url": "https://www.theoi.com/Text/Pausanias1A.html"
+        }
+       ]
+      }
+     ],
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pausanias, Description of Greece 1.6.2",
+       "url": "https://www.theoi.com/Text/Pausanias1A.html"
+      },
+      {
+       "kind": "primary",
+       "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
+       "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+      }
+     ],
+     "description": "Pausanias reports a Macedonian claim that Philip II fathered Ptolemy before Arsinoe married Lagus. This is a reported claim, not established biological paternity."
+    }
+   ]
   },
   {
    "id": "greek_pylades",
