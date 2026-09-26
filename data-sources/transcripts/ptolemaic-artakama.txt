@@ -1,0 +1,214 @@
+Artakama branch, source-reviewed 2026-09-26. Two distinct historical people.
+Achaemenid Persian identifies their historical setting, not an asserted religion.
+The shared era is a contextual band, not a personal lifespan.
+Cited relationships and name uncertainty are in the matching supplement.
+
+```json
+[
+  {
+    "id": "achaemenid_artakama",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Artakama",
+      "alt": [
+        "Artacama",
+        "Artakama, daughter of Artabazus",
+        "Apama (Plutarch’s name for Ptolemy’s bride)"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Achaemenid Persian",
+    "primaryTradition": "Achaemenid Persian",
+    "traditions": [
+      "Achaemenid Persian"
+    ],
+    "sex": "female",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "late-achaemenid-alexandrian"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Artabazus’s daughter married Ptolemy in the Susa wedding ceremony arranged by Alexander.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Plutarch calls Ptolemy’s bride Apama; modern interpretations differ on whether this is an alternative name or a confusion.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Plutarch, Eumenes 1.3 (Bernadotte Perrin translation)",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Eumenes*.html#1.3"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alireza Shapur Shahbazi, Apama, entry 2, Encyclopaedia Iranica II/2, p. 150",
+            "url": "https://www.iranicaonline.org/articles/apama-women-achaemenid-and-hellenisiic/"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "The Susa marriage is conventionally dated to 324 BCE; the mother and any repudiation are uncertain, and no children of this union are known.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Persian daughter of Artabazus II, married to Ptolemy at Susa in 324 BCE. Plutarch calls Ptolemy’s bride Apama; whether this was another name or a confusion is disputed. Her mother and later fate are uncertain. No children of this marriage are known.",
+    "associations": [
+      {
+        "kind": "marriage",
+        "placeName": "Susa",
+        "era": "late-achaemenid-alexandrian",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          }
+        ],
+        "notes": "The wedding is attested; its conventional date is 324 BCE. The ceremony does not establish a later divorce or residence in Egypt."
+      }
+    ]
+  },
+  {
+    "id": "achaemenid_artabazus_ii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Artabazus II",
+      "alt": [
+        "Artabazos II",
+        "Artabazus of Hellespontine Phrygia",
+        "Artabazos of Daskyleion"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Achaemenid Persian",
+    "primaryTradition": "Achaemenid Persian",
+    "traditions": [
+      "Achaemenid Persian"
+    ],
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "late-achaemenid-alexandrian"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Father of Artakama, the daughter married to Ptolemy at Susa.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Persian noble honored by Alexander, subsequently appointed to govern Bactria and later released from that office at his own request because of old age.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 3.23.7 (E. J. Chinnock translation)",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_III/Chapter_XXIII"
+          },
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 3.29.1 (E. J. Chinnock translation)",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_III/Chapter_XXIX"
+          },
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 4.17.3 (E. J. Chinnock translation)",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_IV/Chapter_XVII"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The fourth-century satrap of Hellespontine Phrygia is identified as son of Pharnabazus and Apame, distinct from the earlier Artabazus son of Pharnaces.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Muhammad A. Dandamayev, Artabazus, entry 2, Encyclopaedia Iranica II/6, pp. 650-651",
+            "url": "https://www.iranicaonline.org/articles/artabazus-gk/"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Fourth-century BCE Persian satrap of Hellespontine Phrygia and father of Artakama. After serving Darius III, he joined Alexander, who appointed him to Bactria; he later retired from that office on grounds of age. He is distinct from Artabazus I, the earlier commander and satrap.",
+    "relations": [
+      {
+        "kind": "father",
+        "externalRef": {
+          "name": "Pharnabazus II, satrap of Hellespontine Phrygia",
+          "tradition": "Achaemenid Persian"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Muhammad A. Dandamayev, Artabazus, entry 2, Encyclopaedia Iranica II/6, pp. 650-651",
+            "url": "https://www.iranicaonline.org/articles/artabazus-gk/"
+          }
+        ],
+        "notes": "Parentage reported in Dandamayev’s modern prosopographical account."
+      },
+      {
+        "kind": "mother",
+        "externalRef": {
+          "name": "Apame, daughter of Artaxerxes II",
+          "tradition": "Achaemenid Persian"
+        },
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Muhammad A. Dandamayev, Artabazus, entry 2, Encyclopaedia Iranica II/6, pp. 650-651",
+            "url": "https://www.iranicaonline.org/articles/artabazus-gk/"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alireza Shapur Shahbazi, Apama, entry 1, Encyclopaedia Iranica II/2, p. 150",
+            "url": "https://www.iranicaonline.org/articles/apama-women-achaemenid-and-hellenisiic/"
+          }
+        ],
+        "notes": "Parentage reported in the modern prosopographical account. This Apame is not the similarly named bride discussed by Plutarch."
+      }
+    ]
+  }
+]
+```

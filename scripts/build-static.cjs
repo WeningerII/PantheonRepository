@@ -64,16 +64,46 @@ for (const id of IDS) for (const pid of (PEOPLE[id].parentIds || [])) {
   CHILDREN.get(pid).push(id);
 }
 
-const sourcesOf = (p) => {
-  const out = [];
-  for (const s of (p.sources || [])) for (const c of (s.citations || [])) if (c && c.reference) out.push(c.reference);
-  return [...new Set(out)];
+const citationRef = (c) => typeof c === 'string' ? c : c && c.reference || '';
+const citationUrl = (c) => c && typeof c.url === 'string' && /^https?:\/\//i.test(c.url)
+  ? c.url : citeHref(citationRef(c));
+const citationsOf = (p) => {
+  const groups = [
+    ...(p.sources || []).map(s => s.citations || []),
+    ...['relations', 'variants', 'nameLinks', 'epithets'].flatMap(key =>
+      (p[key] || []).map(claim => claim.sources || [])),
+    ...(p.parentageAccounts || []).flatMap(a => [a.sources || [],
+      ...(a.parents || []).map(parent => parent.sources || [])]),
+  ];
+  const out = new Map();
+  for (const c of groups.flat()) {
+    const reference = citationRef(c);
+    if (!reference) continue;
+    const value = { reference, url: citationUrl(c) };
+    out.set(JSON.stringify(value), value);
+  }
+  return [...out.values()];
 };
+const sourcesOf = (p) => [...new Set(citationsOf(p).map(c => c.reference))];
+const citationHtml = (c) => {
+  const ref = citationRef(c);
+  const url = citationUrl(c);
+  const kind = c && typeof c.kind === 'string' ? ` (${esc(humanize(c.kind))})` : '';
+  return (url ? `<a href="${esc(url)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref)) + kind;
+};
+const claimCitations = (sources) => {
+  const citations = (sources || []).filter(c => citationRef(c));
+  return citations.length ? `<span class="claim-citations">${citations.map(citationHtml).join('; ')}</span>` : '';
+};
+const claimNotes = (notes) => notes ? `<span class="claim-notes">${esc(notes)}</span>` : '';
 
 // A figure link that only resolves to a page when the target actually exists.
-const figLink = (id) => (PEOPLE[id]
-  ? `<a href="${esc(id)}.html">${esc(nameOf(id))}</a>`
-  : esc(id));
+const figLink = (id, label = nameOf(id)) => (PEOPLE[id]
+  ? `<a href="${esc(id)}.html">${esc(label)}</a>`
+  : esc(label));
+const relationTarget = (r) => r.personId ? figLink(r.personId)
+  : esc(typeof r.externalRef === 'string' ? r.externalRef
+    : [r.externalRef?.name || r.externalRef?.id, r.externalRef?.tradition].filter(Boolean).join(' · '));
 
 // These pages are the JS-free mirror, but they are NOT crawler-only: they are
 // what Google and every LLM link resolves to, so a human lands here regularly.
@@ -117,6 +147,8 @@ p{color:var(--ink-2)}
 .crumb a{color:var(--mute)}
 ul{padding-left:1.05rem;margin:.3rem 0}li{margin:.2rem 0;color:var(--ink-2)}
 .meta{font:400 11px/1 var(--mono);letter-spacing:.04em;color:var(--faint)}
+.claim-notes,.claim-citations{display:block;margin:.25rem 0;overflow-wrap:anywhere}
+.claim-citations{font-size:12px;color:var(--mute)}
 .trad h2{margin-top:2.6rem}
 .app-link{display:inline-block;margin-top:2.6rem;padding:.55rem 1.1rem;
   border:1px solid var(--accent);border-radius:3px;background:var(--accent-bg);
@@ -184,14 +216,35 @@ function figurePage(id) {
   const kids = CHILDREN.get(id) || [];
   const domains = (p.domains || []).map((d) => humanize(d.sphereId)).filter(Boolean);
   const powers = (p.faculties || []).map((f) => f.name || humanize(f.id)).filter(Boolean);
-  const epithets = (p.epithets || []).map((e) => e.original).filter(Boolean);
-  const relations = (p.relations || []).filter((r) => r.personId);
+  const epithets = p.epithets || [];
+  const relations = (p.relations || []).filter((r) => r.personId || r.externalRef);
+  const accounts = p.parentageAccounts || [];
   const sources = sourcesOf(p);
   const desc = (p.notes ? String(p.notes).slice(0, 200)
     : `${primary(p)} — ${tline}.`).replace(/\s+/g, ' ').trim();
 
   const sec = (label, html) => html ? `<h2>${label}</h2>${html}` : '';
   const list = (arr) => arr.length ? `<ul>${arr.map((x) => `<li>${x}</li>`).join('')}</ul>` : '';
+  const parentHtml = (r) => `${esc(humanize(r.kind || 'parent'))}: ${relationTarget(r)}`
+    + claimNotes(r.notes) + claimCitations(r.sources);
+  const accountHtml = accounts.length ? '<p>Each account is a separate source claim. '
+    + 'The parentage and children listed outside these accounts use the recorded default. '
+    + 'Selecting an account in the interactive tree does not change descent calculations or inherited powers.</p>'
+    + list(accounts.map(a => `<strong>${esc(a.label)}</strong>${claimNotes(a.description)}`
+      + (a.parents.length ? list(a.parents.map(parentHtml)) : '<p>No parents recorded in this account.</p>')
+      + claimCitations(a.sources))) : '';
+  const epithetHtml = (e) => {
+    if (typeof e === 'string') return esc(e);
+    const title = [e.original, e.translation].filter(v => typeof v === 'string' && v);
+    if (!title.length) title.push(e.name || e.epithetId || e.id || '');
+    const meta = [e.language, e.transliteration, e.contextTag].filter(Boolean).join(' · ');
+    return [...new Set(title)].map(esc).join(' — ')
+      + (meta ? ` <span class="meta">${esc(meta)}</span>` : '')
+      + claimNotes(e.notes) + claimCitations(e.sources);
+  };
+  const sourceClaims = (p.sources || []).map(s =>
+    (s.claim ? `<strong>${esc(s.claim)}</strong>: ` : '')
+    + (s.citations || []).filter(c => citationRef(c)).map(citationHtml).join('; '));
 
   // PD/CC0 lead portrait, floated top-right (docs/image-licensing.md). Self-hosted
   // under assets/images/figures/; courtesy credit + license link back to Commons.
@@ -227,16 +280,24 @@ function figurePage(id) {
 ${lead}<h1>${esc(primary(p))}</h1>
 <div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
 ${p.notes ? `<p>${esc(p.notes)}</p>` : ''}
-${sec('Parentage', list(parents.map(figLink)))}
-${sec('Children', list(kids.map(figLink)))}
+${sec('Parentage', (accounts.length ? '<p>Recorded default; alternative parentage accounts are listed separately below.</p>' : '') + (list(parents.map(pid => {
+    const claim = relations.find(r => r.personId === pid && ['father', 'mother', 'parent'].includes(r.kind));
+    return parentHtml(claim || { personId: pid, kind: p.parentRoles?.[pid] || 'parent' });
+  })) || (accounts.length ? '<p>No parents recorded in the default.</p>' : '')))}
+${sec('Parentage accounts', accountHtml)}
+${sec('Children', list(kids.map(id => figLink(id))))}
+${sec('Names and tradition associations', list((p.nameLinks || []).map(n =>
+    (n.personId ? figLink(n.personId, n.value) : esc(n.value))
+    + ` <span class="meta">${esc([n.tradition, humanize(n.status)].filter(Boolean).join(' · '))}</span>`
+    + claimNotes(n.notes) + claimCitations(n.sources))))}
+${sec('Variant accounts', list((p.variants || []).map(v => `<strong>${esc(v.claim)}</strong>`
+    + claimNotes(v.description) + claimCitations(v.sources))))}
 ${sec('Domains', list(domains.map(esc)))}
 ${sec('Powers', list(powers.map(esc)))}
-${sec('Epithets', list(epithets.map(esc)))}
-${sec('Relations', list(relations.map((r) => `${esc(humanize(r.kind))}: ${figLink(r.personId)}`)))}
-${sec('Sources', list(sources.map((ref) => {
-    const u = citeHref(ref);
-    return u ? `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(ref)}</a>` : esc(ref);
-  })))}
+${sec('Epithets', list(epithets.map(epithetHtml)))}
+${sec('Relations', list(relations.map(r => `${esc(humanize(r.kind))}: ${relationTarget(r)}`
+    + claimNotes(r.notes) + claimCitations(r.sources))))}
+${sec('Sources', list(sourceClaims))}
 <a class="app-link" href="${BASE}#/browse/${esc(id)}">Open in the interactive app →</a>
 </main>`;
   return page(`${primary(p)} — Pantheon Registry`, desc, body, canonical + jsonld,
@@ -594,7 +655,7 @@ function figureRecord(id) {
     powers: (p.faculties || []).map((f) => f.name || humanize(f.id)).filter(Boolean),
     summary: (p.notes ? String(p.notes) : '').replace(/\s+/g, ' ').trim(),
     url: `${BASE}registry/${id}.html`,
-    sources: sourcesOf(p).map((ref) => ({ reference: ref, url: citeHref(ref) })),
+    sources: citationsOf(p),
   };
 }
 function figuresJson() {
@@ -603,7 +664,7 @@ function figuresJson() {
     + `"registry": "Pantheon Registry",\n`
     + `"source": ${JSON.stringify(BASE)},\n`
     + `"count": ${figures.length},\n`
-    + `"schema": ${JSON.stringify('id, name, altNames[], tradition, type, era, divinity, parents[], children[], domains[], powers[], summary, url, sources[{reference, url}] (url is null when the reference has no resolvable source link). Full typed relations and epithets are on each figure\'s url page and via the MCP server at ' + BASE)},\n`
+    + `"schema": ${JSON.stringify('id, name, altNames[], tradition, type, era, divinity, parents[], children[], domains[], powers[], summary, url, sources[{reference, url}] (url is null when the reference has no resolvable source link). Parents and children use the recorded default; alternative parentage accounts, full typed relations, epithets and per-claim citations are on each figure\'s url page and via the MCP server at ' + BASE)},\n`
     + `"figures": [\n`
     + figures.map((f) => JSON.stringify(f)).join(',\n')
     + `\n]\n}\n`;
