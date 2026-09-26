@@ -168,7 +168,7 @@ async function verifyGroupedLineageUI(page,base,people,options={}){
    await select.selectOption('');await waitState('',baseline);
    const parents=await page.locator('.parentage .who-name').allTextContents();
    assert.deepEqual(parents,Array.from(person.parentIds||[],id=>people[id]?.name.primary||id),'default selection restores the recorded parents');
-   assert.match(await page.locator('.detail .eyebrow').innerText(),/recorded classification/);
+   assert.match(await page.locator('.detail .eyebrow').innerText(),/recorded classification/i);
    await checkBounds();
    console.log(`grouped lineage UI: ${width}px, ${chosen.depth} ancestor generations, account switching and default restoration passed`);
   }
