@@ -1,0 +1,125 @@
+{
+  "achaemenid_artakama": {
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "achaemenid_artabazus_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          }
+        ],
+        "notes": "Artabazus is explicitly named as her father; her mother is not identified in this passage."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "greek_ptolemy_i",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          }
+        ],
+        "notes": "Marriage at Susa; continuation or dissolution after Alexander’s death is not established."
+      }
+    ],
+    "nameLinks": [
+      {
+        "value": "Apama (Plutarch’s name for Ptolemy’s bride)",
+        "tradition": "Achaemenid Persian",
+        "status": "same-record",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Plutarch, Eumenes 1.3 (Bernadotte Perrin translation)",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Eumenes*.html#1.3"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alireza Shapur Shahbazi, Apama, entry 2, Encyclopaedia Iranica II/2, p. 150",
+            "url": "https://www.iranicaonline.org/articles/apama-women-achaemenid-and-hellenisiic/"
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": "bride-name-variation",
+        "claim": "name",
+        "description": "Plutarch names Ptolemy’s bride Apama where Arrian names Artacama. Bennett considers this a confusion with Seleucus’s wife; Shahbazi lists both names for Artabazus’s daughter. This name attestation does not identify her with Seleucus’s wife or with Artabazus’s mother.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          },
+          {
+            "kind": "primary",
+            "reference": "Plutarch, Eumenes 1.3 (Bernadotte Perrin translation)",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Eumenes*.html#1.3"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Alireza Shapur Shahbazi, Apama, entry 2, Encyclopaedia Iranica II/2, p. 150",
+            "url": "https://www.iranicaonline.org/articles/apama-women-achaemenid-and-hellenisiic/"
+          }
+        ]
+      },
+      {
+        "id": "maternal-identity-unresolved",
+        "claim": "parentage",
+        "description": "Bennett proposes Artabazus’s unnamed Rhodian wife as Artakama’s mother but says the maternity is not explicitly stated. Her mother’s identity remains unresolved.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          }
+        ]
+      },
+      {
+        "id": "later-union-status-unresolved",
+        "claim": "marriage",
+        "description": "Bennett treats repudiation after Alexander’s death as conditional. The Susa wedding is recorded without asserting a divorce date or children.",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Artakama, text and notes 1-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/artakama.htm"
+          }
+        ]
+      }
+    ]
+  },
+  "achaemenid_artabazus_ii": {
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "achaemenid_artakama",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Arrian, Anabasis 7.4.4-8 (E. J. Chinnock translation), especially 7.4.6",
+            "url": "https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_VII/Chapter_IV"
+          }
+        ],
+        "notes": "Reciprocal of the father named in the Susa marriage account."
+      }
+    ]
+  }
+}

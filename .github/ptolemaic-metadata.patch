@@ -1,0 +1,37 @@
+diff --git a/app/data.js b/app/data.js
+index cd34cbc..e216381 100644
+--- a/app/data.js
++++ b/app/data.js
+@@ -57,6 +57,7 @@ const TYPE_META = {  // colors mirror state.jsx TYPE_TIER — the UI's canonical
+ 
+ // Per-tradition pigment palette (qualitative-categorical, adjacency-tested)
+ const TRADITION_PIGMENTS = {
++  "Achaemenid Persian": "#9C6A38",
+   "Fur": "#A6552B",  // Fur — authored territory palette
+   "Beja": "#A65A2E",  // Beja — authored territory palette
+   "Ingessana": "#9A5B34",  // Ingessana — authored territory palette
+@@ -40046,6 +40047,8 @@ const migrate = (peopleMap) => {
+ // array gives ordinal time. The era-inversion validation pass uses this
+ // ordering to detect parent-child temporal anomalies within a tradition.
+ const ERA_ORDER = {
++  // Historical context, not an attribution of personal religious adherence.
++  "Achaemenid Persian": ["late-achaemenid-alexandrian"],
+   "Fur": ["Fur traditional religion; continuing"],
+   "Beja": ["Beja traditional religion; continuing"],
+   "Ingessana": ["Ingessana traditional religion; continuing"],
+@@ -41086,6 +41089,8 @@ const ERA_ORDER = {
+ // Lookup pattern: getEntryDates(entry) returns the entry's own dates if any
+ // of them are non-undefined, else falls back to ERA_DATES[tradition][era].
+ const ERA_DATES = {
++  // Fourth-century context band, not reconstructed birth/death dates.
++  "Achaemenid Persian": {"late-achaemenid-alexandrian": {"mythicStart": -400, "mythicEnd": -300, "textualStart": null, "textualEnd": null, "precision": "century"}},
+   "Fur": {"Fur traditional religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": 1793, "textualEnd": 2020, "precision": "cosmic"}},
+   "Beja": {"Beja traditional religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": -270, "textualEnd": 2020, "precision": "cosmic"}},
+   "Ingessana": {"Ingessana traditional religion; continuing": {"mythicStart": null, "mythicEnd": null, "textualStart": 1930, "textualEnd": 2020, "precision": "cosmic"}},
+@@ -1057462,4 +1057467,4 @@ try {
+   }
+ } catch (e) { console.warn('pantheon seed persist failed', e); }
+ 
+-})();
+\ No newline at end of file
++})();

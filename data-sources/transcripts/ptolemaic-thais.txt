@@ -1,0 +1,323 @@
+Ptolemaic expansion: Thais branch, source review 2026-09-26.
+Five distinct mortal figures; relationships are in the matching supplement.
+No exact birth, death or marriage dates are reconstructed.
+
+```json
+[
+  {
+    "id": "greek_thais",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Thais",
+      "alt": [
+        "Thaïs",
+        "Thais of Athens"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Athenian courtesan and partner of Ptolemy; Plutarch describes her as his mistress.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Plutarch, Alexander 38.1-2",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/5.html#38"
+          },
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Athenaeus reports a marriage to Ptolemy after Alexander died and names their sons Leontiscus and Lagus and daughter Eirene.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The status and chronology of the union require qualification: Bennett accepts a probable marriage; Bevan treats Thais as a concubine.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Thais, notes 2-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/thais.htm"
+          },
+          {
+            "kind": "secondary",
+            "reference": "E. R. Bevan, The House of Ptolemy (1927), chapter II, pp. 52-53",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/2*.html#p53"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Athenian courtesan and partner of Ptolemy I. Plutarch calls her his mistress; Athenaeus reports a later marriage after Alexander’s death and names their three children. The formal status and chronology of the union remain uncertain. Her parents and dates of birth and death are unknown."
+  },
+  {
+    "id": "greek_lagus_son_ptolemy",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Lagus, son of Ptolemy I",
+      "alt": [
+        "Lagos, son of Ptolemy I",
+        "Lagus, son of Thais"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Lagus is named as a son of Ptolemy I and Thais alongside Leontiscus and Eirene.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "A Lycaean victor list names a Macedonian Lagus son of Ptolemy in the two-horse chariot event; identifying him with this son is the modern prosopographical interpretation.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "IG V,2 550, column III, lines 7-9 (PHI Greek Inscriptions transcription)",
+            "url": "https://epigraphy.packhum.org/text/32707"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Lagus, son of Thais, notes 2-4",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/lagus_ii.htm"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "Bevan conjectured that Lagus and Leontiscus were one person; Bennett rejects the proposed emendation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. R. Bevan, The House of Ptolemy (1927), chapter II, pp. 52-53",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/2*.html#p53"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Leontiscus, notes 2-4",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/leontiscus.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Son of Ptolemy I and Thais in Athenaeus, distinct from Ptolemy’s father Lagus. Usually identified with the Macedonian Lagus son of Ptolemy in a Lycaean chariot-victor inscription, conventionally dated 308/307 BCE. The inscription does not name his mother. His birth and death dates and the birth order of the brothers are unknown."
+  },
+  {
+    "id": "greek_leontiscus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Leontiscus",
+      "alt": [
+        "Leontiskos",
+        "Leontiscus, son of Ptolemy I"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Leontiscus is named as a son of Ptolemy I and Thais alongside Lagus and Eirene.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Justin names Leontiscus as Ptolemy’s son and among those returned to him by Demetrius after the naval defeat.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 15.2.6-8",
+            "url": "https://www.attalus.org/translate/justin1.html#15.2"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Bennett places this event at Salamis in Cyprus in 306 BCE and treats birth and death dates as unknown.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Leontiscus, notes 2-4",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/leontiscus.htm"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "Bevan proposed identifying him with Lagus; Bennett rejects the emendation.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "E. R. Bevan, The House of Ptolemy (1927), chapter II, pp. 52-53",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/2*.html#p53"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Leontiscus, notes 2-4",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/leontiscus.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Son of Ptolemy I and Thais. Justin reports his return to Ptolemy by Demetrius after a naval defeat, identified with Salamis in Cyprus in 306 BCE. He and Lagus remain separate figures following Athenaeus’s transmitted list; Bevan’s proposed identification is disputed. His birth and death dates and the birth order of the brothers are unknown."
+  },
+  {
+    "id": "greek_eirene_daughter_ptolemy",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Eirene, daughter of Ptolemy I",
+      "alt": [
+        "Irene, daughter of Ptolemy I",
+        "Eirene, daughter of Thais"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Eirene is daughter of Ptolemy I and Thais and wife of Eunostus, king of Soloi in Cyprus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Her dates are unknown; the proposed marriage chronology is a modern reconstruction.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Eirene, daughter of Thais, notes 2-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/eirene_i.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Daughter of Ptolemy I and Thais, married to Eunostus, king of Soloi in Cyprus, according to Athenaeus. The marriage is attested, but its date is not; suggested dates depend on modern reconstruction. Her birth and death dates are unknown. No children of this union are established by the sources reviewed here."
+  },
+  {
+    "id": "greek_eunostus_soloi",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Eunostus of Soloi",
+      "alt": [
+        "Eunostos of Soloi",
+        "Eunostus of Soli",
+        "Eunostos of Soli"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "hellenistic"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Eunostus is named king of Soloi in Cyprus and husband of Eirene, daughter of Ptolemy I and Thais.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Athenaeus, Deipnosophistae 13.576d-e (C. D. Yonge translation, 1854)",
+            "url": "https://www.attalus.org/old/athenaeus13b.html#37"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Pasicrates as his father and the marriage chronology are modern inferences, not explicit statements in Athenaeus.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Eirene, daughter of Thais, notes 2-5",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/eirene_i.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "King of Soloi in Cyprus and husband of Eirene, daughter of Ptolemy I and Thais. His marriage date is uncertain. Pasicrates is proposed as his father in modern scholarship, but that inference is not recorded as established parentage. No children of this union are established by the sources reviewed here."
+  }
+]
+```
