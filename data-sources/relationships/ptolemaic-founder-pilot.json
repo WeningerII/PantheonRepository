@@ -78,7 +78,7 @@
             "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
           }
         ],
-        "notes": "The Satyrus pedigree traces the dynasty to Dionysus. The intermediate chain is not reconstructed as historical parentage here."
+        "notes": "The transmitted Satyrus pedigree is available as a complete selectable claimed ancestry account. It is not independently established biological history."
       },
       {
         "kind": "beloved-of",
@@ -196,7 +196,9 @@
             "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
           }
         ],
-        "description": "Pausanias reports a Macedonian claim that Philip II fathered Ptolemy before Arsinoe married Lagus. This is a reported claim, not established biological paternity."
+        "description": "Pausanias reports a Macedonian claim that Philip II fathered Ptolemy before Arsinoe married Lagus. This is a reported claim, not established biological paternity. Selecting this account follows the sourced paternal pedigree through Philip II; its historical reports remain distinct from Satyrus’s claimed genealogy.",
+        "lineageGroup": "herodotus-macedonian-pedigree",
+        "kind": "biological"
       }
     ]
   },
@@ -414,7 +416,9 @@
     "parentageAccounts": [
       {
         "id": "satyrus-dynastic-pedigree",
-        "label": "Meleager — Satyrus dynastic pedigree",
+        "label": "Satyrus: transmitted divine ancestry",
+        "kind": "claimed-genealogy",
+        "lineageGroup": "satyrus-ptolemaic-pedigree",
         "parents": [
           {
             "kind": "father",
@@ -422,8 +426,8 @@
             "sources": [
               {
                 "kind": "primary",
-                "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
-                "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+                "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+                "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
               }
             ]
           }
@@ -431,11 +435,11 @@
         "sources": [
           {
             "kind": "primary",
-            "reference": "Satyrus, FGrH 631 F 2, preserved in Theophilus, To Autolycus 2.7",
-            "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
           }
         ],
-        "description": "A claimed royal pedigree preserved by Theophilus. The source transmission contains problems elsewhere; this account records the named immediate relationship without reconstructing missing generations."
+        "description": "Only the named father is supplied by this passage; the mother remains unknown. This is a dynastic ancestry claim, not established biological history."
       }
     ]
   },
@@ -499,7 +503,7 @@
             "url": "https://www.earlychristianwritings.com/text/theophilus-book2.html"
           }
         ],
-        "notes": "The Satyrus pedigree traces the dynasty to Dionysus. The intermediate chain is not reconstructed as historical parentage here."
+        "notes": "The transmitted Satyrus pedigree is available as a complete selectable claimed ancestry account. It is not independently established biological history."
       }
     ]
   },

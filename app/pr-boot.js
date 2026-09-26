@@ -119,18 +119,26 @@ const COMMON_FRACTIONS = [
 ];
 const formatFraction = (f) => {
   if (f === null || f === undefined) return '—';
-  for (const [val, sym] of COMMON_FRACTIONS) if (Math.abs(f - val) < 1e-9) return sym;
-  // Divinity fractions are dyadic rationals — render as a reduced n⁄d.
-  for (let den = 16; den <= 1024; den *= 2) {
-    const x = f * den;
-    if (Math.abs(x - Math.round(x)) < 1e-9) {
+  for (const [val, sym] of COMMON_FRACTIONS) {
+    // Zero is exact: a small positive ancestry contribution is never absence.
+    if (f === val || (val !== 0 && Math.abs(f - val) < 1e-9)) return sym;
+  }
+  // Preserve exact dyadic fractions through deep pedigrees. Requiring an
+  // exact, nonzero integer avoids snapping a tiny value to a zero numerator.
+  for (let den = 16; den <= 2 ** 52; den *= 2) {
+    // Retain the compact decimal display for ordinary non-dyadic values.
+    if (den > 1024 && Math.abs(f) >= 1 / 1024) break;
+    const x = f * den, numerator = Math.round(x);
+    if (numerator !== 0 && Number.isSafeInteger(numerator)
+      && (den <= 1024 ? Math.abs(x - numerator) < 1e-9 : x === numerator)) {
       const gcd = (a, b) => (b ? gcd(b, a % b) : a);
-      let num = Math.round(x), d = den;
+      let num = numerator, d = den;
       const k = gcd(num, d) || 1;
       return `${num / k}⁄${d / k}`;
     }
   }
-  return f.toFixed(3);
+  const decimal = f.toFixed(3);
+  return f !== 0 && Number(decimal) === 0 ? f.toExponential(3) : decimal;
 };
 
 // ─── Async-mode __PR surface ────────────────────────────────────────────────
@@ -406,6 +414,8 @@ const installEdgesTier = (edges) => {
     rec.parentIds = (e && e.p) ? e.p : [];
     if (e && e.pr) rec.parentRoles = e.pr;
     if (e && e.pa) rec.parentageAccounts = e.pa;
+    if (e && e.af) rec.faculties = e.af;
+    if (e && e.al) rec.lifecycle = e.al;
     rec.relations = (e && e.r) ? e.r.map((x) => ({ kind: x.k, personId: x.id })) : [];
   }
   PR.tierReady.edges = true;

@@ -53,17 +53,21 @@ function RelationItem({ rel, byId, onOpen }) {
   );
 }
 
-function Parentage({ entry, byId, onOpen }) {
+function Parentage({ entry, byId, onOpen, account, model }) {
   const ids = entry.parentIds || [];
-  if (!ids.length) return null;
+  if (!ids.length) return account ? <div className="section"><h2>Selected parentage</h2>
+    <p className="lineage-status">This account explicitly records no parents.</p></div> : null;
   return (
     <div className="section">
-      <h2>{entry.parentageAccounts?.length ? "Default parentage" : "Parentage"} <span className="count">{ids.length}</span></h2>
+      <h2>{account ? "Selected parentage" : entry.parentageAccounts?.length ? "Default parentage" : "Parentage"} <span className="count">{ids.length}</span></h2>
       <div className="parentage">
         {ids.map((pid) => {
           const role = entry.parentRoles?.[pid];
           const target = byId.get(pid);
           const resolved = !!target;
+          const info = model?.divinityInfo(target);
+          const type = model ? info?.tier : target?.type;
+          const label = window.TYPE_TIER[type]?.label || type || (info?.hasDivineAncestry ? 'Divine ancestry' : 'Ancestry unresolved');
           return (
             <div
               key={pid}
@@ -76,9 +80,9 @@ function Parentage({ entry, byId, onOpen }) {
               >
                 {resolved ? (
                   <>
-                    <window.TierIcon type={target.type} size={12} />
+                    {type && <window.TierIcon type={type} size={12} />}
                     <span className="who-name">{window.displayName(target)}</span>
-                    <span className="who-meta">{target.tradition} · {window.TYPE_TIER[target.type]?.label || target.type}</span>
+                    <span className="who-meta">{target.tradition} · {label}</span>
                   </>
                 ) : (
                   <span className="who-name">{pid}</span>
@@ -96,12 +100,19 @@ function Parentage({ entry, byId, onOpen }) {
 // behind it (the dilution, and the "refresh" when a fully-divine parent
 // re-enters the line), plus the cultural tradition mix for cross-tradition
 // figures. All computed in data.js and read off window.__PR.
-function Descent({ entry, byId, onOpen }) {
-  const info = window.divinityInfo?.(entry);
-  const mix = window.traditionMix?.(entry);
+function Descent({ entry, byId, onOpen, model }) {
+  const info = model ? model.divinityInfo(entry) : window.divinityInfo?.(entry);
+  const mix = model ? model.traditionMix(entry) : window.traditionMix?.(entry);
   if (!info && !mix) return null;
   const fmt = window.fmtFraction;
   const tierLabel = (t) => window.TYPE_TIER[t]?.label || t;
+  const uncertainty = {
+    'unresolved-parent': 'A cited parent has not been resolved.',
+    'cyclic-parentage': 'The account contains a parentage cycle.',
+    'conception-status-uncertain': 'The parent’s status at conception is uncertain.',
+    'unquantified-divine-descent': 'The source does not specify the degree of divine descent.',
+    'conflicting-account-groups': 'Competing pedigree accounts require an explicit parentage choice.',
+  };
 
   return (
     <div className="section section-descent">
@@ -110,19 +121,24 @@ function Descent({ entry, byId, onOpen }) {
       {info && (
         <div className="descent-divinity">
           <div className="descent-headline">
-            <window.TierIcon type={info.tier} size={16} />
-            <span className="descent-frac">{fmt(info.fraction)}</span>
-            <span className="descent-tier">{tierLabel(info.tier)} by descent</span>
+            {info.tier && <window.TierIcon type={info.tier} size={16} />}
+            <span className="descent-frac">{info.fraction == null ? 'Unquantified' : fmt(info.fraction)}</span>
+            <span className="descent-tier">{info.tier ? tierLabel(info.tier) + ' by descent' : info.hasDivineAncestry ? (info.claimed ? 'Claimed divine ancestry' : 'Divine ancestry') : 'Incomplete ancestry'}</span>
           </div>
 
-          {info.basis === 'genealogy' && info.contributions.length > 0 && (
+          {model?.active && <div className="descent-note">{info.claimed ? 'Claimed genealogy' : 'Selected parentage'}{info.accountLabel ? ': ' + info.accountLabel : ''}. This account determines the displayed descent and potential inherited powers.</div>}
+          {model && !model.active && <div className="descent-note">Descent follows the recorded parentage. The profile heading retains the recorded classification.</div>}
+          {info.fraction == null && <div className="descent-note">An exact fraction cannot be established; missing parents are not assumed mortal.
+            {' ' + (info.unresolvedReasons || []).map(reason => uncertainty[reason]).filter(Boolean).join(' ')}</div>}
+
+          {info.basis === 'genealogy' && info.contributions?.length > 0 && (
             <div className="descent-math">
               {info.contributions.map((c) => {
                 const p = byId.get(c.id);
                 const refresh = c.fraction >= 1 - 1e-9;
                 return (
                   <div className="descent-parent" key={c.id}>
-                    <span className="descent-parent-frac">{fmt(c.fraction)}</span>
+                    <span className="descent-parent-frac">{c.fraction == null ? 'Unknown' : fmt(c.fraction)}</span>
                     <span
                       className={'descent-parent-name' + (p ? ' link' : '')}
                       {...window.pressable(p ? () => onOpen(c.id) : null, 'link')}
@@ -131,15 +147,15 @@ function Descent({ entry, byId, onOpen }) {
                   </div>
                 );
               })}
-              <div className="descent-formula">
+              {info.fraction != null && <div className="descent-formula">
                 ({info.contributions.map((c) => fmt(c.fraction)).join(' + ')}) ÷ {info.denom} ={' '}
                 <strong>{fmt(info.fraction)}</strong>
-              </div>
+              </div>}
             </div>
           )}
 
           {info.basis === 'axiom-deity' && <div className="descent-note">Fully divine by definition.</div>}
-          {info.basis === 'axiom-mortal' && <div className="descent-note">Wholly mortal by definition.</div>}
+          {info.basis === 'axiom-mortal' && <div className="descent-note">Mortal in the recorded default. Claimed ancestry, where recorded, is available in the parentage accounts.</div>}
           {info.basis === 'type-fallback' && <div className="descent-note">Fraction inferred from tier; no seeded ancestry.</div>}
           {info.override != null && Math.abs(info.override - info.fraction) > 1e-9 && (
             <div className="descent-note">
@@ -156,7 +172,7 @@ function Descent({ entry, byId, onOpen }) {
 
       {mix && (
         <div className="descent-mix">
-          <span className="descent-mix-label">Tradition mix</span>
+          <span className="descent-mix-label">{model ? 'Cultural attribution' : 'Tradition mix'}</span>
           <span className="descent-mix-items">
             {Object.entries(mix).sort((a, b) => b[1] - a[1]).map(([t, frac]) => (
               <span className="descent-mix-item" key={t}>
@@ -175,9 +191,9 @@ function Descent({ entry, byId, onOpen }) {
 // canon-safe "inheritable from ancestry" candidates that fade with genealogical
 // distance. Declared powers are fact; candidates are clearly potential and are
 // never shown for a power the figure already declares.
-function Powers({ entry, byId, onOpen }) {
+function Powers({ entry, byId, onOpen, model }) {
   const own = entry.faculties || [];
-  const inherited = window.inheritedPowers ? window.inheritedPowers(entry) : [];
+  const inherited = model ? model.inheritedPowers(entry) : window.inheritedPowers ? window.inheritedPowers(entry) : [];
   if (!own.length && !inherited.length) return null;
   const humanize = (id) => String(id || '').replace(/[-_]+/g, ' ');
   const genLabel = (g) => (g === 1 ? 'parent' : g === 2 ? 'grandparent' : `${g} generations up`);
@@ -234,6 +250,7 @@ function Powers({ entry, byId, onOpen }) {
                   via {anc
                     ? <span className="link" {...window.pressable(() => onOpen(c.fromAncestorId), 'link')}>{window.displayName(anc)}</span>
                     : c.fromAncestorId}{' · '}{genLabel(c.generation)}
+                  {c.claimed && ' · claimed pedigree'}
                 </span>
               </div>
             );
@@ -722,6 +739,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
   // and therefore the slide-out — actually happens.)
   const [localEntry, setLocalEntry] = __dState(entryProp || null);
   const [closing,    setClosing]    = __dState(false);
+  const [accountState, setAccountState] = __dState({ focusId: entryProp?.id, choices: {} });
   const panelRef  = __dRef(null);
   const openerRef = __dRef(null);
 
@@ -788,11 +806,28 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
     return () => window.cancelAnimationFrame(raf);
   }, [restMounted, __entryId]);
 
+  // One local account projection drives every lineage-dependent presentation.
+  // It never mutates the browse corpus and resets when navigation changes focus.
+  const choices = accountState.focusId === __entryId ? accountState.choices : {};
+  const accountModel = __dMemo(() => __entryId != null && window.projectAccountModel
+    ? window.projectAccountModel(byId, choices) : null, [byId, accountState, __entryId, window.__PR?.detailVersion]);
+  const selectAccount = (id, value) => setAccountState({ focusId: __entryId, choices: { ...choices, [id]: value } });
+  __dEff(() => {
+    setAccountState(previous => previous.focusId === __entryId ? previous : { focusId: __entryId, choices: {} });
+  }, [__entryId]);
+
   if (!localEntry) return null;
   // Alias so the rest of the render reads the same; the conceptual entry
   // is whichever is currently being displayed (live or mid-exit).
   const entry = localEntry;
-  const tier = window.TYPE_TIER[localEntry.type];
+  const projectedById = accountModel?.byId || byId;
+  const projectedEntry = projectedById.get(entry.id) || entry;
+  const selectedInfo = accountModel?.divinityInfo(entry);
+  const hasSelection = !!accountModel?.active;
+  const displayedType = hasSelection ? selectedInfo?.tier : entry.type;
+  const tier = window.TYPE_TIER[displayedType];
+  const selectedAccount = entry.parentageAccounts?.find(a => a.id === (accountModel?.selections || choices)[entry.id]);
+  const claimedAccounts = (entry.parentageAccounts || []).filter(a => a.kind === 'claimed-genealogy');
   // Tier-color stripe on the detail panel matches the browse-row stripe,
   // giving spatial continuity when the panel opens.
   const tierStripe = tier?.color || 'transparent';
@@ -839,9 +874,10 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
             <LeadImage entry={entry} />
             <div className="eyebrow">
               <span className="eyebrow-leader">
-                <window.TierIcon type={entry.type} size={14} />
-                <span className={'eyebrow-tier tier-' + entry.type}>{tier?.label || entry.type || '—'}</span>
+                {displayedType && <window.TierIcon type={displayedType} size={14} />}
+                <span className={'eyebrow-tier tier-' + (displayedType || 'unknown')}>{tier?.label || displayedType || (selectedInfo?.hasDivineAncestry ? (selectedInfo.claimed ? 'Claimed divine ancestry' : 'Divine ancestry') : 'Ancestry unresolved')}</span>
               </span>
+              <span>{hasSelection ? 'selected account' : 'recorded classification'}</span>
               <span className="eyebrow-trad">
                 <span
                   className="eyebrow-trad-dot"
@@ -864,6 +900,11 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
               )}
             </div>
             <h1>{window.displayName(entry)}</h1>
+            {claimedAccounts.length > 0 && <div className="lineage-status">Claimed genealogy available:{' '}
+              {claimedAccounts.map((a, i) => <React.Fragment key={a.id}>{i > 0 && ' · '}
+                <button className="btn btn-ghost btn-sm" onClick={() => selectAccount(entry.id, a.id)} aria-pressed={selectedAccount?.id === a.id}>{a.label}</button>
+              </React.Fragment>)}
+            </div>}
             {alts.length > 0 && (
               <div className="alts">{alts.join(' · ')}</div>
             )}
@@ -888,7 +929,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
           {entry.notes && <div className="detail-notes">{entry.notes}</div>}
 
           <NameRecords entry={entry} byId={byId} onOpen={onOpen} />
-          <Parentage entry={entry} byId={byId} onOpen={onOpen} />
+          <Parentage entry={projectedEntry} byId={projectedById} onOpen={onOpen} account={selectedAccount} model={accountModel} />
           {restMounted && <>
           {window.Lineage && childrenOf && (
             <window.Lineage
@@ -896,11 +937,14 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
               byId={byId}
               childrenOf={childrenOf}
               onPick={onOpen}
+              choices={choices}
+              onSelectAccount={selectAccount}
+              accountModel={accountModel}
             />
           )}
           {window.Lifecycle && <window.Lifecycle entry={entry} />}
-          <Descent entry={entry} byId={byId} onOpen={onOpen} />
-          <Powers entry={entry} byId={byId} onOpen={onOpen} />
+          <Descent entry={projectedEntry} byId={projectedById} onOpen={onOpen} model={accountModel} />
+          <Powers entry={projectedEntry} byId={projectedById} onOpen={onOpen} model={accountModel} />
           {entry.relations?.length > 0 && <Chapter label="Network" />}
           <Relations entry={entry} byId={byId} onOpen={onOpen} />
 

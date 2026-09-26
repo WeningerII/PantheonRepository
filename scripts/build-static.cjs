@@ -31,6 +31,7 @@ const fs = require('fs');
 const path = require('path');
 const { loadCorpus } = require('./build-tiers.cjs');
 const { citeUrl } = require('../app/cite-links.js');
+const { projectAccountModel } = require('../app/account-model.js');
 const { leadFigure } = require('./lib/lead-figure.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -59,9 +60,16 @@ const humanize = (s) => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim()
 
 // id -> children, built once
 const CHILDREN = new Map();
+const ACCOUNT_CHILDREN = new Map();
 for (const id of IDS) for (const pid of (PEOPLE[id].parentIds || [])) {
   if (!CHILDREN.has(pid)) CHILDREN.set(pid, []);
   CHILDREN.get(pid).push(id);
+}
+for (const id of IDS) for (const account of PEOPLE[id].parentageAccounts || []) {
+  for (const parent of account.parents) {
+    if (!ACCOUNT_CHILDREN.has(parent.personId)) ACCOUNT_CHILDREN.set(parent.personId, []);
+    ACCOUNT_CHILDREN.get(parent.personId).push({ id, account, parent });
+  }
 }
 
 const citationRef = (c) => typeof c === 'string' ? c : c && c.reference || '';
@@ -227,12 +235,31 @@ function figurePage(id) {
   const list = (arr) => arr.length ? `<ul>${arr.map((x) => `<li>${x}</li>`).join('')}</ul>` : '';
   const parentHtml = (r) => `${esc(humanize(r.kind || 'parent'))}: ${relationTarget(r)}`
     + claimNotes(r.notes) + claimCitations(r.sources);
+  const accountSummary = (account) => {
+    const model = projectAccountModel(PEOPLE, { [id]: account.id }, { eraOrder: PR.ERA_ORDER });
+    const info = model.divinityInfo(id);
+    const status = info.fraction === null
+      ? (info.hasDivineAncestry ? (info.claimed ? 'Claimed divine ancestry' : 'Divine ancestry') : 'Descent unresolved')
+        + '; fraction unquantified because the account is incomplete.'
+      : `${humanize(info.tier)} by descent in this account${info.claimed ? ' (claimed genealogy)' : ''}.`;
+    const pedigree = account.lineageGroup ? [...model.accounts].filter(([subject, a]) =>
+      subject !== id && a.lineageGroup === account.lineageGroup).map(([subject, a]) =>
+      `<strong>${figLink(subject)}</strong>${claimNotes(a.description)}`
+      + (a.parents.length ? list(a.parents.map(parentHtml)) : '<p>No parents recorded in this account.</p>')
+      + claimCitations(a.sources)) : [];
+    return `<li id="account-${esc(account.id)}"><strong>${esc(account.label)}</strong>`
+      + claimNotes(account.description) + `<p>${esc(status)}</p>`
+      + (account.parents.length ? list(account.parents.map(parentHtml)) : '<p>No parents recorded in this account.</p>')
+      + claimCitations(account.sources)
+      + (pedigree.length ? `<details><summary>Complete cited pedigree (${pedigree.length} ancestral accounts)</summary>${list(pedigree)}</details>` : '')
+      + '</li>';
+  };
   const accountHtml = accounts.length ? '<p>Each account is a separate source claim. '
     + 'The parentage and children listed outside these accounts use the recorded default. '
-    + 'Selecting an account in the interactive tree does not change descent calculations or inherited powers.</p>'
-    + list(accounts.map(a => `<strong>${esc(a.label)}</strong>${claimNotes(a.description)}`
-      + (a.parents.length ? list(a.parents.map(parentHtml)) : '<p>No parents recorded in this account.</p>')
-      + claimCitations(a.sources))) : '';
+    + 'Selecting an account in the interactive app updates its lineage, descent classification and inherited-power candidates. '
+    + 'Linked pedigree accounts are selected together; other records retain their recorded parentage. '
+    + 'Claims of ancestry are not proof of biological descent or attested powers.</p>'
+    + '<ul>' + accounts.map(accountSummary).join('') + '</ul>' : '';
   const epithetHtml = (e) => {
     if (typeof e === 'string') return esc(e);
     const title = [e.original, e.translation].filter(v => typeof v === 'string' && v);
@@ -278,7 +305,7 @@ function figurePage(id) {
   const body = `${crumb}
 <main>
 ${lead}<h1>${esc(primary(p))}</h1>
-<div class="sub">${esc(tline)}${div && div.tier ? ` · ${esc(humanize(div.tier))}` : ''}</div>
+<div class="sub">${esc(tline)} · Recorded classification</div>
 ${p.notes ? `<p>${esc(p.notes)}</p>` : ''}
 ${sec('Parentage', (accounts.length ? '<p>Recorded default; alternative parentage accounts are listed separately below.</p>' : '') + (list(parents.map(pid => {
     const claim = relations.find(r => r.personId === pid && ['father', 'mother', 'parent'].includes(r.kind));
@@ -286,6 +313,9 @@ ${sec('Parentage', (accounts.length ? '<p>Recorded default; alternative parentag
   })) || (accounts.length ? '<p>No parents recorded in the default.</p>' : '')))}
 ${sec('Parentage accounts', accountHtml)}
 ${sec('Children', list(kids.map(id => figLink(id))))}
+${sec('Children in alternative accounts', list((ACCOUNT_CHILDREN.get(id) || []).map(({id: childId, account, parent}) =>
+  `<a href="${esc(childId)}.html#account-${esc(account.id)}">${esc(nameOf(childId))}</a>: ${esc(account.label)}`
+  + claimNotes(parent.notes) + claimCitations(parent.sources))))}
 ${sec('Names and tradition associations', list((p.nameLinks || []).map(n =>
     (n.personId ? figLink(n.personId, n.value) : esc(n.value))
     + ` <span class="meta">${esc([n.tradition, humanize(n.status)].filter(Boolean).join(' · '))}</span>`

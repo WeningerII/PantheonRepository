@@ -5,6 +5,15 @@ function applyRelationshipSupplement(peopleMap, patches) {
   // Validate the entire batch before changing any record.
   for (const [id, patch] of Object.entries(patches)) {
     if (!peopleMap[id]) throw new Error(`Unknown relationship subject: ${id}`);
+    if ((patch.classificationCorrections || []).length > 1) throw new Error(`Duplicate classification correction: ${id}`);
+    for (const correction of patch.classificationCorrections || []) {
+      if (!correction.id || !correction.reason || !cited(correction) ||
+          !['deity','numen','demigod','quartigod','scion','mortal'].includes(correction.type))
+        throw new Error(`Invalid classification correction: ${id}`);
+      const old = (peopleMap[id].classificationCorrections || []).find(c => c.id === correction.id);
+      if (old ? JSON.stringify(old.decision) !== JSON.stringify(correction) : peopleMap[id].type !== correction.expected)
+        throw new Error(`Classification correction baseline changed: ${id}`);
+    }
     if ((patch.parentageCorrections || []).length > 1) throw new Error(`Duplicate parentage correction: ${id}`);
     for (const correction of patch.parentageCorrections || []) {
       if (!correction.id || !correction.reason || !Array.isArray(correction.expected) ||
@@ -70,10 +79,20 @@ function applyRelationshipSupplement(peopleMap, patches) {
     }
     if ((patch.descriptions || []).length > 1) throw new Error(`Conflicting descriptions: ${id}`);
     const accountIds = new Set();
+    const accountGroups = new Set();
     for (const account of patch.parentageAccounts || []) {
       if (!account.id || accountIds.has(account.id) || !account.label || !cited(account) || !Array.isArray(account.parents))
         throw new Error(`Invalid parentage account: ${id}`);
       accountIds.add(account.id);
+      if (account.kind !== undefined && !['claimed-genealogy', 'biological'].includes(account.kind))
+        throw new Error(`Invalid parentage account kind: ${id}`);
+      if (account.lineageGroup !== undefined) {
+        if (typeof account.lineageGroup !== 'string' || !account.lineageGroup.trim() ||
+            accountGroups.has(account.lineageGroup) ||
+            (peopleMap[id].parentageAccounts || []).some(a => a.id !== account.id && a.lineageGroup === account.lineageGroup))
+          throw new Error(`Invalid or ambiguous lineage group: ${id}`);
+        accountGroups.add(account.lineageGroup);
+      }
       const parentIds = new Set();
       for (const parent of account.parents) {
         if (!peopleMap[parent.personId] || parent.personId === id || parentIds.has(parent.personId) ||
@@ -104,6 +123,14 @@ function applyRelationshipSupplement(peopleMap, patches) {
   };
   for (const [id, patch] of Object.entries(patches)) {
     const p = peopleMap[id];
+    for (const correction of patch.classificationCorrections || []) {
+      p.classificationCorrections ||= [];
+      if (p.classificationCorrections.some(c => c.id === correction.id)) continue;
+      p.classificationCorrections.push({id:correction.id, previous:p.type, decision:JSON.parse(JSON.stringify(correction))});
+      p.type = correction.type;
+      p.variants ||= [];
+      p.variants.push({id:correction.id,claim:'classification correction',description:correction.reason,sources:JSON.parse(JSON.stringify(correction.sources))});
+    }
     for (const correction of patch.parentageCorrections || []) {
       p.parentageCorrections ||= [];
       if (p.parentageCorrections.some(c => c.id === correction.id)) continue;

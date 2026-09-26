@@ -61,7 +61,8 @@ test('static accounts preserve alternatives, role citations and the default gene
   assert.match(accounts, /Reported, not established/);
   assert.match(accounts, /href="https:\/\/example.org\/parent\?a=1&amp;b=2"/);
   assert.match(accounts, /href="https:\/\/example.org\/account\?a=1&amp;b=2"/);
-  assert.match(accounts, /does not change descent calculations or inherited powers/);
+  assert.match(accounts, /updates its lineage, descent classification and inherited-power candidates/);
+  assert.match(section(render.figurePage('N2'), 'Children in alternative accounts'), /N0.html#account-A0/);
   assert.match(section(render.figurePage('N1'), 'Children'), /href="N0.html"/);
   assert.equal(section(render.figurePage('N2'), 'Children'), '', 'alternative parents do not acquire default children');
   assert.equal(section(render.figurePage('N3'), 'Children'), '', 'unions never imply parentage');
@@ -83,6 +84,23 @@ test('missing parents do not become an uncreated assertion while explicit empty 
   assert.match(account, /The text explicitly denies parents in this portrayal/);
   assert.match(account, /No parents recorded in this account/);
   assert.match(account, /example.org\/empty/);
+});
+
+test('a grouped static pedigree exposes every cited ancestor and retains unknown co-parents', () => {
+  const people = {};
+  for(let i=0;i<9;i++) {
+    const id=`N${i}`;
+    people[id]={id,name:{primary:`Figure ${i}`},tradition:'T0',type:i===8?'deity':'mortal',parentIds:[]};
+    if(i<8) people[id].parentageAccounts=[{id:'A0',label:'Transmitted pedigree',
+      lineageGroup:'G0',kind:'claimed-genealogy',parents:[{kind:'father',personId:`N${i+1}`,sources:[cite(`Text ${i}`)]}],
+      sources:[cite(`Account ${i}`)]}];
+  }
+  const html=renderer(people).figurePage('N0');
+  assert.match(html,/Claimed divine ancestry; fraction unquantified/);
+  assert.match(html,/Complete cited pedigree \(7 ancestral accounts\)/);
+  for(let i=1;i<9;i++) assert.match(html,new RegExp(`href="N${i}\\.html"`));
+  for(let i=0;i<8;i++) assert.ok(html.includes(`Text ${i}`));
+  assert.doesNotMatch(html,/Wholly mortal|0 by descent/);
 });
 
 test('static relationships preserve union uncertainty, unresolved names and variant evidence', () => {

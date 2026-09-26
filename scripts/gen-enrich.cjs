@@ -68,7 +68,7 @@ if (fs.existsSync(relationshipDir)) for (const file of fs.readdirSync(relationsh
   for (const [id, patch] of Object.entries(batch)) {
     const target = relationshipPatches[id] ||= {};
     for (const [key, values] of Object.entries(patch)) {
-      if (!['parents', 'relations', 'relationRevisions', 'parentageCorrections', 'variants', 'resolve', 'nameLinks', 'parentageAccounts', 'descriptions'].includes(key) || !Array.isArray(values))
+      if (!['parents', 'relations', 'relationRevisions', 'parentageCorrections', 'classificationCorrections', 'variants', 'resolve', 'nameLinks', 'parentageAccounts', 'descriptions'].includes(key) || !Array.isArray(values))
         throw new Error(`Invalid relationship patch field: ${file} ${id} ${key}`);
       (target[key] ||= []).push(...values);
     }

@@ -1,0 +1,432 @@
+Philip II alternative ancestry, 2026-09-26. Nine distinct historical context figures.
+Sources on individual claims; secondary reporting of Syncellus is explicit.
+
+```json
+[
+  {
+    "id": "greek_alexander_i_macedon",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Alexander I of Macedon",
+      "alt": [
+        "Alexander son of Amyntas I",
+        "Alexander Philhellene"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Alexander is son of Amyntas in the Macedonian king-list.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The younger Amyntas is reported as his son.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Macedonian king, distinct from Alexander III. His earlier royal pedigree is selectable separately from the legendary Satyrus genealogy."
+  },
+  {
+    "id": "greek_amyntas_son_alexander_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Amyntas, son of Alexander I",
+      "alt": [
+        "Amyntas, father of Arrhidaeus"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Younger son of Alexander I and father of Arrhidaeus in the pedigree reported by Bennett.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "A younger member of the Macedonian royal house. Distinct from kings Amyntas I and III; this genealogical link is mediated through Bennett’s discussion of Syncellus."
+  },
+  {
+    "id": "greek_arrhidaeus_father_amyntas_iii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Arrhidaeus, father of Amyntas III",
+      "alt": [
+        "Arrhidaios, father of Amyntas III"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Father of Amyntas III.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Son of the younger Amyntas in the pedigree reported by Bennett.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Father of Amyntas III in Diodorus. Distinct from Philip III Arrhidaeus and the general of Alexander’s successors."
+  },
+  {
+    "id": "greek_amyntas_iii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Amyntas III of Macedon",
+      "alt": [
+        "Amyntas, father of Philip II"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Father of Philip and son of Arrhidaeus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Husband of Eurydice, with an alternative paternal report naming Menelaus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Macedonian king and father of Philip II. Arrhidaeus and Menelaus are conflicting paternal accounts, not two concurrent fathers."
+  },
+  {
+    "id": "greek_menelaus_father_amyntas_iii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Menelaus, reported father of Amyntas III",
+      "alt": [
+        "Menelaus, reported grandfather of Philip II"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Reported father of Amyntas and grandfather of Philip.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Named in a conflicting account of Amyntas III’s parentage. Distinct from the Homeric hero, Ptolemy’s brother, and Amyntas III’s own son of this name. The chronological placement in Justin is problematic; no upstream parent is inferred."
+  },
+  {
+    "id": "greek_eurydice_mother_philip_ii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Eurydice, mother of Philip II",
+      "alt": [
+        "Eurydice I of Macedon",
+        "Eurydike, daughter of Sirras"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Marriage to Amyntas III and maternity of Philip II.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Daughter of Sirras and maternal granddaughter of Arrhabaeus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The patronymic is supported by inscriptions; interpretation of her ethnic background is disputed.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Wife of Amyntas III and mother of Philip II. Distinct from Ptolemy I’s wife. Her ethnic background is debated; Greek denotes the source tradition here, not a settled ethnic identity."
+  },
+  {
+    "id": "greek_sirras",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Sirras",
+      "alt": [
+        "Sirrhas",
+        "Sirra"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Father of Eurydice in the Greek text of Strabo.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Illyrian and Lyncestian interpretations remain debated.",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Father of Eurydice. His regional and ethnic identification is disputed; no parents are supplied."
+  },
+  {
+    "id": "greek_arrhabaeus_i_lyncestis",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Arrhabaeus of Lyncestis",
+      "alt": [
+        "Arrhabaios I",
+        "Arrhibaeus, son of Bromerus",
+        "Arrabaeus of Lyncestis"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Lyncestian ruler and son of Bromerus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+            "url": "https://topostext.org/work/52#4.83"
+          }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Maternal grandfather of Eurydice and of Bacchiad stock.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lyncestian ruler and maternal grandfather of Eurydice. Strabo places him among the Bacchiads but supplies no intervening named ancestry for that affiliation. Distinct from the later Arrhabaeus son of Aeropus."
+  },
+  {
+    "id": "greek_bromerus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Bromerus, father of Arrhabaeus",
+      "alt": [
+        "Bromeros"
+      ]
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "temporal": {
+      "era": "classical"
+    },
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Father of Arrhabaeus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+            "url": "https://topostext.org/work/52#4.83"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Named father of the Lyncestian ruler Arrhabaeus. His own parents are not identified in the cited passage."
+  }
+]
+```

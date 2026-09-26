@@ -141,8 +141,9 @@ describe('app renders in a browser-like environment', () => {
     await app.openFigure('greek_apollod_heracles');
     const descent = app.document.querySelector('.section-descent');
     assert.ok(descent, 'Descent section did not render');
-    assert.match(descent.textContent, /9⁄16/, 'expected the 9/16 fraction to be shown');
-    assert.match(descent.textContent, /by descent/);
+    assert.match(descent.textContent, /Unquantified/, 'unnamed maternal ancestors must prevent an exact fraction');
+    assert.match(descent.textContent, /Divine ancestry/, 'the attested divine parent must remain visible');
+    assert.doesNotMatch(descent.textContent, /9⁄16/, 'the legacy lower bound must not be presented as an exact fraction');
     assert.ok(descent.querySelectorAll('.descent-parent').length >= 2, 'expected per-parent contribution rows');
   });
 

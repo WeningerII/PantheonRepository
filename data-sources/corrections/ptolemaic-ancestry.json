@@ -1,0 +1,141 @@
+{
+  "greek_apollod_temenus": [
+    {
+      "id": "separate-royal-descent-sources",
+      "op": "replace",
+      "path": [
+        "notes"
+      ],
+      "expected": "Scion-tier (registry-floor) son of Aristomachus, leader of the third (successful) Heraclidae return to the Peloponnese. Inheritor of Argos by the Heraclidae lot-cast at the Isthmus per Apollodorus 2.8.4. Founder of the Argive Heraclidae royal line. Murdered by his own conspiring sons over the succession after favoring his son-in-law Deiphontes. The historical Macedonian Argead dynasty (Philip II, Alexander the Great) claimed eponymous descent from Temenus through Karanos per Herodotus 8.137-139, making this figure the canonical-genealogical anchor of the Macedonian royal claim to Heracles-descent — and through that claim, of Alexander's own demigod-self-conception.",
+      "value": "Son of Aristomachus and leader of the Heraclid return who received Argos. Herodotus presents the Macedonian founders as descendants of Temenus without supplying the intervening generations. Satyrus preserves a different, extended dynastic pedigree through Caranus; it is available as a separate claimed ancestry account.",
+      "reason": "Herodotus 8.137–139 names Perdiccas and Temenid descent but does not supply a Caranus genealogy. The transmitted Satyrus pedigree is a separate account and has six named parent steps between Temenus and Caranus.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Apollodorus, Library 2.7.7–2.8.5",
+          "url": "https://www.theoi.com/Text/Apollodorus2.html"
+        },
+        {
+          "kind": "primary",
+          "reference": "Herodotus, Histories 8.137–139",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#137"
+        },
+        {
+          "kind": "primary",
+          "reference": "Satyrus, genealogy preserved in Theophilus, To Autolycus 2.7",
+          "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+        }
+      ]
+    },
+    {
+      "id": "qualify-royal-lineage-source",
+      "op": "replace",
+      "path": [
+        "lifecycle",
+        2,
+        "notes"
+      ],
+      "expected": "Established the Argive Heraclidae line. The historical Macedonian Argead dynasty — the dynasty of Philip II and Alexander the Great — claimed eponymous descent from Temenus through his great-great-grandson Karanos per Herodotus 8.137-139, making Temenus the canonical-genealogical anchor of the Macedonian royal claim to Heracles-descent.",
+      "value": "Established the Argive Heraclid line. Herodotus records Temenid descent for the Macedonian founders; the named chain through Caranus belongs to the separately transmitted Satyrus pedigree.",
+      "reason": "Herodotus 8.137–139 names Perdiccas and Temenid descent but does not supply a Caranus genealogy. The transmitted Satyrus pedigree is a separate account and has six named parent steps between Temenus and Caranus.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Herodotus, Histories 8.137–139",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#137"
+        },
+        {
+          "kind": "primary",
+          "reference": "Satyrus, genealogy preserved in Theophilus, To Autolycus 2.7",
+          "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+        }
+      ]
+    },
+    {
+      "id": "remove-unsupported-fixed-descent-fraction",
+      "op": "replace",
+      "path": [
+        "lifecycle",
+        0,
+        "notes"
+      ],
+      "expected": "Eldest son of Aristomachus (scion-tier, son of Cleodaeus, grandson of Hyllus, great-grandson of Heracles). Direct-divine-blood through Heracles is 1/16 by this generation; registered as scion (registry-floor for descent past the demigod's great-grandchildren).",
+      "value": "Son of Aristomachus in the Heraclid genealogy. The cited account does not name every co-parent or establish an exact divine fraction.",
+      "reason": "A precise fraction cannot be established by treating unnamed co-parents as mortal.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Apollodorus, Library 2.7.7–2.8.5",
+          "url": "https://www.theoi.com/Text/Apollodorus2.html"
+        },
+        {
+          "kind": "primary",
+          "reference": "Satyrus, genealogy preserved in Theophilus, To Autolycus 2.7",
+          "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+        }
+      ]
+    }
+  ],
+  "greek_apollod_cleodaeus": [
+    {
+      "id": "qualify-heraclid-ancestry-degree",
+      "op": "replace",
+      "path": [
+        "notes"
+      ],
+      "expected": "Heraclidae second-generation. Son of Hyllus by Iole (the Oechalian princess Heracles had won by sacking her father Eurytus's city). Father of Aristomachus. Sits at the canonical inheritance-dilution position three generations below Heracles — the divine fraction has dropped to scion-tier (1/8) through the Hyllus-Iole maternal-mortal-line. Per Apollodorus 2.8.2 and Herodotus 6.52, transmitted the Heraclidae return-claim from his father to his son Aristomachus. The line continues: Cleodaeus → Aristomachus → Aristodemus → the Spartan twin-kings Eurysthenes and Procles, founders of the Agiad and Eurypontid royal houses. Cleodaeus himself does not appear to have led an attempted return; the dynastic-claim tradition treats him as the keeper-of-the-claim across the inactive generation between the failed first attempt by Hyllus and the renewed second attempt by Aristomachus.",
+      "value": "Son of Hyllus in the Heraclid genealogy and father of Aristomachus. The transmitted Satyrus pedigree names these same paternal steps without naming his mother. The degree of divine descent depends on the selected account and its missing co-parents.",
+      "reason": "Source accounts establish ancestry, not the earlier asserted exact divine fraction.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Apollodorus, Library 2.7.7–2.8.5",
+          "url": "https://www.theoi.com/Text/Apollodorus2.html"
+        },
+        {
+          "kind": "primary",
+          "reference": "Satyrus, genealogy preserved in Theophilus, To Autolycus 2.7",
+          "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+        }
+      ]
+    },
+    {
+      "id": "remove-unsupported-birth-tier",
+      "op": "remove",
+      "path": [
+        "lifecycle",
+        0,
+        "typeStatus"
+      ],
+      "expected": "demigod",
+      "reason": "The cited birth account records genealogy, not a change to a distinct divine tier. Classification is derived from the selected ancestry rather than an unsupported lifecycle transition.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Apollodorus, Library 2.7.7–2.8.5",
+          "url": "https://www.theoi.com/Text/Apollodorus2.html"
+        }
+      ]
+    }
+  ],
+  "greek_apollod_hyllus": [
+    {
+      "id": "remove-unsupported-birth-tier",
+      "op": "remove",
+      "path": [
+        "lifecycle",
+        0,
+        "typeStatus"
+      ],
+      "expected": "demigod",
+      "reason": "The cited birth account records genealogy, not a change to a distinct divine tier. Classification is derived from the selected ancestry rather than an unsupported lifecycle transition.",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Apollodorus, Library 2.7.7–2.8.5",
+          "url": "https://www.theoi.com/Text/Apollodorus2.html"
+        }
+      ]
+    }
+  ]
+}

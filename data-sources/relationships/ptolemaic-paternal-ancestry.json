@@ -1,0 +1,733 @@
+{
+  "greek_alexander_i_macedon": {
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "greek_amyntas_i",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ]
+      },
+      {
+        "kind": "father-of",
+        "personId": "greek_amyntas_son_alexander_i",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "Syncellus is consulted through Bennett, not independently collated."
+      },
+      {
+        "kind": "reported-sibling",
+        "personId": "greek_menelaus_father_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          }
+        ],
+        "notes": "Justin calls Menelaus the brother of Alexander I in a chronologically compressed and conflicting paternal account. This report does not establish a shared parent."
+      }
+    ],
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_amyntas_i",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ]
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Amyntas I — Herodotus",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_amyntas_i",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Herodotus, Histories 8.139",
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "description": "The immediate father is explicit in Herodotus; the group continues through his earlier king-list.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      }
+    ]
+  },
+  "greek_amyntas_son_alexander_i": {
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "greek_alexander_i_macedon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "Syncellus is consulted through Bennett, not independently collated."
+      },
+      {
+        "kind": "father-of",
+        "personId": "greek_arrhidaeus_father_amyntas_iii",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "This step is reported by Bennett’s genealogy discussion."
+      }
+    ],
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_alexander_i_macedon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "Syncellus is consulted through Bennett, not independently collated."
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Alexander I — Syncellus through Bennett",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_alexander_i_macedon",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+                "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+              }
+            ],
+            "notes": "Syncellus is consulted through Bennett, not independently collated."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "description": "Secondary reporting of Syncellus, not the conjectured insertion into Satyrus’s text.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      }
+    ]
+  },
+  "greek_arrhidaeus_father_amyntas_iii": {
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "greek_amyntas_son_alexander_i",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "This step is reported by Bennett’s genealogy discussion."
+      },
+      {
+        "kind": "father-of",
+        "personId": "greek_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ]
+      }
+    ],
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_amyntas_son_alexander_i",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "notes": "This step is reported by Bennett’s genealogy discussion."
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Amyntas son of Alexander I — reported pedigree",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_amyntas_son_alexander_i",
+            "sources": [
+              {
+                "kind": "secondary",
+                "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+                "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+              }
+            ],
+            "notes": "This step is reported by Bennett’s genealogy discussion."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe, note 2.v (reporting Syncellus p. 500 and Beloch, Griechische Geschichte IV.2, p. 177)",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "description": "This connecting generation is mediated through Bennett; it does not amend Satyrus.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      }
+    ]
+  },
+  "greek_amyntas_iii": {
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "greek_arrhidaeus_father_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ]
+      },
+      {
+        "kind": "reported-father",
+        "personId": "greek_menelaus_father_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ],
+        "notes": "Conflicting ancient report; retained separately from Diodorus."
+      },
+      {
+        "kind": "spouse",
+        "personId": "greek_eurydice_mother_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          }
+        ]
+      },
+      {
+        "kind": "father-of",
+        "personId": "greek_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ]
+      }
+    ],
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_arrhidaeus_father_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ]
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Arrhidaeus — Diodorus",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_arrhidaeus_father_amyntas_iii",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Diodorus Siculus, Library of History 15.60.3",
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ],
+        "description": "Diodorus’s paternal report; the competing Menelaus account is a separate choice.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      },
+      {
+        "id": "menelaus-paternity-report",
+        "label": "Menelaus — Justin and Aelian",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_menelaus_father_amyntas_iii",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+                "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+              },
+              {
+                "kind": "primary",
+                "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+                "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+              }
+            ],
+            "notes": "Conflicting ancient report; retained separately from Diodorus."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ],
+        "description": "Alternative ancient report with chronological difficulties. It replaces Arrhidaeus and does not import his ancestors."
+      }
+    ],
+    "variants": [
+      {
+        "id": "paternal-report-conflict",
+        "claim": "parentage",
+        "description": "Diodorus names Arrhidaeus; Justin and Aelian name Menelaus. These reports remain separate accounts.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          },
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ]
+      }
+    ]
+  },
+  "greek_menelaus_father_amyntas_iii": {
+    "relations": [
+      {
+        "kind": "reported-father-of",
+        "personId": "greek_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Aelian, Various History 12.43 (Thomas Stanley translation)",
+            "url": "https://penelope.uchicago.edu/aelian/varhist12.html"
+          }
+        ],
+        "notes": "Conflicting ancient report; retained separately from Diodorus."
+      },
+      {
+        "kind": "reported-sibling",
+        "personId": "greek_alexander_i_macedon",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          }
+        ],
+        "notes": "Justin calls Menelaus the brother of Alexander I in a chronologically compressed and conflicting paternal account. This report does not establish a shared parent."
+      }
+    ]
+  },
+  "greek_eurydice_mother_philip_ii": {
+    "relations": [
+      {
+        "kind": "father",
+        "personId": "greek_sirras",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "notes": "Greek text and the inscription discussed by Landucci support Sirras as her father. Some older translations print a different reading."
+      },
+      {
+        "kind": "spouse",
+        "personId": "greek_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          }
+        ]
+      },
+      {
+        "kind": "mother-of",
+        "personId": "greek_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ]
+      },
+      {
+        "kind": "maternal-grandfather",
+        "personId": "greek_arrhabaeus_i_lyncestis",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "notes": "The intervening mother is unnamed; this grandparent relationship is not a direct parent edge."
+      }
+    ],
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_sirras",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "notes": "Greek text and the inscription discussed by Landucci support Sirras as her father. Some older translations print a different reading."
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Sirras — Strabo and epigraphic patronymic",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_sirras",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+                "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+              },
+              {
+                "kind": "secondary",
+                "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+                "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+              }
+            ],
+            "notes": "Greek text and the inscription discussed by Landucci support Sirras as her father. Some older translations print a different reading."
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "description": "Her mother is unnamed in the adopted Greek text. Arrhabaeus is a grandfather, not a direct parent.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      }
+    ],
+    "variants": [
+      {
+        "id": "paternal-textual-reading",
+        "claim": "parentage",
+        "description": "The Greek text reads Eurydice as Sirras’s daughter; some older English versions print Sirra or Irra as a daughter of Arrhabaeus. The patronymic on inscriptions supports the former reading.",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "greek_sirras": {
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "greek_eurydice_mother_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Franca Landucci Gattinoni, Illyrians and Macedonians in the Fifth Century BC: An impossible peace, Karanos Supplement I (2024), pp. 125-126 and notes 28-35",
+            "url": "https://ddd.uab.cat/pub/karanos/karanos_a2024nMacedonia/karanos_a2024nMacedoniap121.pdf"
+          }
+        ],
+        "notes": "Greek text and the inscription discussed by Landucci support Sirras as her father. Some older translations print a different reading."
+      }
+    ]
+  },
+  "greek_arrhabaeus_i_lyncestis": {
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_bromerus",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+            "url": "https://topostext.org/work/52#4.83"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "granddaughter",
+        "personId": "greek_eurydice_mother_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "notes": "Through his unnamed daughter. No separate unnamed-person identity is invented."
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "lyncestian-paternity-report",
+        "label": "Bromerus — Thucydides",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_bromerus",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+                "url": "https://topostext.org/work/52#4.83"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+            "url": "https://topostext.org/work/52#4.83"
+          }
+        ],
+        "description": "The source names the father; it does not name an earlier generation."
+      }
+    ]
+  },
+  "greek_bromerus": {
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "greek_arrhabaeus_i_lyncestis",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Thucydides, History of the Peloponnesian War 4.83.1 (Richard Crawley translation)",
+            "url": "https://topostext.org/work/52#4.83"
+          }
+        ]
+      }
+    ]
+  },
+  "greek_philip_ii": {
+    "parents": [
+      {
+        "kind": "father",
+        "personId": "greek_amyntas_iii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          }
+        ]
+      },
+      {
+        "kind": "mother",
+        "personId": "greek_eurydice_mother_philip_ii",
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ]
+      }
+    ],
+    "parentageAccounts": [
+      {
+        "id": "herodotus-macedonian-pedigree",
+        "label": "Amyntas III and Eurydice — reported historical family",
+        "kind": "biological",
+        "parents": [
+          {
+            "kind": "father",
+            "personId": "greek_amyntas_iii",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Diodorus Siculus, Library of History 15.60.3",
+                "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+              }
+            ]
+          },
+          {
+            "kind": "mother",
+            "personId": "greek_eurydice_mother_philip_ii",
+            "sources": [
+              {
+                "kind": "primary",
+                "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+                "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+              },
+              {
+                "kind": "primary",
+                "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+                "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "kind": "primary",
+            "reference": "Diodorus Siculus, Library of History 15.60.3",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/15D*.html#60.3"
+          },
+          {
+            "kind": "primary",
+            "reference": "Justin, Epitome of Pompeius Trogus 7.4 (J. S. Watson translation)",
+            "url": "https://www.roger-pearse.com/tertullian/fathers/justinus_03_books01to10.htm"
+          },
+          {
+            "kind": "primary",
+            "reference": "Strabo, Geography 7.7.8, Greek text: Eurydice daughter of Sirras",
+            "url": "https://classics.andrewgadsden.com/library/strabo/geography/7"
+          }
+        ],
+        "description": "The immediate parents are historical reports. Upstream links carry their individual sources; the group name does not attribute every generation to Herodotus.",
+        "lineageGroup": "herodotus-macedonian-pedigree"
+      }
+    ]
+  }
+}

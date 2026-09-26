@@ -1,5 +1,9 @@
 # Ptolemaic founding-family pilot
 
+Historical pilot report: its endpoint-only ancestry and display-only account
+limitations are superseded by the [ancestry and account repair](ptolemaic-lineage-repair.md).
+The original validation and scope below describe the pilot at publication.
+
 Five additions requested as a test run on 2026-09-25. This is a bounded pilot,
 not a claim that the dynasty's spouses, children, descendants, or divine
 pedigrees have been completed.

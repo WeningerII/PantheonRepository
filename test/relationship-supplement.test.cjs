@@ -58,6 +58,32 @@ test('renaming every identifier preserves supplement behavior', () => {
   assert.deepEqual(apply(rename(m),rename(p)),rename(apply(m,p)));
 });
 
+test('coherent account groups reject ambiguous or malformed membership atomically', () => {
+  const account = {id:'A0',label:'Claimed pedigree',lineageGroup:'G0',kind:'claimed-genealogy',
+    parents:[claim('N1')],sources:[cited]};
+  const m=records();
+  apply(m,{N0:{parentageAccounts:[account]}});
+  assert.equal(m.N0.parentageAccounts[0].lineageGroup,'G0');
+  for(const invalid of [{...account,id:'A1'}, {...account,id:'A1',lineageGroup:' '},
+    {...account,id:'A1',lineageGroup:'G1',kind:'unknown'}]) {
+    const before=structuredClone(m);
+    assert.throws(()=>apply(m,{N1:{relations:[claim('N2','ally')]},N0:{parentageAccounts:[invalid]}}));
+    assert.deepEqual(m,before);
+  }
+});
+
+test('cited classification corrections require an exact baseline and preserve their decision', () => {
+  const m=records(); m.N0.type='mortal';
+  const correction={id:'C0',expected:'mortal',type:'demigod',reason:'The source names a divine parent.',sources:[cited]};
+  const patch={N0:{classificationCorrections:[correction],parents:[claim('N1')]}};
+  apply(m,patch);
+  assert.equal(m.N0.type,'demigod'); assert.equal(m.N0.classificationCorrections[0].previous,'mortal');
+  const once=structuredClone(m); apply(m,patch); assert.deepEqual(m,once);
+  for(const bad of [{...correction,id:'C1'}, {...correction,type:'unsupported'}, {...correction,sources:[]}]) {
+    assert.throws(()=>apply(m,{N0:{classificationCorrections:[bad]}})); assert.deepEqual(m,once);
+  }
+});
+
 test('every authored relationship supplement survives the generated corpus', () => {
   const {seedPeople:m}=require('../scripts/build-tiers.cjs').loadCorpus({quiet:true});
   for(const file of fs.readdirSync(path.join(__dirname,'../data-sources/relationships')).filter(f=>f.endsWith('.json'))) {

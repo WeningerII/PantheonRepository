@@ -179,8 +179,11 @@ const sample = () => {
   // document for the independent navigation probe: hash navigation otherwise
   // retains that expanded Browse state for every keyboard/account assertion.
   await pg.goto('about:blank');
-  const {verifyCounterpartUI,partitionCases}=require('./verify-counterpart-ui.cjs');
-  const people=require('./build-tiers.cjs').loadCorpus({quiet:true}).seedPeople;
+  const {verifyCounterpartUI,partitionCases,verifyGroupedLineageUI}=require('./verify-counterpart-ui.cjs');
+  const corpus=require('./build-tiers.cjs').loadCorpus({quiet:true});
+  const people=corpus.seedPeople;
+  await verifyGroupedLineageUI(pg,`http://127.0.0.1:${PORT}/index.html`,people,{eraOrder:corpus.ERA_ORDER});
+  await pg.setViewportSize({width:1400,height:900});
   const all=partitionCases(people,1)[0];
   const pages=[pg,await context.newPage(),await context.newPage()];
   const parts=partitionCases(people,pages.length);
