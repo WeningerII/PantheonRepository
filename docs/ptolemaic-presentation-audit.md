@@ -30,6 +30,16 @@ therefore also be stated in account descriptions/labels and relationship notes.
 This batch does not claim to replace legacy descent arithmetic or redesign
 the interactive account/epithet interface.
 
+The integrated browser check subsequently exposed an arrival-order defect:
+when a full detail shard arrived before the compact edge tier, the loader
+replaced its rich relationships with graph-only tuples. This removed notes,
+citations and every unresolved external reference while leaving the record
+marked fully loaded. The same problem affected a legacy full corpus arriving
+before an already-pending edge response. `installEdgesTier` now leaves full
+records and a resident full corpus intact, while continuing to hydrate skinny
+records. Neutral regression cases reproduce both failing orders and the
+already-working edges-first order, preserving object identity and lazy loading.
+
 ## Static gaps repaired
 
 `scripts/build-static.cjs` previously omitted every parentage account,

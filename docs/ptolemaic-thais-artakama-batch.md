@@ -80,10 +80,27 @@ concurrently. The heading was corrected. The rendering, scenario and storage
 test sequence then exited successfully in isolation with a 4 GB Node heap;
 the scenario report records 34/34 passing and storage reports 4/4 passing.
 The updated scenario report includes the 7,810-record corpus. Browser
-verification waits for deferred
-profile sections after the header appears and check the calculation warning
+verification waits for deferred profile sections after the header appears
+and checks the calculation warning
 while an alternative account is selected. The warning is outside the tree
 canvas and intentionally disappears on return to the default.
+
+Focused browser verification also exposed a pre-existing lazy-loading race:
+a compact edge response arriving after a full profile replaced its rich
+relationships, losing notes, citations, and external references. The generic
+loader now preserves hydrated records and a resident full corpus while still
+installing topology on skinny records. Three neutral controlled response-order
+tests reproduce the former defect and verify both response orders and a late
+edge response after legacy corpus loading. These and the existing loader parity
+checks pass centrally (26/26). Independent review reproduced the defect and
+approved the correction. No new requests or full-corpus fallback were added.
+
+The rebuilt integrated browser probe passes for all seven new and five reused
+profiles: 24 desktop/mobile views, 50 keyboard relationship/parent navigations,
+five alternative account selections, and 12 no-JavaScript static pages. Full
+relationship notes, static claim citations, reachable targets, epithet
+translations, calculation warnings, and mobile overflow were checked. There
+were zero browser errors and zero full-corpus requests.
 
 Required release gates are the full test suite, complete cold-load and
 counterpart browser probe, focused desktop/mobile and no-JS profile checks,

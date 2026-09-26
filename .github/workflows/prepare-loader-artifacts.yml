@@ -1,0 +1,36 @@
+name: Prepare reviewed loader artifacts
+on:
+  push:
+    branches: [codex/ptolemaic-thais-artakama]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: github.event.head_commit.message == 'Prepare reviewed loader artifacts'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci --no-audit --no-fund
+      - name: Build and verify reviewed tree
+        env:
+          EXPECTED_TREE: 807167f99cc8de619082b2d08888016422fbe2e0
+        run: |
+          set -euo pipefail
+          python3 build.py
+          rm .github/workflows/prepare-loader-artifacts.yml
+          git add -A
+          actual_tree=$(git write-tree)
+          test "$actual_tree" = "$EXPECTED_TREE"
+          echo "Verified reviewed tree $actual_tree"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Build reviewed loader fix and remove preparation workflow'
+          git push origin HEAD:codex/ptolemaic-thais-artakama

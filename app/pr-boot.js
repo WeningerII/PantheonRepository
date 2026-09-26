@@ -391,9 +391,17 @@ const installAtlasTier = (tier) => {
   dispatch('pr:tier');
 };
 const installEdgesTier = (edges) => {
+  // A legacy corpus may have finished while this compact tier was in flight.
+  // It already contains the graph and all evidence; never downgrade it.
+  if (PR.dataReady) return;
   const P = PR.seedPeople || {};
   for (const id of Object.keys(P)) {
     const rec = P[id];
+    // Detail and edges load concurrently on navigation. A completed detail
+    // shard is the richer source: replacing its relations with compact edges
+    // would erase notes, citations and unresolved external references while
+    // leaving _full set, preventing any subsequent detail rehydration.
+    if (rec._full) continue;
     const e = edges[id];
     rec.parentIds = (e && e.p) ? e.p : [];
     if (e && e.pr) rec.parentRoles = e.pr;

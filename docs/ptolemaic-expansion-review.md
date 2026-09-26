@@ -116,3 +116,41 @@ static-lineage tests pass after the change. The actual rebuilt Ptolemy page
 contains the stable heading, default qualification and calculation warning.
 Verified `test/scale-gates.test.cjs` is unchanged from baseline. No new
 finding; independent approval also covers this final delta.
+
+## Runtime hydration follow-up
+
+The coordinator's later browser verification exposed a material runtime
+defect in `app/pr-boot.js:393–403`. A late edge-tier response replaces rich
+relations even on an already hydrated `_full` record. Its compact relation
+projection retains only kind and target, so relation notes/citations disappear
+and external-reference-only relations disappear entirely. This affects union
+qualifications and Artabazus's named external parents in this batch.
+
+Independently reproduced against the integrated implementation using neutral
+two-record fixtures and the real loader in a VM: `loadDetail` followed by
+`loadTier('edges')` leaves `_full=true`, reduces two rich relations to one thin
+relation, and loses the uncertainty note, both citations and external mother.
+Runtime presentation approval is held pending correction and verification.
+The source records and static output remain valid.
+
+Requested generic correction: preserve rich hydrated records while still
+installing topology for skinny records. Also protect the legacy full-corpus
+path (`PR.dataReady`), whose records need not carry `_full`. Required checks
+include both arrival orders, external references, rich claim evidence,
+remaining skinny hydration and unchanged lazy loading.
+
+Correction independently reviewed in agent commit `c651c90`: the loader
+skips compact replacement for `_full` records and returns without rewriting
+a fully installed legacy corpus. Skinny records continue receiving topology;
+no request or rendering behavior is expanded. Reviewed the real-loader tests
+and independently ran all three: detail-before-edges, edges-before-detail,
+and legacy-corpus-before-pending-edges all passed. The tests check rich claim
+evidence, external references, parent roles/accounts, record identity, skinny
+hydration and unchanged request count. The original independent two-record
+reproducer now also passes with notes, citations and external mother retained.
+`git diff --check` passed. The correction is approved at source/test level;
+the coordinator's rebuilt browser verification remains required before merge.
+
+Confirmed the same correction integrated as `73d25cd` and independently reran
+the three arrival-order tests in the integration worktree: **3 passed, 0
+failed**. No additional finding in the integrated delta.
