@@ -76,8 +76,11 @@ qualifies its contents as the recorded default without renaming that heading.
 
 The initial local full-suite run found that heading regression and exhausted
 memory in three browser-like test processes while Chromium checks ran
-concurrently. The heading was corrected; those processes are verified in
-isolation with a larger Node heap. Browser verification must wait for deferred
+concurrently. The heading was corrected. The rendering, scenario and storage
+test sequence then exited successfully in isolation with a 4 GB Node heap;
+the scenario report records 34/34 passing and storage reports 4/4 passing.
+The updated scenario report includes the 7,810-record corpus. Browser
+verification waits for deferred
 profile sections after the header appears and check the calculation warning
 while an alternative account is selected. The warning is outside the tree
 canvas and intentionally disappears on return to the default.
