@@ -154,13 +154,15 @@ describe('Pantheon Registry — capability scenarios', () => {
     return 'multi-script names rendered';
   });
 
-  S('S09', 'Divinity computation', 'Heracles shows the 9⁄16 divinity descent breakdown', async (app) => {
+  S('S09', 'Divinity computation', 'incomplete ancestry preserves divine descent without an exact fraction', async (app) => {
     await app.openFigure('greek_apollod_heracles');
     const d = app.document.querySelector('.section-descent');
     assert.ok(d, 'descent section did not render');
-    assert.match(d.textContent, /9⁄16/, 'expected 9/16 fraction');
+    assert.match(d.textContent, /Unquantified/, 'unnamed ancestors prevent a precise fraction');
+    assert.match(d.textContent, /Divine ancestry/, 'the attested divine lineage remains visible');
+    assert.doesNotMatch(d.textContent, /9⁄16/, 'a lower bound must not be presented as an exact fraction');
     assert.ok(d.querySelectorAll('.descent-parent').length >= 2, 'expected per-parent rows');
-    return '9⁄16 demigod by descent';
+    return 'Unquantified divine ancestry with per-parent contributions';
   });
 
   S('S10', 'Power scope-tags', 'faculties render their derived scope-tag chips', async (app) => {
