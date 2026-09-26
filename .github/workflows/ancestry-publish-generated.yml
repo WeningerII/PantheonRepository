@@ -24,7 +24,9 @@ jobs:
       - name: Regenerate the reviewed source changes
         run: |
           set -euo pipefail
-          git apply .github/ancestry-formatter.patch
+          if ! git apply --reverse --check .github/ancestry-formatter.patch 2>/dev/null; then
+            git apply .github/ancestry-formatter.patch
+          fi
           node scripts/gen-new-figures.cjs
           node scripts/gen-enrich.cjs
           node scripts/gen-powers-terms.cjs

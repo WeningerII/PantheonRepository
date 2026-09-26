@@ -1201,6 +1201,10 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   overflow-wrap: break-word;
   hyphens: auto;
 }
+.detail-header .lineage-status .btn {
+  white-space: normal; height: auto; min-height: 28px; max-width: 100%;
+  line-height: 1.35; padding-top: 5px; padding-bottom: 5px; text-align: left;
+}
 .detail-header .alts {
   margin-top: 10px;
   font: italic 400 15px/1.4 var(--font-serif);

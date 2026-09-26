@@ -179,8 +179,9 @@ const sample = () => {
   // document for the independent navigation probe: hash navigation otherwise
   // retains that expanded Browse state for every keyboard/account assertion.
   await pg.goto('about:blank');
-  const {verifyCounterpartUI,partitionCases}=require('./verify-counterpart-ui.cjs');
-  const people=require('./build-tiers.cjs').loadCorpus({quiet:true}).seedPeople;
+  const {verifyCounterpartUI,partitionCases,verifyGroupedLineageUI}=require('./verify-counterpart-ui.cjs');
+  const corpus=require('./build-tiers.cjs').loadCorpus({quiet:true});
+  const people=corpus.seedPeople;
   const all=partitionCases(people,1)[0];
   const pages=[pg,await context.newPage(),await context.newPage()];
   const parts=partitionCases(people,pages.length);
@@ -192,6 +193,7 @@ const sample = () => {
   assert.equal(results.reduce((sum,r)=>sum+r.accountCount,0),
     all.accountPeople.reduce((sum,p)=>sum+p.parentageAccounts.length,0));
   console.log(`counterpart UI: all ${all.targets.length} targets and ${results.reduce((sum,r)=>sum+r.accountCount,0)} accounts passed across ${pages.length} pages`);
+  await verifyGroupedLineageUI(pg,`http://127.0.0.1:${PORT}/index.html`,people,{eraOrder:corpus.ERA_ORDER});
   await b.close(); srv.close();
   if (process.exitCode) console.error('\nverify-coldload: FAILED');
   else console.log('\nverify-coldload: PASSED');
