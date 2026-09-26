@@ -67,12 +67,29 @@ full detail shard and lazy edge tier, so a visible ancestor can be selected
 without downloading the full corpus. Controls follow rendered cards and selected
 accounts, retaining bounded initial rendering.
 
-Selections are local to the current focus. Default `parentIds`, descent
-arithmetic, inherited powers and existing consumers are preserved. A supported
-full account may therefore differ from a legacy arithmetic baseline; the tree
-labels that distinction. A displayed account is not a universal reconciliation
-of all traditions, and parentage selection does not claim to switch every
-other biographical assertion to the same source.
+Selections are local to the current focus. The shared account model drives the
+displayed tree, parentage, classification, descent calculation and inherited-power
+candidates together. Default `parentIds` and persisted baseline consumers remain
+unchanged. An optional `lineageGroup` selects matching accounts on reachable
+ancestors in one action; explicit per-person choices take precedence. Conflicting
+groups remain unresolved until explicitly selected. `kind: claimed-genealogy`
+marks a claimed pedigree rather than established biological history; individual
+edges retain their own citations. Other ancestors retain recorded parentage.
+
+Missing co-parents, cycles, unresolved endpoints and uncertain status at conception
+prevent an exact fraction. Known divine ancestry remains visible even when its
+degree cannot be quantified. Mortal classification does not erase a selected
+ancestral path. Apotheosis is not silently projected back to conception, and
+within-person lifecycle ordering is not a shared chronology between people.
+Inherited powers are model candidates, never evidence of an attested power.
+The static mirror exposes grouped pedigrees, account-specific descent summaries
+and reciprocal links to children in alternative accounts. A displayed account is
+not a universal reconciliation of all traditions or other biographical claims.
+
+Initial tree depth and row limits remain bounded. “Show all ancestors” is an
+explicit, cycle-safe action that reveals the entire reachable ancestry without
+requiring repeated single-generation clicks. Account calculation metadata loads
+with the lazy edges tier; it does not add a full-corpus fetch to initial browsing.
 
 ## Remaining completeness requirements
 

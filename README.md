@@ -2,7 +2,7 @@
 
 **[www.listofgods.com](https://www.listofgods.com/)**
 
-One index of the world's mythologies: **7,810 figures across 562 traditions**,
+One index of the world's mythologies: **7,871 figures across 562 traditions**,
 every one of them source-cited, cross-linked by genealogy, and browsable as a
 table, a relation graph, or a map of where each tradition was attested.
 
@@ -15,7 +15,7 @@ show you where they overlapped on the ground.
 
 | | |
 |---|---|
-| Figures | 7,810 |
+| Figures | 7,871 |
 | Traditions | 562 |
 | Domains | 5,717 |
 | Powers | 7,941 |

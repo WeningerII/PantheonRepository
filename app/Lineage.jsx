@@ -217,10 +217,12 @@ function computeEdges(layoutNodes, byId) {
 
 // ── Components ──────────────────────────────────────────────────────────
 
-function LineageCard({ node, byId, onPick }) {
+function LineageCard({ node, byId, onPick, model }) {
   const target = byId.get(node.id);
   if (!target) return null;
-  const tier = window.TYPE_TIER[target.type];
+  const info = model?.divinityInfo(target);
+  const type = model ? info?.tier : target.type;
+  const tier = window.TYPE_TIER[type];
   const isFocus = node.kind === 'focus';
   return (
     <div
@@ -234,27 +236,41 @@ function LineageCard({ node, byId, onPick }) {
           e.preventDefault(); onPick(node.id);
         }
       }}
-      title={window.displayName(target) + ' · ' + (tier?.label || target.type) + ' · ' + target.tradition}
+      title={window.displayName(target) + ' · ' + (tier?.label || type || (info?.hasDivineAncestry ? 'Claimed divine ancestry' : 'Ancestry unresolved')) + ' · ' + target.tradition}
     >
       <div className="lineage-card-name">{window.displayName(target)}</div>
       <div className="lineage-card-meta">
-        <window.TierIcon type={target.type} size={11} />
+        {type && <window.TierIcon type={type} size={11} />}
         <span className="lineage-card-trad">{target.tradition}</span>
       </div>
     </div>
   );
 }
 
-function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPick }) {
+function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPick, choices: controlledChoices, onSelectAccount, accountModel }) {
   const [accountState, setAccountState] = __lState({ focusId: entry.id, choices: {} });
-  const choices = accountState.focusId === entry.id ? accountState.choices : {};
-  const projection = __lMemo(() => Object.keys(choices).length
-    ? projectLineageAccounts(defaultById, choices)
-    : { byId: defaultById, childrenOf: defaultChildrenOf }, [defaultById, defaultChildrenOf, accountState, entry.id]);
+  const choices = controlledChoices || (accountState.focusId === entry.id ? accountState.choices : {});
+  const projection = __lMemo(() => accountModel || (Object.values(choices).some(Boolean)
+    ? window.projectAccountModel ? window.projectAccountModel(defaultById, choices) : projectLineageAccounts(defaultById, choices)
+    : { byId: defaultById, childrenOf: defaultChildrenOf }), [defaultById, defaultChildrenOf, accountState, controlledChoices, accountModel, entry.id, window.__PR?.detailVersion]);
+  const resolvedChoices = projection.selections || choices;
+  const calculationModel = projection.divinityInfo ? projection : null;
+  const selectAccount = (id, value) => {
+    if (onSelectAccount) onSelectAccount(id, value);
+    else setAccountState({ focusId: entry.id, choices: { ...choices, [id]: value } });
+    setExpandState({ rows: new Set() });
+  };
   const { byId, childrenOf } = projection;
   const projectedEntry = byId.get(entry.id) || entry;
-  const [upDepth, setUpDepth] = __lState(2);
-  const [downDepth, setDownDepth] = __lState(2);
+  const [depthState, setDepthState] = __lState({ focusId: entry.id, up: 2, down: 2 });
+  const upDepth = depthState.focusId === entry.id ? depthState.up : 2;
+  const downDepth = depthState.focusId === entry.id ? depthState.down : 2;
+  const setUpDepth = up => setDepthState({ focusId: entry.id, up, down: downDepth });
+  const setDownDepth = down => setDepthState({ focusId: entry.id, up: upDepth, down });
+  __lEffect(() => {
+    setAccountState(previous => previous.focusId === entry.id ? previous : { focusId: entry.id, choices: {} });
+    setDepthState(previous => previous.focusId === entry.id ? previous : { focusId: entry.id, up: 2, down: 2 });
+  }, [entry.id]);
   // Which rows the user has expanded (by row index). Row indices shift when the
   // entry or the generation depth changes. Storing the context alongside the set
   // lets layoutTree (a useMemo) see an empty set immediately on context change —
@@ -320,13 +336,16 @@ function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPi
         </span>
       </h2>
 
-      {[...new Set([entry.id, ...layout.nodes.filter(n => n.id).map(n => n.id), ...Object.keys(choices)])].filter(id => defaultById.get(id)?.parentageAccounts?.length).map(id => {
+      {(projection.conflicts || []).map(conflict => <p className="lineage-status" role="status" key={'conflict-' + conflict.id}>
+        Conflicting pedigree accounts for {window.displayName(defaultById.get(conflict.id))}. Choose that figure’s parentage account to resolve the displayed ancestry.
+      </p>)}
+      {[...new Set([entry.id, ...layout.nodes.filter(n => n.id).map(n => n.id), ...Object.keys(choices), ...(projection.conflicts || []).map(c => c.id)])].filter(id => defaultById.get(id)?.parentageAccounts?.length).map(id => {
         const subject = defaultById.get(id);
-        const chosen = subject.parentageAccounts.find(a => a.id === choices[id]);
+        const chosen = subject.parentageAccounts.find(a => a.id === resolvedChoices[id]);
         return <div className="lineage-account" key={id}>
           <label>{window.displayName(subject)} — parentage account{' '}
-            <select aria-label={'Parentage account for ' + window.displayName(subject)} value={choices[id] || ''}
-              onChange={e => { const value = e.target.value; setAccountState({ focusId: entry.id, choices: { ...choices, [id]: value } }); setExpandState({ rows: new Set() }); }}>
+            <select aria-label={'Parentage account for ' + window.displayName(subject)} value={resolvedChoices[id] || ''}
+              onChange={e => selectAccount(id, e.target.value)}>
               <option value="">Recorded default</option>
               {subject.parentageAccounts.map(a => <option key={a.id} value={a.id}>{a.label}</option>)}
             </select>
@@ -338,7 +357,9 @@ function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPi
           </p>}
         </div>;
       })}
-      {Object.values(choices).some(Boolean) && <p className="lineage-status">Selected accounts change this tree. Descent calculations below use the recorded default.</p>}
+      {Object.values(choices).some(Boolean) && <p className="lineage-status">{calculationModel
+        ? 'Selected accounts determine this tree, descent, and potential inherited powers. Claimed pedigrees are not established historical parentage.'
+        : 'Selected accounts change this tree. Descent calculations below use the recorded default.'}</p>}
 
       {!hasAny && <p className="lineage-status">{upDepth === 0 && downDepth === 0
         ? 'Generations are hidden. Increase the depth to explore recorded parentage.'
@@ -391,6 +412,7 @@ function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPi
                 node={n}
                 byId={byId}
                 onPick={onPick}
+                model={calculationModel}
               />
             );
           })}
@@ -404,6 +426,8 @@ function Lineage({ entry, byId: defaultById, childrenOf: defaultChildrenOf, onPi
           <span>{upDepth}↑</span>
           <button aria-label="More ancestor generations" onClick={() => setUpDepth(upDepth + 1)} disabled={!tree.hasMoreUp}>+</button>
         </div>
+        <button className="btn btn-ghost btn-sm" disabled={!tree.hasMoreUp}
+          onClick={() => setUpDepth(buildLineageTree(projectedEntry, byId, childrenOf, byId.size, 0).ancestorRowCount)}>Show all ancestors</button>
         <div className="lineage-step">
           <button aria-label="Fewer descendant generations" onClick={() => setDownDepth(Math.max(0, downDepth - 1))} disabled={downDepth === 0}>−</button>
           <span>{downDepth}↓</span>

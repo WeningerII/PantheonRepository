@@ -1,0 +1,726 @@
+Ptolemaic claimed ancestry repair, 2026-09-26. Eighteen identity-checked additions.
+The transmitted Satyrus pedigree is authored as a selectable claimed genealogy, not historical default parentage.
+Relationships and account provenance are in the matching supplement; shared-record changes have a coordinator manifest.
+
+```json
+[
+  {
+    "id": "greek_althaea",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Althaea",
+      "alt": [
+        "Althaia",
+        "Althea"
+      ],
+      "transliterations": {
+        "greek": "Ἀλθαία"
+      }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [
+      "greek_thestius_aetolia",
+      "greek_eurythemis"
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Althaea is named as the mother of Deianira by Dionysus and daughter of the Aetolian Thestius in the dynastic pedigree. Her own mother is not named in this passage.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Althaea is named as the mother of Deianira by Dionysus and daughter of the Aetolian Thestius in the dynastic pedigree. Her own mother is not named in this passage."
+  },
+  {
+    "id": "greek_thestius_aetolia",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Thestius of Aetolia",
+      "alt": [
+        "Thestius, father of Althaea"
+      ],
+      "transliterations": {
+        "greek": "Θέστιος"
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [
+      "greek_hesiod_ares",
+      "greek_demonice"
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Named as Althaea's father in the dynastic pedigree. Distinct from Thestius son of Maron later in the same pedigree and from Thespius, the Boeotian host of Heracles. This passage gives no parents for him.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Named as Althaea's father in the dynastic pedigree. Distinct from Thestius son of Maron later in the same pedigree and from Thespius, the Boeotian host of Heracles. This passage gives no parents for him."
+  },
+  {
+    "id": "greek_ceisus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Ceisus",
+      "alt": [
+        "Keisos",
+        "Cisus"
+      ],
+      "transliterations": {
+        "greek": "Κεῖσος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Temenus and father of Maron in the transmitted dynastic pedigree. No mother is named in Theophilus' quotation.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Temenus and father of Maron in the transmitted dynastic pedigree. No mother is named in Theophilus' quotation."
+  },
+  {
+    "id": "greek_maron_son_ceisus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Maron, son of Ceisus",
+      "alt": [
+        "Maron of the Temenid pedigree"
+      ],
+      "transliterations": {
+        "greek": "Μάρων"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Ceisus and father of Thestius in the transmitted dynastic pedigree. Distinct from Maron son of Dionysus and Ariadne, who is also mentioned later in the same chapter.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Ceisus and father of Thestius in the transmitted dynastic pedigree. Distinct from Maron son of Dionysus and Ariadne, who is also mentioned later in the same chapter."
+  },
+  {
+    "id": "greek_thestius_son_maron",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Thestius, son of Maron",
+      "alt": [
+        "Thestrus"
+      ],
+      "transliterations": {
+        "greek": "Θέστιος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Maron and father of Acous in the transmitted pedigree. The Greek text has Thestius; the older English translation prints Thestrus. Distinct from the Aetolian father of Althaea.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Maron and father of Acous in the transmitted pedigree. The Greek text has Thestius; the older English translation prints Thestrus. Distinct from the Aetolian father of Althaea."
+  },
+  {
+    "id": "greek_acous",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Acous",
+      "alt": [
+        "Akoos",
+        "Acous, father of Aristodamidas"
+      ],
+      "transliterations": {
+        "greek": "Ἀκοός"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Thestius son of Maron and father of Aristodamidas in the transmitted dynastic pedigree. No other parent is supplied by this passage.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Thestius son of Maron and father of Aristodamidas in the transmitted dynastic pedigree. No other parent is supplied by this passage."
+  },
+  {
+    "id": "greek_aristodamidas",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Aristodamidas",
+      "alt": [
+        "Aristomidas"
+      ],
+      "transliterations": {
+        "greek": "Ἀριστοδαμίδας"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Acous and father of Caranus in the transmitted dynastic pedigree. The Greek text has Aristodamidas; the older English translation prints Aristomidas. Distinct from Aristomachus and Aristodemus.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Acous and father of Caranus in the transmitted dynastic pedigree. The Greek text has Aristodamidas; the older English translation prints Aristomidas. Distinct from Aristomachus and Aristodemus."
+  },
+  {
+    "id": "greek_caranus_macedon",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Caranus of Macedon",
+      "alt": [
+        "Karanos",
+        "Caranus"
+      ],
+      "transliterations": {
+        "greek": "Καρανός"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Legendary Macedonian ancestor placed between Aristodamidas and Coenus in the transmitted dynastic pedigree. This is a claimed genealogy, not an independently established historical succession.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Legendary Macedonian ancestor placed between Aristodamidas and Coenus in the transmitted dynastic pedigree. This is a claimed genealogy, not an independently established historical succession."
+  },
+  {
+    "id": "greek_coenus_macedon",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Coenus of Macedon",
+      "alt": [
+        "Koinos",
+        "Coenus"
+      ],
+      "transliterations": {
+        "greek": "Κοινός"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Caranus and father of Tyrimmas in the transmitted dynastic pedigree; distinct from Alexander's general of the same name.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Caranus and father of Tyrimmas in the transmitted dynastic pedigree; distinct from Alexander's general of the same name."
+  },
+  {
+    "id": "greek_tyrimmas",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Tyrimmas",
+      "alt": [
+        "Tyrimmus"
+      ],
+      "transliterations": {
+        "greek": "Τυρίμμας"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Coenus and father of Perdiccas in the transmitted dynastic pedigree. Dates and unnamed coparents are not reconstructed.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Coenus and father of Perdiccas in the transmitted dynastic pedigree. Dates and unnamed coparents are not reconstructed."
+  },
+  {
+    "id": "greek_perdiccas_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Perdiccas I of Macedon",
+      "alt": [
+        "Perdikkas I"
+      ],
+      "transliterations": {
+        "greek": "Περδίκκας"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Macedonian dynastic founder in Herodotus. The Satyrus quotation makes him son of Tyrimmas and directly father of Philip; Herodotus places Argaeus between Perdiccas and Philip. The two parentage accounts remain separate.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Macedonian dynastic founder in Herodotus. The Satyrus quotation makes him son of Tyrimmas and directly father of Philip; Herodotus places Argaeus between Perdiccas and Philip. The two parentage accounts remain separate."
+  },
+  {
+    "id": "greek_philip_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Philip I of Macedon",
+      "alt": [
+        "Philippos I"
+      ],
+      "transliterations": {
+        "greek": "Φίλιππος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Early Macedonian ancestor, father of Aeropus. Herodotus names his father as Argaeus; the transmitted Satyrus quotation omits Argaeus and names Perdiccas directly. Distinct from Philip II, the alternative reported father of Ptolemy I.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Early Macedonian ancestor, father of Aeropus. Herodotus names his father as Argaeus; the transmitted Satyrus quotation omits Argaeus and names Perdiccas directly. Distinct from Philip II, the alternative reported father of Ptolemy I."
+  },
+  {
+    "id": "greek_aeropus_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Aeropus I of Macedon",
+      "alt": [
+        "Aeropos I"
+      ],
+      "transliterations": {
+        "greek": "Ἀέροπος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Early Macedonian ancestor placed between Philip and Alcetas by both Herodotus and the Satyrus quotation. Distinct from the Aeropus who was a brother of Perdiccas in Herodotus' foundation narrative.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Early Macedonian ancestor placed between Philip and Alcetas by both Herodotus and the Satyrus quotation. Distinct from the Aeropus who was a brother of Perdiccas in Herodotus' foundation narrative."
+  },
+  {
+    "id": "greek_alcetas_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Alcetas I of Macedon",
+      "alt": [
+        "Alketas I",
+        "Alcetes"
+      ],
+      "transliterations": {
+        "greek": "Ἀλκέτας"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Early Macedonian ancestor placed between Aeropus and Amyntas by Herodotus and the Satyrus quotation.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Early Macedonian ancestor placed between Aeropus and Amyntas by Herodotus and the Satyrus quotation."
+  },
+  {
+    "id": "greek_amyntas_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Amyntas I of Macedon",
+      "alt": [
+        "Amyntas son of Alcetas"
+      ],
+      "transliterations": {
+        "greek": "Ἀμύντας"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Alcetas in both the Satyrus quotation and Herodotus. The quoted pedigree next names Bocrus; Bennett discusses the chronological difficulty and conjectured missing generations. Those conjectured generations are not inserted into the transmitted account.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe: Dynastic Origins, note 2",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Alcetas in both the Satyrus quotation and Herodotus. The quoted pedigree next names Bocrus; Bennett discusses the chronological difficulty and conjectured missing generations. Those conjectured generations are not inserted into the transmitted account."
+  },
+  {
+    "id": "greek_bocrus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Bocrus",
+      "alt": [
+        "Bokros",
+        "Bocrus, father of Meleager"
+      ],
+      "transliterations": {
+        "greek": "Βόκρος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Named between Amyntas and Meleager in the transmitted pedigree. Balacrus is a modern emendation discussed by Bennett, not an independently verified identity. This figure is not merged with the known commanders called Balacrus; missing generations proposed before him remain conjectural.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Satyrus, dynastic genealogy preserved in Theophilus, To Autolycus 2.7 (Greek text)",
+            "url": "https://bkv.unifr.ch/en/works/cpg-1107/compare/ad-autolycum/24/theophilus-to-autolycus"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Chris Bennett, Egyptian Royal Genealogy, Arsinoe: Dynastic Origins, note 2",
+            "url": "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/arsinoe.htm"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Named between Amyntas and Meleager in the transmitted pedigree. Balacrus is a modern emendation discussed by Bennett, not an independently verified identity. This figure is not merged with the known commanders called Balacrus; missing generations proposed before him remain conjectural."
+  },
+  {
+    "id": "greek_argaeus_i",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Argaeus I of Macedon",
+      "alt": [
+        "Argaios I"
+      ],
+      "transliterations": {
+        "greek": "Ἀργαῖος"
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Son of Perdiccas and father of Philip in Herodotus 8.139. Omitted by the transmitted quotation of Satyrus in Theophilus; supplied in a separate Herodotean account, not silently inserted into that quotation.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Herodotus, Histories 8.139",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/8c*.html#139"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of Perdiccas and father of Philip in Herodotus 8.139. Omitted by the transmitted quotation of Satyrus in Theophilus; supplied in a separate Herodotean account, not silently inserted into that quotation."
+  },
+  {
+    "id": "greek_oeneus",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Oeneus",
+      "alt": [
+        "Oineus",
+        "Oeneus of Calydon"
+      ],
+      "transliterations": {
+        "greek": "Οἰνεύς"
+      }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [
+      "greek_porthaon",
+      "greek_euryte_daughter_hippodamas"
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "King of Calydon and husband of Althaea. Apollodorus lists Deianira among their children while also reporting Dionysus as her father. These are distinct parentage accounts, not three simultaneous biological parents.",
+        "citations": [
+          {
+            "kind": "primary",
+            "reference": "Apollodorus, Library 1.8.1",
+            "url": "https://www.theoi.com/Text/Apollodorus1.html"
+          }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "King of Calydon and husband of Althaea. Apollodorus lists Deianira among their children while also reporting Dionysus as her father. These are distinct parentage accounts, not three simultaneous biological parents."
+  }
+]
+```

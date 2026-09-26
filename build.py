@@ -172,6 +172,7 @@ def main() -> None:
     # Shared citation-link resolver (window.PRCite). A plain classic script,
     # inlined raw before the JSX like pr-boot.js — never Babel-transformed.
     cite_links = (APP / 'cite-links.js').read_text(encoding='utf-8')
+    account_model = (APP / 'account-model.js').read_text(encoding='utf-8')
 
     # The two modes differ only in the data layer: embedded inert JSON
     # (artifact) vs the hashed tiers fetched over HTTP (Pages shell) — both
@@ -193,6 +194,7 @@ def main() -> None:
     # script element (case-insensitive close tags, comment-open sequences).
     hazard_checks = [('styles.css', styles_css), (data_name, data_body),
                      ('cite-links.js', cite_links),
+                     ('account-model.js', account_model),
                      *((f, transformed[f]) for f in JSX_FILES)]
     if not pages:
         core_body = (DIST / 'data' / tiers['core']).read_text(encoding='utf-8')
@@ -223,6 +225,7 @@ def main() -> None:
     # at module scope is dead either way.
     script_blocks_inline = (
         f'<!-- cite-links.js (window.PRCite, inlined raw) -->\n<script>\n{safe(cite_links)}\n</script>\n'
+        f'<!-- account-model.js (shared lineage calculations) -->\n<script>\n{safe(account_model)}\n</script>\n'
         + '\n'.join(
             f'<!-- {f} (pre-transformed) -->\n<script>\n{safe(transformed[f])}\n</script>'
             for f in JSX_FILES
@@ -231,7 +234,7 @@ def main() -> None:
     # No safe() here: this leaves as a .js file, where '</script' is just
     # characters. Escaping it would corrupt the source.
     ui_bundle_body = '\n'.join(
-        [f'// cite-links.js (window.PRCite)\n{cite_links}']
+        [f'// cite-links.js (window.PRCite)\n{cite_links}', f'// account-model.js\n{account_model}']
         + [f'// {f} (pre-transformed)\n{transformed[f]}' for f in JSX_FILES]
     )
 

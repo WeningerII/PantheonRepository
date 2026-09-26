@@ -93,6 +93,7 @@ async function bootApp({ panelWidth = 1200, preSeedStorage = null } = {}) {
   libCode.forEach(runScript);
   runScript(dataJs);
   runScript(citeJs); // window.PRCite must exist before the UI renders citations
+  runScript(read(path.join(APP, 'account-model.js')));
   ui.forEach(runScript);
 
   const act = window.React.act;

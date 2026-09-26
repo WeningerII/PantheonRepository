@@ -293,7 +293,13 @@ function main() {
     const r = (p.relations || []).filter((x) => x && x.personId).map((x) => ({ k: x.kind, id: x.personId }));
     if (r.length) e.r = r;
     if (p.parentageAccounts?.length) e.pa = p.parentageAccounts;
-    if (e.p || e.r || e.pa) edges[id] = e;
+    // On-demand account calculations need only inheritance/status metadata,
+    // not full ancestor biographies or the corpus tier.
+    if (p.faculties?.length) e.af = p.faculties.map(f => ({ id: f.id, inheritability: f.inheritability }));
+    const lifecycle = (p.lifecycle || []).filter(l => l.typeStatus)
+      .map(l => ({ typeStatus: l.typeStatus, era: l.era, eraOrdering: l.eraOrdering }));
+    if (lifecycle.length) e.al = lifecycle;
+    if (e.p || e.r || e.pa || e.af || e.al) edges[id] = e;
   }
   const edgesBody = JSON.stringify(sortedObj(edges));
 

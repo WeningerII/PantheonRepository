@@ -19,7 +19,8 @@ const people = {
     ] },
   N1: { id: 'N1', name: { primary: 'Figure 1' }, parentIds: [], relations: [
     { kind: 'child', personId: 'N0', notes: 'Recorded child.', sources: evidence },
-  ] },
+  ], faculties: [{id: 'F0', inheritability: 'heritable', name: 'Recorded faculty', sources: evidence}],
+  lifecycle: [{typeStatus: 'mortal', era: 'E0', eraOrdering: 0, notes: 'Before transformation.'}] },
   N2: { id: 'N2', name: { primary: 'Figure 2' }, parentIds: [], relations: [
     { kind: 'partner', externalRef: { name: 'Unresolved partner', tradition: 'T0' },
       notes: 'Identity unresolved.', sources: evidence },
@@ -30,7 +31,8 @@ const index = Object.values(people).map(p => ({ i: p.id, n: p.name.primary, t: '
 const edges = {
   N0: { p: ['N1'], pr: { N1: 'father' }, pa: people.N0.parentageAccounts,
     r: [{ k: 'father', id: 'N1' }, { k: 'partner', id: 'N2' }] },
-  N1: { r: [{ k: 'child', id: 'N0' }] },
+  N1: { r: [{ k: 'child', id: 'N0' }], af: [{id: 'F0', inheritability: 'heritable'}],
+    al: [{typeStatus: 'mortal', era: 'E0', eraOrdering: 0}] },
 };
 
 async function boot({ legacy = false } = {}) {
@@ -86,6 +88,10 @@ for (const order of ['detail-first', 'edges-first']) {
     }
     assert.deepEqual(copy(b.PR.seedPeople.N1.relations), [{ kind: 'child', personId: 'N0' }],
       'edge tier still hydrates records outside the detail shard');
+    assert.deepEqual(copy(b.PR.seedPeople.N1.faculties), edges.N1.af,
+      'unopened ancestors carry the metadata needed for selected-account inheritance');
+    assert.deepEqual(copy(b.PR.seedPeople.N1.lifecycle), edges.N1.al,
+      'status at conception does not require a full ancestor biography');
     assert.equal(b.PR.tierReady.edges, true);
     assert.equal(b.PR.dataReady, false, 'loading details never requests the full corpus');
     await b.PR.loadDetail('N0');

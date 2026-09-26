@@ -3094,7 +3094,7 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 }
 
 .lineage-controls {
-  display: flex; align-items: center; gap: 12px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
   margin-top: 14px;
   font: 400 11px/1 var(--font-mono);
   letter-spacing: 0.06em;
